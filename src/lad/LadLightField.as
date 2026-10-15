@@ -46,6 +46,7 @@ package lad {
             if(data == null || data.width != width || data.height != height) {
                 if(data) data.dispose(); data=new BitmapData(width,height,false,0);
                 bitmap.bitmapData=data;
+                bitmap.smoothing=true;
             }
             bounds.setTo(vx,vy,width*cell,height*cell);
             bitmap.x=vx; bitmap.y=vy;

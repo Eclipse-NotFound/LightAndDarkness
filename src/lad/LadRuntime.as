@@ -2,6 +2,7 @@ package lad {
     import flash.display.DisplayObject;
     import flash.display.Sprite;
     import flash.events.Event;
+    import flash.events.DataEvent;
     import flash.events.KeyboardEvent;
     import flash.geom.Point;
     import flash.geom.Rectangle;
@@ -30,6 +31,7 @@ package lad {
         public var hits:int=0;
         public var repairs:int=0;
         public var steps:int=0;
+        public var preparedScenes:int=0;
         private var main:*;
         private var game:*;
         private var player:*;
@@ -52,13 +54,44 @@ package lad {
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.2.1-keybind",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.2.1-scene-keybind-dev",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
+            main.addEventListener("continuousSceneBeforeRaster",beforeSceneRaster);
+            main.addEventListener("continuousSceneResetGeneration",resetSceneGeneration);
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.2.1-keybind loaded");
+            LadLog.write("v0.2.1-scene-keybind-dev loaded");
+        }
+        private function resetSceneGeneration(event:DataEvent):void {
+            if(game && store.writable && store.data) {
+                var prefix:String=event.data+"|";
+                for(var key:String in store.data.rooms)
+                    if(key.indexOf(prefix)==0) delete store.data.rooms[key];
+                store.flush();
+            }
+        }
+        // The scene host has selected its new Location but has not rasterized
+        // its backdrops yet. Strip converted artwork in that same first pass.
+        private function beforeSceneRaster(event:Event):void {
+            try {
+                var WorldClass:Class=getDefinitionByName("fe.World") as Class;
+                world=WorldClass["w"];
+                if(!world || Number(WorldClass["boxDamage"])!=0.2) return;
+                if(world.game!==game) {
+                    detach(false);game=world.game;failedLocation=null;
+                    if(game) {store.bind(game);atmosphere.bind(store.data.atmosphereSettings);}
+                }
+                if(!enabled || !game || !world.gg || world.loc!==world.grafon.loc || !world.grafon.sceneLarge
+                    || world.loc===location || world.loc===failedLocation) return;
+                detach(false);
+                try {attach(world.loc,true);preparedScenes++;}
+                catch(error:*) {
+                    failedLocation=world.loc;detach(false);
+                    LadLog.write("PREPARE_FAILED "+error+" "+error.getStackTrace());
+                }
+            } catch(error:*) {LadLog.write("PREPARE_FAILED "+error+" "+error.getStackTrace());}
         }
         private function onFrame(event:Event):void {
             try {
@@ -97,21 +130,25 @@ package lad {
                 }
             } catch(error:*) {LadLog.write("FRAME_ERROR "+error+" "+error.getStackTrace());enabled=false;detach(true);}
         }
-        private function attach(loc:*):void {
+        private function attach(loc:*,beforeRaster:Boolean=false):void {
             location=loc;player=world.gg;
             if(!store.writable) throw new Error("saved light state requires migration");
             var roomKey:String=LadStore.roomKey(loc);
             lamps=LadLampCatalog.discover(loc,world.grafon,store.room(roomKey),atmosphere,roomKey);
             darkZones=atmosphere.zones(loc,roomKey);
             targetClass=ApplicationDomain.currentDomain.getDefinition("lad.native.LadLampTarget") as Class;
-            if(lamps.length) LadSceneBake.change(world.grafon,loc,function():void {LadLampCatalog.strip(lamps);});
+            if(lamps.length) {
+                if(beforeRaster) LadLampCatalog.strip(lamps);
+                else LadSceneBake.change(world.grafon,loc,function():void {LadLampCatalog.strip(lamps);});
+            }
             for each(var lamp:Object in lamps) {
                 lampLayer.addChild(lamp.holder);
                 lamp.proxy=new targetClass(this,lamp,loc);
                 loc.units.push(lamp.proxy);
             }
-            store.flush();syncLamps();ensureAdapter();render();placeLayers();
-            LadLog.write("ATTACH room="+loc.id+" lamps="+lamps.length+" state="+LadStore.roomKey(loc));
+            store.flush();syncLamps();ensureAdapter();
+            if(!beforeRaster) {render();placeLayers();}
+            LadLog.write("ATTACH room="+loc.id+" lamps="+lamps.length+" beforeRaster="+beforeRaster+" state="+LadStore.roomKey(loc));
         }
         private function detach(redraw:Boolean):void {
             cancelRepair();
@@ -180,6 +217,11 @@ package lad {
             var a:Point=visual.globalToLocal(new Point(0,0));
             var b:Point=visual.globalToLocal(new Point(main.stage.stageWidth,main.stage.stageHeight));
             var view:Rectangle=new Rectangle(a.x,a.y,b.x-a.x,b.y-a.y);
+            var artView:Rectangle=view.clone();artView.inflate(128,128);
+            for each(var lamp:Object in lamps) {
+                var show:Boolean=artView.intersects(lamp.bounds);
+                if(lamp.holder.visible!=show) lamp.holder.visible=show;
+            }
             field.render(location,view,lights(),location.sky?Math.max(0.6,ambient):ambient,
                 atmosphere.settings.darkZones?darkZones:null,atmosphere.settings.darkness);
         }

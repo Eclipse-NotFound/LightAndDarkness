@@ -1,4 +1,4 @@
-param([switch]$SkipBuild,[switch]$Mixed,[switch]$Installed,[string]$ResumeTestId='',
+param([switch]$SkipBuild,[switch]$Mixed,[switch]$Installed,[string]$ResumeTestId='',[string]$CompatibilityRoot='',
     [string]$CandidateDirectory='',[string]$RuntimeDirectory='',[string]$SharedHostCandidate='')
 $ErrorActionPreference = 'Stop'
 $modRoot = Split-Path $PSScriptRoot -Parent
@@ -7,6 +7,12 @@ if ($Installed -and ($CandidateDirectory -or $SharedHostCandidate)) {throw 'Cand
 if ($SharedHostCandidate -and !$Mixed) {throw 'SharedHostCandidate requires Mixed mode'}
 if (!$CandidateDirectory) {$CandidateDirectory=Join-Path $modRoot 'build/out'}
 $CandidateDirectory=[IO.Path]::GetFullPath($CandidateDirectory)
+$hostRoot=$gameRoot
+if($CompatibilityRoot) {
+    $hostRoot=(Resolve-Path -LiteralPath $CompatibilityRoot).Path
+    $expected=(Resolve-Path -LiteralPath (Join-Path $gameRoot 'mods/ContinuousScene/build/runtime')).Path
+    if($Installed -or !$Mixed -or $hostRoot -ne $expected) {throw 'CompatibilityRoot requires the isolated ContinuousScene runtime and Mixed candidate mode'}
+}
 if (!$SkipBuild -and !$Installed) { & (Join-Path $modRoot 'build\build.ps1') -Tests -OutputDirectory $CandidateDirectory }
 $modSource = if($Installed){Join-Path $modRoot 'release/LightAndDarknessMod.swf'}else{Join-Path $CandidateDirectory 'LightAndDarknessMod.swf'}
 $modSourceHash = (Get-FileHash -LiteralPath $modSource).Hash
@@ -30,7 +36,7 @@ New-Item -ItemType Directory -Force -Path $runtimeRoot, $evidence | Out-Null
 $assets = @('pfe.swf','texture.swf','texture1.swf','sprite.swf','sprite1.swf','sound.swf','sound_unit.swf','sound_weapon.swf','lang.xml','rooms.xml')
 $assets += (Get-ChildItem -LiteralPath $gameRoot -Filter 'text_*.xml').Name
 foreach ($asset in $assets) {
-    $source = Join-Path $gameRoot $asset
+    $source = Join-Path $(if($asset -eq 'pfe.swf'){$hostRoot}else{$gameRoot}) $asset
     $target = Join-Path $runtimeRoot $asset
     if (!(Test-Path -LiteralPath $target) -or (Get-Item -LiteralPath $source).LastWriteTimeUtc -ne (Get-Item -LiteralPath $target).LastWriteTimeUtc) { Copy-Item -LiteralPath $source -Destination $target -Force }
 }
@@ -44,7 +50,7 @@ if ((Get-FileHash -LiteralPath (Join-Path $release 'LightAndDarknessMod.swf')).H
 $manifest = "$modRow`nLightAndDarkness|LightAndDarknessTest|1|0|0`n"
 if ($Mixed) {
     foreach ($name in @('ContinuousScene','RealisticVision','WallBlend','ModLoader')) {
-        $sourceRelease = Join-Path $gameRoot "mods\$name\release"
+        $sourceRelease = Join-Path $hostRoot "mods\$name\release"
         $testRelease = Join-Path $runtimeRoot "mods\$name\release"
         New-Item -ItemType Directory -Force -Path $testRelease | Out-Null
         Get-ChildItem -LiteralPath $sourceRelease -File | Where-Object Extension -In '.swf','.xml','.txt','.json' | ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination $testRelease -Force }
@@ -68,7 +74,11 @@ $process = $null
 try {
     $args = '-runtime "' + (Join-Path $gameRoot 'runtimes\air\win64') + '" "' + $descriptor + '" -nodebug'
     $process = Start-Process -FilePath (Join-Path $gameRoot 'adl64.exe') -ArgumentList $args -WorkingDirectory $runtimeRoot -WindowStyle Hidden -PassThru
-    $deadline = [DateTime]::UtcNow.AddSeconds(200)
+    if($CompatibilityRoot) {
+        . (Join-Path $hostRoot '../test-process.ps1')
+        [ContinuousSceneTest.Power]::Responsive($process) | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $evidence 'process-policy.json')
+    }
+    $deadline = [DateTime]::UtcNow.AddSeconds(300)
     $activeLog = Join-Path $storage 'test.log'
     while (!$process.HasExited -and [DateTime]::UtcNow -lt $deadline) {
         if ((Test-Path -LiteralPath $activeLog) -and (Select-String -LiteralPath $activeLog -Pattern '^\d+ (SUITE_PASS$|FAIL )' -Quiet)) { break }
@@ -79,6 +89,9 @@ try {
     if ($process -and !$process.HasExited) { Stop-Process -Id $process.Id -Force }
     if (Test-Path -LiteralPath $storage) { Copy-Item -LiteralPath $storage -Destination (Join-Path $evidence 'storage') -Recurse }
     Get-FileHash -LiteralPath (Join-Path $runtimeRoot 'pfe.swf'),(Join-Path $release 'LightAndDarknessMod.swf') | Format-List | Out-File (Join-Path $evidence 'hashes.txt')
+    $verifiedFiles=@((Join-Path $runtimeRoot 'pfe.swf'),(Join-Path $release 'LightAndDarknessMod.swf'),(Join-Path $runtimeRoot 'mods/LightAndDarkness/atmosphere.json'))
+    if($Mixed) {foreach($name in @('ContinuousScene','RealisticVision','WallBlend','ModLoader')) {$verifiedFiles+=Join-Path $runtimeRoot "mods/$name/release/${name}Mod.swf"}}
+    Get-FileHash -LiteralPath $verifiedFiles | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $evidence 'candidate-hashes.json')
     if (Test-Path -LiteralPath $descriptor) { Remove-Item -LiteralPath $descriptor }
 }
 Write-Output "Evidence: $evidence"

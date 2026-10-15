@@ -246,6 +246,8 @@ package {
                     scene.sceneAPI.travel();phase=11;tick=0;
                 } else if(phase==11 && world.land && world.land.act.id=="continuous_scene" && world.loc && world.allStat==1 && ++tick>25) {
                     check(runtime.location===world.loc,"large scene attachment succeeded");
+                    if("sceneSynchronousRedraw" in world.grafon)
+                        check(runtime.preparedScenes>0,"fixtures prepared before first large-scene raster");
                     check(world.grafon.sceneLarge && runtime.enabled && runtime.lamps.length>0,"large scene dynamic lighting active");
                     log("LARGE dims="+world.loc.spaceX+"x"+world.loc.spaceY+" lamps="+runtime.lamps.length+" chunks="+world.grafon.sceneSurfaces().length);
                     var oldPixels:BitmapData=largeSurface().nativeBuffers[0].clone();

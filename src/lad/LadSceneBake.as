@@ -45,7 +45,8 @@ package lad {
         private static function redraw(g:*,loc:*):void {
             // Give independent overlay mods a frame to release the old chunk
             // generation before the host preloads the whole scene again.
-            if("sceneLarge" in g && g.sceneLarge && "scenePreload" in g && (g.scenePreload || pendingPreload[g])) {
+            if("sceneLarge" in g && g.sceneLarge && "scenePreload" in g && (g.scenePreload || pendingPreload[g])
+                && !("sceneSynchronousRedraw" in g && g.sceneSynchronousRedraw)) {
                 if(!pendingPreload[g]) {
                     var state:Object={frames:3,listener:null};
                     state.listener=function(event:Event):void {

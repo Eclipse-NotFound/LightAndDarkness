@@ -1,0 +1,259 @@
+diff --git a/src/LightAndDarknessMod.as b/src/LightAndDarknessMod.as
+index 6daa261..f8dbb15 100644
+--- a/src/LightAndDarknessMod.as
++++ b/src/LightAndDarknessMod.as
+@@ -1,7 +1,7 @@
+ package {
+     import lad.LadRuntime;
+     public class LightAndDarknessMod {
+-        public static const VERSION:String = "0.2.0";
++        public static const VERSION:String = "0.2.1-scene";
+         public static var runtime:LadRuntime;
+         public static function init(main:*):void {
+             if(runtime == null) runtime = new LadRuntime(main);
+diff --git a/src/lad/LadHud.as b/src/lad/LadHud.as
+index e9c3859..392163d 100644
+--- a/src/lad/LadHud.as
++++ b/src/lad/LadHud.as
+@@ -4,6 +4,9 @@ package lad {
+     import flash.text.TextFormat;
+     public final class LadHud extends Sprite {
+         private var label:TextField=new TextField();
++        private var lastText:String="";
++        private var lastProgress:Number=-1;
++        private var lastHint:Boolean=false;
+         public function LadHud() {
+             name="LightAndDarknessHUD";mouseEnabled=false;mouseChildren=false;
+             label.defaultTextFormat=new TextFormat("Microsoft YaHei",13,0xffe7bb);
+@@ -12,7 +15,10 @@ package lad {
+         }
+         public function show(width:Number,headlamp:Boolean,hint:String,progress:Number):void {
+             x=Math.max(10,(width-460)/2);y=8;
+-            label.text="随身灯 "+(headlamp?"开":"关")+"  Alt+L\n"+hint;
++            var text:String="随身灯 "+(headlamp?"开":"关")+"  Alt+L\n"+hint;
++            if(text!=lastText) {label.text=text;lastText=text;}
++            if(progress==lastProgress && Boolean(hint.length)==lastHint) return;
++            lastProgress=progress;lastHint=Boolean(hint.length);
+             graphics.clear();graphics.beginFill(0x171b21,0.78);graphics.drawRoundRect(-8,-3,476,hint.length?68:33,8);graphics.endFill();
+             if(progress>0) {graphics.beginFill(0xe4bb77);graphics.drawRect(0,59,450*Math.min(1,progress),3);graphics.endFill();}
+         }
+diff --git a/src/lad/LadLightField.as b/src/lad/LadLightField.as
+index bdce8e3..4c0dc68 100644
+--- a/src/lad/LadLightField.as
++++ b/src/lad/LadLightField.as
+@@ -46,6 +46,7 @@ package lad {
+             if(data == null || data.width != width || data.height != height) {
+                 if(data) data.dispose(); data=new BitmapData(width,height,false,0);
+                 bitmap.bitmapData=data;
++                bitmap.smoothing=true;
+             }
+             bounds.setTo(vx,vy,width*cell,height*cell);
+             bitmap.x=vx; bitmap.y=vy;
+diff --git a/src/lad/LadRuntime.as b/src/lad/LadRuntime.as
+index bb232fa..3c1b19c 100644
+--- a/src/lad/LadRuntime.as
++++ b/src/lad/LadRuntime.as
+@@ -2,6 +2,7 @@ package lad {
+     import flash.display.DisplayObject;
+     import flash.display.Sprite;
+     import flash.events.Event;
++    import flash.events.DataEvent;
+     import flash.events.KeyboardEvent;
+     import flash.geom.Point;
+     import flash.geom.Rectangle;
+@@ -29,6 +30,7 @@ package lad {
+         public var hits:int=0;
+         public var repairs:int=0;
+         public var steps:int=0;
++        public var preparedScenes:int=0;
+         private var main:*;
+         private var game:*;
+         private var player:*;
+@@ -51,13 +53,44 @@ package lad {
+         public function LadRuntime(value:*) {
+             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
+             atmosphere.load();
+-            main.addChild(new LadCarrier({version:"0.2.0",runtime:this}));
++            main.addChild(new LadCarrier({version:"0.2.1-scene",runtime:this}));
+             main.addChild(hud);hud.visible=false;
+             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
++            main.addEventListener("continuousSceneBeforeRaster",beforeSceneRaster);
++            main.addEventListener("continuousSceneResetGeneration",resetSceneGeneration);
+             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
+             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
+             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
+-            LadLog.write("v0.2.0 loaded");
++            LadLog.write("v0.2.1-scene loaded");
++        }
++        private function resetSceneGeneration(event:DataEvent):void {
++            if(game && store.writable && store.data) {
++                var prefix:String=event.data+"|";
++                for(var key:String in store.data.rooms)
++                    if(key.indexOf(prefix)==0) delete store.data.rooms[key];
++                store.flush();
++            }
++        }
++        // The scene host has selected its new Location but has not rasterized
++        // its backdrops yet. Strip converted artwork in that same first pass.
++        private function beforeSceneRaster(event:Event):void {
++            try {
++                var WorldClass:Class=getDefinitionByName("fe.World") as Class;
++                world=WorldClass["w"];
++                if(!world || Number(WorldClass["boxDamage"])!=0.2) return;
++                if(world.game!==game) {
++                    detach(false);game=world.game;failedLocation=null;
++                    if(game) {store.bind(game);atmosphere.bind(store.data.atmosphereSettings);}
++                }
++                if(!enabled || !game || !world.gg || world.loc!==world.grafon.loc || !world.grafon.sceneLarge
++                    || world.loc===location || world.loc===failedLocation) return;
++                detach(false);
++                try {attach(world.loc,true);preparedScenes++;}
++                catch(error:*) {
++                    failedLocation=world.loc;detach(false);
++                    LadLog.write("PREPARE_FAILED "+error+" "+error.getStackTrace());
++                }
++            } catch(error:*) {LadLog.write("PREPARE_FAILED "+error+" "+error.getStackTrace());}
+         }
+         private function onFrame(event:Event):void {
+             try {
+@@ -93,21 +126,25 @@ package lad {
+                 }
+             } catch(error:*) {LadLog.write("FRAME_ERROR "+error+" "+error.getStackTrace());enabled=false;detach(true);}
+         }
+-        private function attach(loc:*):void {
++        private function attach(loc:*,beforeRaster:Boolean=false):void {
+             location=loc;player=world.gg;
+             if(!store.writable) throw new Error("saved light state requires migration");
+             var roomKey:String=LadStore.roomKey(loc);
+             lamps=LadLampCatalog.discover(loc,world.grafon,store.room(roomKey),atmosphere,roomKey);
+             darkZones=atmosphere.zones(loc,roomKey);
+             targetClass=ApplicationDomain.currentDomain.getDefinition("lad.native.LadLampTarget") as Class;
+-            if(lamps.length) LadSceneBake.change(world.grafon,loc,function():void {LadLampCatalog.strip(lamps);});
++            if(lamps.length) {
++                if(beforeRaster) LadLampCatalog.strip(lamps);
++                else LadSceneBake.change(world.grafon,loc,function():void {LadLampCatalog.strip(lamps);});
++            }
+             for each(var lamp:Object in lamps) {
+                 lampLayer.addChild(lamp.holder);
+                 lamp.proxy=new targetClass(this,lamp,loc);
+                 loc.units.push(lamp.proxy);
+             }
+-            store.flush();syncLamps();ensureAdapter();render();placeLayers();
+-            LadLog.write("ATTACH room="+loc.id+" lamps="+lamps.length+" state="+LadStore.roomKey(loc));
++            store.flush();syncLamps();ensureAdapter();
++            if(!beforeRaster) {render();placeLayers();}
++            LadLog.write("ATTACH room="+loc.id+" lamps="+lamps.length+" beforeRaster="+beforeRaster+" state="+LadStore.roomKey(loc));
+         }
+         private function detach(redraw:Boolean):void {
+             cancelRepair();
+@@ -176,6 +213,11 @@ package lad {
+             var a:Point=visual.globalToLocal(new Point(0,0));
+             var b:Point=visual.globalToLocal(new Point(main.stage.stageWidth,main.stage.stageHeight));
+             var view:Rectangle=new Rectangle(a.x,a.y,b.x-a.x,b.y-a.y);
++            var artView:Rectangle=view.clone();artView.inflate(128,128);
++            for each(var lamp:Object in lamps) {
++                var show:Boolean=artView.intersects(lamp.bounds);
++                if(lamp.holder.visible!=show) lamp.holder.visible=show;
++            }
+             field.render(location,view,lights(),location.sky?Math.max(0.6,ambient):ambient,
+                 atmosphere.settings.darkZones?darkZones:null,atmosphere.settings.darkness);
+         }
+diff --git a/src/lad/LadSceneBake.as b/src/lad/LadSceneBake.as
+index 5944732..d02da12 100644
+--- a/src/lad/LadSceneBake.as
++++ b/src/lad/LadSceneBake.as
+@@ -45,7 +45,8 @@ package lad {
+         private static function redraw(g:*,loc:*):void {
+             // Give independent overlay mods a frame to release the old chunk
+             // generation before the host preloads the whole scene again.
+-            if("sceneLarge" in g && g.sceneLarge && "scenePreload" in g && (g.scenePreload || pendingPreload[g])) {
++            if("sceneLarge" in g && g.sceneLarge && "scenePreload" in g && (g.scenePreload || pendingPreload[g])
++                && !("sceneSynchronousRedraw" in g && g.sceneSynchronousRedraw)) {
+                 if(!pendingPreload[g]) {
+                     var state:Object={frames:3,listener:null};
+                     state.listener=function(event:Event):void {
+diff --git a/tests/LightAndDarknessTest.as b/tests/LightAndDarknessTest.as
+index 0e8b310..0dc06b7 100644
+--- a/tests/LightAndDarknessTest.as
++++ b/tests/LightAndDarknessTest.as
+@@ -241,6 +241,8 @@ package {
+                     scene.sceneAPI.travel();phase=11;tick=0;
+                 } else if(phase==11 && world.land && world.land.act.id=="continuous_scene" && world.loc && world.allStat==1 && ++tick>25) {
+                     check(runtime.location===world.loc,"large scene attachment succeeded");
++                    if("sceneSynchronousRedraw" in world.grafon)
++                        check(runtime.preparedScenes>0,"fixtures prepared before first large-scene raster");
+                     check(world.grafon.sceneLarge && runtime.enabled && runtime.lamps.length>0,"large scene dynamic lighting active");
+                     log("LARGE dims="+world.loc.spaceX+"x"+world.loc.spaceY+" lamps="+runtime.lamps.length+" chunks="+world.grafon.sceneSurfaces().length);
+                     var oldPixels:BitmapData=largeSurface().nativeBuffers[0].clone();
+diff --git a/tests/LightCoreChecks.as b/tests/LightCoreChecks.as
+index 5efb1e0..f171830 100644
+--- a/tests/LightCoreChecks.as
++++ b/tests/LightCoreChecks.as
+@@ -13,6 +13,7 @@ package {
+             var view:Rectangle=new Rectangle(0,0,800,600);
+             var lamp:Object={id:"test",x:300,y:300,radius:360,color:0xffffff,power:1,angle:0,cone:Math.PI*2};
+             field.render(map,view,[lamp],0.14);
++            check(field.bitmap.smoothing,"resized illumination retains smooth interpolation",log);
+             var closed:Number=field.sample(500,300),lit:Number=field.sample(340,300);
+             check(closed<0.16 && lit>0.7,"opaque wall",log);
+             map.space[10][7].opac=0;
+diff --git a/tests/run.ps1 b/tests/run.ps1
+index dcf3b23..09601b8 100644
+--- a/tests/run.ps1
++++ b/tests/run.ps1
+@@ -1,7 +1,13 @@
+-param([switch]$SkipBuild,[switch]$Mixed,[switch]$Installed,[string]$ResumeTestId='')
++param([switch]$SkipBuild,[switch]$Mixed,[switch]$Installed,[string]$ResumeTestId='',[string]$CompatibilityRoot='')
+ $ErrorActionPreference = 'Stop'
+ $modRoot = Split-Path $PSScriptRoot -Parent
+ $gameRoot = Split-Path (Split-Path $modRoot -Parent) -Parent
++$hostRoot=$gameRoot
++if($CompatibilityRoot) {
++    $hostRoot=(Resolve-Path -LiteralPath $CompatibilityRoot).Path
++    $expected=(Resolve-Path -LiteralPath (Join-Path $gameRoot 'mods/ContinuousScene/build/runtime')).Path
++    if($Installed -or !$Mixed -or $hostRoot -ne $expected) {throw 'CompatibilityRoot requires the isolated ContinuousScene runtime and Mixed candidate mode'}
++}
+ if (!$SkipBuild -and !$Installed) { & (Join-Path $modRoot 'build\build.ps1') -Tests }
+ $modSource = Join-Path $modRoot $(if($Installed){'release\LightAndDarknessMod.swf'}else{'build\out\LightAndDarknessMod.swf'})
+ $modSourceHash = (Get-FileHash -LiteralPath $modSource).Hash
+@@ -24,7 +30,7 @@ New-Item -ItemType Directory -Force -Path $runtimeRoot, $evidence | Out-Null
+ $assets = @('pfe.swf','texture.swf','texture1.swf','sprite.swf','sprite1.swf','sound.swf','sound_unit.swf','sound_weapon.swf','lang.xml','rooms.xml')
+ $assets += (Get-ChildItem -LiteralPath $gameRoot -Filter 'text_*.xml').Name
+ foreach ($asset in $assets) {
+-    $source = Join-Path $gameRoot $asset
++    $source = Join-Path $(if($asset -eq 'pfe.swf'){$hostRoot}else{$gameRoot}) $asset
+     $target = Join-Path $runtimeRoot $asset
+     if (!(Test-Path -LiteralPath $target) -or (Get-Item -LiteralPath $source).LastWriteTimeUtc -ne (Get-Item -LiteralPath $target).LastWriteTimeUtc) { Copy-Item -LiteralPath $source -Destination $target -Force }
+ }
+@@ -38,7 +44,7 @@ if ((Get-FileHash -LiteralPath (Join-Path $release 'LightAndDarknessMod.swf')).H
+ $manifest = "$modRow`nLightAndDarkness|LightAndDarknessTest|1|0|0`n"
+ if ($Mixed) {
+     foreach ($name in @('ContinuousScene','RealisticVision','WallBlend','ModLoader')) {
+-        $sourceRelease = Join-Path $gameRoot "mods\$name\release"
++        $sourceRelease = Join-Path $hostRoot "mods\$name\release"
+         $testRelease = Join-Path $runtimeRoot "mods\$name\release"
+         New-Item -ItemType Directory -Force -Path $testRelease | Out-Null
+         Get-ChildItem -LiteralPath $sourceRelease -File | Where-Object Extension -In '.swf','.xml','.txt','.json' | ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination $testRelease -Force }
+@@ -61,7 +67,11 @@ $process = $null
+ try {
+     $args = '-runtime "' + (Join-Path $gameRoot 'runtimes\air\win64') + '" "' + $descriptor + '" -nodebug'
+     $process = Start-Process -FilePath (Join-Path $gameRoot 'adl64.exe') -ArgumentList $args -WorkingDirectory $runtimeRoot -WindowStyle Hidden -PassThru
+-    $deadline = [DateTime]::UtcNow.AddSeconds(200)
++    if($CompatibilityRoot) {
++        . (Join-Path $hostRoot '../test-process.ps1')
++        [ContinuousSceneTest.Power]::Responsive($process) | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $evidence 'process-policy.json')
++    }
++    $deadline = [DateTime]::UtcNow.AddSeconds(300)
+     $activeLog = Join-Path $storage 'test.log'
+     while (!$process.HasExited -and [DateTime]::UtcNow -lt $deadline) {
+         if ((Test-Path -LiteralPath $activeLog) -and (Select-String -LiteralPath $activeLog -Pattern '^\d+ (SUITE_PASS$|FAIL )' -Quiet)) { break }
+@@ -72,6 +82,9 @@ try {
+     if ($process -and !$process.HasExited) { Stop-Process -Id $process.Id -Force }
+     if (Test-Path -LiteralPath $storage) { Copy-Item -LiteralPath $storage -Destination (Join-Path $evidence 'storage') -Recurse }
+     Get-FileHash -LiteralPath (Join-Path $runtimeRoot 'pfe.swf'),(Join-Path $release 'LightAndDarknessMod.swf') | Format-List | Out-File (Join-Path $evidence 'hashes.txt')
++    $verifiedFiles=@((Join-Path $runtimeRoot 'pfe.swf'),(Join-Path $release 'LightAndDarknessMod.swf'),(Join-Path $runtimeRoot 'mods/LightAndDarkness/atmosphere.json'))
++    if($Mixed) {foreach($name in @('ContinuousScene','RealisticVision','WallBlend','ModLoader')) {$verifiedFiles+=Join-Path $runtimeRoot "mods/$name/release/${name}Mod.swf"}}
++    Get-FileHash -LiteralPath $verifiedFiles | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $evidence 'candidate-hashes.json')
+     if (Test-Path -LiteralPath $descriptor) { Remove-Item -LiteralPath $descriptor }
+ }
+ Write-Output "Evidence: $evidence"

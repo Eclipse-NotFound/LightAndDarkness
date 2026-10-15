@@ -13,6 +13,7 @@ package {
             var view:Rectangle=new Rectangle(0,0,800,600);
             var lamp:Object={id:"test",x:300,y:300,radius:360,color:0xffffff,power:1,angle:0,cone:Math.PI*2};
             field.render(map,view,[lamp],0.14);
+            check(field.bitmap.smoothing,"resized illumination retains smooth interpolation",log);
             var closed:Number=field.sample(500,300),lit:Number=field.sample(340,300);
             check(closed<0.16 && lit>0.7,"opaque wall",log);
             map.space[10][7].opac=0;
