@@ -37,6 +37,9 @@ package {
         private var markX:int;
         private var markY:int;
         private var markColor:uint;
+        private var faultMin:Number=10;
+        private var faultMax:Number=0;
+        private var faultSnapshot:String;
         private const KEY:String="lightanddarkness.state.v1";
         public function LightAndDarknessTest() {}
         public static function init(main:*):void {
@@ -120,6 +123,7 @@ package {
                 } else if(phase==2 && ++tick>45) {
                     check(runtime.enabled && runtime.steps>30 && runtime.lamps.length==9,"native room fixture conversion");
                     LightCoreChecks.run(runtime,log);
+                    AtmosphereChecks.run(runtime,log);
                     fixtureAtlas();
                     world.gui.dialText(null);
                     lamp=runtime.lamps[3];lampKey=lamp.key;baselineUnits=world.loc.units.length;
@@ -192,6 +196,39 @@ package {
                     }
                 } else if(phase==10 && ++tick>=20) {
                     check(lamp.state.hp==0,"native explosion damages fixture");
+                    lamp.state.hp=40;lamp.state.on=true;lamp.state.atmosphere={mode:"fast",brightness:0.45,frequency:1.75};
+                    runtime.setAtmospherePreference("speed",1.25);runtime.setAtmospherePreference("brightness",1.1);runtime.setAtmospherePreference("darkness",0.8);
+                    world.gg.setPos(lamp.x+30,480);world.gg.fixed=true;runtime.store.data.headlamp=false;runtime.store.flush();
+                    phase=30;tick=0;
+                } else if(phase==30) {
+                    faultMin=Math.min(faultMin,lamp.power);faultMax=Math.max(faultMax,lamp.power);
+                    if(++tick<60) return;
+                    check(faultMax-faultMin>0.3,"live fixture flickers during native simulation");
+                    var pausedTime:Number=runtime.atmosphereTime,wasPaused:Boolean=world.onPause;
+                    world.onPause=true;runtime.simulationStep(world.gg);world.onPause=wasPaused;
+                    check(runtime.atmosphereTime==pausedTime,"pause freezes atmosphere clock");
+                    world.gui.dialText(null);
+                    lamp.phase=0;runtime.atmosphereTime=0;runtime.render();
+                    var litExposure:Number=runtime.field.sample(lamp.x,lamp.y);snapshot("atmosphere-bright");
+                    runtime.atmosphereTime=0.7/(1.75*1.25);runtime.render();
+                    check(runtime.field.sample(lamp.x,lamp.y)<litExposure-0.15,"live flicker changes shared exposure raster");snapshot("atmosphere-dim");
+                    check(lamp.clip.transform.colorTransform.redMultiplier<0.4,"lamp glass follows dim output");
+                    world.pip.noAct=false;world.saveGame(9);faultSnapshot=world.getSave(9).game.triggers[KEY];
+                    check(runtime.needsRepair(lamp) && lamp.state.hp==40,"full-health faulty lamp is repairable");
+                    key(KeyboardEvent.KEY_DOWN,69);phase=31;tick=0;
+                } else if(phase==31 && ++tick>=70) {
+                    key(KeyboardEvent.KEY_UP,69);
+                    check(lamp.state.atmosphere.mode=="steady" && world.invent.items["scrap"].kol==6,"repair stabilizes fault and charges once");
+                    check(world.getSave(9).game.triggers[KEY]===faultSnapshot,"repair keeps old atmosphere snapshot immutable");
+                    world.saveGame(10);runtime.setAtmospherePreference("brightness",1.4);
+                    previousLocation=world.loc;world.comLoad=9;phase=32;
+                } else if(phase==32 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
+                    lamp=findLamp();
+                    check(lamp.state.atmosphere.mode=="fast" && lamp.state.atmosphere.brightness==0.45 && lamp.state.atmosphere.frequency==1.75,"native load restores fixture atmosphere");
+                    check(runtime.atmosphere.settings.brightness==1.1 && runtime.atmosphere.settings.speed==1.25 && runtime.atmosphere.settings.darkness==0.8,"native load restores atmosphere preferences");
+                    previousLocation=world.loc;world.comLoad=10;phase=33;
+                } else if(phase==33 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
+                    lamp=findLamp();check(lamp.state.atmosphere.mode=="steady" && lamp.state.atmosphere.brightness==0.45 && world.invent.items["scrap"].kol==6,"repaired atmosphere persists independently");
                     if(!mixed) {finish();return;}
                     var settings:*=main.getChildByName("ModSettingsCarrier");
                     check(settings && settings.modAPI,"shared settings carrier available");
@@ -228,7 +265,13 @@ package {
                     lamp=findLamp();
                     check(lamp.state.hp==40 && !lamp.state.on,"cold process restores repaired switched-off fixture");
                     check(world.invent.items["scrap"].kol==8,"cold process restores repair material cost");
-                    finish();
+                    previousLocation=world.loc;world.comLoad=9;phase=101;
+                } else if(phase==101 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
+                    lamp=findLamp();check(lamp.state.atmosphere.mode=="fast" && lamp.state.atmosphere.frequency==1.75 && lamp.state.atmosphere.brightness==0.45,"cold process restores fixture atmosphere");
+                    check(runtime.atmosphere.settings.speed==1.25 && runtime.atmosphere.settings.brightness==1.1 && runtime.atmosphere.settings.darkness==0.8,"cold process restores atmosphere preferences");
+                    previousLocation=world.loc;world.comLoad=10;phase=102;
+                } else if(phase==102 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
+                    lamp=findLamp();check(lamp.state.atmosphere.mode=="steady" && world.invent.items["scrap"].kol==6,"cold process restores repaired fault and cost");finish();
                 }
             } catch(error:*) {main.stage.removeEventListener(Event.ENTER_FRAME,frame);log("FAIL "+error+" "+error.getStackTrace());}
         }

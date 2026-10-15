@@ -22,6 +22,8 @@ package lad {
         private var terrainHash:uint = 0;
         private var terrainRegion:String = "";
         private var loc:*;
+        private var background:BitmapData;
+        private var backgroundKey:String="";
         public function LadLightField() {
             bitmap.name = "LightAndDarknessIllumination";
             bitmap.blendMode = BlendMode.MULTIPLY;
@@ -31,9 +33,10 @@ package lad {
             for each(var item:Object in cache) item.data.dispose();
             cache = {}; terrainHash = 0; terrainRegion = ""; loc = null;
             if(data) data.dispose(); data=null; bitmap.bitmapData=null;
+            if(background) background.dispose();background=null;backgroundKey="";
             if(bitmap.parent) bitmap.parent.removeChild(bitmap);
         }
-        public function render(location:*, view:Rectangle, lights:Array, ambient:Number):void {
+        public function render(location:*, view:Rectangle, lights:Array, ambient:Number,zones:Array=null,darkness:Number=1):void {
             var started:int = getTimer();
             if(loc !== location) { clear(); loc = location; }
             var vx:int = Math.floor(view.x/cell)*cell-cell;
@@ -61,13 +64,15 @@ package lad {
                 for each(var old:Object in cache) old.data.dispose(); cache={};
                 terrainHash=hash;terrainRegion=region;
             }
-            var shade:int=Math.max(0,Math.min(255,int(ambient*255)));
-            data.lock(); data.fillRect(data.rect,(shade<<16)|(shade<<8)|shade);
+            ambientBackground(ambient,zones,darkness);
+            data.lock(); data.copyPixels(background,background.rect,new Point());
             var alive:Object={};
             for each(var light:Object in lights) {
-                if(light.power<=0 || !bounds.intersects(new Rectangle(light.x-light.radius,light.y-light.radius,light.radius*2,light.radius*2))) continue;
+                if(!bounds.intersects(new Rectangle(light.x-light.radius,light.y-light.radius,light.radius*2,light.radius*2))) continue;
                 var identity:String=String(light.id);
                 alive[identity]=true;
+                // A momentary blackout retains its shadow geometry for the next lit frame.
+                if(light.power<=0) continue;
                 var signature:String=[int(light.x/4),int(light.y/4),light.radius,int(light.angle*90/Math.PI),light.cone].join(":");
                 var entry:Object=cache[identity];
                 if(entry==null || entry.key!=signature) {
@@ -82,6 +87,31 @@ package lad {
             }
             for(var key:String in cache) if(!alive[key]) {cache[key].data.dispose();delete cache[key];}
             data.unlock();elapsedMs=getTimer()-started;
+        }
+        private function ambientBackground(ambient:Number,zones:Array,darkness:Number):void {
+            var signature:String=[bounds.x,bounds.y,data.width,data.height,ambient,darkness,JSON.stringify(zones)].join(":");
+            if(signature==backgroundKey && background) return;
+            if(background) background.dispose();
+            var shade:int=Math.max(0,Math.min(255,int(ambient*255)));
+            background=new BitmapData(data.width,data.height,false,(shade<<16)|(shade<<8)|shade);
+            if(zones && darkness>0) for each(var zone:Object in zones) {
+                var rect:Rectangle=new Rectangle(zone.x,zone.y,zone.width,zone.height);
+                if(!bounds.intersects(rect)) continue;
+                var left:int=Math.max(0,int((rect.left-bounds.x)/cell));
+                var top:int=Math.max(0,int((rect.top-bounds.y)/cell));
+                var right:int=Math.min(data.width,Math.ceil((rect.right-bounds.x)/cell));
+                var bottom:int=Math.min(data.height,Math.ceil((rect.bottom-bounds.y)/cell));
+                for(var x:int=left;x<right;x++) for(var y:int=top;y<bottom;y++) {
+                    var wx:Number=bounds.x+(x+0.5)*cell,wy:Number=bounds.y+(y+0.5)*cell;
+                    var edge:Number=Math.min(wx-rect.left,rect.right-wx,wy-rect.top,rect.bottom-wy);
+                    if(edge<0) continue;
+                    var weight:Number=zone.feather>0?Math.min(1,edge/zone.feather):1;
+                    weight=weight*weight*(3-2*weight);
+                    var value:int=Math.min(background.getPixel(x,y)&255,int(shade*(1-darkness*weight*(1-zone.factor))));
+                    background.setPixel(x,y,(value<<16)|(value<<8)|value);
+                }
+            }
+            backgroundKey=signature;
         }
         private function makeLight(light:Object):BitmapData {
             var radius:Number=Number(light.radius);

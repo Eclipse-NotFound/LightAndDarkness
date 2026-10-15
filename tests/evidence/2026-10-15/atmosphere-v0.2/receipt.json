@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "installedAt": "2026-10-15T19:36:55.5597608+08:00",
+  "candidateSHA256": "01767319A54AC88961B2BA40391F0FA79359486EE5591E6A22D90AD49F84537C",
+  "previousSHA256": "DA13AA45B870C3576DEBD9CFB6098599BDA5A1A99EF1868F1872D00DA437F00C",
+  "backupDirectory": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\backups\\atmosphere-20261015-193655-513",
+  "status": "deployed-smoke-passed",
+  "manifestChanged": false,
+  "hostChanged": false,
+  "smokeEvidence": "remains-lad-test-20261015193026690-cold-193704",
+  "smokeAssertionsPassed": 7
+}

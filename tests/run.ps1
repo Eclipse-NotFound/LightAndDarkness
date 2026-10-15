@@ -31,6 +31,7 @@ foreach ($asset in $assets) {
 if (!(Test-Path -LiteralPath (Join-Path $runtimeRoot 'Rooms'))) { Copy-Item -LiteralPath (Join-Path $gameRoot 'Rooms') -Destination $runtimeRoot -Recurse }
 $release = Join-Path $runtimeRoot 'mods\LightAndDarkness\release'
 New-Item -ItemType Directory -Force -Path $release | Out-Null
+Copy-Item -LiteralPath (Join-Path $modRoot 'atmosphere.json') -Destination (Join-Path (Split-Path $release -Parent) 'atmosphere.json') -Force
 Copy-Item -LiteralPath $modSource, (Join-Path $modRoot 'build\out\LightAndDarknessTest.swf') -Destination $release -Force
 if ((Get-FileHash -LiteralPath (Join-Path $release 'LightAndDarknessMod.swf')).Hash -ne $modSourceHash) { throw 'Test copy differs from source' }
 @("Source: $modSource", "SHA256: $modSourceHash", "Manifest row: $modRow") | Set-Content -LiteralPath (Join-Path $evidence 'source.txt') -Encoding utf8
@@ -63,7 +64,7 @@ try {
     $deadline = [DateTime]::UtcNow.AddSeconds(200)
     $activeLog = Join-Path $storage 'test.log'
     while (!$process.HasExited -and [DateTime]::UtcNow -lt $deadline) {
-        if ((Test-Path -LiteralPath $activeLog) -and (Select-String -LiteralPath $activeLog -Pattern 'SUITE_PASS| FAIL ' -Quiet)) { break }
+        if ((Test-Path -LiteralPath $activeLog) -and (Select-String -LiteralPath $activeLog -Pattern '^\d+ (SUITE_PASS$|FAIL )' -Quiet)) { break }
         Start-Sleep -Milliseconds 500
     }
     if ([DateTime]::UtcNow -ge $deadline) { throw "Test timeout. Process $($process.Id)" }
@@ -77,4 +78,4 @@ Write-Output "Evidence: $evidence"
 $log = Join-Path $evidence 'storage\test.log'
 if (Test-Path -LiteralPath $log) { Get-Content -LiteralPath $log }
 else { throw "No test log at $log" }
-if (!(Select-String -LiteralPath $log -Pattern 'SUITE_PASS' -Quiet) -or (Select-String -LiteralPath $log -Pattern 'FAIL' -Quiet)) { throw 'Test did not pass' }
+if (!(Select-String -LiteralPath $log -Pattern '^\d+ SUITE_PASS$' -Quiet) -or (Select-String -LiteralPath $log -Pattern '^\d+ FAIL ' -Quiet)) { throw 'Test did not pass' }

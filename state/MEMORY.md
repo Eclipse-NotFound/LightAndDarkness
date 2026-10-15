@@ -6,32 +6,31 @@ Remains 1.02 动态光暗模组：战术光暗与生存探索并重，兼顾氛�
 
 ## 2. 用户偏好与协作约定
 
-2026-10-15 用户授权创建 AGENT_SCOPE.md 并实施动态灯光、命中损坏、维修、保存；另授权最小范围只读 Sandevistan/build/tools 和 ContinuousScene、RealisticVision、WallBlend、ModLoader 的工具/接口。随后明确说“请部署”，已完成。未修改其他模组；没有新建并行委托；没有操作用户正在运行的游戏或pfe存储。
+2026-10-15 用户授权创建AGENT_SCOPE.md、动态灯光/损坏/维修/保存；允许最小范围只读Sandevistan/build/tools和ContinuousScene、RealisticVision、WallBlend、ModLoader接口。随后明确“请部署”，并继续要求稳定光、多亮度、不同频率闪烁和黑暗区。本轮沿用部署授权更新0.2.0。未修改其他模组，未新建委托，未操作用户实例或pfe存储。
 
 ## 3. 当前状态
 
-- 0.1.0已部署：墙/门遮光、动态随身灯、10类灯具、原版子弹/爆炸伤害、两秒维修、原版槽保存、普通视觉适配和设置页。
-- release/LightAndDarknessMod.swf与已测build/out候选字节相同，SHA256 DA13AA45B870C3576DEBD9CFB6098599BDA5A1A99EF1868F1872D00DA437F00C；12个自身类，无fe.*存根或测试代码。
-- 最终47项通过：remains-lad-test-20261015171345633，含192×75格/88灯/240块及RV/WB/ModLoader/ContinuousScene组合；前一轮同字节也通过。精选证据 tests/evidence/2026-10-15。
-- 同一专用AIR身份关闭后重启，磁盘槽7/8的4项冷启动断言通过；候选字节未变，证据cold-*.log/txt。
-- AGENT_SCOPE已按授权用审阅后的精确调用创建；未关闭护栏。项目源码、构建、签名存根和隔离测试均在自己的独立仓库。
-- 17:45安装正式release，仅追加加载行1/0/0，原12行和注释保持原文。宿主9987C696BEBBEB0626D8F73DA775CF867B2CED4FF626137FD9F161264270F938未改；pfe存储未写。
-- 部署后从正式release/加载行回读：remains-lad-test-20261015174623287又通过47条，含版本日志与持续心跳。证据tests/evidence/2026-10-15/deployment；记录与回退state/deployment-2026-10-15.md。
+- 0.2.0已部署：保留基础动态遮光/灯具/维修/保存，新增steady/slow/fast/burst、三档亮度、室内柔边暗区、五项氛围设置和atmosphere.json定点规则。
+- 正式release与已测候选同字节：SHA256 01767319A54AC88961B2BA40391F0FA79359486EE5591E6A22D90AD49F84537C，16,778字节，13个自身类，无fe.*存根/探针。
+- 最终remains-lad-test-20261015193026690：79项通过，含192×75格/88灯/240块及RV/WB/ModLoader/ContinuousScene组合；关闭进程后四槽读档7项通过（cold-193333）。
+- 19:36备份0.1.0并定向更新release，宿主9987C696…270F938及加载名单35A1A176…109E1F2未改，仍1/0/0。正式回读重新启动又通过7项（cold-193704），有0.2.0日志和心跳。
+- 灯具样式/亮度/频率、维修及新增氛围偏好随原版槽保存；更改配置规则更新现有灯一次，同规则读档保留维修。运行时周期时钟不存盘。
+- 回退旧版：build/backups/atmosphere-20261015-193655-513/LightAndDarknessMod.v0.1.0.swf（DA13AA45…37F00C）。当前验证及完整指纹见tests/atmosphere-verification-2026-10-15.md，旧安装历史state/deployment-2026-10-15.md。
 
 ## 4. 正在进行与卡点
 
-部署及验证完成，用户保存进度并重启游戏后生效；没有未解决的功能断言失败。大场景转换性能仍需改善：照明图通常1–2ms，但原生全图预载有秒级停顿。
+0.2.0部署及验证完成，用户保存进度并重启游戏后生效。最终没有功能断言失败。灯光氛围阶段一般1–2ms；原生全图预载仍有秒级停顿，部署复核还观察到资源开机加载约74秒，不将其混成照明帧耗时。
 
 ## 5. 已知问题
 
-- 内置随身灯尚无独立装备/电量/掉落；环境亮度和感知选项暂不跨启动保存，灯具与随身灯状态随槽保存。
+- 内置随身灯尚无独立装备/电量/掉落；原有环境亮度/感知选项暂不跨启动保存，新增五项氛围偏好随槽保存。
 - 未认证DLC、联机、全部12模组、全部敌种、随机地图重置和真人输入。维修松键/材料不足已断言；移动/受伤/暂停中断已实现但未专项验证。
 - 大场景保留原生画面历史，不保证第三方绕开历史直接改像素。暗区只影响普通视觉visibility，听觉/demask/锁定记忆不变。
 - ModScanner重建清单不保留手工版本开关，新发现项会变为1/1/1；本版运行时另有boxDamage==0.2守卫。未改其他模组的supported-mods；重扫后需核对本模组开关，详见部署记录。
 
 ## 6. 下一步
 
-当前无待执行部署。后续装备/电量、战斗平衡与场景转换停顿按用户反馈推进。以后发布先核对最新宿主/清单和release指纹，保留其他行；不要新加专属loader。
+当前无待执行部署。按用户反馈调整氛围分布与明暗平衡，装备/电量及预载停顿仍待后续需求。以后发布先核对宿主/清单/release指纹，不覆盖他人行、不新加专属loader。
 
 ## 7. 深入了解
 
@@ -40,4 +39,5 @@ Remains 1.02 动态光暗模组：战术光暗与生存探索并重，兼顾氛�
 - 证据：../knowledge/discoveries/{rendering,fixtures,combat}-audit.md
 - 公共沉淀：../../../shared-knowledge/rendering/discoveries/native-lighting-vs-illumination-2026-10-15.md
 - 实现：../design/implementation-v0.1.md；验证：../tests/verification-2026-10-15.md；日志journal首条。
+- 氛围配置/频率含义：../design/atmosphere-v0.2.md、../atmosphere.json；本版证据../tests/evidence/2026-10-15/atmosphere-v0.2。
 - build/build.ps1 -Tests构建；-TestsOnly仅更新探针。tests/run.ps1 -SkipBuild -Mixed隔离运行，加-Installed回读正式文件及加载行且不构建；AIR需审阅允许写独立测试存储，appid为remains-lad-test-*。部署仍用通用mods/loader-manifest.txt。

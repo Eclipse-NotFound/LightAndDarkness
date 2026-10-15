@@ -12,7 +12,7 @@ package lad {
             light6:{radius:320,color:0xffedc4},light7:{radius:360,color:0xd0e7ff}
         };
         public static function isLamp(id:String):Boolean {return TYPES.hasOwnProperty(id);}
-        public static function discover(loc:*,g:*,saved:Object):Array {
+        public static function discover(loc:*,g:*,saved:Object,atmosphere:LadAtmosphere,roomKey:String):Array {
             var result:Array=[],duplicates:Object={};
             for each(var bo:* in loc.backobjs) {
                 if(!isLamp(String(bo.id)) || bo.vis==null) continue;
@@ -33,6 +33,7 @@ package lad {
                 }
                 if(!isFinite(Number(state.hp))) throw new Error("invalid saved fixture HP: "+key);
                 state.hp=Math.max(0,Math.min(40,Number(state.hp)));
+                state.atmosphere=atmosphere.style(state.atmosphere,roomKey+"#"+key,String(bo.id),String(loc.land.act.id),String(loc.id));
                 var visual:Sprite=new Sprite();visual.mouseEnabled=false;visual.mouseChildren=false;
                 visual.x=bo.X;visual.y=bo.Y;clip.scaleX=bo.scX;clip.scaleY=bo.scY;visual.addChild(clip);
                 var model:Object=TYPES[bo.id];
@@ -41,7 +42,8 @@ package lad {
                     onFrame:Math.max(1,int(bo.frameOn)),offFrame:int(bo.frameOff),nativeFrame:int(bo.frame),
                     bounds:new Rectangle(x1,y1,Math.max(8,x2-x1),Math.max(8,y2-y1)),
                     x:(x1+x2)/2,y:(y1+y2)/2,radius:model.radius,color:model.color,
-                    proxy:null,visualState:"",powered:loc.lightOn!=-1};
+                    proxy:null,visualState:"",powered:loc.lightOn!=-1,
+                    phase:(LadAtmosphere.seed(roomKey+"#"+key)%10000)/10000,power:0};
                 result.push(lamp);
             }
             return result;
@@ -58,14 +60,16 @@ package lad {
             }
         }
         public static function visual(lamp:Object):void {
-            var lit:Boolean=lamp.state.hp>0 && lamp.state.on && lamp.powered;
-            var signature:String=[lit,lamp.state.hp<=0].join(":");
+            var level:Number=Math.min(1,Math.max(0,Number(lamp.power)));
+            var lit:Boolean=level>0.06;
+            var signature:String=[lit,lamp.state.hp<=0,int(level*24)].join(":");
             if(signature==lamp.visualState) return;lamp.visualState=signature;
             var off:int=lamp.offFrame>0?lamp.offFrame:Math.min(2,lamp.clip.totalFrames);
             lamp.clip.gotoAndStop(lit?lamp.onFrame:off);
             // Several native off frames still contain white pixels/glow. Make
             // the glass visibly unlit even when the asset lacks a dark frame.
-            lamp.clip.transform.colorTransform=lit?new ColorTransform():new ColorTransform(0.28,0.28,0.28);
+            var tint:Number=lit?0.28+0.72*level:0.28;
+            lamp.clip.transform.colorTransform=new ColorTransform(tint,tint,tint);
             lamp.clip.alpha=lamp.state.hp<=0?0.48:1;
             lamp.holder.graphics.clear();
             if(lamp.state.hp<=0) {

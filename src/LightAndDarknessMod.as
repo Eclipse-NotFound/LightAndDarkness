@@ -1,7 +1,7 @@
 package {
     import lad.LadRuntime;
     public class LightAndDarknessMod {
-        public static const VERSION:String = "0.1.0";
+        public static const VERSION:String = "0.2.0";
         public static var runtime:LadRuntime;
         public static function init(main:*):void {
             if(runtime == null) runtime = new LadRuntime(main);

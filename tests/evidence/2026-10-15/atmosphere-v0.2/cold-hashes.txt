@@ -1,0 +1,9 @@
+
+Algorithm : SHA256
+Hash      : 9987C696BEBBEB0626D8F73DA775CF867B2CED4FF626137FD9F161264270F938
+Path      : D:\Program Files\Steam\steamapps\common\Remains\mods\LightAndDarkness\build\runtime\pfe.swf
+
+Algorithm : SHA256
+Hash      : 01767319A54AC88961B2BA40391F0FA79359486EE5591E6A22D90AD49F84537C
+Path      : D:\Program Files\Steam\steamapps\common\Remains\mods\LightAndDarkness\build\runtime\mods\LightAndDarkness\release\LightAndDarknessMod.swf
+
