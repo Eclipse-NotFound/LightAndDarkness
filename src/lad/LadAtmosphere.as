@@ -25,7 +25,8 @@ package lad {
             value=value || {};
             settings={flicker:value.flicker!==false,brightness:clamp(value.brightness,0.25,1.5,1),
                 speed:clamp(value.speed,0.25,2,1),darkZones:value.darkZones!==false,
-                darkness:clamp(value.darkness,0,1,1)};
+                darkness:clamp(value.darkness,0,1,1),projectiles:value.projectiles!==false,
+                projectileBrightness:clamp(value.projectileBrightness,0.25,1.5,1)};
         }
         public static function clamp(value:*,low:Number,high:Number,fallback:Number):Number {
             return value==null || !isFinite(Number(value))?fallback:Math.max(low,Math.min(high,Number(value)));

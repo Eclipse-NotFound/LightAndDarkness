@@ -1,0 +1,7 @@
+4265 BOOT remains-lad-projectile-20261015221738467 mode=cold
+19792 PRODUCTION_CLASSES lad::LadProjectiles / lad::LadLightField
+21209 PASS production runtime exposes projectile service
+21211 PASS cold native slot restores disabled projectile preference
+21212 PASS cold native slot restores projectile brightness preference
+21213 PASS cold load never resurrects saved projectile lights
+21217 SUITE_PASS

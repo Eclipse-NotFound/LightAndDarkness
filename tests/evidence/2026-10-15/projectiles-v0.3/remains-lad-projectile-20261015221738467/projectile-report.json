@@ -1,0 +1,1091 @@
+{
+  "mode": "mixed",
+  "metrics": {
+    "stressPulseCount": 74,
+    "visualCoverage": [
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbularson",
+        "visual": "arson",
+        "colour": "ffc078",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulbaleegg",
+        "visual": "baleegg",
+        "colour": "d5ff89",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulblade",
+        "visual": "blade",
+        "colour": "d4b5ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulblood",
+        "visual": "blood",
+        "colour": "ff9ca9",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulbloodlight",
+        "visual": "bloodlight",
+        "colour": "ff9ca9",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulbloodpsy",
+        "visual": "bloodpsy",
+        "colour": "ff9ca9",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulblump",
+        "visual": "blump",
+        "colour": "ffac99",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulcryo",
+        "visual": "cryo",
+        "colour": "bdefff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbuldart",
+        "visual": "dart",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbuldefwave",
+        "visual": "defwave",
+        "colour": "d4b5ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbuldflame",
+        "visual": "dflame",
+        "colour": "ffc078",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbuldray",
+        "visual": "dray",
+        "colour": "b695e8",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbuleclipse",
+        "visual": "eclipse",
+        "colour": "c1a0ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulfireball",
+        "visual": "fireball",
+        "colour": "ffc078",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulflame",
+        "visual": "flame",
+        "colour": "ffc078",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulflame2",
+        "visual": "flame2",
+        "colour": "ffc078",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulflare",
+        "visual": "flare",
+        "colour": "ffc078",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulfriend",
+        "visual": "friend",
+        "colour": "f1ceff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulgren40",
+        "visual": "gren40",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulgren50",
+        "visual": "gren50",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulice",
+        "visual": "ice",
+        "colour": "bdefff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulkapl",
+        "visual": "kapl",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullaser",
+        "visual": "laser",
+        "colour": "ff9a88",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullaser1",
+        "visual": "laser1",
+        "colour": "aedcff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullaser2",
+        "visual": "laser2",
+        "colour": "ff9a88",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullaser3",
+        "visual": "laser3",
+        "colour": "aedcff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullaser4",
+        "visual": "laser4",
+        "colour": "c7b1ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullaser5",
+        "visual": "laser5",
+        "colour": "ff9a88",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullaser6",
+        "visual": "laser6",
+        "colour": "f1ceff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullaser7",
+        "visual": "laser7",
+        "colour": "b695e8",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullaser8",
+        "visual": "laser8",
+        "colour": "aedcff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbullightning",
+        "visual": "lightning",
+        "colour": "a9e2ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulmbul",
+        "visual": "mbul",
+        "colour": "d4b5ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulmray",
+        "visual": "mray",
+        "colour": "c7b1ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulnecrbullet",
+        "visual": "necrbullet",
+        "colour": "bca2e8",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulnecro",
+        "visual": "necro",
+        "colour": "bca2e8",
+        "lightCount": 2
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulpink",
+        "visual": "pink",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulpinkkapl",
+        "visual": "pinkkapl",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulpinkplevok",
+        "visual": "pinkplevok",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulplasma",
+        "visual": "plasma",
+        "colour": "acffa2",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulplasma1",
+        "visual": "plasma1",
+        "colour": "acffa2",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulplasma2",
+        "visual": "plasma2",
+        "colour": "acffa2",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulplasma3",
+        "visual": "plasma3",
+        "colour": "acffa2",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulplasma3a",
+        "visual": "plasma3a",
+        "colour": "acffa2",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulplasma4",
+        "visual": "plasma4",
+        "colour": "acffa2",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulplasma5",
+        "visual": "plasma5",
+        "colour": "acffa2",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulplasma6",
+        "visual": "plasma6",
+        "colour": "acffa2",
+        "lightCount": 2
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulplevok",
+        "visual": "plevok",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulpsy",
+        "visual": "psy",
+        "colour": "d4b5ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulpulse",
+        "visual": "pulse",
+        "colour": "a9e2ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulrail",
+        "visual": "rail",
+        "colour": "c6e9ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulrocket",
+        "visual": "rocket",
+        "colour": "ffb06b",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulrocketgas",
+        "visual": "rocketgas",
+        "colour": "ffb06b",
+        "lightCount": 2
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulsaw",
+        "visual": "saw",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulsel",
+        "visual": "sel",
+        "colour": "a9e2ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulship",
+        "visual": "ship",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulskybolt",
+        "visual": "skybolt",
+        "colour": "a9e2ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulspark",
+        "visual": "spark",
+        "colour": "a9e2ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulsparkl",
+        "visual": "sparkl",
+        "colour": "c3a4ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulspikenail",
+        "visual": "spikenail",
+        "colour": null,
+        "lightCount": 0
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbultelebullet",
+        "visual": "telebullet",
+        "colour": "d4b5ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbultermo",
+        "visual": "termo",
+        "colour": "ffd29b",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulttlaser",
+        "visual": "ttlaser",
+        "colour": "ff9a88",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulttmoln",
+        "visual": "ttmoln",
+        "colour": "a9e2ff",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulttnavod",
+        "visual": "ttnavod",
+        "colour": "ffb06b",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulttplasma",
+        "visual": "ttplasma",
+        "colour": "acffa2",
+        "lightCount": 2
+      },
+      {
+        "actualLit": true,
+        "expectedLit": true,
+        "nativeClass": "visbulttzalp",
+        "visual": "ttzalp",
+        "colour": "9effb6",
+        "lightCount": 2
+      },
+      {
+        "actualLit": false,
+        "expectedLit": false,
+        "nativeClass": "visbulvenom",
+        "visual": "venom",
+        "colour": null,
+        "lightCount": 0
+      }
+    ],
+    "stressVisibleCount": 24,
+    "fixtureCount": 9,
+    "stressRenderMs": 4,
+    "stressCaptureMs": 5,
+    "preparedScenes": 0,
+    "visualCount": 68
+  },
+  "elapsedMs": 27884,
+  "applicationID": "remains-lad-projectile-20261015221738467",
+  "failed": 0,
+  "error": "",
+  "passed": 131,
+  "boundary": "Isolated AIR application; dynamic production classes and real native Bullet/Part/Weapon/Tile. No production or native classes embedded in probe. Synthetic native-object setup is distinguished from live-frame integration.",
+  "status": "passed",
+  "assertions": [
+    {
+      "label": "production runtime exposes projectile service",
+      "pass": true
+    },
+    {
+      "label": "native AllData enumerates all 68 distinct projectile visual identifiers including variants",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage arson illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage baleegg illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage blade illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage blood illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage bloodlight illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage bloodpsy illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage blump illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage cryo illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage dart stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage defwave illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage dflame illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage dray illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage eclipse illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage fireball illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage flame illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage flame2 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage flare illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage friend illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage gren40 stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage gren50 stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage ice illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage kapl stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage laser illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage laser1 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage laser2 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage laser3 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage laser4 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage laser5 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage laser6 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage laser7 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage laser8 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage lightning illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage mbul illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage mray illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage necrbullet illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage necro illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage pink stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage pinkkapl stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage pinkplevok stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage plasma illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage plasma1 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage plasma2 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage plasma3 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage plasma3a illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage plasma4 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage plasma5 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage plasma6 illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage plevok stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage psy illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage pulse illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage rail illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage rocket illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage rocketgas illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage saw stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage sel illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage ship stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage skybolt illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage spark illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage sparkl illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage spikenail stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage telebullet illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage termo illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage ttlaser illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage ttmoln illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage ttnavod illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage ttplasma illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage ttzalp illuminates",
+      "pass": true
+    },
+    {
+      "label": "native visual coverage venom stays dark in flight",
+      "pass": true
+    },
+    {
+      "label": "plain Object cannot impersonate native projectile",
+      "pass": true
+    },
+    {
+      "label": "real native ballistic bullet receives warm short tracer profile",
+      "pass": true
+    },
+    {
+      "label": "real native Weapon incendiary ammo overrides unchanged ballistic damage type",
+      "pass": true
+    },
+    {
+      "label": "live plasma ammo modification wins over ballistic visual",
+      "pass": true
+    },
+    {
+      "label": "live EMP ammo receives electric light profile",
+      "pass": true
+    },
+    {
+      "label": "native laser visual with spring stretch receives beam profile",
+      "pass": true
+    },
+    {
+      "label": "spring stretch alone does not classify ballistic shot as beam",
+      "pass": true
+    },
+    {
+      "label": "native physical grenade stays unlit before detonation",
+      "pass": true
+    },
+    {
+      "label": "unlit physical grenade produces no flight illumination",
+      "pass": true
+    },
+    {
+      "label": "invisible native blast-delivery bullet is excluded",
+      "pass": true
+    },
+    {
+      "label": "melee sweep marker is excluded even if a visual is attached",
+      "pass": true
+    },
+    {
+      "label": "physical venom projectile stays dark",
+      "pass": true
+    },
+    {
+      "label": "native energy projectile receives plasma profile",
+      "pass": true
+    },
+    {
+      "label": "native SmartBullet is classified without replacing guidance",
+      "pass": true
+    },
+    {
+      "label": "actual native addObj ADDED enters production runtime observer",
+      "pass": true
+    },
+    {
+      "label": "native lifetime ends in same frame as constructor event",
+      "pass": true
+    },
+    {
+      "label": "same-frame removed bullet retains final ammo classification and short light",
+      "pass": true
+    },
+    {
+      "label": "capture does not revive or alter native removed bullet damage or lifetime",
+      "pass": true
+    },
+    {
+      "label": "duplicate observe and capture neither duplicate light nor mutate live bullet",
+      "pass": true
+    },
+    {
+      "label": "native display remount leaves projectile gameplay intact",
+      "pass": true
+    },
+    {
+      "label": "real plasma profile brightens shared raster with a green tint",
+      "pass": true
+    },
+    {
+      "label": "projectile brightness scales existing light rather than extending lifetime",
+      "pass": true
+    },
+    {
+      "label": "detached projectile light decays on native-rate simulation advance",
+      "pass": true
+    },
+    {
+      "label": "detached projectile afterglow expires without retained pulse",
+      "pass": true
+    },
+    {
+      "label": "native collision endpoint really enters opaque wall tile",
+      "pass": true
+    },
+    {
+      "label": "wall impact light retreats to free side of native collision wall",
+      "pass": true
+    },
+    {
+      "label": "projectile light illuminates near wall while opaque wall shields far side",
+      "pass": true
+    },
+    {
+      "label": "beam light nodes follow actual native start and endpoint",
+      "pass": true
+    },
+    {
+      "label": "long resolved native beam keeps continuous bounded illumination across current viewport",
+      "pass": true
+    },
+    {
+      "label": "native blit explosion Part is recognized by production resource identity",
+      "pass": true
+    },
+    {
+      "label": "native MovieClip explosion Part receives plasma colour",
+      "pass": true
+    },
+    {
+      "label": "native ejected shell Part is not a light source",
+      "pass": true
+    },
+    {
+      "label": "native poison cloud does not become a room lamp",
+      "pass": true
+    },
+    {
+      "label": "shared explosion bitmap keeps native fire blend colour classification",
+      "pass": true
+    },
+    {
+      "label": "shared explosion bitmap keeps large native blast scale",
+      "pass": true
+    },
+    {
+      "label": "native sparkle grenade alias has no light before detonation",
+      "pass": true
+    },
+    {
+      "label": "native sparkle grenade alias selects violet detonation",
+      "pass": true
+    },
+    {
+      "label": "generic and sparkle explosion cluster keeps strongest special colour without duplicate light",
+      "pass": true
+    },
+    {
+      "label": "direct invisible unlinked native explosion is detected through actual ADDED particles",
+      "pass": true
+    },
+    {
+      "label": "repeated capture cannot replay native explosion particles",
+      "pass": true
+    },
+    {
+      "label": "one native explosion and its particle cluster do not create unbounded lights",
+      "pass": true
+    },
+    {
+      "label": "native Weapon attack/actions creates genuine projectile",
+      "pass": true
+    },
+    {
+      "label": "real native weapon firing reaches production illumination",
+      "pass": true
+    },
+    {
+      "label": "real illuminated native projectile still deals native collision damage",
+      "pass": true
+    },
+    {
+      "label": "dense projectile observer obeys explicit tracked-object cap",
+      "pass": true
+    },
+    {
+      "label": "dense short-light batch obeys pulse and render caps",
+      "pass": true
+    },
+    {
+      "label": "offscreen projectile lights are culled from render list",
+      "pass": true
+    },
+    {
+      "label": "bounded projectile stress raster completes without runaway frame",
+      "pass": true
+    },
+    {
+      "label": "location unload discards every transient reference and simulation clock",
+      "pass": true
+    },
+    {
+      "label": "real runtime retains generated short light for pause integration check",
+      "pass": true
+    },
+    {
+      "label": "twelve real paused frames do not advance projectile simulation age",
+      "pass": true
+    },
+    {
+      "label": "paused frames preserve short-light fade without wall-clock expiry",
+      "pass": true
+    },
+    {
+      "label": "native player simulation hook resumes projectile clock",
+      "pass": true
+    },
+    {
+      "label": "real resumed frames fade short light rather than freezing it into scene",
+      "pass": true
+    },
+    {
+      "label": "projectile setting off immediately clears transient state",
+      "pass": true
+    },
+    {
+      "label": "whole-mod disable clears transient light and references",
+      "pass": true
+    },
+    {
+      "label": "native test slot exists and save completes",
+      "pass": true
+    },
+    {
+      "label": "native save stores projectile opt-out with ordinary light preferences",
+      "pass": true
+    },
+    {
+      "label": "native save omits transient projectile state",
+      "pass": true
+    },
+    {
+      "label": "actual native reload restores projectile settings on new Location",
+      "pass": true
+    },
+    {
+      "label": "actual native room replacement has no previous-scene projectile light",
+      "pass": true
+    }
+  ]
+}

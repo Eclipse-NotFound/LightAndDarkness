@@ -1,0 +1,29 @@
+{
+  "mode": "cold",
+  "boundary": "Isolated AIR application; dynamic production classes and real native Bullet/Part/Weapon/Tile. No production or native classes embedded in probe. Synthetic native-object setup is distinguished from live-frame integration.",
+  "metrics": {},
+  "elapsedMs": 16950,
+  "applicationID": "remains-lad-projectile-20261015221738467",
+  "failed": 0,
+  "error": "",
+  "passed": 4,
+  "status": "passed",
+  "assertions": [
+    {
+      "label": "production runtime exposes projectile service",
+      "pass": true
+    },
+    {
+      "label": "cold native slot restores disabled projectile preference",
+      "pass": true
+    },
+    {
+      "label": "cold native slot restores projectile brightness preference",
+      "pass": true
+    },
+    {
+      "label": "cold load never resurrects saved projectile lights",
+      "pass": true
+    }
+  ]
+}

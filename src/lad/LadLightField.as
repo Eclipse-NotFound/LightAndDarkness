@@ -126,7 +126,7 @@ package lad {
             var cone:Number=Number(light.cone),center:Number=Number(light.angle);
             var full:Boolean=cone>=Math.PI*2-0.01;
             var start:Number=full?0:center-cone/2;
-            var count:int=Math.max(24,Math.ceil(cone/(Math.PI/90)));
+            var count:int=light.transient?64:Math.max(24,Math.ceil(cone/(Math.PI/90)));
             if(!full) mask.graphics.moveTo(radius/cell,radius/cell);
             for(var i:int=0;i<=count;i++) {
                 var angle:Number=start+cone*i/count;

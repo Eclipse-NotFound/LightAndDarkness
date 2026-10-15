@@ -13,3 +13,5 @@
 /build/keybind-runtime/
 /build/keybind-scene-runtime/
 /build/out-scene-v022/
+/build/projectile-runtime/
+/build/projectile-regression-runtime/
