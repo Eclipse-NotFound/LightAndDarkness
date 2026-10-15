@@ -1,0 +1,17 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3BA6A9C93F20C6515648097E621556DC6DC8AB191780D83250CFAF27BB23BB9C",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\out\\projectiles-v030\\LightAndDarknessMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "9987C696BEBBEB0626D8F73DA775CF867B2CED4FF626137FD9F161264270F938",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\edge-game-runtime\\pfe.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "70636B6D7CB4ACA64988C4950782B6DBADC9C552766638997D9917636262C4BC",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\edge-game-runtime\\mods\\LightAndDarkness\\release\\LightEdgeGameProbe.swf"
+  }
+]
