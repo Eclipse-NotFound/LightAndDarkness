@@ -1,0 +1,6 @@
+/build/out/
+/build/host-audit/
+/build/tmp/
+/release/*.swf
+/release/*.swc
+*.log
