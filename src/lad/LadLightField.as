@@ -46,6 +46,7 @@ package lad {
             if(data == null || data.width != width || data.height != height) {
                 if(data) data.dispose(); data=new BitmapData(width,height,false,0);
                 bitmap.bitmapData=data;
+                // AIR resets smoothing when bitmapData is replaced; restore it on every resize.
                 bitmap.smoothing=true;
             }
             bounds.setTo(vx,vy,width*cell,height*cell);

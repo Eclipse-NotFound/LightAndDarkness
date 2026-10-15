@@ -1,0 +1,17 @@
+BASELINE smoothing=false current=true
+PASS deployed baseline reproduces lost smoothing after allocation
+PASS current field retains smoothing after allocation
+PASS display fix preserves illumination raster exactly
+EDGE max adjacent jump before=111 after=10
+PASS visible hard pixel steps reduced
+PASS rotated beam keeps gameplay raster angle=-0.7
+PASS rotated beam keeps gameplay raster angle=0.17
+PASS rotated beam keeps gameplay raster angle=1.2
+PASS rotated beam keeps gameplay raster angle=2.8
+PASS wall occlusion unchanged
+PASS wall shadow interior stays dark
+PASS display does not illuminate wall shadow interior
+PASS resize keeps smoothing
+PASS location rebuild keeps smoothing
+PERF alternating baseline/fixed 180 renders total ms=44,37,38,39
+SUITE_PASS
