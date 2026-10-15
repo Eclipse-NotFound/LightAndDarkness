@@ -1,0 +1,31 @@
+Thu Oct 15 17:50:21 2026 UTC [LightAndDarkness] ATMOSPHERE_CONFIG loaded
+Thu Oct 15 17:50:21 2026 UTC [LightAndDarkness] v0.3.0 loaded
+Thu Oct 15 17:50:29 2026 UTC [LightAndDarkness] BAKE ms=636 preserved=0
+Thu Oct 15 17:50:29 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 17:50:29 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 pulses=0 renderMs=0
+Thu Oct 15 17:50:31 2026 UTC [LightAndDarkness] SAVE_REJECT Error: unsupported state version; original trigger retained
+Thu Oct 15 17:50:33 2026 UTC [LightAndDarkness] BROKEN light1:200.00:400.00:1:1:0
+Thu Oct 15 17:50:37 2026 UTC [LightAndDarkness] REPAIRED light1:200.00:400.00:1:1:0
+Thu Oct 15 17:50:41 2026 UTC [LightAndDarkness] BAKE ms=704 preserved=0
+Thu Oct 15 17:50:41 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 17:50:41 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=149 pulses=0 renderMs=2
+Thu Oct 15 17:50:44 2026 UTC [LightAndDarkness] BAKE ms=615 preserved=0
+Thu Oct 15 17:50:44 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 17:50:45 2026 UTC [LightAndDarkness] BAKE ms=675 preserved=1
+Thu Oct 15 17:50:46 2026 UTC [LightAndDarkness] BAKE ms=589 preserved=375
+Thu Oct 15 17:50:46 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 17:50:50 2026 UTC [LightAndDarkness] BROKEN light1:200.00:400.00:1:1:0
+Thu Oct 15 17:50:51 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=293 pulses=0 renderMs=1
+Thu Oct 15 17:50:57 2026 UTC [LightAndDarkness] REPAIRED light1:200.00:400.00:1:1:0
+Thu Oct 15 17:51:00 2026 UTC [LightAndDarkness] BAKE ms=573 preserved=0
+Thu Oct 15 17:51:00 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 17:51:03 2026 UTC [LightAndDarkness] BAKE ms=585 preserved=0
+Thu Oct 15 17:51:03 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 17:51:04 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=414 pulses=0 renderMs=1
+Thu Oct 15 17:51:07 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=88 beforeRaster=true state=continuous_scene|loc0_0|0|0|0||false|192|75|1e3e8caf
+Thu Oct 15 17:51:14 2026 UTC [LightAndDarkness] heartbeat lamps=88 steps=495 pulses=0 renderMs=5
+Thu Oct 15 17:51:27 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=5852
+Thu Oct 15 17:51:33 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=5916
+Thu Oct 15 17:51:33 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=88 beforeRaster=false state=continuous_scene|loc0_0|0|0|0||false|192|75|1e3e8caf
+Thu Oct 15 17:51:33 2026 UTC [LightAndDarkness] heartbeat lamps=88 steps=519 pulses=0 renderMs=5
+Thu Oct 15 17:51:43 2026 UTC [LightAndDarkness] heartbeat lamps=88 steps=586 pulses=0 renderMs=1

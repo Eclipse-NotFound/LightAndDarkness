@@ -1,0 +1,29 @@
+3576 BOOT remains-lad-keybind-20261016015311954
+13456 PASS cached HUD refreshes headlamp binding without progress change
+13457 PASS cached HUD refreshes fixture binding without layout change
+13458 PASS actual shared host accepts two client binding rows
+13460 PASS actual host begins capture
+13462 PASS modifier alone keeps real capture waiting
+13659 PASS actual capture invokes persistent client setter
+13660 PASS actual capture and key repeat do not trigger headlamp
+13667 PASS actual new binding triggers after captured release
+13669 PASS actual host rejects duplicate action binding
+13751 PASS actual host accepts distinct fixture chord
+13752 PASS actual Escape cancels without changing binding
+13838 PASS actual Delete clears client binding
+13841 PASS cleared actual binding cannot act
+13925 PASS actual menu default callback restores original action
+14017 PASS actual shared matching rejects extra modifier
+14022 PASS actual host and client ignore hidden input focus
+15012 DIAG sharedHeld=true localHeld=true progress=0.3 nearest=true hp=0 key={"alt":false,"ctrl":false,"shift":true,"code":74}
+15012 DIAG allStat=1 console=false pause=false setkey=false guiPause=false privateDial=ReferenceError: Error #1069 publicDialVisible=false focus=[object Stage]
+15013 DIAG mm active=false
+15013 DIAG pip active=false
+15014 DIAG sats active=false
+15015 DIAG stand active=false
+15015 PASS actual shared held-state drives repair
+15107 PASS actual capture cancels held repair
+17555 PASS actual host remapped repair completes with one charge
+17727 PASS actual host focus loss clears held state
+17728 PASS actual host changes persisted to client file
+17728 SUITE_PASS

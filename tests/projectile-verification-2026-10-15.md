@@ -6,6 +6,7 @@
 
 - 版本0.3.0；build/out/projectiles-v030/LightAndDarknessMod.swf，26,298字节。
 - SHA256：3BA6A9C93F20C6515648097E621556DC6DC8AB191780D83250CFAF27BB23BB9C。
+- 生产源码提交84aa51b；独立只读审查未发现需解冻候选的问题。随后边缘验证提交706d385仅补证据，生产字节不变。
 - 优化构建；FFDec导出16个自身类，无fe.*存根、无Probe/Test。原随身灯bitmapData更换后恢复smoothing、scene预绘接入及已发布LadKeys均保留。
 - 测试使用独立AIR身份和独立探针，不使用真实pfe存储，不操作其他实例。测试类通过实际runtime对象的constructor取生产类，避免兄弟类域误解析。
 
@@ -13,6 +14,12 @@
 
 | 身份／候选 | 检查 | 结果 |
 |---|---|---|
+| remains-lad-test-20261016015016374；最终3BA6 | 11B/F6ED/新RV BAA/3B/BD71组合，灯具/维修/保存/氛围及192×75/88灯/240块大场景 | 81 PASS |
+| 同身份 cold-015206；最终3BA6 | 独立进程恢复四槽灯具损坏、维修、材料和氛围 | 7 PASS |
+| remains-lad-keybind-20261016015311954；最终3BA6 | 11B宿主、真实BD71公共改键服务与按住维修 | 21 PASS |
+| remains-lad-projectile-20261016015401067；最终3BA6 | 11B/F6ED/新RV BAA/3B/BD71组合的完整弹丸专项 | 131 PASS |
+| 同身份 cold-015453；最终3BA6 | 独立进程恢复弹丸开关/倍率且不复活残光 | 4 PASS |
+| remains-lad-edge-game-20261015224902427；最终3BA6 | 实际载入类的四朝向、重建后平滑、照度栅格不变、墙后遮挡 | 13 PASS |
 | remains-lad-projectile-20261015221738467；3BA6 | 68原版visual与真实native弹药差异、同帧出生移除、爆炸粒子、开枪命中、彩色照度、墙遮光、长beam、暂停/开关/读档、压力 | 131 PASS |
 | 同身份独立进程 cold-222007；3BA6 | 原版槽7载入、选项/亮度恢复、残光不复活 | 4 PASS |
 | remains-lad-test-20261015220200272；前一候选6476 | 现有灯具/维修/保存/氛围及192×75/88灯/240块大场景，使用11B兼容宿主 | 81 PASS，作为中间证据，最终须重跑3BA6 |
@@ -22,8 +29,12 @@
 
 原始成功证据在 [projectiles-v0.3](evidence/2026-10-15/projectiles-v0.3/)，包括完整JSON断言、68项视觉映射、日志、候选及依赖指纹、照明前后截图。专项当前混装范围是ContinuousScene、RealisticVision、WallBlend、ModLoader，不宣称联机或全部13模组已由本探针认证。
 
+10月16日最终组合复验见 [新组合证据](evidence/2026-10-16/projectiles-v0.3/)。边缘冻结复验归档在[边缘修复证据](evidence/2026-10-15/edge-fix/README.md)。上述功能复验与其他任务并发，耗时只作诊断，不作为独占性能结论。
+
 ## 失败与修正记录
 
+- remains-lad-test-20261015225028070：最终3BA6与新RV BAA组合因会话中断只执行到47秒，没有SUITE_PASS；不计成功，10月16日重新运行81项通过。
+- 22:46大场景发布预检发现RV另行安装为BAA48289（墙边阴影与设置修复），因此最终组合改用新版；旧E996组合证据保留为历史，不覆盖新RV。
 - remains-lad-test-20261015215721200：08EB候选在旧正式9987宿主、大场景再次绘制时原生Grafon.sceneRender #2015。发布门禁已停止；随后使用11B兼容宿主的中间候选81项通过。最终安装须等大场景事务完成，不能把候选宿主试验误称为旧正式已修复。
 - remains-lad-projectile-20261015220612413：外部探针直接查询兄弟域lad类导致#1065，改成从实际runtime实例获取constructor。
 - remains-lad-projectile-20261015221426312：126项已通过，探针选了超出原版saveKol=10的槽17，saveGame不保存、getSave返回null。只将探针改用独立身份中的槽7，生产字节未变；随后131+4通过。
