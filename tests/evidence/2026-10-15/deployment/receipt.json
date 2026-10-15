@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "installedAt": "2026-10-15T17:45:57.5611579+08:00",
+  "sourceCommit": "95e79f5",
+  "candidateSHA256": "DA13AA45B870C3576DEBD9CFB6098599BDA5A1A99EF1868F1872D00DA437F00C",
+  "hostSHA256": "9987C696BEBBEB0626D8F73DA775CF867B2CED4FF626137FD9F161264270F938",
+  "manifestBeforeSHA256": "972764B4513F9FDAC130AD7F76783ABCC3F0781DA9E6EF0500A5598220BB7FDF",
+  "row": "LightAndDarkness|LightAndDarknessMod|1|0|0",
+  "previousReleaseExisted": false,
+  "backupDirectory": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\backups\\install-20261015-174557-536",
+  "status": "deployed-smoke-passed",
+  "manifestAfterSHA256": "35A1A1764B730C6DA1899EB9B2D622916E98FCBA27BD4FB0D973C3B67109E1F2",
+  "smokeTestId": "remains-lad-test-20261015174623287",
+  "smokeAssertionsPassed": 47
+}

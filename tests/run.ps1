@@ -1,8 +1,16 @@
-param([switch]$SkipBuild,[switch]$Mixed,[string]$ResumeTestId='')
+param([switch]$SkipBuild,[switch]$Mixed,[switch]$Installed,[string]$ResumeTestId='')
 $ErrorActionPreference = 'Stop'
 $modRoot = Split-Path $PSScriptRoot -Parent
 $gameRoot = Split-Path (Split-Path $modRoot -Parent) -Parent
-if (!$SkipBuild) { & (Join-Path $modRoot 'build\build.ps1') -Tests }
+if (!$SkipBuild -and !$Installed) { & (Join-Path $modRoot 'build\build.ps1') -Tests }
+$modSource = Join-Path $modRoot $(if($Installed){'release\LightAndDarknessMod.swf'}else{'build\out\LightAndDarknessMod.swf'})
+$modSourceHash = (Get-FileHash -LiteralPath $modSource).Hash
+$modRow = 'LightAndDarkness|LightAndDarknessMod|1|0|0'
+if ($Installed) {
+    $rows = @(Get-Content -LiteralPath (Join-Path $gameRoot 'mods\loader-manifest.txt') | Where-Object { $_ -match '^LightAndDarkness\|' })
+    if ($rows.Count -ne 1 -or $rows[0] -cne $modRow) { throw 'Installed manifest must contain exactly the validated 1.02 entry' }
+    $modRow = $rows[0]
+}
 $runtimeRoot = Join-Path $modRoot 'build\runtime'
 $testId = 'remains-lad-test-' + (Get-Date -Format 'yyyyMMddHHmmssfff')
 $evidence = Join-Path $modRoot "build\evidence\$testId"
@@ -23,8 +31,10 @@ foreach ($asset in $assets) {
 if (!(Test-Path -LiteralPath (Join-Path $runtimeRoot 'Rooms'))) { Copy-Item -LiteralPath (Join-Path $gameRoot 'Rooms') -Destination $runtimeRoot -Recurse }
 $release = Join-Path $runtimeRoot 'mods\LightAndDarkness\release'
 New-Item -ItemType Directory -Force -Path $release | Out-Null
-Copy-Item -LiteralPath (Join-Path $modRoot 'build\out\LightAndDarknessMod.swf'), (Join-Path $modRoot 'build\out\LightAndDarknessTest.swf') -Destination $release -Force
-$manifest = "LightAndDarkness|LightAndDarknessMod|1|0|0`nLightAndDarkness|LightAndDarknessTest|1|0|0`n"
+Copy-Item -LiteralPath $modSource, (Join-Path $modRoot 'build\out\LightAndDarknessTest.swf') -Destination $release -Force
+if ((Get-FileHash -LiteralPath (Join-Path $release 'LightAndDarknessMod.swf')).Hash -ne $modSourceHash) { throw 'Test copy differs from source' }
+@("Source: $modSource", "SHA256: $modSourceHash", "Manifest row: $modRow") | Set-Content -LiteralPath (Join-Path $evidence 'source.txt') -Encoding utf8
+$manifest = "$modRow`nLightAndDarkness|LightAndDarknessTest|1|0|0`n"
 if ($Mixed) {
     foreach ($name in @('ContinuousScene','RealisticVision','WallBlend','ModLoader')) {
         $sourceRelease = Join-Path $gameRoot "mods\$name\release"
