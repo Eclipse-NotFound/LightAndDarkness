@@ -7,7 +7,8 @@
 中文，战术光暗与生存探索并重，兼顾氛围。用户明确授权实现和部署，并于本轮允许向相关会话协调部署。其他模组仅最小范围只读，工具用Sandevistan/build/tools；不操作真实pfe存储或用户实例，不用Ghost。部署顺序：ContinuousScene四文件事务 → 本模组0.3.0 → PermanentInjury基于新宿主重建。相关会话身份见本版验证记录/会话上下文。
 
 ## 3. 当前状态
-2026-10-16 02:20:29已安装0.3.0，正式SHA256 3BA6A9C93F20C6515648097E621556DC6DC8AB191780D83250CFAF27BB23BB9C（26,298字节）。此前CS于02:14安装的488兼容版已备份；本次仅替换自己的release，宿主仍11B、CS F6ED、RV BAA、WB3B、MLBD71，清单6B669未动。完整指纹和正式回读记录state/projectile-deployment-2026-10-15.json。测试实例已结束，窗口已交还其他任务。
+2026-10-16 02:20:29已安装0.3.0，正式SHA256 3BA6A9C93F20C6515648097E621556DC6DC8AB191780D83250CFAF27BB23BB9C（26,298字节）。此前CS于02:14安装的488兼容版已备份；本次仅替换自己的release，部署时宿主11B、CS F6ED、RV BAA、WB3B、MLBD71和清单6B669未动。完整指纹和正式回读记录state/projectile-deployment-2026-10-15.json。测试实例已结束，窗口已交还其他任务。
+随后PermanentInjury按协调顺序完成安装：当前宿主08A96759720C7A2AA489FCEEDB209C6E704500FDE7B1A4A49146BD578E99A8BC，清单778B8D1E551E69F4A16B3F4131141FBE4B1E35E9E9EFF2F360593182B5C07D6C；LAD仍3BA。其负责人回执正式158+5项通过、状态installed-verified，并承诺不再更改本轮宿主/清单；已转达RConnect。LAD本轮131项仍绑定此前11B，不能冒充新08A或联机认证。
 0.3.0生产源码已提交84aa51b；冻结build/out/projectiles-v030/LightAndDarknessMod.swf，26,298字节，SHA256 3BA6A9C93F20C6515648097E621556DC6DC8AB191780D83250CFAF27BB23BB9C。16个自身类，无fe存根/测试探针。后续3338a37/706d385边缘验证已确认冻结3BA保留平滑修复；无需重编。
 弹丸专项131项、独立进程冷读档4项已通过；边缘实际生产类13项通过；源码独立复核无阻断问题。213武器定义/68弹丸视觉/49弹药+7其他装填物品已调查，但不是213武器逐款实射。
 
