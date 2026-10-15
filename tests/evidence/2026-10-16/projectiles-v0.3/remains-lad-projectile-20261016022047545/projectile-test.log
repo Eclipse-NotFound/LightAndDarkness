@@ -1,0 +1,134 @@
+4158 BOOT remains-lad-projectile-20261016022047545 mode=mixed
+11599 PRODUCTION_CLASSES lad::LadProjectiles / lad::LadLightField
+13191 PASS production runtime exposes projectile service
+13268 PASS native AllData enumerates all 68 distinct projectile visual identifiers including variants
+13270 PASS native visual coverage arson illuminates
+13270 PASS native visual coverage baleegg illuminates
+13272 PASS native visual coverage blade illuminates
+13272 PASS native visual coverage blood illuminates
+13272 PASS native visual coverage bloodlight illuminates
+13274 PASS native visual coverage bloodpsy illuminates
+13274 PASS native visual coverage blump illuminates
+13274 PASS native visual coverage cryo illuminates
+13276 PASS native visual coverage dart stays dark in flight
+13277 PASS native visual coverage defwave illuminates
+13278 PASS native visual coverage dflame illuminates
+13279 PASS native visual coverage dray illuminates
+13280 PASS native visual coverage eclipse illuminates
+13282 PASS native visual coverage fireball illuminates
+13282 PASS native visual coverage flame illuminates
+13283 PASS native visual coverage flame2 illuminates
+13284 PASS native visual coverage flare illuminates
+13285 PASS native visual coverage friend illuminates
+13286 PASS native visual coverage gren40 stays dark in flight
+13287 PASS native visual coverage gren50 stays dark in flight
+13287 PASS native visual coverage ice illuminates
+13290 PASS native visual coverage kapl stays dark in flight
+13291 PASS native visual coverage laser illuminates
+13292 PASS native visual coverage laser1 illuminates
+13293 PASS native visual coverage laser2 illuminates
+13293 PASS native visual coverage laser3 illuminates
+13293 PASS native visual coverage laser4 illuminates
+13293 PASS native visual coverage laser5 illuminates
+13293 PASS native visual coverage laser6 illuminates
+13298 PASS native visual coverage laser7 illuminates
+13299 PASS native visual coverage laser8 illuminates
+13300 PASS native visual coverage lightning illuminates
+13301 PASS native visual coverage mbul illuminates
+13302 PASS native visual coverage mray illuminates
+13303 PASS native visual coverage necrbullet illuminates
+13304 PASS native visual coverage necro illuminates
+13305 PASS native visual coverage pink stays dark in flight
+13306 PASS native visual coverage pinkkapl stays dark in flight
+13307 PASS native visual coverage pinkplevok stays dark in flight
+13308 PASS native visual coverage plasma illuminates
+13309 PASS native visual coverage plasma1 illuminates
+13309 PASS native visual coverage plasma2 illuminates
+13310 PASS native visual coverage plasma3 illuminates
+13310 PASS native visual coverage plasma3a illuminates
+13310 PASS native visual coverage plasma4 illuminates
+13310 PASS native visual coverage plasma5 illuminates
+13314 PASS native visual coverage plasma6 illuminates
+13314 PASS native visual coverage plevok stays dark in flight
+13316 PASS native visual coverage psy illuminates
+13316 PASS native visual coverage pulse illuminates
+13316 PASS native visual coverage rail illuminates
+13318 PASS native visual coverage rocket illuminates
+13319 PASS native visual coverage rocketgas illuminates
+13320 PASS native visual coverage saw stays dark in flight
+13321 PASS native visual coverage sel illuminates
+13321 PASS native visual coverage ship stays dark in flight
+13322 PASS native visual coverage skybolt illuminates
+13323 PASS native visual coverage spark illuminates
+13323 PASS native visual coverage sparkl illuminates
+13324 PASS native visual coverage spikenail stays dark in flight
+13325 PASS native visual coverage telebullet illuminates
+13326 PASS native visual coverage termo illuminates
+13326 PASS native visual coverage ttlaser illuminates
+13327 PASS native visual coverage ttmoln illuminates
+13327 PASS native visual coverage ttnavod illuminates
+13329 PASS native visual coverage ttplasma illuminates
+13329 PASS native visual coverage ttzalp illuminates
+13331 PASS native visual coverage venom stays dark in flight
+13332 PASS plain Object cannot impersonate native projectile
+13333 PASS real native ballistic bullet receives warm short tracer profile
+13336 PASS real native Weapon incendiary ammo overrides unchanged ballistic damage type
+13337 PASS live plasma ammo modification wins over ballistic visual
+13337 PASS live EMP ammo receives electric light profile
+13338 PASS native laser visual with spring stretch receives beam profile
+13339 PASS spring stretch alone does not classify ballistic shot as beam
+13339 PASS native physical grenade stays unlit before detonation
+13340 PASS unlit physical grenade produces no flight illumination
+13341 PASS invisible native blast-delivery bullet is excluded
+13342 PASS melee sweep marker is excluded even if a visual is attached
+13342 PASS physical venom projectile stays dark
+13343 PASS native energy projectile receives plasma profile
+13344 PASS native SmartBullet is classified without replacing guidance
+13344 PASS actual native addObj ADDED enters production runtime observer
+13348 PASS native lifetime ends in same frame as constructor event
+13348 PASS same-frame removed bullet retains final ammo classification and short light
+13348 PASS capture does not revive or alter native removed bullet damage or lifetime
+13349 PASS duplicate observe and capture neither duplicate light nor mutate live bullet
+13351 PASS native display remount leaves projectile gameplay intact
+13353 PASS real plasma profile brightens shared raster with a green tint
+13354 PASS projectile brightness scales existing light rather than extending lifetime
+13355 PASS detached projectile light decays on native-rate simulation advance
+13356 PASS detached projectile afterglow expires without retained pulse
+13359 PASS native collision endpoint really enters opaque wall tile
+13360 PASS wall impact light retreats to free side of native collision wall
+13360 PASS projectile light illuminates near wall while opaque wall shields far side
+13362 PASS beam light nodes follow actual native start and endpoint
+13364 PASS long resolved native beam keeps continuous bounded illumination across current viewport
+13364 PASS native blit explosion Part is recognized by production resource identity
+13364 PASS native MovieClip explosion Part receives plasma colour
+13364 PASS native ejected shell Part is not a light source
+13364 PASS native poison cloud does not become a room lamp
+13364 PASS shared explosion bitmap keeps native fire blend colour classification
+13370 PASS shared explosion bitmap keeps large native blast scale
+13372 PASS native sparkle grenade alias has no light before detonation
+13800 PASS native sparkle grenade alias selects violet detonation
+13802 PASS generic and sparkle explosion cluster keeps strongest special colour without duplicate light
+13804 PASS direct invisible unlinked native explosion is detected through actual ADDED particles
+13806 PASS repeated capture cannot replay native explosion particles
+13807 PASS one native explosion and its particle cluster do not create unbounded lights
+13810 PASS native Weapon attack/actions creates genuine projectile
+13810 PASS real native weapon firing reaches production illumination
+13823 PASS real illuminated native projectile still deals native collision damage
+13828 PASS dense projectile observer obeys explicit tracked-object cap
+13831 PASS dense short-light batch obeys pulse and render caps
+13831 PASS offscreen projectile lights are culled from render list
+13838 PASS bounded projectile stress raster completes without runaway frame
+13838 PASS location unload discards every transient reference and simulation clock
+15118 PASS real runtime retains generated short light for pause integration check
+16688 PASS twelve real paused frames do not advance projectile simulation age
+16688 PASS paused frames preserve short-light fade without wall-clock expiry
+17020 PASS native player simulation hook resumes projectile clock
+17021 PASS real resumed frames fade short light rather than freezing it into scene
+18109 PASS projectile setting off immediately clears transient state
+18768 PASS whole-mod disable clears transient light and references
+19567 PASS native test slot exists and save completes
+19567 PASS native save stores projectile opt-out with ordinary light preferences
+19568 PASS native save omits transient projectile state
+22682 PASS actual native reload restores projectile settings on new Location
+22682 PASS actual native room replacement has no previous-scene projectile light
+22686 SUITE_PASS

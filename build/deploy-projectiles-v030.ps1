@@ -63,7 +63,9 @@ RequireHash $staged $newHash
 RequireHash $target $oldHash
 RequireHash $manifestPath $manifestHash
 foreach ($entry in $expected.GetEnumerator()) {RequireHash (Join-Path $gameRoot $entry.Key) $entry.Value}
-[IO.File]::Replace($staged,$target,$null)
+$atomicBackup=Join-Path $backupRoot 'LightAndDarknessMod.atomic-backup.swf'
+[IO.File]::Replace($staged,$target,$atomicBackup)
+RequireHash $atomicBackup $oldHash
 RequireHash $target $newHash
 RequireHash $manifestPath $manifestHash
 RequireHash (Join-Path $gameRoot 'application.xml') $descriptorHash

@@ -2,7 +2,7 @@
 
 为 Remains 增加能影响战斗的明暗区域、可装备灯具，以及场景灯的破坏和维修。用户于 2026-10-15 确认：**战术光暗与生存探索并重，兼顾氛围**。
 
-当前 **0.3.0 弹丸照明候选已完成专项验证，正在协调部署**。正式文件固定为 `release/LightAndDarknessMod.swf`，更新后重启游戏生效。最新状态、指纹和回退办法见 [弹丸照明验证与部署](tests/projectile-verification-2026-10-15.md)；历史保留 [0.2氛围系统](tests/atmosphere-verification-2026-10-15.md)与[0.1首次安装](state/deployment-2026-10-15.md)。
+当前 **0.3.0 已于2026-10-16部署**，新增弹丸、光束与爆炸的短时照明，保留氛围、大场景兼容、快捷键和随身灯平滑修复。正式文件固定为 `release/LightAndDarknessMod.swf`，保存进度并重启游戏生效。指纹和回退办法见 [弹丸照明验证与部署](tests/projectile-verification-2026-10-15.md)；历史保留 [0.2氛围系统](tests/atmosphere-verification-2026-10-15.md)与[0.1首次安装](state/deployment-2026-10-15.md)。
 
 ## 当前可用功能
 
@@ -31,7 +31,7 @@
 
 弹丸专项用 `build/build-projectile-probe.ps1 -ProbeOnly -Tools <工具目录> -OutputDirectory <候选目录>` 单独编译探针，再运行 `tests/run-projectiles.ps1 -SkipBuild -Mixed -CandidateDirectory <候选目录>`。加 `-Installed` 时只从候选目录读取外部探针，生产模组仍从正式release读回。
 
-0.3.0冻结候选已通过 **131 项专项检查与4项独立进程读档检查**，包含68种原版弹丸外观枚举、真实武器发射/命中、墙遮光、爆炸、暂停和容量压力；最终大场景组合与部署读回以[本版验证](tests/projectile-verification-2026-10-15.md)为准。未将68种外观覆盖等同于213款武器逐款实射。
+0.3.0最终组合已通过 **131项弹丸专项、81项灯具/大场景、21项公共改键、11项跨进程读档及13项平滑边缘检查**；安装后从正式路径再次通过131项。含68种原版弹丸外观枚举、真实武器发射/命中、墙遮光、爆炸、暂停和容量压力，见[本版验证](tests/projectile-verification-2026-10-15.md)。未将68种外观覆盖等同于213款武器逐款实射。
 
 ## 阅读入口
 
