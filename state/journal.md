@@ -1,5 +1,11 @@
 # LightAndDarkness 开发日志
 
+## 2026-10-15 菜单改键已部署并正式读回复验
+
+- 用户在快捷键统筹会话明确选择安装剩余六个客户端；备份后安装固定产物SHA256 D8666B4ACD9E98BC73785402F9A9A771DA5F54CC742C4D69664824ADAD1857A3。
+- 正式路径原字节复制到唯一AIR应用，七模组23项联合175＋171项通过；原本体/清单/配置及其它模块指纹复核无变。没有关闭玩家游戏或写真实存档。
+- 本模组旧文件SHA256 01767319A54AC88961B2BA40391F0FA79359486EE5591E6A22D90AD49F84537C，备份 D:/Program Files/Steam/steamapps/common/Remains/mods/ModLoader/build/backups/before-keybind-clients-20261015-214440-393ca9a3/LightAndDarkness/LightAndDarknessMod.swf。安装与统一回退见state/keybind-deployment-2026-10-15.md；保留其他任务WIP。
+
 ## 2026-10-15 改键功能合入主目录性能开发源
 
 - 依据快捷键主会话授权，将LadKeys、共享输入状态、防护、持久化及动态HUD提示逐处合入主目录；continuousSceneBeforeRaster/ResetGeneration、视口裁剪、smoothing和HUD缓存保留。
