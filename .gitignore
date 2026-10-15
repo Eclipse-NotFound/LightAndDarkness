@@ -4,3 +4,8 @@
 /release/*.swf
 /release/*.swc
 *.log
+!/tests/evidence/**/*.log
+/build/runtime/
+/build/generated/
+/build/evidence/
+/build/scope-authorization.json

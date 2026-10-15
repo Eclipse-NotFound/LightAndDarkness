@@ -1,0 +1,26 @@
+Thu Oct 15 09:13:49 2026 UTC [LightAndDarkness] v0.1.0 loaded
+Thu Oct 15 09:13:57 2026 UTC [LightAndDarkness] BAKE ms=629 preserved=0
+Thu Oct 15 09:13:57 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 09:13:57 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 renderMs=1
+Thu Oct 15 09:13:59 2026 UTC [LightAndDarkness] SAVE_REJECT Error: unsupported state version; original trigger retained
+Thu Oct 15 09:14:01 2026 UTC [LightAndDarkness] BROKEN light1:200.00:400.00:1:1:0
+Thu Oct 15 09:14:05 2026 UTC [LightAndDarkness] REPAIRED light1:200.00:400.00:1:1:0
+Thu Oct 15 09:14:10 2026 UTC [LightAndDarkness] BAKE ms=627 preserved=0
+Thu Oct 15 09:14:10 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 09:14:10 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=149 renderMs=2
+Thu Oct 15 09:14:13 2026 UTC [LightAndDarkness] BAKE ms=671 preserved=0
+Thu Oct 15 09:14:13 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 09:14:14 2026 UTC [LightAndDarkness] BAKE ms=769 preserved=1
+Thu Oct 15 09:14:15 2026 UTC [LightAndDarkness] BAKE ms=730 preserved=368
+Thu Oct 15 09:14:15 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 09:14:18 2026 UTC [LightAndDarkness] BROKEN light1:200.00:400.00:1:1:0
+Thu Oct 15 09:14:20 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=293 renderMs=1
+Thu Oct 15 09:14:34 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=1064
+Thu Oct 15 09:14:34 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=88 state=continuous_scene|loc0_0|0|0|0||false|192|75|1e3e8caf
+Thu Oct 15 09:14:34 2026 UTC [LightAndDarkness] heartbeat lamps=88 steps=360 renderMs=2
+Thu Oct 15 09:14:45 2026 UTC [LightAndDarkness] heartbeat lamps=88 steps=363 renderMs=2
+Thu Oct 15 09:14:53 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=1250
+Thu Oct 15 09:14:55 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=1010
+Thu Oct 15 09:14:55 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=88 state=continuous_scene|loc0_0|0|0|0||false|192|75|1e3e8caf
+Thu Oct 15 09:14:56 2026 UTC [LightAndDarkness] heartbeat lamps=88 steps=385 renderMs=0
+Thu Oct 15 09:15:10 2026 UTC [LightAndDarkness] heartbeat lamps=88 steps=388 renderMs=2

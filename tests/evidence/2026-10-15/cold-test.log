@@ -1,0 +1,7 @@
+8845 BOOT remains-lad-test-20261015171345633
+21178 COLD_LOAD_SLOT_7
+24216 PASS cold process restores broken fixture and headlamp
+24216 PASS cold process restores original inventory
+27888 PASS cold process restores repaired switched-off fixture
+27890 PASS cold process restores repair material cost
+27891 SUITE_PASS

@@ -1,0 +1,6 @@
+Thu Oct 15 09:28:59 2026 UTC [LightAndDarkness] v0.1.0 loaded
+Thu Oct 15 09:29:15 2026 UTC [LightAndDarkness] BAKE ms=725 preserved=0
+Thu Oct 15 09:29:15 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 09:29:15 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 renderMs=1
+Thu Oct 15 09:29:18 2026 UTC [LightAndDarkness] BAKE ms=748 preserved=0
+Thu Oct 15 09:29:18 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
