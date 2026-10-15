@@ -2,7 +2,8 @@ param(
     [string]$Java = 'D:\Program Files\Adobe Animate 2024\jre\bin\java.exe',
     [string]$Tools = '',
     [switch]$Tests,
-    [switch]$TestsOnly
+    [switch]$TestsOnly,
+    [string]$OutputDirectory = ''
 )
 $ErrorActionPreference = 'Stop'
 $modRoot = Split-Path $PSScriptRoot -Parent
@@ -14,6 +15,7 @@ foreach ($required in @($Java, $airSwc, (Join-Path $flexRoot 'lib\mxmlc.jar'), (
     if (!(Test-Path -LiteralPath $required)) { throw "Missing tool: $required" }
 }
 $out = Join-Path $PSScriptRoot 'out'
+if ($OutputDirectory) { $out = [IO.Path]::GetFullPath($OutputDirectory) }
 $generated = Join-Path $PSScriptRoot 'generated'
 New-Item -ItemType Directory -Force -Path $out, $generated | Out-Null
 function Write-Config([string]$Name, [string[]]$Sources, [string[]]$Libraries) {

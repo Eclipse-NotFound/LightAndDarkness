@@ -126,6 +126,7 @@ package {
                     AtmosphereChecks.run(runtime,log);
                     fixtureAtlas();
                     world.gui.dialText(null);
+                    world.gui.guiPause=false;world.gui.dialScript.running=false;
                     lamp=runtime.lamps[3];lampKey=lamp.key;baselineUnits=world.loc.units.length;
                     check(lamp.type=="light1","fixture selection");
                     check(lamp.bo.vis==null && lamp.bo.light==null && lamp.proxy.vis==null,"baked glow removed without native AI visual");
@@ -181,6 +182,10 @@ package {
                     check(world.gg.childObjs["LightAndDarknessTick"]!=null,"native player update hook rebound");
                     var expected:Number=runtime.lastBaseVisibility*(0.18+0.82*runtime.lastExposure);
                     check(Math.abs(world.gg.visibility-expected)<=1,"illumination changes native visibility before AI step");
+                    log("INPUT_AFTER_LOAD guiPause="+world.gui.guiPause+" dialog="+world.gui.vis.getChildByName("dial").visible+" script="+world.gui.dialScript.running+" pause="+world.onPause+" console="+world.onConsol);
+                    // Loading an early slot can restore its introductory dialogue.
+                    // Gameplay shortcuts are tested only after dismissing that UI.
+                    world.gui.dialText(null);world.gui.guiPause=false;world.gui.dialScript.running=false;
                     var head:Boolean=runtime.store.data.headlamp;
                     key(KeyboardEvent.KEY_DOWN,76);key(KeyboardEvent.KEY_DOWN,76);key(KeyboardEvent.KEY_UP,76);
                     check(runtime.store.data.headlamp!=head,"headlamp key repeat debounced");

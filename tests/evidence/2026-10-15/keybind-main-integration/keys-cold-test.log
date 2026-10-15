@@ -1,0 +1,8 @@
+9022 BOOT remains-lad-keybind-20261015212839927
+25364 PASS cached HUD refreshes headlamp binding without progress change
+25364 PASS cached HUD refreshes fixture binding without layout change
+25367 PASS cold process loads custom headlamp binding
+25368 PASS cold process loads custom repair binding
+25373 PASS cold process ignores old binding
+25377 PASS cold custom binding drives native runtime
+25378 SUITE_PASS

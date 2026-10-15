@@ -1,5 +1,7 @@
 # LightAndDarkness 当前记忆
 
+2026-10-15 追加：按快捷键主会话要求，改键已逐处合入主目录的灯光性能WIP，保留首次绘制前接入、裁剪、平滑照度及HUD缓存。仅改键差分单独提交，原性能WIP仍未提交。开发候选为build/out/keybind-scene-dev/LightAndDarknessMod.swf（30BF82E8…FC3EF0），81项灯光/大场景、7项存档冷启动、21项真实公共改键/HUD、6项改键冷启动通过。未部署，未替换D866稳定线或8125性能候选；完整提交/指纹/边界见state/keybind-integration-2026-10-15.md。以下原0.2.0记录保留。
+
 ## 1. 这个模组是什么
 
 Remains 1.02 动态光暗模组：战术光暗与生存探索并重，兼顾氛围。入口 LightAndDarknessMod.init(main:*)，已部署到 release/LightAndDarknessMod.swf。

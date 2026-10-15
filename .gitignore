@@ -10,3 +10,5 @@
 /build/evidence/
 /build/scope-authorization.json
 /build/backups/
+/build/keybind-runtime/
+/build/keybind-scene-runtime/

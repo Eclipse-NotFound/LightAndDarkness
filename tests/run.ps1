@@ -1,9 +1,14 @@
-param([switch]$SkipBuild,[switch]$Mixed,[switch]$Installed,[string]$ResumeTestId='')
+param([switch]$SkipBuild,[switch]$Mixed,[switch]$Installed,[string]$ResumeTestId='',
+    [string]$CandidateDirectory='',[string]$RuntimeDirectory='',[string]$SharedHostCandidate='')
 $ErrorActionPreference = 'Stop'
 $modRoot = Split-Path $PSScriptRoot -Parent
 $gameRoot = Split-Path (Split-Path $modRoot -Parent) -Parent
-if (!$SkipBuild -and !$Installed) { & (Join-Path $modRoot 'build\build.ps1') -Tests }
-$modSource = Join-Path $modRoot $(if($Installed){'release\LightAndDarknessMod.swf'}else{'build\out\LightAndDarknessMod.swf'})
+if ($Installed -and ($CandidateDirectory -or $SharedHostCandidate)) {throw 'Candidate overrides cannot be used with Installed mode'}
+if ($SharedHostCandidate -and !$Mixed) {throw 'SharedHostCandidate requires Mixed mode'}
+if (!$CandidateDirectory) {$CandidateDirectory=Join-Path $modRoot 'build/out'}
+$CandidateDirectory=[IO.Path]::GetFullPath($CandidateDirectory)
+if (!$SkipBuild -and !$Installed) { & (Join-Path $modRoot 'build\build.ps1') -Tests -OutputDirectory $CandidateDirectory }
+$modSource = if($Installed){Join-Path $modRoot 'release/LightAndDarknessMod.swf'}else{Join-Path $CandidateDirectory 'LightAndDarknessMod.swf'}
 $modSourceHash = (Get-FileHash -LiteralPath $modSource).Hash
 $modRow = 'LightAndDarkness|LightAndDarknessMod|1|0|0'
 if ($Installed) {
@@ -12,6 +17,7 @@ if ($Installed) {
     $modRow = $rows[0]
 }
 $runtimeRoot = Join-Path $modRoot 'build\runtime'
+if ($RuntimeDirectory) {$runtimeRoot=[IO.Path]::GetFullPath($RuntimeDirectory)}
 $testId = 'remains-lad-test-' + (Get-Date -Format 'yyyyMMddHHmmssfff')
 $evidence = Join-Path $modRoot "build\evidence\$testId"
 if ($ResumeTestId) {
@@ -32,7 +38,7 @@ if (!(Test-Path -LiteralPath (Join-Path $runtimeRoot 'Rooms'))) { Copy-Item -Lit
 $release = Join-Path $runtimeRoot 'mods\LightAndDarkness\release'
 New-Item -ItemType Directory -Force -Path $release | Out-Null
 Copy-Item -LiteralPath (Join-Path $modRoot 'atmosphere.json') -Destination (Join-Path (Split-Path $release -Parent) 'atmosphere.json') -Force
-Copy-Item -LiteralPath $modSource, (Join-Path $modRoot 'build\out\LightAndDarknessTest.swf') -Destination $release -Force
+Copy-Item -LiteralPath $modSource, (Join-Path $CandidateDirectory 'LightAndDarknessTest.swf') -Destination $release -Force
 if ((Get-FileHash -LiteralPath (Join-Path $release 'LightAndDarknessMod.swf')).Hash -ne $modSourceHash) { throw 'Test copy differs from source' }
 @("Source: $modSource", "SHA256: $modSourceHash", "Manifest row: $modRow") | Set-Content -LiteralPath (Join-Path $evidence 'source.txt') -Encoding utf8
 $manifest = "$modRow`nLightAndDarkness|LightAndDarknessTest|1|0|0`n"
@@ -42,6 +48,7 @@ if ($Mixed) {
         $testRelease = Join-Path $runtimeRoot "mods\$name\release"
         New-Item -ItemType Directory -Force -Path $testRelease | Out-Null
         Get-ChildItem -LiteralPath $sourceRelease -File | Where-Object Extension -In '.swf','.xml','.txt','.json' | ForEach-Object { Copy-Item -LiteralPath $_.FullName -Destination $testRelease -Force }
+        if ($name -eq 'ModLoader' -and $SharedHostCandidate) {Copy-Item -LiteralPath $SharedHostCandidate -Destination (Join-Path $testRelease 'ModLoaderMod.swf') -Force}
         $manifest += "$name|${name}Mod|1|0|0`n"
     }
 }

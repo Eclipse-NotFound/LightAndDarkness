@@ -21,6 +21,7 @@ package lad {
         public var field:LadLightField=new LadLightField();
         public var store:LadStore=new LadStore();
         public var atmosphere:LadAtmosphere=new LadAtmosphere();
+        public var keys:LadKeys=new LadKeys();
         public var darkZones:Array=[];
         public var atmosphereTime:Number=0;
         public var lastExposure:Number=1;
@@ -51,13 +52,13 @@ package lad {
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.2.0",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.2.1-keybind",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.2.0 loaded");
+            LadLog.write("v0.2.1-keybind loaded");
         }
         private function onFrame(event:Event):void {
             try {
@@ -66,6 +67,9 @@ package lad {
                 if(world==null) return;
                 if(Number(WorldClass["boxDamage"])!=0.2) {hud.visible=false;return;}
                 registerSettings();
+                if(keys.capturing()) {keys.clear();lightHeld=false;repairHeld=false;cancelRepair();}
+                if(!keys.held("headlamp")) lightHeld=false;
+                if(!keys.held("fixture")) {repairHeld=false;cancelRepair();}
                 if(world.game!==game) {
                     detach(false);game=world.game;failedLocation=null;
                     if(game) {store.bind(game);atmosphere.bind(store.data.atmosphereSettings);}
@@ -84,10 +88,10 @@ package lad {
                 if(getTimer()-lastSim>60) render();
                 var near:Object=nearestLamp();
                 var hint:String="";
-                if(near) hint=needsRepair(near)?"灯具受损/故障 · 按住 Alt+E 维修（废金属 ×2）":"Alt+E 切换附近灯具";
+                if(near) hint=needsRepair(near)?"灯具受损/故障 · 按住 "+keys.label("fixture")+" 维修（废金属 ×2）":keys.label("fixture")+" 切换附近灯具";
                 if(near && !near.powered) hint+=" · 当前区域断电";
                 if(getTimer()<noticeUntil) hint=notice;
-                hud.visible=canAct();hud.show(main.stage.stageWidth,Boolean(store.data.headlamp),hint,repairProgress);
+                hud.visible=canAct();hud.show(main.stage.stageWidth,Boolean(store.data.headlamp),hint,repairProgress,keys.label("headlamp"));
                 if(getTimer()-lastLog>10000) {
                     lastLog=getTimer();LadLog.write("heartbeat lamps="+lamps.length+" steps="+steps+" renderMs="+field.elapsedMs);
                 }
@@ -205,24 +209,44 @@ package lad {
         private function canAct():Boolean {
             if(!world || !player || !location || world.onPause || world.allStat!=1 || player.sost>=3) return false;
             if(world.pip && world.pip.active || world.mm && world.mm.active || world.sats && world.sats.active) return false;
+            if(world.onConsol || world.ctr && world.ctr.setkeyOn || world.stand && world.stand.active) return false;
+            if(world.gui) {
+                if(world.gui.guiPause) return false;
+                // GUI.dial is internal in 1.02; use the public display tree.
+                var dialog:DisplayObject=world.gui.vis?world.gui.vis.getChildByName("dial"):null;
+                if(dialog && dialog.visible) return false;
+            }
             var focus:*=main.stage.focus;
-            return !(focus is TextField && TextField(focus).type==TextFieldType.INPUT);
+            if(focus is TextField && TextField(focus).type==TextFieldType.INPUT) {
+                var visible:DisplayObject=focus as DisplayObject;
+                while(visible) {if(!visible.visible) return true;visible=visible.parent;}
+                return false;
+            }
+            return true;
         }
         private function keyDown(event:KeyboardEvent):void {
-            if(!event.altKey || !canAct() || !enabled) return;
-            if(event.keyCode==76) {if(!lightHeld){toggleHeadlamp();lightHeld=true;}event.stopImmediatePropagation();}
-            if(event.keyCode==69) {
-                event.stopImmediatePropagation();if(repairHeld) return;repairHeld=true;
+            if(keys.capturing()) {keys.clear();lightHeld=false;repairHeld=false;cancelRepair();return;}
+            var fresh:Boolean=keys.observeDown(event);
+            if(!canAct() || !enabled) return;
+            if(keys.matches("headlamp",event)) {
+                event.stopImmediatePropagation();
+                if(fresh && !lightHeld){toggleHeadlamp();lightHeld=true;}
+                return;
+            }
+            if(keys.matches("fixture",event)) {
+                event.stopImmediatePropagation();if(!fresh || repairHeld) return;repairHeld=true;
                 var lamp:Object=nearestLamp();if(!lamp) return;
                 if(!needsRepair(lamp)) {lamp.state.on=!lamp.state.on;store.flush();syncLamps();return;}
                 beginRepair(lamp);
             }
         }
         private function keyUp(event:KeyboardEvent):void {
-            if(event.keyCode==76) lightHeld=false;
-            if((event.keyCode==69 || event.keyCode==18) && repairHeld) {repairHeld=false;cancelRepair();event.stopImmediatePropagation();}
+            if(keys.capturing()) {keys.clear();lightHeld=false;repairHeld=false;cancelRepair();return;}
+            keys.observeUp(event);
+            if(!keys.held("headlamp")) lightHeld=false;
+            if(repairHeld && !keys.held("fixture")) {repairHeld=false;cancelRepair();event.stopImmediatePropagation();}
         }
-        private function deactivate(event:Event):void {repairHeld=false;lightHeld=false;cancelRepair();}
+        private function deactivate(event:Event):void {keys.clear();repairHeld=false;lightHeld=false;cancelRepair();}
         public function nearestLamp():Object {
             if(!player) return null;
             var best:Object=null,distance:Number=160*160;
@@ -243,7 +267,7 @@ package lad {
         }
         private function updateRepair():void {
             if(!repairLamp) return;
-            if(!repairHeld || !canAct() || player.hp<repairHp || Math.abs(player.X-repairX)>12 || Math.abs(player.Y-repairY)>12
+            if(!repairHeld || !keys.held("fixture") || !canAct() || player.hp<repairHp || Math.abs(player.X-repairX)>12 || Math.abs(player.Y-repairY)>12
                 || nearestLamp()!==repairLamp || !needsRepair(repairLamp)) {cancelRepair();return;}
             repairProgress+=1/60; // Two seconds of native 30 Hz simulation, never wall-clock pause time.
             if(repairProgress>=1) {finishRepair(repairLamp);cancelRepair();}
@@ -276,11 +300,12 @@ package lad {
         private function message(value:String):void {notice=value;noticeUntil=getTimer()+2400;}
         private function registerSettings():void {
             var carrier:*=main.getChildByName("ModSettingsCarrier");
+            keys.attach(carrier && "modAPI" in carrier?carrier.modAPI:null);
             if(!carrier || !("modAPI" in carrier) || carrier.modAPI===settings) return;
             var self:LadRuntime=this;
             carrier.modAPI.registerPage("light-and-darkness","光与暗",[
                 {key:"enabled",kind:"check",label:"启用动态照明",get:function():* {return self.enabled;},set:function(v:*):void {self.setEnabled(Boolean(v));}},
-                {key:"headlamp",kind:"check",label:"随身灯（Alt+L）",get:function():* {return self.store.data?self.store.data.headlamp:true;},set:function(v:*):void {if(self.store.data){self.store.data.headlamp=Boolean(v);self.store.flush();}}},
+                {key:"headlamp",kind:"check",label:"随身灯",get:function():* {return self.store.data?self.store.data.headlamp:true;},set:function(v:*):void {if(self.store.data){self.store.data.headlamp=Boolean(v);self.store.flush();}}},
                 {key:"ambient",kind:"slider",label:"暗区保留亮度",min:0.05,max:0.5,step:0.05,get:function():* {return self.ambient;},set:function(v:*):void {self.ambient=Number(v);}},
                 {key:"detection",kind:"check",label:"明暗影响普通视觉发现",get:function():* {return self.detection;},set:function(v:*):void {self.detection=Boolean(v);}},
                 {key:"flicker",kind:"check",label:"故障灯闪烁",get:function():* {return self.atmosphere.settings.flicker;},set:function(v:*):void {self.setAtmospherePreference("flicker",Boolean(v));}},
@@ -288,7 +313,7 @@ package lad {
                 {key:"flickerSpeed",kind:"slider",label:"故障闪烁速度倍率",min:0.25,max:2,step:0.25,get:function():* {return self.atmosphere.settings.speed;},set:function(v:*):void {self.setAtmospherePreference("speed",v);}},
                 {key:"darkZones",kind:"check",label:"局部黑暗区",get:function():* {return self.atmosphere.settings.darkZones;},set:function(v:*):void {self.setAtmospherePreference("darkZones",Boolean(v));}},
                 {key:"darkness",kind:"slider",label:"黑暗区浓度",min:0,max:1,step:0.1,get:function():* {return self.atmosphere.settings.darkness;},set:function(v:*):void {self.setAtmospherePreference("darkness",v);}}
-            ],null,"Alt+E 开关附近灯具；损坏后按住维修，消耗废金属 ×2。");
+            ],null,"附近灯具可开关；受损或故障时按住操作键维修，消耗废金属 ×2。改键见快捷键页。");
             settings=carrier.modAPI;
         }
     }

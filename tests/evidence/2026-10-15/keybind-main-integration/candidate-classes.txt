@@ -1,0 +1,14 @@
+scripts\LightAndDarknessDoc.as
+scripts\LightAndDarknessMod.as
+scripts\lad\LadAtmosphere.as
+scripts\lad\LadCarrier.as
+scripts\lad\LadHud.as
+scripts\lad\LadKeys.as
+scripts\lad\LadLampCatalog.as
+scripts\lad\LadLightField.as
+scripts\lad\LadLog.as
+scripts\lad\LadPlayerTick.as
+scripts\lad\LadRuntime.as
+scripts\lad\LadSceneBake.as
+scripts\lad\LadStore.as
+scripts\lad\native\LadLampTarget.as

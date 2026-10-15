@@ -1,0 +1,7 @@
+Thu Oct 15 13:28:44 2026 UTC [LightAndDarkness] ATMOSPHERE_CONFIG loaded
+Thu Oct 15 13:28:44 2026 UTC [LightAndDarkness] v0.2.1-scene-keybind-dev loaded
+Thu Oct 15 13:28:56 2026 UTC [LightAndDarkness] BAKE ms=1437 preserved=0
+Thu Oct 15 13:28:56 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 13:28:56 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 renderMs=1
+Thu Oct 15 13:28:58 2026 UTC [LightAndDarkness] BROKEN light1:200.00:400.00:1:1:0
+Thu Oct 15 13:29:02 2026 UTC [LightAndDarkness] REPAIRED light1:200.00:400.00:1:1:0

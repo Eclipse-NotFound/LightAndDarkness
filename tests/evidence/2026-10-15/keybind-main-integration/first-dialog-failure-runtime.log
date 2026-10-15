@@ -1,0 +1,17 @@
+Thu Oct 15 13:23:34 2026 UTC [LightAndDarkness] ATMOSPHERE_CONFIG loaded
+Thu Oct 15 13:23:34 2026 UTC [LightAndDarkness] v0.2.1-scene-keybind-dev loaded
+Thu Oct 15 13:23:44 2026 UTC [LightAndDarkness] BAKE ms=792 preserved=0
+Thu Oct 15 13:23:44 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 13:23:44 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 renderMs=1
+Thu Oct 15 13:23:47 2026 UTC [LightAndDarkness] SAVE_REJECT Error: unsupported state version; original trigger retained
+Thu Oct 15 13:23:49 2026 UTC [LightAndDarkness] BROKEN light1:200.00:400.00:1:1:0
+Thu Oct 15 13:23:54 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=123 renderMs=0
+Thu Oct 15 13:23:55 2026 UTC [LightAndDarkness] REPAIRED light1:200.00:400.00:1:1:0
+Thu Oct 15 13:24:00 2026 UTC [LightAndDarkness] BAKE ms=708 preserved=0
+Thu Oct 15 13:24:00 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 13:24:04 2026 UTC [LightAndDarkness] BAKE ms=665 preserved=0
+Thu Oct 15 13:24:04 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Thu Oct 15 13:24:04 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=151 renderMs=0
+Thu Oct 15 13:24:05 2026 UTC [LightAndDarkness] BAKE ms=724 preserved=1
+Thu Oct 15 13:24:06 2026 UTC [LightAndDarkness] BAKE ms=681 preserved=368
+Thu Oct 15 13:24:06 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
