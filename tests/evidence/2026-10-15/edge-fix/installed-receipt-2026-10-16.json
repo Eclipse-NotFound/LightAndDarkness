@@ -1,0 +1,14 @@
+{
+  "checkedAtUtc": "2026-10-15T18:26:34.1289531Z",
+  "version": "0.3.0",
+  "release": "release/LightAndDarknessMod.swf",
+  "sha256": "3BA6A9C93F20C6515648097E621556DC6DC8AB191780D83250CFAF27BB23BB9C",
+  "bytes": 26298,
+  "hostSha256": "08A96759720C7A2AA489FCEEDB209C6E704500FDE7B1A4A49146BD578E99A8BC",
+  "edgeChecks": 26,
+  "installedReport": "build/evidence/remains-lad-projectile-20261016022047545/storage/projectile-report.json",
+  "installedReportSha256": "3E9ADA64A8CCEF0B24CC9D8E9131FD638C0D02A69B075DA93E15EEB4CB80BCB0",
+  "installedChecksPassed": 131,
+  "installedChecksFailed": 0,
+  "boundary": "Read-only installed-byte verification; edge probe was previously run on identical frozen bytes. Installed runtime probe was executed by the projectile deployment task."
+}
