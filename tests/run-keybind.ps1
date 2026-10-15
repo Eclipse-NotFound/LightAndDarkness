@@ -1,4 +1,4 @@
-param([Parameter(Mandatory=$true)][string]$GameRoot,[string]$ResumeTestId='',[string]$SharedHostCandidate='',[string]$CandidateDirectory='')
+param([Parameter(Mandatory=$true)][string]$GameRoot,[string]$ResumeTestId='',[string]$SharedHostCandidate='',[string]$CandidateDirectory='',[string]$HostCandidate='')
 $ErrorActionPreference='Stop'
 $GameRoot=(Resolve-Path -LiteralPath $GameRoot).Path
 $modRoot=Split-Path $PSScriptRoot -Parent
@@ -17,6 +17,7 @@ $assets=@('pfe.swf','texture.swf','texture1.swf','sprite.swf','sprite1.swf','sou
 $assets+=(Get-ChildItem -LiteralPath $GameRoot -Filter 'text_*.xml').Name
 foreach ($asset in $assets) {
     $source=Join-Path $GameRoot $asset;$target=Join-Path $runtime $asset
+    if($asset -eq 'pfe.swf' -and $HostCandidate) {$source=(Resolve-Path -LiteralPath $HostCandidate).Path}
     if (!(Test-Path -LiteralPath $target) -or (Get-Item -LiteralPath $source).LastWriteTimeUtc -ne (Get-Item -LiteralPath $target).LastWriteTimeUtc) {Copy-Item -LiteralPath $source -Destination $target -Force}
 }
 if (!(Test-Path -LiteralPath (Join-Path $runtime 'Rooms'))) {Copy-Item -LiteralPath (Join-Path $GameRoot 'Rooms') -Destination $runtime -Recurse}
@@ -49,6 +50,10 @@ $process=$null
 try {
     $arguments='-runtime "'+(Join-Path $GameRoot 'runtimes/air/win64')+'" "'+$descriptor+'" -nodebug'
     $process=Start-Process -FilePath (Join-Path $GameRoot 'adl64.exe') -ArgumentList $arguments -WorkingDirectory $runtime -WindowStyle Hidden -PassThru
+    if($HostCandidate) {
+        . (Join-Path $GameRoot 'mods/ContinuousScene/build/test-process.ps1')
+        [ContinuousSceneTest.Power]::Responsive($process) | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $evidence 'process-policy.json')
+    }
     $deadline=[DateTime]::UtcNow.AddSeconds(190);$log=Join-Path $storage 'keybind-test.log'
     while (!$process.HasExited -and [DateTime]::UtcNow -lt $deadline) {
         if ((Test-Path -LiteralPath $log) -and (Select-String -LiteralPath $log -Pattern '^\d+ (SUITE_PASS$|FAIL )' -Quiet)) {break}
@@ -59,6 +64,9 @@ try {
     if ($process -and !$process.HasExited) {Stop-Process -Id $process.Id -Force}
     if (Test-Path -LiteralPath $storage) {Copy-Item -LiteralPath $storage -Destination (Join-Path $evidence 'storage') -Recurse}
     Get-FileHash -LiteralPath (Join-Path $runtime 'pfe.swf'),(Join-Path $release 'LightAndDarknessMod.swf') | Format-List | Out-File (Join-Path $evidence 'hashes.txt')
+    $tested=@((Join-Path $runtime 'pfe.swf'),(Join-Path $release 'LightAndDarknessMod.swf'),(Join-Path $release 'KeybindProbe.swf'))
+    if($SharedHostCandidate) {$tested+=Join-Path $runtime 'mods/ModLoader/release/ModLoaderMod.swf'}
+    Get-FileHash -LiteralPath $tested | ConvertTo-Json | Set-Content -LiteralPath (Join-Path $evidence 'candidate-hashes.json')
     if (Test-Path -LiteralPath $descriptor) {Remove-Item -LiteralPath $descriptor}
 }
 Write-Output ("Evidence: "+$evidence)
