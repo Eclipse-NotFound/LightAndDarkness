@@ -54,7 +54,7 @@ package lad {
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.2.1-scene-keybind-dev",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.2.2-scene",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.addEventListener("continuousSceneBeforeRaster",beforeSceneRaster);
@@ -62,7 +62,7 @@ package lad {
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.2.1-scene-keybind-dev loaded");
+            LadLog.write("v0.2.2-scene loaded");
         }
         private function resetSceneGeneration(event:DataEvent):void {
             if(game && store.writable && store.data) {
