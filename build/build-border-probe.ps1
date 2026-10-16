@@ -2,7 +2,7 @@ param([string]$Java='D:/Program Files/Adobe Animate 2024/jre/bin/java.exe',[stri
 $ErrorActionPreference='Stop'
 $ladRoot=Split-Path $PSScriptRoot -Parent
 $ladOut=Join-Path $PSScriptRoot 'out/border-diagnosis'
-New-Item -ItemType Directory -Force -Path $ladOut | Out-Null
+New-Item -ItemType Directory -Force -Path $ladOut,(Join-Path $PSScriptRoot 'generated') | Out-Null
 $ladSource=[Security.SecurityElement]::Escape((Join-Path $ladRoot 'tests'))
 $ladAir=[Security.SecurityElement]::Escape((Join-Path $Tools 'airsdk/frameworks/libs/air/airglobal.swc'))
 $ladConfig=Join-Path $PSScriptRoot 'generated/border-probe.xml'

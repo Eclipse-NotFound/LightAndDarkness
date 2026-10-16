@@ -1,0 +1,24 @@
+{
+  "version": "0.3.1",
+  "installedAt": "2026-10-16T13:30:17.5741591+08:00",
+  "target": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\release\\LightAndDarknessMod.swf",
+  "sha256": "514A7671D4DA517A31045AEAF8FFAD3089AA66705FE58D14DC339F849589A7F6",
+  "previousSha256": "3BA6A9C93F20C6515648097E621556DC6DC8AB191780D83250CFAF27BB23BB9C",
+  "backup": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\backups\\borders-20261016-133017-452\\LightAndDarknessMod.v0.3.0.swf",
+  "hostAndDependencies": {
+    "pfe.swf": "08A96759720C7A2AA489FCEEDB209C6E704500FDE7B1A4A49146BD578E99A8BC",
+    "mods/ContinuousScene/release/ContinuousSceneMod.swf": "F6ED93AFF2BFB76B4AE8CA2A2E01B84BBE4D24A8DD59EB4DE720847C8457D8D2",
+    "mods/RealisticVision/release/RealisticVisionMod.swf": "BAA48289D9CF86F64CFF53B4734032AD29C89C3AC1704DB2D89038D4B8DB4275",
+    "mods/WallBlend/release/WallBlendMod.swf": "3B1B40A65D7C57E4711C3861463B3470B0DFC086A8C8C01870C91A2F413DA96F",
+    "mods/ModLoader/release/ModLoaderMod.swf": "BD71B6F31774B97841D4C158451DA0353B53BC46AC72F8E2A7FE2C3F3F4908B1",
+    "mods/loader-manifest.txt": "778B8D1E551E69F4A16B3F4131141FBE4B1E35E9E9EFF2F360593182B5C07D6C"
+  },
+  "descriptorSha256": "70DD3B085E5F6C66C03693CF68CE5E93A4E4136DD745D40D1A5B2A49863BA236",
+  "evidence": [
+    "remains-lad-border-20261016132500939",
+    "remains-lad-test-20261016132655057",
+    "remains-lad-border-20261016133033599"
+  ],
+  "restartSmoke": "installed-verified: remains-lad-border-20261016133033599, 17 checks, v0.3.1 loaded and heartbeat",
+  "rollback": "Restore only this backup if release still matches sha256. Preserve host, manifest, other mods and real saves."
+}

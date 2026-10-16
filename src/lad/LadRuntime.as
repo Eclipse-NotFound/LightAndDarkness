@@ -55,7 +55,7 @@ package lad {
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.3.0",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.3.1",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.addEventListener(Event.ADDED,objectAdded,true);
@@ -64,7 +64,7 @@ package lad {
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.3.0 loaded");
+            LadLog.write("v0.3.1 loaded");
         }
         private function objectAdded(event:Event):void {
             if(!enabled || !atmosphere.settings.projectiles || !location || !world || world.loc!==location) return;
@@ -151,7 +151,7 @@ package lad {
             targetClass=ApplicationDomain.currentDomain.getDefinition("lad.native.LadLampTarget") as Class;
             if(lamps.length) {
                 if(beforeRaster) LadLampCatalog.strip(lamps);
-                else LadSceneBake.change(world.grafon,loc,function():void {LadLampCatalog.strip(lamps);});
+                else LadSceneBake.change(world.grafon,loc,function():void {LadLampCatalog.strip(lamps);},world.cam);
             }
             for each(var lamp:Object in lamps) {
                 lampLayer.addChild(lamp.holder);
@@ -173,7 +173,7 @@ package lad {
                     if(lamp.proxy) lamp.proxy.disabled=true;
                 }
                 if(redraw && world && world.loc===location && lamps.length) {
-                    try {LadSceneBake.change(world.grafon,location,function():void {LadLampCatalog.restore(lamps);});}
+                    try {LadSceneBake.change(world.grafon,location,function():void {LadLampCatalog.restore(lamps);},world.cam);}
                     catch(error:*) {LadLampCatalog.restore(lamps);LadLog.write("RESTORE_FAILED "+error);}
                 } else LadLampCatalog.restore(lamps);
             }

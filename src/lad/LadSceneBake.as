@@ -42,7 +42,7 @@ package lad {
             }
             return result;
         }
-        private static function redraw(g:*,loc:*):void {
+        private static function redraw(g:*,loc:*,camera:*):void {
             // Give independent overlay mods a frame to release the old chunk
             // generation before the host preloads the whole scene again.
             if("sceneLarge" in g && g.sceneLarge && "scenePreload" in g && (g.scenePreload || pendingPreload[g])
@@ -60,21 +60,24 @@ package lad {
                 g.scenePreload=false;
             }
             g.drawLoc(loc);
+            // drawLoc resets the native black borders. Reapply the current zoom
+            // before sceneTick, without changing the player's zoom or position.
+            camera.setZoom();
             if("sceneTick" in g) g.sceneTick();
         }
-        public static function change(g:*,loc:*,mutation:Function):void {
+        public static function change(g:*,loc:*,mutation:Function,camera:*):void {
             // Large scenes already journal native decals/terrain edits and replay
             // them in drawLoc. Cloning every preloaded chunk would exceed RAM.
             if("sceneLarge" in g && g.sceneLarge && "sceneSave" in g) {
                 var begin:int=getTimer();preservedPixels=0;
-                mutation();redraw(g,loc);lastMs=getTimer()-begin;
+                mutation();redraw(g,loc,camera);lastMs=getTimer()-begin;
                 LadLog.write("BAKE_LARGE native-history-replay ms="+lastMs);return;
             }
             var started:int=getTimer(),old:Object=capture(g),base:Object={};
             preservedPixels=0;
             try {
-                redraw(g,loc);base=capture(g);
-                mutation();redraw(g,loc);
+                redraw(g,loc,camera);base=capture(g);
+                mutation();redraw(g,loc,camera);
                 var current:Object=surfaces(g);
                 for(var key:String in old) {
                     var before:BitmapData=old[key],clean:BitmapData=base[key],target:BitmapData=current[key];

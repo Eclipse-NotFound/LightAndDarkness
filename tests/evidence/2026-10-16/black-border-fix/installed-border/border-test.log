@@ -1,0 +1,18 @@
+PASS native new-game room contains converted fixtures
+PASS entry has outward-facing borders without manual camera repair
+PASS fixture conversion retains all four camera borders mode=0
+PASS conversion preserves zoom and camera position mode=0
+PASS full stage already equals native camera oracle mode=0
+PASS disable retains all four camera borders mode=0
+PASS disable preserves zoom and camera position mode=0
+PASS fixture conversion retains all four camera borders mode=1
+PASS conversion preserves zoom and camera position mode=1
+PASS full stage already equals native camera oracle mode=1
+PASS disable retains all four camera borders mode=1
+PASS disable preserves zoom and camera position mode=1
+PASS fixture conversion retains all four camera borders mode=2
+PASS conversion preserves zoom and camera position mode=2
+PASS full stage already equals native camera oracle mode=2
+PASS disable retains all four camera borders mode=2
+PASS disable preserves zoom and camera position mode=2
+SUITE_PASS

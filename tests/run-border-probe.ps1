@@ -1,4 +1,4 @@
-param([switch]$Mixed,[int]$Width=2560,[int]$Height=960)
+param([switch]$Mixed,[int]$Width=2560,[int]$Height=960,[switch]$ExpectFixed,[string]$Candidate='')
 $ErrorActionPreference='Stop'
 $ladRoot=Split-Path $PSScriptRoot -Parent
 $ladGame=Split-Path (Split-Path $ladRoot -Parent) -Parent
@@ -12,7 +12,8 @@ foreach($ladAsset in $ladAssets){Copy-Item -LiteralPath (Join-Path $ladGame $lad
 if(!(Test-Path -LiteralPath (Join-Path $ladRuntime 'Rooms'))){Copy-Item -LiteralPath (Join-Path $ladGame 'Rooms') -Destination $ladRuntime -Recurse}
 $ladRelease=Join-Path $ladRuntime 'mods/LightAndDarkness/release'
 New-Item -ItemType Directory -Force -Path $ladRelease | Out-Null
-Copy-Item -LiteralPath (Join-Path $ladRoot 'release/LightAndDarknessMod.swf') -Destination $ladRelease -Force
+if(!$Candidate){$Candidate=Join-Path $ladRoot 'release/LightAndDarknessMod.swf'}
+Copy-Item -LiteralPath $Candidate -Destination (Join-Path $ladRelease 'LightAndDarknessMod.swf') -Force
 Copy-Item -LiteralPath (Join-Path $ladRoot 'build/out/border-diagnosis/LightBorderProbe.swf') -Destination $ladRelease -Force
 Copy-Item -LiteralPath (Join-Path $ladRoot 'atmosphere.json') -Destination (Join-Path (Split-Path $ladRelease -Parent) 'atmosphere.json') -Force
 $ladManifest="LightAndDarkness|LightAndDarknessMod|1|0|0`nLightAndDarkness|LightBorderProbe|1|0|0`n"
@@ -24,6 +25,7 @@ if($Mixed){foreach($ladMod in @('ModLoader','ContinuousScene','RealisticVision',
     $ladManifest+="$ladMod|${ladMod}Mod|1|0|0`n";$ladHashes+=Join-Path $ladDependency "${ladMod}Mod.swf"
 }}
 [IO.File]::WriteAllText((Join-Path $ladRuntime 'mods/loader-manifest.txt'),$ladManifest,[Text.UTF8Encoding]::new($false))
+[IO.File]::WriteAllText((Join-Path $ladRuntime 'border-mode.txt'),$(if($ExpectFixed){'fixed'}else{'diagnosis'}),[Text.UTF8Encoding]::new($false))
 $ladDescriptor=Join-Path $ladRuntime 'app_lad_border_test.xml'
 $ladXml="<?xml version='1.0'?><application xmlns='http://ns.adobe.com/air/application/30.0'><id>$ladId</id><versionNumber>1.0</versionNumber><filename>LightBorderProbe</filename><initialWindow><content>pfe.swf</content><visible>false</visible><width>$Width</width><height>$Height</height><renderMode>direct</renderMode></initialWindow><supportedProfiles>extendedDesktop</supportedProfiles></application>"
 [IO.File]::WriteAllText($ladDescriptor,$ladXml,[Text.UTF8Encoding]::new($false))

@@ -10,16 +10,19 @@ package {
     import flash.utils.getDefinitionByName;
     import flash.utils.getTimer;
 
-    /** Diagnosis only: invokes the installed runtime, without embedding lad or fe classes. */
+    /** External diagnosis/regression probe; never embeds lad or fe classes. */
     public class LightBorderProbe extends Sprite {
         private static var probe:LightBorderProbe;
         private var main:*,world:*,runtime:*;
         private var phase:int=0,frames:int=0,mode:int=0,started:int;
         private var rows:Array=[],checks:Array=[];
+        private var expectFixed:Boolean=false,expected:Object;
         public function LightBorderProbe() {}
         public static function init(root:*):void {
             if(NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-border-")!=0)return;
             probe=new LightBorderProbe();probe.main=root;probe.started=getTimer();
+            var input:FileStream=new FileStream();input.open(File.applicationDirectory.resolvePath("border-mode.txt"),FileMode.READ);
+            probe.expectFixed=input.readUTFBytes(input.bytesAvailable)=="fixed";input.close();
             root.stage.addEventListener(Event.ENTER_FRAME,probe.frame,false,-150);
         }
         private function log(value:String):void {
@@ -54,7 +57,7 @@ package {
             var out:FileStream=new FileStream();out.open(File.applicationStorageDirectory.resolvePath("border-report.json"),FileMode.WRITE);
             out.writeUTFBytes(JSON.stringify({status:error?"failed":"passed",error:error,rows:rows,checks:checks,
                 applicationID:NativeApplication.nativeApplication.applicationID,elapsedMs:getTimer()-started,
-                boundary:"Isolated new game; production runtime toggle; only camera zoom reapplied for diagnosis. No production file or real save modified."},null,2));out.close();
+                expectFixed:expectFixed,boundary:"Isolated new game; actual runtime toggle; native camera is the same-frame comparison oracle. No real save modified."},null,2));out.close();
             log(error?"FAIL "+error:"SUITE_PASS");
         }
         private function frame(event:Event):void {
@@ -71,9 +74,11 @@ package {
                     world.gui.dialText(null);world.gui.guiPause=false;world.gui.dialScript.running=false;world.onPause=true;
                     rows.push({entry:state()});picture("entry").dispose();
                     check(runtime.lamps.length>0,"native new-game room contains converted fixtures");
-                    runtime.setEnabled(false);world.cam.setZoom(mode);world.cam.calc(world.gg);runtime.setEnabled(true);
+                    if(expectFixed) check(world.grafon.ramT.scaleY<0 && world.grafon.ramL.scaleX<0,"entry has outward-facing borders without manual camera repair");
+                    runtime.setEnabled(false);world.cam.setZoom(mode);world.cam.calc(world.gg);expected=state();runtime.setEnabled(true);
                     phase=2;frames=0;
                 } else if(phase==2 && runtime.location===world.loc && ++frames>=4) {
+                    if(expectFixed){fixedMode();return;}
                     var g:*=world.grafon;
                     var row:Object={mode:mode,broken:state()};rows.push(row);
                     check(g.ramT.scaleY==2 && g.ramL.scaleX==2,"production fixture attach resets native borders mode="+mode);
@@ -99,6 +104,29 @@ package {
                     world.cam.setZoom(mode);world.cam.calc(world.gg);runtime.setEnabled(true);frames=0;
                 }
             }catch(error:*){finish(String(error)+" "+error.getStackTrace());}
+        }
+        private function sameBorders(a:Object,b:Object):Boolean {
+            return a.top==b.top && a.bottom==b.bottom && a.left==b.left && a.right==b.right;
+        }
+        private function sameCamera(a:Object,b:Object):Boolean {
+            return a.zoom==b.zoom && a.scale==b.scale && a.visualX==b.visualX && a.visualY==b.visualY;
+        }
+        private function fixedMode():void {
+            var row:Object={mode:mode,expected:expected,attached:state()};rows.push(row);
+            check(sameBorders(expected,row.attached),"fixture conversion retains all four camera borders mode="+mode);
+            check(sameCamera(expected,row.attached),"conversion preserves zoom and camera position mode="+mode);
+            var before:BitmapData=picture("mode"+mode+"-fixed");
+            world.cam.setZoom();
+            var after:BitmapData=picture("mode"+mode+"-oracle");
+            var difference:*=before.compare(after);
+            check(difference===0,"full stage already equals native camera oracle mode="+mode);
+            before.dispose();after.dispose();
+            runtime.setEnabled(false);row.disabled=state();
+            check(sameBorders(expected,row.disabled),"disable retains all four camera borders mode="+mode);
+            check(sameCamera(expected,row.disabled),"disable preserves zoom and camera position mode="+mode);
+            mode++;
+            if(mode>=3){finish();return;}
+            world.cam.setZoom(mode);world.cam.calc(world.gg);expected=state();runtime.setEnabled(true);frames=0;
         }
     }
 }

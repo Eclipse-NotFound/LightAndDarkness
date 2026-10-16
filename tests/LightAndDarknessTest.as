@@ -62,6 +62,10 @@ package {
             stream.writeBytes(bytes);stream.close();bitmap.dispose();log("SCREEN "+name);
         }
         private function check(pass:Boolean,label:String):void {LightCoreChecks.check(pass,label,log);}
+        private function checkBorders(label:String):void {
+            var g:*=world.grafon;
+            check(g.ramT.scaleY<0 && g.ramL.scaleX<0 && g.ramB.scaleY>0 && g.ramR.scaleX>0,label);
+        }
         private function key(type:String,code:int):void {
             // Bubble from a child so the production stage capture listener handles it.
             main.dispatchEvent(new KeyboardEvent(type,true,false,0,code,0,false,true,false));
@@ -111,6 +115,7 @@ package {
                     var carrier:*=main.getChildByName("LightAndDarknessCarrier");
                     if(!carrier) return;runtime=carrier.ladAPI.runtime;
                     if(runtime.location!==world.loc) return;
+                    checkBorders("entry native borders face outside scene");
                     if(cold) {
                         lampKey="light1:200.00:400.00:1:1:0";lamp=findLamp();
                         check(lamp.state.hp==0 && !runtime.store.data.headlamp,"cold process restores broken fixture and headlamp");
@@ -165,18 +170,22 @@ package {
                     world.saveGame(8);
                     previousLocation=world.loc;world.comLoad=7;phase=6;tick=0;
                 } else if(phase==6 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
+                    checkBorders("broken-lamp load preserves camera borders");
                     lamp=findLamp();check(lamp.state.hp==0 && !runtime.store.data.headlamp,"native load restores broken lamp and headlamp switch");
                     check(world.invent.items["scrap"].kol==10,"native load restores inventory separately");
                     previousLocation=world.loc;world.comLoad=8;phase=7;tick=0;
                 } else if(phase==7 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
+                    checkBorders("repaired-lamp load preserves camera borders");
                     lamp=findLamp();check(lamp.state.hp==40 && !lamp.state.on,"second slot restores repaired but switched-off lamp");
                     check(world.loc.units.length==baselineUnits,"load leaves one proxy per fixture");
                     world.grafon.visBack2.getChildAt(0).bitmapData.setPixel32(12,12,0xff123456);
                     runtime.setEnabled(false);
+                    checkBorders("ordinary-room disable preserves camera borders");
                     check(world.grafon.visBack2.getChildAt(0).bitmapData.getPixel32(12,12)==0xff123456,"native raster edits survive ordinary-room restoration");
                     check(world.loc.units.length==baselineUnits-9 && lamp.bo.vis!=null && lamp.bo.light!=null,"disable restores native fixture and removes proxies");
                     runtime.setEnabled(true);phase=8;tick=0;
                 } else if(phase==8 && runtime.location===world.loc && ++tick>=20) {
+                    checkBorders("ordinary-room reenable preserves camera borders");
                     lamp=findLamp();check(world.loc.units.length==baselineUnits && !lamp.state.on,"reenable preserves state without duplicates");
                     check(world.grafon.visBack2.getChildAt(0).bitmapData.getPixel32(12,12)==0xff123456,"native raster edits survive ordinary-room conversion");
                     check(world.gg.childObjs["LightAndDarknessTick"]!=null,"native player update hook rebound");
@@ -245,6 +254,7 @@ package {
                     world.pers.healAll();world.pip.noAct=false;world.game.triggers["noreturn"]=0;
                     scene.sceneAPI.travel();phase=11;tick=0;
                 } else if(phase==11 && world.land && world.land.act.id=="continuous_scene" && world.loc && world.allStat==1 && ++tick>25) {
+                    checkBorders("large-scene travel preserves camera borders");
                     check(runtime.location===world.loc,"large scene attachment succeeded");
                     if("sceneSynchronousRedraw" in world.grafon)
                         check(runtime.preparedScenes>0,"fixtures prepared before first large-scene raster");
@@ -258,8 +268,11 @@ package {
                         if(oldPixels.getPixel32(px,py)!=marked.getPixel32(px,py)) {markX=px;markY=py;markColor=marked.getPixel32(px,py);changed=true;break;}
                     }
                     oldPixels.dispose();check(changed,"native large-scene paint mark created");
-                    largeUnits=world.loc.units.length;runtime.setEnabled(false);runtime.setEnabled(true);phase=12;tick=0;
+                    largeUnits=world.loc.units.length;runtime.setEnabled(false);
+                    checkBorders("large-scene disable preserves camera borders");
+                    runtime.setEnabled(true);phase=12;tick=0;
                 } else if(phase==12 && runtime.location===world.loc && ++tick>25) {
+                    checkBorders("large-scene reenable preserves camera borders");
                     check(runtime.enabled && world.loc.units.length==largeUnits,"large scene toggle has no proxy leak");
                     check(largeSurface().nativeBuffers[0].getPixel32(markX,markY)==markColor,"large-scene native paint history survives lighting conversion");
                     check(world.grafon.scenePreload,"large-scene preload preference restored");

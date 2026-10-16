@@ -1,0 +1,241 @@
+{
+  "applicationID": "remains-lad-border-20261016132500939",
+  "checks": [
+    {
+      "label": "native new-game room contains converted fixtures",
+      "pass": true
+    },
+    {
+      "label": "entry has outward-facing borders without manual camera repair",
+      "pass": true
+    },
+    {
+      "label": "fixture conversion retains all four camera borders mode=0",
+      "pass": true
+    },
+    {
+      "label": "conversion preserves zoom and camera position mode=0",
+      "pass": true
+    },
+    {
+      "label": "full stage already equals native camera oracle mode=0",
+      "pass": true
+    },
+    {
+      "label": "disable retains all four camera borders mode=0",
+      "pass": true
+    },
+    {
+      "label": "disable preserves zoom and camera position mode=0",
+      "pass": true
+    },
+    {
+      "label": "fixture conversion retains all four camera borders mode=1",
+      "pass": true
+    },
+    {
+      "label": "conversion preserves zoom and camera position mode=1",
+      "pass": true
+    },
+    {
+      "label": "full stage already equals native camera oracle mode=1",
+      "pass": true
+    },
+    {
+      "label": "disable retains all four camera borders mode=1",
+      "pass": true
+    },
+    {
+      "label": "disable preserves zoom and camera position mode=1",
+      "pass": true
+    },
+    {
+      "label": "fixture conversion retains all four camera borders mode=2",
+      "pass": true
+    },
+    {
+      "label": "conversion preserves zoom and camera position mode=2",
+      "pass": true
+    },
+    {
+      "label": "full stage already equals native camera oracle mode=2",
+      "pass": true
+    },
+    {
+      "label": "disable retains all four camera borders mode=2",
+      "pass": true
+    },
+    {
+      "label": "disable preserves zoom and camera position mode=2",
+      "pass": true
+    }
+  ],
+  "error": "",
+  "expectFixed": true,
+  "status": "passed",
+  "boundary": "Isolated new game; actual runtime toggle; native camera is the same-frame comparison oracle. No real save modified.",
+  "elapsedMs": 78694,
+  "rows": [
+    {
+      "entry": {
+        "left": -8.922149837133547,
+        "land": "rbl",
+        "visualX": 387,
+        "right": 8.976438653637349,
+        "visualY": 0,
+        "width": 2544,
+        "top": -0.5428881650380022,
+        "zoom": 2,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6514657980456026,
+        "lamps": 9,
+        "scale": 0.921
+      }
+    },
+    {
+      "expected": {
+        "left": -6.74,
+        "land": "rbl",
+        "visualX": 312,
+        "right": 6.79,
+        "visualY": -79,
+        "width": 2544,
+        "top": -0.5,
+        "zoom": 0,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6,
+        "lamps": 0,
+        "scale": 1
+      },
+      "attached": {
+        "left": -6.74,
+        "land": "rbl",
+        "visualX": 312,
+        "right": 6.79,
+        "visualY": -79,
+        "width": 2544,
+        "top": -0.5,
+        "zoom": 0,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6,
+        "lamps": 9,
+        "scale": 1
+      },
+      "disabled": {
+        "left": -6.74,
+        "land": "rbl",
+        "visualX": 312,
+        "right": 6.79,
+        "visualY": -79,
+        "width": 2544,
+        "top": -0.5,
+        "zoom": 0,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6,
+        "lamps": 0,
+        "scale": 1
+      },
+      "mode": 0
+    },
+    {
+      "expected": {
+        "left": -6.74,
+        "land": "rbl",
+        "visualX": 312,
+        "right": 6.79,
+        "visualY": -79,
+        "width": 2544,
+        "top": -0.5,
+        "zoom": 1,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6,
+        "lamps": 0,
+        "scale": 1
+      },
+      "attached": {
+        "left": -6.74,
+        "land": "rbl",
+        "visualX": 312,
+        "right": 6.79,
+        "visualY": -79,
+        "width": 2544,
+        "top": -0.5,
+        "zoom": 1,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6,
+        "lamps": 9,
+        "scale": 1
+      },
+      "disabled": {
+        "left": -6.74,
+        "land": "rbl",
+        "visualX": 312,
+        "right": 6.79,
+        "visualY": -79,
+        "width": 2544,
+        "top": -0.5,
+        "zoom": 1,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6,
+        "lamps": 0,
+        "scale": 1
+      },
+      "mode": 1
+    },
+    {
+      "expected": {
+        "left": -8.922149837133547,
+        "land": "rbl",
+        "visualX": 387,
+        "right": 8.976438653637349,
+        "visualY": 0,
+        "width": 2544,
+        "top": -0.5428881650380022,
+        "zoom": 2,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6514657980456026,
+        "lamps": 0,
+        "scale": 0.921
+      },
+      "attached": {
+        "left": -8.922149837133547,
+        "land": "rbl",
+        "visualX": 387,
+        "right": 8.976438653637349,
+        "visualY": 0,
+        "width": 2544,
+        "top": -0.5428881650380022,
+        "zoom": 2,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6514657980456026,
+        "lamps": 9,
+        "scale": 0.921
+      },
+      "disabled": {
+        "left": -8.922149837133547,
+        "land": "rbl",
+        "visualX": 387,
+        "right": 8.976438653637349,
+        "visualY": 0,
+        "width": 2544,
+        "top": -0.5428881650380022,
+        "zoom": 2,
+        "room": "loc0_0",
+        "height": 921,
+        "bottom": 0.6514657980456026,
+        "lamps": 0,
+        "scale": 0.921
+      },
+      "mode": 2
+    }
+  ]
+}
