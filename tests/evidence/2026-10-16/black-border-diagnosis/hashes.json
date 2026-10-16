@@ -1,0 +1,37 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "08A96759720C7A2AA489FCEEDB209C6E704500FDE7B1A4A49146BD578E99A8BC",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\border-runtime\\pfe.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3BA6A9C93F20C6515648097E621556DC6DC8AB191780D83250CFAF27BB23BB9C",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\border-runtime\\mods\\LightAndDarkness\\release\\LightAndDarknessMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0264DBA9EA88468EA131DA2C5CB366CEF55A77D74162235F12FC432378555CE6",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\border-runtime\\mods\\LightAndDarkness\\release\\LightBorderProbe.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "BD71B6F31774B97841D4C158451DA0353B53BC46AC72F8E2A7FE2C3F3F4908B1",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\border-runtime\\mods\\ModLoader\\release\\ModLoaderMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "F6ED93AFF2BFB76B4AE8CA2A2E01B84BBE4D24A8DD59EB4DE720847C8457D8D2",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\border-runtime\\mods\\ContinuousScene\\release\\ContinuousSceneMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "BAA48289D9CF86F64CFF53B4734032AD29C89C3AC1704DB2D89038D4B8DB4275",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\border-runtime\\mods\\RealisticVision\\release\\RealisticVisionMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3B1B40A65D7C57E4711C3861463B3470B0DFC086A8C8C01870C91A2F413DA96F",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\border-runtime\\mods\\WallBlend\\release\\WallBlendMod.swf"
+  }
+]

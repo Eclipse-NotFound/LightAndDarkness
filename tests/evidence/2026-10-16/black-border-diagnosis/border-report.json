@@ -1,0 +1,254 @@
+{
+  "rows": [
+    {
+      "entry": {
+        "left": 2,
+        "visualY": 0,
+        "lamps": 9,
+        "height": 921,
+        "right": 2,
+        "scale": 0.921,
+        "width": 2544,
+        "top": 2,
+        "zoom": 2,
+        "room": "loc0_0",
+        "bottom": 2,
+        "land": "rbl",
+        "visualX": 387
+      }
+    },
+    {
+      "revealedByCamera": 208611,
+      "mode": 0,
+      "restored": {
+        "left": -6.74,
+        "visualY": -79,
+        "lamps": 9,
+        "height": 921,
+        "right": 6.79,
+        "scale": 1,
+        "width": 2544,
+        "top": -0.5,
+        "zoom": 0,
+        "room": "loc0_0",
+        "bottom": 0.6,
+        "land": "rbl",
+        "visualX": 312
+      },
+      "revealedByHidingBorders": 374121,
+      "disabled": {
+        "left": 2,
+        "visualY": -79,
+        "lamps": 0,
+        "height": 921,
+        "right": 2,
+        "scale": 1,
+        "width": 2544,
+        "top": 2,
+        "zoom": 0,
+        "room": "loc0_0",
+        "bottom": 2,
+        "land": "rbl",
+        "visualX": 312
+      },
+      "broken": {
+        "left": 2,
+        "visualY": -79,
+        "lamps": 9,
+        "height": 921,
+        "right": 2,
+        "scale": 1,
+        "width": 2544,
+        "top": 2,
+        "zoom": 0,
+        "room": "loc0_0",
+        "bottom": 2,
+        "land": "rbl",
+        "visualX": 312
+      }
+    },
+    {
+      "revealedByCamera": 208611,
+      "mode": 1,
+      "restored": {
+        "left": -6.74,
+        "visualY": -79,
+        "lamps": 9,
+        "height": 921,
+        "right": 6.79,
+        "scale": 1,
+        "width": 2544,
+        "top": -0.5,
+        "zoom": 1,
+        "room": "loc0_0",
+        "bottom": 0.6,
+        "land": "rbl",
+        "visualX": 312
+      },
+      "revealedByHidingBorders": 374121,
+      "disabled": {
+        "left": 2,
+        "visualY": -79,
+        "lamps": 0,
+        "height": 921,
+        "right": 2,
+        "scale": 1,
+        "width": 2544,
+        "top": 2,
+        "zoom": 1,
+        "room": "loc0_0",
+        "bottom": 2,
+        "land": "rbl",
+        "visualX": 312
+      },
+      "broken": {
+        "left": 2,
+        "visualY": -79,
+        "lamps": 9,
+        "height": 921,
+        "right": 2,
+        "scale": 1,
+        "width": 2544,
+        "top": 2,
+        "zoom": 1,
+        "room": "loc0_0",
+        "bottom": 2,
+        "land": "rbl",
+        "visualX": 312
+      }
+    },
+    {
+      "revealedByCamera": 292496,
+      "mode": 2,
+      "restored": {
+        "left": -8.922149837133547,
+        "visualY": 0,
+        "lamps": 9,
+        "height": 921,
+        "right": 8.976438653637349,
+        "scale": 0.921,
+        "width": 2544,
+        "top": -0.5428881650380022,
+        "zoom": 2,
+        "room": "loc0_0",
+        "bottom": 0.6514657980456026,
+        "land": "rbl",
+        "visualX": 387
+      },
+      "revealedByHidingBorders": 447523,
+      "disabled": {
+        "left": 2,
+        "visualY": 0,
+        "lamps": 0,
+        "height": 921,
+        "right": 2,
+        "scale": 0.921,
+        "width": 2544,
+        "top": 2,
+        "zoom": 2,
+        "room": "loc0_0",
+        "bottom": 2,
+        "land": "rbl",
+        "visualX": 387
+      },
+      "broken": {
+        "left": 2,
+        "visualY": 0,
+        "lamps": 9,
+        "height": 921,
+        "right": 2,
+        "scale": 0.921,
+        "width": 2544,
+        "top": 2,
+        "zoom": 2,
+        "room": "loc0_0",
+        "bottom": 2,
+        "land": "rbl",
+        "visualX": 387
+      }
+    }
+  ],
+  "boundary": "Isolated new game; production runtime toggle; only camera zoom reapplied for diagnosis. No production file or real save modified.",
+  "elapsedMs": 103498,
+  "applicationID": "remains-lad-border-20261016130935784",
+  "checks": [
+    {
+      "label": "native new-game room contains converted fixtures",
+      "pass": true
+    },
+    {
+      "label": "production fixture attach resets native borders mode=0",
+      "pass": true
+    },
+    {
+      "label": "same zoom restores outward-facing native borders mode=0",
+      "pass": true
+    },
+    {
+      "label": "native borders alone account for black scene pixels mode=0",
+      "pass": true
+    },
+    {
+      "label": "reapplying camera exposes missing scene pixels mode=0",
+      "pass": true
+    },
+    {
+      "label": "repair preserves zoom and camera position mode=0",
+      "pass": true
+    },
+    {
+      "label": "disabling lighting redraws and leaves border defect mode=0",
+      "pass": true
+    },
+    {
+      "label": "production fixture attach resets native borders mode=1",
+      "pass": true
+    },
+    {
+      "label": "same zoom restores outward-facing native borders mode=1",
+      "pass": true
+    },
+    {
+      "label": "native borders alone account for black scene pixels mode=1",
+      "pass": true
+    },
+    {
+      "label": "reapplying camera exposes missing scene pixels mode=1",
+      "pass": true
+    },
+    {
+      "label": "repair preserves zoom and camera position mode=1",
+      "pass": true
+    },
+    {
+      "label": "disabling lighting redraws and leaves border defect mode=1",
+      "pass": true
+    },
+    {
+      "label": "production fixture attach resets native borders mode=2",
+      "pass": true
+    },
+    {
+      "label": "same zoom restores outward-facing native borders mode=2",
+      "pass": true
+    },
+    {
+      "label": "native borders alone account for black scene pixels mode=2",
+      "pass": true
+    },
+    {
+      "label": "reapplying camera exposes missing scene pixels mode=2",
+      "pass": true
+    },
+    {
+      "label": "repair preserves zoom and camera position mode=2",
+      "pass": true
+    },
+    {
+      "label": "disabling lighting redraws and leaves border defect mode=2",
+      "pass": true
+    }
+  ],
+  "error": "",
+  "status": "passed"
+}

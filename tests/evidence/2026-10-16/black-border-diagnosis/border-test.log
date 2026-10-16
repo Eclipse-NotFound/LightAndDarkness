@@ -1,0 +1,20 @@
+PASS native new-game room contains converted fixtures
+PASS production fixture attach resets native borders mode=0
+PASS same zoom restores outward-facing native borders mode=0
+PASS native borders alone account for black scene pixels mode=0
+PASS reapplying camera exposes missing scene pixels mode=0
+PASS repair preserves zoom and camera position mode=0
+PASS disabling lighting redraws and leaves border defect mode=0
+PASS production fixture attach resets native borders mode=1
+PASS same zoom restores outward-facing native borders mode=1
+PASS native borders alone account for black scene pixels mode=1
+PASS reapplying camera exposes missing scene pixels mode=1
+PASS repair preserves zoom and camera position mode=1
+PASS disabling lighting redraws and leaves border defect mode=1
+PASS production fixture attach resets native borders mode=2
+PASS same zoom restores outward-facing native borders mode=2
+PASS native borders alone account for black scene pixels mode=2
+PASS reapplying camera exposes missing scene pixels mode=2
+PASS repair preserves zoom and camera position mode=2
+PASS disabling lighting redraws and leaves border defect mode=2
+SUITE_PASS
