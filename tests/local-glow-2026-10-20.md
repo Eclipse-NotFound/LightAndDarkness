@@ -37,3 +37,9 @@
 整合会话`01a13e52-3948-7cd1-af6f-7e7462e29b4a`为唯一部署方。机器最终复验：`tests/run-machines.ps1 -Mixed -Candidate <冻结SWF> -Mode verify -ExpectedVersion 0.5.0 -ProbePath build/out/local-glow/LightMachineProbeMod.swf`。地标与终端：`tools/run-landmark-tests.py --candidate <冻结SWF> --mode verify --mixed --expected-version 0.5.0 --terminals`，要求217而非仅124。最终字节与部署回执补在本记录。
 
 本轮实现与独立证据已精确提交60118c8。代码差异检查通过，原生stderr的CRCRLF按原件保留，未为消除文本空白提示而改写日志。报告已查重登记全局测试报告台账第624行并回读确认，状态待吸收。
+
+## 最终整合候选准备
+
+00:26已回读`build/out/trails-v050/LightAndDarknessMod.swf`与`freeze.json`，SHA256为**4291B8250D607EA1C6B5BE48DED48BB5FA42AF37BFE0CB3ED7A2E7C84EFBBF90**。冻结的Machine/Landmark源码哈希分别为9E964A8A/A33AB324，与本轮已验源码相同；菜单文字已包含终端。这里只证明整合内容和字节身份，不能把独立590C的173/217当成4291运行结果。
+
+AIR时段由整合/性能/大场景会话协调，等待明确释放后再启动；00:26时正式release仍94A2F086。没有把任何其他会话的背景摄影或性能实例计入自己的验证。
