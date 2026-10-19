@@ -1,0 +1,28 @@
+Mon Oct 19 15:52:07 2026 UTC [LightAndDarkness] ATMOSPHERE_CONFIG loaded
+Mon Oct 19 15:52:07 2026 UTC [LightAndDarkness] v0.4.1 loaded
+Mon Oct 19 15:52:30 2026 UTC [LightAndDarkness] BAKE ms=1655 preserved=0
+Mon Oct 19 15:52:30 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Mon Oct 19 15:52:30 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 pulses=0 renderMs=2
+Mon Oct 19 15:52:40 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=130 pulses=0 renderMs=6
+Mon Oct 19 15:52:48 2026 UTC [LightAndDarkness] BAKE ms=2093 preserved=0
+Mon Oct 19 15:53:12 2026 UTC [LightAndDarkness] BAKE ms=1433 preserved=0
+Mon Oct 19 15:53:12 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Mon Oct 19 15:53:12 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=214 pulses=0 renderMs=3
+Mon Oct 19 15:53:21 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=48 beforeRaster=true state=random_mane|loc0_0|0|0|0||true|240|125|13d244a1
+Mon Oct 19 15:53:24 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=218 pulses=0 renderMs=52
+Mon Oct 19 15:53:35 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=249 pulses=0 renderMs=33
+Mon Oct 19 15:53:45 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=275 pulses=0 renderMs=4
+Mon Oct 19 15:53:56 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=313 pulses=0 renderMs=38
+Mon Oct 19 15:54:06 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=345 pulses=0 renderMs=14
+Mon Oct 19 15:54:16 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=375 pulses=0 renderMs=2
+Mon Oct 19 15:54:27 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=404 pulses=0 renderMs=25
+Mon Oct 19 15:54:38 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=2035
+Mon Oct 19 15:56:39 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=6681
+Mon Oct 19 15:56:39 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=48 beforeRaster=false state=random_mane|loc0_0|0|0|0||true|240|125|13d244a1
+Mon Oct 19 15:56:39 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=437 pulses=0 renderMs=3
+Mon Oct 19 15:56:49 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=452 pulses=0 renderMs=6
+Mon Oct 19 15:56:59 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=459 pulses=0 renderMs=3
+Mon Oct 19 15:57:10 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=479 pulses=0 renderMs=22
+Mon Oct 19 15:57:20 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=507 pulses=0 renderMs=209
+Mon Oct 19 15:57:31 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=532 pulses=0 renderMs=49
+Mon Oct 19 15:57:41 2026 UTC [LightAndDarkness] heartbeat lamps=48 steps=574 pulses=0 renderMs=36

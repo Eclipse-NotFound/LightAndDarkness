@@ -18,6 +18,7 @@ package lad {
         public var bounds:Rectangle = new Rectangle();
         public var elapsedMs:int = 0;
         public var rebuilds:int = 0;
+        public var trailRaster:LadTrailRaster=new LadTrailRaster();
         private var cache:Object = {};
         private var terrainHash:uint = 0;
         private var terrainRegion:String = "";
@@ -25,7 +26,7 @@ package lad {
         private var background:BitmapData;
         private var backgroundKey:String="";
         private var materialHashes:Object={};
-        // A scrolling viewport is not a terrain edit. Large scenes retain the
+        // A scrolling viewport is not a terrain edit. Rooms retain the
         // same shadow geometry and a padded ambient raster until content changes.
         public var sceneCache:Boolean=true;
         private var usingSceneCache:Boolean=false;
@@ -37,6 +38,7 @@ package lad {
             bitmap.scaleX = bitmap.scaleY = cell;
         }
         public function clear():void {
+            trailRaster.clear();
             for each(var item:Object in cache) item.data.dispose();
             cache = {}; terrainHash = 0; terrainRegion = ""; loc = null;
             if(data) data.dispose(); data=null; bitmap.bitmapData=null;
@@ -59,7 +61,7 @@ package lad {
             }
             bounds.setTo(vx,vy,width*cell,height*cell);
             bitmap.x=vx; bitmap.y=vy;
-            var reuse:Boolean=sceneCache && (loc.spaceX>48 || loc.spaceY>25);
+            var reuse:Boolean=sceneCache;
             if(reuse!=usingSceneCache) {
                 clearGeometry();terrainCells=[];terrainHash=0;terrainRegion="";backgroundKey="";
                 usingSceneCache=reuse;
@@ -70,7 +72,7 @@ package lad {
                 // current light, even when its rays extend beyond the camera.
                 if(background) {var ambientScan:Rectangle=backgroundBounds.clone();ambientScan.inflate(280,280);scan=scan.union(ambientScan);}
                 for each(var activeLight:Object in lights)
-                    if(bounds.intersects(new Rectangle(activeLight.x-activeLight.radius,activeLight.y-activeLight.radius,activeLight.radius*2,activeLight.radius*2)))
+                    if(!activeLight.trail && bounds.intersects(new Rectangle(activeLight.x-activeLight.radius,activeLight.y-activeLight.radius,activeLight.radius*2,activeLight.radius*2)))
                         scan=scan.union(new Rectangle(activeLight.x-activeLight.radius,activeLight.y-activeLight.radius,activeLight.radius*2,activeLight.radius*2));
                 if(sceneTerrainChanged(scan)) {clearGeometry();++terrainHash;backgroundKey="";}
             } else {
@@ -99,6 +101,7 @@ package lad {
             data.lock(); data.copyPixels(background,new Rectangle((bounds.x-backgroundBounds.x)/cell,(bounds.y-backgroundBounds.y)/cell,data.width,data.height),new Point());
             var alive:Object={};
             for each(var light:Object in lights) {
+                if(light.trail) continue;
                 if(!bounds.intersects(new Rectangle(light.x-light.radius,light.y-light.radius,light.radius*2,light.radius*2))) continue;
                 var identity:String=String(light.id);
                 alive[identity]=true;
@@ -117,6 +120,7 @@ package lad {
                 data.draw(entry.data,matrix,transform,BlendMode.SCREEN,null,true);
             }
             for(var key:String in cache) if(!alive[key]) {cache[key].data.dispose();delete cache[key];}
+            trailRaster.render(data,bounds,cell,loc,lights);
             data.unlock();elapsedMs=getTimer()-started;
         }
         private function clearGeometry():void {

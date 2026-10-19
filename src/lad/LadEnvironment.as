@@ -86,8 +86,10 @@ package lad {
             for(x=0;x<output.width;x++) for(y=0;y<output.height;y++) {
                 var wx:Number=bounds.x+(x+0.5)*cell,wy:Number=bounds.y+(y+0.5)*cell;
                 var tx:int=Math.floor(wx/40)-left,ty:int=Math.floor(wy/40)-top;
-                v=profile(wx,wy).ambient;
+                // The tile pass already resolved its room profile. Only pixels
+                // outside the location need the fallback region lookup.
                 if(tx>=0 && ty>=0 && tx<width && ty<height) {i=ty*width+tx;v=Math.max(base[i],sky[i]);}
+                else v=profile(wx,wy).ambient;
                 var shade:int=Math.max(0,Math.min(255,int(v*multiplier*255)));
                 output.setPixel(x,y,(shade<<16)|(shade<<8)|shade);
             }

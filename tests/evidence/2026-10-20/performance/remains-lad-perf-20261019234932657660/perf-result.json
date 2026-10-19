@@ -1,0 +1,49 @@
+{
+  "config": {
+    "mode": "pixels",
+    "full": false,
+    "candidate": "mods/LightAndDarkness/build/out/perf-v042-stage2/LightAndDarknessMod.swf"
+  },
+  "rows": [
+    {
+      "width": 48,
+      "scene": 0,
+      "pixelFrames": 96,
+      "land": "rbl",
+      "height": 25,
+      "regions": 1,
+      "results": []
+    },
+    {
+      "width": 240,
+      "scene": 1,
+      "pixelFrames": 96,
+      "land": "random_mane",
+      "height": 125,
+      "regions": 25,
+      "results": []
+    }
+  ],
+  "frameRate": 30,
+  "checks": 385,
+  "error": "",
+  "version": "0.4.2",
+  "loader": {
+    "requested_ContinuousSceneMod": "run_1792424987482_568138|line 21 @1792424988093",
+    "requested_LightAndDarknessMod": "run_1792424987482_568138|line 22 @1792424988098",
+    "ok_LightingPerfProbeMod": "run_1792424987482_568138|init @1792424988676",
+    "boot_start": "run_1792424987482_568138|v2 run=run_1792424987482_568138 @1792424987512",
+    "requested_LightingPerfProbeMod": "run_1792424987482_568138|line 23 @1792424988102",
+    "ok_WallBlendMod": "run_1792424987482_568138|init @1792424988713",
+    "ok_LightAndDarknessMod": "run_1792424987482_568138|init @1792424988732",
+    "ok_ContinuousSceneMod": "run_1792424987482_568138|init @1792424988747",
+    "session": "run_1792424987482_568138",
+    "boot": "run_1792424987482_568138|v2 col=2 requested=6 @1792424988113",
+    "requested_WallBlendMod": "run_1792424987482_568138|line 24 @1792424988109",
+    "requested_RealisticVisionMod": "run_1792424987482_568138|line 15 @1792424988091",
+    "requested_ModLoaderMod": "run_1792424987482_568138|line 12 @1792424988087",
+    "ok_ModLoaderMod": "run_1792424987482_568138|init @1792424988702",
+    "ok_RealisticVisionMod": "run_1792424987482_568138|init @1792424988687"
+  },
+  "ok": true
+}

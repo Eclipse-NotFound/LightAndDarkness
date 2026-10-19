@@ -1,0 +1,244 @@
+[
+  {
+    "width": 48,
+    "scene": 0,
+    "land": "rbl",
+    "height": 25,
+    "regions": 1,
+    "results": [
+      {
+        "kind": "idle",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 36,
+        "ms": 467
+      },
+      {
+        "kind": "idle",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 36,
+        "ms": 440
+      },
+      {
+        "kind": "idle",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 36,
+        "ms": 395
+      },
+      {
+        "kind": "idle",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 36,
+        "ms": 359
+      },
+      {
+        "kind": "pan",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 326,
+        "ms": 1112
+      },
+      {
+        "kind": "pan",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 326,
+        "ms": 1313
+      },
+      {
+        "kind": "pan",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 326,
+        "ms": 1172
+      },
+      {
+        "kind": "pan",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 326,
+        "ms": 1041
+      },
+      {
+        "kind": "aim",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 229,
+        "ms": 531
+      },
+      {
+        "kind": "aim",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 229,
+        "ms": 520
+      },
+      {
+        "kind": "aim",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 229,
+        "ms": 513
+      },
+      {
+        "kind": "aim",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 229,
+        "ms": 488
+      },
+      {
+        "kind": "combat",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 229,
+        "ms": 713
+      },
+      {
+        "kind": "combat",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 229,
+        "ms": 500
+      },
+      {
+        "kind": "combat",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 229,
+        "ms": 549
+      },
+      {
+        "kind": "combat",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 229,
+        "ms": 525
+      }
+    ]
+  },
+  {
+    "width": 240,
+    "scene": 1,
+    "land": "random_mane",
+    "height": 125,
+    "regions": 25,
+    "results": [
+      {
+        "kind": "idle",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 7,
+        "ms": 278
+      },
+      {
+        "kind": "idle",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 7,
+        "ms": 636
+      },
+      {
+        "kind": "idle",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 7,
+        "ms": 340
+      },
+      {
+        "kind": "idle",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 7,
+        "ms": 285
+      },
+      {
+        "kind": "pan",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 302,
+        "ms": 2054
+      },
+      {
+        "kind": "pan",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 629
+      },
+      {
+        "kind": "pan",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 533
+      },
+      {
+        "kind": "pan",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 302,
+        "ms": 4668
+      },
+      {
+        "kind": "aim",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 579
+      },
+      {
+        "kind": "aim",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 335
+      },
+      {
+        "kind": "aim",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 448
+      },
+      {
+        "kind": "aim",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 1210
+      },
+      {
+        "kind": "combat",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 569
+      },
+      {
+        "kind": "combat",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 420
+      },
+      {
+        "kind": "combat",
+        "candidate": true,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 303
+      },
+      {
+        "kind": "combat",
+        "candidate": false,
+        "calls": 100,
+        "rebuilds": 200,
+        "ms": 413
+      }
+    ]
+  }
+]

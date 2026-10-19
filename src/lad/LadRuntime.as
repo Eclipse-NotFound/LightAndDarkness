@@ -35,6 +35,7 @@ package lad {
         public var hits:int=0;
         public var repairs:int=0;
         public var steps:int=0;
+        public var renders:int=0;
         public var preparedScenes:int=0;
         private var main:*;
         private var game:*;
@@ -50,7 +51,8 @@ package lad {
         private var repairX:Number=0;
         private var repairY:Number=0;
         private var repairHp:Number=0;
-        private var lastSim:int=0;
+        private var lastRender:int=0;
+        private var simulatedSinceFrame:Boolean=false;
         private var lastLog:int=0;
         private var notice:String="";
         private var noticeUntil:int=0;
@@ -59,7 +61,7 @@ package lad {
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.4.2",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.5.0",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.addEventListener(Event.ADDED,objectAdded,true);
@@ -68,7 +70,7 @@ package lad {
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.4.2 loaded");
+            LadLog.write("v0.5.0 loaded");
         }
         private function objectAdded(event:Event):void {
             if(!enabled || !atmosphere.settings.projectiles || !location || !world || world.loc!==location) return;
@@ -129,11 +131,14 @@ package lad {
                     }
                 }
                 if(location==null) return;
-                ensureAdapter();syncLamps();placeLayers();
+                ensureAdapter();placeLayers();
                 if(player.sost>=3 || player.disabled) projectiles.clear();
                 var transientChanged:Boolean=atmosphere.settings.projectiles && !world.onPause && projectiles.capture();
                 // Paused menus do not step gameplay; render only if it has not just been simulated.
-                if(transientChanged || getTimer()-lastSim>60) render();
+                // A slow native frame must not trigger a second illumination pass
+                // merely because its earlier simulation took longer than 60 ms.
+                if(transientChanged || (!simulatedSinceFrame && getTimer()-lastRender>60)) render();
+                simulatedSinceFrame=false;
                 var near:Object=nearestLamp();
                 var hint:String="";
                 if(near) hint=needsRepair(near)?"灯具受损/故障 · 按住 "+keys.label("fixture")+" 维修（废金属 ×2）":keys.label("fixture")+" 切换附近灯具";
@@ -184,7 +189,7 @@ package lad {
             }
             while(lampLayer.numChildren) lampLayer.removeChildAt(0);
             if(lampLayer.parent) lampLayer.parent.removeChild(lampLayer);
-            projectiles.clear();machines.clear();landmarks.clear();environment.clear();environmentKey="";field.clear();lamps=[];darkZones=[];location=null;player=null;adapter=null;hud.visible=false;
+            projectiles.clear();machines.clear();landmarks.clear();environment.clear();environmentKey="";field.clear();lamps=[];darkZones=[];location=null;player=null;adapter=null;hud.visible=false;simulatedSinceFrame=false;
         }
         private function ensureAdapter():void {
             var next:*=world.gg;
@@ -252,12 +257,14 @@ package lad {
             }
             field.render(location,view,lights(view),ambient,
                 atmosphere.settings.darkZones?darkZones:null,atmosphere.settings.darkness,environment);
+            lastRender=getTimer();renders++;
         }
         public function simulationStep(value:*):void {
             if(!enabled || value!==world.gg || world.loc!==location || !location || world.onPause) return;
-            steps++;atmosphereTime+=1/30;lastSim=getTimer();
+            steps++;atmosphereTime+=1/30;
             if(atmosphere.settings.projectiles) {projectiles.bind(world,location);projectiles.advance();}
             render();
+            simulatedSinceFrame=true;
             lastBaseVisibility=Number(value.visibility);
             lastExposure=field.sample(value.X,value.Y-value.scY/2);
             if(detection) value.visibility=lastBaseVisibility*(0.18+0.82*lastExposure);
@@ -388,7 +395,7 @@ package lad {
                 {key:"darkness",kind:"slider",label:"黑暗区浓度",min:0,max:1,step:0.1,get:function():* {return self.atmosphere.settings.darkness;},set:function(v:*):void {self.setAtmospherePreference("darkness",v);}},
                 {key:"projectiles",kind:"check",label:"弹丸与爆炸短暂照明",get:function():* {return self.atmosphere.settings.projectiles;},set:function(v:*):void {self.setAtmospherePreference("projectiles",Boolean(v));}},
                 {key:"machines",kind:"check",label:"炮塔与蜘蛛地雷微光",get:function():* {return self.atmosphere.settings.machines;},set:function(v:*):void {self.setAtmospherePreference("machines",Boolean(v));}},
-                {key:"landmarks",kind:"check",label:"存档点、出口与试炼入口照明",get:function():* {return self.atmosphere.settings.landmarks;},set:function(v:*):void {self.setAtmospherePreference("landmarks",Boolean(v));}},
+                {key:"landmarks",kind:"check",label:"存档点、出口、试炼入口与终端照明",get:function():* {return self.atmosphere.settings.landmarks;},set:function(v:*):void {self.setAtmospherePreference("landmarks",Boolean(v));}},
                 {key:"projectileBrightness",kind:"slider",label:"弹丸照明亮度倍率",min:0.25,max:1.5,step:0.05,get:function():* {return self.atmosphere.settings.projectileBrightness;},set:function(v:*):void {self.setAtmospherePreference("projectileBrightness",v);}}
             ],null,"附近灯具可开关；受损或故障时按住操作键维修，消耗废金属 ×2。改键见快捷键页。");
             settings=carrier.modAPI;

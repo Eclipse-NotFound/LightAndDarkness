@@ -1,0 +1,273 @@
+{
+  "version": "0.4.1",
+  "frameRate": 30,
+  "checks": 1,
+  "error": "",
+  "rows": [
+    {
+      "width": 48,
+      "land": "rbl",
+      "height": 25,
+      "regions": 1,
+      "scene": 0,
+      "results": [
+        {
+          "kind": "idle",
+          "calls": 100,
+          "rebuilds": 36,
+          "candidate": false,
+          "ms": 551
+        },
+        {
+          "kind": "idle",
+          "calls": 100,
+          "rebuilds": 36,
+          "candidate": true,
+          "ms": 460
+        },
+        {
+          "kind": "idle",
+          "calls": 100,
+          "rebuilds": 36,
+          "candidate": true,
+          "ms": 518
+        },
+        {
+          "kind": "idle",
+          "calls": 100,
+          "rebuilds": 36,
+          "candidate": false,
+          "ms": 420
+        },
+        {
+          "kind": "pan",
+          "calls": 100,
+          "rebuilds": 326,
+          "candidate": false,
+          "ms": 1307
+        },
+        {
+          "kind": "pan",
+          "calls": 100,
+          "rebuilds": 326,
+          "candidate": true,
+          "ms": 2076
+        },
+        {
+          "kind": "pan",
+          "calls": 100,
+          "rebuilds": 326,
+          "candidate": true,
+          "ms": 1620
+        },
+        {
+          "kind": "pan",
+          "calls": 100,
+          "rebuilds": 326,
+          "candidate": false,
+          "ms": 1386
+        },
+        {
+          "kind": "aim",
+          "calls": 100,
+          "rebuilds": 229,
+          "candidate": false,
+          "ms": 770
+        },
+        {
+          "kind": "aim",
+          "calls": 100,
+          "rebuilds": 229,
+          "candidate": true,
+          "ms": 703
+        },
+        {
+          "kind": "aim",
+          "calls": 100,
+          "rebuilds": 229,
+          "candidate": true,
+          "ms": 553
+        },
+        {
+          "kind": "aim",
+          "calls": 100,
+          "rebuilds": 229,
+          "candidate": false,
+          "ms": 909
+        },
+        {
+          "kind": "combat",
+          "calls": 100,
+          "rebuilds": 229,
+          "candidate": false,
+          "ms": 1034
+        },
+        {
+          "kind": "combat",
+          "calls": 100,
+          "rebuilds": 229,
+          "candidate": true,
+          "ms": 1058
+        },
+        {
+          "kind": "combat",
+          "calls": 100,
+          "rebuilds": 229,
+          "candidate": true,
+          "ms": 1261
+        },
+        {
+          "kind": "combat",
+          "calls": 100,
+          "rebuilds": 229,
+          "candidate": false,
+          "ms": 961
+        }
+      ]
+    },
+    {
+      "width": 240,
+      "land": "random_mane",
+      "height": 125,
+      "regions": 25,
+      "scene": 1,
+      "results": [
+        {
+          "kind": "idle",
+          "calls": 100,
+          "rebuilds": 7,
+          "candidate": false,
+          "ms": 234
+        },
+        {
+          "kind": "idle",
+          "calls": 100,
+          "rebuilds": 7,
+          "candidate": true,
+          "ms": 251
+        },
+        {
+          "kind": "idle",
+          "calls": 100,
+          "rebuilds": 7,
+          "candidate": true,
+          "ms": 605
+        },
+        {
+          "kind": "idle",
+          "calls": 100,
+          "rebuilds": 7,
+          "candidate": false,
+          "ms": 361
+        },
+        {
+          "kind": "pan",
+          "calls": 100,
+          "rebuilds": 302,
+          "candidate": false,
+          "ms": 3040
+        },
+        {
+          "kind": "pan",
+          "calls": 100,
+          "rebuilds": 302,
+          "candidate": true,
+          "ms": 2477
+        },
+        {
+          "kind": "pan",
+          "calls": 100,
+          "rebuilds": 302,
+          "candidate": true,
+          "ms": 2597
+        },
+        {
+          "kind": "pan",
+          "calls": 100,
+          "rebuilds": 302,
+          "candidate": false,
+          "ms": 2145
+        },
+        {
+          "kind": "aim",
+          "calls": 100,
+          "rebuilds": 200,
+          "candidate": false,
+          "ms": 524
+        },
+        {
+          "kind": "aim",
+          "calls": 100,
+          "rebuilds": 200,
+          "candidate": true,
+          "ms": 745
+        },
+        {
+          "kind": "aim",
+          "calls": 100,
+          "rebuilds": 200,
+          "candidate": true,
+          "ms": 1429
+        },
+        {
+          "kind": "aim",
+          "calls": 100,
+          "rebuilds": 200,
+          "candidate": false,
+          "ms": 536
+        },
+        {
+          "kind": "combat",
+          "calls": 100,
+          "rebuilds": 200,
+          "candidate": false,
+          "ms": 1546
+        },
+        {
+          "kind": "combat",
+          "calls": 100,
+          "rebuilds": 200,
+          "candidate": true,
+          "ms": 1228
+        },
+        {
+          "kind": "combat",
+          "calls": 100,
+          "rebuilds": 200,
+          "candidate": true,
+          "ms": 551
+        },
+        {
+          "kind": "combat",
+          "calls": 100,
+          "rebuilds": 200,
+          "candidate": false,
+          "ms": 1032
+        }
+      ]
+    }
+  ],
+  "loader": {
+    "session": "run_1792424355650_951922",
+    "ok_RealisticVisionMod": "run_1792424355650_951922|init @1792424356803",
+    "ok_ModLoaderMod": "run_1792424355650_951922|init @1792424356907",
+    "requested_RealisticVisionMod": "run_1792424355650_951922|line 15 @1792424356177",
+    "ok_LightingPerfProbeMod": "run_1792424355650_951922|init @1792424356919",
+    "boot_start": "run_1792424355650_951922|v2 run=run_1792424355650_951922 @1792424355737",
+    "requested_WallBlendMod": "run_1792424355650_951922|line 24 @1792424356209",
+    "ok_LightAndDarknessMod": "run_1792424355650_951922|init @1792424356857",
+    "ok_ContinuousSceneMod": "run_1792424355650_951922|init @1792424356885",
+    "requested_ContinuousSceneMod": "run_1792424355650_951922|line 21 @1792424356194",
+    "ok_WallBlendMod": "run_1792424355650_951922|init @1792424356814",
+    "requested_ModLoaderMod": "run_1792424355650_951922|line 12 @1792424356157",
+    "requested_LightingPerfProbeMod": "run_1792424355650_951922|line 23 @1792424356205",
+    "boot": "run_1792424355650_951922|v2 col=2 requested=6 @1792424356220",
+    "requested_LightAndDarknessMod": "run_1792424355650_951922|line 22 @1792424356202"
+  },
+  "ok": true,
+  "config": {
+    "mode": "bench",
+    "full": false,
+    "candidate": "mods/LightAndDarkness/release/LightAndDarknessMod.swf"
+  }
+}
