@@ -1,0 +1,268 @@
+FAIL Error: 4132 BOOT remains-lad-machine-20261019171854058
+9786 NEW_GAME
+12792 BORDER entry native borders face outside scene scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+12793 PASS entry native borders face outside scene
+12984 PASS entry native borders face outside scene full-stage native-camera oracle
+12985 ATTACHED lamps=9 room=loc0_0 large=false
+12986 LAMP light4:1440.00:680.00:1:1:0 at=1480,689 bounds=(x=1440, y=680, w=80, h=18)
+12987 LAMP light4:1760.00:680.00:1:1:0 at=1800,689 bounds=(x=1760, y=680, w=80, h=18)
+12988 LAMP light4:1600.00:680.00:1:1:0 at=1640,689 bounds=(x=1600, y=680, w=80, h=18)
+12988 LAMP light1:200.00:400.00:1:1:0 at=220,420 bounds=(x=200, y=400, w=40, h=40)
+12998 LAMP light1:320.00:400.00:1:1:0 at=340,420 bounds=(x=320, y=400, w=40, h=40)
+12999 LAMP light5:1800.00:200.00:1:1:0 at=1820,220 bounds=(x=1800, y=200, w=40, h=40)
+12999 LAMP stlight1:1800.00:400.00:1:1:0 at=1820,420 bounds=(x=1800, y=400, w=40, h=40)
+13001 LAMP light3:320.00:200.00:1:1:0 at=360,220 bounds=(x=320, y=204.5, w=80, h=31)
+13001 LAMP light4:920.00:40.00:1:1:0 at=960,49 bounds=(x=920, y=40, w=80, h=18)
+14770 PASS native room fixture conversion
+14777 PASS resized illumination retains smooth interpolation
+14779 PASS opaque wall
+14781 PASS opening door invalidates light cache
+14782 PASS closing door restores shadow
+14783 PASS directional cone
+14785 PASS turning dynamic lamp
+14786 PASS moving dynamic lamp
+14787 PASS light removal
+14821 PERF synthetic render n=180 p50=0 p95=1 max=2
+14822 PASS old save defaults
+14825 PASS unknown state retained
+14827 PASS steady light has no temporal modulation
+14827 PASS fixture defaults deterministic across discovery
+14828 PASS invalid fixture settings bounded
+14830 PASS frequency controls observed transition count
+14831 PASS slow fault fades through bright and dim
+14832 PASS burst fault has multiple failed starts and blackout
+14832 PASS fixture phases avoid synchronized flicker
+14834 PASS flicker preference produces stable output
+14835 PASS switch-off overrides atmosphere
+14836 PASS power outage overrides atmosphere
+14837 PASS broken lamp overrides atmosphere
+14838 PASS dark pockets deterministic
+14839 PASS outdoors excluded from automatic dark pockets
+14841 PASS authored fixture and region rules applied
+14842 PASS unchanged authored rule preserves repaired lamp
+14843 PASS changed authored rule updates existing fixture
+14845 PASS brightness levels produce distinct rendered exposure
+14846 PASS flicker including blackout reuses shadow geometry
+14847 PASS dark region has dark core and soft boundary
+14847 PASS dark region stays in world space when camera moves
+14849 PASS actual light illuminates a dark region
+14849 PASS zero darkness restores ambient floor
+14983 PASS fixture selection
+14983 PASS baked glow removed without native AI visual
+17887 SCREEN lit
+17888 PASS reachable fixture
+17888 SHOT tile=0 at=220,420
+17892 BULLET hp=28 hit=1 xy=220,420 off=false parr=[object LadLampTarget] proxy=false,false,1,0,true,200,400,240,440
+17892 PASS native projectile collision damage
+17895 BULLET hp=0 hit=2 xy=220,420 off=false parr=[object LadLampTarget] proxy=true,false,1,0,true,200,400,240,440
+17896 PASS native projectile break
+20255 SCREEN broken
+20256 PASS broken light removed from illumination
+20266 PASS native save completed
+20266 PASS native slot includes immutable JSON state
+20872 PASS held repair progresses
+20874 PASS release cancels without charge
+20874 PASS repair rejects insufficient materials
+23211 PASS two-second repair charges exactly once
+23212 PASS later repair cannot mutate older slot
+25789 SCREEN repaired
+25791 PASS fixture switch
+29191 BORDER broken-lamp load preserves camera borders scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+29192 PASS broken-lamp load preserves camera borders
+29270 PASS broken-lamp load preserves camera borders full-stage native-camera oracle
+29273 PASS native load restores broken lamp and headlamp switch
+29273 PASS native load restores inventory separately
+32747 BORDER repaired-lamp load preserves camera borders scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+32747 PASS repaired-lamp load preserves camera borders
+32812 PASS repaired-lamp load preserves camera borders full-stage native-camera oracle
+32812 PASS second slot restores repaired but switched-off lamp
+32813 PASS load leaves one proxy per fixture
+33582 BORDER ordinary-room disable preserves camera borders scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+33582 PASS ordinary-room disable preserves camera borders
+33696 PASS ordinary-room disable preserves camera borders full-stage native-camera oracle
+33697 PASS native raster edits survive ordinary-room restoration
+33698 PASS disable restores native fixture and removes proxies
+35073 BORDER ordinary-room reenable preserves camera borders scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+35074 PASS ordinary-room reenable preserves camera borders
+35129 PASS ordinary-room reenable preserves camera borders full-stage native-camera oracle
+35129 PASS reenable preserves state without duplicates
+35130 PASS native raster edits survive ordinary-room conversion
+35130 PASS native player update hook rebound
+35131 PASS illumination changes native visibility before AI step
+35132 INPUT_AFTER_LOAD guiPause=false dialog=true script=false pause=false console=false
+35137 PASS headlamp key repeat debounced
+38173 PERF live room render n=90 p50=1 p95=2 max=2
+38174 PASS sustained native gameplay
+39272 PASS native explosion damages fixture
+41406 PASS live fixture flickers during native simulation
+41406 PASS pause freezes atmosphere clock
+43872 SCREEN atmosphere-bright
+43874 PASS live flicker changes shared exposure raster
+46418 SCREEN atmosphere-dim
+46419 PASS lamp glass follows dim output
+46425 PASS full-health faulty lamp is repairable
+48740 PASS repair stabilizes fault and charges once
+48742 PASS repair keeps old atmosphere snapshot immutable
+52251 PASS native load restores fixture atmosphere
+52252 PASS native load restores atmosphere preferences
+52253 SKIP legacy baseline has no machine-glow preference
+55737 PASS repaired atmosphere persists independently
+55738 SKIP legacy baseline has no machine-glow preference
+55739 PASS shared settings carrier available
+55740 PASS light settings registered alongside other mods
+55740 PASS continuous scene registered
+59800 BORDER large-scene travel preserves camera borders scales=-0.759493670886076,-0.759493670886076,0.9113924050632911,0.759493670886076 camera=2,0.6583333333333333,1264,761,7680,3000 scene=true
+59801 PASS large-scene travel preserves camera borders
+59863 PASS large-scene travel preserves camera borders full-stage native-camera oracle
+59864 PASS large scene attachment succeeded
+59865 PASS fixtures prepared before first large-scene raster
+59865 PASS large scene dynamic lighting active
+59865 LARGE dims=192x75 lamps=88 chunks=30
+59873 PASS native large-scene paint mark created
+60607 BORDER large-scene disable preserves camera borders scales=-0.759493670886076,-0.759493670886076,0.9113924050632911,0.759493670886076 camera=2,0.6583333333333333,1264,761,7680,3000 scene=true
+60608 PASS large-scene disable preserves camera borders
+60674 PASS large-scene disable preserves camera borders full-stage native-camera oracle
+63500 BORDER large-scene reenable preserves camera borders scales=-0.759493670886076,-0.759493670886076,0.9113924050632911,0.759493670886076 camera=2,0.6583333333333333,1264,761,7680,3000 scene=true
+63501 PASS large-scene reenable preserves camera borders
+63569 PASS large-scene reenable preserves camera borders full-stage native-camera oracle
+63569 PASS large scene toggle has no proxy leak
+63570 PASS large-scene native paint history survives lighting conversion
+63571 FAIL Error: ASSERT large-scene preload preference restored Error: ASSERT large-scene preload preference restored
+	at LightCoreChecks$/check()
+	at LightAndDarknessTest/check()
+	at LightAndDarknessTest/frame()
+ Error: 4132 BOOT remains-lad-machine-20261019171854058
+9786 NEW_GAME
+12792 BORDER entry native borders face outside scene scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+12793 PASS entry native borders face outside scene
+12984 PASS entry native borders face outside scene full-stage native-camera oracle
+12985 ATTACHED lamps=9 room=loc0_0 large=false
+12986 LAMP light4:1440.00:680.00:1:1:0 at=1480,689 bounds=(x=1440, y=680, w=80, h=18)
+12987 LAMP light4:1760.00:680.00:1:1:0 at=1800,689 bounds=(x=1760, y=680, w=80, h=18)
+12988 LAMP light4:1600.00:680.00:1:1:0 at=1640,689 bounds=(x=1600, y=680, w=80, h=18)
+12988 LAMP light1:200.00:400.00:1:1:0 at=220,420 bounds=(x=200, y=400, w=40, h=40)
+12998 LAMP light1:320.00:400.00:1:1:0 at=340,420 bounds=(x=320, y=400, w=40, h=40)
+12999 LAMP light5:1800.00:200.00:1:1:0 at=1820,220 bounds=(x=1800, y=200, w=40, h=40)
+12999 LAMP stlight1:1800.00:400.00:1:1:0 at=1820,420 bounds=(x=1800, y=400, w=40, h=40)
+13001 LAMP light3:320.00:200.00:1:1:0 at=360,220 bounds=(x=320, y=204.5, w=80, h=31)
+13001 LAMP light4:920.00:40.00:1:1:0 at=960,49 bounds=(x=920, y=40, w=80, h=18)
+14770 PASS native room fixture conversion
+14777 PASS resized illumination retains smooth interpolation
+14779 PASS opaque wall
+14781 PASS opening door invalidates light cache
+14782 PASS closing door restores shadow
+14783 PASS directional cone
+14785 PASS turning dynamic lamp
+14786 PASS moving dynamic lamp
+14787 PASS light removal
+14821 PERF synthetic render n=180 p50=0 p95=1 max=2
+14822 PASS old save defaults
+14825 PASS unknown state retained
+14827 PASS steady light has no temporal modulation
+14827 PASS fixture defaults deterministic across discovery
+14828 PASS invalid fixture settings bounded
+14830 PASS frequency controls observed transition count
+14831 PASS slow fault fades through bright and dim
+14832 PASS burst fault has multiple failed starts and blackout
+14832 PASS fixture phases avoid synchronized flicker
+14834 PASS flicker preference produces stable output
+14835 PASS switch-off overrides atmosphere
+14836 PASS power outage overrides atmosphere
+14837 PASS broken lamp overrides atmosphere
+14838 PASS dark pockets deterministic
+14839 PASS outdoors excluded from automatic dark pockets
+14841 PASS authored fixture and region rules applied
+14842 PASS unchanged authored rule preserves repaired lamp
+14843 PASS changed authored rule updates existing fixture
+14845 PASS brightness levels produce distinct rendered exposure
+14846 PASS flicker including blackout reuses shadow geometry
+14847 PASS dark region has dark core and soft boundary
+14847 PASS dark region stays in world space when camera moves
+14849 PASS actual light illuminates a dark region
+14849 PASS zero darkness restores ambient floor
+14983 PASS fixture selection
+14983 PASS baked glow removed without native AI visual
+17887 SCREEN lit
+17888 PASS reachable fixture
+17888 SHOT tile=0 at=220,420
+17892 BULLET hp=28 hit=1 xy=220,420 off=false parr=[object LadLampTarget] proxy=false,false,1,0,true,200,400,240,440
+17892 PASS native projectile collision damage
+17895 BULLET hp=0 hit=2 xy=220,420 off=false parr=[object LadLampTarget] proxy=true,false,1,0,true,200,400,240,440
+17896 PASS native projectile break
+20255 SCREEN broken
+20256 PASS broken light removed from illumination
+20266 PASS native save completed
+20266 PASS native slot includes immutable JSON state
+20872 PASS held repair progresses
+20874 PASS release cancels without charge
+20874 PASS repair rejects insufficient materials
+23211 PASS two-second repair charges exactly once
+23212 PASS later repair cannot mutate older slot
+25789 SCREEN repaired
+25791 PASS fixture switch
+29191 BORDER broken-lamp load preserves camera borders scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+29192 PASS broken-lamp load preserves camera borders
+29270 PASS broken-lamp load preserves camera borders full-stage native-camera oracle
+29273 PASS native load restores broken lamp and headlamp switch
+29273 PASS native load restores inventory separately
+32747 BORDER repaired-lamp load preserves camera borders scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+32747 PASS repaired-lamp load preserves camera borders
+32812 PASS repaired-lamp load preserves camera borders full-stage native-camera oracle
+32812 PASS second slot restores repaired but switched-off lamp
+32813 PASS load leaves one proxy per fixture
+33582 BORDER ordinary-room disable preserves camera borders scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+33582 PASS ordinary-room disable preserves camera borders
+33696 PASS ordinary-room disable preserves camera borders full-stage native-camera oracle
+33697 PASS native raster edits survive ordinary-room restoration
+33698 PASS disable restores native fixture and removes proxies
+35073 BORDER ordinary-room reenable preserves camera borders scales=-2.0594936708860754,-0.759493670886076,2.135443037974683,0.759493670886076 camera=2,0.6583333333333333,1264,761,1920,1000 scene=false
+35074 PASS ordinary-room reenable preserves camera borders
+35129 PASS ordinary-room reenable preserves camera borders full-stage native-camera oracle
+35129 PASS reenable preserves state without duplicates
+35130 PASS native raster edits survive ordinary-room conversion
+35130 PASS native player update hook rebound
+35131 PASS illumination changes native visibility before AI step
+35132 INPUT_AFTER_LOAD guiPause=false dialog=true script=false pause=false console=false
+35137 PASS headlamp key repeat debounced
+38173 PERF live room render n=90 p50=1 p95=2 max=2
+38174 PASS sustained native gameplay
+39272 PASS native explosion damages fixture
+41406 PASS live fixture flickers during native simulation
+41406 PASS pause freezes atmosphere clock
+43872 SCREEN atmosphere-bright
+43874 PASS live flicker changes shared exposure raster
+46418 SCREEN atmosphere-dim
+46419 PASS lamp glass follows dim output
+46425 PASS full-health faulty lamp is repairable
+48740 PASS repair stabilizes fault and charges once
+48742 PASS repair keeps old atmosphere snapshot immutable
+52251 PASS native load restores fixture atmosphere
+52252 PASS native load restores atmosphere preferences
+52253 SKIP legacy baseline has no machine-glow preference
+55737 PASS repaired atmosphere persists independently
+55738 SKIP legacy baseline has no machine-glow preference
+55739 PASS shared settings carrier available
+55740 PASS light settings registered alongside other mods
+55740 PASS continuous scene registered
+59800 BORDER large-scene travel preserves camera borders scales=-0.759493670886076,-0.759493670886076,0.9113924050632911,0.759493670886076 camera=2,0.6583333333333333,1264,761,7680,3000 scene=true
+59801 PASS large-scene travel preserves camera borders
+59863 PASS large-scene travel preserves camera borders full-stage native-camera oracle
+59864 PASS large scene attachment succeeded
+59865 PASS fixtures prepared before first large-scene raster
+59865 PASS large scene dynamic lighting active
+59865 LARGE dims=192x75 lamps=88 chunks=30
+59873 PASS native large-scene paint mark created
+60607 BORDER large-scene disable preserves camera borders scales=-0.759493670886076,-0.759493670886076,0.9113924050632911,0.759493670886076 camera=2,0.6583333333333333,1264,761,7680,3000 scene=true
+60608 PASS large-scene disable preserves camera borders
+60674 PASS large-scene disable preserves camera borders full-stage native-camera oracle
+63500 BORDER large-scene reenable preserves camera borders scales=-0.759493670886076,-0.759493670886076,0.9113924050632911,0.759493670886076 camera=2,0.6583333333333333,1264,761,7680,3000 scene=true
+63501 PASS large-scene reenable preserves camera borders
+63569 PASS large-scene reenable preserves camera borders full-stage native-camera oracle
+63569 PASS large scene toggle has no proxy leak
+63570 PASS large-scene native paint history survives lighting conversion
+63571 FAIL Error: ASSERT large-scene preload preference restored Error: ASSERT large-scene preload preference restored
+	at LightCoreChecks$/check()
+	at LightAndDarknessTest/check()
+	at LightAndDarknessTest/frame()
+
+	at LightMachineProbeMod/frame()

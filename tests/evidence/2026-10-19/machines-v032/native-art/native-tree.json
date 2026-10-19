@@ -1,0 +1,6194 @@
+[
+  {
+    "state": 0,
+    "kind": "turret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31878",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31877",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31879",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31876",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "turret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31886",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31885",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31887",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31890",
+                  "bounds": "(x=-8, y=-8, w=16, h=16)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 2,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-8, y=-8, w=16, h=16)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31884",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "turret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31894",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31893",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31895",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31898",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 3,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=34)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31892",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=34)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "turret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31902",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31901",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31903",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31906",
+                  "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 4,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=38)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31900",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=38)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "turret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31910",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31909",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31911",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31914",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 5,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=34)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31908",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=34)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 0,
+    "kind": "landturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -58.55,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31918",
+                  "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.1,
+              "name": "instance31917",
+              "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31919",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31922",
+                  "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31921",
+              "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret1",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31916",
+      "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "landturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -58.55,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31928",
+                  "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.1,
+              "name": "instance31927",
+              "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31929",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31932",
+                  "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31931",
+              "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31934",
+                  "bounds": "(x=-8, y=-8, w=16, h=16)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 2,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "light",
+              "bounds": "(x=-8, y=-8, w=16, h=16)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret1",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31926",
+      "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "landturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -58.55,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31938",
+                  "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.1,
+              "name": "instance31937",
+              "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31939",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31942",
+                  "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31941",
+              "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31944",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 3,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret1",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31936",
+      "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "landturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -58.55,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31948",
+                  "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.1,
+              "name": "instance31947",
+              "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31949",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31952",
+                  "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31951",
+              "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31954",
+                  "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 4,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "light",
+              "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret1",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31946",
+      "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "landturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -58.55,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31958",
+                  "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.1,
+              "name": "instance31957",
+              "bounds": "(x=-21.4, y=-16, w=42.75, h=32)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31959",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31962",
+                  "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31961",
+              "bounds": "(x=-96.9, y=-221.25, w=193, h=343.15)",
+              "rotation": 0
+            },
+            {
+              "y": -60,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31964",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 5,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret1",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31956",
+      "bounds": "(x=-21.5, y=-74.55, w=64.8, h=75.2)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 0,
+    "kind": "wturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31968",
+                  "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31967",
+              "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31969",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret2",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31966",
+      "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "wturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31976",
+                  "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31975",
+              "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31977",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31980",
+                  "bounds": "(x=-8, y=-8, w=16, h=16)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 2,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-8, y=-8, w=16, h=16)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret2",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31974",
+      "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "wturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31984",
+                  "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31983",
+              "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31985",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31988",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 3,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret2",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31982",
+      "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "wturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31992",
+                  "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31991",
+              "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance31993",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance31996",
+                  "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 4,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret2",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31990",
+      "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "wturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32000",
+                  "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance31999",
+              "bounds": "(x=-96.05, y=-96.05, w=192.1, h=192.14999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32001",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32004",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 5,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret2",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance31998",
+      "bounds": "(x=-20, y=-40, w=63.65, h=40)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 0,
+    "kind": "armturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -59.05,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32007",
+                  "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t2",
+              "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32008",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -44.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32010",
+                  "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t1",
+              "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+              "rotation": 0
+            },
+            {
+              "y": -55.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32011",
+                  "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t3",
+              "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-29.25, y=-97.6, w=72.9, h=97.6)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret3",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32006",
+      "bounds": "(x=-29.25, y=-97.6, w=72.9, h=97.6)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "armturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -59.05,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32016",
+                  "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t2",
+              "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32017",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -44.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32019",
+                  "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t1",
+              "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+              "rotation": 0
+            },
+            {
+              "y": -55.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32020",
+                  "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t3",
+              "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32022",
+                  "bounds": "(x=-8, y=-8, w=16, h=16)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 2,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-8, y=-8, w=16, h=16)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-24.5, y=-97.6, w=68.15, h=97.6)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret3",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32015",
+      "bounds": "(x=-24.5, y=-97.6, w=68.15, h=97.6)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "armturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -59.05,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32025",
+                  "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t2",
+              "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32026",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -44.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32028",
+                  "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t1",
+              "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+              "rotation": 0
+            },
+            {
+              "y": -55.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32029",
+                  "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t3",
+              "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32031",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 3,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-24.5, y=-97.6, w=68.15, h=97.6)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret3",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32024",
+      "bounds": "(x=-24.5, y=-97.6, w=68.15, h=97.6)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "armturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -59.05,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32034",
+                  "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t2",
+              "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32035",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -44.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32037",
+                  "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t1",
+              "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+              "rotation": 0
+            },
+            {
+              "y": -55.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32038",
+                  "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t3",
+              "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32040",
+                  "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 4,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-29.25, y=-97.6, w=72.9, h=97.6)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret3",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32033",
+      "bounds": "(x=-29.25, y=-97.6, w=72.9, h=97.6)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "armturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -59.05,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32043",
+                  "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t2",
+              "bounds": "(x=-16.85, y=-24.95, w=35.7, h=49.5)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32044",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -44.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32046",
+                  "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t1",
+              "bounds": "(x=-24.5, y=-44.15, w=49, h=88.25)",
+              "rotation": 0
+            },
+            {
+              "y": -55.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32047",
+                  "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "t3",
+              "bounds": "(x=9.65, y=-62.85, w=19.6, h=125.7)",
+              "rotation": 0
+            },
+            {
+              "y": -55,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32049",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 5,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-29.25, y=-97.6, w=72.9, h=97.6)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret3",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32042",
+      "bounds": "(x=-29.25, y=-97.6, w=72.9, h=97.6)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 0,
+    "kind": "cturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32053",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32052",
+              "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32054",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32057",
+                  "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32056",
+              "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=37.05)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret4",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32051",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=37.05)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "cturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32063",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32062",
+              "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32064",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32067",
+                  "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32066",
+              "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32069",
+                  "bounds": "(x=-8, y=-8, w=16, h=16)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 2,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-8, y=-8, w=16, h=16)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=37.05)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret4",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32061",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=37.05)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "cturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32073",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32072",
+              "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32074",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32077",
+                  "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32076",
+              "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32079",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 3,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=37.05)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret4",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32071",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=37.05)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "cturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32083",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32082",
+              "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32084",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32087",
+                  "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32086",
+              "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32089",
+                  "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 4,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=38)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret4",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32081",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=38)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "cturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32093",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32092",
+              "bounds": "(x=-94, y=-73.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32094",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32097",
+                  "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32096",
+              "bounds": "(x=-47.3, y=-61.05, w=92.44999999999999, h=150.6)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32099",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 5,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=37.05)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret4",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32091",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=37.05)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 0,
+    "kind": "bossturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32103",
+                  "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32102",
+              "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32104",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            },
+            {
+              "y": -21.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32107",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": 0.65,
+              "name": "instance32106",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret5",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32101",
+      "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "bossturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32113",
+                  "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32112",
+              "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32114",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32119",
+                  "bounds": "(x=-8, y=-8, w=16, h=16)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 2,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-8, y=-8, w=16, h=16)",
+              "rotation": 0
+            },
+            {
+              "y": -21.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32117",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": 0.65,
+              "name": "instance32116",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret5",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32111",
+      "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "bossturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32123",
+                  "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32122",
+              "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32124",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32129",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 3,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            },
+            {
+              "y": -21.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32127",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": 0.65,
+              "name": "instance32126",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret5",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32121",
+      "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "bossturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32133",
+                  "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32132",
+              "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32134",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32139",
+                  "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 4,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+              "rotation": 0
+            },
+            {
+              "y": -21.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32137",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": 0.65,
+              "name": "instance32136",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret5",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32131",
+      "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "bossturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32143",
+                  "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32142",
+              "bounds": "(x=-115.3, y=-115.3, w=230.6, h=230.64999999999998)",
+              "rotation": 0
+            },
+            {
+              "y": -20,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32144",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -19.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32149",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 5,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            },
+            {
+              "y": -21.1,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32147",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": 0.65,
+              "name": "instance32146",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret5",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32141",
+      "bounds": "(x=-30.65, y=-57.25, w=74.3, h=72.3)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 0,
+    "kind": "hturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32164",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32163",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32165",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32151",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "hturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32181",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32180",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32182",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32184",
+                  "bounds": "(x=-8, y=-8, w=16, h=16)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 2,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-8, y=-8, w=16, h=16)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32168",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "hturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32199",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32198",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32200",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32202",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 3,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=34)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32186",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=34)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "hturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32217",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32216",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32218",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32220",
+                  "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 4,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=38)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32204",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=38)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "hturret",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32239",
+              "bounds": "(x=-20, y=-40, w=40, h=86)",
+              "rotation": 0
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32244",
+              "bounds": "(x=-19.5, y=-41, w=39, h=4)",
+              "rotation": 0
+            },
+            {
+              "y": -80.3,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32242",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 90
+            },
+            {
+              "y": -88.5,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 6,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-20, y=-85.1, w=40, h=131.1)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32222",
+      "bounds": "(x=-20, y=-85.1, w=40, h=131.1)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 0,
+    "kind": "hturret2",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32259",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32258",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32260",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32246",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "hturret2",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32276",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32275",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32277",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32279",
+                  "bounds": "(x=-8, y=-8, w=16, h=16)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 2,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-8, y=-8, w=16, h=16)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32263",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=32.7)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "hturret2",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32294",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32293",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32295",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32297",
+                  "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 3,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-10.5, y=-10.5, w=21, h=21)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=34)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32281",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=34)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "hturret2",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -24.75,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32312",
+                  "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32311",
+              "bounds": "(x=-94, y=-73.25, w=188, h=146.5)",
+              "rotation": 0
+            },
+            {
+              "y": -13.8,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32313",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 0
+            },
+            {
+              "y": -16.5,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32315",
+                  "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 4,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=-14.5, y=-14.5, w=29, h=29)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=38)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32299",
+      "bounds": "(x=-19.55, y=-40, w=62.849999999999994, h=38)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "hturret2",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32334",
+              "bounds": "(x=-20, y=-40, w=40, h=86)",
+              "rotation": 0
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32339",
+              "bounds": "(x=-19.5, y=-41, w=39, h=4)",
+              "rotation": 0
+            },
+            {
+              "y": -80.3,
+              "children": [
+                {
+                  "y": 0,
+                  "children": [
+                    {
+                      "y": 0.25,
+                      "type": "flash.display::MovieClip",
+                      "frames": 1,
+                      "visible": true,
+                      "frame": 1,
+                      "alpha": 1,
+                      "x": 14.25,
+                      "name": "instance32337",
+                      "bounds": "(x=-29.35, y=-6.25, w=58.75, h=12.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "pfe_fla::turel_puha1_1263",
+                  "frames": 3,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "puha",
+                  "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "pfe_fla::turel_puha_1262",
+              "frames": 10,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.35,
+              "name": "puha",
+              "bounds": "(x=-15.1, y=-6, w=58.75, h=12.5)",
+              "rotation": 90
+            },
+            {
+              "y": -88.5,
+              "children": [],
+              "type": "pfe_fla::turret_light_1277",
+              "frames": 6,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "light",
+              "bounds": "(x=0, y=0, w=0, h=0)",
+              "rotation": 0
+            }
+          ],
+          "type": "pfe_fla::osn0_1260",
+          "frames": 12,
+          "visible": true,
+          "frame": 6,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-20, y=-85.1, w=40, h=131.1)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTurret0",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32317",
+      "bounds": "(x=-20, y=-85.1, w=40, h=131.1)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 0,
+    "kind": "msp",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -7.25,
+              "children": [
+                {
+                  "y": -1.7,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32344",
+                      "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": -0.1,
+                  "name": "instance32343",
+                  "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                  "rotation": 0
+                },
+                {
+                  "y": 2.4,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32346",
+                      "bounds": "(x=-17.15, y=-4.75, w=34.3, h=9.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": -0.05,
+                  "name": "instance32345",
+                  "bounds": "(x=-17.15, y=-4.75, w=34.3, h=9.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32342",
+              "bounds": "(x=-17.2, y=-10.75, w=34.3, h=18.05)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 4,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-17.2, y=-18, w=34.3, h=18.05)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualMsp",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32341",
+      "bounds": "(x=-17.2, y=-18, w=34.3, h=18.05)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "msp",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -7.25,
+              "children": [
+                {
+                  "y": -1.7,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32351",
+                      "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": -0.1,
+                  "name": "instance32350",
+                  "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                  "rotation": 0
+                },
+                {
+                  "y": 2.4,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32353",
+                      "bounds": "(x=-17.15, y=-4.75, w=34.3, h=9.5)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": -0.05,
+                  "name": "instance32352",
+                  "bounds": "(x=-17.15, y=-4.75, w=34.3, h=9.5)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32349",
+              "bounds": "(x=-17.2, y=-10.75, w=34.3, h=18.05)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 4,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-17.2, y=-18, w=34.3, h=18.05)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualMsp",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32348",
+      "bounds": "(x=-17.2, y=-18, w=34.3, h=18.05)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "msp",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -7.25,
+              "children": [
+                {
+                  "y": -9.6,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32363",
+                      "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": -0.1,
+                  "name": "instance32362",
+                  "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                  "rotation": 0
+                },
+                {
+                  "y": 2.4,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32365",
+                      "bounds": "(x=-17.35, y=-10.05, w=34.5, h=14.75)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": -0.05,
+                  "name": "instance32364",
+                  "bounds": "(x=-17.35, y=-10.05, w=34.5, h=14.75)",
+                  "rotation": 0
+                },
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32366",
+                  "bounds": "(x=-15, y=-33.55, w=29.8, h=29.799999999999997)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32361",
+              "bounds": "(x=-17.4, y=-33.55, w=34.5, h=40.65)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 4,
+          "visible": true,
+          "frame": 2,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-17.4, y=-40.8, w=34.5, h=40.65)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualMsp",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32355",
+      "bounds": "(x=-17.4, y=-40.8, w=34.5, h=40.65)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "msp",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -7.25,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32381",
+                  "bounds": "(x=-13.4, y=-10.75, w=28.25, h=17.9)",
+                  "rotation": 0
+                },
+                {
+                  "y": -9.6,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32383",
+                      "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": -0.15,
+                  "name": "instance32382",
+                  "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                  "rotation": 9.7108154296875
+                },
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32384",
+                  "bounds": "(x=-24.5, y=-11.25, w=45.65, h=18.15)",
+                  "rotation": 0
+                },
+                {
+                  "y": -18.15,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32386",
+                      "bounds": "(x=-14.9, y=-14.9, w=29.8, h=29.8)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": 2.2,
+                  "name": "instance32385",
+                  "bounds": "(x=-14.9, y=-14.9, w=29.8, h=29.8)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 8,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32380",
+              "bounds": "(x=-24.5, y=-33.05, w=45.65, h=40.199999999999996)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 4,
+          "visible": true,
+          "frame": 3,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-24.5, y=-40.3, w=45.65, h=40.199999999999996)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualMsp",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32368",
+      "bounds": "(x=-24.5, y=-40.3, w=45.65, h=40.199999999999996)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "msp",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -7.25,
+              "children": [
+                {
+                  "y": -9.6,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32396",
+                      "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": -0.1,
+                  "name": "instance32395",
+                  "bounds": "(x=-15, y=-9.05, w=30, h=18.05)",
+                  "rotation": 0
+                },
+                {
+                  "y": 2.4,
+                  "children": [
+                    {
+                      "y": 0,
+                      "type": "flash.display::Shape",
+                      "visible": true,
+                      "alpha": 1,
+                      "x": 0,
+                      "name": "instance32398",
+                      "bounds": "(x=-17.35, y=-10.05, w=34.5, h=14.75)",
+                      "rotation": 0
+                    }
+                  ],
+                  "type": "flash.display::MovieClip",
+                  "frames": 1,
+                  "visible": true,
+                  "frame": 1,
+                  "alpha": 1,
+                  "x": -0.05,
+                  "name": "instance32397",
+                  "bounds": "(x=-17.35, y=-10.05, w=34.5, h=14.75)",
+                  "rotation": 0
+                },
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32399",
+                  "bounds": "(x=-15, y=-33.55, w=29.8, h=29.799999999999997)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32394",
+              "bounds": "(x=-17.4, y=-33.55, w=34.5, h=40.65)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 4,
+          "visible": true,
+          "frame": 2,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-17.4, y=-40.8, w=34.5, h=40.65)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualMsp",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32388",
+      "bounds": "(x=-17.4, y=-40.8, w=34.5, h=40.65)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 0,
+    "kind": "ttur",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -19.8,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32402",
+                  "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.2,
+              "name": "korp",
+              "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -16.2,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32403",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": false,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": -0.25,
+              "name": "pole",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-31.55, y=-52.35, w=62.6, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTTurret",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32401",
+      "bounds": "(x=-94.65, y=-157.05, w=187.8, h=216.9)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 1,
+    "kind": "ttur",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -19.8,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32409",
+                  "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.2,
+              "name": "korp",
+              "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -16.2,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32410",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": false,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": -0.25,
+              "name": "pole",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-31.55, y=-52.35, w=62.6, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTTurret",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32408",
+      "bounds": "(x=-94.65, y=-157.05, w=187.8, h=216.9)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 2,
+    "kind": "ttur",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -19.8,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32416",
+                  "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.2,
+              "name": "korp",
+              "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -16.2,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32417",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": false,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": -0.25,
+              "name": "pole",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-31.55, y=-52.35, w=62.6, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTTurret",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32415",
+      "bounds": "(x=-94.65, y=-157.05, w=187.8, h=216.9)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 3,
+    "kind": "ttur",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -19.8,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32423",
+                  "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.2,
+              "name": "korp",
+              "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -16.2,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32424",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": false,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": -0.25,
+              "name": "pole",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-31.55, y=-52.35, w=62.6, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTTurret",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32422",
+      "bounds": "(x=-94.65, y=-157.05, w=187.8, h=216.9)",
+      "rotation": 0
+    }
+  },
+  {
+    "state": 4,
+    "kind": "ttur",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "children": [
+            {
+              "y": -19.8,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32430",
+                  "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": true,
+              "frame": 1,
+              "alpha": 1,
+              "x": -0.2,
+              "name": "korp",
+              "bounds": "(x=-94, y=-82.25, w=188, h=177.95)",
+              "rotation": 0
+            },
+            {
+              "y": -16.2,
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32431",
+                  "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+                  "rotation": 0
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "frames": 1,
+              "visible": false,
+              "frame": 1,
+              "alpha": 0.73828125,
+              "x": -0.25,
+              "name": "pole",
+              "bounds": "(x=-31.3, y=-36.15, w=62.6, h=72.3)",
+              "rotation": 0
+            }
+          ],
+          "type": "flash.display::MovieClip",
+          "frames": 1,
+          "visible": true,
+          "frame": 1,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-31.55, y=-52.35, w=62.6, h=72.3)",
+          "rotation": 0
+        }
+      ],
+      "type": "visualTTurret",
+      "frames": 1,
+      "visible": true,
+      "frame": 1,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32429",
+      "bounds": "(x=-94.65, y=-157.05, w=187.8, h=216.9)",
+      "rotation": 0
+    }
+  }
+]

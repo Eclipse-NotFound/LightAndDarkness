@@ -1,0 +1,37 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "A61EA4A30F0E4978173F2B92B5F33A02960098D706B810FC6196105278EFA73F",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\pfe.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "514A7671D4DA517A31045AEAF8FFAD3089AA66705FE58D14DC339F849589A7F6",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\mods\\LightAndDarkness\\release\\LightAndDarknessMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "9632327BDA49FCE3B076C081819DC35B8DBCBB3EAA85895C567E03EDAFE907ED",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\mods\\LightAndDarkness\\release\\LightMachineProbeMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "BD71B6F31774B97841D4C158451DA0353B53BC46AC72F8E2A7FE2C3F3F4908B1",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\mods\\ModLoader\\release\\ModLoaderMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "B5E8110E11FE2DF8A748B223DFFA6E0EC42E4F61A931D4D4E065CC199EFA2F1B",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\mods\\ContinuousScene\\release\\ContinuousSceneMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "76314B819151FBA6F67F6D740B21030A9EEC8359AF4C9C9DDEB83D4CAF5C46B7",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\mods\\RealisticVision\\release\\RealisticVisionMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0BD209A1763D1C08BCEEAA6415DC768AB3D18AD99BAD377B4D8C188EBD48DE5A",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\mods\\WallBlend\\release\\WallBlendMod.swf"
+  }
+]

@@ -8,7 +8,7 @@ $ladTarget=Join-Path $ladRoot 'release/LightAndDarknessMod.swf'
 $ladNew='3835827D0D2702EC55AB13721DCED7D8463C3A69780C6C37B5816BBD72164B46'
 $ladOld='514A7671D4DA517A31045AEAF8FFAD3089AA66705FE58D14DC339F849589A7F6'
 $ladExpected=[ordered]@{
- 'pfe.swf'='A61EA4A30F0E4978173F2B92B5F33A02960098D706B810FC6196105278EFA73F'
+ 'pfe.swf'='02BFABE6A3B4881DFA1227515E71F2A8EA863D4B1B468FBE1D8008AEBA7D9240'
  'application.xml'='70DD3B085E5F6C66C03693CF68CE5E93A4E4136DD745D40D1A5B2A49863BA236'
  'mods/loader-manifest.txt'='33DE189E1209FDD397E811A52E9AC67FF0DEDAEEAE5CFEFF4B7D15D4536EB133'
  'mods/ContinuousScene/release/ContinuousSceneMod.swf'='B5E8110E11FE2DF8A748B223DFFA6E0EC42E4F61A931D4D4E065CC199EFA2F1B'
@@ -49,7 +49,8 @@ foreach($entry in $ladExpected.GetEnumerator()){RequireHash (Join-Path $ladGame 
 [xml]$ladDescriptor=Get-Content -LiteralPath (Join-Path $ladGame 'application.xml') -Raw
 if($ladDescriptor.application.initialWindow.content -cne 'pfe.swf'){throw 'Unexpected active host'}
 $ladRows=@(Get-Content -LiteralPath (Join-Path $ladGame 'mods/loader-manifest.txt') | Where-Object {$_ -match '^LightAndDarkness\|'})
-if($ladRows.Count -ne 1 -or $ladRows[0] -cne 'LightAndDarkness|LightAndDarknessMod|1|0|0'){throw 'Unexpected installed entry'}
+# Preserve the current launcher's selection exactly. Only active 1.02 is certified here.
+if($ladRows.Count -ne 1 -or $ladRows[0] -cne 'LightAndDarkness|LightAndDarknessMod|1|1|1'){throw 'Unexpected installed entry'}
 VerifyEvidence $MachineEvidence 'verify'
 VerifyEvidence $RegressionEvidence 'regression'
 if(!$Install){Write-Output 'PRECHECK_PASS frozen candidate, exact loader sessions and compatibility checks';return}

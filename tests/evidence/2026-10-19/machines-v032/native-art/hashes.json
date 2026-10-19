@@ -1,0 +1,17 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "2A4662488BA3B690EB23ACFE4B79ACA3F0D9AE114E5E2DEE7595AF3CABFFB3EA",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\pfe.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "514A7671D4DA517A31045AEAF8FFAD3089AA66705FE58D14DC339F849589A7F6",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\mods\\LightAndDarkness\\release\\LightAndDarknessMod.swf"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "659942DD6B4921BBD8C3A18206B44A0E3E57708A5F95387B25BD5289324D1803",
+    "Path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\machine-runtime\\mods\\LightAndDarkness\\release\\LightMachineProbeMod.swf"
+  }
+]
