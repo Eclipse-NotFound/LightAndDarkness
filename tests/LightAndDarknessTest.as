@@ -40,10 +40,11 @@ package {
         private var faultMin:Number=10;
         private var faultMax:Number=0;
         private var faultSnapshot:String;
+        private var largePreload:Boolean;
         private const KEY:String="lightanddarkness.state.v1";
         public function LightAndDarknessTest() {}
         public static function init(main:*):void {
-            if(NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-test-")!=0) return;
+            if(NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-test-")!=0 && NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-machine-")!=0) return;
             test=new LightAndDarknessTest();test.main=main;test.start=getTimer();
             var stream:FileStream=new FileStream();stream.open(File.applicationDirectory.resolvePath("test-mode.txt"),FileMode.READ);
             var mode:String=stream.readUTFBytes(stream.bytesAvailable);test.mixed=mode=="mixed";test.cold=mode=="cold";stream.close();
@@ -64,7 +65,15 @@ package {
         private function check(pass:Boolean,label:String):void {LightCoreChecks.check(pass,label,log);}
         private function checkBorders(label:String):void {
             var g:*=world.grafon;
+            log("BORDER "+label+" scales="+[g.ramT.scaleY,g.ramL.scaleX,g.ramB.scaleY,g.ramR.scaleX]+" camera="+[world.cam.isZoom,world.cam.scaleV,world.cam.screenX,world.cam.screenY,world.cam.maxsx,world.cam.maxsy]+" scene="+g.sceneLarge);
             check(g.ramT.scaleY<0 && g.ramL.scaleX<0 && g.ramB.scaleY>0 && g.ramR.scaleX>0,label);
+            var before:BitmapData=new BitmapData(main.stage.stageWidth,main.stage.stageHeight,false,0);before.draw(main.stage);
+            var zoom:int=world.cam.isZoom,scale:Number=world.cam.scaleV;
+            world.cam.setZoom();var after:BitmapData=new BitmapData(before.width,before.height,false,0);after.draw(main.stage);
+            var difference:*=before.compare(after);
+            var same:Boolean=difference===0 && zoom==world.cam.isZoom && scale==world.cam.scaleV;
+            if(difference is BitmapData)difference.dispose();before.dispose();after.dispose();
+            check(same,label+" full-stage native-camera oracle");
         }
         private function key(type:String,code:int):void {
             // Bubble from a child so the production stage capture listener handles it.
@@ -227,6 +236,7 @@ package {
                     runtime.atmosphereTime=0.7/(1.75*1.25);runtime.render();
                     check(runtime.field.sample(lamp.x,lamp.y)<litExposure-0.15,"live flicker changes shared exposure raster");snapshot("atmosphere-dim");
                     check(lamp.clip.transform.colorTransform.redMultiplier<0.4,"lamp glass follows dim output");
+                    runtime.setAtmospherePreference("machines",false);
                     world.pip.noAct=false;world.saveGame(9);faultSnapshot=world.getSave(9).game.triggers[KEY];
                     check(runtime.needsRepair(lamp) && lamp.state.hp==40,"full-health faulty lamp is repairable");
                     key(KeyboardEvent.KEY_DOWN,69);phase=31;tick=0;
@@ -234,15 +244,20 @@ package {
                     key(KeyboardEvent.KEY_UP,69);
                     check(lamp.state.atmosphere.mode=="steady" && world.invent.items["scrap"].kol==6,"repair stabilizes fault and charges once");
                     check(world.getSave(9).game.triggers[KEY]===faultSnapshot,"repair keeps old atmosphere snapshot immutable");
+                    runtime.setAtmospherePreference("machines",true);
                     world.saveGame(10);runtime.setAtmospherePreference("brightness",1.4);
                     previousLocation=world.loc;world.comLoad=9;phase=32;
                 } else if(phase==32 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
                     lamp=findLamp();
                     check(lamp.state.atmosphere.mode=="fast" && lamp.state.atmosphere.brightness==0.45 && lamp.state.atmosphere.frequency==1.75,"native load restores fixture atmosphere");
                     check(runtime.atmosphere.settings.brightness==1.1 && runtime.atmosphere.settings.speed==1.25 && runtime.atmosphere.settings.darkness==0.8,"native load restores atmosphere preferences");
+                    if("machines" in runtime.atmosphere.settings)check(runtime.atmosphere.settings.machines===false,"native load restores disabled machine glow");
+                    else log("SKIP legacy baseline has no machine-glow preference");
                     previousLocation=world.loc;world.comLoad=10;phase=33;
                 } else if(phase==33 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
                     lamp=findLamp();check(lamp.state.atmosphere.mode=="steady" && lamp.state.atmosphere.brightness==0.45 && world.invent.items["scrap"].kol==6,"repaired atmosphere persists independently");
+                    if("machines" in runtime.atmosphere.settings)check(runtime.atmosphere.settings.machines===true,"separate save restores enabled machine glow");
+                    else log("SKIP legacy baseline has no machine-glow preference");
                     if(!mixed) {finish();return;}
                     var settings:*=main.getChildByName("ModSettingsCarrier");
                     check(settings && settings.modAPI,"shared settings carrier available");
@@ -268,14 +283,14 @@ package {
                         if(oldPixels.getPixel32(px,py)!=marked.getPixel32(px,py)) {markX=px;markY=py;markColor=marked.getPixel32(px,py);changed=true;break;}
                     }
                     oldPixels.dispose();check(changed,"native large-scene paint mark created");
-                    largeUnits=world.loc.units.length;runtime.setEnabled(false);
+                    largeUnits=world.loc.units.length;largePreload=world.grafon.scenePreload;runtime.setEnabled(false);
                     checkBorders("large-scene disable preserves camera borders");
                     runtime.setEnabled(true);phase=12;tick=0;
                 } else if(phase==12 && runtime.location===world.loc && ++tick>25) {
                     checkBorders("large-scene reenable preserves camera borders");
                     check(runtime.enabled && world.loc.units.length==largeUnits,"large scene toggle has no proxy leak");
                     check(largeSurface().nativeBuffers[0].getPixel32(markX,markY)==markColor,"large-scene native paint history survives lighting conversion");
-                    check(world.grafon.scenePreload,"large-scene preload preference restored");
+                    check(world.grafon.scenePreload===largePreload,"large-scene preload preference restored");
                     world.gg.setPos(Math.min(world.loc.limX-150,2400),world.gg.Y);world.gg.fixed=true;phase=13;tick=0;
                 } else if(phase==13 && ++tick>40) {
                     check(runtime.field.bounds.contains(world.gg.X,world.gg.Y-world.gg.scY/2),"illumination follows large-scene camera");

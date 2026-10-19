@@ -24,6 +24,7 @@ package lad {
         public var atmosphere:LadAtmosphere=new LadAtmosphere();
         public var keys:LadKeys=new LadKeys();
         public var projectiles:LadProjectiles=new LadProjectiles();
+        public var machines:LadMachineLights=new LadMachineLights();
         public var darkZones:Array=[];
         public var atmosphereTime:Number=0;
         public var lastExposure:Number=1;
@@ -55,7 +56,7 @@ package lad {
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.3.1",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.3.2",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.addEventListener(Event.ADDED,objectAdded,true);
@@ -64,7 +65,7 @@ package lad {
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.3.1 loaded");
+            LadLog.write("v0.3.2 loaded");
         }
         private function objectAdded(event:Event):void {
             if(!enabled || !atmosphere.settings.projectiles || !location || !world || world.loc!==location) return;
@@ -179,7 +180,7 @@ package lad {
             }
             while(lampLayer.numChildren) lampLayer.removeChildAt(0);
             if(lampLayer.parent) lampLayer.parent.removeChild(lampLayer);
-            projectiles.clear();field.clear();lamps=[];darkZones=[];location=null;player=null;adapter=null;hud.visible=false;
+            projectiles.clear();machines.clear();field.clear();lamps=[];darkZones=[];location=null;player=null;adapter=null;hud.visible=false;
         }
         private function ensureAdapter():void {
             var next:*=world.gg;
@@ -201,6 +202,11 @@ package lad {
         }
         private function placeLayers():void {
             var g:*=world.grafon,visual:*=g.visual;
+            // Some scene hosts rasterize more chunks after the normal camera setup,
+            // resetting native border scales to +2. Repair only that invalid state,
+            // after the camera belongs to this location, without changing its zoom.
+            if("sceneLarge" in g && g.sceneLarge && world.cam.maxsx==location.limX && world.cam.maxsy==location.limY
+                && (g.ramT.scaleY>=0 || g.ramL.scaleX>=0)) world.cam.setZoom();
             if(lampLayer.parent!==visual) visual.addChild(lampLayer);
             var backIndex:int=visual.getChildIndex(g.visBack2);
             if(visual.getChildIndex(lampLayer)!=backIndex+1) visual.setChildIndex(lampLayer,backIndex+1);
@@ -221,6 +227,7 @@ package lad {
                 result.push({id:"headlamp-spill",x:x,y:y,radius:85,color:0xffedcf,power:0.8,angle:0,cone:Math.PI*2});
             }
             if(atmosphere.settings.projectiles) result=result.concat(projectiles.lights(view || field.bounds,atmosphere.settings.projectileBrightness));
+            if(atmosphere.settings.machines && location && world) result=result.concat(machines.lights(location,world.grafon.visual,view || field.bounds));
             return result;
         }
         public function render():void {
@@ -373,6 +380,7 @@ package lad {
                 {key:"darkZones",kind:"check",label:"局部黑暗区",get:function():* {return self.atmosphere.settings.darkZones;},set:function(v:*):void {self.setAtmospherePreference("darkZones",Boolean(v));}},
                 {key:"darkness",kind:"slider",label:"黑暗区浓度",min:0,max:1,step:0.1,get:function():* {return self.atmosphere.settings.darkness;},set:function(v:*):void {self.setAtmospherePreference("darkness",v);}},
                 {key:"projectiles",kind:"check",label:"弹丸与爆炸短暂照明",get:function():* {return self.atmosphere.settings.projectiles;},set:function(v:*):void {self.setAtmospherePreference("projectiles",Boolean(v));}},
+                {key:"machines",kind:"check",label:"炮塔与蜘蛛地雷微光",get:function():* {return self.atmosphere.settings.machines;},set:function(v:*):void {self.setAtmospherePreference("machines",Boolean(v));}},
                 {key:"projectileBrightness",kind:"slider",label:"弹丸照明亮度倍率",min:0.25,max:1.5,step:0.05,get:function():* {return self.atmosphere.settings.projectileBrightness;},set:function(v:*):void {self.setAtmospherePreference("projectileBrightness",v);}}
             ],null,"附近灯具可开关；受损或故障时按住操作键维修，消耗废金属 ×2。改键见快捷键页。");
             settings=carrier.modAPI;

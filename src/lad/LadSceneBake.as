@@ -64,6 +64,8 @@ package lad {
             // before sceneTick, without changing the player's zoom or position.
             camera.setZoom();
             if("sceneTick" in g) g.sceneTick();
+            // A sceneTick may itself finish rasterizing a chunk and reset borders.
+            if(g.ramT.scaleY>=0 || g.ramL.scaleX>=0) camera.setZoom();
         }
         public static function change(g:*,loc:*,mutation:Function,camera:*):void {
             // Large scenes already journal native decals/terrain edits and replay
