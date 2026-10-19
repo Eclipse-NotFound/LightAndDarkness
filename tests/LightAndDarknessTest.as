@@ -44,7 +44,7 @@ package {
         private const KEY:String="lightanddarkness.state.v1";
         public function LightAndDarknessTest() {}
         public static function init(main:*):void {
-            if(NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-test-")!=0 && NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-machine-")!=0 && NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-environment-")!=0) return;
+            if(NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-test-")!=0 && NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-machine-")!=0 && NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-environment-")!=0 && NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-landmark-")!=0) return;
             test=new LightAndDarknessTest();test.main=main;test.start=getTimer();
             var stream:FileStream=new FileStream();stream.open(File.applicationDirectory.resolvePath("test-mode.txt"),FileMode.READ);
             var mode:String=stream.readUTFBytes(stream.bytesAvailable);test.mixed=mode=="mixed";test.cold=mode=="cold";stream.close();
@@ -242,6 +242,7 @@ package {
                     check(litExposure>floorExposure+0.08*(1-floorExposure) && dimExposure<litExposure-0.12*(1-floorExposure),"live flicker changes shared exposure raster");snapshot("atmosphere-dim");
                     check(lamp.clip.transform.colorTransform.redMultiplier<0.4,"lamp glass follows dim output");
                     runtime.setAtmospherePreference("machines",false);
+                    if("landmarks" in runtime.atmosphere.settings)runtime.setAtmospherePreference("landmarks",false);
                     world.pip.noAct=false;world.saveGame(9);faultSnapshot=world.getSave(9).game.triggers[KEY];
                     check(runtime.needsRepair(lamp) && lamp.state.hp==40,"full-health faulty lamp is repairable");
                     key(KeyboardEvent.KEY_DOWN,69);phase=31;tick=0;
@@ -250,6 +251,7 @@ package {
                     check(lamp.state.atmosphere.mode=="steady" && world.invent.items["scrap"].kol==6,"repair stabilizes fault and charges once");
                     check(world.getSave(9).game.triggers[KEY]===faultSnapshot,"repair keeps old atmosphere snapshot immutable");
                     runtime.setAtmospherePreference("machines",true);
+                    if("landmarks" in runtime.atmosphere.settings)runtime.setAtmospherePreference("landmarks",true);
                     world.saveGame(10);runtime.setAtmospherePreference("brightness",1.4);
                     previousLocation=world.loc;world.comLoad=9;phase=32;
                 } else if(phase==32 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
@@ -257,11 +259,13 @@ package {
                     check(lamp.state.atmosphere.mode=="fast" && lamp.state.atmosphere.brightness==0.45 && lamp.state.atmosphere.frequency==1.75,"native load restores fixture atmosphere");
                     check(runtime.atmosphere.settings.brightness==1.1 && runtime.atmosphere.settings.speed==1.25 && runtime.atmosphere.settings.darkness==0.8,"native load restores atmosphere preferences");
                     if("machines" in runtime.atmosphere.settings)check(runtime.atmosphere.settings.machines===false,"native load restores disabled machine glow");
+                    if("landmarks" in runtime.atmosphere.settings)check(runtime.atmosphere.settings.landmarks===false,"native load restores disabled landmark light");
                     else log("SKIP legacy baseline has no machine-glow preference");
                     previousLocation=world.loc;world.comLoad=10;phase=33;
                 } else if(phase==33 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
                     lamp=findLamp();check(lamp.state.atmosphere.mode=="steady" && lamp.state.atmosphere.brightness==0.45 && world.invent.items["scrap"].kol==6,"repaired atmosphere persists independently");
                     if("machines" in runtime.atmosphere.settings)check(runtime.atmosphere.settings.machines===true,"separate save restores enabled machine glow");
+                    if("landmarks" in runtime.atmosphere.settings)check(runtime.atmosphere.settings.landmarks===true,"separate save restores enabled landmark light");
                     else log("SKIP legacy baseline has no machine-glow preference");
                     if(!mixed) {finish();return;}
                     var settings:*=main.getChildByName("ModSettingsCarrier");
@@ -309,9 +313,11 @@ package {
                 } else if(phase==101 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
                     lamp=findLamp();check(lamp.state.atmosphere.mode=="fast" && lamp.state.atmosphere.frequency==1.75 && lamp.state.atmosphere.brightness==0.45,"cold process restores fixture atmosphere");
                     check(runtime.atmosphere.settings.speed==1.25 && runtime.atmosphere.settings.brightness==1.1 && runtime.atmosphere.settings.darkness==0.8,"cold process restores atmosphere preferences");
+                    if("landmarks" in runtime.atmosphere.settings)check(runtime.atmosphere.settings.landmarks===false,"cold process restores disabled landmark light");
                     previousLocation=world.loc;world.comLoad=10;phase=102;
                 } else if(phase==102 && world.loc && world.loc!==previousLocation && runtime.location===world.loc && world.allStat==1) {
-                    lamp=findLamp();check(lamp.state.atmosphere.mode=="steady" && world.invent.items["scrap"].kol==6,"cold process restores repaired fault and cost");finish();
+                    lamp=findLamp();check(lamp.state.atmosphere.mode=="steady" && world.invent.items["scrap"].kol==6,"cold process restores repaired fault and cost");
+                    if("landmarks" in runtime.atmosphere.settings)check(runtime.atmosphere.settings.landmarks===true,"cold process restores enabled landmark light");finish();
                 }
             } catch(error:*) {main.stage.removeEventListener(Event.ENTER_FRAME,frame);log("FAIL "+error+" "+error.getStackTrace());}
         }

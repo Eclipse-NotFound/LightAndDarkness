@@ -1,0 +1,30 @@
+[
+  {
+    "label": "candidate",
+    "applicationID": "remains-lad-landmark-20261019194703918726",
+    "mode": "verify",
+    "samples": 0,
+    "result": "PASS"
+  },
+  {
+    "label": "regression",
+    "applicationID": "remains-lad-landmark-20261019194923206381",
+    "mode": "regression",
+    "samples": 0,
+    "result": "PASS"
+  },
+  {
+    "label": "cold",
+    "applicationID": "remains-lad-landmark-20261019195120813090",
+    "mode": "cold",
+    "samples": 0,
+    "result": "PASS"
+  },
+  {
+    "label": "installed",
+    "applicationID": "remains-lad-landmark-20261019195250173861",
+    "mode": "verify",
+    "samples": 0,
+    "result": "PASS"
+  }
+]

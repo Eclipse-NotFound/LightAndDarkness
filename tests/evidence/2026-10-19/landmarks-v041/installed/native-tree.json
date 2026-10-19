@@ -1,0 +1,698 @@
+[
+  {
+    "tree": {
+      "y": 600,
+      "labels": [],
+      "children": [
+        {
+          "y": -60,
+          "labels": [
+            {
+              "name": "reopen",
+              "frame": 26
+            },
+            {
+              "name": "open",
+              "frame": 45
+            }
+          ],
+          "children": [
+            {
+              "y": 0,
+              "labels": [],
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32177",
+                  "bounds": "(x=-40, y=-60, w=80, h=120)"
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32176",
+              "bounds": "(x=-40, y=-60, w=80, h=120)",
+              "frames": 1,
+              "frame": 1
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32178",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": -16.5,
+              "name": "instance32179",
+              "bounds": "(x=-23.5, y=-60, w=47, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32180",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 16.5,
+              "name": "instance32181",
+              "bounds": "(x=-23.5, y=-60, w=47, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32182",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            }
+          ],
+          "type": "pfe_fla::cp_open_676",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-40, y=-60, w=80, h=120)",
+          "frames": 45,
+          "frame": 1
+        },
+        {
+          "y": -59,
+          "labels": [],
+          "children": [
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32183",
+              "bounds": "(x=-17, y=-17, w=34, h=34)"
+            }
+          ],
+          "type": "pfe_fla::cplock_677",
+          "visible": false,
+          "alpha": 1,
+          "x": 0,
+          "name": "lock",
+          "bounds": "(x=-17, y=-17, w=34, h=34)",
+          "frames": 5,
+          "frame": 1
+        },
+        {
+          "y": -73.95,
+          "labels": [],
+          "children": [],
+          "type": "pfe_fla::fiol_678",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "fiol",
+          "bounds": "(x=0, y=0, w=0, h=0)",
+          "frames": 25,
+          "frame": 1
+        }
+      ],
+      "type": "vischeckpoint",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32175",
+      "bounds": "(x=-40, y=-120, w=80, h=120)",
+      "frames": 1,
+      "frame": 1
+    },
+    "id": "checkpoint closed"
+  },
+  {
+    "tree": {
+      "y": 600,
+      "labels": [],
+      "children": [
+        {
+          "y": -60,
+          "labels": [
+            {
+              "name": "reopen",
+              "frame": 26
+            },
+            {
+              "name": "open",
+              "frame": 45
+            }
+          ],
+          "children": [
+            {
+              "y": 0,
+              "labels": [],
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32186",
+                  "bounds": "(x=-40, y=-60, w=80, h=120)"
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32185",
+              "bounds": "(x=-40, y=-60, w=80, h=120)",
+              "frames": 1,
+              "frame": 1
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32187",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32189",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32191",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            }
+          ],
+          "type": "pfe_fla::cp_open_676",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-40, y=-60, w=80, h=120)",
+          "frames": 45,
+          "frame": 26
+        },
+        {
+          "y": -59,
+          "labels": [],
+          "children": [
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32192",
+              "bounds": "(x=-17, y=-17, w=34, h=34)"
+            }
+          ],
+          "type": "pfe_fla::cplock_677",
+          "visible": false,
+          "alpha": 1,
+          "x": 0,
+          "name": "lock",
+          "bounds": "(x=-17, y=-17, w=34, h=34)",
+          "frames": 5,
+          "frame": 1
+        },
+        {
+          "y": -73.95,
+          "labels": [],
+          "children": [],
+          "type": "pfe_fla::fiol_678",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "fiol",
+          "bounds": "(x=0, y=0, w=0, h=0)",
+          "frames": 25,
+          "frame": 1
+        }
+      ],
+      "type": "vischeckpoint",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32184",
+      "bounds": "(x=-40, y=-120, w=80, h=120)",
+      "frames": 1,
+      "frame": 1
+    },
+    "id": "checkpoint reopen"
+  },
+  {
+    "tree": {
+      "y": 600,
+      "labels": [],
+      "children": [
+        {
+          "y": -60,
+          "labels": [
+            {
+              "name": "reopen",
+              "frame": 26
+            },
+            {
+              "name": "open",
+              "frame": 45
+            }
+          ],
+          "children": [
+            {
+              "y": 0,
+              "labels": [],
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32195",
+                  "bounds": "(x=-40, y=-60, w=80, h=120)"
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32194",
+              "bounds": "(x=-40, y=-60, w=80, h=120)",
+              "frames": 1,
+              "frame": 1
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32196",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32198",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32200",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": -23.9,
+              "labels": [],
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32203",
+                  "bounds": "(x=-13, y=-15.05, w=26.05, h=30.05)"
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "visible": true,
+              "alpha": 1,
+              "x": 0.95,
+              "name": "instance32202",
+              "bounds": "(x=-13, y=-15.05, w=26.05, h=30.05)",
+              "frames": 1,
+              "frame": 1
+            }
+          ],
+          "type": "pfe_fla::cp_open_676",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-40, y=-60, w=80, h=120)",
+          "frames": 45,
+          "frame": 45
+        },
+        {
+          "y": -59,
+          "labels": [],
+          "children": [
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32201",
+              "bounds": "(x=-17, y=-17, w=34, h=34)"
+            }
+          ],
+          "type": "pfe_fla::cplock_677",
+          "visible": false,
+          "alpha": 1,
+          "x": 0,
+          "name": "lock",
+          "bounds": "(x=-17, y=-17, w=34, h=34)",
+          "frames": 5,
+          "frame": 1
+        },
+        {
+          "y": -73.95,
+          "labels": [],
+          "children": [],
+          "type": "pfe_fla::fiol_678",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "fiol",
+          "bounds": "(x=0, y=0, w=0, h=0)",
+          "frames": 25,
+          "frame": 1
+        }
+      ],
+      "type": "vischeckpoint",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32193",
+      "bounds": "(x=-40, y=-120, w=80, h=120)",
+      "frames": 1,
+      "frame": 1
+    },
+    "id": "checkpoint open"
+  },
+  {
+    "tree": {
+      "y": 600,
+      "labels": [],
+      "children": [
+        {
+          "y": -60,
+          "labels": [
+            {
+              "name": "reopen",
+              "frame": 26
+            },
+            {
+              "name": "open",
+              "frame": 45
+            }
+          ],
+          "children": [
+            {
+              "y": 0,
+              "labels": [],
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32206",
+                  "bounds": "(x=-40, y=-60, w=80, h=120)"
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32205",
+              "bounds": "(x=-40, y=-60, w=80, h=120)",
+              "frames": 1,
+              "frame": 1
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32207",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32209",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32211",
+              "bounds": "(x=-40, y=-60, w=80, h=120)"
+            },
+            {
+              "y": -23.9,
+              "labels": [],
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32214",
+                  "bounds": "(x=-13, y=-15.05, w=26.05, h=30.05)"
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "visible": true,
+              "alpha": 1,
+              "x": 0.95,
+              "name": "instance32213",
+              "bounds": "(x=-13, y=-15.05, w=26.05, h=30.05)",
+              "frames": 1,
+              "frame": 1
+            }
+          ],
+          "type": "pfe_fla::cp_open_676",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "osn",
+          "bounds": "(x=-40, y=-60, w=80, h=120)",
+          "frames": 45,
+          "frame": 45
+        },
+        {
+          "y": -59,
+          "labels": [],
+          "children": [
+            {
+              "y": 0,
+              "type": "flash.display::Shape",
+              "visible": true,
+              "alpha": 1,
+              "x": 0,
+              "name": "instance32212",
+              "bounds": "(x=-17, y=-17, w=34, h=34)"
+            }
+          ],
+          "type": "pfe_fla::cplock_677",
+          "visible": false,
+          "alpha": 1,
+          "x": 0,
+          "name": "lock",
+          "bounds": "(x=-17, y=-17, w=34, h=34)",
+          "frames": 5,
+          "frame": 1
+        },
+        {
+          "y": -73.95,
+          "labels": [],
+          "children": [
+            {
+              "y": -0.5,
+              "labels": [],
+              "children": [
+                {
+                  "y": 0,
+                  "type": "flash.display::Shape",
+                  "visible": true,
+                  "alpha": 1,
+                  "x": 0,
+                  "name": "instance32216",
+                  "bounds": "(x=-37.45, y=-115, w=74, h=229)"
+                }
+              ],
+              "type": "flash.display::MovieClip",
+              "visible": true,
+              "alpha": 0.51953125,
+              "x": 0,
+              "name": "instance32215",
+              "bounds": "(x=-37.45, y=-115, w=74, h=229)",
+              "frames": 1,
+              "frame": 1
+            }
+          ],
+          "type": "pfe_fla::fiol_678",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "fiol",
+          "bounds": "(x=-37.45, y=-115.5, w=74, h=229)",
+          "frames": 25,
+          "frame": 25
+        }
+      ],
+      "type": "vischeckpoint",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32204",
+      "bounds": "(x=-40, y=-189.45, w=80, h=229)",
+      "frames": 1,
+      "frame": 1
+    },
+    "id": "checkpoint teleport"
+  },
+  {
+    "tree": {
+      "y": 0,
+      "labels": [],
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32218",
+          "bounds": "(x=-40, y=-120, w=80, h=120)"
+        }
+      ],
+      "type": "visexit",
+      "visible": true,
+      "alpha": 1,
+      "x": 0,
+      "name": "instance32217",
+      "bounds": "(x=-40, y=-120, w=80, h=120)",
+      "frames": 1,
+      "frame": 1
+    },
+    "id": "exit"
+  },
+  {
+    "tree": {
+      "y": 0,
+      "labels": [],
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32220",
+          "bounds": "(x=-40, y=-120, w=80, h=120)"
+        }
+      ],
+      "type": "visdoorprob",
+      "visible": true,
+      "alpha": 1,
+      "x": 0,
+      "name": "instance32219",
+      "bounds": "(x=-40, y=-120, w=80, h=120)",
+      "frames": 1,
+      "frame": 1
+    },
+    "id": "doorprob"
+  },
+  {
+    "tree": {
+      "y": 0,
+      "labels": [],
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32222",
+          "bounds": "(x=-40, y=-120, w=80, h=120)"
+        }
+      ],
+      "type": "visdoorboss",
+      "visible": true,
+      "alpha": 1,
+      "x": 0,
+      "name": "instance32221",
+      "bounds": "(x=-40, y=-120, w=80, h=120)",
+      "frames": 1,
+      "frame": 1
+    },
+    "id": "doorboss"
+  },
+  {
+    "tree": {
+      "y": 0,
+      "labels": [],
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32224",
+          "bounds": "(x=-40, y=-120, w=80, h=120)"
+        }
+      ],
+      "type": "visdoorout",
+      "visible": true,
+      "alpha": 1,
+      "x": 0,
+      "name": "instance32223",
+      "bounds": "(x=-40, y=-120, w=80, h=120)",
+      "frames": 1,
+      "frame": 1
+    },
+    "id": "doorout"
+  }
+]

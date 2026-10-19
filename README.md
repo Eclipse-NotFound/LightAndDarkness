@@ -2,10 +2,11 @@
 
 为 Remains 增加能影响战斗的明暗区域、可装备灯具，以及场景灯的破坏和维修。用户于 2026-10-15 确认：**战术光暗与生存探索并重，兼顾氛围**。
 
-当前 **0.4.0 已于2026-10-19部署**，修复地图普遍偏暗：按地区提供基础亮度、按真实天空和窗洞补光，故障灯与暗区根据场景生成。保留炮塔/地雷微光、弹丸短光、灯具损坏维修和存档。正式文件固定为 `release/LightAndDarknessMod.swf`，保存进度并重启游戏生效。[本版验证和回退](tests/environment-verification-2026-10-19.md)。
+当前 **0.4.1 已于2026-10-19部署**，沿原版图像为存档点、出口及试炼入口增加散光。保留地区基础光、天空/窗洞、机器微光、弹丸短光、灯具损坏维修和存档。正式文件固定为 `release/LightAndDarknessMod.swf`，保存进度并重启游戏生效。[本版验证和回退](tests/landmark-verification-2026-10-19.md)。
 
 ## 当前可用功能
 
+- 存档点沿原版紫色星形屏幕和传送柱发光；关闭时只留微弱侧条光。绿色Exit灯牌、绿色试炼问号、红色战斗试炼牛头各有局部散光，受墙门遮挡。设置「存档点、出口与试炼入口照明」默认开启，随槽保存。
 - 营地、维护中的设施、普通室内、废墟和地下各有基础亮度；真正露天区域有天光，六类原版窗洞向室内补光。天空与窗光受墙门遮挡，大场景逐房间识别。
 - 据点自动灯保持稳定，废弃区域更容易出现故障。自动暗区只出现在合适的遮蔽角落，避开入口、门与关键交互；普通战利品暗角仍可探索。旧灯具的耐久、开关及维修结果保留。
 - 八类炮塔沿原版状态灯发出黄/橙/红微光；蜘蛛地雷展开亮黄、追击或跳跃亮红，休眠、收起或损毁时熄灭。灯点跟随转向及墙挂/倒挂姿态，雷霆炮座仅开启能量场时有蓝光；小范围散光受墙门遮挡。
@@ -28,6 +29,8 @@
 
 ## 构建与验证
 
+0.4.1用`build/build.ps1 -OutputDirectory <build/out/landmarks-v041的绝对路径>`构建候选；Python运行`tools/run-landmark-tests.py --mode verify --mixed`（124项，含31环境回归），`--mode regression --mixed`（101项），`--mode cold --mixed --seed-storage <上轮storage目录>`（11项）。正式复验加`--candidate release/LightAndDarknessMod.swf`。原版图集、六格效果及实际营地截图见[证据](tests/evidence/2026-10-19/landmarks-v041/index.json)。
+
 0.4.0候选先构建到`build/out/environment-v040`，再以Python运行`tools/run-environment-tests.py --mixed --mode survey`（31专项＋九场景）、`--mode large`（原生拼接）、`--mode regression`（99项）及`--mode cold --seed-storage <本轮回归的storage目录>`（9项）。部署后加`--candidate release/LightAndDarknessMod.swf`回读同一文件。通过启动器精确选组、唯一AIR身份与私有后台桌面；完整证据见本版验证报告。
 
 0.3.2机器微光专项保留`build/build-machine-probe.ps1`及`tests/run-machines.ps1 -Mixed -Mode verify`入口（当版173项）；没有将该历史结果冒充0.4.0全量重跑。下面旧脚本保留历史用途。
@@ -44,6 +47,7 @@
 
 ## 阅读入口
 
+- [原版风格地标照明](design/landmark-lighting-v0.4.1.md)：存档点动画、灯牌与试炼符号的颜色、位置、状态及开关。
 - [环境光修复设计](design/environment-v0.4.md)：地区基础光、天空与窗洞、选择性故障和暗区、旧档迁移。
 - [地图整体偏暗调查](design/map-lighting-investigation-2026-10-19.md)：原版639/安装658模板布灯统计、室外识别问题及5场景对照；其四项建议已在0.4.0实施。
 - [原版光源与光照系统调查](design/native-lighting-survey.md)：先读此文，了解原版能力、限制和实现路线。

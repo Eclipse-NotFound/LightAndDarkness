@@ -1,0 +1,124 @@
+PASS checkpoint variant 0 closed pilot lights only
+PASS sampling preserves checkpoint variant 0 state
+PASS inactive checkpoint 0 screen stays dark
+PASS checkpoint 0 open screen uses native violet
+PASS checkpoint 0 beam follows native alpha
+PASS hidden checkpoint 0 emits nothing
+PASS checkpoint 0 stale beam is removed
+PASS checkpoint variant 1 closed pilot lights only
+PASS sampling preserves checkpoint variant 1 state
+PASS inactive checkpoint 1 screen stays dark
+PASS checkpoint 1 open screen uses native violet
+PASS checkpoint 1 beam follows native alpha
+PASS hidden checkpoint 1 emits nothing
+PASS checkpoint 1 stale beam is removed
+PASS checkpoint variant 2 closed pilot lights only
+PASS sampling preserves checkpoint variant 2 state
+PASS inactive checkpoint 2 screen stays dark
+PASS checkpoint 2 open screen uses native violet
+PASS checkpoint 2 beam follows native alpha
+PASS hidden checkpoint 2 emits nothing
+PASS checkpoint 2 stale beam is removed
+PASS checkpoint variant 3 closed pilot lights only
+PASS sampling preserves checkpoint variant 3 state
+PASS inactive checkpoint 3 screen stays dark
+PASS checkpoint 3 open screen uses native violet
+PASS checkpoint 3 beam follows native alpha
+PASS hidden checkpoint 3 emits nothing
+PASS checkpoint 3 stale beam is removed
+PASS checkpoint variant 4 closed pilot lights only
+PASS sampling preserves checkpoint variant 4 state
+PASS inactive checkpoint 4 screen stays dark
+PASS checkpoint 4 open screen uses native violet
+PASS checkpoint 4 beam follows native alpha
+PASS hidden checkpoint 4 emits nothing
+PASS checkpoint 4 stale beam is removed
+PASS checkpoint variant 5 closed pilot lights only
+PASS sampling preserves checkpoint variant 5 state
+PASS inactive checkpoint 5 screen stays dark
+PASS checkpoint 5 open screen uses native violet
+PASS checkpoint 5 beam follows native alpha
+PASS hidden checkpoint 5 emits nothing
+PASS checkpoint 5 stale beam is removed
+PASS star follows artwork transform 0/-1
+PASS star follows artwork transform 0/1
+PASS star follows artwork transform 90/-1
+PASS star follows artwork transform 90/1
+PASS star follows artwork transform 180/-1
+PASS star follows artwork transform 180/1
+PASS star follows artwork transform -90/-1
+PASS star follows artwork transform -90/1
+PASS invisible terminal has no glow
+PASS transparent terminal has no glow
+PASS offscreen sources culled
+PASS detached terminal has no glow
+PASS native activate enables screen and return beam
+PASS native deactivate removes screen and beam
+PASS used checkpoint keeps screen but loses beam
+PASS exit native emissive artwork classification
+PASS exit matches native sign color
+PASS exit follows native placement and mirroring
+PASS exit destroyed object removed
+PASS exit hidden object removed
+PASS exit zero HP removed
+PASS exit hidden visual removed
+PASS doorprob native emissive artwork classification
+PASS doorprob matches native sign color
+PASS doorprob follows native placement and mirroring
+PASS doorprob destroyed object removed
+PASS doorprob hidden object removed
+PASS doorprob zero HP removed
+PASS doorprob hidden visual removed
+PASS doorboss native emissive artwork classification
+PASS doorboss matches native sign color
+PASS doorboss follows native placement and mirroring
+PASS doorboss destroyed object removed
+PASS doorboss hidden object removed
+PASS doorboss zero HP removed
+PASS doorboss hidden visual removed
+PASS doorout native emissive artwork classification
+PASS unrelated class cannot impersonate exit
+PASS visible light budget capped at 32 despite duplicate containers
+PASS removed objects leave no sources
+PASS clear releases location identity
+PASS exit spill lights actual shared illumination field
+PASS sign spill remains local
+PASS opaque wall blocks landmark spill
+PASS opening the wall restores spill
+PASS paused sources deterministic
+PASS landmark toggle persists in native save payload
+PASS runtime discovers actual camp checkpoint
+PASS actual camp image responds to landmark lighting toggle
+PASS old preferences default landmark lighting on
+PASS saved disabled preference restored
+PASS environment regression: PASS ordinary interior has a readable ambient floor
+PASS environment regression: PASS flight flag alone does not imply daylight
+PASS environment regression: PASS ordinary sky background receives daylight without flight flag
+PASS environment regression: PASS roof cutout keeps covered lower floors darker
+PASS environment regression: PASS mixed scene assigns outdoor and indoor light locally
+PASS environment regression: PASS opening a door admits nearby sky spill
+PASS environment regression: PASS closing a door restores sky occlusion
+PASS environment regression: PASS masonry behind a sky backdrop is treated as covered
+PASS environment regression: PASS removed background masonry refreshes daylight
+PASS environment regression: PASS camera beyond map bounds retains a valid environment raster
+PASS environment regression: PASS actual aperture alpha generates window sources
+PASS environment regression: PASS window aperture illuminates the shared gameplay field
+PASS environment regression: PASS window light cannot cross an opaque wall
+PASS environment regression: PASS sealed observation windows are not daylight sources
+PASS environment regression: PASS underground decoration does not invent outdoor daylight
+PASS environment regression: PASS native aperture produces light: fwindow
+PASS environment regression: PASS native aperture produces light: bwindow
+PASS environment regression: PASS native aperture produces light: swindow
+PASS environment regression: PASS native aperture produces light: cwindow
+PASS environment regression: PASS native aperture produces light: awindow
+PASS environment regression: PASS native aperture produces light: enclwindow
+PASS environment regression: PASS safe hub keeps readable ambient and no automatic dark pockets
+PASS environment regression: PASS safe fixtures consistently use stable bright defaults
+PASS environment regression: PASS abandoned roofed alcove can form a bounded dark pocket
+PASS environment regression: PASS entrance protection removes nearby pockets
+PASS environment regression: PASS pockets are stable across rebinding the same map
+PASS environment regression: PASS ordinary loot does not erase a deliberate dark alcove
+PASS environment regression: PASS door interaction remains protected while ordinary loot is allowed
+PASS environment regression: PASS old repaired or steady auto lamp remains steady after migration
+PASS environment regression: PASS legacy automatic fault removed in safe hub
+PASS environment regression: PASS repaired v2 lamp survives changed scene fault rate

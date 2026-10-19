@@ -1,0 +1,7 @@
+4116 [ContinuousScene] v0.8.0 loaded
+10299 [ContinuousScene] registered 192x75 native land kind=factory
+10301 [ContinuousScene] settings registered continuousscene
+10302 [ContinuousScene] heartbeat land=rbl
+40327 [ContinuousScene] heartbeat land=rbl
+58510 [ContinuousScene] travel requested continuous_scene
+70350 [ContinuousScene] heartbeat land=continuous_scene
