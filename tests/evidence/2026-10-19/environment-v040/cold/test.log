@@ -1,0 +1,13 @@
+4158 BOOT remains-lad-environment-20261019183835101293
+10288 COLD_LOAD_SLOT_7
+13617 BORDER entry native borders face outside scene scales=-2.1089887640449425,-0.6741573033707866,2.1764044943820213,0.6741573033707866 camera=2,0.7416666666666667,1424,861,1920,1000 scene=false
+13617 PASS entry native borders face outside scene
+13764 PASS entry native borders face outside scene full-stage native-camera oracle
+13765 PASS cold process restores broken fixture and headlamp
+13765 PASS cold process restores original inventory
+17607 PASS cold process restores repaired switched-off fixture
+17609 PASS cold process restores repair material cost
+21364 PASS cold process restores fixture atmosphere
+21364 PASS cold process restores atmosphere preferences
+25147 PASS cold process restores repaired fault and cost
+25148 SUITE_PASS

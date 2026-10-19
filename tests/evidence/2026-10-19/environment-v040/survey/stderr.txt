@@ -1,0 +1,59 @@
+ModLoader[boot_start] v2 run=run_1792405915310_78067
+ModLoader[requested_ModLoaderMod] line 12
+ModLoader[requested_RealisticVisionMod] line 15
+ModLoader[requested_ContinuousSceneMod] line 21
+ModLoader[requested_EnvironmentProbeMod] line 22
+ModLoader[requested_LightAndDarknessMod] line 23
+ModLoader[requested_WallBlendMod] line 24
+ModLoader[boot] v2 col=2 requested=6
+ModLoader[ok_WallBlendMod] init
+ModLoader[ok_EnvironmentProbeMod] init
+[RVision] init ok enabled=true
+ModLoader[ok_RealisticVisionMod] init
+ModLoader[ok_ContinuousSceneMod] init
+ModLoader[ok_ModLoaderMod] init
+ModLoader[ok_LightAndDarknessMod] init
+574 Интерфейс
+1168 Game init
+908 Персонаж
+1 Местность
+794 Создание местности
+493 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+1112 Создание местности
+false
+313 Вход в местность
+[RVision] room loc0_1 48x25 lDist2=10000 mode=current
+RConnectRndSeed  random_mane 3370265232
+3208 Создание местности
+false
+511 Вход в местность
+[RVision] room loc0_4 48x25 lDist2=2000 mode=current
+697 Создание местности
+false
+555 Вход в местность
+[RVision] room loc0_8 48x25 lDist2=2000 mode=current
+RConnectRndSeed  stable_pi 3410447814
+2389 Создание местности
+385 Вход в местность
+[RVision] room loc3_5 48x25 lDist2=1000 mode=current
+RConnectRndSeed  random_plant 480547748
+1467 Создание местности
+false
+527 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+RConnectRndSeed  random_sewer 1982262656
+3544 Создание местности
+false
+589 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+RConnectRndSeed  random_canter 3351810012
+3608 Создание местности
+false
+351 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+RConnectRndSeed  random_encl 2827665550
+3599 Создание местности
+false
+534 Вход в местность
+[RVision] room loc0_7 48x25 lDist2=1000 mode=current

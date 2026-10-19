@@ -1,38 +1,30 @@
 # LightAndDarkness 当前记忆
 
-当前正式版本0.3.2，2026-10-19 17:38安装；下面两段为此前独立调查/实验的冻结状态，当前产物以第3节为准。
-
-> 2026-10-19 地图偏暗调查完成（本会话未改效果/部署）：原版639模板中198无灯、117仅1–2灯；安装658模板另列。`sky`实际为飞行标志，普通sky背景未获得室外底光；0.14全局底光＋自动暗区＋随机灯帧/亮度叠加。正式514A和当前2A46宿主的5场景隔离采样完成，进程已退出；31地区加载数与外置数据一致。报告 `design/map-lighting-investigation-2026-10-19.md`，证据 `knowledge/evidence/map-lighting-2026-10-19/`。建议先改环境光分类、据点/通路可读性和暗区生成，再补灯；这是建议，尚未实施。并行微光候选状态以其日志为准。
-
-> 2026-10-19 ContinuousScene 性能实验已撤回生产源，**未部署**。完整照明帧复用通过21项像素/失效检查但命中少；遮光快照通过40项像素/实时查询检查，ABAB耗时48/62/68/55ms无稳定收益。源码恢复0.3.1，正式仍514A。实验补丁与结果保存在ContinuousScene/build/lad-rejected-cache-experiment.patch及其evidence，后续见 ../../ContinuousScene/state/in-progress-v08.md；不要发布872或314候选。
-
 ## 1. 这个模组是什么
-为Remains 1.02增加战术光暗、动态墙门遮光、随身灯、场景灯损坏/维修、氛围灯和黑暗区。入口LightAndDarknessMod.init(main:*)；正式路径release/LightAndDarknessMod.swf。0.3.0增加弹丸短光，0.3.1修复灯具重绘黑块，0.3.2增加炮塔与蜘蛛地雷微光及迟到分块的边框保护。
+为Remains 1.02增加战术光暗、实时墙门遮光、随身灯、场景灯损坏/维修、故障氛围、弹丸短光和机器微光。0.4.0修复地图普遍偏暗，增加分地区基础光、天空/窗洞补光及场景暗角。入口LightAndDarknessMod.init(main:*)；正式路径release/LightAndDarknessMod.swf。
 
 ## 2. 用户偏好与协作约定
-中文，战术光暗与生存探索并重，兼顾氛围。用户2026-10-19要求依据原图为炮塔/地雷加入微光；当前治理持续授权本机验证后部署。其他模组最小范围只读，工具用Sandevistan/build/tools；不操作真实pfe存储或用户实例，不用Ghost。测试经启动器精确选组，用唯一AIR身份与私有后台桌面。未向其它会话发送消息；收到的地图调查信息已保留，其提交8a02914独立于微光。
+中文，战术光暗与生存探索并重，兼顾氛围。用户2026-10-19明确要求按调查四项建议修复；治理持续授权本机验证后部署，不重复确认。其他模组最小范围只读，工具使用Sandevistan/build/tools；不操作真实pfe存储或用户实例，不用Ghost。测试经ModLoader启动器精确选组、唯一AIR身份及私有后台桌面；本轮没有新建子代理。用户已授权跨会话协调，已与微光会话确认先完成0.3.2，再接续本版。
 
 ## 3. 当前状态
-2026-10-19 17:38:43安装0.3.2，SHA256 3835827D0D2702EC55AB13721DCED7D8463C3A69780C6C37B5816BBD72164B46（27,734字节），冻结build/out/machines-v032/LightAndDarknessMod.swf，生产源码7c6ae97。17个自身类，无fe存根/测试探针；勿重编后冒充已测文件。
-最终宿主02BFABE6、CS B5E8110E、RV 76314B81、WB 0BD209A1、ML BD71B6F3，清单33DE189E和application.xml未改。99项回归（20261019173524794）+173微光（20261019173634395）通过；正式读回20261019173853199再通过173项，版本、心跳、精确requested/ok集合正常，测试均结束。完整前缀remains-lad-machine-。证据tests/machine-glow-2026-10-19.md和state/machine-deployment-2026-10-19.json。
-历史0.3.1为514A（17+89项），0.3.0为3BA（131弹丸、81灯具、21改键、冷读档与13平滑检查）；这些历史结果不能冒充本版全量重跑。213武器/68弹丸视觉调查不等于全部实射。
+**0.4.0已于2026-10-19 18:39:56部署**。正式SHA256 9177513F1A927DE82039CFE0B5444ECCF6C14B61BA2B765A96A7C2686A9C75E5，31,559字节；冻结build/out/environment-v040/LightAndDarknessMod.swf。FFDec18个本模组类，无fe存根/测试类。生产源码、测试、文档在本轮提交；不要重新构建后冒充同一已测字节。
+宿主02BFABE6、CS B5E8110E、RV 76314B81、WB 0BD209A1、ML BD71B6F3；application.xml和清单未改。精确组合含LAD/四接口模组/测试探针。最终31专项＋九场景27截图、25/12分区原生拼接、99回归、9跨进程读档通过；正式回读再通过31专项＋三场景。完整证据tests/environment-verification-2026-10-19.md及state/environment-deployment-2026-10-19.json，测试进程全部结束。
+保留0.3.2机器微光、0.3弹丸、迟到分块边框修复。173机器/131弹丸专项为历史版结果，不冒称本版全量重跑。当前源是在已部署3835/提交5197cc2基础上的本轮改动。
 
 ## 4. 正在进行与卡点
-另会话已按用户新要求开始0.4.0环境分类/底光/天空窗洞/场景暗区修改，当前src工作区有其未提交变动；这些不是本次已部署0.3.2。不要把当前工作树重新编译后覆盖已验证的3835，0.3.2生产源码以7c6ae97为准。
-微光调查、实现、当前组合验证和部署完成。初版D250因当前宿主分块重置边框被门禁拦住；3835增加无效方向恢复，8次整幅Stage相机对照通过。旧预载测试固定要求true，现改为保持切换前的实际偏好。两次并行宿主更新均重新验证后才安装，未覆盖其它任务文件。
-备份build/backups/machines-20261019-173843-193/LightAndDarknessMod.v0.3.1.swf（514A）；仅当release仍3835时恢复这一文件并重启，保留宿主、清单、其它模组与真实存档。旧部署/回退脚本不能覆盖新版本。
+本轮实现、验证、部署、正式回读已完成，无待部署候选。中间测试失败与修正见报告：旅行遭遇重定向、旧固定闪烁差值、跨域CS访问；最后预检的回执相对路径错误在任何安装写入前修复。最终版本收窄关键交互保护、逐行扫描地板，实际下水道生成2处暗角。
+备份build/backups/environment-20261019-183956-631162/LightAndDarknessMod.v0.3.2.swf（3835827D）。仅当正式release仍9177513F时，用此备份恢复本模组并重启；保留宿主、清单、其它模组及真实存档。旧版本回退脚本不能直接覆盖新文件。
 
 ## 5. 已知问题与边界
-微光只严格支持原生UnitTurret八型、UnitMsp与UnitThunderTurret启用能量场；地雷休眠、炮塔停机/收起不发光。最多32个可见源，不改AI/伤害，遵守既有墙门遮光。开关默认开，随槽保存。实际显示树跟随已测，但不是所有天然壁挂场景逐图实战。
-弹丸临时光最多192跟踪对象/96脉冲/24可见光，暂停冻结、切图/读档清理，不改伤害或弹丸寿命。最多只识别原版严格类白名单；地火/附身燃烧持续照明不在本轮范围。普通视觉发现使用同一照度栅格，听觉/开火暴露/AI记忆不改。
-随身灯尚无独立装备/电池/掉落。原暗区底亮度/感知偏好仍为本次启动；氛围/弹丸开关与倍率随存档槽保存，按键即时本机保存。未认证DLC、联机、全部敌种或所有生产模组一起战斗；131专项不是整体帧率保证。
-只认证当前1.02与列明组合，不认证DLC/联机/全14模组或整体帧率。当前启动器清单已为1/1/1，本任务保留其选择；勾选不代表DLC认证。地图普遍偏暗的独立调查尚未转为生产调整。大场景仍有首载和长帧成本，不承诺稳定30帧。
+地区基础光是乘法照度层：据点0.58、维护设施0.44、普通室内0.38、废弃城市0.36、地下0.28、明确断电0.18、露天0.70。环境亮度倍率0.5–1.5默认1，与感知开关仍为本次启动偏好；氛围/弹丸/机器开关和灯具状态随槽保存。旧auto-v1迁移保留稳定灯和HP/开关，新维修记录repaired。
+自动暗角只限废弃/断电、有顶和侧墙的地面角落，避开入口及关键交互；不按棋盘压黑全图。六类原生窗洞，每视口最多24采样点。RealisticVision自己的视野黑幕不改；截图揭开的是原生探索黑幕，不是RV视野。普通视觉发现使用同一照度场，听觉/开火暴露/AI记忆保持。
+随身灯尚无独立装备、电池或掉落。机器32可见源；弹丸192跟踪/96脉冲/24可见源，不改伤害与寿命；地火/持续附身燃烧未实现。只认证本机1.02及列明组合，未认证DLC、联机、全14模组或全639模板。清单1/1/1保持原值，不代表DLC认证。原生预载和大场景长帧仍存在，本轮不声称整体FPS改善。
+此前ContinuousScene完整帧/遮光缓存实验已撤回生产源且未部署，不要发布旧872/314候选；其历史证据留ContinuousScene任务原址。
 
 ## 6. 下一步
-本轮无待执行部署。用户保存并重启游戏加载0.3.2；设置入口「模组 → 光与暗 → 炮塔与蜘蛛地雷微光」。整体明暗调整已由另一会话接续；独立装备/电量及持续地火按后续明确需求推进。新发布先核对所有依赖指纹，使用唯一AIR身份、启动器精确选组和私有桌面；保持测试类不进入生产SWF。
+用户保存并重启加载0.4.0；设置「模组 → 光与暗 → 环境亮度倍率」可调总体强度。后续按实际游玩反馈再调整区域数值或特殊房间规则，无自动后续任务。新发布核对全部依赖指纹，候选冻结后测试与部署使用同一文件。
 
 ## 7. 深入了解
-微光design/machine-glow-v0.3.2.md；验证tests/machine-glow-2026-10-19.md；原生知识shared-knowledge/rendering/discoveries/machine-indicator-timelines.md（从游戏根）。当前测试build/build-machine-probe.ps1，tests/run-machines.ps1 -Mixed -Mode verify或regression；省略Candidate时读正式release。
-原版调查design/native-lighting-survey.md；玩法design/vision-and-options.md；氛围design/atmosphere-v0.2.md与atmosphere.json。
-弹种目录design/projectile-light-catalog-2026-10-15.md；实现design/projectile-lighting-v0.3.md；机制knowledge/discoveries/projectile-light-hooks-2026-10-15.md；最终证据tests/projectile-verification-2026-10-15.md。
-边缘修复state/edge-fix-2026-10-15.md；快捷键state/keybind-deployment-2026-10-15.md；场景兼容tests/scene-compat-2026-10-15.md。历史0.1/0.2部署回退已过时，不可直接覆盖后续release。
+设计design/environment-v0.4.md；原始调查design/map-lighting-investigation-2026-10-19.md；验证tests/environment-verification-2026-10-19.md；证据tests/evidence/2026-10-19/environment-v040/。原生字段事实在shared-knowledge/rendering/discoveries/native-map-lighting-coverage-2026-10-19.md（从游戏根）。
+构建build/build.ps1 -OutputDirectory <候选目录>；测试tools/run-environment-tests.py --mixed --mode survey/large/regression/cold，cold加--seed-storage本轮测试存储；正式读回加--candidate release/LightAndDarknessMod.swf。部署工具tools/deploy-environment.py仅针对本版冻结指纹，下一版须更新并重新验证，不可盲用。
+历史机器design/machine-glow-v0.3.2.md与tests/machine-glow-2026-10-19.md；弹丸design/projectile-light-catalog-2026-10-15.md、design/projectile-lighting-v0.3.md及tests/projectile-verification-2026-10-15.md；原生灯光design/native-lighting-survey.md，规则atmosphere.json。

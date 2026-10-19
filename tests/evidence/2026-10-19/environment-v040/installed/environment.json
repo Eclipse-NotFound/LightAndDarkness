@@ -1,0 +1,1434 @@
+{
+  "roomsLoad": 1,
+  "catalog": [
+    {
+      "backs": 335,
+      "rooms": 14,
+      "land": "hql"
+    },
+    {
+      "backs": 150,
+      "rooms": 4,
+      "land": "rbl"
+    },
+    {
+      "backs": 657,
+      "rooms": 15,
+      "land": "minst"
+    },
+    {
+      "backs": 1870,
+      "rooms": 46,
+      "land": "stable_pi"
+    },
+    {
+      "backs": 49,
+      "rooms": 1,
+      "land": "src"
+    },
+    {
+      "backs": 237,
+      "rooms": 12,
+      "land": "mtn"
+    },
+    {
+      "backs": 352,
+      "rooms": 20,
+      "land": "surf"
+    },
+    {
+      "backs": 785,
+      "rooms": 17,
+      "land": "nio"
+    },
+    {
+      "backs": 1217,
+      "rooms": 29,
+      "land": "art"
+    },
+    {
+      "backs": 556,
+      "rooms": 23,
+      "land": "raiders"
+    },
+    {
+      "backs": 560,
+      "rooms": 17,
+      "land": "workshop"
+    },
+    {
+      "backs": 3447,
+      "rooms": 59,
+      "land": "random_canter"
+    },
+    {
+      "backs": 376,
+      "rooms": 20,
+      "land": "stable_pi_surf"
+    },
+    {
+      "backs": 325,
+      "rooms": 20,
+      "land": "begin"
+    },
+    {
+      "backs": 1547,
+      "rooms": 23,
+      "land": "random_encl"
+    },
+    {
+      "backs": 2376,
+      "rooms": 65,
+      "land": "random_mane"
+    },
+    {
+      "backs": 1870,
+      "rooms": 46,
+      "land": "stable_pi_atk"
+    },
+    {
+      "backs": 1926,
+      "rooms": 31,
+      "land": "bunker"
+    },
+    {
+      "backs": 1926,
+      "rooms": 31,
+      "land": "random_mbase"
+    },
+    {
+      "backs": 247,
+      "rooms": 5,
+      "land": "comm"
+    },
+    {
+      "backs": 2054,
+      "rooms": 55,
+      "land": "random_plant"
+    },
+    {
+      "backs": 9,
+      "rooms": 1,
+      "land": "way"
+    },
+    {
+      "backs": 333,
+      "rooms": 9,
+      "land": "core"
+    },
+    {
+      "backs": 2179,
+      "rooms": 23,
+      "land": "random_sewer"
+    },
+    {
+      "backs": 25,
+      "rooms": 3,
+      "land": "grave"
+    },
+    {
+      "backs": 108,
+      "rooms": 4,
+      "land": "covert"
+    },
+    {
+      "backs": 1825,
+      "rooms": 49,
+      "land": "random_stable"
+    },
+    {
+      "backs": 2036,
+      "rooms": 81,
+      "land": "prob"
+    },
+    {
+      "backs": 57,
+      "rooms": 2,
+      "land": "garages"
+    },
+    {
+      "backs": 38,
+      "rooms": 3,
+      "land": "post"
+    },
+    {
+      "backs": 192,
+      "rooms": 7,
+      "land": "thunder"
+    }
+  ],
+  "mode": "large",
+  "applicationID": "remains-lad-environment-20261019184015255572",
+  "samples": [
+    {
+      "darkness": 20,
+      "noHeadlampNoPockets": {
+        "min": 0.5725490196078431,
+        "median": 0.6588235294117647,
+        "below20Fraction": 0,
+        "points": 116,
+        "below5": 0,
+        "below20": 0
+      },
+      "lightOn": 1,
+      "color": null,
+      "sky": false,
+      "regions": 1,
+      "lamps": 9,
+      "defaultHeadlamp": {
+        "min": 0.5725490196078431,
+        "median": 0.6666666666666666,
+        "below20Fraction": 0,
+        "points": 116,
+        "below5": 0,
+        "below20": 0
+      },
+      "windowSources": 16,
+      "backwall": "tStConcrete",
+      "black": false,
+      "base": true,
+      "width": 48,
+      "profile": "safe",
+      "room": "loc0_0",
+      "fixtures": [
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.8,
+          "on": true
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.8,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light5",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "id": "stlight1",
+          "frame": 1,
+          "power": 0.8,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        }
+      ],
+      "land": "rbl",
+      "height": 25,
+      "zones": 0,
+      "noHeadlamp": {
+        "min": 0.5725490196078431,
+        "median": 0.6588235294117647,
+        "below20Fraction": 0,
+        "points": 116,
+        "below5": 0,
+        "below20": 0
+      },
+      "time": 0.2333333333333333,
+      "ambient": 0.14
+    },
+    {
+      "darkness": -20,
+      "noHeadlampNoPockets": {
+        "min": 0.3568627450980392,
+        "median": 0.3568627450980392,
+        "below20Fraction": 0,
+        "points": 161,
+        "below5": 0,
+        "below20": 0
+      },
+      "lightOn": 0,
+      "color": null,
+      "sky": false,
+      "regions": 25,
+      "lamps": 45,
+      "defaultHeadlamp": {
+        "min": 0.3568627450980392,
+        "median": 0.3568627450980392,
+        "below20Fraction": 0,
+        "points": 161,
+        "below5": 0,
+        "below20": 0
+      },
+      "windowSources": 66,
+      "backwall": "tWindows",
+      "black": true,
+      "base": false,
+      "width": 240,
+      "profile": "abandoned",
+      "room": "loc0_0",
+      "fixtures": [
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.7,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.9,
+          "mode": "burst",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light5",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "slow",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.9,
+          "mode": "burst",
+          "id": "stlight4",
+          "frame": 1,
+          "power": 0.036000000000000004,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.7,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "slow",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.7,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "fast",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "burst",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.027999999999999997,
+          "on": true
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.7,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.9,
+          "mode": "slow",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.7,
+          "mode": "burst",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.027999999999999997,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.7,
+          "on": true
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.7,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "slow",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.2685548768879216,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.9,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "slow",
+          "id": "stlight4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "id": "stlight4",
+          "frame": 1,
+          "power": 0.5,
+          "on": true
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "id": "stlight4",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "id": "stlight3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "stlight3",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "id": "stlight4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        }
+      ],
+      "land": "random_mane",
+      "height": 125,
+      "zones": 0,
+      "noHeadlamp": {
+        "min": 0.3568627450980392,
+        "median": 0.3568627450980392,
+        "below20Fraction": 0,
+        "points": 161,
+        "below5": 0,
+        "below20": 0
+      },
+      "time": 0.7333333333333333,
+      "ambient": 0.14
+    },
+    {
+      "darkness": 0,
+      "noHeadlampNoPockets": {
+        "min": 0.3764705882352941,
+        "median": 0.3764705882352941,
+        "below20Fraction": 0,
+        "points": 202,
+        "below5": 0,
+        "below20": 0
+      },
+      "lightOn": 0,
+      "color": "",
+      "sky": false,
+      "regions": 12,
+      "lamps": 85,
+      "defaultHeadlamp": {
+        "min": 0.3764705882352941,
+        "median": 0.3764705882352941,
+        "below20Fraction": 0,
+        "points": 202,
+        "below5": 0,
+        "below20": 0
+      },
+      "windowSources": 198,
+      "backwall": "",
+      "black": true,
+      "base": false,
+      "width": 192,
+      "profile": "interior",
+      "room": "loc0_0",
+      "fixtures": [
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "slow",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.08362723739534028,
+          "on": true
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "slow",
+          "id": "light2",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "slow",
+          "id": "light2",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "slow",
+          "id": "light2",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light2",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "slow",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 1,
+          "on": true
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "slow",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.7605928877639716,
+          "on": true
+        },
+        {
+          "brightness": 0.85,
+          "mode": "fast",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.85,
+          "on": true
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "slow",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.08362723739534007,
+          "on": true
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "burst",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light1",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "id": "light4",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 2,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.85,
+          "mode": "fast",
+          "id": "light2",
+          "frame": 3,
+          "power": 0,
+          "on": false
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "id": "light3",
+          "frame": 1,
+          "power": 0.65,
+          "on": true
+        }
+      ],
+      "land": "random_plant",
+      "height": 75,
+      "zones": 0,
+      "noHeadlamp": {
+        "min": 0.3764705882352941,
+        "median": 0.3764705882352941,
+        "below20Fraction": 0,
+        "points": 202,
+        "below5": 0,
+        "below20": 0
+      },
+      "time": 1.2666666666666673,
+      "ambient": 0.14
+    }
+  ],
+  "error": "",
+  "version": "0.4.0",
+  "loader": {
+    "ok_RealisticVisionMod": "run_1792406422393_379953|init @1792406423131",
+    "session": "run_1792406422393_379953",
+    "ok_LightAndDarknessMod": "run_1792406422393_379953|init @1792406423172",
+    "ok_ModLoaderMod": "run_1792406422393_379953|init @1792406423163",
+    "ok_EnvironmentProbeMod": "run_1792406422393_379953|init @1792406423116",
+    "boot_start": "run_1792406422393_379953|v2 run=run_1792406422393_379953 @1792406422399",
+    "requested_ContinuousSceneMod": "run_1792406422393_379953|line 21 @1792406422423",
+    "requested_RealisticVisionMod": "run_1792406422393_379953|line 15 @1792406422421",
+    "requested_EnvironmentProbeMod": "run_1792406422393_379953|line 22 @1792406422426",
+    "requested_LightAndDarknessMod": "run_1792406422393_379953|line 23 @1792406422428",
+    "ok_WallBlendMod": "run_1792406422393_379953|init @1792406423112",
+    "requested_ModLoaderMod": "run_1792406422393_379953|line 12 @1792406422419",
+    "requested_WallBlendMod": "run_1792406422393_379953|line 24 @1792406422432",
+    "boot": "run_1792406422393_379953|v2 col=2 requested=6 @1792406422435",
+    "ok_ContinuousSceneMod": "run_1792406422393_379953|init @1792406423155"
+  },
+  "boundary": "One isolated random new game; exact candidate and selected combination recorded in loader/hashes. Floor-adjacent empty tile centers; not navigation reachability. Native exploration fog revealed only in screenshots; RealisticVision mask remains. No FPS claim."
+}

@@ -44,7 +44,7 @@ package {
         private const KEY:String="lightanddarkness.state.v1";
         public function LightAndDarknessTest() {}
         public static function init(main:*):void {
-            if(NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-test-")!=0 && NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-machine-")!=0) return;
+            if(NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-test-")!=0 && NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-machine-")!=0 && NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-environment-")!=0) return;
             test=new LightAndDarknessTest();test.main=main;test.start=getTimer();
             var stream:FileStream=new FileStream();stream.open(File.applicationDirectory.resolvePath("test-mode.txt"),FileMode.READ);
             var mode:String=stream.readUTFBytes(stream.bytesAvailable);test.mixed=mode=="mixed";test.cold=mode=="cold";stream.close();
@@ -231,10 +231,15 @@ package {
                     world.onPause=true;runtime.simulationStep(world.gg);world.onPause=wasPaused;
                     check(runtime.atmosphereTime==pausedTime,"pause freezes atmosphere clock");
                     world.gui.dialText(null);
+                    lamp.state.on=false;runtime.render();var floorExposure:Number=runtime.field.sample(lamp.x,lamp.y);lamp.state.on=true;
                     lamp.phase=0;runtime.atmosphereTime=0;runtime.render();
                     var litExposure:Number=runtime.field.sample(lamp.x,lamp.y);snapshot("atmosphere-bright");
                     runtime.atmosphereTime=0.7/(1.75*1.25);runtime.render();
-                    check(runtime.field.sample(lamp.x,lamp.y)<litExposure-0.15,"live flicker changes shared exposure raster");snapshot("atmosphere-dim");
+                    var dimExposure:Number=runtime.field.sample(lamp.x,lamp.y);
+                    log("FLICKER floor="+floorExposure+" bright="+litExposure+" dim="+dimExposure);
+                    // Ambient and neighboring fixtures intentionally stay visible. Check
+                    // modulation against the remaining headroom, rather than the old 0.14 floor.
+                    check(litExposure>floorExposure+0.08*(1-floorExposure) && dimExposure<litExposure-0.12*(1-floorExposure),"live flicker changes shared exposure raster");snapshot("atmosphere-dim");
                     check(lamp.clip.transform.colorTransform.redMultiplier<0.4,"lamp glass follows dim output");
                     runtime.setAtmospherePreference("machines",false);
                     world.pip.noAct=false;world.saveGame(9);faultSnapshot=world.getSave(9).game.triggers[KEY];

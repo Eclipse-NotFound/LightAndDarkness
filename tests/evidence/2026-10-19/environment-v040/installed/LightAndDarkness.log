@@ -1,0 +1,15 @@
+Mon Oct 19 10:40:23 2026 UTC [LightAndDarkness] ATMOSPHERE_CONFIG loaded
+Mon Oct 19 10:40:23 2026 UTC [LightAndDarkness] v0.4.0 loaded
+Mon Oct 19 10:40:32 2026 UTC [LightAndDarkness] BAKE ms=712 preserved=0
+Mon Oct 19 10:40:32 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Mon Oct 19 10:40:32 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 pulses=0 renderMs=1
+Mon Oct 19 10:40:38 2026 UTC [LightAndDarkness] BAKE ms=808 preserved=0
+Mon Oct 19 10:40:40 2026 UTC [LightAndDarkness] BAKE ms=654 preserved=0
+Mon Oct 19 10:40:40 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Mon Oct 19 10:40:44 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=45 beforeRaster=true state=random_mane|loc0_0|0|0|0||true|240|125|78d03173
+Mon Oct 19 10:40:45 2026 UTC [LightAndDarkness] heartbeat lamps=45 steps=10 pulses=0 renderMs=16
+Mon Oct 19 10:40:49 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=896
+Mon Oct 19 10:40:50 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=806
+Mon Oct 19 10:40:50 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=45 beforeRaster=false state=random_mane|loc0_0|0|0|0||true|240|125|78d03173
+Mon Oct 19 10:40:53 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=85 beforeRaster=true state=random_plant|loc0_0|0|0|0||false|192|75|b4bb77a
+Mon Oct 19 10:40:58 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=700

@@ -1,0 +1,45 @@
+Mon Oct 19 10:31:56 2026 UTC [LightAndDarkness] ATMOSPHERE_CONFIG loaded
+Mon Oct 19 10:31:56 2026 UTC [LightAndDarkness] v0.4.0 loaded
+Mon Oct 19 10:32:05 2026 UTC [LightAndDarkness] BAKE ms=761 preserved=0
+Mon Oct 19 10:32:05 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Mon Oct 19 10:32:05 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 pulses=0 renderMs=1
+Mon Oct 19 10:32:12 2026 UTC [LightAndDarkness] BAKE ms=809 preserved=0
+Mon Oct 19 10:32:14 2026 UTC [LightAndDarkness] BAKE ms=661 preserved=0
+Mon Oct 19 10:32:14 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Mon Oct 19 10:32:15 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=29 pulses=0 renderMs=2
+Mon Oct 19 10:32:18 2026 UTC [LightAndDarkness] ATTACH room=loc0_1 lamps=0 beforeRaster=false state=surf|loc0_1|0|1|0||false|48|25|b9529b0a
+Mon Oct 19 10:32:23 2026 UTC [LightAndDarkness] ATTACH room=loc0_1 lamps=0 beforeRaster=false state=surf|loc0_1|0|1|0||false|48|25|b9529b0a
+Mon Oct 19 10:32:25 2026 UTC [LightAndDarkness] heartbeat lamps=0 steps=161 pulses=0 renderMs=0
+Mon Oct 19 10:32:31 2026 UTC [LightAndDarkness] BAKE ms=1182 preserved=0
+Mon Oct 19 10:32:31 2026 UTC [LightAndDarkness] ATTACH room=loc0_4 lamps=1 beforeRaster=false state=random_mane|loc0_4|0|4|0||false|48|25|6e0ec6de
+Mon Oct 19 10:32:35 2026 UTC [LightAndDarkness] BAKE ms=982 preserved=0
+Mon Oct 19 10:32:36 2026 UTC [LightAndDarkness] BAKE ms=1059 preserved=0
+Mon Oct 19 10:32:36 2026 UTC [LightAndDarkness] ATTACH room=loc0_4 lamps=1 beforeRaster=false state=random_mane|loc0_4|0|4|0||false|48|25|6e0ec6de
+Mon Oct 19 10:32:36 2026 UTC [LightAndDarkness] heartbeat lamps=1 steps=215 pulses=0 renderMs=1
+Mon Oct 19 10:32:40 2026 UTC [LightAndDarkness] ATTACH room=loc0_8 lamps=0 beforeRaster=false state=mtn|loc0_8|0|8|0||false|48|25|27c2a040
+Mon Oct 19 10:32:46 2026 UTC [LightAndDarkness] ATTACH room=loc0_8 lamps=0 beforeRaster=false state=mtn|loc0_8|0|8|0||false|48|25|27c2a040
+Mon Oct 19 10:32:46 2026 UTC [LightAndDarkness] heartbeat lamps=0 steps=332 pulses=0 renderMs=0
+Mon Oct 19 10:32:52 2026 UTC [LightAndDarkness] BAKE ms=635 preserved=0
+Mon Oct 19 10:32:52 2026 UTC [LightAndDarkness] ATTACH room=loc3_5 lamps=14 beforeRaster=false state=stable_pi|loc3_5|3|5|0||false|48|25|22c5c000
+Mon Oct 19 10:32:58 2026 UTC [LightAndDarkness] BAKE ms=618 preserved=0
+Mon Oct 19 10:33:00 2026 UTC [LightAndDarkness] BAKE ms=530 preserved=0
+Mon Oct 19 10:33:00 2026 UTC [LightAndDarkness] ATTACH room=loc3_5 lamps=14 beforeRaster=false state=stable_pi|loc3_5|3|5|0||false|48|25|22c5c000
+Mon Oct 19 10:33:00 2026 UTC [LightAndDarkness] heartbeat lamps=14 steps=423 pulses=0 renderMs=1
+Mon Oct 19 10:33:05 2026 UTC [LightAndDarkness] BAKE ms=674 preserved=0
+Mon Oct 19 10:33:05 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=6 beforeRaster=false state=random_plant|loc0_0|0|0|0||false|48|25|e2ef8923
+Mon Oct 19 10:33:09 2026 UTC [LightAndDarkness] BAKE ms=779 preserved=0
+Mon Oct 19 10:33:10 2026 UTC [LightAndDarkness] BAKE ms=685 preserved=0
+Mon Oct 19 10:33:10 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=6 beforeRaster=false state=random_plant|loc0_0|0|0|0||false|48|25|e2ef8923
+Mon Oct 19 10:33:10 2026 UTC [LightAndDarkness] heartbeat lamps=6 steps=527 pulses=0 renderMs=1
+Mon Oct 19 10:33:18 2026 UTC [LightAndDarkness] BAKE ms=746 preserved=0
+Mon Oct 19 10:33:18 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=3 beforeRaster=false state=random_sewer|loc0_0|0|0|0||false|48|25|251917cc
+Mon Oct 19 10:33:21 2026 UTC [LightAndDarkness] BAKE ms=829 preserved=0
+Mon Oct 19 10:33:22 2026 UTC [LightAndDarkness] BAKE ms=724 preserved=0
+Mon Oct 19 10:33:22 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=3 beforeRaster=false state=random_sewer|loc0_0|0|0|0||false|48|25|251917cc
+Mon Oct 19 10:33:22 2026 UTC [LightAndDarkness] heartbeat lamps=3 steps=631 pulses=0 renderMs=1
+Mon Oct 19 10:33:29 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=0 beforeRaster=false state=random_canter|loc0_0|0|0|0||false|48|25|919d19ec
+Mon Oct 19 10:33:35 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=0 beforeRaster=false state=random_canter|loc0_0|0|0|0||false|48|25|919d19ec
+Mon Oct 19 10:33:35 2026 UTC [LightAndDarkness] heartbeat lamps=0 steps=735 pulses=0 renderMs=1
+Mon Oct 19 10:33:42 2026 UTC [LightAndDarkness] BAKE ms=724 preserved=0
+Mon Oct 19 10:33:42 2026 UTC [LightAndDarkness] ATTACH room=loc0_7 lamps=38 beforeRaster=false state=random_encl|loc0_7|0|7|0||false|48|25|5147d275
+Mon Oct 19 10:33:45 2026 UTC [LightAndDarkness] BAKE ms=800 preserved=0

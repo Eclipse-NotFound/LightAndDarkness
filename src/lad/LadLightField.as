@@ -24,6 +24,7 @@ package lad {
         private var loc:*;
         private var background:BitmapData;
         private var backgroundKey:String="";
+        private var materialHashes:Object={};
         public function LadLightField() {
             bitmap.name = "LightAndDarknessIllumination";
             bitmap.blendMode = BlendMode.MULTIPLY;
@@ -36,7 +37,7 @@ package lad {
             if(background) background.dispose();background=null;backgroundKey="";
             if(bitmap.parent) bitmap.parent.removeChild(bitmap);
         }
-        public function render(location:*, view:Rectangle, lights:Array, ambient:Number,zones:Array=null,darkness:Number=1):void {
+        public function render(location:*, view:Rectangle, lights:Array, ambient:Number,zones:Array=null,darkness:Number=1,environment:LadEnvironment=null):void {
             var started:int = getTimer();
             if(loc !== location) { clear(); loc = location; }
             var vx:int = Math.floor(view.x/cell)*cell-cell;
@@ -60,13 +61,19 @@ package lad {
             for(var x:int=left;x<=right;x++) for(var y:int=top;y<=bottom;y++) {
                 hash ^= uint(Math.max(0,Math.min(255,Number(loc.space[x][y].opac)*255)));
                 hash += (hash<<1)+(hash<<4)+(hash<<7)+(hash<<8)+(hash<<24);
+                if(environment) {
+                    var tile:*=loc.space[x][y];
+                    var back:String=String(tile.back)+":"+(tile.fRear?String(tile.front):"");
+                    if(!materialHashes.hasOwnProperty(back)) materialHashes[back]=LadAtmosphere.seed(back);
+                    hash^=uint(materialHashes[back]);hash+=(hash<<1)+(hash<<4)+(hash<<7)+(hash<<8)+(hash<<24);
+                }
             }
             var region:String=[left,top,right,bottom].join(":");
             if(hash!=terrainHash || region!=terrainRegion) {
                 for each(var old:Object in cache) old.data.dispose(); cache={};
                 terrainHash=hash;terrainRegion=region;
             }
-            ambientBackground(ambient,zones,darkness);
+            ambientBackground(ambient,zones,darkness,environment);
             data.lock(); data.copyPixels(background,background.rect,new Point());
             var alive:Object={};
             for each(var light:Object in lights) {
@@ -90,12 +97,13 @@ package lad {
             for(var key:String in cache) if(!alive[key]) {cache[key].data.dispose();delete cache[key];}
             data.unlock();elapsedMs=getTimer()-started;
         }
-        private function ambientBackground(ambient:Number,zones:Array,darkness:Number):void {
-            var signature:String=[bounds.x,bounds.y,data.width,data.height,ambient,darkness,JSON.stringify(zones)].join(":");
+        private function ambientBackground(ambient:Number,zones:Array,darkness:Number,environment:LadEnvironment):void {
+            var signature:String=[bounds.x,bounds.y,data.width,data.height,ambient,darkness,JSON.stringify(zones),environment?environment.signature()+":"+terrainHash:""].join(":");
             if(signature==backgroundKey && background) return;
             if(background) background.dispose();
             var shade:int=Math.max(0,Math.min(255,int(ambient*255)));
-            background=new BitmapData(data.width,data.height,false,(shade<<16)|(shade<<8)|shade);
+            background=environment?environment.paint(bounds,cell,ambient/0.14):new BitmapData(data.width,data.height,false,(shade<<16)|(shade<<8)|shade);
+            var original:BitmapData=zones && zones.length && darkness>0?background.clone():null;
             if(zones && darkness>0) for each(var zone:Object in zones) {
                 var rect:Rectangle=new Rectangle(zone.x,zone.y,zone.width,zone.height);
                 if(!bounds.intersects(rect)) continue;
@@ -109,10 +117,11 @@ package lad {
                     if(edge<0) continue;
                     var weight:Number=zone.feather>0?Math.min(1,edge/zone.feather):1;
                     weight=weight*weight*(3-2*weight);
-                    var value:int=Math.min(background.getPixel(x,y)&255,int(shade*(1-darkness*weight*(1-zone.factor))));
+                    var value:int=Math.min(background.getPixel(x,y)&255,int((original.getPixel(x,y)&255)*(1-darkness*weight*(1-zone.factor))));
                     background.setPixel(x,y,(value<<16)|(value<<8)|value);
                 }
             }
+            if(original) original.dispose();
             backgroundKey=signature;
         }
         private function makeLight(light:Object):BitmapData {

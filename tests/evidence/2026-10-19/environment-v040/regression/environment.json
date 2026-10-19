@@ -1,0 +1,27 @@
+{
+  "version": "0.4.0",
+  "mode": "regression",
+  "applicationID": "remains-lad-environment-20261019183704724838",
+  "boundary": "One isolated random new game; exact candidate and selected combination recorded in loader/hashes. Floor-adjacent empty tile centers; not navigation reachability. Native exploration fog revealed only in screenshots; RealisticVision mask remains. No FPS claim.",
+  "catalog": [],
+  "error": "",
+  "roomsLoad": 1,
+  "loader": {
+    "ok_LightAndDarknessMod": "run_1792406231893_308681|init @1792406232696",
+    "ok_ModLoaderMod": "run_1792406231893_308681|init @1792406232687",
+    "boot": "run_1792406231893_308681|v2 col=2 requested=6 @1792406231943",
+    "requested_RealisticVisionMod": "run_1792406231893_308681|line 15 @1792406231927",
+    "requested_LightAndDarknessMod": "run_1792406231893_308681|line 23 @1792406231936",
+    "requested_EnvironmentProbeMod": "run_1792406231893_308681|line 22 @1792406231933",
+    "session": "run_1792406231893_308681",
+    "ok_WallBlendMod": "run_1792406231893_308681|init @1792406232637",
+    "boot_start": "run_1792406231893_308681|v2 run=run_1792406231893_308681 @1792406231900",
+    "ok_EnvironmentProbeMod": "run_1792406231893_308681|init @1792406232643",
+    "ok_RealisticVisionMod": "run_1792406231893_308681|init @1792406232659",
+    "requested_WallBlendMod": "run_1792406231893_308681|line 24 @1792406231940",
+    "ok_ContinuousSceneMod": "run_1792406231893_308681|init @1792406232676",
+    "requested_ContinuousSceneMod": "run_1792406231893_308681|line 21 @1792406231929",
+    "requested_ModLoaderMod": "run_1792406231893_308681|line 12 @1792406231923"
+  },
+  "samples": []
+}

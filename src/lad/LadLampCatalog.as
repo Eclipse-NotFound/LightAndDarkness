@@ -12,7 +12,7 @@ package lad {
             light6:{radius:320,color:0xffedc4},light7:{radius:360,color:0xd0e7ff}
         };
         public static function isLamp(id:String):Boolean {return TYPES.hasOwnProperty(id);}
-        public static function discover(loc:*,g:*,saved:Object,atmosphere:LadAtmosphere,roomKey:String):Array {
+        public static function discover(loc:*,g:*,saved:Object,atmosphere:LadAtmosphere,roomKey:String,environment:LadEnvironment=null):Array {
             var result:Array=[],duplicates:Object={};
             for each(var bo:* in loc.backobjs) {
                 if(!isLamp(String(bo.id)) || bo.vis==null) continue;
@@ -33,7 +33,7 @@ package lad {
                 }
                 if(!isFinite(Number(state.hp))) throw new Error("invalid saved fixture HP: "+key);
                 state.hp=Math.max(0,Math.min(40,Number(state.hp)));
-                state.atmosphere=atmosphere.style(state.atmosphere,roomKey+"#"+key,String(bo.id),String(loc.land.act.id),String(loc.id));
+                state.atmosphere=atmosphere.style(state.atmosphere,roomKey+"#"+key,String(bo.id),String(loc.land.act.id),String(loc.id),environment?environment.profile((x1+x2)/2,(y1+y2)/2):null);
                 var visual:Sprite=new Sprite();visual.mouseEnabled=false;visual.mouseChildren=false;
                 visual.x=bo.X;visual.y=bo.Y;clip.scaleX=bo.scX;clip.scaleY=bo.scY;visual.addChild(clip);
                 var model:Object=TYPES[bo.id];

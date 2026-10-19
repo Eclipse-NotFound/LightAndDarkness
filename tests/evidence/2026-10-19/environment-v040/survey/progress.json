@@ -1,0 +1,981 @@
+[
+  {
+    "darkness": 20,
+    "noHeadlampNoPockets": {
+      "min": 0.5725490196078431,
+      "points": 116,
+      "median": 0.6588235294117647,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "windowSources": 16,
+    "lightOn": 1,
+    "color": null,
+    "sky": false,
+    "regions": 1,
+    "lamps": 9,
+    "defaultHeadlamp": {
+      "min": 0.5725490196078431,
+      "points": 116,
+      "median": 0.6666666666666666,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "backwall": "tStConcrete",
+    "black": false,
+    "base": true,
+    "width": 48,
+    "profile": "safe",
+    "room": "loc0_0",
+    "fixtures": [
+      {
+        "brightness": 0.8,
+        "mode": "steady",
+        "id": "light4",
+        "frame": 1,
+        "power": 0.8,
+        "on": true
+      },
+      {
+        "brightness": 0.9,
+        "mode": "steady",
+        "id": "light4",
+        "frame": 1,
+        "power": 0.9,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light4",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light1",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 0.8,
+        "mode": "steady",
+        "id": "light1",
+        "frame": 1,
+        "power": 0.8,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light5",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.8,
+        "mode": "steady",
+        "id": "stlight1",
+        "frame": 1,
+        "power": 0.8,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light3",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light4",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      }
+    ],
+    "land": "rbl",
+    "height": 25,
+    "zones": 0,
+    "noHeadlamp": {
+      "min": 0.5725490196078431,
+      "points": 116,
+      "median": 0.6588235294117647,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "time": 0.2333333333333333,
+    "ambient": 0.14
+  },
+  {
+    "darkness": 0,
+    "noHeadlampNoPockets": {
+      "min": 0.3764705882352941,
+      "points": 46,
+      "median": 0.6980392156862745,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "windowSources": 0,
+    "lightOn": 0,
+    "color": "blue",
+    "sky": false,
+    "regions": 1,
+    "lamps": 0,
+    "defaultHeadlamp": {
+      "min": 0.3764705882352941,
+      "points": 46,
+      "median": 0.6980392156862745,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "backwall": "sky",
+    "black": true,
+    "base": false,
+    "width": 48,
+    "profile": "interior",
+    "room": "loc0_1",
+    "fixtures": [],
+    "land": "surf",
+    "height": 25,
+    "zones": 0,
+    "noHeadlamp": {
+      "min": 0.3764705882352941,
+      "points": 46,
+      "median": 0.6980392156862745,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "time": 3.6999999999999966,
+    "ambient": 0.14
+  },
+  {
+    "darkness": -20,
+    "noHeadlampNoPockets": {
+      "min": 0.3568627450980392,
+      "points": 154,
+      "median": 0.3568627450980392,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "windowSources": 0,
+    "lightOn": 0,
+    "color": null,
+    "sky": false,
+    "regions": 1,
+    "lamps": 1,
+    "defaultHeadlamp": {
+      "min": 0.3568627450980392,
+      "points": 154,
+      "median": 0.3568627450980392,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "backwall": "tWindows",
+    "black": true,
+    "base": false,
+    "width": 48,
+    "profile": "abandoned",
+    "room": "loc0_4",
+    "fixtures": [
+      {
+        "brightness": 0.7,
+        "mode": "steady",
+        "id": "light1",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      }
+    ],
+    "land": "random_mane",
+    "height": 25,
+    "zones": 0,
+    "noHeadlamp": {
+      "min": 0.3568627450980392,
+      "points": 154,
+      "median": 0.3568627450980392,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "time": 7.166666666666651,
+    "ambient": 0.14
+  },
+  {
+    "darkness": 0,
+    "noHeadlampNoPockets": {
+      "min": 0.6980392156862745,
+      "points": 46,
+      "median": 0.6980392156862745,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "windowSources": 0,
+    "lightOn": 0,
+    "color": null,
+    "sky": false,
+    "regions": 1,
+    "lamps": 0,
+    "defaultHeadlamp": {
+      "min": 0.6980392156862745,
+      "points": 46,
+      "median": 0.6980392156862745,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "backwall": "sky",
+    "black": true,
+    "base": false,
+    "width": 48,
+    "profile": "interior",
+    "room": "loc0_8",
+    "fixtures": [],
+    "land": "mtn",
+    "height": 25,
+    "zones": 0,
+    "noHeadlamp": {
+      "min": 0.6980392156862745,
+      "points": 46,
+      "median": 0.6980392156862745,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "time": 10.633333333333306,
+    "ambient": 0.14
+  },
+  {
+    "darkness": -15,
+    "noHeadlampNoPockets": {
+      "min": 0.5764705882352941,
+      "points": 141,
+      "median": 0.6862745098039216,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "windowSources": 0,
+    "lightOn": 1,
+    "color": "yellow",
+    "sky": false,
+    "regions": 1,
+    "lamps": 14,
+    "defaultHeadlamp": {
+      "min": 0.5764705882352941,
+      "points": 141,
+      "median": 0.6862745098039216,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "backwall": "tTiles",
+    "black": false,
+    "base": true,
+    "width": 48,
+    "profile": "safe",
+    "room": "loc3_5",
+    "fixtures": [
+      {
+        "brightness": 0.8,
+        "mode": "steady",
+        "id": "stlight4",
+        "frame": 1,
+        "power": 0.8,
+        "on": true
+      },
+      {
+        "brightness": 0.9,
+        "mode": "steady",
+        "id": "stlight4",
+        "frame": 1,
+        "power": 0.9,
+        "on": true
+      },
+      {
+        "brightness": 0.8,
+        "mode": "steady",
+        "id": "stlight4",
+        "frame": 1,
+        "power": 0.8,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light2",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light2",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 0.9,
+        "mode": "steady",
+        "id": "light2",
+        "frame": 1,
+        "power": 0.9,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light2",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 0.9,
+        "mode": "steady",
+        "id": "light5",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.8,
+        "mode": "steady",
+        "id": "light5",
+        "frame": 1,
+        "power": 0.8,
+        "on": true
+      },
+      {
+        "brightness": 0.8,
+        "mode": "steady",
+        "id": "stlight4",
+        "frame": 1,
+        "power": 0.8,
+        "on": true
+      },
+      {
+        "brightness": 0.9,
+        "mode": "steady",
+        "id": "stlight4",
+        "frame": 1,
+        "power": 0.9,
+        "on": true
+      },
+      {
+        "brightness": 0.8,
+        "mode": "steady",
+        "id": "stlight4",
+        "frame": 1,
+        "power": 0.8,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "stlight4",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 0.8,
+        "mode": "steady",
+        "id": "stlight4",
+        "frame": 1,
+        "power": 0.8,
+        "on": true
+      }
+    ],
+    "land": "stable_pi",
+    "height": 25,
+    "zones": 0,
+    "noHeadlamp": {
+      "min": 0.5764705882352941,
+      "points": 141,
+      "median": 0.6862745098039216,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "time": 14.09999999999996,
+    "ambient": 0.14
+  },
+  {
+    "darkness": 0,
+    "noHeadlampNoPockets": {
+      "min": 0.3764705882352941,
+      "points": 162,
+      "median": 0.3764705882352941,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "windowSources": 6,
+    "lightOn": 0,
+    "color": "",
+    "sky": false,
+    "regions": 1,
+    "lamps": 6,
+    "defaultHeadlamp": {
+      "min": 0.3764705882352941,
+      "points": 162,
+      "median": 0.3764705882352941,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "backwall": "",
+    "black": true,
+    "base": false,
+    "width": 48,
+    "profile": "interior",
+    "room": "loc0_0",
+    "fixtures": [
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light4",
+        "frame": 1,
+        "power": 0.65,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light4",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light4",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light1",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light3",
+        "frame": 1,
+        "power": 0.85,
+        "on": true
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light3",
+        "frame": 1,
+        "power": 0.85,
+        "on": true
+      }
+    ],
+    "land": "random_plant",
+    "height": 25,
+    "zones": 0,
+    "noHeadlamp": {
+      "min": 0.3764705882352941,
+      "points": 162,
+      "median": 0.3764705882352941,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "time": 17.5666666666667,
+    "ambient": 0.14
+  },
+  {
+    "darkness": 0,
+    "noHeadlampNoPockets": {
+      "min": 0.2784313725490196,
+      "points": 162,
+      "median": 0.2784313725490196,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "windowSources": 0,
+    "lightOn": 0,
+    "color": "green",
+    "sky": false,
+    "regions": 1,
+    "lamps": 3,
+    "defaultHeadlamp": {
+      "min": 0.1450980392156863,
+      "points": 162,
+      "median": 0.2784313725490196,
+      "below5": 0,
+      "below20Fraction": 0.04938271604938271,
+      "below20": 8
+    },
+    "backwall": "tMossy",
+    "black": true,
+    "base": false,
+    "width": 48,
+    "profile": "abandoned",
+    "room": "loc0_0",
+    "fixtures": [
+      {
+        "brightness": 0.7,
+        "mode": "fast",
+        "id": "light1",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.9,
+        "mode": "steady",
+        "id": "light1",
+        "frame": 1,
+        "power": 0.9,
+        "on": true
+      },
+      {
+        "brightness": 0.9,
+        "mode": "slow",
+        "id": "light3",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      }
+    ],
+    "land": "random_sewer",
+    "height": 25,
+    "zones": 2,
+    "noHeadlamp": {
+      "min": 0.1450980392156863,
+      "points": 162,
+      "median": 0.2784313725490196,
+      "below5": 0,
+      "below20Fraction": 0.04938271604938271,
+      "below20": 8
+    },
+    "time": 21.033333333333537,
+    "ambient": 0.14
+  },
+  {
+    "darkness": 0,
+    "noHeadlampNoPockets": {
+      "min": 0.3568627450980392,
+      "points": 64,
+      "median": 0.6980392156862745,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "windowSources": 47,
+    "lightOn": 0,
+    "color": "pink",
+    "sky": false,
+    "regions": 1,
+    "lamps": 0,
+    "defaultHeadlamp": {
+      "min": 0.3568627450980392,
+      "points": 64,
+      "median": 0.6980392156862745,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "backwall": "sky",
+    "black": true,
+    "base": false,
+    "width": 48,
+    "profile": "abandoned",
+    "room": "loc0_0",
+    "fixtures": [],
+    "land": "random_canter",
+    "height": 25,
+    "zones": 0,
+    "noHeadlamp": {
+      "min": 0.3568627450980392,
+      "points": 64,
+      "median": 0.6980392156862745,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "time": 24.500000000000377,
+    "ambient": 0.14
+  },
+  {
+    "darkness": -30,
+    "noHeadlampNoPockets": {
+      "min": 0.4392156862745098,
+      "points": 130,
+      "median": 0.4392156862745098,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "windowSources": 8,
+    "lightOn": 0,
+    "color": "sky",
+    "sky": false,
+    "regions": 1,
+    "lamps": 38,
+    "defaultHeadlamp": {
+      "min": 0.4392156862745098,
+      "points": 130,
+      "median": 0.4392156862745098,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "backwall": "tEncl3",
+    "black": true,
+    "base": false,
+    "width": 48,
+    "profile": "maintained",
+    "room": "loc0_7",
+    "fixtures": [
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light2",
+        "frame": 1,
+        "power": 0.65,
+        "on": true
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light2",
+        "frame": 1,
+        "power": 0.85,
+        "on": true
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 0.85,
+        "on": true
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 0.65,
+        "on": true
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 0.85,
+        "on": true
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 0.85,
+        "on": true
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 0.65,
+        "on": true
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.65,
+        "mode": "slow",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 0.85,
+        "on": true
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 0.65,
+        "on": true
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 1,
+        "on": true
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 0.65,
+        "on": true
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 1,
+        "power": 0.85,
+        "on": true
+      },
+      {
+        "brightness": 0.65,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 1,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      },
+      {
+        "brightness": 0.85,
+        "mode": "steady",
+        "id": "light7",
+        "frame": 2,
+        "power": 0,
+        "on": false
+      }
+    ],
+    "land": "random_encl",
+    "height": 25,
+    "zones": 0,
+    "noHeadlamp": {
+      "min": 0.4392156862745098,
+      "points": 130,
+      "median": 0.4392156862745098,
+      "below5": 0,
+      "below20Fraction": 0,
+      "below20": 0
+    },
+    "time": 27.966666666667216,
+    "ambient": 0.14
+  }
+]

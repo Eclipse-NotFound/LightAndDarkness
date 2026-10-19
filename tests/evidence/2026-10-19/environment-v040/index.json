@@ -1,0 +1,37 @@
+[
+  {
+    "label": "survey",
+    "applicationID": "remains-lad-environment-20261019183147926012",
+    "mode": "survey",
+    "samples": 9,
+    "result": "PASS"
+  },
+  {
+    "label": "large",
+    "applicationID": "remains-lad-environment-20261019183408694666",
+    "mode": "large",
+    "samples": 3,
+    "result": "PASS"
+  },
+  {
+    "label": "regression",
+    "applicationID": "remains-lad-environment-20261019183704724838",
+    "mode": "regression",
+    "samples": 0,
+    "result": "PASS"
+  },
+  {
+    "label": "cold",
+    "applicationID": "remains-lad-environment-20261019183835101293",
+    "mode": "cold",
+    "samples": 0,
+    "result": "PASS"
+  },
+  {
+    "label": "installed",
+    "applicationID": "remains-lad-environment-20261019184015255572",
+    "mode": "large",
+    "samples": 3,
+    "result": "PASS"
+  }
+]

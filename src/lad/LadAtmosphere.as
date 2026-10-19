@@ -36,20 +36,27 @@ package lad {
             for(var i:int=0;i<value.length;i++) {result^=value.charCodeAt(i);result+=(result<<1)+(result<<4)+(result<<7)+(result<<8)+(result<<24);}
             return result;
         }
-        public function style(value:Object,identity:String,type:String,land:String,room:String):Object {
+        public function style(value:Object,identity:String,type:String,land:String,room:String,context:Object=null):Object {
             var code:uint=seed(identity),pick:int=code%100;
-            var mode:String=pick<14?"slow":pick<24?"fast":pick<32?"burst":"steady";
-            var defaults:Object={mode:mode,brightness:[0.35,0.65,1][(code>>>8)%3],frequency:frequency(mode)};
-            var source:String="auto-v1";
+            var rate:int=context?context.faults:12;
+            var mode:String=pick>=rate?"steady":pick<rate*0.5?"slow":pick<rate*0.8?"fast":"burst";
+            var levels:Array=context && context.safe?[0.8,0.9,1]:context && context.abandoned?[0.5,0.7,0.9]:[0.65,0.85,1];
+            var defaults:Object={mode:mode,brightness:levels[(code>>>8)%3],frequency:frequency(mode)};
+            var source:String="auto-v2";
             for each(var rule:Object in config.lamps) if(matches(rule,land,room) && (!rule.type || rule.type==type) && (!rule.key || identity.substr(identity.lastIndexOf("#")+1)==rule.key)) {
                 defaults=rule;source="rule-"+seed(JSON.stringify(rule)).toString(16);break;
             }
             // A changed authored rule updates an existing save once. Unchanged rules
             // preserve repairs, rather than making the same lamp faulty on every load.
-            if(value==null || (value.source!=null && value.source!=source)) value=defaults;
+            if(value && value.source=="auto-v1" && source=="auto-v2") {
+                // Old saves did not mark repairs. Treat an already steady lamp as deliberate.
+                defaults.mode=value.mode=="steady" || value.repaired?"steady":defaults.mode;
+                defaults.brightness=Math.max(Number(value.brightness)||0,defaults.brightness);
+                defaults.repaired=Boolean(value.repaired);value=defaults;
+            } else if(value==null || (value.source!=null && value.source!=source)) value=defaults;
             mode=String(value.mode);
             if(["steady","slow","fast","burst"].indexOf(mode)<0) mode="steady";
-            return {mode:mode,brightness:clamp(value.brightness,0.1,1,0.65),frequency:clamp(value.frequency,0.1,4,frequency(mode)),source:source};
+            return {mode:mode,brightness:clamp(value.brightness,0.1,1,0.65),frequency:clamp(value.frequency,0.1,4,frequency(mode)),source:source,repaired:Boolean(value.repaired)};
         }
         private static function frequency(mode:String):Number {return mode=="slow"?0.45:mode=="fast"?2:mode=="burst"?0.8:1;}
         private static function matches(rule:Object,land:String,room:String):Boolean {
@@ -69,16 +76,9 @@ package lad {
             return Math.min(1.5,settings.brightness*lamp.state.atmosphere.brightness*
                 wave(lamp.state.atmosphere,time,lamp.phase)*(0.6+0.4*lamp.state.hp/40));
         }
-        public function zones(loc:*,identity:String):Array {
+        public function zones(loc:*,identity:String,environment:LadEnvironment=null):Array {
             var result:Array=[],width:Number=loc.spaceX*40,height:Number=loc.spaceY*40;
-            // Indoor pockets are repeatable world rectangles, independent of camera and discovery order.
-            if(config.autoDarkZones!==false && !loc.sky) {
-                for(var x:int=0;x<width;x+=560) for(var y:int=0;y<height;y+=560) {
-                    var n:uint=seed(identity+":"+x+":"+y);
-                    if(n%100>=38 || result.length>=128) continue;
-                    result.push({x:x+40,y:y+40,width:440,height:440,feather:110,factor:0.08});
-                }
-            }
+            if(config.autoDarkZones!==false && environment) result=environment.pockets();
             for each(var zone:Object in config.darkZones) {
                 if(!matches(zone,String(loc.land.act.id),String(loc.id)) || result.length>=128) continue;
                 if(!isFinite(Number(zone.x)) || !isFinite(Number(zone.y)) || Number(zone.width)<=0 || Number(zone.height)<=0) continue;

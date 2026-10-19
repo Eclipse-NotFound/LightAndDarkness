@@ -1,0 +1,31 @@
+PASS ordinary interior has a readable ambient floor
+PASS flight flag alone does not imply daylight
+PASS ordinary sky background receives daylight without flight flag
+PASS roof cutout keeps covered lower floors darker
+PASS mixed scene assigns outdoor and indoor light locally
+PASS opening a door admits nearby sky spill
+PASS closing a door restores sky occlusion
+PASS masonry behind a sky backdrop is treated as covered
+PASS removed background masonry refreshes daylight
+PASS camera beyond map bounds retains a valid environment raster
+PASS actual aperture alpha generates window sources
+PASS window aperture illuminates the shared gameplay field
+PASS window light cannot cross an opaque wall
+PASS sealed observation windows are not daylight sources
+PASS underground decoration does not invent outdoor daylight
+PASS native aperture produces light: fwindow
+PASS native aperture produces light: bwindow
+PASS native aperture produces light: swindow
+PASS native aperture produces light: cwindow
+PASS native aperture produces light: awindow
+PASS native aperture produces light: enclwindow
+PASS safe hub keeps readable ambient and no automatic dark pockets
+PASS safe fixtures consistently use stable bright defaults
+PASS abandoned roofed alcove can form a bounded dark pocket
+PASS entrance protection removes nearby pockets
+PASS pockets are stable across rebinding the same map
+PASS ordinary loot does not erase a deliberate dark alcove
+PASS door interaction remains protected while ordinary loot is allowed
+PASS old repaired or steady auto lamp remains steady after migration
+PASS legacy automatic fault removed in safe hub
+PASS repaired v2 lamp survives changed scene fault rate

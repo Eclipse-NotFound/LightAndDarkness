@@ -25,6 +25,7 @@ package lad {
         public var keys:LadKeys=new LadKeys();
         public var projectiles:LadProjectiles=new LadProjectiles();
         public var machines:LadMachineLights=new LadMachineLights();
+        public var environment:LadEnvironment=new LadEnvironment();
         public var darkZones:Array=[];
         public var atmosphereTime:Number=0;
         public var lastExposure:Number=1;
@@ -53,10 +54,11 @@ package lad {
         private var notice:String="";
         private var noticeUntil:int=0;
         private var failedLocation:*=null;
+        private var environmentKey:String="";
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.3.2",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.4.0",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.addEventListener(Event.ADDED,objectAdded,true);
@@ -65,7 +67,7 @@ package lad {
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.3.2 loaded");
+            LadLog.write("v0.4.0 loaded");
         }
         private function objectAdded(event:Event):void {
             if(!enabled || !atmosphere.settings.projectiles || !location || !world || world.loc!==location) return;
@@ -147,8 +149,9 @@ package lad {
             if(atmosphere.settings.projectiles) projectiles.bind(world,loc);
             if(!store.writable) throw new Error("saved light state requires migration");
             var roomKey:String=LadStore.roomKey(loc);
-            lamps=LadLampCatalog.discover(loc,world.grafon,store.room(roomKey),atmosphere,roomKey);
-            darkZones=atmosphere.zones(loc,roomKey);
+            environment.bind(loc,world.grafon,roomKey);environmentKey=environment.signature();
+            lamps=LadLampCatalog.discover(loc,world.grafon,store.room(roomKey),atmosphere,roomKey,environment);
+            darkZones=atmosphere.zones(loc,roomKey,environment);
             targetClass=ApplicationDomain.currentDomain.getDefinition("lad.native.LadLampTarget") as Class;
             if(lamps.length) {
                 if(beforeRaster) LadLampCatalog.strip(lamps);
@@ -180,7 +183,7 @@ package lad {
             }
             while(lampLayer.numChildren) lampLayer.removeChildAt(0);
             if(lampLayer.parent) lampLayer.parent.removeChild(lampLayer);
-            projectiles.clear();machines.clear();field.clear();lamps=[];darkZones=[];location=null;player=null;adapter=null;hud.visible=false;
+            projectiles.clear();machines.clear();environment.clear();environmentKey="";field.clear();lamps=[];darkZones=[];location=null;player=null;adapter=null;hud.visible=false;
         }
         private function ensureAdapter():void {
             var next:*=world.gg;
@@ -217,7 +220,7 @@ package lad {
             if(old!=wanted) visual.setChildIndex(field.bitmap,wanted);
         }
         public function lights(view:Rectangle=null):Array {
-            var result:Array=[];
+            var result:Array=location?environment.lights(view || field.bounds):[];
             for each(var lamp:Object in lamps) if(lamp.state.hp>0 && lamp.state.on && lamp.powered)
                 result.push({id:lamp.key,x:lamp.x,y:lamp.y,radius:lamp.radius,color:lamp.color,power:lamp.power,angle:0,cone:Math.PI*2});
             if(player && store.data.headlamp) {
@@ -232,6 +235,8 @@ package lad {
         }
         public function render():void {
             if(!location || !world) return;
+            var nextEnvironment:String=environment.signature();
+            if(nextEnvironment!=environmentKey) {environmentKey=nextEnvironment;darkZones=atmosphere.zones(location,LadStore.roomKey(location),environment);}
             syncLamps();
             var visual:*=world.grafon.visual;
             var a:Point=visual.globalToLocal(new Point(0,0));
@@ -243,8 +248,8 @@ package lad {
                 var show:Boolean=artView.intersects(lamp.bounds);
                 if(lamp.holder.visible!=show) lamp.holder.visible=show;
             }
-            field.render(location,view,lights(view),location.sky?Math.max(0.6,ambient):ambient,
-                atmosphere.settings.darkZones?darkZones:null,atmosphere.settings.darkness);
+            field.render(location,view,lights(view),ambient,
+                atmosphere.settings.darkZones?darkZones:null,atmosphere.settings.darkness,environment);
         }
         public function simulationStep(value:*):void {
             if(!enabled || value!==world.gg || world.loc!==location || !location || world.onPause) return;
@@ -342,14 +347,14 @@ package lad {
             var item:*=world.invent.items["scrap"];
             if(!item || item.kol<2) {message("废金属不足，维修未完成");return false;}
             var oldCount:int=item.kol,oldHp:Number=lamp.state.hp,oldOn:Boolean=lamp.state.on;
-            var oldMode:String=lamp.state.atmosphere.mode;
+            var oldMode:String=lamp.state.atmosphere.mode,oldRepaired:Boolean=Boolean(lamp.state.atmosphere.repaired);
             try {
                 world.invent.minusItem("scrap",2,false);
                 if(item.kol!=oldCount-2) throw new Error("repair inventory mismatch");
-                lamp.state.hp=40;lamp.state.on=true;lamp.state.atmosphere.mode="steady";store.flush();
+                lamp.state.hp=40;lamp.state.on=true;lamp.state.atmosphere.mode="steady";lamp.state.atmosphere.repaired=true;store.flush();
                 world.invent.calcMass();
             } catch(error:*) {
-                item.kol=oldCount;lamp.state.hp=oldHp;lamp.state.on=oldOn;lamp.state.atmosphere.mode=oldMode;store.flush();world.invent.calcMass();LadLog.write("REPAIR_ROLLBACK "+error);return false;
+                item.kol=oldCount;lamp.state.hp=oldHp;lamp.state.on=oldOn;lamp.state.atmosphere.mode=oldMode;lamp.state.atmosphere.repaired=oldRepaired;store.flush();world.invent.calcMass();LadLog.write("REPAIR_ROLLBACK "+error);return false;
             }
             repairs++;syncLamps();render();message("灯具修复完成");LadLog.write("REPAIRED "+lamp.key);return true;
         }
@@ -372,7 +377,7 @@ package lad {
             carrier.modAPI.registerPage("light-and-darkness","光与暗",[
                 {key:"enabled",kind:"check",label:"启用动态照明",get:function():* {return self.enabled;},set:function(v:*):void {self.setEnabled(Boolean(v));}},
                 {key:"headlamp",kind:"check",label:"随身灯",get:function():* {return self.store.data?self.store.data.headlamp:true;},set:function(v:*):void {if(self.store.data){self.store.data.headlamp=Boolean(v);self.store.flush();}}},
-                {key:"ambient",kind:"slider",label:"暗区保留亮度",min:0.05,max:0.5,step:0.05,get:function():* {return self.ambient;},set:function(v:*):void {self.ambient=Number(v);}},
+                {key:"ambient",kind:"slider",label:"环境亮度倍率",min:0.5,max:1.5,step:0.05,get:function():* {return self.ambient/0.14;},set:function(v:*):void {self.ambient=0.14*Number(v);}},
                 {key:"detection",kind:"check",label:"明暗影响普通视觉发现",get:function():* {return self.detection;},set:function(v:*):void {self.detection=Boolean(v);}},
                 {key:"flicker",kind:"check",label:"故障灯闪烁",get:function():* {return self.atmosphere.settings.flicker;},set:function(v:*):void {self.setAtmospherePreference("flicker",Boolean(v));}},
                 {key:"lampBrightness",kind:"slider",label:"场景灯亮度倍率",min:0.25,max:1.5,step:0.05,get:function():* {return self.atmosphere.settings.brightness;},set:function(v:*):void {self.setAtmospherePreference("brightness",v);}},
