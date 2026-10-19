@@ -1,0 +1,212 @@
+[
+  {
+    "tree": {
+      "y": 600,
+      "frames": 1,
+      "type": "visterm",
+      "visible": true,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32614",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32613",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frame": 1
+    },
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 0,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 0
+    },
+    "id": "term"
+  },
+  {
+    "tree": {
+      "y": 600,
+      "frames": 1,
+      "type": "visterm1",
+      "visible": true,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32619",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32618",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frame": 1
+    },
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 3,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 3
+    },
+    "id": "term1"
+  },
+  {
+    "tree": {
+      "y": 600,
+      "frames": 1,
+      "type": "visterm2",
+      "visible": true,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32624",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32623",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frame": 1
+    },
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 2,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 2
+    },
+    "id": "term2"
+  },
+  {
+    "tree": {
+      "y": 600,
+      "frames": 1,
+      "type": "visterm3",
+      "visible": true,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32629",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32628",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frame": 1
+    },
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 0,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 0
+    },
+    "id": "term3"
+  },
+  {
+    "tree": {
+      "y": 600,
+      "frames": 1,
+      "type": "vistermh",
+      "visible": true,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32634",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32633",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frame": 1
+    },
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 0,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 0
+    },
+    "id": "termh"
+  },
+  {
+    "tree": {
+      "y": 600,
+      "frames": 2,
+      "type": "viselpanel",
+      "visible": true,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32639",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32638",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frame": 1
+    },
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 3,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 3
+    },
+    "id": "elpanel"
+  }
+]
