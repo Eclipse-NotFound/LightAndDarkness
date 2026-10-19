@@ -278,6 +278,13 @@ package lad {
             else pulses.push(value);
             pulseById[id]=value;return value;
         }
+        public static function signature(lights:Array):String {
+            var visible:Array=[];
+            for each(var light:Object in lights)if(light.transient)visible.push(light);
+            // Exact inputs, including ordered trail segments and brightness.
+            // Offscreen activity and unsuccessful clipped trails cannot dirty the view.
+            return JSON.stringify(visible);
+        }
         public function lights(view:Rectangle,brightness:Number=1):Array {
             var result:Array=[];
             for each(var p:Object in pulses) {

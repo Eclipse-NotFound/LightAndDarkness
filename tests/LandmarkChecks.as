@@ -66,7 +66,7 @@ package {
             check(collect(crowd).length==32,"visible light budget capped at 32 despite duplicate containers");
             check(collect([]).length==0,"removed objects leave no sources");r.landmarks.clear();check(collect([]).length==0,"clear releases location identity");
             var Field:Class=r.field.constructor as Class,field:*=new Field(),map:Object={spaceX:30,spaceY:20,space:[]};
-            for(var x:int=0;x<30;x++){map.space[x]=[];for(var y:int=0;y<20;y++)map.space[x][y]={opac:0};}
+            for(var x:int=0;x<30;x++){map.space[x]=[];for(var y:int=0;y<20;y++)map.space[x][y]=LightCoreChecks.tile(x,y);}
             box=doors[0];box.vis.x=300;box.vis.y=411;box.vis.scaleX=1;lights=collect([box]);
             field.render(map,view,[],0.1);var dark:Number=field.sample(300,300);
             field.render(map,view,lights,0.1);check(field.sample(300,300)>dark+0.3,"exit spill lights actual shared illumination field");

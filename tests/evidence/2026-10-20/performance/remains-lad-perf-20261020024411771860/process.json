@@ -1,0 +1,422 @@
+{
+  "applicationID": "remains-lad-perf-20261020024411771860",
+  "pid": 77980,
+  "desktop": "RemainsTest-239374a035194273a7a52b43c67b6a10",
+  "startedMs": 1792435461283,
+  "qos": {
+    "before": [
+      0,
+      0
+    ],
+    "applied": [
+      1,
+      0
+    ]
+  },
+  "otherAir": [],
+  "cpuSamples": [
+    {
+      "atMs": 1792435462505,
+      "cpuMs": 343.75,
+      "memory": {
+        "physicalBytes": 3613597696,
+        "commitBytes": 3218173952
+      }
+    },
+    {
+      "atMs": 1792435463749,
+      "cpuMs": 343.75,
+      "memory": {
+        "physicalBytes": 3633360896,
+        "commitBytes": 3242704896
+      }
+    },
+    {
+      "atMs": 1792435465009,
+      "cpuMs": 812.5,
+      "memory": {
+        "physicalBytes": 3472719872,
+        "commitBytes": 2969452544
+      }
+    },
+    {
+      "atMs": 1792435466260,
+      "cpuMs": 2046.875,
+      "memory": {
+        "physicalBytes": 3379408896,
+        "commitBytes": 2966220800
+      }
+    },
+    {
+      "atMs": 1792435467514,
+      "cpuMs": 3218.75,
+      "memory": {
+        "physicalBytes": 3373760512,
+        "commitBytes": 2945626112
+      }
+    },
+    {
+      "atMs": 1792435468765,
+      "cpuMs": 4359.375,
+      "memory": {
+        "physicalBytes": 3377954816,
+        "commitBytes": 2936582144
+      }
+    },
+    {
+      "atMs": 1792435470015,
+      "cpuMs": 5515.625,
+      "memory": {
+        "physicalBytes": 3285676032,
+        "commitBytes": 2833833984
+      }
+    },
+    {
+      "atMs": 1792435471260,
+      "cpuMs": 6656.25,
+      "memory": {
+        "physicalBytes": 3173154816,
+        "commitBytes": 2697195520
+      }
+    },
+    {
+      "atMs": 1792435472513,
+      "cpuMs": 7843.75,
+      "memory": {
+        "physicalBytes": 3187875840,
+        "commitBytes": 2732826624
+      }
+    },
+    {
+      "atMs": 1792435473763,
+      "cpuMs": 8906.25,
+      "memory": {
+        "physicalBytes": 3172884480,
+        "commitBytes": 2688405504
+      }
+    },
+    {
+      "atMs": 1792435475010,
+      "cpuMs": 10812.5,
+      "memory": {
+        "physicalBytes": 3110584320,
+        "commitBytes": 2633760768
+      }
+    },
+    {
+      "atMs": 1792435476259,
+      "cpuMs": 13109.375,
+      "memory": {
+        "physicalBytes": 2788462592,
+        "commitBytes": 2257170432
+      }
+    },
+    {
+      "atMs": 1792435477512,
+      "cpuMs": 16828.125,
+      "memory": {
+        "physicalBytes": 2805977088,
+        "commitBytes": 2249814016
+      }
+    },
+    {
+      "atMs": 1792435478773,
+      "cpuMs": 20968.75,
+      "memory": {
+        "physicalBytes": 2792550400,
+        "commitBytes": 2239631360
+      }
+    },
+    {
+      "atMs": 1792435480025,
+      "cpuMs": 23562.5,
+      "memory": {
+        "physicalBytes": 3054755840,
+        "commitBytes": 2519433216
+      }
+    },
+    {
+      "atMs": 1792435481281,
+      "cpuMs": 27453.125,
+      "memory": {
+        "physicalBytes": 3053944832,
+        "commitBytes": 2505183232
+      }
+    },
+    {
+      "atMs": 1792435482528,
+      "cpuMs": 31468.75,
+      "memory": {
+        "physicalBytes": 3073851392,
+        "commitBytes": 2522972160
+      }
+    },
+    {
+      "atMs": 1792435483781,
+      "cpuMs": 33796.875,
+      "memory": {
+        "physicalBytes": 2613153792,
+        "commitBytes": 2050248704
+      }
+    },
+    {
+      "atMs": 1792435485044,
+      "cpuMs": 34593.75,
+      "memory": {
+        "physicalBytes": 2602131456,
+        "commitBytes": 2037370880
+      }
+    },
+    {
+      "atMs": 1792435486295,
+      "cpuMs": 35546.875,
+      "memory": {
+        "physicalBytes": 2625978368,
+        "commitBytes": 2032463872
+      }
+    },
+    {
+      "atMs": 1792435487559,
+      "cpuMs": 37062.5,
+      "memory": {
+        "physicalBytes": 2603859968,
+        "commitBytes": 2003320832
+      }
+    },
+    {
+      "atMs": 1792435488810,
+      "cpuMs": 38906.25,
+      "memory": {
+        "physicalBytes": 3121946624,
+        "commitBytes": 2539859968
+      }
+    },
+    {
+      "atMs": 1792435490073,
+      "cpuMs": 40171.875,
+      "memory": {
+        "physicalBytes": 3138015232,
+        "commitBytes": 2553335808
+      }
+    },
+    {
+      "atMs": 1792435491320,
+      "cpuMs": 41062.5,
+      "memory": {
+        "physicalBytes": 3131355136,
+        "commitBytes": 2539249664
+      }
+    },
+    {
+      "atMs": 1792435492591,
+      "cpuMs": 43031.25,
+      "memory": {
+        "physicalBytes": 2860150784,
+        "commitBytes": 2267095040
+      }
+    },
+    {
+      "atMs": 1792435493849,
+      "cpuMs": 46140.625,
+      "memory": {
+        "physicalBytes": 2598334464,
+        "commitBytes": 1997582336
+      }
+    },
+    {
+      "atMs": 1792435495107,
+      "cpuMs": 50125.0,
+      "memory": {
+        "physicalBytes": 2581123072,
+        "commitBytes": 1992785920
+      }
+    },
+    {
+      "atMs": 1792435496371,
+      "cpuMs": 54250.0,
+      "memory": {
+        "physicalBytes": 2607534080,
+        "commitBytes": 1991122944
+      }
+    },
+    {
+      "atMs": 1792435497630,
+      "cpuMs": 58250.0,
+      "memory": {
+        "physicalBytes": 3109171200,
+        "commitBytes": 2501537792
+      }
+    },
+    {
+      "atMs": 1792435498885,
+      "cpuMs": 61187.5,
+      "memory": {
+        "physicalBytes": 3131617280,
+        "commitBytes": 2531254272
+      }
+    },
+    {
+      "atMs": 1792435500137,
+      "cpuMs": 62343.75,
+      "memory": {
+        "physicalBytes": 3030880256,
+        "commitBytes": 2420957184
+      }
+    },
+    {
+      "atMs": 1792435501392,
+      "cpuMs": 63546.875,
+      "memory": {
+        "physicalBytes": 2983596032,
+        "commitBytes": 2363002880
+      }
+    },
+    {
+      "atMs": 1792435502641,
+      "cpuMs": 64640.625,
+      "memory": {
+        "physicalBytes": 2799050752,
+        "commitBytes": 2192191488
+      }
+    },
+    {
+      "atMs": 1792435503894,
+      "cpuMs": 66281.25,
+      "memory": {
+        "physicalBytes": 2700865536,
+        "commitBytes": 2086748160
+      }
+    },
+    {
+      "atMs": 1792435505140,
+      "cpuMs": 68000.0,
+      "memory": {
+        "physicalBytes": 2635554816,
+        "commitBytes": 2024689664
+      }
+    },
+    {
+      "atMs": 1792435506405,
+      "cpuMs": 71609.375,
+      "memory": {
+        "physicalBytes": 2629988352,
+        "commitBytes": 2031906816
+      }
+    },
+    {
+      "atMs": 1792435507669,
+      "cpuMs": 74484.375,
+      "memory": {
+        "physicalBytes": 2618822656,
+        "commitBytes": 1989185536
+      }
+    },
+    {
+      "atMs": 1792435508927,
+      "cpuMs": 77125.0,
+      "memory": {
+        "physicalBytes": 2595246080,
+        "commitBytes": 1983492096
+      }
+    },
+    {
+      "atMs": 1792435510181,
+      "cpuMs": 80187.5,
+      "memory": {
+        "physicalBytes": 2624647168,
+        "commitBytes": 2002579456
+      }
+    },
+    {
+      "atMs": 1792435511437,
+      "cpuMs": 83500.0,
+      "memory": {
+        "physicalBytes": 2620170240,
+        "commitBytes": 1980194816
+      }
+    },
+    {
+      "atMs": 1792435512692,
+      "cpuMs": 86562.5,
+      "memory": {
+        "physicalBytes": 2633637888,
+        "commitBytes": 1992802304
+      }
+    },
+    {
+      "atMs": 1792435513946,
+      "cpuMs": 89562.5,
+      "memory": {
+        "physicalBytes": 2634510336,
+        "commitBytes": 1974366208
+      }
+    },
+    {
+      "atMs": 1792435515210,
+      "cpuMs": 92500.0,
+      "memory": {
+        "physicalBytes": 2629451776,
+        "commitBytes": 2001526784
+      }
+    },
+    {
+      "atMs": 1792435516461,
+      "cpuMs": 95281.25,
+      "memory": {
+        "physicalBytes": 2630623232,
+        "commitBytes": 1999872000
+      }
+    },
+    {
+      "atMs": 1792435517720,
+      "cpuMs": 98046.875,
+      "memory": {
+        "physicalBytes": 2433671168,
+        "commitBytes": 1770704896
+      }
+    },
+    {
+      "atMs": 1792435519053,
+      "cpuMs": 101000.0,
+      "memory": {
+        "physicalBytes": 2047156224,
+        "commitBytes": 1082617856
+      }
+    },
+    {
+      "atMs": 1792435520328,
+      "cpuMs": 103062.5,
+      "memory": {
+        "physicalBytes": 2109546496,
+        "commitBytes": 1164972032
+      }
+    },
+    {
+      "atMs": 1792435521581,
+      "cpuMs": 104390.625,
+      "memory": {
+        "physicalBytes": 2063077376,
+        "commitBytes": 1114259456
+      }
+    },
+    {
+      "atMs": 1792435522831,
+      "cpuMs": 106312.5,
+      "memory": {
+        "physicalBytes": 1709211648,
+        "commitBytes": 476049408
+      }
+    }
+  ],
+  "memoryAtStart": {
+    "physicalBytes": 3662311424,
+    "commitBytes": 3281113088
+  },
+  "endedMs": 1792435523041,
+  "performanceEligible": false,
+  "lowMemory": true,
+  "memoryAtEnd": {
+    "physicalBytes": 3010641920,
+    "commitBytes": 1764397056
+  }
+}

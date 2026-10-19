@@ -2,7 +2,7 @@
 
 为 Remains 增加能影响战斗的明暗区域、可装备灯具，以及场景灯的破坏和维修。用户于 2026-10-15 确认：**战术光暗与生存探索并重，兼顾氛围**。
 
-当前 **0.5.0 已于2026-10-20部署**。弹丸按原生形状提供渐暗拖尾、火箭尾焰与连续激光照明，合批绘制降低常见弹幕开销；同步包含机器/地标增强、六类终端微光及环境绘制缓存。保留灯具损坏维修、环境与存档能力。正式文件固定为 `release/LightAndDarknessMod.swf`，保存进度并重启游戏生效。[本版验证、性能边界和回退](tests/trails-verification-2026-10-20.md)。
+当前 **0.5.1 已于2026-10-20部署**。新增稳定光缓存，减少地形扫描开销，并消除画面外弹丸引起的无效补绘；保留原生弹形拖尾、机器/地标与终端微光、灯具损坏维修、环境与存档能力。正式文件固定为 `release/LightAndDarknessMod.swf`，保存进度并重启游戏生效。完整组合大图仍高于关灯时的帧耗时，尚未完全达到接近原版的目标。[本版验证、性能边界和回退](tests/performance-2026-10-20.md)。
 
 ## 当前可用功能
 
@@ -30,6 +30,8 @@
 
 ## 构建与验证
 
+0.5.1冻结为`build/out/perf-v051-visible/LightAndDarknessMod.swf`，BAFE52B9，21自身类，无原生存根或测试类。新版宿主81C1/CS CD65/WB1411组合下579项门禁与正式文件43项回读通过，共622项。宽屏完整14模组大图开灯帧中位95–102ms、关灯84–86ms；普通图开43–46.5ms、关33ms。当前源码、依赖与正式字节指纹见`state/performance-deployment-2026-10-20.json`。后续发布须重新冻结并验收，不直接重跑固定旧版的部署脚本。
+
 0.5.0冻结为`build/out/trails-v050/LightAndDarknessMod.swf`，4291B825，最终1057项功能/像素/保存检查及正式回读35项通过。`tools/run-trail-tests.py --candidate <SWF> --mixed --mode verify/perf/legacy/cold`；cold仅用本轮私有存储。两轮独占对照中普通弹、密集普通弹与激光减负，密集等离子均值未改善且有尖峰；不把函数耗时称为整体FPS提升。[原生70种素材与形状调查](design/projectile-shapes-v0.5.md)。以下保留历史版本复现方法，不代表可直接用旧部署脚本覆盖当前正式文件。
 
 0.4.1用`build/build.ps1 -OutputDirectory <build/out/landmarks-v041的绝对路径>`构建候选；Python运行`tools/run-landmark-tests.py --mode verify --mixed`（124项，含31环境回归），`--mode regression --mixed`（101项），`--mode cold --mixed --seed-storage <上轮storage目录>`（11项）。正式复验加`--candidate release/LightAndDarknessMod.swf`。原版图集、六格效果及实际营地截图见[证据](tests/evidence/2026-10-19/landmarks-v041/index.json)。
@@ -50,6 +52,7 @@
 
 ## 阅读入口
 
+- [0.5.1性能验证](tests/performance-2026-10-20.md)：同输入计算对照、完整组合帧耗时、像素一致性、安装回读与剩余差距。
 - [弹丸形状、拖尾与绘制预算](design/projectile-shapes-v0.5.md)：70种原图、形状/配色分组、弯道、遮挡与性能设计。
 - [0.5.0最终验证](tests/trails-verification-2026-10-20.md)：精确字节回归、两轮原始性能数据、安装回读与回退。
 - [原版风格地标照明](design/landmark-lighting-v0.4.1.md)：存档点动画、灯牌与试炼符号的颜色、位置、状态及开关。
@@ -66,4 +69,4 @@
 
 入口为 `LightAndDarknessMod.init(main:*)`，正式路径为 `release/LightAndDarknessMod.swf`，治理沿游戏根 `../../GOVERNANCE.md`。用户授权的 `AGENT_SCOPE.md` 已创建。
 
-当前仅认证本机 1.02 宿主及本轮列明组合；未认证 DLC、联机、全部生产模组同时启用或全部敌种。大场景转换会触发原版预载，实测仍有秒级停顿；逐帧照明耗时与这段预载分开记录。
+当前仅认证本机 1.02 宿主及本轮列明检查；完整14模组组合已做性能采样，但不代表全部功能、敌种和战斗情形均获认证。未认证 DLC 或联机。大场景转换会触发原版预载，实测仍有秒级停顿；逐帧照明耗时与这段预载分开记录。

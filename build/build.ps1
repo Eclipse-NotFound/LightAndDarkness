@@ -35,7 +35,7 @@ function Compile([string]$ToolName, [string[]]$Arguments) {
 if (!$TestsOnly) {
 $stubSwc = Join-Path $out 'host-signatures.swc'
 $stubConfig = Write-Config 'stubs' @((Join-Path $PSScriptRoot 'stubs')) @($airSwc)
-Compile 'compc' @("-load-config=$stubConfig", '-include-classes=fe.unit.Unit,fe.weapon.Bullet,fe.loc.Box', "-output=$stubSwc")
+Compile 'compc' @("-load-config=$stubConfig", '-include-classes=fe.unit.Unit,fe.weapon.Bullet,fe.loc.Box,fe.loc.Tile', "-output=$stubSwc")
 $config = Write-Config 'candidate' @($SourceDirectory) @($airSwc, $stubSwc)
 Compile 'mxmlc' @("-load-config=$config", '-swf-version=32', '-use-network=false', '-static-link-runtime-shared-libraries=true', '-includes=lad.native.LadLampTarget', "-output=$out\LightAndDarknessMod.swf", "$SourceDirectory\LightAndDarknessDoc.as")
 }

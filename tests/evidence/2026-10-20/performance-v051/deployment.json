@@ -1,0 +1,114 @@
+{
+  "version": "0.5.1",
+  "sha256": "bafe52b9145194c2e9d3a08a3331236fee5f1b6a3e1f016a46d9bc288c04c47a",
+  "previousSha256": "4291b8250d607ea1c6b5be48ded48bb5fa42af37bfe0cb3ed7a2e7c84efbbf90",
+  "source": {
+    "LightAndDarknessDoc.as": "7b96febf163398810b3ff1eac45f1a1ab21b59ff838449109654942b73f9c3ff",
+    "LightAndDarknessMod.as": "ebd9f3061b768c32c7ae8d9f74b02bf058d5cdffbdf2804d67414cc05ceff5ae",
+    "lad/LadAtmosphere.as": "05d8ec3d24ab11830464662304d9f96e3108c3a2b310c1ee6d3f2d352c28b4bb",
+    "lad/LadCarrier.as": "6eea873fe6564568c3a1a93c75707f02622dbab2aee0a20296a6f677d63ae02e",
+    "lad/LadEnvironment.as": "615a9d45a0014aa5b577de264450383430f3fa73092d7ce205f5c267f455c90a",
+    "lad/LadHud.as": "a85a3498d5f1b1dc741e99f0f129d6337ac443723f9e28c18ad787ca7d835471",
+    "lad/LadKeys.as": "c186918bfd0871d30989ab517c7eaf47d0c02e603666ad1656eb18be4cb0411d",
+    "lad/LadLampCatalog.as": "873661d249c7cf6b19d59a6fb6d1c11542de51c69839e4f965a58f074f34f9c6",
+    "lad/LadLandmarkLights.as": "a33ab324eeaadb3f4eee63850a6f97060fd623b9e407b3f5bf4e1f640581bb7f",
+    "lad/LadLightField.as": "26216ed6043b1bc8cb045c652f2d2798ce67c5139f12bfa0b405ffa2ae22df7a",
+    "lad/LadLog.as": "d82cf52491f058f6ea2f3e4d2e7a465d5efff95958f6483b24b1e7f66166c136",
+    "lad/LadMachineLights.as": "9e964a8aafc301fc0c2494d6bc1518587c22c14660e6abf1bdcfcb07c3c50886",
+    "lad/LadPlayerTick.as": "333fa37745fd5e130e8d7dd45c9d417d784dae67d163e846684b242b0e17f613",
+    "lad/LadProjectileProfiles.as": "051d7cb741f0b5e218b44bce741d8de84f999acef52d20f7a1683cb78332bbb5",
+    "lad/LadProjectiles.as": "e8d0bdb6aad83dab371b633088f0e892506cbdaa08fd9c023f13c7783de37321",
+    "lad/LadRuntime.as": "3a980b1a12dbbb6952353e472dbba1b7540c9e20ad9ac8e8e280731694c13c3d",
+    "lad/LadSceneBake.as": "ad0109de08e1ee11b7b2a47c03704df3700a4c4e0aa0fffb4c7ae02e88b90db9",
+    "lad/LadStore.as": "b934f459151090c23725739ebc82ebd029e613ffadebd7656d53e97d8f53765e",
+    "lad/LadTileState.as": "88ece7d20a49560b61e1504b3470747c29a61eaa1cb24b84251305f634ea4402",
+    "lad/LadTrailRaster.as": "16e1389f5e221f973fe11d691aed564b07cea67629ca8317906122f904f6d3d6",
+    "lad/native/LadLampTarget.as": "53f9962778a64f2ac200b7be3085cc3de727ab9dfea9b19948647b0a647ebca9"
+  },
+  "protected": {
+    "application.xml": "70dd3b085e5f6c66c03693cf68ce5e93a4e4136dd745d40d1a5b2a49863ba236",
+    "pfe.swf": "81c1bfb552aa8efbb20ccf15cb404ab5d879f58515b466ff788a079f5f0ec015",
+    "mods/loader-manifest.txt": "33de189e1209fdd397e811a52e9ac67ff0dedaeeae5cfeff4b7d15d4536eb133",
+    "mods/LightAndDarkness/atmosphere.json": "2f6b4141510ccab293a6040296909ee46971cb9f116586d2e18042d37ac765aa",
+    "mods/ModLoader/release/ModLoaderMod.swf": "bd71b6f31774b97841d4c158451da0353b53bc46ac72f8e2a7fe2c3f3f4908b1",
+    "mods/ContinuousScene/release/ContinuousSceneMod.swf": "cd65cec6c763ef18b345bcc1208baaa4911e02bdb1f557fe316ebbabff9bd856",
+    "mods/ContinuousScene/release/scene.xml": "1cea74e218a55894d432e12cdfc544952d37cfff5ff55b256b1b970573eb7a9e",
+    "mods/RealisticVision/release/config.txt": "5136ee1923a77f5f10eab1b3994b64cbd67b09d687a7e829fb1e81d2e79a3c7f",
+    "mods/RealisticVision/release/RealisticVisionMod.swf": "76314b819151fba6f67f6d740b21030a9eec8359af4c9c9ddeb83d4caf5c46b7",
+    "mods/WallBlend/release/config.json": "16bb3a56a74195de6d4589cebde88e80c378956c776ffcde1c848f0ed7d48a89",
+    "mods/WallBlend/release/WallBlendMod.swf": "14112da06214bca51c6875d2527e73246dcb4c985caadda719eb4f77f1c0920d"
+  },
+  "classes": [
+    "scripts/LightAndDarknessDoc.as",
+    "scripts/LightAndDarknessMod.as",
+    "scripts/lad/LadAtmosphere.as",
+    "scripts/lad/LadCarrier.as",
+    "scripts/lad/LadEnvironment.as",
+    "scripts/lad/LadHud.as",
+    "scripts/lad/LadKeys.as",
+    "scripts/lad/LadLampCatalog.as",
+    "scripts/lad/LadLandmarkLights.as",
+    "scripts/lad/LadLightField.as",
+    "scripts/lad/LadLog.as",
+    "scripts/lad/LadMachineLights.as",
+    "scripts/lad/LadPlayerTick.as",
+    "scripts/lad/LadProjectileProfiles.as",
+    "scripts/lad/LadProjectiles.as",
+    "scripts/lad/LadRuntime.as",
+    "scripts/lad/LadSceneBake.as",
+    "scripts/lad/LadStore.as",
+    "scripts/lad/LadTileState.as",
+    "scripts/lad/LadTrailRaster.as",
+    "scripts/lad/native/LadLampTarget.as"
+  ],
+  "createdAt": "2026-10-20T02:49:57.716038+08:00",
+  "evidence": [
+    {
+      "label": "pixels",
+      "checks": 387,
+      "evidence": "build\\evidence\\remains-lad-perf-20261020025007191387",
+      "session": "run_1792435815576_472839"
+    },
+    {
+      "label": "frames:module",
+      "checks": 21,
+      "evidence": "build\\evidence\\remains-lad-perf-20261020023131019287",
+      "session": "run_1792434704225_355778"
+    },
+    {
+      "label": "frames:staticlights",
+      "checks": 16,
+      "evidence": "build\\evidence\\remains-lad-perf-20261020025037081754",
+      "session": "run_1792435849725_44163"
+    },
+    {
+      "label": "landmark:regression",
+      "checks": 101,
+      "evidence": "build\\evidence\\remains-lad-landmark-20261020025452600218",
+      "session": "run_1792436099909_701610"
+    },
+    {
+      "label": "landmark:cold",
+      "checks": 11,
+      "evidence": "build\\evidence\\remains-lad-landmark-20261020025634853456",
+      "session": "run_1792436202383_146317"
+    },
+    {
+      "label": "trail:verify",
+      "checks": 43,
+      "evidence": "build\\evidence\\remains-lad-projectile-trails-20261020023110990450",
+      "session": "run_1792434678451_676511"
+    }
+  ],
+  "installedAt": "2026-10-20T02:58:06.027455+08:00",
+  "backup": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\backups\\performance-20261020-025805-967767\\LightAndDarknessMod.v0.5.0.swf",
+  "restartSmoke": {
+    "status": "PASS",
+    "label": "trail:verify",
+    "checks": 43,
+    "evidence": "build\\evidence\\remains-lad-projectile-trails-20261020025813776660",
+    "session": "run_1792436300994_493637",
+    "finishedAt": "2026-10-20T02:59:26.891205+08:00"
+  },
+  "rollback": "Restore only this backup while installed LAD still matches this release; leave other modules, host, manifest and real saves unchanged."
+}

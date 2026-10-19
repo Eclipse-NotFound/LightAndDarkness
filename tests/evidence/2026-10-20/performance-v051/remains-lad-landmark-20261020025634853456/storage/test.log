@@ -1,0 +1,15 @@
+4078 BOOT remains-lad-landmark-20261020025634853456
+10604 COLD_LOAD_SLOT_7
+14243 BORDER entry native borders face outside scene scales=-2.1089887640449425,-0.6741573033707866,2.1764044943820213,0.6741573033707866 camera=2,0.7416666666666667,1424,861,1920,1000 scene=false
+14245 PASS entry native borders face outside scene
+14412 PASS entry native borders face outside scene full-stage native-camera oracle
+14412 PASS cold process restores broken fixture and headlamp
+14414 PASS cold process restores original inventory
+18472 PASS cold process restores repaired switched-off fixture
+18473 PASS cold process restores repair material cost
+22412 PASS cold process restores fixture atmosphere
+22413 PASS cold process restores atmosphere preferences
+22415 PASS cold process restores disabled landmark light
+26329 PASS cold process restores repaired fault and cost
+26330 PASS cold process restores enabled landmark light
+26331 SUITE_PASS

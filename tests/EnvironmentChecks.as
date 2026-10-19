@@ -82,7 +82,7 @@ package {
         }
         private static function room():Object {
             var m:Object={spaceX:24,spaceY:25,space:[],backwall:"tBackWall",backform:0,sky:false,base:false,lightOn:0,color:"",homeStable:false,transpFon:false,backobjs:[],spawnPoints:[],acts:[],id:"test",land:{act:{id:"test",tip:"test"}}};
-            for(var x:int=0;x<24;x++){m.space[x]=[];for(var y:int=0;y<25;y++)m.space[x][y]={opac:0,phis:0,back:"",front:"",fRear:false};}return m;
+            for(var x:int=0;x<24;x++){m.space[x]=[];for(var y:int=0;y<25;y++)m.space[x][y]=LightCoreChecks.tile(x,y);}return m;
         }
         private static function check(pass:Boolean,label:String,log:Function):void {LightCoreChecks.check(pass,label,log);}
     }

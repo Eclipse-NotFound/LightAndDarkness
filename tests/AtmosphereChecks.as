@@ -25,7 +25,7 @@ package {
             lamp.state.on=true;lamp.powered=false;check(a.power(lamp,0)==0,"power outage overrides atmosphere",log);
             lamp.powered=true;lamp.state.hp=0;check(a.power(lamp,0)==0,"broken lamp overrides atmosphere",log);
             var map:Object={spaceX:30,spaceY:20,space:[],sky:false,id:"room",land:{act:{id:"test"}}};
-            for(var x:int=0;x<30;x++){map.space[x]=[];for(var y:int=0;y<20;y++) map.space[x][y]={opac:0};}
+            for(var x:int=0;x<30;x++){map.space[x]=[];for(var y:int=0;y<20;y++) map.space[x][y]=LightCoreChecks.tile(x,y);}
             var zones:Array=a.zones(map,"fixed-room");
             check(JSON.stringify(zones)==JSON.stringify(a.zones(map,"fixed-room")),"dark pockets deterministic",log);
             map.sky=true;check(a.zones(map,"fixed-room").length==0,"outdoors excluded from automatic dark pockets",log);map.sky=false;

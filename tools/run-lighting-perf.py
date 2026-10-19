@@ -53,7 +53,7 @@ def available_memory():
     if not ctypes.WinDLL('kernel32',use_last_error=True).GlobalMemoryStatusEx(ctypes.byref(state)):raise ctypes.WinError()
     return {'physicalBytes':state.availablePhysical,'commitBytes':state.availableCommit}
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--mode',choices=['bench','pixels','frames'],default='bench');p.add_argument('--full',action='store_true');p.add_argument('--samples',type=int,default=90);p.add_argument('--variant',choices=['module','bitmap','fixtures','proxy','suite','staticlights'],default='module');p.add_argument('--room-only',dest='roomOnly',action='store_true');p.add_argument('--width',type=int,default=1440);p.add_argument('--height',type=int,default=900);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--reference');p.add_argument('--mode',choices=['bench','pixels','frames'],default='bench');p.add_argument('--full',action='store_true');p.add_argument('--samples',type=int,default=90);p.add_argument('--variant',choices=['module','bitmap','fixtures','proxy','suite','staticlights'],default='module');p.add_argument('--room-only',dest='roomOnly',action='store_true');p.add_argument('--width',type=int,default=1440);p.add_argument('--height',type=int,default=900);args=p.parse_args()
     if not (640<=args.width<=3840 and 480<=args.height<=2160):p.error('Invalid test window dimensions')
     others=air_pids()
     if others:raise RuntimeError('Other AIR exists; wait for the agreed window: '+str(others))
@@ -63,8 +63,9 @@ def main():
     root.mkdir(parents=True);out.mkdir(parents=True)
     inventory=json.loads(subprocess.check_output([str(GAME/'mods/ModLoader/RemainsModLauncher.exe'),'--list','--json','--no-ui']).decode('utf-8-sig'))
     (out/'inventory.json').write_text(json.dumps(inventory,indent=2),'utf-8')
-    baseline=MOD/'build/out/perf-reference-v041.swf'
+    baseline=Path(args.reference).resolve() if args.reference else MOD/'build/out/perf-reference-v041.swf'
     if not baseline.exists():
+        assert not args.reference,'Requested reference does not exist'
         assert sha(MOD/'release/LightAndDarknessMod.swf')=='94A2F0861B9757815F1554D5FBF3C216F403053D1EBCF4B546F9F7A2868A21BD'
         shutil.copy2(MOD/'release/LightAndDarknessMod.swf',baseline)
     shutil.copy2(baseline,root/'reference.swf')

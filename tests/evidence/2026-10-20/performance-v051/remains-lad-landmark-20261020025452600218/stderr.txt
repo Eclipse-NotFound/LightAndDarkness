@@ -1,0 +1,50 @@
+ModLoader[boot_start] v2 run=run_1792436099909_701610
+ModLoader[requested_ModLoaderMod] line 12
+ModLoader[requested_RealisticVisionMod] line 15
+ModLoader[requested_ContinuousSceneMod] line 21
+ModLoader[requested_LandmarkProbeMod] line 22
+ModLoader[requested_LightAndDarknessMod] line 23
+ModLoader[requested_WallBlendMod] line 24
+ModLoader[boot] v2 col=2 requested=6
+ModLoader[ok_WallBlendMod] init
+ModLoader[ok_LightAndDarknessMod] init
+ModLoader[ok_ModLoaderMod] init
+ModLoader[ok_ContinuousSceneMod] init
+ModLoader[ok_LandmarkProbeMod] init
+[RVision] init ok enabled=true
+ModLoader[ok_RealisticVisionMod] init
+635 Интерфейс
+1360 Game init
+959 Персонаж
+0 Местность
+805 Создание местности
+548 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+flushed
+flushed
+Установлен уровень 1
+1874 Персонаж
+692 Создание местности
+441 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+Установлен уровень 1
+1816 Персонаж
+669 Создание местности
+458 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+flushed
+flushed
+Установлен уровень 1
+1742 Персонаж
+647 Создание местности
+404 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+Установлен уровень 1
+1727 Персонаж
+646 Создание местности
+415 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+1177 Создание местности
+false
+75 Вход в местность
+[RVision] room loc0_0 192x75 lDist2=1000 mode=current

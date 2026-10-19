@@ -1,0 +1,188 @@
+[
+  {
+    "scene": 0,
+    "width": 48,
+    "land": "rbl",
+    "height": 25,
+    "regions": 1,
+    "results": [
+      {
+        "candidate": false,
+        "kind": "idle",
+        "rebuilds": 39,
+        "calls": 100,
+        "ms": 115
+      },
+      {
+        "candidate": true,
+        "kind": "idle",
+        "rebuilds": 39,
+        "calls": 100,
+        "ms": 88
+      },
+      {
+        "candidate": true,
+        "kind": "idle",
+        "rebuilds": 39,
+        "calls": 100,
+        "ms": 93
+      },
+      {
+        "candidate": false,
+        "kind": "idle",
+        "rebuilds": 39,
+        "calls": 100,
+        "ms": 89
+      },
+      {
+        "candidate": false,
+        "kind": "pan",
+        "rebuilds": 232,
+        "calls": 100,
+        "ms": 238
+      },
+      {
+        "candidate": true,
+        "kind": "pan",
+        "rebuilds": 232,
+        "calls": 100,
+        "ms": 224
+      },
+      {
+        "candidate": true,
+        "kind": "pan",
+        "rebuilds": 232,
+        "calls": 100,
+        "ms": 218
+      },
+      {
+        "candidate": false,
+        "kind": "pan",
+        "rebuilds": 232,
+        "calls": 100,
+        "ms": 226
+      },
+      {
+        "candidate": false,
+        "kind": "aim",
+        "rebuilds": 232,
+        "calls": 100,
+        "ms": 186
+      },
+      {
+        "candidate": true,
+        "kind": "aim",
+        "rebuilds": 232,
+        "calls": 100,
+        "ms": 152
+      },
+      {
+        "candidate": true,
+        "kind": "aim",
+        "rebuilds": 232,
+        "calls": 100,
+        "ms": 141
+      },
+      {
+        "candidate": false,
+        "kind": "aim",
+        "rebuilds": 232,
+        "calls": 100,
+        "ms": 146
+      }
+    ]
+  },
+  {
+    "scene": 1,
+    "width": 240,
+    "land": "random_mane",
+    "height": 125,
+    "regions": 25,
+    "results": [
+      {
+        "candidate": false,
+        "kind": "idle",
+        "rebuilds": 9,
+        "calls": 100,
+        "ms": 81
+      },
+      {
+        "candidate": true,
+        "kind": "idle",
+        "rebuilds": 9,
+        "calls": 100,
+        "ms": 73
+      },
+      {
+        "candidate": true,
+        "kind": "idle",
+        "rebuilds": 9,
+        "calls": 100,
+        "ms": 78
+      },
+      {
+        "candidate": false,
+        "kind": "idle",
+        "rebuilds": 9,
+        "calls": 100,
+        "ms": 83
+      },
+      {
+        "candidate": false,
+        "kind": "pan",
+        "rebuilds": 202,
+        "calls": 100,
+        "ms": 207
+      },
+      {
+        "candidate": true,
+        "kind": "pan",
+        "rebuilds": 202,
+        "calls": 100,
+        "ms": 239
+      },
+      {
+        "candidate": true,
+        "kind": "pan",
+        "rebuilds": 202,
+        "calls": 100,
+        "ms": 172
+      },
+      {
+        "candidate": false,
+        "kind": "pan",
+        "rebuilds": 202,
+        "calls": 100,
+        "ms": 183
+      },
+      {
+        "candidate": false,
+        "kind": "aim",
+        "rebuilds": 202,
+        "calls": 100,
+        "ms": 179
+      },
+      {
+        "candidate": true,
+        "kind": "aim",
+        "rebuilds": 202,
+        "calls": 100,
+        "ms": 236
+      },
+      {
+        "candidate": true,
+        "kind": "aim",
+        "rebuilds": 202,
+        "calls": 100,
+        "ms": 195
+      },
+      {
+        "candidate": false,
+        "kind": "aim",
+        "rebuilds": 202,
+        "calls": 100,
+        "ms": 207
+      }
+    ]
+  }
+]

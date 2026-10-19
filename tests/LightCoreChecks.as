@@ -1,6 +1,7 @@
 package {
     import flash.geom.Rectangle;
     import flash.utils.getTimer;
+    import flash.utils.getDefinitionByName;
     public final class LightCoreChecks {
         public static function run(runtime:*,log:Function):void {
             var FieldClass:Class=runtime.field.constructor as Class;
@@ -8,7 +9,7 @@ package {
             var map:Object={spaceX:24,spaceY:18,space:[]};
             for(var x:int=0;x<24;x++) {
                 map.space[x]=[];
-                for(var y:int=0;y<18;y++) map.space[x][y]={opac:x==10?1:0};
+                for(var y:int=0;y<18;y++)map.space[x][y]=tile(x,y,x==10?1:0);
             }
             var view:Rectangle=new Rectangle(0,0,800,600);
             var lamp:Object={id:"test",x:300,y:300,radius:360,color:0xffffff,power:1,angle:0,cone:Math.PI*2};
@@ -43,6 +44,11 @@ package {
             game.triggers["lightanddarkness.state.v1"]='{"version":99,"rooms":{}}';
             store.bind(game);store.flush();
             check(!store.writable && game.triggers["lightanddarkness.state.v1"]=='{"version":99,"rooms":{}}',"unknown state retained",log);
+        }
+        /** Native property values and type; no reduced mock bypasses the hot path. */
+        public static function tile(x:int,y:int,opacity:Number=0):* {
+            var TileClass:Class=getDefinitionByName("fe.loc.Tile") as Class;
+            var result:*=new TileClass(x,y);result.opac=opacity;return result;
         }
         public static function check(pass:Boolean,label:String,log:Function):void {
             if(!pass) throw new Error("ASSERT "+label);

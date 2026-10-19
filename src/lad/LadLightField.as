@@ -1,4 +1,5 @@
 package lad {
+    import fe.loc.Tile;
     import flash.display.Bitmap;
     import flash.display.BitmapData;
     import flash.display.BlendMode;
@@ -175,10 +176,11 @@ package lad {
             var changed:Boolean=false;
             for(var x:int=left;x<=right;++x) {
                 var column:Array=terrainCells[x];if(!column){column=[];terrainCells[x]=column;}
+                var tiles:Array=loc.space[x];
                 for(var y:int=top;y<=bottom;++y) {
-                    var tile:*=loc.space[x][y],old:Object=column[y];
-                    var opacity:Number=Number(tile.opac),back:String=String(tile.back),rear:Boolean=Boolean(tile.fRear),front:String=rear?String(tile.front):"";
-                    if(!old) column[y]={opacity:opacity,back:back,rear:rear,front:front};
+                    var tile:Tile=tiles[y],old:LadTileState=column[y];
+                    var opacity:Number=tile.opac,back:String=tile.back,rear:Boolean=tile.fRear,front:String=rear?tile.front:"";
+                    if(!old) column[y]=new LadTileState(opacity,back,rear,front);
                     else if(old.opacity!=opacity || old.back!=back || old.rear!=rear || old.front!=front) {
                         changed=true;old.opacity=opacity;old.back=back;old.rear=rear;old.front=front;
                     }

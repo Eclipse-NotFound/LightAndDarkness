@@ -1,0 +1,9 @@
+RConnectMod: main class=MainFE
+RConnectMap: native expedition seed interface ready
+RConnectMod: game version=1.02 bd=0.2 instMatch=true world=true
+RConnectMod: v0.2.23-coop-bundle2 initialized
+RConnectDbg: tick 200 mode=offline world=rbl/loc0_0 x=936,800 tileV=1 grid=0/0/0/0 0/0/0/0 0/0/0/0 0/0/0/0 0/0/0/0 1/0/0/0 0/0/0/0 0/0/0/0  ghostPose=none localPose=lbl=trot fr=2 stay=1 work= t_exit=0 comLoad=-1 clickReq=0 verror=false mm.active=false ng_wait=0 allStat=1 onPause=false pipA=false satsA=false standA=false guiPause=false
+RConnectDbg: tick 400 mode=offline world=random_mane/loc0_0 x=1714,4320 tileV=1 grid=0/0/0/0 0/0/0/0 1/0/0/0 0/0/0/0 0/0/0/0 1/0/0/0 0/0/0/0 1/0/0/0  ghostPose=none localPose=lbl=trot fr=2 stay=1 work= t_exit=0 comLoad=-1 clickReq=0 verror=false mm.active=false ng_wait=0 allStat=1 onPause=false pipA=false satsA=false standA=false guiPause=false
+RConnectDbg: tick 600 mode=offline world=random_mane/loc0_0 x=2722,4320 tileV=1 grid=0/0/0/0 0/0/0/0 0/0/0/0 0/0/0/0 0/0/0/0 0/0/0/0 0/0/0/0 1/0/0/0  ghostPose=none localPose=lbl=trot fr=2 stay=0 work= t_exit=0 comLoad=-1 clickReq=0 verror=false mm.active=false ng_wait=0 allStat=1 onPause=false pipA=false satsA=false standA=false guiPause=false
+RConnectReport: land=random_mane/loc0_0 stage=0 localPose=trot objs=577 units=144 injectFail=0
+RConnectDbg: tick 800 mode=offline world=random_mane/loc0_0 x=1794,4320 tileV=1 grid=0/0/0/0 1/0/0/0 0/0/0/0 0/0/0/0 0/0/0/0 1/0/0/0 0/0/0/0 1/0/0/0  ghostPose=none localPose=lbl=trot fr=2 stay=1 work= t_exit=0 comLoad=-1 clickReq=0 verror=false mm.active=false ng_wait=0 allStat=1 onPause=false pipA=false satsA=false standA=false guiPause=false

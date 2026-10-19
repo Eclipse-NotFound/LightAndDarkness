@@ -125,7 +125,7 @@ package {
         }
         private function grid(w:int,h:int):Object {
             var loc:Object={spaceX:w,spaceY:h,space:[]};
-            for(var x:int=0;x<w;x++){loc.space[x]=[];for(var y:int=0;y<h;y++)loc.space[x][y]={opac:0};}return loc;
+            for(var x:int=0;x<w;x++){loc.space[x]=[];for(var y:int=0;y<h;y++)loc.space[x][y]=LightCoreChecks.tile(x,y);}return loc;
         }
         private function rasterChecks():void {
             var u:*=unit("turret");lightState(u,4);u.X=u.vis.x=280;u.Y=u.vis.y=216.5;

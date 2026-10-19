@@ -113,6 +113,23 @@ package {
                 rows.push({stress:{tracked:p.trackedCount,pulses:p.pulseCount,lights:a.length,visits:f.trailRaster.visits,rays:f.trailRaster.rays,painted:f.trailRaster.painted}});
                 clean();for(i=0;i<30;i++)p.advance();check(p.lights(view).length==0,"detached trails and flashes expire on simulation steps");
                 f.render(loc,view,[],.05);check(f.sample(300,280)<.06,"last trail leaves no retained pixels after expiry");
+                clean();p.clear();p.bind(w,loc);p.setView(view);
+                var emptySignature:String=P["signature"](p.lights(view));
+                b=makeBullet("visbulplasma",1500,850);p.observe(b);b.X=1550;
+                check(p.capture(),"offscreen native projectile still advances its tracked state");
+                check(P["signature"](p.lights(view))==emptySignature,"offscreen movement cannot dirty the visible light inputs");
+                var remote:Rectangle=new Rectangle(1200,700,700,300);
+                check(P["signature"](p.lights(remote))!=emptySignature,"moving the viewport reveals a retained offscreen light");
+                clean();p.clear();p.bind(w,loc);p.setView(view);
+                b=makeBullet("visbulplasma",200,300);p.observe(b);b.X=280;p.capture();
+                var visibleSignature:String=P["signature"](p.lights(view));
+                check(visibleSignature!=emptySignature,"new visible projectile dirties the light inputs immediately");
+                p.capture();check(P["signature"](p.lights(view))==visibleSignature,"unchanged same-tick capture does not request a redraw");
+                b.X=340;p.capture();check(P["signature"](p.lights(view))!=visibleSignature,"changed visible trajectory requests an immediate redraw");
+                visibleSignature=P["signature"](p.lights(view));
+                check(P["signature"](p.lights(view,.5))!=visibleSignature,"projectile brightness is part of the exact input key");
+                clean();for(i=0;i<30;i++)p.advance();
+                check(P["signature"](p.lights(view))==emptySignature,"expired visible trails clear their input key");
             } finally {clean();f.clear();p.clear();r.projectiles.clear();for(var key:String in saved)loc[key]=saved[key];r.projectiles.bind(w,loc);}
         }
         private function benchmark(P:Class,F:Class):void {

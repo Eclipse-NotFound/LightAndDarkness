@@ -36,6 +36,7 @@ package lad {
         public var repairs:int=0;
         public var steps:int=0;
         public var renders:int=0;
+        public var lateRenders:int=0;
         public var preparedScenes:int=0;
         private var main:*;
         private var game:*;
@@ -52,6 +53,7 @@ package lad {
         private var repairY:Number=0;
         private var repairHp:Number=0;
         private var lastRender:int=0;
+        private var lastProjectileSignature:String="";
         private var simulatedSinceFrame:Boolean=false;
         private var lastLog:int=0;
         private var notice:String="";
@@ -134,10 +136,18 @@ package lad {
                 ensureAdapter();placeLayers();
                 if(player.sost>=3 || player.disabled) projectiles.clear();
                 var transientChanged:Boolean=atmosphere.settings.projectiles && !world.onPause && projectiles.capture();
+                if(transientChanged && simulatedSinceFrame) {
+                    var currentView:Rectangle=viewport();
+                    transientChanged=!field.bounds.containsRect(currentView) ||
+                        LadProjectiles.signature(projectiles.lights(currentView,atmosphere.settings.projectileBrightness))!=lastProjectileSignature;
+                }
                 // Paused menus do not step gameplay; render only if it has not just been simulated.
                 // A slow native frame must not trigger a second illumination pass
                 // merely because its earlier simulation took longer than 60 ms.
-                if(transientChanged || (!simulatedSinceFrame && getTimer()-lastRender>60)) render();
+                if(transientChanged || (!simulatedSinceFrame && getTimer()-lastRender>60)) {
+                    if(simulatedSinceFrame)lateRenders++;
+                    render();
+                }
                 simulatedSinceFrame=false;
                 var near:Object=nearestLamp();
                 var hint:String="";
@@ -241,23 +251,28 @@ package lad {
             if(atmosphere.settings.landmarks && location && world) result=result.concat(landmarks.lights(location,world.grafon.visual,view || field.bounds));
             return result;
         }
+        private function viewport():Rectangle {
+            var visual:*=world.grafon.visual;
+            var a:Point=visual.globalToLocal(new Point(0,0));
+            var b:Point=visual.globalToLocal(new Point(main.stage.stageWidth,main.stage.stageHeight));
+            return new Rectangle(a.x,a.y,b.x-a.x,b.y-a.y);
+        }
         public function render():void {
             if(!location || !world) return;
             var nextEnvironment:String=environment.signature();
             if(nextEnvironment!=environmentKey) {environmentKey=nextEnvironment;darkZones=atmosphere.zones(location,LadStore.roomKey(location),environment);}
             syncLamps();
-            var visual:*=world.grafon.visual;
-            var a:Point=visual.globalToLocal(new Point(0,0));
-            var b:Point=visual.globalToLocal(new Point(main.stage.stageWidth,main.stage.stageHeight));
-            var view:Rectangle=new Rectangle(a.x,a.y,b.x-a.x,b.y-a.y);
+            var view:Rectangle=viewport();
             projectiles.setView(view);
             var artView:Rectangle=view.clone();artView.inflate(128,128);
             for each(var lamp:Object in lamps) {
                 var show:Boolean=artView.intersects(lamp.bounds);
                 if(lamp.holder.visible!=show) lamp.holder.visible=show;
             }
-            field.render(location,view,lights(view),ambient,
+            var renderLights:Array=lights(view);
+            field.render(location,view,renderLights,ambient,
                 atmosphere.settings.darkZones?darkZones:null,atmosphere.settings.darkness,environment);
+            lastProjectileSignature=LadProjectiles.signature(renderLights);
             lastRender=getTimer();renders++;
         }
         public function simulationStep(value:*):void {

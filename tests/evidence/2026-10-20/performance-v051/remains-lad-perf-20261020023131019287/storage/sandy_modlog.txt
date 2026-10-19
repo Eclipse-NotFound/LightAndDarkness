@@ -1,0 +1,28 @@
+[SandyMod] app id=remains-lad-perf-20261020023131019287
+[SandyMod] v1.145 loaded esmark=1 esghost=1 esper=50 esen=0 esprob=100
+[SandyMod] hooks registered
+[MUSIC] theme preload: loading
+[SandyMod] World found
+[SandyMod] keyMap built: keyLeft/keyRight/keyJump/undefined
+[STATE] L=false R=false U=false D=false J=false A=false ggX=-1 ggY=-1 focus=null
+[DIAG] esandy: roomChange id=room_0_0 allow=0 prob=100 en=0
+[SandyMod] settings hub registered via ModSettingsCarrier (tries=11)
+[STATE] L=false R=false U=false D=false J=false A=false ggX=495 ggY=801 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=910 ggY=800 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=1727.8 ggY=801 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=830 ggY=800 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=1727.8 ggY=801 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=750 ggY=800 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=1230 ggY=800 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=670 ggY=800 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=1150 ggY=800 focus=[object Stage]
+[DIAG] esandy: roomChange id=кр.бар allow=0 prob=100 en=0
+[STATE] L=false R=false U=false D=false J=false A=false ggX=2729.6000000000004 ggY=4321 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=1807.8 ggY=4320 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=2729.6000000000004 ggY=4321 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=1727.8 ggY=4320 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=2207.8 ggY=4320 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=1647.8 ggY=4320 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=2127.8 ggY=4320 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=1567.8 ggY=4320 focus=[object Stage]
+[STATE] L=false R=false U=false D=false J=false A=false ggX=2047.8 ggY=4320 focus=[object Stage]

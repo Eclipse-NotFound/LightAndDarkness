@@ -4,11 +4,11 @@ from pathlib import Path
 from datetime import datetime
 MOD=Path(__file__).resolve().parents[1]
 GAME=MOD.parents[1]
-OUT=MOD/'build/out/perf-v051-static2'
+OUT=MOD/'build/out/perf-v051-visible'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
     candidate=OUT/'LightAndDarknessMod.swf'
-    assert sha(candidate)=='1f5b83906b1433c79145a7846f60ce733d96352d6c04230cd566ea03777ff797'
+    assert sha(candidate)=='bafe52b9145194c2e9d3a08a3331236fee5f1b6a3e1f016a46d9bc288c04c47a'
     assert not (OUT/'freeze.json').exists()
     old=sha(MOD/'release/LightAndDarknessMod.swf')
     assert old=='4291b8250d607ea1c6b5be48ded48bb5fa42af37bfe0cb3ed7a2e7c84efbbf90'
@@ -23,7 +23,7 @@ def main():
     with (OUT/'decompile.log').open('w',encoding='utf8') as log:
         subprocess.run([java,'-Xmx768m','-jar',str(ffdec),'-export','script',str(OUT/'decompiled'),str(candidate)],check=True,stdout=log,stderr=subprocess.STDOUT)
     classes=sorted(p.relative_to(OUT/'decompiled').as_posix() for p in (OUT/'decompiled').rglob('*.as'))
-    assert len(classes)==20 and not any('/fe/' in p or 'Probe' in p or 'Checks' in p or 'Test' in p for p in classes),classes
+    assert len(classes)==21 and not any('/fe/' in p or 'Probe' in p or 'Checks' in p or 'Test' in p for p in classes),classes
     assert all(sha(GAME/n)==h for n,h in frozen.items()),'Dependency changed during freeze'
     assert all(sha(MOD/'src'/n)==h for n,h in inputs.items()),'Source changed during freeze'
     data=dict(version='0.5.1',sha256=sha(candidate),previousSha256=old,source=inputs,protected=frozen,classes=classes,createdAt=datetime.now().astimezone().isoformat())

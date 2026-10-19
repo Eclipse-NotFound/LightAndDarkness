@@ -1,0 +1,2 @@
+# Preserve raw test evidence bytes so archived SHA256 values survive checkout.
+/tests/evidence/** -text

@@ -151,6 +151,7 @@ package {
                         row.measuredAt=new Date().time;
                         row.lamps=r.lamps.length;row.units=w.loc.units.length;
                         row.stepStart=r.steps;if("renders" in r)row.renderStart=r.renders;
+                        if("lateRenders" in r)row.lateStart=r.lateRenders;
                         if("sceneLightBuilds" in r.field)row.sceneBuildStart=r.field.sceneLightBuilds;
                         if(row.variant=="staticlights")check(r.field.sceneLightsCache==!row.on,"static composite treatment not applied");
                         if(row.variant=="fixtures" || row.variant=="proxy") {
@@ -165,12 +166,14 @@ package {
                     if(++age>=40+cfg.samples) {
                         row.finishedAt=new Date().time;
                         row.steps=r.steps-row.stepStart;if("renders" in r)row.renders=r.renders-row.renderStart;
+                        if("lateRenders" in r)row.lateRenders=r.lateRenders-row.lateStart;
                         if("sceneLightBuilds" in r.field)row.sceneBuilds=r.field.sceneLightBuilds-row.sceneBuildStart;
                         rows.push(row);save("progress.json",rows);
                         var active:Boolean=row.variant!="module" || row.on;
                         check(!active || (r.enabled && r.location===w.loc && row.steps>=cfg.samples-5),"lighting simulation stalled case="+frameCase+" steps="+row.steps+" sost="+w.gg.sost+" pause="+w.onPause+" state="+w.allStat);
                         var measured:int=0;for each(var calls:int in row.simulationCalls)measured+=calls;
                         check(!active || measured>=cfg.samples-5,"simulation timing hook missed updates: "+measured);
+                        if(active && "lateRenders" in row)check(row.renders==row.steps+row.lateRenders,"unexplained illumination redraws");
                         if(++frameCase<4)startFrames();else nextScene();
                     }
                 }

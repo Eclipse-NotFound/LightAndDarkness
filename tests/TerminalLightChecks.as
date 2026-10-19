@@ -36,7 +36,7 @@ package {
                 board.addChild(obj.vis);obj.inter.setAct("lock",3);set.push(obj);
             }
             var field:*=new (r.field.constructor as Class)(),map:Object={spaceX:30,spaceY:10,space:[]};
-            for(var x:int=0;x<30;x++){map.space[x]=[];for(var y:int=0;y<10;y++)map.space[x][y]={opac:0};}
+            for(var x:int=0;x<30;x++){map.space[x]=[];for(var y:int=0;y<10;y++)map.space[x][y]=LightCoreChecks.tile(x,y);}
             obj=set[0];obj.vis.x=300;obj.vis.y=225;var lights:Array=collect([obj]);
             field.render(map,view,[],0.14);var dark:Number=field.sample(300,200);
             field.render(map,view,lights,0.14);var lit:Number=field.sample(300,200);check(lit>dark+0.10,"terminal changes shared illumination pixels");

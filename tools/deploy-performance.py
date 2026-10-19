@@ -11,7 +11,7 @@ import xml.etree.ElementTree as ET
 
 MOD=Path(__file__).resolve().parents[1]
 GAME=MOD.parents[1]
-OUT=MOD/'build/out/perf-v051-static2'
+OUT=MOD/'build/out/perf-v051-visible'
 TARGET=MOD/'release/LightAndDarknessMod.swf'
 RECEIPT=MOD/'state/performance-deployment-2026-10-20.json'
 BASE={'LightAndDarknessMod','ModLoaderMod','ContinuousSceneMod','RealisticVisionMod','WallBlendMod'}
@@ -20,7 +20,7 @@ def read(p):return json.loads(p.read_text('utf-8-sig'))
 def frozen():
     f=read(OUT/'freeze.json')
     assert f['version']=='0.5.1' and sha(OUT/'LightAndDarknessMod.swf')==f['sha256']
-    assert len(f['classes'])==20 and not any('/fe/' in p or 'Probe' in p or 'Test' in p for p in f['classes'])
+    assert len(f['classes'])==21 and not any('/fe/' in p or 'Probe' in p or 'Test' in p for p in f['classes'])
     assert all(sha(MOD/'src'/p)==h for p,h in f['source'].items()),'Frozen source changed'
     assert all(sha(GAME/p)==h for p,h in f['protected'].items()),'Host or dependency changed; reconcile before release'
     assert ET.parse(GAME/'application.xml').getroot().find('{*}initialWindow/{*}content').text=='pfe.swf'
@@ -33,7 +33,7 @@ def verify(folder,f):
         assert (store/'trail.done').read_text('utf8')=='PASS' and not data['error']
         assert data['version']=='0.5.1' and data['roomsLoad']==1
         count=data['checks'];entry='TrailProbeMod';loader=data['loader']
-        if mode=='verify':assert count>=35
+        if mode=='verify':assert count>=43
         elif mode=='legacy':assert count>=131
         elif mode=='cold':assert count>=4
         elif mode=='perf':
@@ -64,11 +64,11 @@ def verify(folder,f):
             label='frames:'+data['config']['variant']
             assert data['config']['full'] and label in ['frames:module','frames:staticlights']
             assert len(data['rows'])==(8 if label=='frames:module' else 4)
-            assert count>=(17 if label=='frames:module' else 12)
+            assert count>=(21 if label=='frames:module' else 16)
             for row in data['rows']:
                 assert len(row['frames'])==data['config']['samples']
                 if label=='frames:staticlights' or row['on']:
-                    assert row['steps']>=data['config']['samples']-5 and row['renders']==row['steps']
+                    assert row['steps']>=data['config']['samples']-5 and row['renders']==row['steps']+row['lateRenders']
     else:
         label='machines';entry='LightMachineProbeMod';loader=read(store/'loader.json')
         log=(store/'machine-test.log').read_text('utf8');assert 'SUITE_PASS' in log and not re.search(r'^FAIL',log,re.M)

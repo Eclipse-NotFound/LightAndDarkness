@@ -1,0 +1,25 @@
+{
+  "checks": 0,
+  "roomsLoad": 1,
+  "version": "0.5.1",
+  "mode": "regression",
+  "error": "",
+  "loader": {
+    "ok_RealisticVisionMod": "run_1792436099909_701610|init @1792436100634",
+    "session": "run_1792436099909_701610",
+    "boot_start": "run_1792436099909_701610|v2 run=run_1792436099909_701610 @1792436099920",
+    "requested_WallBlendMod": "run_1792436099909_701610|line 24 @1792436099969",
+    "boot": "run_1792436099909_701610|v2 col=2 requested=6 @1792436099974",
+    "ok_ContinuousSceneMod": "run_1792436099909_701610|init @1792436100608",
+    "ok_LightAndDarknessMod": "run_1792436099909_701610|init @1792436100588",
+    "requested_ModLoaderMod": "run_1792436099909_701610|line 12 @1792436099953",
+    "requested_LightAndDarknessMod": "run_1792436099909_701610|line 23 @1792436099965",
+    "requested_ContinuousSceneMod": "run_1792436099909_701610|line 21 @1792436099960",
+    "requested_RealisticVisionMod": "run_1792436099909_701610|line 15 @1792436099957",
+    "ok_ModLoaderMod": "run_1792436099909_701610|init @1792436100599",
+    "ok_WallBlendMod": "run_1792436099909_701610|init @1792436100574",
+    "requested_LandmarkProbeMod": "run_1792436099909_701610|line 22 @1792436099962",
+    "ok_LandmarkProbeMod": "run_1792436099909_701610|init @1792436100615"
+  },
+  "samples": []
+}

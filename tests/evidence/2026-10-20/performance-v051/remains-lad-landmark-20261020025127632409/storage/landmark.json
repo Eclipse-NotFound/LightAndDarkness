@@ -1,0 +1,25 @@
+{
+  "samples": [],
+  "version": "0.5.1",
+  "mode": "regression",
+  "checks": 0,
+  "error": "Error: 4151 BOOT remains-lad-landmark-20261020025127632409\n10565 NEW_GAME\n14029 BORDER entry native borders face outside scene scales=-2.1089887640449425,-0.6741573033707866,2.1764044943820213,0.6741573033707866 camera=2,0.7416666666666667,1424,861,1920,1000 scene=false\n14030 PASS entry native borders face outside scene\n14186 PASS entry native borders face outside scene full-stage native-camera oracle\n14187 ATTACHED lamps=9 room=loc0_0 large=false\n14188 LAMP light4:1440.00:680.00:1:1:0 at=1480,689 bounds=(x=1440, y=680, w=80, h=18)\n14193 LAMP light4:1760.00:680.00:1:1:0 at=1800,689 bounds=(x=1760, y=680, w=80, h=18)\n14195 LAMP light4:1600.00:680.00:1:1:0 at=1640,689 bounds=(x=1600, y=680, w=80, h=18)\n14196 LAMP light1:200.00:400.00:1:1:0 at=220,420 bounds=(x=200, y=400, w=40, h=40)\n14197 LAMP light1:320.00:400.00:1:1:0 at=340,420 bounds=(x=320, y=400, w=40, h=40)\n14199 LAMP light5:1800.00:200.00:1:1:0 at=1820,220 bounds=(x=1800, y=200, w=40, h=40)\n14200 LAMP stlight1:1800.00:400.00:1:1:0 at=1820,420 bounds=(x=1800, y=400, w=40, h=40)\n14201 LAMP light3:320.00:200.00:1:1:0 at=360,220 bounds=(x=320, y=204.5, w=80, h=31)\n14204 LAMP light4:920.00:40.00:1:1:0 at=960,49 bounds=(x=920, y=40, w=80, h=18)\n16038 PASS native room fixture conversion\n16041 FAIL TypeError: Error #1034 TypeError: Error #1034\n\tat lad::LadLightField/sceneTerrainChanged()\n\tat lad::LadLightField/render()\n\tat LightCoreChecks$/run()\n\tat LightAndDarknessTest/frame()\n Error: 4151 BOOT remains-lad-landmark-20261020025127632409\n10565 NEW_GAME\n14029 BORDER entry native borders face outside scene scales=-2.1089887640449425,-0.6741573033707866,2.1764044943820213,0.6741573033707866 camera=2,0.7416666666666667,1424,861,1920,1000 scene=false\n14030 PASS entry native borders face outside scene\n14186 PASS entry native borders face outside scene full-stage native-camera oracle\n14187 ATTACHED lamps=9 room=loc0_0 large=false\n14188 LAMP light4:1440.00:680.00:1:1:0 at=1480,689 bounds=(x=1440, y=680, w=80, h=18)\n14193 LAMP light4:1760.00:680.00:1:1:0 at=1800,689 bounds=(x=1760, y=680, w=80, h=18)\n14195 LAMP light4:1600.00:680.00:1:1:0 at=1640,689 bounds=(x=1600, y=680, w=80, h=18)\n14196 LAMP light1:200.00:400.00:1:1:0 at=220,420 bounds=(x=200, y=400, w=40, h=40)\n14197 LAMP light1:320.00:400.00:1:1:0 at=340,420 bounds=(x=320, y=400, w=40, h=40)\n14199 LAMP light5:1800.00:200.00:1:1:0 at=1820,220 bounds=(x=1800, y=200, w=40, h=40)\n14200 LAMP stlight1:1800.00:400.00:1:1:0 at=1820,420 bounds=(x=1800, y=400, w=40, h=40)\n14201 LAMP light3:320.00:200.00:1:1:0 at=360,220 bounds=(x=320, y=204.5, w=80, h=31)\n14204 LAMP light4:920.00:40.00:1:1:0 at=960,49 bounds=(x=920, y=40, w=80, h=18)\n16038 PASS native room fixture conversion\n16041 FAIL TypeError: Error #1034 TypeError: Error #1034\n\tat lad::LadLightField/sceneTerrainChanged()\n\tat lad::LadLightField/render()\n\tat LightCoreChecks$/run()\n\tat LightAndDarknessTest/frame()\n\n\tat LandmarkProbeMod/step()",
+  "roomsLoad": 1,
+  "loader": {
+    "ok_LandmarkProbeMod": "run_1792435895330_882401|init @1792435896096",
+    "session": "run_1792435895330_882401",
+    "ok_ContinuousSceneMod": "run_1792435895330_882401|init @1792435896077",
+    "requested_LightAndDarknessMod": "run_1792435895330_882401|line 23 @1792435895379",
+    "requested_ModLoaderMod": "run_1792435895330_882401|line 12 @1792435895366",
+    "ok_RealisticVisionMod": "run_1792435895330_882401|init @1792435896106",
+    "boot_start": "run_1792435895330_882401|v2 run=run_1792435895330_882401 @1792435895340",
+    "ok_WallBlendMod": "run_1792435895330_882401|init @1792435896085",
+    "requested_RealisticVisionMod": "run_1792435895330_882401|line 15 @1792435895369",
+    "requested_ContinuousSceneMod": "run_1792435895330_882401|line 21 @1792435895372",
+    "boot": "run_1792435895330_882401|v2 col=2 requested=6 @1792435895384",
+    "requested_WallBlendMod": "run_1792435895330_882401|line 24 @1792435895382",
+    "ok_ModLoaderMod": "run_1792435895330_882401|init @1792435896122",
+    "ok_LightAndDarknessMod": "run_1792435895330_882401|init @1792435895965",
+    "requested_LandmarkProbeMod": "run_1792435895330_882401|line 22 @1792435895375"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "error": "",
+  "version": "0.5.1",
+  "frameRate": 30,
+  "checks": 1,
+  "rows": [
+    {
+      "scene": 0,
+      "width": 48,
+      "land": "rbl",
+      "height": 25,
+      "regions": 1,
+      "results": [
+        {
+          "candidate": false,
+          "kind": "idle",
+          "rebuilds": 39,
+          "calls": 100,
+          "ms": 123
+        },
+        {
+          "candidate": true,
+          "kind": "idle",
+          "rebuilds": 39,
+          "calls": 100,
+          "ms": 89
+        },
+        {
+          "candidate": true,
+          "kind": "idle",
+          "rebuilds": 39,
+          "calls": 100,
+          "ms": 88
+        },
+        {
+          "candidate": false,
+          "kind": "idle",
+          "rebuilds": 39,
+          "calls": 100,
+          "ms": 114
+        },
+        {
+          "candidate": false,
+          "kind": "pan",
+          "rebuilds": 232,
+          "calls": 100,
+          "ms": 259
+        },
+        {
+          "candidate": true,
+          "kind": "pan",
+          "rebuilds": 232,
+          "calls": 100,
+          "ms": 241
+        },
+        {
+          "candidate": true,
+          "kind": "pan",
+          "rebuilds": 232,
+          "calls": 100,
+          "ms": 234
+        },
+        {
+          "candidate": false,
+          "kind": "pan",
+          "rebuilds": 232,
+          "calls": 100,
+          "ms": 253
+        },
+        {
+          "candidate": false,
+          "kind": "aim",
+          "rebuilds": 232,
+          "calls": 100,
+          "ms": 167
+        },
+        {
+          "candidate": true,
+          "kind": "aim",
+          "rebuilds": 232,
+          "calls": 100,
+          "ms": 152
+        },
+        {
+          "candidate": true,
+          "kind": "aim",
+          "rebuilds": 232,
+          "calls": 100,
+          "ms": 154
+        },
+        {
+          "candidate": false,
+          "kind": "aim",
+          "rebuilds": 232,
+          "calls": 100,
+          "ms": 158
+        }
+      ]
+    },
+    {
+      "scene": 1,
+      "width": 240,
+      "land": "random_mane",
+      "height": 125,
+      "regions": 25,
+      "results": [
+        {
+          "candidate": false,
+          "kind": "idle",
+          "rebuilds": 11,
+          "calls": 100,
+          "ms": 133
+        },
+        {
+          "candidate": true,
+          "kind": "idle",
+          "rebuilds": 11,
+          "calls": 100,
+          "ms": 75
+        },
+        {
+          "candidate": true,
+          "kind": "idle",
+          "rebuilds": 11,
+          "calls": 100,
+          "ms": 73
+        },
+        {
+          "candidate": false,
+          "kind": "idle",
+          "rebuilds": 11,
+          "calls": 100,
+          "ms": 127
+        },
+        {
+          "candidate": false,
+          "kind": "pan",
+          "rebuilds": 204,
+          "calls": 100,
+          "ms": 251
+        },
+        {
+          "candidate": true,
+          "kind": "pan",
+          "rebuilds": 204,
+          "calls": 100,
+          "ms": 176
+        },
+        {
+          "candidate": true,
+          "kind": "pan",
+          "rebuilds": 204,
+          "calls": 100,
+          "ms": 173
+        },
+        {
+          "candidate": false,
+          "kind": "pan",
+          "rebuilds": 204,
+          "calls": 100,
+          "ms": 243
+        },
+        {
+          "candidate": false,
+          "kind": "aim",
+          "rebuilds": 204,
+          "calls": 100,
+          "ms": 181
+        },
+        {
+          "candidate": true,
+          "kind": "aim",
+          "rebuilds": 204,
+          "calls": 100,
+          "ms": 137
+        },
+        {
+          "candidate": true,
+          "kind": "aim",
+          "rebuilds": 204,
+          "calls": 100,
+          "ms": 197
+        },
+        {
+          "candidate": false,
+          "kind": "aim",
+          "rebuilds": 204,
+          "calls": 100,
+          "ms": 198
+        }
+      ]
+    }
+  ],
+  "loader": {
+    "boot_start": "run_1792434173275_247212|v2 run=run_1792434173275_247212 @1792434173281",
+    "ok_WallBlendMod": "run_1792434173275_247212|init @1792434173939",
+    "requested_ModLoaderMod": "run_1792434173275_247212|line 12 @1792434173303",
+    "ok_LightAndDarknessMod": "run_1792434173275_247212|init @1792434173976",
+    "requested_LightingPerfProbeMod": "run_1792434173275_247212|line 23 @1792434173312",
+    "requested_WallBlendMod": "run_1792434173275_247212|line 24 @1792434173317",
+    "boot": "run_1792434173275_247212|v2 col=2 requested=6 @1792434173319",
+    "requested_RealisticVisionMod": "run_1792434173275_247212|line 15 @1792434173305",
+    "requested_ContinuousSceneMod": "run_1792434173275_247212|line 21 @1792434173308",
+    "ok_ContinuousSceneMod": "run_1792434173275_247212|init @1792434173956",
+    "session": "run_1792434173275_247212",
+    "ok_ModLoaderMod": "run_1792434173275_247212|init @1792434173946",
+    "ok_RealisticVisionMod": "run_1792434173275_247212|init @1792434173963",
+    "requested_LightAndDarknessMod": "run_1792434173275_247212|line 22 @1792434173310",
+    "ok_LightingPerfProbeMod": "run_1792434173275_247212|init @1792434173842"
+  },
+  "ok": true,
+  "config": {
+    "mode": "bench",
+    "full": false,
+    "variant": "module",
+    "height": 900,
+    "candidate": "mods/LightAndDarkness/build/out/perf-v051-typed/LightAndDarknessMod.swf",
+    "roomOnly": false,
+    "reference": "mods/LightAndDarkness/build/out/perf-v051-static2/LightAndDarknessMod.swf",
+    "samples": 90,
+    "width": 1440
+  }
+}

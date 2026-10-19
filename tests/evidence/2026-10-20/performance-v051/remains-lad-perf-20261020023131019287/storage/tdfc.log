@@ -1,0 +1,12 @@
+Mon Oct 19 18:31:45 2026 UTC [TDFC] version v0.6.4 session=1792434705077
+Mon Oct 19 18:31:45 2026 UTC [TDFC] scene-compat v0.6.4-scene1 distant-enemy scheduling available
+Mon Oct 19 18:31:49 2026 UTC [TDFC] room reset
+Mon Oct 19 18:31:54 2026 UTC [TDFC] room reset
+Mon Oct 19 18:32:02 2026 UTC [TDFC] heartbeat tick=150 units=0 cost=0ms
+Mon Oct 19 18:32:09 2026 UTC [TDFC] heartbeat tick=300 units=0 cost=0ms
+Mon Oct 19 18:32:15 2026 UTC [TDFC] heartbeat tick=450 units=0 cost=1ms
+Mon Oct 19 18:32:25 2026 UTC [TDFC] room reset
+Mon Oct 19 18:32:33 2026 UTC [TDFC] heartbeat tick=600 units=30 cost=3ms
+Mon Oct 19 18:32:52 2026 UTC [TDFC] heartbeat tick=750 units=30 cost=2ms
+Mon Oct 19 18:33:05 2026 UTC [TDFC] heartbeat tick=900 units=25 cost=0ms
+Mon Oct 19 18:33:23 2026 UTC [TDFC] heartbeat tick=1050 units=25 cost=1ms

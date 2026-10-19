@@ -32,7 +32,7 @@ package {
         public function run():void {
             try {
                 var map:Object={spaceX:30,spaceY:20,space:[]};
-                for(var x:int=0;x<30;x++){map.space[x]=[];for(var y:int=0;y<20;y++)map.space[x][y]={opac:0};}
+                for(var x:int=0;x<30;x++){map.space[x]=[];for(var y:int=0;y<20;y++)map.space[x][y]=LightCoreChecks.tile(x,y);}
                 var view:Rectangle=new Rectangle(0,0,800,600);
                 var light:Object={id:"headlamp",x:180,y:300,radius:440,color:0xffffff,power:1,angle:-0.27,cone:Math.PI*0.58};
                 var old:*=new LadLightFieldBeforeAA(),fixed:*=new Field();
