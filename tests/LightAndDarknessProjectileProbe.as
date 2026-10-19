@@ -115,7 +115,7 @@ package {
             }
             ids.sort();metrics.visualCoverage=coverage;metrics.visualCount=ids.length;
             check(ids.length==68,"native AllData enumerates all 68 distinct projectile visual identifiers including variants");
-            var dark:String=",dart,saw,spikenail,ship,venom,plevok,pinkplevok,kapl,pinkkapl,pink,gren40,gren50,";
+            var dark:String=",dart,saw,spikenail,ship,venom,plevok,pinkplevok,kapl,pinkkapl,pink,gren40,";
             for each(id in ids) {
                 var row:Object={visual:id,nativeClass:"visbul"+id,expectedLit:dark.indexOf(","+id+",")<0};coverage.push(row);
                 var actual:*=bullet("visbul"+id,0,180,280);actual.spring=2;
@@ -151,7 +151,7 @@ package {
                 b.tipDamage=6;check(classifiedColour(b)==0xA0FF9C,"live plasma ammo modification wins over ballistic visual");
                 b.tipDamage=8;check(classifiedColour(b)==0x9DE6FF,"live EMP ammo receives electric light profile");
                 b=bullet("visbullaser",5);b.spring=2;b.X=360;
-                check(classifiedColour(b)==0xFF9A88 && classifiedLights(b).length>=3,"native laser visual with spring stretch receives beam profile");
+                check(classifiedColour(b)==0xFF9A88 && classifiedLights(b).length>=2,"native laser visual with spring stretch receives beam profile");
                 b=bullet("visualBullet",0);b.spring=3;
                 check(classifiedColour(b)==0xFFE3AA,"spring stretch alone does not classify ballistic shot as beam");
                 var Phis:Class=cls("fe.weapon.PhisBullet");var grenade:*=new Phis(world.gg,180,280,cls("visbulgren40"));
@@ -207,8 +207,8 @@ package {
 
                 local=tracker();b=bullet("visbullaser",5,120,200);b.spring=2;local.observe(b);b.X=360;local.capture();live=allLights(local);
                 var minimum:Number=9999,maximum:Number=-9999;
-                for each(light in live) if(String(light.id).indexOf("trail:")>=0) {minimum=Math.min(minimum,light.x);maximum=Math.max(maximum,light.x);}
-                check(maximum-minimum>100 && minimum>=120 && maximum<=360,"beam light nodes follow actual native start and endpoint");
+                for each(light in live) if(light.trail) for each(var segment:Object in light.trail) {minimum=Math.min(minimum,segment.ax,segment.bx);maximum=Math.max(maximum,segment.ax,segment.bx);}
+                check(maximum-minimum>100 && minimum>=120 && maximum<=360,"beam light ribbon follows actual native start and endpoint");
 
                 // Rendering an already-resolved long native beam must concentrate its bounded
                 // nodes around the current viewport instead of spacing them across the whole map.

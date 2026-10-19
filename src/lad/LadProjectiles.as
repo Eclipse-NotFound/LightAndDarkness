@@ -16,6 +16,8 @@ package lad {
         private var records:Array=[];
         private var known:Dictionary=new Dictionary(true);
         private var pulses:Array=[];
+        private var pulseById:Object={};
+        private var evict:int=0;
         private var serial:int=0;
         private var emitters:Class;
         private var grafon:Class;
@@ -30,7 +32,7 @@ package lad {
             grafon=getDefinitionByName("fe.graph.Grafon") as Class;
         }
         public function clear():void {
-            records=[];pulses=[];known=new Dictionary(true);loc=null;world=null;clock=0;view=null;
+            records=[];pulses=[];pulseById={};evict=0;known=new Dictionary(true);loc=null;world=null;clock=0;view=null;
         }
         public function setView(value:Rectangle):void {view=value.clone();}
         public function get trackedCount():int {return records.length;}
@@ -46,7 +48,7 @@ package lad {
             if(records.length>=MAX_TRACKED) {dropped++;return;}
             // Bullet constructor has not yet received Weapon.setBullet fields here.
             records.push({o:o,id:++serial,bullet:bullet,p:null,started:false,hit:false,
-                x:Number(o.X),y:Number(o.Y),lastTick:-1});captured++;
+                x:Number(o.X),y:Number(o.Y),path:[],lastTick:-1});captured++;
         }
         private function partProfile(o:*):Object {
             if(!emitters || !grafon) return null;
@@ -70,7 +72,7 @@ package lad {
         public function advance():void {
             if(!loc) return;
             clock+=1/30;
-            for(var i:int=pulses.length-1;i>=0;i--) if(pulses[i].until<=clock) pulses.splice(i,1);
+            for(var i:int=pulses.length-1;i>=0;i--) if(pulses[i].until<=clock) {delete pulseById[pulses[i].id];pulses.splice(i,1);}
             // Fallback discovers objects already present when the mod/scene was enabled.
             var object:*=loc.firstObj;scanCount=0;
             while(object && scanCount<2048) {observe(object);object=object.nobj;scanCount++;}
@@ -103,7 +105,7 @@ package lad {
                 if(p.flight && (moved || r.lastTick!=tick) && !o.isExpl && (!o.babah || !r.hit)) {
                     var sx:Number=p.beam?Number(o.begx):r.x;
                     var sy:Number=p.beam?Number(o.begy):r.y;
-                    trail(r.id,sx,sy,x,y,p);
+                    trail(r,sx,sy,x,y,p);
                     changed=true;
                 }
                 if(!r.hit && (o.isExpl || o.babah)) {
@@ -135,28 +137,87 @@ package lad {
             var id:String=damage==3?"fireexpl":damage==6?"plaexpl":damage==8?"impexpl":damage==10?"acidexpl":damage==11?"iceexpl":damage==15?"balefire":Number(o.inWater)>0?"explw":"expl";
             return LadProjectileProfiles.emitter(id);
         }
-        private function trail(id:int,sx:Number,sy:Number,x:Number,y:Number,p:Object):void {
+        private function trail(record:Object,sx:Number,sy:Number,x:Number,y:Number,p:Object):void {
             var dx:Number=x-sx,dy:Number=y-sy,length:Number=Math.sqrt(dx*dx+dy*dy);
             if(!isFinite(length)) return;
-            if(p.beam && view) {
-                var clipped:Array=clip(sx,sy,dx,dy,p.radius);
-                if(!clipped) return;
-                x=sx+dx*clipped[1];y=sy+dy*clipped[1];
-                sx+=dx*clipped[0];sy+=dy*clipped[0];
-                dx=x-sx;dy=y-sy;length=Math.sqrt(dx*dx+dy*dy);
+            var path:Array=record.path;
+            if(p.beam) path=[{x:sx,y:sy},{x:x,y:y}];
+            else {
+                if(path.length==0)path.push({x:sx,y:sy});
+                var last:Object=path[path.length-1];
+                if(Math.abs(x-last.x)+Math.abs(y-last.y)>0.5) {
+                    // Coalesce straight motion, retain bends of homing/ballistic shots.
+                    if(path.length>1) {
+                        var prev:Object=path[path.length-2];
+                        var ux:Number=last.x-prev.x,uy:Number=last.y-prev.y,vx:Number=x-last.x,vy:Number=y-last.y;
+                        var product:Number=Math.sqrt((ux*ux+uy*uy)*(vx*vx+vy*vy));
+                        if(product>0 && (ux*vx+uy*vy)/product>0.997)path.pop();
+                    }
+                    path.push({x:x,y:y});
+                }
+                while(path.length>12)path.shift();
             }
-            // Beam segments sample the true native endpoint, never an extrapolated shot.
-            var count:int=Math.min(p.beam?16:4,Math.max(1,Math.ceil(length/(p.beam?100:65))));
-            for(var n:int=0;n<count;n++) {
-                var t:Number=(n+0.5)/count;
-                var px:Number=sx+dx*t,py:Number=sy+dy*t;
-                // Pellets/flame at the same place share a glow instead of adding
-                // dozens of identical lights and washing the entire room white.
-                if(free(px,py)) put("trail:"+int(px/48)+":"+int(py/48)+":"+uint(p.color),px,py,p.radius,p.power*(p.beam?0.8:0.65),p.color,p.tail);
+            var desired:Number=p.shape=="streak"?Math.min(p.length,Math.max(88,Number(record.o.vel)*0.88)):p.length;
+            var segments:Array=[],remaining:Number=p.beam?1e12:desired,skip:Number=p.rear,walked:Number=0;
+            var minX:Number=1e20,minY:Number=1e20,maxX:Number=-1e20,maxY:Number=-1e20;
+            for(var n:int=path.length-1;n>0 && remaining>0 && segments.length<4;n--) {
+                var a:Object=path[n-1],b:Object=path[n];dx=b.x-a.x;dy=b.y-a.y;length=Math.sqrt(dx*dx+dy*dy);
+                if(length<0.01)continue;
+                if(skip>=length){skip-=length;continue;}
+                var end:Number=1-skip/length,start:Number=Math.max(0,end-remaining/length);skip=0;
+                var ax:Number=a.x+dx*start,ay:Number=a.y+dy*start,bx:Number=a.x+dx*end,by:Number=a.y+dy*end;
+                var used:Number=(end-start)*length;
+                var tail:Number=p.beam?1:Math.max(p.taper,1-(walked+used)/desired*(1-p.taper));
+                var head:Number=p.beam?1:Math.max(p.taper,1-walked/desired*(1-p.taper));
+                remaining-=used;walked+=used;
+                // Most short paths are wholly visible. Avoid allocating a clipped
+                // rectangle and slab arrays for every pellet on every simulation step.
+                if(view && (Math.min(ax,bx)<Math.max(0.01,view.left-p.width) || Math.max(ax,bx)>Math.min(loc.spaceX*40-0.01,view.right+p.width) ||
+                    Math.min(ay,by)<Math.max(0.01,view.top-p.width) || Math.max(ay,by)>Math.min(loc.spaceY*40-0.01,view.bottom+p.width))) {
+                    var clipped:Array=clip(ax,ay,bx-ax,by-ay,p.width);
+                    if(!clipped)continue;
+                    var oldTail:Number=tail;
+                    tail=oldTail+(head-oldTail)*clipped[0];head=oldTail+(head-oldTail)*clipped[1];
+                    dx=bx-ax;dy=by-ay;bx=ax+dx*clipped[1];by=ay+dy*clipped[1];ax+=dx*clipped[0];ay+=dy*clipped[0];
+                }
+                // Clip at the first solid tile, including a last endpoint inside a wall.
+                // An already penetrating projectile can illuminate again on its next clear segment.
+                var safe:Number=clearFraction(ax,ay,bx,by);
+                if(safe<=0)continue;
+                bx=ax+(bx-ax)*safe;by=ay+(by-ay)*safe;head=tail+(head-tail)*safe;
+                segments.push({ax:ax,ay:ay,bx:bx,by:by,width:p.width,tail:tail,head:head});
+                minX=Math.min(minX,ax,bx);minY=Math.min(minY,ay,by);maxX=Math.max(maxX,ax,bx);maxY=Math.max(maxY,ay,by);
             }
+            // Stationary glowing orbs keep a compact head; no invented direction/flight path.
+            if(segments.length==0 && length<0.5 && free(x,y) && p.shape!="streak" && p.shape!="exhaust" && !p.beam) {
+                segments.push({ax:x,ay:y,bx:x,by:y,width:p.width,tail:1,head:1});minX=maxX=x;minY=maxY=y;
+            }
+            if(segments.length==0)return;
+            var id:String="trail:"+record.id;
+            var value:Object=allocate(id);value.x=(minX+maxX)/2;value.y=(minY+maxY)/2;
+            value.radius=Math.max(maxX-minX,maxY-minY)/2+p.width;
+            value.power=p.power*(p.beam?0.8:0.65);value.color=p.color;value.born=clock;value.life=p.tail;value.until=clock+p.tail;
+            value.trail=segments;value.width=p.width;
+            if(!value.rect)value.rect=new Rectangle();
+            value.rect.setTo(minX-p.width,minY-p.width,maxX-minX+2*p.width,maxY-minY+2*p.width);
+        }
+        private function clearFraction(ax:Number,ay:Number,bx:Number,by:Number):Number {
+            if(!free(ax,ay))return 0;
+            var dx:Number=bx-ax,dy:Number=by-ay;
+            var cx:int=Math.floor(ax/40),cy:int=Math.floor(ay/40),stepX:int=dx<0?-1:1,stepY:int=dy<0?-1:1;
+            var nx:Number=Math.abs(dx)<0.00001?1e20:((cx+(stepX>0?1:0))*40-ax)/dx;
+            var ny:Number=Math.abs(dy)<0.00001?1e20:((cy+(stepY>0?1:0))*40-ay)/dy;
+            var tx:Number=Math.abs(dx)<0.00001?1e20:Math.abs(40/dx),ty:Number=Math.abs(dy)<0.00001?1e20:Math.abs(40/dy),t:Number=0;
+            while(Math.min(nx,ny)<1) {
+                if(nx<ny){t=nx;nx+=tx;cx+=stepX;}else{t=ny;ny+=ty;cy+=stepY;}
+                if(cx<0||cy<0||cx>=loc.spaceX||cy>=loc.spaceY||Number(loc.space[cx][cy].opac)>=0.99)return Math.max(0,t-0.001);
+            }
+            return 1;
         }
         private function clip(sx:Number,sy:Number,dx:Number,dy:Number,radius:Number):Array {
             var rect:Rectangle=view.clone();rect.inflate(radius,radius);
+            rect=rect.intersection(new Rectangle(0.01,0.01,loc.spaceX*40-0.02,loc.spaceY*40-0.02));
+            if(rect.isEmpty())return null;
             var start:Number=0,end:Number=1;
             var origins:Array=[sx,sy],deltas:Array=[dx,dy],low:Array=[rect.left,rect.top],high:Array=[rect.right,rect.bottom];
             for(var i:int=0;i<2;i++) {
@@ -197,12 +258,9 @@ package lad {
         }
         private function put(id:String,x:Number,y:Number,radius:Number,power:Number,color:uint,life:Number):void {
             if(!isFinite(radius) || !isFinite(power) || life<=0) return;
-            var value:Object=null;
-            for each(var entry:Object in pulses) if(entry.id==id) {value=entry;break;}
-            if(!value) {
-                if(pulses.length>=MAX_PULSES) {pulses.shift();dropped++;}
-                value={id:id};pulses.push(value);
-            } else if(id.indexOf("blast:")==0 && value.until>clock) {
+            var value:Object=pulseById[id];
+            if(!value) value=allocate(id);
+            else if(id.indexOf("blast:")==0 && value.until>clock) {
                 // The same detonation can emit a generic flash plus a coloured
                 // special effect. The stronger/larger effect owns its colour.
                 if(value.power>power || (value.power==power && value.radius>radius)) color=value.color;
@@ -213,13 +271,20 @@ package lad {
             value.power=Math.min(1.1,Math.max(0,power));value.color=color;
             value.born=clock;value.life=life;value.until=clock+life;
         }
+        private function allocate(id:String):Object {
+            var value:Object=pulseById[id];if(value)return value;
+            value={id:id};
+            if(pulses.length>=MAX_PULSES){var slot:int=evict++%MAX_PULSES,old:Object=pulses[slot];delete pulseById[old.id];pulses[slot]=value;dropped++;}
+            else pulses.push(value);
+            pulseById[id]=value;return value;
+        }
         public function lights(view:Rectangle,brightness:Number=1):Array {
             var result:Array=[];
             for each(var p:Object in pulses) {
-                if(p.until<=clock || !view.intersects(new Rectangle(p.x-p.radius,p.y-p.radius,2*p.radius,2*p.radius))) continue;
+                if(p.until<=clock || !view.intersects(p.rect?p.rect:new Rectangle(p.x-p.radius,p.y-p.radius,2*p.radius,2*p.radius))) continue;
                 var remaining:Number=Math.max(0,Math.min(1,(p.until-clock)/p.life));
                 var power:Number=p.power*remaining*remaining*brightness;
-                result.push({id:"projectile:"+p.id,x:p.x,y:p.y,radius:p.radius,color:p.color,power:power,angle:0,cone:Math.PI*2,transient:true});
+                result.push({id:"projectile:"+p.id,x:p.x,y:p.y,radius:p.radius,color:p.color,power:power,angle:0,cone:Math.PI*2,transient:true,trail:p.trail,width:p.width});
             }
             if(result.length>MAX_LIGHTS) {
                 var cx:Number=view.x+view.width/2,cy:Number=view.y+view.height/2;

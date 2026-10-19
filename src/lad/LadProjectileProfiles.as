@@ -10,6 +10,41 @@ package lad {
         ];
 
         public static function bullet(b:*):Object {
+            var p:Object=classify(b);
+            if(!p || !p.flight) return p;
+            var v:String=shortName(field(b,"vis",null)).toLowerCase().replace("visbul","");
+            // World-pixel spill width, not a replacement for the native sprite.
+            // Keep compact/orb silhouettes distinct from a stretched tracer.
+            p.shape="bolt";p.width=62;p.length=90;p.taper=0.35;p.rear=0;
+            if(p.beam) {p.shape="beam";p.width=42;p.length=2400;p.taper=1;}
+            else if(v=="visualbullet" || v=="visualrainbow" || v=="rail") {
+                p.shape="streak";p.width=v=="rail"?36:28;p.length=160;p.taper=0.16;
+                if(p.name!="tracer" && v!="rail")p.width=34;
+            } else if(v=="rocket" || v=="rocketgas") {
+                p.shape="exhaust";p.width=48;p.length=110;p.taper=0.12;p.rear=12;
+            } else if(contains("flame,flame2,dflame,arson",v)) {
+                p.shape="flame";p.width=70;p.length=110;p.taper=0.35;
+            } else if(v=="blump" || v=="plasma3" || v=="plasma3a" || v=="plasma5") {
+                p.width=48;p.length=120;p.taper=0.18;
+            } else if(contains("baleegg,eclipse,plasma2,plasma4,plasma6,ttplasma,ttnavod,ttmoln,ttzalp,fireball,flare,bloodpsy,defwave,psy",v)) {
+                p.shape="orb";p.width=v=="eclipse" || v=="ttzalp"?86:70;p.length=45;p.taper=0.45;
+            } else if(contains("lightning,spark,pulse,ttmoln,skybolt,sel",v)) {
+                p.shape="arc";p.width=48;p.length=115;p.taper=0.22;
+            } else if(v=="blade" || v=="blood" || v=="ice") {
+                p.shape="shard";p.width=42;p.length=72;p.taper=0.18;
+            }
+            // Native atlas distinguishes coloured variants which share a damage code.
+            if(v=="plasma2" || v=="ttplasma" || v=="flame2")p.color=0xBCEFFF;
+            else if(v=="plasma5" || v=="plasma6")p.color=0xFFA4D6;
+            else if(v=="ttnavod" || v=="dflame")p.color=0xB2FF9C;
+            else if(v=="ttzalp")p.color=0xFFD092;
+            else if(v=="laser4" || v=="mray")p.color=0xA7FFD2;
+            else if(v=="laser8")p.color=0xB8FF94;
+            else if(v=="laser7")p.color=0xFFA6B5;
+            else if(v=="lightning" || v=="spark")p.color=0xFFF2A4;
+            return p;
+        }
+        private static function classify(b:*):Object {
             if(b == null) return null;
             var type:String = getQualifiedClassName(b);
             if(type != "fe.weapon::Bullet" && type != "fe.weapon::SmartBullet" &&
@@ -26,12 +61,15 @@ package lad {
             var p:Object;
 
             // Thrown canisters and launched grenade shells are unlit until detonation.
-            if(type == "fe.weapon::PhisBullet" || v == "gren40" || v == "gren50" ||
+            if((type == "fe.weapon::PhisBullet" && v!="gren50") || v == "gren40" ||
                 int(field(weapon,"tip",0)) == 4) {
                 p = explosion(damage,String(field(weapon,"visexpl","")));
                 if(p) { p.name = "grenade-" + p.name; p.flight = false; p.muzzle = false; }
                 return p;
             }
+            // a_expl uses grenade physics (phisbul=1), but its native gren50 art
+            // is a luminous magical bolt. Ordinary thrown shells remain unlit.
+            if(v=="gren50")return profile("explosive-spell",0xFFBD9D,105,0.65,0.12,230,0.4,false,true,true);
 
             // Coloured liquid, sharp projectiles and mechanical debris are not light sources.
             if(contains("dart,saw,spikenail,ship,venom,plevok,pinkplevok,kapl,pinkkapl,pink",v)) return null;
