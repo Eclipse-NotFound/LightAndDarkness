@@ -1,0 +1,19 @@
+{
+  "applicationID": "remains-lad-perf-20261020003858034182",
+  "pid": 52340,
+  "desktop": "RemainsTest-c79a9008984b44bb93ec18adb27eccfc",
+  "startedMs": 1792427942704,
+  "qos": {
+    "before": [
+      0,
+      0
+    ],
+    "applied": [
+      1,
+      0
+    ]
+  },
+  "otherAir": [],
+  "endedMs": 1792427969273,
+  "performanceEligible": true
+}

@@ -1,0 +1,7 @@
+4129 BOOT remains-lad-projectile-trails-20261020004426693300 mode=cold
+13632 PRODUCTION_CLASSES lad::LadProjectiles / lad::LadLightField
+14662 PASS production runtime exposes projectile service
+14665 PASS cold native slot restores disabled projectile preference
+14665 PASS cold native slot restores projectile brightness preference
+14667 PASS cold load never resurrects saved projectile lights
+14670 SUITE_PASS

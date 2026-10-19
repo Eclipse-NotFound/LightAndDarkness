@@ -1,0 +1,1192 @@
+[
+  {
+    "id": "visbularson",
+    "frames": 23,
+    "laser": false,
+    "bounds": {
+      "height": 5.3,
+      "y": -2.65,
+      "width": 17.25,
+      "x": -9.8
+    },
+    "frame6Bounds": {
+      "height": 9,
+      "y": -4.5,
+      "width": 27.7,
+      "x": -24.45
+    }
+  },
+  {
+    "id": "visbulbaleegg",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 19.8,
+      "y": -9.9,
+      "width": 25.8,
+      "x": -12.9
+    },
+    "frame6Bounds": {
+      "height": 19.8,
+      "y": -9.9,
+      "width": 25.8,
+      "x": -12.9
+    }
+  },
+  {
+    "id": "visbulblade",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 18,
+      "y": -9,
+      "width": 40,
+      "x": -20
+    },
+    "frame6Bounds": {
+      "height": 18,
+      "y": -9,
+      "width": 40,
+      "x": -20
+    }
+  },
+  {
+    "id": "visbulblood",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 37,
+      "y": -19,
+      "width": 22,
+      "x": -17
+    },
+    "frame6Bounds": {
+      "height": 37,
+      "y": -19,
+      "width": 22,
+      "x": -17
+    }
+  },
+  {
+    "id": "visbulbloodlight",
+    "frames": 4,
+    "laser": false,
+    "bounds": {
+      "height": 25,
+      "y": -11,
+      "width": 132,
+      "x": -91
+    },
+    "frame6Bounds": {
+      "height": 25,
+      "y": -12,
+      "width": 131,
+      "x": -91
+    }
+  },
+  {
+    "id": "visbulbloodpsy",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 58,
+      "y": -29,
+      "width": 58,
+      "x": -29
+    },
+    "frame6Bounds": {
+      "height": 58,
+      "y": -29,
+      "width": 58,
+      "x": -29
+    }
+  },
+  {
+    "id": "visbulblump",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 13.600000000000001,
+      "y": -6.65,
+      "width": 68.3,
+      "x": -56.3
+    },
+    "frame6Bounds": {
+      "height": 13.600000000000001,
+      "y": -6.65,
+      "width": 68.3,
+      "x": -56.3
+    }
+  },
+  {
+    "id": "visbulcryo",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 14.1,
+      "y": -7.1,
+      "width": 65.85000000000001,
+      "x": -55.7
+    },
+    "frame6Bounds": {
+      "height": 14.1,
+      "y": -7.1,
+      "width": 65.85000000000001,
+      "x": -55.7
+    }
+  },
+  {
+    "id": "visbuldart",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 5.1,
+      "y": -2.65,
+      "width": 19,
+      "x": -17.55
+    },
+    "frame6Bounds": {
+      "height": 5.1,
+      "y": -2.65,
+      "width": 19,
+      "x": -17.55
+    }
+  },
+  {
+    "id": "visbuldefwave",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 88,
+      "y": -44,
+      "width": 60,
+      "x": -53
+    },
+    "frame6Bounds": {
+      "height": 88,
+      "y": -44,
+      "width": 60,
+      "x": -53
+    }
+  },
+  {
+    "id": "visbuldflame",
+    "frames": 31,
+    "laser": false,
+    "bounds": {
+      "height": 51,
+      "y": -25.5,
+      "width": 85.25,
+      "x": -19.4
+    },
+    "frame6Bounds": {
+      "height": 42.7,
+      "y": -21.35,
+      "width": 81.65,
+      "x": -63.5
+    }
+  },
+  {
+    "id": "visbuldray",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 16,
+      "y": -8,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 16,
+      "y": -8,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbuleclipse",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 20,
+      "y": -10,
+      "width": 20,
+      "x": -10
+    },
+    "frame6Bounds": {
+      "height": 20,
+      "y": -10,
+      "width": 20,
+      "x": -10
+    }
+  },
+  {
+    "id": "visbulfireball",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 21,
+      "y": -11,
+      "width": 46,
+      "x": -36
+    },
+    "frame6Bounds": {
+      "height": 21,
+      "y": -11,
+      "width": 46,
+      "x": -36
+    }
+  },
+  {
+    "id": "visbulflame",
+    "frames": 31,
+    "laser": false,
+    "bounds": {
+      "height": 51,
+      "y": -25.5,
+      "width": 85.44999999999999,
+      "x": -19.6
+    },
+    "frame6Bounds": {
+      "height": 42.7,
+      "y": -21.35,
+      "width": 82.35,
+      "x": -64.2
+    }
+  },
+  {
+    "id": "visbulflame2",
+    "frames": 31,
+    "laser": false,
+    "bounds": {
+      "height": 51,
+      "y": -25.5,
+      "width": 85.25,
+      "x": -19.4
+    },
+    "frame6Bounds": {
+      "height": 42.7,
+      "y": -21.35,
+      "width": 82.15,
+      "x": -64
+    }
+  },
+  {
+    "id": "visbulflare",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 9,
+      "y": -5,
+      "width": 27,
+      "x": -23
+    },
+    "frame6Bounds": {
+      "height": 9,
+      "y": -5,
+      "width": 27,
+      "x": -23
+    }
+  },
+  {
+    "id": "visbulfriend",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbulgren40",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 10.7,
+      "y": -5.35,
+      "width": 10.7,
+      "x": -5.35
+    },
+    "frame6Bounds": {
+      "height": 10.7,
+      "y": -5.35,
+      "width": 10.7,
+      "x": -5.35
+    }
+  },
+  {
+    "id": "visbulgren50",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 23,
+      "y": -12,
+      "width": 65,
+      "x": -33
+    },
+    "frame6Bounds": {
+      "height": 23,
+      "y": -12,
+      "width": 65,
+      "x": -33
+    }
+  },
+  {
+    "id": "visbulice",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 9,
+      "y": -5,
+      "width": 46,
+      "x": -45
+    },
+    "frame6Bounds": {
+      "height": 9,
+      "y": -5,
+      "width": 46,
+      "x": -45
+    }
+  },
+  {
+    "id": "visbulkapl",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 10,
+      "y": -5,
+      "width": 22,
+      "x": -15
+    },
+    "frame6Bounds": {
+      "height": 10,
+      "y": -5,
+      "width": 22,
+      "x": -15
+    }
+  },
+  {
+    "id": "visbullaser",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbullaser1",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 13,
+      "y": -7,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 13,
+      "y": -7,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbullaser2",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 2.5,
+      "y": -1.25,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 2.5,
+      "y": -1.25,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbullaser3",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 10.5,
+      "y": -5.25,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 10.5,
+      "y": -5.25,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbullaser4",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbullaser5",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 10,
+      "y": -5,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 10,
+      "y": -5,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbullaser6",
+    "frames": 6,
+    "laser": true,
+    "bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbullaser7",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 3,
+      "y": -1.5,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 3,
+      "y": -1.5,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbullaser8",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbullightning",
+    "frames": 4,
+    "laser": false,
+    "bounds": {
+      "height": 25,
+      "y": -11,
+      "width": 132,
+      "x": -91
+    },
+    "frame6Bounds": {
+      "height": 25,
+      "y": -12,
+      "width": 131,
+      "x": -91
+    }
+  },
+  {
+    "id": "visbulmbul",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 14,
+      "y": -7,
+      "width": 52,
+      "x": -46
+    },
+    "frame6Bounds": {
+      "height": 14,
+      "y": -7,
+      "width": 52,
+      "x": -46
+    }
+  },
+  {
+    "id": "visbulmray",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 16,
+      "y": -8,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 16,
+      "y": -8,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbulnecrbullet",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 38,
+      "y": -19,
+      "width": 103,
+      "x": -93
+    },
+    "frame6Bounds": {
+      "height": 38,
+      "y": -19,
+      "width": 103,
+      "x": -93
+    }
+  },
+  {
+    "id": "visbulnecro",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    },
+    "frame6Bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    }
+  },
+  {
+    "id": "visbulpink",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 27,
+      "y": -14,
+      "width": 27,
+      "x": -14
+    },
+    "frame6Bounds": {
+      "height": 27,
+      "y": -14,
+      "width": 27,
+      "x": -14
+    }
+  },
+  {
+    "id": "visbulpinkkapl",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 10,
+      "y": -5,
+      "width": 22,
+      "x": -15
+    },
+    "frame6Bounds": {
+      "height": 10,
+      "y": -5,
+      "width": 22,
+      "x": -15
+    }
+  },
+  {
+    "id": "visbulpinkplevok",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    },
+    "frame6Bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    }
+  },
+  {
+    "id": "visbulplasma",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 21.6,
+      "y": -10.8,
+      "width": 114.4,
+      "x": -107.2
+    },
+    "frame6Bounds": {
+      "height": 21.6,
+      "y": -10.8,
+      "width": 114.4,
+      "x": -107.2
+    }
+  },
+  {
+    "id": "visbulplasma1",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 14,
+      "y": -7,
+      "width": 52,
+      "x": -46
+    },
+    "frame6Bounds": {
+      "height": 14,
+      "y": -7,
+      "width": 52,
+      "x": -46
+    }
+  },
+  {
+    "id": "visbulplasma2",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 24,
+      "y": -12,
+      "width": 50,
+      "x": -25
+    },
+    "frame6Bounds": {
+      "height": 24,
+      "y": -12,
+      "width": 50,
+      "x": -25
+    }
+  },
+  {
+    "id": "visbulplasma3",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 10,
+      "y": -5,
+      "width": 86,
+      "x": -80
+    },
+    "frame6Bounds": {
+      "height": 10,
+      "y": -5,
+      "width": 86,
+      "x": -80
+    }
+  },
+  {
+    "id": "visbulplasma3a",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 16,
+      "y": -8,
+      "width": 86,
+      "x": -80
+    },
+    "frame6Bounds": {
+      "height": 16,
+      "y": -8,
+      "width": 86,
+      "x": -80
+    }
+  },
+  {
+    "id": "visbulplasma4",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 46,
+      "y": -23,
+      "width": 50,
+      "x": -25
+    },
+    "frame6Bounds": {
+      "height": 46,
+      "y": -23,
+      "width": 50,
+      "x": -25
+    }
+  },
+  {
+    "id": "visbulplasma5",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 14,
+      "y": -7,
+      "width": 52,
+      "x": -46
+    },
+    "frame6Bounds": {
+      "height": 14,
+      "y": -7,
+      "width": 52,
+      "x": -46
+    }
+  },
+  {
+    "id": "visbulplasma6",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 24,
+      "y": -12,
+      "width": 76,
+      "x": -38
+    },
+    "frame6Bounds": {
+      "height": 24,
+      "y": -12,
+      "width": 76,
+      "x": -38
+    }
+  },
+  {
+    "id": "visbulplevok",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    },
+    "frame6Bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    }
+  },
+  {
+    "id": "visbulpsy",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 50,
+      "y": -25,
+      "width": 50,
+      "x": -25
+    },
+    "frame6Bounds": {
+      "height": 50,
+      "y": -25,
+      "width": 50,
+      "x": -25
+    }
+  },
+  {
+    "id": "visbulpulse",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    },
+    "frame6Bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    }
+  },
+  {
+    "id": "visbulrail",
+    "frames": 4,
+    "laser": false,
+    "bounds": {
+      "height": 4,
+      "y": -2,
+      "width": 164,
+      "x": -159
+    },
+    "frame6Bounds": {
+      "height": 0,
+      "y": 0,
+      "width": 0,
+      "x": 0
+    }
+  },
+  {
+    "id": "visbulrocket",
+    "frames": 23,
+    "laser": false,
+    "bounds": {
+      "height": 12,
+      "y": -6,
+      "width": 67.75,
+      "x": -25.65
+    },
+    "frame6Bounds": {
+      "height": 12,
+      "y": -6,
+      "width": 91.65,
+      "x": -49.55
+    }
+  },
+  {
+    "id": "visbulrocketgas",
+    "frames": 23,
+    "laser": false,
+    "bounds": {
+      "height": 10.4,
+      "y": -5.2,
+      "width": 57.65,
+      "x": -25.65
+    },
+    "frame6Bounds": {
+      "height": 10,
+      "y": -5,
+      "width": 67.2,
+      "x": -35.2
+    }
+  },
+  {
+    "id": "visbulsaw",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 29.3,
+      "y": -14.65,
+      "width": 78.25,
+      "x": -63.6
+    },
+    "frame6Bounds": {
+      "height": 29.3,
+      "y": -14.65,
+      "width": 78.25,
+      "x": -63.6
+    }
+  },
+  {
+    "id": "visbulsel",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 138,
+      "x": -132
+    },
+    "frame6Bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 138,
+      "x": -132
+    }
+  },
+  {
+    "id": "visbulship",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 4.199999999999999,
+      "y": -2.05,
+      "width": 11.399999999999999,
+      "x": -8.1
+    },
+    "frame6Bounds": {
+      "height": 4.199999999999999,
+      "y": -2.05,
+      "width": 11.399999999999999,
+      "x": -8.1
+    }
+  },
+  {
+    "id": "visbulskybolt",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 14,
+      "y": -7,
+      "width": 83,
+      "x": -77
+    },
+    "frame6Bounds": {
+      "height": 14,
+      "y": -7,
+      "width": 83,
+      "x": -77
+    }
+  },
+  {
+    "id": "visbulspark",
+    "frames": 4,
+    "laser": false,
+    "bounds": {
+      "height": 13.600000000000001,
+      "y": -6.65,
+      "width": 49.849999999999994,
+      "x": -25.2
+    },
+    "frame6Bounds": {
+      "height": 13.600000000000001,
+      "y": -6.65,
+      "width": 49.849999999999994,
+      "x": -25.2
+    }
+  },
+  {
+    "id": "visbulsparkl",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbulspikenail",
+    "frames": 4,
+    "laser": false,
+    "bounds": {
+      "height": 7,
+      "y": -3,
+      "width": 100,
+      "x": -95
+    },
+    "frame6Bounds": {
+      "height": 0,
+      "y": 0,
+      "width": 0,
+      "x": 0
+    }
+  },
+  {
+    "id": "visbultelebullet",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    },
+    "frame6Bounds": {
+      "height": 22,
+      "y": -11,
+      "width": 60,
+      "x": -53
+    }
+  },
+  {
+    "id": "visbultermo",
+    "frames": 6,
+    "laser": true,
+    "bounds": {
+      "height": 23,
+      "y": -11.5,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 8,
+      "y": -4,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbulttlaser",
+    "frames": 1,
+    "laser": true,
+    "bounds": {
+      "height": 24,
+      "y": -12,
+      "width": 100,
+      "x": -100
+    },
+    "frame6Bounds": {
+      "height": 24,
+      "y": -12,
+      "width": 100,
+      "x": -100
+    }
+  },
+  {
+    "id": "visbulttmoln",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 42,
+      "y": -22,
+      "width": 83,
+      "x": -47
+    },
+    "frame6Bounds": {
+      "height": 42,
+      "y": -22,
+      "width": 83,
+      "x": -47
+    }
+  },
+  {
+    "id": "visbulttnavod",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 92,
+      "y": -46,
+      "width": 126,
+      "x": -82
+    },
+    "frame6Bounds": {
+      "height": 92,
+      "y": -46,
+      "width": 126,
+      "x": -82
+    }
+  },
+  {
+    "id": "visbulttplasma",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 48,
+      "y": -24,
+      "width": 100,
+      "x": -50
+    },
+    "frame6Bounds": {
+      "height": 48,
+      "y": -24,
+      "width": 100,
+      "x": -50
+    }
+  },
+  {
+    "id": "visbulttzalp",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 68,
+      "y": -34,
+      "width": 68,
+      "x": -57
+    },
+    "frame6Bounds": {
+      "height": 68,
+      "y": -34,
+      "width": 68,
+      "x": -57
+    }
+  },
+  {
+    "id": "visbulvenom",
+    "frames": 1,
+    "laser": false,
+    "bounds": {
+      "height": 27,
+      "y": -14,
+      "width": 27,
+      "x": -14
+    },
+    "frame6Bounds": {
+      "height": 27,
+      "y": -14,
+      "width": 27,
+      "x": -14
+    }
+  },
+  {
+    "id": "visualBullet",
+    "frames": 4,
+    "laser": false,
+    "bounds": {
+      "height": 3,
+      "y": -2,
+      "width": 94,
+      "x": -89
+    },
+    "frame6Bounds": {
+      "height": 0,
+      "y": 0,
+      "width": 0,
+      "x": 0
+    }
+  },
+  {
+    "id": "visualRainbow",
+    "frames": 4,
+    "laser": false,
+    "bounds": {
+      "height": 9,
+      "y": -4,
+      "width": 94,
+      "x": -89
+    },
+    "frame6Bounds": {
+      "height": 0,
+      "y": 0,
+      "width": 0,
+      "x": 0
+    }
+  }
+]

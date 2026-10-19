@@ -1,0 +1,118 @@
+{
+  "scope": "Production collector + light-field rendering, controlled input, not whole-game FPS",
+  "version": "0.5.0",
+  "results": [
+    {
+      "workload": "rifle-24",
+      "old": {
+        "samples": 160,
+        "meanMs": 5.65625,
+        "medianMs": 3.0,
+        "maxMs": 107,
+        "rebuildsPer100Calls": [
+          1306,
+          1306
+        ],
+        "maxLights": 14,
+        "maxVisits": 0
+      },
+      "new": {
+        "samples": 160,
+        "meanMs": 1.20625,
+        "medianMs": 1.0,
+        "maxMs": 3,
+        "rebuildsPer100Calls": [
+          8,
+          8
+        ],
+        "maxLights": 24,
+        "maxVisits": 3178
+      },
+      "reductionPercent": 78.67403314917128
+    },
+    {
+      "workload": "shotgun-192",
+      "old": {
+        "samples": 160,
+        "meanMs": 11.15,
+        "medianMs": 8.0,
+        "maxMs": 78,
+        "rebuildsPer100Calls": [
+          2399,
+          2399
+        ],
+        "maxLights": 24,
+        "maxVisits": 0
+      },
+      "new": {
+        "samples": 160,
+        "meanMs": 3.5125,
+        "medianMs": 3.0,
+        "maxMs": 6,
+        "rebuildsPer100Calls": [
+          12,
+          12
+        ],
+        "maxLights": 24,
+        "maxVisits": 4897
+      },
+      "reductionPercent": 68.49775784753362
+    },
+    {
+      "workload": "plasma-96",
+      "old": {
+        "samples": 160,
+        "meanMs": 4.95,
+        "medianMs": 5.0,
+        "maxMs": 11,
+        "rebuildsPer100Calls": [
+          2361,
+          2361
+        ],
+        "maxLights": 24,
+        "maxVisits": 0
+      },
+      "new": {
+        "samples": 160,
+        "meanMs": 5.91875,
+        "medianMs": 5.0,
+        "maxMs": 105,
+        "rebuildsPer100Calls": [
+          9,
+          9
+        ],
+        "maxLights": 24,
+        "maxVisits": 16848
+      },
+      "reductionPercent": -19.570707070707073
+    },
+    {
+      "workload": "beam-24",
+      "old": {
+        "samples": 160,
+        "meanMs": 3.3625,
+        "medianMs": 3.0,
+        "maxMs": 16,
+        "rebuildsPer100Calls": [
+          1331,
+          1331
+        ],
+        "maxLights": 14,
+        "maxVisits": 0
+      },
+      "new": {
+        "samples": 160,
+        "meanMs": 2.1125,
+        "medianMs": 2.0,
+        "maxMs": 8,
+        "rebuildsPer100Calls": [
+          8,
+          8
+        ],
+        "maxLights": 24,
+        "maxVisits": 7067
+      },
+      "reductionPercent": 37.174721189591075
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+Mon Oct 19 16:47:52 2026 UTC [LightAndDarkness] ATMOSPHERE_CONFIG loaded
+Mon Oct 19 16:47:52 2026 UTC [LightAndDarkness] v0.5.0 loaded
+Mon Oct 19 16:48:01 2026 UTC [LightAndDarkness] BAKE ms=698 preserved=0
+Mon Oct 19 16:48:01 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Mon Oct 19 16:48:01 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 pulses=0 renderMs=23

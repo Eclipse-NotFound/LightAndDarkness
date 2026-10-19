@@ -1,0 +1,581 @@
+{
+  "version": "0.5.0",
+  "mode": "legacy",
+  "samples": [
+    {
+      "visualCoverage": [
+        {
+          "expectedLit": true,
+          "nativeClass": "visbularson",
+          "actualLit": true,
+          "visual": "arson",
+          "colour": "ffc078",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulbaleegg",
+          "actualLit": true,
+          "visual": "baleegg",
+          "colour": "d5ff89",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulblade",
+          "actualLit": true,
+          "visual": "blade",
+          "colour": "d4b5ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulblood",
+          "actualLit": true,
+          "visual": "blood",
+          "colour": "ff9ca9",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulbloodlight",
+          "actualLit": true,
+          "visual": "bloodlight",
+          "colour": "ff9ca9",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulbloodpsy",
+          "actualLit": true,
+          "visual": "bloodpsy",
+          "colour": "ff9ca9",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulblump",
+          "actualLit": true,
+          "visual": "blump",
+          "colour": "ffac99",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulcryo",
+          "actualLit": true,
+          "visual": "cryo",
+          "colour": "bdefff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbuldart",
+          "actualLit": false,
+          "visual": "dart",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbuldefwave",
+          "actualLit": true,
+          "visual": "defwave",
+          "colour": "d4b5ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbuldflame",
+          "actualLit": true,
+          "visual": "dflame",
+          "colour": "b2ff9c",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbuldray",
+          "actualLit": true,
+          "visual": "dray",
+          "colour": "b695e8",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbuleclipse",
+          "actualLit": true,
+          "visual": "eclipse",
+          "colour": "c1a0ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulfireball",
+          "actualLit": true,
+          "visual": "fireball",
+          "colour": "ffc078",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulflame",
+          "actualLit": true,
+          "visual": "flame",
+          "colour": "ffc078",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulflame2",
+          "actualLit": true,
+          "visual": "flame2",
+          "colour": "bcefff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulflare",
+          "actualLit": true,
+          "visual": "flare",
+          "colour": "ffc078",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulfriend",
+          "actualLit": true,
+          "visual": "friend",
+          "colour": "f1ceff",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulgren40",
+          "actualLit": false,
+          "visual": "gren40",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulgren50",
+          "actualLit": true,
+          "visual": "gren50",
+          "colour": "ffbd9d",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulice",
+          "actualLit": true,
+          "visual": "ice",
+          "colour": "bdefff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulkapl",
+          "actualLit": false,
+          "visual": "kapl",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullaser",
+          "actualLit": true,
+          "visual": "laser",
+          "colour": "ff9a88",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullaser1",
+          "actualLit": true,
+          "visual": "laser1",
+          "colour": "aedcff",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullaser2",
+          "actualLit": true,
+          "visual": "laser2",
+          "colour": "ff9a88",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullaser3",
+          "actualLit": true,
+          "visual": "laser3",
+          "colour": "aedcff",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullaser4",
+          "actualLit": true,
+          "visual": "laser4",
+          "colour": "a7ffd2",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullaser5",
+          "actualLit": true,
+          "visual": "laser5",
+          "colour": "ff9a88",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullaser6",
+          "actualLit": true,
+          "visual": "laser6",
+          "colour": "f1ceff",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullaser7",
+          "actualLit": true,
+          "visual": "laser7",
+          "colour": "ffa6b5",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullaser8",
+          "actualLit": true,
+          "visual": "laser8",
+          "colour": "b8ff94",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbullightning",
+          "actualLit": true,
+          "visual": "lightning",
+          "colour": "fff2a4",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulmbul",
+          "actualLit": true,
+          "visual": "mbul",
+          "colour": "d4b5ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulmray",
+          "actualLit": true,
+          "visual": "mray",
+          "colour": "a7ffd2",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulnecrbullet",
+          "actualLit": true,
+          "visual": "necrbullet",
+          "colour": "bca2e8",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulnecro",
+          "actualLit": true,
+          "visual": "necro",
+          "colour": "bca2e8",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulpink",
+          "actualLit": false,
+          "visual": "pink",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulpinkkapl",
+          "actualLit": false,
+          "visual": "pinkkapl",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulpinkplevok",
+          "actualLit": false,
+          "visual": "pinkplevok",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulplasma",
+          "actualLit": true,
+          "visual": "plasma",
+          "colour": "acffa2",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulplasma1",
+          "actualLit": true,
+          "visual": "plasma1",
+          "colour": "acffa2",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulplasma2",
+          "actualLit": true,
+          "visual": "plasma2",
+          "colour": "bcefff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulplasma3",
+          "actualLit": true,
+          "visual": "plasma3",
+          "colour": "acffa2",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulplasma3a",
+          "actualLit": true,
+          "visual": "plasma3a",
+          "colour": "acffa2",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulplasma4",
+          "actualLit": true,
+          "visual": "plasma4",
+          "colour": "acffa2",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulplasma5",
+          "actualLit": true,
+          "visual": "plasma5",
+          "colour": "ffa4d6",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulplasma6",
+          "actualLit": true,
+          "visual": "plasma6",
+          "colour": "ffa4d6",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulplevok",
+          "actualLit": false,
+          "visual": "plevok",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulpsy",
+          "actualLit": true,
+          "visual": "psy",
+          "colour": "d4b5ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulpulse",
+          "actualLit": true,
+          "visual": "pulse",
+          "colour": "a9e2ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulrail",
+          "actualLit": true,
+          "visual": "rail",
+          "colour": "c6e9ff",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulrocket",
+          "actualLit": true,
+          "visual": "rocket",
+          "colour": "ffb06b",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulrocketgas",
+          "actualLit": true,
+          "visual": "rocketgas",
+          "colour": "ffb06b",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulsaw",
+          "actualLit": false,
+          "visual": "saw",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulsel",
+          "actualLit": true,
+          "visual": "sel",
+          "colour": "a9e2ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulship",
+          "actualLit": false,
+          "visual": "ship",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulskybolt",
+          "actualLit": true,
+          "visual": "skybolt",
+          "colour": "a9e2ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulspark",
+          "actualLit": true,
+          "visual": "spark",
+          "colour": "fff2a4",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulsparkl",
+          "actualLit": true,
+          "visual": "sparkl",
+          "colour": "c3a4ff",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulspikenail",
+          "actualLit": false,
+          "visual": "spikenail",
+          "colour": null,
+          "lightCount": 0
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbultelebullet",
+          "actualLit": true,
+          "visual": "telebullet",
+          "colour": "d4b5ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbultermo",
+          "actualLit": true,
+          "visual": "termo",
+          "colour": "ffd29b",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulttlaser",
+          "actualLit": true,
+          "visual": "ttlaser",
+          "colour": "ff9a88",
+          "lightCount": 1
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulttmoln",
+          "actualLit": true,
+          "visual": "ttmoln",
+          "colour": "a9e2ff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulttnavod",
+          "actualLit": true,
+          "visual": "ttnavod",
+          "colour": "b2ff9c",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulttplasma",
+          "actualLit": true,
+          "visual": "ttplasma",
+          "colour": "bcefff",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": true,
+          "nativeClass": "visbulttzalp",
+          "actualLit": true,
+          "visual": "ttzalp",
+          "colour": "ffd092",
+          "lightCount": 2
+        },
+        {
+          "expectedLit": false,
+          "nativeClass": "visbulvenom",
+          "actualLit": false,
+          "visual": "venom",
+          "colour": null,
+          "lightCount": 0
+        }
+      ],
+      "fixtureCount": 9,
+      "stressRenderMs": 6,
+      "stressCaptureMs": 6,
+      "visualCount": 68,
+      "stressPulseCount": 20,
+      "preparedScenes": 0,
+      "stressVisibleCount": 20
+    }
+  ],
+  "error": "",
+  "roomsLoad": 1,
+  "loader": {
+    "requested_TrailProbeMod": "run_1792428242392_100094|line 23 @1792428242445",
+    "requested_WallBlendMod": "run_1792428242392_100094|line 24 @1792428242448",
+    "boot": "run_1792428242392_100094|v2 col=2 requested=6 @1792428242450",
+    "requested_RealisticVisionMod": "run_1792428242392_100094|line 15 @1792428242430",
+    "ok_ModLoaderMod": "run_1792428242392_100094|init @1792428243178",
+    "requested_ContinuousSceneMod": "run_1792428242392_100094|line 21 @1792428242438",
+    "ok_LightAndDarknessMod": "run_1792428242392_100094|init @1792428243138",
+    "ok_TrailProbeMod": "run_1792428242392_100094|init @1792428243184",
+    "session": "run_1792428242392_100094",
+    "ok_ContinuousSceneMod": "run_1792428242392_100094|init @1792428243168",
+    "boot_start": "run_1792428242392_100094|v2 run=run_1792428242392_100094 @1792428242402",
+    "ok_WallBlendMod": "run_1792428242392_100094|init @1792428243128",
+    "ok_RealisticVisionMod": "run_1792428242392_100094|init @1792428243150",
+    "requested_LightAndDarknessMod": "run_1792428242392_100094|line 22 @1792428242442",
+    "requested_ModLoaderMod": "run_1792428242392_100094|line 12 @1792428242425"
+  },
+  "checks": 131
+}

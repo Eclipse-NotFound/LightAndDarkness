@@ -1,0 +1,35 @@
+PASS one moving bullet produces one ribbon, not multiple radial nodes
+PASS ordinary native slow tracer keeps bounded horizontal history
+PASS ordinary trail has a dimmer narrow tail
+PASS light spills along trajectory and is narrow across trajectory
+PASS head of the ribbon is brighter than the older tail
+PASS vertical shot rotates the spill without a horizontal bias
+PASS turning rocket retains a bent path
+PASS rocket illumination starts behind the missile body
+PASS native beam uses exact start and collision endpoint
+PASS beam illumination is continuous between former circle sample points
+PASS native beam endpoint inside wall cannot light the far side
+PASS wide energy ribbon is occluded sideways by solid wall
+PASS removing an opaque tile immediately exposes the ribbon spill
+PASS overlapping identical ribbons do not brighten without bound
+PASS resized reused raster matches a fresh raster
+PASS restoring a larger viewport has no stale trail pixels
+PASS native shape has directional spill visbulplasma
+PASS native shape has directional spill visbulflame
+PASS native shape has directional spill visbulice
+PASS native shape has directional spill visbulblump
+PASS native shape has directional spill visbulbaleegg
+PASS native shape has directional spill visbuleclipse
+PASS native shape has directional spill visbulskybolt
+PASS native shape has directional spill visbulblood
+PASS native shape has directional spill visbulnecro
+PASS native shape has directional spill visbulplasma2
+PASS native shape has directional spill visbulplasma5
+PASS native shape has directional spill visbulttnavod
+PASS native shape has directional spill visbulgren50
+PASS actual PhisBullet gren50 spell emits while ordinary grenade shells stay dark
+PASS 230 native bullets respect all three collection budgets
+PASS dense ordinary barrage stays below raster work ceiling
+PASS detached trails and flashes expire on simulation steps
+PASS last trail leaves no retained pixels after expiry
+PASS all 68 XML visuals plus ordinary and rainbow art

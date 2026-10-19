@@ -1,40 +1,31 @@
 # LightAndDarkness 当前记忆
 
-> 2026-10-20背景光调查完成，**仅调查，未实施/部署**。基线为0.4.1/94A2，已扫描原版639/安装658模板，实测12场景＋25/12分区大场景。确认马哈顿透明窗墙漏接；天空传播不进入实体格，导致露天墙地仍只吃基础光（地表像素原版比约0.37，天空0.68）。建议先补背景开口与表面接光，再谨慎调地区基础值，灯具加倍率不解决无灯区。详见design/background-lighting-investigation-2026-10-20.md、tests/background-audit-2026-10-20.md。全部摄影AIR已退出，已向0.5.0整合会话报告与性能采样重叠的时段；不能把本轮图像数据当FPS结论或新候选验收。
-
-> 2026-10-20局部光更新：机器与地标光增强、六类终端未破解亮/原生破解101后暗已实现。独立c5a04c4基底候选590C8AEE通过173机器＋217地标/环境/终端检查；仅测试，未部署。两个collector供正在进行的0.5.0整合，待最终同字节复验与统一部署。详见tests/local-glow-2026-10-20.md；勿把local-glow独立候选覆盖正式版本。后续AIR先与性能会话01a13fea协调。
-
-> 2026-10-19：CS任务保留0.4.2大场景移动缓存候选，**未部署、最终字节未回归**；用户要求稍后再测。正式仍0.4.1/94A2。旧EB85实验145断言/72像素对照通过，不能继承为最终6F验收。候选../ContinuousScene/build/generated/lad-motion-v042/LightAndDarknessMod.swf，SHA256 6F138FB891A412905CA72EA94C47D4B48A72865A18C78603E844E0E2223816E0。
-
-下一步精确字节像素对照、标准verify/regression及完整组合移动采样。保留0.4.1其他灯光能力。详见CS/knowledge/experiments/motion-v082-20261019.md。
-
 ## 1. 这个模组是什么
-为Remains 1.02增加战术光暗、实时墙门遮光、随身灯、场景灯损坏/维修、故障氛围、弹丸短光和机器微光。0.4.0修复地图普遍偏暗，增加分地区基础光、天空/窗洞补光及场景暗角；0.4.1沿原版图像加入存档点、出口、试炼入口散光。入口LightAndDarknessMod.init(main:*)；正式路径release/LightAndDarknessMod.swf。
+为Remains 1.02增加战术光暗、墙门遮光、随身灯、场景灯损坏/维修、故障氛围、地区环境光、弹丸拖尾、机器和关键设施散光。入口LightAndDarknessMod.init(main:*)，正式路径release/LightAndDarknessMod.swf。当前0.5.0沿原生弹形照亮周围，并降低常见弹幕的绘制开销。
 
 ## 2. 用户偏好与协作约定
-中文，战术光暗与生存探索并重，兼顾氛围。用户2026-10-19要求环境光修复后，再为存档点/出口/试炼入口增加符合原图的光源；治理持续授权本机验证后部署，不重复确认。其他模组最小范围只读，工具使用Sandevistan/build/tools；不操作真实pfe存储或用户实例，不用Ghost。测试经ModLoader启动器精确选组、唯一AIR身份及私有后台桌面；本轮没有新建子代理。用户已授权跨会话协调，已与微光会话确认先完成0.3.2，再接续本版。
+中文，战术光暗与生存探索并重，兼顾氛围。已持续授权本机验证后部署，不重复确认；已明确授权相关开发会话协调。其他模组最小只读，工具用Sandevistan/build/tools；不操作真实pfe存储或用户进程，不用Ghost。测试唯一AIR身份、私有后台桌面、ModLoader精确选组。性能测试必须明确交还时段并在启动前/中检测其它AIR，不能把两轮间隙当空闲授权。本轮没有新建子代理。
 
 ## 3. 当前状态
-**0.4.1已于2026-10-19 19:52:42部署**。正式SHA256 94A2F0861B9757815F1554D5FBF3C216F403053D1EBCF4B546F9F7A2868A21BD，32,707字节；冻结build/out/landmarks-v041/LightAndDarknessMod.swf。FFDec19个自身类，无fe存根/测试探针，生产源码与本轮提交对应，不可重编后冒充同一字节。
-宿主02BFABE6、CS B5E8110E、RV 76314B81、WB 0BD209A1、ML BD71B6F3；描述符、清单和其它模组未改。精确组合LAD/四接口模组/探针。最终124检查（93地标＋31环境）、101回归、11冷读档通过；正式回读20261019195250173861再次124通过。实看原图、效果图、实际营地。报告tests/landmark-verification-2026-10-19.md、回执state/landmark-deployment-2026-10-19.json。
-保留0.4.0全部环境修复及0.3.2机器/弹丸/边框能力。本轮未把历史九场景、173机器、131弹丸专项冒充全量重跑。
+**0.5.0于2026-10-20 00:47:27部署，正式回读35项通过。** SHA256 4291B8250D607EA1C6B5BE48DED48BB5FA42AF37BFE0CB3ED7A2E7C84EFBBF90，37,009字节，20自身类，无fe存根/探针。冻结build/out/trails-v050；源码7df08c9包含机器/终端60118c8及缓存1cefa04。旧0.4.2候选不单独部署，已验证的缓存改动纳入本版。
+宿主02BFABE6、CS241E48EA、RV76314B81、WB0BD209A1、MLBD71B6F3及描述符/配置/清单保持原值，仅更新LAD。最终35拖尾＋131弹丸＋4冷档＋173机器＋217地标环境终端＋385像素照度＋101回归＋11冷档＝1057项通过；正式文件再35项。两个独占ABBA性能轮原始数据完整保留。报告tests/trails-verification-2026-10-20.md；回执state/trail-deployment-2026-10-20.json。
+普通弹改为细长渐暗光带、火箭弯曲尾焰、能量/火焰/电弧/冰片各自短余辉、激光连续真实全长。修正ttnavod绿球、gren50法术及等离子蓝白/红紫色。机器/地标半径和强度提升；六类终端未破解64/.30，原生成功破解saveLock=101后42/.10，无锁/失败不误判。环境/地形缓存和同帧重复绘制修复保留原像素。
 
 ## 4. 正在进行与卡点
-本轮实现、验证、部署、回读均完成，无待部署候选。初次图集已经导出但结果封装误读private main，结束自己实例后修正并重跑成功；不是正式模组错误。末轮101回归补验新设置两槽独立恢复，11冷读档再次验证开关。
-备份build/backups/landmark-20261019-195242-311028/LightAndDarknessMod.v0.4.0.swf（9177513F）。仅当正式仍94A2F086时恢复这一备份并重启；保留宿主、清单、其它模组、真实存档。旧环境/机器回退脚本不可直接覆盖新版本。
+本轮实现、最终验证、部署、正式文件复验完成，无待安装候选。00:48后已明确将AIR/JVM窗口还RC主会话01a086bb-378c-7f60-b8e1-50d90ffa0996（含RC(2)）；CS与LAD性能后续均等待明确交还，不能自行抢空隙。
+独立性能会话01a13fea-c2ca-7b41-8a5b-a3192bc3b3be继续整体灯光接近原版的目标，入口tests/performance-2026-10-20.md；当前尚未达成。背景调查已完成但未实施：design/background-lighting-investigation-2026-10-20.md、tests/background-audit-2026-10-20.md，基线严格0.4.1/94A2，不能当4291实测。重点为透明窗墙漏接、实体表面不接天空光，之后再谨慎调基础值；勿在本次版本记录中声称已修复。
+备份build/backups/trails-20261020-004727-123219/LightAndDarknessMod.v0.4.1.swf（94A2F086）。仅当正式仍4291时恢复该文件并重启；不动宿主、其他模组、配置或真实存档。旧版本部署脚本不可覆盖较新文件。
 
 ## 5. 已知问题与边界
-地标光仅原生CheckPoint与Box的exit/doorprob/doorboss。存档点弱侧条、紫色星屏/传送柱按真实图像发光；出口绿、试炼问号绿、战斗牛头红。黑色返回门doorout无发光标志，保持原样。隐藏/透明/移除/损毁停止光，最多32可见源；不改变关键交互或增加可损坏代理。设置「存档点、出口与试炼入口照明」默认开、随槽保存。
-地区基础光是乘法照度层：据点0.58、维护设施0.44、普通室内0.38、废弃城市0.36、地下0.28、明确断电0.18、露天0.70。环境亮度倍率0.5–1.5默认1，与感知开关仍为本次启动偏好；氛围/弹丸/机器开关和灯具状态随槽保存。旧auto-v1迁移保留稳定灯和HP/开关，新维修记录repaired。
-自动暗角只限废弃/断电、有顶和侧墙的地面角落，避开入口及关键交互；不按棋盘压黑全图。六类原生窗洞，每视口最多24采样点。RealisticVision自己的视野黑幕不改；截图揭开的是原生探索黑幕，不是RV视野。普通视觉发现使用同一照度场，听觉/开火暴露/AI记忆保持。
-随身灯尚无独立装备、电池或掉落。机器32可见源；弹丸192跟踪/96脉冲/24可见源，不改伤害与寿命；地火/持续附身燃烧未实现。只认证本机1.02及列明组合，未认证DLC、联机、全14模组或全639模板。清单1/1/1保持原值，不代表DLC认证。原生预载和大场景长帧仍存在，本轮不声称整体FPS改善。
-此前ContinuousScene完整帧/遮光缓存实验已撤回生产源且未部署，不要发布旧872/314候选；其历史证据留ContinuousScene任务原址。
+两轮受控收集＋绘制：普通弹下降47–79%、192弹密集射击46–68%、光束33–37%；96等离子中位数均5ms，但新版约100ms收集尖峰使均值增加9–20%。不删异常样本、不声称所有弹种提速或整体FPS改善；可能回收干扰但因果未证，已交性能任务接续。光带最多192跟踪/96短光/24可见源、96段/65536候选像素；预算不等于墙钟时限。
+只认证本机1.02及LAD/ML/CS/RV/WB组合，未认证DLC、联机、全模组、全639模板或前台战斗FPS。大场景预载与整体性能问题仍在独立调查。清单1/1/1保留不代表DLC认证。
+地区基础光：据点.58、维护.44、室内.38、废城.36、地下.28、断电.18、露天.70；环境倍率.5–1.5与感知开关仍为本次启动偏好。氛围、弹丸、机器、地标/终端开关、单灯状态随槽保存。旧auto-v1迁移保留HP/开关/维修；自动暗角只限合适废弃/断电遮蔽角落，避关键交互。RealisticVision视野遮罩维持原规则。
+随身灯尚无独立装备/电池/掉落；地火/持续附身燃烧未实现。拖尾用实际已观察路径，首帧历史不足会短；不改弹头图像、伤害、轨迹、寿命。地标32、机器32可见源；不为关键设施增加可损坏代理。黑色doorout无发光标志保持原样。
 
 ## 6. 下一步
-用户保存并重启加载0.4.1；设置「模组 → 光与暗 → 环境亮度倍率」可调总体强度。后续按实际游玩反馈再调整区域数值或特殊房间规则，无自动后续任务。新发布核对全部依赖指纹，候选冻结后测试与部署使用同一文件。
+用户保存退出并重启加载0.5.0。后续既定性能任务按上述报告接续；背景调查方案尚未实施，保持其事实与版本边界。新发布重新冻结源码/依赖，用最终同一文件复验与部署，不能发布旧缓存/局部光实验候选。无自动定时任务。
 
 ## 7. 深入了解
-本版设计design/landmark-lighting-v0.4.1.md；验证tests/landmark-verification-2026-10-19.md；证据tests/evidence/2026-10-19/landmarks-v041/。候选构建到build/out/landmarks-v041；tools/run-landmark-tests.py --mixed --mode verify/regression/cold，cold加--seed-storage本轮storage；正式复验加--candidate release/LightAndDarknessMod.swf。tools/deploy-landmarks.py只针对本版冻结指纹，下一版重新核对，不能盲用。
-设计design/environment-v0.4.md；原始调查design/map-lighting-investigation-2026-10-19.md；验证tests/environment-verification-2026-10-19.md；证据tests/evidence/2026-10-19/environment-v040/。原生字段事实在shared-knowledge/rendering/discoveries/native-map-lighting-coverage-2026-10-19.md（从游戏根）。
-构建build/build.ps1 -OutputDirectory <候选目录>；测试tools/run-environment-tests.py --mixed --mode survey/large/regression/cold，cold加--seed-storage本轮测试存储；正式读回加--candidate release/LightAndDarknessMod.swf。环境旧部署工具tools/deploy-environment.py已过时，不可用于当前版本。
-历史机器design/machine-glow-v0.3.2.md与tests/machine-glow-2026-10-19.md；弹丸design/projectile-light-catalog-2026-10-15.md、design/projectile-lighting-v0.3.md及tests/projectile-verification-2026-10-15.md；原生灯光design/native-lighting-survey.md，规则atmosphere.json。
+本版design/projectile-shapes-v0.5.md；tests/trails-verification-2026-10-20.md；tests/evidence/2026-10-20/trails-v050/；state/trail-deployment-2026-10-20.json。原版弹形公共结论shared-knowledge/rendering/discoveries/native-projectile-shapes-2026-10-20.md（从游戏根）。完整武器目录design/projectile-light-catalog-2026-10-15.md。
+构建build/build.ps1 -OutputDirectory <独立候选目录>；冻结工具tools/freeze-trails.py仅本版且拒绝覆盖已有目录。tools/run-trail-tests.py --candidate <SWF> --mixed --mode verify/perf/legacy/cold；cold加--seed-storage本轮私有storage。tools/verify-final-trails.py串行本版六轮，tools/deploy-trails.py固定本次指纹门禁，后续版本不可盲用。正式复验--candidate release/LightAndDarknessMod.swf。
+局部光design/local-glow-2026-10-20.md、tests/local-glow-2026-10-20.md；性能tests/performance-2026-10-20.md。历史环境design/environment-v0.4.md、地图调查design/map-lighting-investigation-2026-10-19.md；地标design/landmark-lighting-v0.4.1.md；原生总调查design/native-lighting-survey.md、氛围规则atmosphere.json。journal与decisions/changelog.md保存历程。
