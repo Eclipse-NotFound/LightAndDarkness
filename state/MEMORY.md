@@ -1,5 +1,7 @@
 # LightAndDarkness 当前记忆
 
+> 2026-10-19 地图偏暗调查完成（本会话未改效果/部署）：原版639模板中198无灯、117仅1–2灯；安装658模板另列。`sky`实际为飞行标志，普通sky背景未获得室外底光；0.14全局底光＋自动暗区＋随机灯帧/亮度叠加。正式514A和当前2A46宿主的5场景隔离采样完成，进程已退出；31地区加载数与外置数据一致。报告 `design/map-lighting-investigation-2026-10-19.md`，证据 `knowledge/evidence/map-lighting-2026-10-19/`。建议先改环境光分类、据点/通路可读性和暗区生成，再补灯；这是建议，尚未实施。并行微光候选状态以其日志为准。
+
 > 2026-10-19 ContinuousScene 性能实验已撤回生产源，**未部署**。完整照明帧复用通过21项像素/失效检查但命中少；遮光快照通过40项像素/实时查询检查，ABAB耗时48/62/68/55ms无稳定收益。源码恢复0.3.1，正式仍514A。实验补丁与结果保存在ContinuousScene/build/lad-rejected-cache-experiment.patch及其evidence，后续见 ../../ContinuousScene/state/in-progress-v08.md；不要发布872或314候选。
 
 ## 1. 这个模组是什么

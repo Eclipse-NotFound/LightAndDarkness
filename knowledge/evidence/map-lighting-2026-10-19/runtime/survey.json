@@ -1,0 +1,571 @@
+{
+  "error": "",
+  "boundary": "One isolated random new game, installed LAD only. Floor-adjacent empty tile centers; not navigation reachability. Revealed fog only in screenshots. No FPS claim.",
+  "catalog": [
+    {
+      "land": "src",
+      "backs": 49,
+      "rooms": 1
+    },
+    {
+      "land": "random_mane",
+      "backs": 2376,
+      "rooms": 65
+    },
+    {
+      "land": "random_encl",
+      "backs": 1547,
+      "rooms": 23
+    },
+    {
+      "land": "bunker",
+      "backs": 1926,
+      "rooms": 31
+    },
+    {
+      "land": "random_mbase",
+      "backs": 1926,
+      "rooms": 31
+    },
+    {
+      "land": "comm",
+      "backs": 247,
+      "rooms": 5
+    },
+    {
+      "land": "random_plant",
+      "backs": 2054,
+      "rooms": 55
+    },
+    {
+      "land": "stable_pi_atk",
+      "backs": 1870,
+      "rooms": 46
+    },
+    {
+      "land": "core",
+      "backs": 333,
+      "rooms": 9
+    },
+    {
+      "land": "random_sewer",
+      "backs": 2179,
+      "rooms": 23
+    },
+    {
+      "land": "covert",
+      "backs": 108,
+      "rooms": 4
+    },
+    {
+      "land": "random_stable",
+      "backs": 1825,
+      "rooms": 49
+    },
+    {
+      "land": "way",
+      "backs": 9,
+      "rooms": 1
+    },
+    {
+      "land": "begin",
+      "backs": 325,
+      "rooms": 20
+    },
+    {
+      "land": "garages",
+      "backs": 57,
+      "rooms": 2
+    },
+    {
+      "land": "rbl",
+      "backs": 150,
+      "rooms": 4
+    },
+    {
+      "land": "grave",
+      "backs": 25,
+      "rooms": 3
+    },
+    {
+      "land": "hql",
+      "backs": 335,
+      "rooms": 14
+    },
+    {
+      "land": "prob",
+      "backs": 2036,
+      "rooms": 81
+    },
+    {
+      "land": "minst",
+      "backs": 657,
+      "rooms": 15
+    },
+    {
+      "land": "stable_pi",
+      "backs": 1870,
+      "rooms": 46
+    },
+    {
+      "land": "thunder",
+      "backs": 192,
+      "rooms": 7
+    },
+    {
+      "land": "mtn",
+      "backs": 237,
+      "rooms": 12
+    },
+    {
+      "land": "surf",
+      "backs": 352,
+      "rooms": 20
+    },
+    {
+      "land": "nio",
+      "backs": 785,
+      "rooms": 17
+    },
+    {
+      "land": "art",
+      "backs": 1217,
+      "rooms": 29
+    },
+    {
+      "land": "raiders",
+      "backs": 556,
+      "rooms": 23
+    },
+    {
+      "land": "workshop",
+      "backs": 560,
+      "rooms": 17
+    },
+    {
+      "land": "random_canter",
+      "backs": 3447,
+      "rooms": 59
+    },
+    {
+      "land": "post",
+      "backs": 38,
+      "rooms": 3
+    },
+    {
+      "land": "stable_pi_surf",
+      "backs": 376,
+      "rooms": 20
+    }
+  ],
+  "applicationID": "remains-lad-survey-20261019171033934493",
+  "boxDamage": 0.2,
+  "roomsLoad": 1,
+  "loader": {
+    "ok_LightAndDarknessMod": "run_1792401040843_999273|init @1792401041462",
+    "requested_LightAndDarknessMod": "run_1792401040843_999273|line 17 @1792401040890",
+    "boot": "run_1792401040843_999273|v2 col=2 requested=2 @1792401040896",
+    "boot_start": "run_1792401040843_999273|v2 run=run_1792401040843_999273 @1792401040853",
+    "ok_MapLightingSurveyMod": "run_1792401040843_999273|init @1792401041444",
+    "requested_MapLightingSurveyMod": "run_1792401040843_999273|line 18 @1792401040893",
+    "session": "run_1792401040843_999273"
+  },
+  "samples": [
+    {
+      "defaultHeadlamp": {
+        "below5": 7,
+        "median": 0.13725490196078433,
+        "below20Fraction": 0.603448275862069,
+        "below20": 70,
+        "points": 116,
+        "min": 0.011764705882352941
+      },
+      "backwall": "tStConcrete",
+      "darkness": 20,
+      "land": "rbl",
+      "sky": false,
+      "time": 0.2333333333333333,
+      "lightOn": 1,
+      "lamps": 9,
+      "base": true,
+      "noHeadlamp": {
+        "below5": 7,
+        "median": 0.13725490196078433,
+        "below20Fraction": 0.603448275862069,
+        "below20": 70,
+        "points": 116,
+        "min": 0.011764705882352941
+      },
+      "ambient": 0.14,
+      "black": false,
+      "fixtures": [
+        {
+          "mode": "steady",
+          "brightness": 0.35,
+          "frame": 1,
+          "id": "light4",
+          "on": true,
+          "power": 0.35
+        },
+        {
+          "mode": "fast",
+          "brightness": 0.65,
+          "frame": 1,
+          "id": "light4",
+          "on": true,
+          "power": 0.65
+        },
+        {
+          "mode": "steady",
+          "brightness": 1,
+          "frame": 1,
+          "id": "light4",
+          "on": true,
+          "power": 1
+        },
+        {
+          "mode": "slow",
+          "brightness": 1,
+          "frame": 1,
+          "id": "light1",
+          "on": true,
+          "power": 0.2153445759863648
+        },
+        {
+          "mode": "steady",
+          "brightness": 0.35,
+          "frame": 1,
+          "id": "light1",
+          "on": true,
+          "power": 0.35
+        },
+        {
+          "mode": "steady",
+          "brightness": 1,
+          "frame": 2,
+          "id": "light5",
+          "on": false,
+          "power": 0
+        },
+        {
+          "mode": "slow",
+          "brightness": 0.35,
+          "frame": 1,
+          "id": "stlight1",
+          "on": true,
+          "power": 0.24382224457741353
+        },
+        {
+          "mode": "fast",
+          "brightness": 1,
+          "frame": 1,
+          "id": "light3",
+          "on": true,
+          "power": 1
+        },
+        {
+          "mode": "steady",
+          "brightness": 1,
+          "frame": 1,
+          "id": "light4",
+          "on": true,
+          "power": 1
+        }
+      ],
+      "noHeadlampNoPockets": {
+        "below5": 0,
+        "median": 0.13725490196078433,
+        "below20Fraction": 0.603448275862069,
+        "below20": 70,
+        "points": 116,
+        "min": 0.13333333333333333
+      },
+      "room": "loc0_0",
+      "height": 25,
+      "width": 48,
+      "zones": 1,
+      "color": null
+    },
+    {
+      "defaultHeadlamp": {
+        "below5": 0,
+        "median": 0.13725490196078433,
+        "below20Fraction": 0.9347826086956522,
+        "below20": 43,
+        "points": 46,
+        "min": 0.13725490196078433
+      },
+      "backwall": "sky",
+      "darkness": 0,
+      "land": "surf",
+      "sky": false,
+      "time": 3.6999999999999966,
+      "lightOn": 0,
+      "lamps": 0,
+      "base": false,
+      "noHeadlamp": {
+        "below5": 2,
+        "median": 0.13725490196078433,
+        "below20Fraction": 1,
+        "below20": 46,
+        "points": 46,
+        "min": 0.011764705882352941
+      },
+      "ambient": 0.14,
+      "black": true,
+      "fixtures": [],
+      "noHeadlampNoPockets": {
+        "below5": 0,
+        "median": 0.13725490196078433,
+        "below20Fraction": 1,
+        "below20": 46,
+        "points": 46,
+        "min": 0.13725490196078433
+      },
+      "room": "loc0_1",
+      "height": 25,
+      "width": 48,
+      "zones": 3,
+      "color": "blue"
+    },
+    {
+      "defaultHeadlamp": {
+        "below5": 0,
+        "median": 0.13725490196078433,
+        "below20Fraction": 0.898989898989899,
+        "below20": 89,
+        "points": 99,
+        "min": 0.06666666666666667
+      },
+      "backwall": "tWindows",
+      "darkness": -20,
+      "land": "random_mane",
+      "sky": false,
+      "time": 7.166666666666651,
+      "lightOn": 0,
+      "lamps": 0,
+      "base": false,
+      "noHeadlamp": {
+        "below5": 6,
+        "median": 0.13725490196078433,
+        "below20Fraction": 1,
+        "below20": 99,
+        "points": 99,
+        "min": 0.011764705882352941
+      },
+      "ambient": 0.14,
+      "black": true,
+      "fixtures": [],
+      "noHeadlampNoPockets": {
+        "below5": 0,
+        "median": 0.13725490196078433,
+        "below20Fraction": 1,
+        "below20": 99,
+        "points": 99,
+        "min": 0.13725490196078433
+      },
+      "room": "loc0_4",
+      "height": 25,
+      "width": 48,
+      "zones": 1,
+      "color": null
+    },
+    {
+      "defaultHeadlamp": {
+        "below5": 2,
+        "median": 0.13725490196078433,
+        "below20Fraction": 0.9347826086956522,
+        "below20": 43,
+        "points": 46,
+        "min": 0.011764705882352941
+      },
+      "backwall": "sky",
+      "darkness": 0,
+      "land": "mtn",
+      "sky": false,
+      "time": 10.633333333333306,
+      "lightOn": 0,
+      "lamps": 0,
+      "base": false,
+      "noHeadlamp": {
+        "below5": 2,
+        "median": 0.13725490196078433,
+        "below20Fraction": 1,
+        "below20": 46,
+        "points": 46,
+        "min": 0.011764705882352941
+      },
+      "ambient": 0.14,
+      "black": true,
+      "fixtures": [],
+      "noHeadlampNoPockets": {
+        "below5": 0,
+        "median": 0.13725490196078433,
+        "below20Fraction": 1,
+        "below20": 46,
+        "points": 46,
+        "min": 0.13725490196078433
+      },
+      "room": "loc0_8",
+      "height": 25,
+      "width": 48,
+      "zones": 2,
+      "color": null
+    },
+    {
+      "defaultHeadlamp": {
+        "below5": 8,
+        "median": 0.3215686274509804,
+        "below20Fraction": 0.44680851063829785,
+        "below20": 63,
+        "points": 141,
+        "min": 0.00784313725490196
+      },
+      "backwall": "tTiles",
+      "darkness": -15,
+      "land": "stable_pi",
+      "sky": false,
+      "time": 14.09999999999996,
+      "lightOn": 1,
+      "lamps": 14,
+      "base": true,
+      "noHeadlamp": {
+        "below5": 8,
+        "median": 0.30196078431372547,
+        "below20Fraction": 0.44680851063829785,
+        "below20": 63,
+        "points": 141,
+        "min": 0.00784313725490196
+      },
+      "ambient": 0.14,
+      "black": false,
+      "fixtures": [
+        {
+          "mode": "steady",
+          "brightness": 0.35,
+          "frame": 1,
+          "id": "stlight4",
+          "on": true,
+          "power": 0.35
+        },
+        {
+          "mode": "steady",
+          "brightness": 0.65,
+          "frame": 1,
+          "id": "stlight4",
+          "on": true,
+          "power": 0.65
+        },
+        {
+          "mode": "steady",
+          "brightness": 0.35,
+          "frame": 1,
+          "id": "stlight4",
+          "on": true,
+          "power": 0.35
+        },
+        {
+          "mode": "steady",
+          "brightness": 1,
+          "frame": 1,
+          "id": "light2",
+          "on": true,
+          "power": 1
+        },
+        {
+          "mode": "steady",
+          "brightness": 1,
+          "frame": 1,
+          "id": "light2",
+          "on": true,
+          "power": 1
+        },
+        {
+          "mode": "slow",
+          "brightness": 0.65,
+          "frame": 1,
+          "id": "light2",
+          "on": true,
+          "power": 0.2329428191267191
+        },
+        {
+          "mode": "steady",
+          "brightness": 1,
+          "frame": 1,
+          "id": "light2",
+          "on": true,
+          "power": 1
+        },
+        {
+          "mode": "steady",
+          "brightness": 0.65,
+          "frame": 1,
+          "id": "light5",
+          "on": true,
+          "power": 0.65
+        },
+        {
+          "mode": "steady",
+          "brightness": 0.35,
+          "frame": 1,
+          "id": "light5",
+          "on": true,
+          "power": 0.35
+        },
+        {
+          "mode": "steady",
+          "brightness": 0.35,
+          "frame": 1,
+          "id": "stlight4",
+          "on": true,
+          "power": 0.35
+        },
+        {
+          "mode": "steady",
+          "brightness": 0.65,
+          "frame": 1,
+          "id": "stlight4",
+          "on": true,
+          "power": 0.65
+        },
+        {
+          "mode": "steady",
+          "brightness": 0.35,
+          "frame": 1,
+          "id": "stlight4",
+          "on": true,
+          "power": 0.35
+        },
+        {
+          "mode": "fast",
+          "brightness": 1,
+          "frame": 1,
+          "id": "stlight4",
+          "on": true,
+          "power": 1
+        },
+        {
+          "mode": "steady",
+          "brightness": 0.35,
+          "frame": 1,
+          "id": "stlight4",
+          "on": true,
+          "power": 0.35
+        }
+      ],
+      "noHeadlampNoPockets": {
+        "below5": 0,
+        "median": 0.3215686274509804,
+        "below20Fraction": 0.4397163120567376,
+        "below20": 62,
+        "points": 141,
+        "min": 0.13725490196078433
+      },
+      "room": "loc3_5",
+      "height": 25,
+      "width": 48,
+      "zones": 1,
+      "color": "yellow"
+    }
+  ]
+}

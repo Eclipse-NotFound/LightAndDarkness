@@ -35,6 +35,7 @@
 
 ## 阅读入口
 
+- [地图整体偏暗调查](design/map-lighting-investigation-2026-10-19.md)：原版639/安装658模板布灯统计、室外识别问题、5场景对照和调整顺序；本轮仅调查。
 - [原版光源与光照系统调查](design/native-lighting-survey.md)：先读此文，了解原版能力、限制和实现路线。
 - [原版全部弹丸与弹药调查](design/projectile-light-catalog-2026-10-15.md)：213个武器定义、68种弹丸外观、49类弹药及7种其他装填物品、照明效果表与排除项。
 - [弹丸照明使用与实现](design/projectile-lighting-v0.3.md)：设置、颜色/时长、采集与遮挡、性能限额、验证边界。
