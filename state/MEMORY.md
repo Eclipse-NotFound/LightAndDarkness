@@ -1,5 +1,7 @@
 # LightAndDarkness 当前记忆
 
+> 2026-10-19 ContinuousScene 性能实验已撤回生产源，**未部署**。完整照明帧复用通过21项像素/失效检查但命中少；遮光快照通过40项像素/实时查询检查，ABAB耗时48/62/68/55ms无稳定收益。源码恢复0.3.1，正式仍514A。实验补丁与结果保存在ContinuousScene/build/lad-rejected-cache-experiment.patch及其evidence，后续见 ../../ContinuousScene/state/in-progress-v08.md；不要发布872或314候选。
+
 ## 1. 这个模组是什么
 为Remains 1.02增加战术光暗、动态墙门遮光、随身灯、场景灯损坏/维修、氛围灯和黑暗区。入口LightAndDarknessMod.init(main:*)；正式路径release/LightAndDarknessMod.swf。0.3.0新增弹丸短时照明；当前0.3.1修复灯具重绘造成的进图黑块。
 
