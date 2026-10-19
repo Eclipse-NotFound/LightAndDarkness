@@ -35,3 +35,5 @@
 本次自然选用技能完成任务，未启动新子代理。证据归档`tests/evidence/2026-10-20/local-glow/local/`；原件在build/evidence对应ID。生产源码两文件、设计、参数化机器测试、终端探针及本报告为本次产物。报告新证据为终端原生破解标记、重建恢复和实际像素变化；待维护吸收，无技能行为修改。
 
 整合会话`01a13e52-3948-7cd1-af6f-7e7462e29b4a`为唯一部署方。机器最终复验：`tests/run-machines.ps1 -Mixed -Candidate <冻结SWF> -Mode verify -ExpectedVersion 0.5.0 -ProbePath build/out/local-glow/LightMachineProbeMod.swf`。地标与终端：`tools/run-landmark-tests.py --candidate <冻结SWF> --mode verify --mixed --expected-version 0.5.0 --terminals`，要求217而非仅124。最终字节与部署回执补在本记录。
+
+本轮实现与独立证据已精确提交60118c8。代码差异检查通过，原生stderr的CRCRLF按原件保留，未为消除文本空白提示而改写日志。报告已查重登记全局测试报告台账第624行并回读确认，状态待吸收。
