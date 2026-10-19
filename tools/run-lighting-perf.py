@@ -39,11 +39,25 @@ def responsive_owned(process):
     if not k.GetProcessInformation(process._process,4,ctypes.byref(actual),ctypes.sizeof(actual)):raise ctypes.WinError()
     assert actual.control&1 and not actual.state&1
     return {'before':[before.control,before.state],'applied':[actual.control,actual.state]}
+
+def owned_cpu_ms(process):
+    times=[W.FILETIME() for _ in range(4)]
+    process.k.GetProcessTimes.argtypes=[W.HANDLE]+[ctypes.POINTER(W.FILETIME)]*4
+    if not process.k.GetProcessTimes(process._process,*[ctypes.byref(t) for t in times]):raise ctypes.WinError()
+    return sum((t.dwHighDateTime<<32)|t.dwLowDateTime for t in times[2:])/10000
+
+def available_memory():
+    class Memory(ctypes.Structure):
+        _fields_=[('length',W.DWORD),('load',W.DWORD)]+[(name,ctypes.c_ulonglong) for name in ['totalPhysical','availablePhysical','totalCommit','availableCommit','totalVirtual','availableVirtual','extendedVirtual']]
+    state=Memory();state.length=ctypes.sizeof(state)
+    if not ctypes.WinDLL('kernel32',use_last_error=True).GlobalMemoryStatusEx(ctypes.byref(state)):raise ctypes.WinError()
+    return {'physicalBytes':state.availablePhysical,'commitBytes':state.availableCommit}
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--mode',choices=['bench','pixels','frames'],default='bench');p.add_argument('--full',action='store_true');p.add_argument('--samples',type=int,default=90);p.add_argument('--variant',choices=['module','bitmap','fixtures','proxy'],default='module');p.add_argument('--room-only',dest='roomOnly',action='store_true');p.add_argument('--width',type=int,default=1440);p.add_argument('--height',type=int,default=900);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--mode',choices=['bench','pixels','frames'],default='bench');p.add_argument('--full',action='store_true');p.add_argument('--samples',type=int,default=90);p.add_argument('--variant',choices=['module','bitmap','fixtures','proxy','suite'],default='module');p.add_argument('--room-only',dest='roomOnly',action='store_true');p.add_argument('--width',type=int,default=1440);p.add_argument('--height',type=int,default=900);args=p.parse_args()
     if not (640<=args.width<=3840 and 480<=args.height<=2160):p.error('Invalid test window dimensions')
     others=air_pids()
     if others:raise RuntimeError('Other AIR exists; wait for the agreed window: '+str(others))
+    if available_memory()['commitBytes']<2*1024**3:raise RuntimeError('Insufficient commit headroom for one isolated test')
     appid='remains-lad-perf-'+datetime.now().strftime('%Y%m%d%H%M%S%f')
     root=MOD/'build/generated'/appid;out=MOD/'build/evidence'/appid
     root.mkdir(parents=True);out.mkdir(parents=True)
@@ -82,16 +96,19 @@ def main():
     (out/'hashes.json').write_text(json.dumps(frozen,indent=2),'utf-8')
     storage=Path(os.environ['APPDATA'])/appid/'Local Store';storage.mkdir(parents=True)
     (storage/'ContinuousScene.preferences.json').write_text(json.dumps({'nativeEnabled':True}),'utf-8')
-    process=None;started=int(time.time()*1000);meta={};contaminated=False
+    process=None;started=int(time.time()*1000);meta={};contaminated=False;low_memory=False
     try:
         with (out/'stdout.txt').open('wb') as stdout,(out/'stderr.txt').open('wb') as stderr:
             process=HiddenProcess([str(GAME/'adl64.exe'),'-runtime',str(GAME/'runtimes/air/win64'),str(desc),'-nodebug'],cwd=root,stdout=stdout,stderr=stderr)
-            meta={'applicationID':appid,'pid':process.pid,'desktop':process.desktop,'startedMs':started,'qos':responsive_owned(process),'otherAir':[]}
+            meta={'applicationID':appid,'pid':process.pid,'desktop':process.desktop,'startedMs':started,'qos':responsive_owned(process),'otherAir':[],'cpuSamples':[],'memoryAtStart':available_memory()}
             (out/'process.json').write_text(json.dumps(meta,indent=2),'utf-8');print('EVIDENCE '+str(out),flush=True)
             deadline=time.monotonic()+440;next_inventory=time.monotonic()+1
             while process.poll() is None and time.monotonic()<deadline:
                 # Let native exit complete; do not race its file close/destructors.
                 if time.monotonic()>=next_inventory:
+                    memory=available_memory()
+                    meta['cpuSamples'].append({'atMs':int(time.time()*1000),'cpuMs':owned_cpu_ms(process),'memory':memory})
+                    if memory['commitBytes']<512*1024**2:low_memory=True;break
                     others=[pid for pid in air_pids() if pid!=process.pid];next_inventory=time.monotonic()+1
                     if others:
                         meta['otherAir'].append({'atMs':int(time.time()*1000),'pids':others});contaminated=True;break
@@ -106,9 +123,11 @@ def main():
             if process.poll() is None:raise RuntimeError('Owned process did not exit; PID '+str(process.pid))
             process.close()
         if storage.exists():shutil.copytree(storage,out/'storage')
-        meta['endedMs']=int(time.time()*1000);meta['performanceEligible']=not contaminated
+        meta['endedMs']=int(time.time()*1000);meta['performanceEligible']=not contaminated and not low_memory;meta['lowMemory']=low_memory
+        meta['memoryAtEnd']=available_memory()
         (out/'process.json').write_text(json.dumps(meta,indent=2),'utf-8')
     assert not contaminated,'Another AIR started during sampling; timing rejected, other process untouched'
+    assert not low_memory,'Commit headroom below 512 MiB; only owned test stopped, timing rejected'
     result=json.loads((out/'storage/perf-result.json').read_text('utf-8'))
     assert result['ok'],result.get('error')
     loader=result['loader'];session=re.fullmatch(r'run_(\d{13})_\d+',loader.get('session',''))

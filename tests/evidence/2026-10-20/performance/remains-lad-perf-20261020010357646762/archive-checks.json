@@ -1,0 +1,13 @@
+{
+  "recoveredOriginalStorage": false,
+  "frozenInputUnchanged": true,
+  "performanceGuard": true,
+  "probeOK": false,
+  "checks": 6,
+  "version": "0.5.0",
+  "completedMs": 1792429482537,
+  "loaderFresh": true,
+  "exactRequested": true,
+  "exactLoaded": true,
+  "loaderErrors": []
+}
