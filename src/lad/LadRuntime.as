@@ -61,7 +61,7 @@ package lad {
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.5.0",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.5.1",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.addEventListener(Event.ADDED,objectAdded,true);
@@ -70,7 +70,7 @@ package lad {
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.5.0 loaded");
+            LadLog.write("v0.5.1 loaded");
         }
         private function objectAdded(event:Event):void {
             if(!enabled || !atmosphere.settings.projectiles || !location || !world || world.loc!==location) return;
@@ -228,7 +228,8 @@ package lad {
         public function lights(view:Rectangle=null):Array {
             var result:Array=location?environment.lights(view || field.bounds):[];
             for each(var lamp:Object in lamps) if(lamp.state.hp>0 && lamp.state.on && lamp.powered)
-                result.push({id:lamp.key,x:lamp.x,y:lamp.y,radius:lamp.radius,color:lamp.color,power:lamp.power,angle:0,cone:Math.PI*2});
+                result.push({id:lamp.key,x:lamp.x,y:lamp.y,radius:lamp.radius,color:lamp.color,power:lamp.power,angle:0,cone:Math.PI*2,
+                    staticScene:!atmosphere.settings.flicker || lamp.state.atmosphere.mode=="steady"});
             if(player && store.data.headlamp) {
                 var x:Number=player.X+player.storona*12,y:Number=player.Y-player.scY*0.72;
                 var angle:Number=Math.atan2(world.celY-y,world.celX-x);

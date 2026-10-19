@@ -53,7 +53,7 @@ def available_memory():
     if not ctypes.WinDLL('kernel32',use_last_error=True).GlobalMemoryStatusEx(ctypes.byref(state)):raise ctypes.WinError()
     return {'physicalBytes':state.availablePhysical,'commitBytes':state.availableCommit}
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--mode',choices=['bench','pixels','frames'],default='bench');p.add_argument('--full',action='store_true');p.add_argument('--samples',type=int,default=90);p.add_argument('--variant',choices=['module','bitmap','fixtures','proxy','suite'],default='module');p.add_argument('--room-only',dest='roomOnly',action='store_true');p.add_argument('--width',type=int,default=1440);p.add_argument('--height',type=int,default=900);args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--mode',choices=['bench','pixels','frames'],default='bench');p.add_argument('--full',action='store_true');p.add_argument('--samples',type=int,default=90);p.add_argument('--variant',choices=['module','bitmap','fixtures','proxy','suite','staticlights'],default='module');p.add_argument('--room-only',dest='roomOnly',action='store_true');p.add_argument('--width',type=int,default=1440);p.add_argument('--height',type=int,default=900);args=p.parse_args()
     if not (640<=args.width<=3840 and 480<=args.height<=2160):p.error('Invalid test window dimensions')
     others=air_pids()
     if others:raise RuntimeError('Other AIR exists; wait for the agreed window: '+str(others))

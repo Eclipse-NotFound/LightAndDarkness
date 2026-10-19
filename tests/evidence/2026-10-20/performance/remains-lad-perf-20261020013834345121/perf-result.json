@@ -1,0 +1,44 @@
+{
+  "version": "0.5.1",
+  "rows": [
+    {
+      "results": [],
+      "width": 48,
+      "land": "rbl",
+      "height": 25,
+      "regions": 1,
+      "scene": 0
+    }
+  ],
+  "checks": 0,
+  "frameRate": 30,
+  "error": "Error: pixel mismatch scene=0 frame=0 Error: pixel mismatch scene=0 frame=0\n\tat LightingPerfProbeMod/check()\n\tat LightingPerfProbeMod/compare()\n\tat LightingPerfProbeMod/tick()",
+  "config": {
+    "mode": "pixels",
+    "full": false,
+    "roomOnly": false,
+    "height": 900,
+    "candidate": "mods/LightAndDarkness/build/out/perf-v051-static/LightAndDarknessMod.swf",
+    "width": 1440,
+    "variant": "module",
+    "samples": 90
+  },
+  "loader": {
+    "ok_LightAndDarknessMod": "run_1792431522750_984342|init @1792431523441",
+    "boot": "run_1792431522750_984342|v2 col=2 requested=6 @1792431522791",
+    "requested_ContinuousSceneMod": "run_1792431522750_984342|line 21 @1792431522779",
+    "session": "run_1792431522750_984342",
+    "requested_WallBlendMod": "run_1792431522750_984342|line 24 @1792431522787",
+    "ok_ModLoaderMod": "run_1792431522750_984342|init @1792431523480",
+    "requested_RealisticVisionMod": "run_1792431522750_984342|line 15 @1792431522777",
+    "ok_RealisticVisionMod": "run_1792431522750_984342|init @1792431523454",
+    "boot_start": "run_1792431522750_984342|v2 run=run_1792431522750_984342 @1792431522756",
+    "ok_ContinuousSceneMod": "run_1792431522750_984342|init @1792431523473",
+    "ok_LightingPerfProbeMod": "run_1792431522750_984342|init @1792431523484",
+    "requested_ModLoaderMod": "run_1792431522750_984342|line 12 @1792431522775",
+    "requested_LightingPerfProbeMod": "run_1792431522750_984342|line 23 @1792431522785",
+    "requested_LightAndDarknessMod": "run_1792431522750_984342|line 22 @1792431522781",
+    "ok_WallBlendMod": "run_1792431522750_984342|init @1792431523433"
+  },
+  "ok": false
+}

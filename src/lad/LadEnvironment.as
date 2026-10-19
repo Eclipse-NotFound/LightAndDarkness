@@ -115,7 +115,7 @@ package lad {
                 // Several separated samples make a broad window; hard ceiling bounds huge decorative objects.
                 for(var k:int=0;k<Math.min(4,points.length);k++) {
                     var q:Object=points[int((k+0.5)*points.length/Math.min(4,points.length))];
-                    openings.push({id:"window:"+bo.id+":"+bo.X+":"+bo.Y+":"+k,x:q.x,y:q.y,radius:260,color:0xddeaff,power:0.5,angle:0,cone:Math.PI*2});
+                    openings.push({id:"window:"+bo.id+":"+bo.X+":"+bo.Y+":"+k,x:q.x,y:q.y,radius:260,color:0xddeaff,power:0.5,angle:0,cone:Math.PI*2,staticScene:true});
                 }
             }
         }

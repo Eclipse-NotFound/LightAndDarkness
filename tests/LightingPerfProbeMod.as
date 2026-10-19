@@ -17,6 +17,7 @@ package {
         private var rows:Array=[],checks:int=0,frameCase:int=0,row:Object,x0:Number,y0:Number;
         private var wrapped:*,wrappedOriginal:*,simulationMs:int=0,simulationCalls:int=0;
         private var diagnostic:int=0;
+        private var anchor:Point;
         public static function init(root:*):void {
             if(NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-perf-")!=0)return;
             self=new LightingPerfProbeMod();self.main=root;self.started=getTimer();
@@ -39,13 +40,14 @@ package {
             w.onPause=true;r.enabled=false;
             var RF:Class=domain.getDefinition("lad.LadLightField") as Class,RE:Class=domain.getDefinition("lad.LadEnvironment") as Class,CF:Class=r.field.constructor as Class;
             var old:*=new RF(),fresh:*=new CF(),env:*=new RE();env.bind(w.loc,w.grafon,"perf");
-            var base:Rectangle=view(),sample:Object={scene:scene,land:w.land.act.id,width:w.loc.spaceX,height:w.loc.spaceY,regions:r.environment.regions.length,results:[]};rows.push(sample);
+            var base:Rectangle=view(),sample:Object={scene:scene,land:w.land.act.id,width:w.loc.spaceX,height:w.loc.spaceY,regions:r.environment.regions.length,results:[]};rows.push(sample);anchor=base.topLeft;
             var tx:int=Math.max(0,Math.min(w.loc.spaceX-1,int((base.x+300)/40))),ty:int=Math.max(0,Math.min(w.loc.spaceY-1,int((base.y+200)/40)));
             var tile:*=w.loc.space[tx][ty],opacity:Number=tile.opac,back:String=tile.back,power:Number=w.loc.lightOn;
             try {
                 if(cfg.mode=="pixels") {
                     for(var i:int=0;i<96;++i) {
-                        var v:Rectangle=new Rectangle(base.x+(i<48?i:96-i)*12,base.y+(i%6)*12,base.width,base.height);
+                        var position:int=int(i/4)*4;
+                        var v:Rectangle=new Rectangle(base.x+(position<48?position:96-position)*12,base.y+(int(i/4)%6)*12,base.width,base.height);
                         if(i==12)tile.opac=opacity>0?0:1;if(i==20)tile.opac=opacity;
                         if(i==28)tile.back=back==""?"bwall":"";if(i==36)tile.back=back;
                         if(i==44)w.loc.lightOn=-1;if(i==52)w.loc.lightOn=power;
@@ -55,11 +57,22 @@ package {
                         old.render(w.loc,v,lights,ambient,r.darkZones,darkness,env);
                         fresh.render(w.loc,v,lights,ambient,r.darkZones,darkness,r.environment);
                         var diff:*=fresh.data.compare(old.data),equal:Boolean=diff===0;
+                        if(!equal) {
+                            var changed:int=0,maxDifference:int=0,examples:Array=[];
+                            for(var px:int=0;px<fresh.data.width;++px)for(var py:int=0;py<fresh.data.height;++py) {
+                                var pixelBefore:uint=old.data.getPixel(px,py),pixelAfter:uint=fresh.data.getPixel(px,py);
+                                if(pixelBefore==pixelAfter)continue;++changed;
+                                var delta:int=Math.max(Math.abs((pixelBefore>>16&255)-(pixelAfter>>16&255)),Math.abs((pixelBefore>>8&255)-(pixelAfter>>8&255)),Math.abs((pixelBefore&255)-(pixelAfter&255)));
+                                maxDifference=Math.max(maxDifference,delta);if(examples.length<24)examples.push([px,py,pixelBefore.toString(16),pixelAfter.toString(16),delta]);
+                            }
+                            save("pixel-mismatch.json",{scene:scene,frame:i,changed:changed,maxDifference:maxDifference,examples:examples,bounds:fresh.bounds,lights:lights});
+                        }
                         if(diff is BitmapData)diff.dispose();
                         check(equal,"pixel mismatch scene="+scene+" frame="+i);
                         check(old.sample(v.x+200,v.y+200)==fresh.sample(v.x+200,v.y+200),"gameplay sample mismatch "+i);
                     }
                     sample.pixelFrames=96;
+                    if("sceneLightBuilds" in fresh){sample.sceneBuilds=fresh.sceneLightBuilds;check(fresh.sceneLightBuilds>0,"steady-light cache was not exercised");}
                 } else {
                     for each(var kind:String in ["idle","pan","aim"]) {
                         var snapshots:Array=[];
@@ -80,6 +93,13 @@ package {
             // Trail shape is a separately authorized visual change, tested by its
             // own suite; compare the unchanged lamp/environment raster here.
             var lights:Array=[];for each(var input:Object in r.lights(v))if(!input.trail)lights.push(input);
+            if(cfg.mode=="pixels") {
+                // Force a visible steady prefix in both small and large maps.
+                // Exercise cached power/colour/radius changes and prefix removal.
+                var a:Object={id:"prefix-a",x:anchor.x+440,y:anchor.y+300,radius:i>=52 && i<60?210:230,color:i>=68 && i<76?0xaaddff:0xffdda0,power:i>=24 && i<32?0.3:0.7,angle:0,cone:Math.PI*2,staticScene:!(i>=32 && i<40)};
+                var b:Object={id:"prefix-b",x:anchor.x+600,y:anchor.y+320,radius:180,color:0xcceeff,power:0.5,angle:0,cone:Math.PI*2,staticScene:true};
+                if(i>=60 && i<68)lights.unshift(b,a);else lights.unshift(a,b);
+            }
             lights.push({id:"perf-fixed",x:v.x+500-(moving?i*4:0),y:v.y+280,radius:320,color:0xffdda0,power:0.6,angle:0,cone:Math.PI*2});
             lights.push({id:"perf-moving",x:v.x+400+i*4,y:v.y+260,radius:440,color:0xfff0d6,power:i%17==0?0:1,angle:i*Math.PI/90,cone:Math.PI*0.58});
             return lights;
@@ -91,6 +111,7 @@ package {
             r.setEnabled(variant=="module"?on:true);r.field.bitmap.visible=on || variant!="bitmap";
             if(variant=="fixtures")for each(var lamp:Object in r.lamps)lamp.holder.cacheAsBitmap=!on;
             if(variant=="proxy")for each(lamp in r.lamps)lamp.proxy.invis=!on;
+            if(variant=="staticlights")r.field.sceneLightsCache=!on;
             age=0;last=getTimer();simulationMs=0;simulationCalls=0;
             row={scene:scene,on:on,frames:[],field:[],logic:[],path:{x:x0,y:y0},empty:0,
                 lamps:r.lamps.length,units:w.loc.units.length,variant:variant,simulation:[],simulationCalls:[],
@@ -130,6 +151,8 @@ package {
                         row.measuredAt=new Date().time;
                         row.lamps=r.lamps.length;row.units=w.loc.units.length;
                         row.stepStart=r.steps;if("renders" in r)row.renderStart=r.renders;
+                        if("sceneLightBuilds" in r.field)row.sceneBuildStart=r.field.sceneLightBuilds;
+                        if(row.variant=="staticlights")check(r.field.sceneLightsCache==!row.on,"static composite treatment not applied");
                         if(row.variant=="fixtures" || row.variant=="proxy") {
                             check(r.lamps.length>0,"single-variable probe has no fixtures");
                             for each(var lamp:Object in r.lamps)check(row.variant=="fixtures"?lamp.holder.cacheAsBitmap==!row.on:lamp.proxy.invis==!row.on,"probe treatment not applied");
@@ -142,6 +165,7 @@ package {
                     if(++age>=40+cfg.samples) {
                         row.finishedAt=new Date().time;
                         row.steps=r.steps-row.stepStart;if("renders" in r)row.renders=r.renders-row.renderStart;
+                        if("sceneLightBuilds" in r.field)row.sceneBuilds=r.field.sceneLightBuilds-row.sceneBuildStart;
                         rows.push(row);save("progress.json",rows);
                         var active:Boolean=row.variant!="module" || row.on;
                         check(!active || (r.enabled && r.location===w.loc && row.steps>=cfg.samples-5),"lighting simulation stalled case="+frameCase+" steps="+row.steps+" sost="+w.gg.sost+" pause="+w.onPause+" state="+w.allStat);

@@ -19,7 +19,7 @@ def main():
         storage=evidence/'storage';recovered=False
         if not (storage/'perf-result.json').exists():
             storage=Path(os.environ['APPDATA'])/app/'Local Store';recovered=True
-        for name in ['perf-result.json','progress.json','LightAndDarkness.log']:
+        for name in ['perf-result.json','progress.json','LightAndDarkness.log','pixel-mismatch.json']:
             if (storage/name).exists():shutil.copy2(storage/name,out/name)
         root=MOD/'build/generated'/app
         hashes=json.loads((evidence/'hashes.json').read_text('utf-8'))

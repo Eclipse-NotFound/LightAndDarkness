@@ -25,6 +25,12 @@ package lad {
         private var loc:*;
         private var background:BitmapData;
         private var backgroundKey:String="";
+        private var sceneBackground:BitmapData;
+        private var sceneBackgroundKey:String="";
+        public var sceneLightsCache:Boolean=true;
+        public var sceneLightBuilds:int=0;
+        private var previousView:Rectangle=new Rectangle();
+        private var steadyViewFrames:int=0;
         private var materialHashes:Object={};
         // A scrolling viewport is not a terrain edit. Rooms retain the
         // same shadow geometry and a padded ambient raster until content changes.
@@ -43,6 +49,8 @@ package lad {
             cache = {}; terrainHash = 0; terrainRegion = ""; loc = null;
             if(data) data.dispose(); data=null; bitmap.bitmapData=null;
             if(background) background.dispose();background=null;backgroundKey="";
+            if(sceneBackground) sceneBackground.dispose();sceneBackground=null;sceneBackgroundKey="";
+            previousView.setEmpty();steadyViewFrames=0;
             terrainCells=[];backgroundBounds.setEmpty();usingSceneCache=false;
             if(bitmap.parent) bitmap.parent.removeChild(bitmap);
         }
@@ -60,6 +68,8 @@ package lad {
                 bitmap.smoothing=true;
             }
             bounds.setTo(vx,vy,width*cell,height*cell);
+            steadyViewFrames=previousView.equals(bounds)?steadyViewFrames+1:0;
+            previousView.copyFrom(bounds);
             bitmap.x=vx; bitmap.y=vy;
             var reuse:Boolean=sceneCache;
             if(reuse!=usingSceneCache) {
@@ -98,26 +108,16 @@ package lad {
             }
             }
             ambientBackground(ambient,zones,darkness,environment,reuse);
-            data.lock(); data.copyPixels(background,new Rectangle((bounds.x-backgroundBounds.x)/cell,(bounds.y-backgroundBounds.y)/cell,data.width,data.height),new Point());
             var alive:Object={};
-            for each(var light:Object in lights) {
+            var prefix:int=0;
+            if(reuse && sceneLightsCache && steadyViewFrames>=2)while(prefix<lights.length && lights[prefix].staticScene && !lights[prefix].trail)++prefix;
+            var base:BitmapData=prefix>1?stableBackground(lights,prefix,alive):background;
+            if(prefix<=1)prefix=0;
+            data.lock(); data.copyPixels(base,prefix>1?base.rect:new Rectangle((bounds.x-backgroundBounds.x)/cell,(bounds.y-backgroundBounds.y)/cell,data.width,data.height),new Point());
+            for(var i:int=prefix;i<lights.length;++i) {
+                var light:Object=lights[i];
                 if(light.trail) continue;
-                if(!bounds.intersects(new Rectangle(light.x-light.radius,light.y-light.radius,light.radius*2,light.radius*2))) continue;
-                var identity:String=String(light.id);
-                alive[identity]=true;
-                // A momentary blackout retains its shadow geometry for the next lit frame.
-                if(light.power<=0) continue;
-                var signature:String=[int(light.x/4),int(light.y/4),light.radius,int(light.angle*90/Math.PI),light.cone].join(":");
-                var entry:Object=cache[identity];
-                if(entry==null || entry.key!=signature) {
-                    if(entry) entry.data.dispose();
-                    entry={key:signature,data:makeLight(light)};cache[identity]=entry;rebuilds++;
-                }
-                var color:uint=uint(light.color);
-                var transform:ColorTransform=new ColorTransform(((color>>16)&255)/255*light.power,
-                    ((color>>8)&255)/255*light.power,(color&255)/255*light.power,1);
-                var matrix:Matrix=new Matrix(1,0,0,1,(light.x-light.radius-vx)/cell,(light.y-light.radius-vy)/cell);
-                data.draw(entry.data,matrix,transform,BlendMode.SCREEN,null,true);
+                drawLight(data,bounds,light,alive);
             }
             for(var key:String in cache) if(!alive[key]) {cache[key].data.dispose();delete cache[key];}
             trailRaster.render(data,bounds,cell,loc,lights);
@@ -125,6 +125,49 @@ package lad {
         }
         private function clearGeometry():void {
             for each(var old:Object in cache) old.data.dispose();cache={};
+            sceneBackgroundKey="";
+        }
+        private function stableBackground(lights:Array,count:int,alive:Object):BitmapData {
+            var selected:Array=[],parts:Array=[backgroundKey,bounds.toString()];
+            for(var i:int=0;i<count;++i) {
+                var light:Object=lights[i];
+                // Cache the same viewport-visible prefix, in its original order.
+                // A newly visible light changes this key before cached pixels are used.
+                if(!intersectsLight(bounds,light))continue;
+                alive[String(light.id)]=true;selected.push(light);
+                parts.push(light.id,light.x,light.y,light.radius,light.angle,light.cone,light.color,light.power);
+            }
+            var key:String=parts.join(":");
+            if(sceneBackground && key==sceneBackgroundKey)return sceneBackground;
+            if(sceneBackground)sceneBackground.dispose();
+            // AIR's clipped SCREEN sampling differs when a draw target is padded.
+            // Keep the exact viewport target and transform of the uncached path.
+            // Only cache after the view settles, avoiding allocations while scrolling.
+            sceneBackground=new BitmapData(data.width,data.height,false,0);sceneBackground.lock();
+            sceneBackground.copyPixels(background,new Rectangle((bounds.x-backgroundBounds.x)/cell,(bounds.y-backgroundBounds.y)/cell,data.width,data.height),new Point());
+            for each(light in selected)drawLight(sceneBackground,bounds,light,alive);
+            sceneBackground.unlock();sceneBackgroundKey=key;++sceneLightBuilds;
+            return sceneBackground;
+        }
+        private function intersectsLight(rect:Rectangle,light:Object):Boolean {
+            return rect.intersects(new Rectangle(light.x-light.radius,light.y-light.radius,light.radius*2,light.radius*2));
+        }
+        private function drawLight(target:BitmapData,area:Rectangle,light:Object,alive:Object):void {
+            if(!intersectsLight(area,light))return;
+            var identity:String=String(light.id);alive[identity]=true;
+            // A momentary blackout retains its shadow geometry for the next lit frame.
+            if(light.power<=0)return;
+            var signature:String=[int(light.x/4),int(light.y/4),light.radius,int(light.angle*90/Math.PI),light.cone].join(":");
+            var entry:Object=cache[identity];
+            if(entry==null || entry.key!=signature) {
+                if(entry)entry.data.dispose();
+                entry={key:signature,data:makeLight(light)};cache[identity]=entry;rebuilds++;
+            }
+            var color:uint=uint(light.color);
+            var transform:ColorTransform=new ColorTransform(((color>>16)&255)/255*light.power,
+                ((color>>8)&255)/255*light.power,(color&255)/255*light.power,1);
+            var matrix:Matrix=new Matrix(1,0,0,1,(light.x-light.radius-area.x)/cell,(light.y-light.radius-area.y)/cell);
+            target.draw(entry.data,matrix,transform,BlendMode.SCREEN,null,true);
         }
         private function sceneTerrainChanged(scan:Rectangle):Boolean {
             var left:int=Math.max(0,Math.floor(scan.left/40)),top:int=Math.max(0,Math.floor(scan.top/40));

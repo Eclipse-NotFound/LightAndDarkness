@@ -1,0 +1,22 @@
+[
+  {
+    "regions": 1,
+    "land": "rbl",
+    "width": 48,
+    "sceneBuilds": 22,
+    "pixelFrames": 96,
+    "height": 25,
+    "scene": 0,
+    "results": []
+  },
+  {
+    "regions": 25,
+    "land": "random_mane",
+    "width": 240,
+    "sceneBuilds": 22,
+    "pixelFrames": 96,
+    "height": 125,
+    "scene": 1,
+    "results": []
+  }
+]
