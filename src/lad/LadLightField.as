@@ -25,6 +25,12 @@ package lad {
         private var background:BitmapData;
         private var backgroundKey:String="";
         private var materialHashes:Object={};
+        // A scrolling viewport is not a terrain edit. Large scenes retain the
+        // same shadow geometry and a padded ambient raster until content changes.
+        public var sceneCache:Boolean=true;
+        private var usingSceneCache:Boolean=false;
+        private var terrainCells:Array=[];
+        private var backgroundBounds:Rectangle=new Rectangle();
         public function LadLightField() {
             bitmap.name = "LightAndDarknessIllumination";
             bitmap.blendMode = BlendMode.MULTIPLY;
@@ -35,6 +41,7 @@ package lad {
             cache = {}; terrainHash = 0; terrainRegion = ""; loc = null;
             if(data) data.dispose(); data=null; bitmap.bitmapData=null;
             if(background) background.dispose();background=null;backgroundKey="";
+            terrainCells=[];backgroundBounds.setEmpty();usingSceneCache=false;
             if(bitmap.parent) bitmap.parent.removeChild(bitmap);
         }
         public function render(location:*, view:Rectangle, lights:Array, ambient:Number,zones:Array=null,darkness:Number=1,environment:LadEnvironment=null):void {
@@ -52,7 +59,21 @@ package lad {
             }
             bounds.setTo(vx,vy,width*cell,height*cell);
             bitmap.x=vx; bitmap.y=vy;
+            var reuse:Boolean=sceneCache && (loc.spaceX>48 || loc.spaceY>25);
+            if(reuse!=usingSceneCache) {
+                clearGeometry();terrainCells=[];terrainHash=0;terrainRegion="";backgroundKey="";
+                usingSceneCache=reuse;
+            }
             var scan:Rectangle=view.clone(); scan.inflate(600,600);
+            if(reuse) {
+                // Include the ambient flood's seven-tile support and every
+                // current light, even when its rays extend beyond the camera.
+                if(background) {var ambientScan:Rectangle=backgroundBounds.clone();ambientScan.inflate(280,280);scan=scan.union(ambientScan);}
+                for each(var activeLight:Object in lights)
+                    if(bounds.intersects(new Rectangle(activeLight.x-activeLight.radius,activeLight.y-activeLight.radius,activeLight.radius*2,activeLight.radius*2)))
+                        scan=scan.union(new Rectangle(activeLight.x-activeLight.radius,activeLight.y-activeLight.radius,activeLight.radius*2,activeLight.radius*2));
+                if(sceneTerrainChanged(scan)) {clearGeometry();++terrainHash;backgroundKey="";}
+            } else {
             var left:int=Math.max(0,int(scan.left/40));
             var top:int=Math.max(0,int(scan.top/40));
             var right:int=Math.min(loc.spaceX-1,int(scan.right/40));
@@ -73,8 +94,9 @@ package lad {
                 for each(var old:Object in cache) old.data.dispose(); cache={};
                 terrainHash=hash;terrainRegion=region;
             }
-            ambientBackground(ambient,zones,darkness,environment);
-            data.lock(); data.copyPixels(background,background.rect,new Point());
+            }
+            ambientBackground(ambient,zones,darkness,environment,reuse);
+            data.lock(); data.copyPixels(background,new Rectangle((bounds.x-backgroundBounds.x)/cell,(bounds.y-backgroundBounds.y)/cell,data.width,data.height),new Point());
             var alive:Object={};
             for each(var light:Object in lights) {
                 if(!bounds.intersects(new Rectangle(light.x-light.radius,light.y-light.radius,light.radius*2,light.radius*2))) continue;
@@ -97,22 +119,44 @@ package lad {
             for(var key:String in cache) if(!alive[key]) {cache[key].data.dispose();delete cache[key];}
             data.unlock();elapsedMs=getTimer()-started;
         }
-        private function ambientBackground(ambient:Number,zones:Array,darkness:Number,environment:LadEnvironment):void {
-            var signature:String=[bounds.x,bounds.y,data.width,data.height,ambient,darkness,JSON.stringify(zones),environment?environment.signature()+":"+terrainHash:""].join(":");
-            if(signature==backgroundKey && background) return;
+        private function clearGeometry():void {
+            for each(var old:Object in cache) old.data.dispose();cache={};
+        }
+        private function sceneTerrainChanged(scan:Rectangle):Boolean {
+            var left:int=Math.max(0,Math.floor(scan.left/40)),top:int=Math.max(0,Math.floor(scan.top/40));
+            var right:int=Math.min(loc.spaceX-1,Math.floor(scan.right/40)),bottom:int=Math.min(loc.spaceY-1,Math.floor(scan.bottom/40));
+            var changed:Boolean=false;
+            for(var x:int=left;x<=right;++x) {
+                var column:Array=terrainCells[x];if(!column){column=[];terrainCells[x]=column;}
+                for(var y:int=top;y<=bottom;++y) {
+                    var tile:*=loc.space[x][y],old:Object=column[y];
+                    var opacity:Number=Number(tile.opac),back:String=String(tile.back),rear:Boolean=Boolean(tile.fRear),front:String=rear?String(tile.front):"";
+                    if(!old) column[y]={opacity:opacity,back:back,rear:rear,front:front};
+                    else if(old.opacity!=opacity || old.back!=back || old.rear!=rear || old.front!=front) {
+                        changed=true;old.opacity=opacity;old.back=back;old.rear=rear;old.front=front;
+                    }
+                }
+            }
+            return changed;
+        }
+        private function ambientBackground(ambient:Number,zones:Array,darkness:Number,environment:LadEnvironment,reuse:Boolean):void {
+            var signature:String=[ambient,darkness,JSON.stringify(zones),environment?environment.signature()+":"+terrainHash:""].join(":");
+            if(signature==backgroundKey && background && (reuse?backgroundBounds.containsRect(bounds):backgroundBounds.equals(bounds))) return;
             if(background) background.dispose();
+            backgroundBounds=bounds.clone();if(reuse)backgroundBounds.inflate(240,240);
+            var paintBounds:Rectangle=backgroundBounds;
             var shade:int=Math.max(0,Math.min(255,int(ambient*255)));
-            background=environment?environment.paint(bounds,cell,ambient/0.14):new BitmapData(data.width,data.height,false,(shade<<16)|(shade<<8)|shade);
+            background=environment?environment.paint(paintBounds,cell,ambient/0.14):new BitmapData(Math.round(paintBounds.width/cell),Math.round(paintBounds.height/cell),false,(shade<<16)|(shade<<8)|shade);
             var original:BitmapData=zones && zones.length && darkness>0?background.clone():null;
             if(zones && darkness>0) for each(var zone:Object in zones) {
                 var rect:Rectangle=new Rectangle(zone.x,zone.y,zone.width,zone.height);
-                if(!bounds.intersects(rect)) continue;
-                var left:int=Math.max(0,int((rect.left-bounds.x)/cell));
-                var top:int=Math.max(0,int((rect.top-bounds.y)/cell));
-                var right:int=Math.min(data.width,Math.ceil((rect.right-bounds.x)/cell));
-                var bottom:int=Math.min(data.height,Math.ceil((rect.bottom-bounds.y)/cell));
+                if(!paintBounds.intersects(rect)) continue;
+                var left:int=Math.max(0,int((rect.left-paintBounds.x)/cell));
+                var top:int=Math.max(0,int((rect.top-paintBounds.y)/cell));
+                var right:int=Math.min(background.width,Math.ceil((rect.right-paintBounds.x)/cell));
+                var bottom:int=Math.min(background.height,Math.ceil((rect.bottom-paintBounds.y)/cell));
                 for(var x:int=left;x<right;x++) for(var y:int=top;y<bottom;y++) {
-                    var wx:Number=bounds.x+(x+0.5)*cell,wy:Number=bounds.y+(y+0.5)*cell;
+                    var wx:Number=paintBounds.x+(x+0.5)*cell,wy:Number=paintBounds.y+(y+0.5)*cell;
                     var edge:Number=Math.min(wx-rect.left,rect.right-wx,wy-rect.top,rect.bottom-wy);
                     if(edge<0) continue;
                     var weight:Number=zone.feather>0?Math.min(1,edge/zone.feather):1;
