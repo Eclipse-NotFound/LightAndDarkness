@@ -1,0 +1,35 @@
+{
+  "ground": {
+    "box": [
+      500,
+      730,
+      1300,
+      790
+    ],
+    "channelThreshold": 10,
+    "channelSamples": 143869,
+    "medianRGBRatio": 0.3700787401574803
+  },
+  "wall": {
+    "box": [
+      20,
+      390,
+      130,
+      690
+    ],
+    "channelThreshold": 10,
+    "channelSamples": 99000,
+    "medianRGBRatio": 0.37209302325581395
+  },
+  "sky": {
+    "box": [
+      400,
+      200,
+      1000,
+      500
+    ],
+    "channelThreshold": 10,
+    "channelSamples": 472884,
+    "medianRGBRatio": 0.6764705882352942
+  }
+}

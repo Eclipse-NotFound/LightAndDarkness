@@ -1,0 +1,50 @@
+[
+  {
+    "id": "tWindows",
+    "width": 960,
+    "partial": 45477,
+    "height": 320,
+    "total": 307200,
+    "transparent": 39238
+  },
+  {
+    "id": "tWindows2",
+    "width": 960,
+    "partial": 51767,
+    "height": 320,
+    "total": 307200,
+    "transparent": 33106
+  },
+  {
+    "id": "tTower",
+    "width": 960,
+    "partial": 1284,
+    "height": 320,
+    "total": 307200,
+    "transparent": 68422
+  },
+  {
+    "id": "tBackWall",
+    "width": 960,
+    "partial": 0,
+    "height": 1000,
+    "total": 960000,
+    "transparent": 0
+  },
+  {
+    "id": "tStConcrete",
+    "width": 480,
+    "partial": 0,
+    "height": 320,
+    "total": 153600,
+    "transparent": 0
+  },
+  {
+    "id": "tEncl3",
+    "width": 320,
+    "partial": 0,
+    "height": 320,
+    "total": 102400,
+    "transparent": 0
+  }
+]

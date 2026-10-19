@@ -1,0 +1,911 @@
+{
+  "boundary": "Matched 24-world-pixel grid projected into the screenshot. Excludes HUD bands and native RGB-luma<12. RGB encoded Rec709-weighted luma 0..255, not physical luminance. Same paused room for formal/native/mask-off/ambient/lamp variants. Actual and fixed-rv were captured before visibility isolation, so not used as strict same-state pixel oracles. New-game samples, not all templates or player save.",
+  "applicationID": "remains-lad-background-20261020002208067968",
+  "rows": [
+    {
+      "land": "rbl",
+      "room": "loc0_0",
+      "backwall": "tStConcrete",
+      "backform": 0,
+      "transpFon": false,
+      "lamps": 9,
+      "onLamps": 8,
+      "windows": 16,
+      "regions": 1,
+      "profile": "safe",
+      "prefix": "sample-1",
+      "groups": {
+        "scene": {
+          "n": 3011,
+          "fieldMedian": 0.6862745098039216,
+          "images": {
+            "formal": {
+              "mean": 43.514356758551976,
+              "median": 36.996,
+              "sumRelativeNative": 0.6508224460739545,
+              "medianRelativeNative": 0.5956953287456856,
+              "below25Fraction": 0.26901361673862506
+            },
+            "native": {
+              "mean": 66.86056545998007,
+              "median": 49.7874,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.10494852208568582
+            },
+            "mask-off": {
+              "mean": 62.647540418465624,
+              "median": 47.14039999999999,
+              "sumRelativeNative": 0.9369878939472,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.11391564264363999
+            },
+            "ambient125": {
+              "mean": 49.82516200597808,
+              "median": 39.9318,
+              "sumRelativeNative": 0.7452100002923446,
+              "medianRelativeNative": 0.7218782674706734,
+              "below25Fraction": 0.201262039189638
+            },
+            "lamps150": {
+              "mean": 44.95494586516107,
+              "median": 38.5696,
+              "sumRelativeNative": 0.6723686160277724,
+              "medianRelativeNative": 0.6130365703203602,
+              "below25Fraction": 0.25473264696114245
+            },
+            "actual": {
+              "mean": 44.075542942544004,
+              "median": 37.719199999999994,
+              "sumRelativeNative": 0.6592158268378058,
+              "medianRelativeNative": 0.6237994642507132,
+              "below25Fraction": 0.2567253404184656
+            },
+            "fixed-rv": {
+              "mean": 43.514356758551976,
+              "median": 36.996,
+              "sumRelativeNative": 0.6508224460739545,
+              "medianRelativeNative": 0.5956953287456856,
+              "below25Fraction": 0.26901361673862506
+            }
+          }
+        },
+        "solid": {
+          "n": 448,
+          "fieldMedian": 0.5764705882352941,
+          "images": {
+            "formal": {
+              "mean": 72.45084955357143,
+              "median": 68.7834,
+              "sumRelativeNative": 0.5942570211377192,
+              "medianRelativeNative": 0.5736137047057974,
+              "below25Fraction": 0.0
+            },
+            "native": {
+              "mean": 121.91837366071428,
+              "median": 118.99459999999999,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.0
+            },
+            "mask-off": {
+              "mean": 121.91837366071428,
+              "median": 118.99459999999999,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.0
+            },
+            "ambient125": {
+              "mean": 89.14681741071428,
+              "median": 85.4966,
+              "sumRelativeNative": 0.7312008414646368,
+              "medianRelativeNative": 0.7182278295504804,
+              "below25Fraction": 0.0
+            },
+            "lamps150": {
+              "mean": 73.12959419642857,
+              "median": 68.7834,
+              "sumRelativeNative": 0.5998242266579144,
+              "medianRelativeNative": 0.5736478893699584,
+              "below25Fraction": 0.0
+            },
+            "actual": {
+              "mean": 72.56097410714285,
+              "median": 68.7834,
+              "sumRelativeNative": 0.5951602857586688,
+              "medianRelativeNative": 0.5735744831607681,
+              "below25Fraction": 0.0
+            },
+            "fixed-rv": {
+              "mean": 72.45084955357143,
+              "median": 68.7834,
+              "sumRelativeNative": 0.5942570211377192,
+              "medianRelativeNative": 0.5736137047057974,
+              "below25Fraction": 0.0
+            }
+          }
+        },
+        "opaque": {
+          "n": 2924,
+          "fieldMedian": 0.6745098039215687,
+          "images": {
+            "formal": {
+              "mean": 43.571786730506155,
+              "median": 36.9318,
+              "sumRelativeNative": 0.6452874252311939,
+              "medianRelativeNative": 0.5899831575633918,
+              "below25Fraction": 0.2722298221614227
+            },
+            "native": {
+              "mean": 67.52306805745553,
+              "median": 50.61149999999999,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.10465116279069768
+            },
+            "mask-off": {
+              "mean": 63.19381566347469,
+              "median": 47.647,
+              "sumRelativeNative": 0.9358848387887666,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.11388508891928864
+            },
+            "ambient125": {
+              "mean": 50.0517012995896,
+              "median": 40.0702,
+              "sumRelativeNative": 0.7412533633246714,
+              "medianRelativeNative": 0.7204180223195858,
+              "below25Fraction": 0.2028043775649795
+            },
+            "lamps150": {
+              "mean": 45.0367123119015,
+              "median": 38.5642,
+              "sumRelativeNative": 0.6669826121286382,
+              "medianRelativeNative": 0.60411371393538,
+              "below25Fraction": 0.25752393980848154
+            },
+            "actual": {
+              "mean": 44.14764302325581,
+              "median": 37.719199999999994,
+              "sumRelativeNative": 0.6538157150337197,
+              "medianRelativeNative": 0.6140961847716087,
+              "below25Fraction": 0.25991792065663477
+            },
+            "fixed-rv": {
+              "mean": 43.571786730506155,
+              "median": 36.9318,
+              "sumRelativeNative": 0.6452874252311939,
+              "medianRelativeNative": 0.5899831575633918,
+              "below25Fraction": 0.2722298221614227
+            }
+          }
+        },
+        "opening": {
+          "n": 0,
+          "fieldMedian": null,
+          "images": {
+            "formal": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "native": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "mask-off": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "ambient125": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "lamps150": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "actual": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "fixed-rv": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            }
+          }
+        },
+        "missed": {
+          "n": 0,
+          "fieldMedian": null,
+          "images": {
+            "formal": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "native": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "mask-off": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "ambient125": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "lamps150": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "actual": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "fixed-rv": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            }
+          }
+        }
+      }
+    },
+    {
+      "land": "random_mane",
+      "room": "loc0_0",
+      "backwall": "tWindows",
+      "backform": 0,
+      "transpFon": true,
+      "lamps": 46,
+      "onLamps": 20,
+      "windows": 88,
+      "regions": 25,
+      "profile": "abandoned",
+      "prefix": "sample-2",
+      "groups": {
+        "scene": {
+          "n": 3045,
+          "fieldMedian": 0.3568627450980392,
+          "images": {
+            "formal": {
+              "mean": 26.80563947454844,
+              "median": 22.8596,
+              "sumRelativeNative": 0.3620343794533943,
+              "medianRelativeNative": 0.3500502300812537,
+              "below25Fraction": 0.5655172413793104
+            },
+            "native": {
+              "mean": 74.04169602627258,
+              "median": 64.3622,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.035467980295566505
+            },
+            "mask-off": {
+              "mean": 73.6944616091954,
+              "median": 63.85959999999999,
+              "sumRelativeNative": 0.995310285478145,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.035796387520525455
+            },
+            "ambient125": {
+              "mean": 33.32883251231527,
+              "median": 28.7152,
+              "sumRelativeNative": 0.45013599500056073,
+              "medianRelativeNative": 0.44056018782840206,
+              "below25Fraction": 0.4039408866995074
+            },
+            "lamps150": {
+              "mean": 27.209363087027914,
+              "median": 22.9278,
+              "sumRelativeNative": 0.36748703159599533,
+              "medianRelativeNative": 0.3500817660826848,
+              "below25Fraction": 0.5582922824302134
+            },
+            "aperture-concept": {
+              "mean": 30.753667717569787,
+              "median": 25.8556,
+              "sumRelativeNative": 0.4153560678385502,
+              "medianRelativeNative": 0.3517221595469729,
+              "below25Fraction": 0.477175697865353
+            },
+            "actual": {
+              "mean": 2.621736157635468,
+              "median": 0.0,
+              "sumRelativeNative": 0.035408915494118134,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9622331691297209
+            },
+            "fixed-rv": {
+              "mean": 2.1241311658456485,
+              "median": 0.0,
+              "sumRelativeNative": 0.02868831050401564,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9720853858784894
+            }
+          }
+        },
+        "solid": {
+          "n": 658,
+          "fieldMedian": 0.3568627450980392,
+          "images": {
+            "formal": {
+              "mean": 45.021552583586626,
+              "median": 46.5708,
+              "sumRelativeNative": 0.3563253116606503,
+              "medianRelativeNative": 0.35260809163991086,
+              "below25Fraction": 0.09574468085106383
+            },
+            "native": {
+              "mean": 126.34957750759878,
+              "median": 129.637,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.02127659574468085
+            },
+            "mask-off": {
+              "mean": 127.70970820668693,
+              "median": 131.92499999999998,
+              "sumRelativeNative": 1.010764821900622,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.019756838905775075
+            },
+            "ambient125": {
+              "mean": 56.563393617021276,
+              "median": 58.498599999999996,
+              "sumRelativeNative": 0.4476737851665511,
+              "medianRelativeNative": 0.44305515516275495,
+              "below25Fraction": 0.057750759878419454
+            },
+            "lamps150": {
+              "mean": 45.032294528875376,
+              "median": 46.641,
+              "sumRelativeNative": 0.3564103293195982,
+              "medianRelativeNative": 0.35260809163991086,
+              "below25Fraction": 0.09574468085106383
+            },
+            "aperture-concept": {
+              "mean": 45.07821823708206,
+              "median": 46.5708,
+              "sumRelativeNative": 0.3567737947866982,
+              "medianRelativeNative": 0.3526491315091101,
+              "below25Fraction": 0.09270516717325228
+            },
+            "actual": {
+              "mean": 1.640180547112462,
+              "median": 0.0,
+              "sumRelativeNative": 0.012981290317443443,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9817629179331308
+            },
+            "fixed-rv": {
+              "mean": 1.6357310030395136,
+              "median": 0.0,
+              "sumRelativeNative": 0.012946074180114604,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9817629179331308
+            }
+          }
+        },
+        "opaque": {
+          "n": 2367,
+          "fieldMedian": 0.3568627450980392,
+          "images": {
+            "formal": {
+              "mean": 27.095135023236164,
+              "median": 22.145599999999998,
+              "sumRelativeNative": 0.3589712399041505,
+              "medianRelativeNative": 0.3500332756555304,
+              "below25Fraction": 0.5644275454161386
+            },
+            "native": {
+              "mean": 75.4799605407689,
+              "median": 61.5788,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.04351499788762146
+            },
+            "mask-off": {
+              "mean": 75.03326480777355,
+              "median": 60.282,
+              "sumRelativeNative": 0.9940819294314008,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.04393747359526827
+            },
+            "ambient125": {
+              "mean": 33.76970849176172,
+              "median": 27.5708,
+              "sumRelativeNative": 0.44739965746963695,
+              "medianRelativeNative": 0.4405889813768773,
+              "below25Fraction": 0.45585128855090834
+            },
+            "lamps150": {
+              "mean": 27.448198732572877,
+              "median": 22.647000000000002,
+              "sumRelativeNative": 0.363648821964438,
+              "medianRelativeNative": 0.35004389955781173,
+              "below25Fraction": 0.5564005069708492
+            },
+            "aperture-concept": {
+              "mean": 27.102619771863118,
+              "median": 22.3582,
+              "sumRelativeNative": 0.359070401967476,
+              "medianRelativeNative": 0.3501056952911982,
+              "below25Fraction": 0.5644275454161386
+            },
+            "actual": {
+              "mean": 2.528764934516265,
+              "median": 0.0,
+              "sumRelativeNative": 0.03350246762715789,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9678918462188424
+            },
+            "fixed-rv": {
+              "mean": 2.1303653569919727,
+              "median": 0.0,
+              "sumRelativeNative": 0.028224251069147034,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9763413603717787
+            }
+          }
+        },
+        "opening": {
+          "n": 538,
+          "fieldMedian": 0.3568627450980392,
+          "images": {
+            "formal": {
+              "mean": 26.57471449814126,
+              "median": 24.7533,
+              "sumRelativeNative": 0.3748724770677659,
+              "medianRelativeNative": 0.3506155008225151,
+              "below25Fraction": 0.5130111524163569
+            },
+            "native": {
+              "mean": 70.890012267658,
+              "median": 69.5066,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.0
+            },
+            "mask-off": {
+              "mean": 70.890012267658,
+              "median": 69.5066,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.0
+            },
+            "ambient125": {
+              "mean": 32.71433791821561,
+              "median": 30.8596,
+              "sumRelativeNative": 0.4614802123985639,
+              "medianRelativeNative": 0.44075780163288747,
+              "below25Fraction": 0.14869888475836432
+            },
+            "lamps150": {
+              "mean": 27.260591078066913,
+              "median": 24.895699999999998,
+              "sumRelativeNative": 0.3845476986961104,
+              "medianRelativeNative": 0.3506155008225151,
+              "below25Fraction": 0.5074349442379182
+            },
+            "aperture-concept": {
+              "mean": 48.8394907063197,
+              "median": 47.647,
+              "sumRelativeNative": 0.6889474150733311,
+              "medianRelativeNative": 0.6896580685772766,
+              "below25Fraction": 0.01858736059479554
+            },
+            "actual": {
+              "mean": 2.4666304832713752,
+              "median": 0.0,
+              "sumRelativeNative": 0.034795176420031756,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9535315985130112
+            },
+            "fixed-rv": {
+              "mean": 1.7384055762081783,
+              "median": 0.0,
+              "sumRelativeNative": 0.02452257406367085,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.966542750929368
+            }
+          }
+        },
+        "missed": {
+          "n": 538,
+          "fieldMedian": 0.3568627450980392,
+          "images": {
+            "formal": {
+              "mean": 26.57471449814126,
+              "median": 24.7533,
+              "sumRelativeNative": 0.3748724770677659,
+              "medianRelativeNative": 0.3506155008225151,
+              "below25Fraction": 0.5130111524163569
+            },
+            "native": {
+              "mean": 70.890012267658,
+              "median": 69.5066,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.0
+            },
+            "mask-off": {
+              "mean": 70.890012267658,
+              "median": 69.5066,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.0
+            },
+            "ambient125": {
+              "mean": 32.71433791821561,
+              "median": 30.8596,
+              "sumRelativeNative": 0.4614802123985639,
+              "medianRelativeNative": 0.44075780163288747,
+              "below25Fraction": 0.14869888475836432
+            },
+            "lamps150": {
+              "mean": 27.260591078066913,
+              "median": 24.895699999999998,
+              "sumRelativeNative": 0.3845476986961104,
+              "medianRelativeNative": 0.3506155008225151,
+              "below25Fraction": 0.5074349442379182
+            },
+            "aperture-concept": {
+              "mean": 48.8394907063197,
+              "median": 47.647,
+              "sumRelativeNative": 0.6889474150733311,
+              "medianRelativeNative": 0.6896580685772766,
+              "below25Fraction": 0.01858736059479554
+            },
+            "actual": {
+              "mean": 2.4666304832713752,
+              "median": 0.0,
+              "sumRelativeNative": 0.034795176420031756,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9535315985130112
+            },
+            "fixed-rv": {
+              "mean": 1.7384055762081783,
+              "median": 0.0,
+              "sumRelativeNative": 0.02452257406367085,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.966542750929368
+            }
+          }
+        }
+      }
+    },
+    {
+      "land": "random_plant",
+      "room": "loc0_0",
+      "backwall": "",
+      "backform": 0,
+      "transpFon": false,
+      "lamps": 91,
+      "onLamps": 45,
+      "windows": 186,
+      "regions": 12,
+      "profile": "interior",
+      "prefix": "sample-3",
+      "groups": {
+        "scene": {
+          "n": 3045,
+          "fieldMedian": 0.3764705882352941,
+          "images": {
+            "formal": {
+              "mean": 28.924160853858783,
+              "median": 21.996,
+              "sumRelativeNative": 0.4163200595593318,
+              "medianRelativeNative": 0.37134503647846073,
+              "below25Fraction": 0.5589490968801314
+            },
+            "native": {
+              "mean": 69.47577996715927,
+              "median": 55.0642,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.08571428571428572
+            },
+            "mask-off": {
+              "mean": 67.27769917898193,
+              "median": 54.1404,
+              "sumRelativeNative": 0.9683619127526691,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.090311986863711
+            },
+            "ambient125": {
+              "mean": 34.82927408866995,
+              "median": 27.068199999999997,
+              "sumRelativeNative": 0.5013153375915104,
+              "medianRelativeNative": 0.468700311744895,
+              "below25Fraction": 0.40755336617405585
+            },
+            "lamps150": {
+              "mean": 29.727920328407222,
+              "median": 22.1404,
+              "sumRelativeNative": 0.42788897573311746,
+              "medianRelativeNative": 0.37135208983957957,
+              "below25Fraction": 0.5490968801313629
+            },
+            "actual": {
+              "mean": 3.017701674876847,
+              "median": 0.0,
+              "sumRelativeNative": 0.04343530473933929,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9747126436781609
+            },
+            "fixed-rv": {
+              "mean": 2.487201116584565,
+              "median": 0.0,
+              "sumRelativeNative": 0.03579954219672306,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9829228243021346
+            }
+          }
+        },
+        "solid": {
+          "n": 794,
+          "fieldMedian": 0.3764705882352941,
+          "images": {
+            "formal": {
+              "mean": 45.93033853904282,
+              "median": 41.643,
+              "sumRelativeNative": 0.38149606549286263,
+              "medianRelativeNative": 0.3729004071024036,
+              "below25Fraction": 0.05163727959697733
+            },
+            "native": {
+              "mean": 120.39531385390427,
+              "median": 110.56880000000001,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.008816120906801008
+            },
+            "mask-off": {
+              "mean": 120.37598312342568,
+              "median": 110.4966,
+              "sumRelativeNative": 0.9998394395108929,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.008816120906801008
+            },
+            "ambient125": {
+              "mean": 57.491797732997476,
+              "median": 52.1364,
+              "sumRelativeNative": 0.4775252116769418,
+              "medianRelativeNative": 0.4702946360364526,
+              "below25Fraction": 0.02518891687657431
+            },
+            "lamps150": {
+              "mean": 46.09748841309823,
+              "median": 41.643,
+              "sumRelativeNative": 0.38288440751968145,
+              "medianRelativeNative": 0.37290245035568303,
+              "below25Fraction": 0.05037783375314862
+            },
+            "actual": {
+              "mean": 1.2246725440806046,
+              "median": 0.0,
+              "sumRelativeNative": 0.01017209478407693,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9937027707808564
+            },
+            "fixed-rv": {
+              "mean": 1.22458161209068,
+              "median": 0.0,
+              "sumRelativeNative": 0.010171339505594621,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9937027707808564
+            }
+          }
+        },
+        "opaque": {
+          "n": 3025,
+          "fieldMedian": 0.3764705882352941,
+          "images": {
+            "formal": {
+              "mean": 28.988355041322315,
+              "median": 22.0,
+              "sumRelativeNative": 0.415705904273897,
+              "medianRelativeNative": 0.371280746865535,
+              "below25Fraction": 0.5580165289256198
+            },
+            "native": {
+              "mean": 69.73284416528925,
+              "median": 55.0642,
+              "sumRelativeNative": 1.0,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.08363636363636363
+            },
+            "mask-off": {
+              "mean": 67.52023061157024,
+              "median": 54.276799999999994,
+              "sumRelativeNative": 0.9682701375484641,
+              "medianRelativeNative": 1.0,
+              "below25Fraction": 0.08826446280991736
+            },
+            "ambient125": {
+              "mean": 34.92077659504132,
+              "median": 27.068199999999997,
+              "sumRelativeNative": 0.5007794678827076,
+              "medianRelativeNative": 0.468700311744895,
+              "below25Fraction": 0.4059504132231405
+            },
+            "lamps150": {
+              "mean": 29.797428628099173,
+              "median": 22.1404,
+              "sumRelativeNative": 0.42730837935521016,
+              "medianRelativeNative": 0.37134839266963954,
+              "below25Fraction": 0.548099173553719
+            },
+            "actual": {
+              "mean": 3.025990347107438,
+              "median": 0.0,
+              "sumRelativeNative": 0.0433940474295709,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9745454545454545
+            },
+            "fixed-rv": {
+              "mean": 2.491982347107438,
+              "median": 0.0,
+              "sumRelativeNative": 0.035736135201952166,
+              "medianRelativeNative": 0.0,
+              "below25Fraction": 0.9828099173553719
+            }
+          }
+        },
+        "opening": {
+          "n": 0,
+          "fieldMedian": null,
+          "images": {
+            "formal": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "native": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "mask-off": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "ambient125": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "lamps150": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "actual": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "fixed-rv": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            }
+          }
+        },
+        "missed": {
+          "n": 0,
+          "fieldMedian": null,
+          "images": {
+            "formal": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "native": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "mask-off": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "ambient125": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "lamps150": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "actual": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            },
+            "fixed-rv": {
+              "mean": null,
+              "median": null,
+              "sumRelativeNative": null,
+              "medianRelativeNative": null,
+              "below25Fraction": null
+            }
+          }
+        }
+      }
+    }
+  ]
+}

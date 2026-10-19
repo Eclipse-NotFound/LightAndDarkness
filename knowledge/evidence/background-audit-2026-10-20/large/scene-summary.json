@@ -1,0 +1,2888 @@
+{
+  "version": "0.4.1",
+  "applicationID": "remains-lad-background-20261020002208067968",
+  "samples": [
+    {
+      "zones": 0,
+      "controlledVisual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "headlamp": true,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonWay",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance14969",
+        "matrix": [
+          0.860992431640625,
+          0,
+          0,
+          0.860992431640625,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "lamps": 9,
+      "fixtures": [
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light5"
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "stlight1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light4"
+        }
+      ],
+      "windows": 16,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31316",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31317",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31318",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31319",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31320",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31321",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "backwall": "tStConcrete",
+      "darkness": 20,
+      "backform": 0,
+      "nativeVisual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "backObjects": {
+        "poster": 2,
+        "lcyan": 1,
+        "light3": 1,
+        "rak": 1,
+        "lpurple": 1,
+        "bar": 1,
+        "lpink": 1,
+        "books": 4,
+        "lorange": 1,
+        "gate": 2,
+        "stlight1": 1,
+        "storage": 2,
+        "light4": 4,
+        "pipe3": 6,
+        "doorbase2": 1,
+        "lgreen": 1,
+        "shadow": 2,
+        "light1": 2,
+        "fwindow": 1,
+        "med": 1,
+        "bwindow": 2,
+        "vent": 4,
+        "paint": 1,
+        "draw": 1,
+        "light5": 1,
+        "swindow": 2,
+        "bvent": 1,
+        "barrow": 1,
+        "stillage": 1,
+        "depot": 5,
+        "railing": 5,
+        "konstr": 2,
+        "oper": 1
+      },
+      "transpFon": false,
+      "land": "rbl",
+      "width": 48,
+      "profile": "safe",
+      "prefix": "sample-1",
+      "height": 25,
+      "rvEnabled": true,
+      "fonClass": "fonWay",
+      "raster": {
+        "skySamples": 0,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "openSamples": 0
+      },
+      "onLamps": 8,
+      "room": "loc0_0",
+      "color": null
+    },
+    {
+      "zones": 0,
+      "controlledVisual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          -2673
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "headlamp": true,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonRuins",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance69995",
+        "matrix": [
+          0.860992431640625,
+          0,
+          0,
+          0.860992431640625,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "lamps": 46,
+      "fixtures": [
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0.5,
+          "on": true,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "fast",
+          "power": 0.9,
+          "on": true,
+          "type": "stlight3"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "stlight3"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "slow",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0.5,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "slow",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0.5,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0.7,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "slow",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "slow",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "slow",
+          "power": 0.6191339485570071,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "burst",
+          "power": 0.7,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0.7,
+          "on": true,
+          "type": "light5"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "slow",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0.7,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0.5,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0.7,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.7,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0.5,
+          "on": true,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "slow",
+          "power": 0.15292047437741574,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0.5,
+          "on": true,
+          "type": "light1"
+        }
+      ],
+      "windows": 88,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          -2673
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance70241",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance70242",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance70243",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance70244",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            -2717.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance82370",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -121.75
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance70245",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance70246",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            71.94038391113281,
+            0,
+            0,
+            -0.49998459219932556,
+            -37,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            71.94038391113281,
+            0,
+            0,
+            0.5999792814254761,
+            -37,
+            1034.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            37.082672119140625,
+            7119.25,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            37.082672119140625,
+            0,
+            -2673
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "backwall": "tWindows",
+      "darkness": -20,
+      "backform": 0,
+      "nativeVisual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          -2673
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 25,
+      "backObjects": {
+        "books": 2,
+        "gate": 5,
+        "hkonstr": 17,
+        "heap1": 16,
+        "pipe3": 11,
+        "pipes2": 9,
+        "hole": 19,
+        "unitaz": 3,
+        "pult": 16,
+        "door": 75,
+        "heap2": 19,
+        "hole3": 5,
+        "paint": 3,
+        "hole2": 6,
+        "heap3": 32,
+        "light5": 1,
+        "blood2": 5,
+        "stlight4": 4,
+        "plesen": 1,
+        "pipes": 29,
+        "light4": 17,
+        "depot": 28,
+        "rak": 1,
+        "vpipe": 1,
+        "stlight3": 2,
+        "zavod2": 4,
+        "fuse": 8,
+        "poster": 19,
+        "musor1": 4,
+        "pipe4": 94,
+        "hrail": 5,
+        "vpipel": 1,
+        "rgraff": 19,
+        "vpiper": 1,
+        "komp": 5,
+        "vase": 9,
+        "railing": 29,
+        "moss": 1,
+        "hole4": 3,
+        "light2": 7,
+        "vrail": 8,
+        "storage": 19,
+        "light3": 6,
+        "electro": 23,
+        "light1": 9,
+        "skel": 1,
+        "monitor": 19,
+        "draw": 7,
+        "vents": 12,
+        "potek": 1,
+        "bwindow": 5,
+        "vent": 13,
+        "wires1": 33,
+        "hole5": 5,
+        "clock": 4,
+        "swindow": 34,
+        "vkonstr": 50,
+        "bvent": 8,
+        "hole1": 8,
+        "blood1": 6,
+        "musor2": 2,
+        "stillage": 13,
+        "wires2": 19,
+        "konstr": 99
+      },
+      "transpFon": true,
+      "land": "random_mane",
+      "width": 240,
+      "profile": "abandoned",
+      "prefix": "sample-2",
+      "height": 125,
+      "rvEnabled": true,
+      "fonClass": "fonRuins",
+      "raster": {
+        "skySamples": 0,
+        "cell": 12,
+        "missedSamples": 2611,
+        "bounds": [
+          -12,
+          3588,
+          1968,
+          1212
+        ],
+        "openSamples": 2611
+      },
+      "onLamps": 20,
+      "room": "loc0_0",
+      "color": null
+    },
+    {
+      "zones": 0,
+      "controlledVisual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "headlamp": true,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonDarkClouds",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance134471",
+        "matrix": [
+          0.74163818359375,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "lamps": 91,
+      "fixtures": [
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "burst",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "fast",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "slow",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light2"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "slow",
+          "power": 0.7821120723682973,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 1,
+          "mode": "fast",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "fast",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "slow",
+          "power": 0,
+          "on": false,
+          "type": "light2"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "burst",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "slow",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "burst",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "fast",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light3"
+        }
+      ],
+      "windows": 186,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance134946",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance134947",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance134948",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance134949",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -9
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            -44.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance82370",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance134950",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance134951",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            57.70063018798828,
+            0,
+            0,
+            -0.49998459219932556,
+            -37,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            57.70063018798828,
+            0,
+            0,
+            0.5999792814254761,
+            -37,
+            2224.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            22.249603271484375,
+            5695.25,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            22.249603271484375,
+            0,
+            0
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "backwall": "",
+      "darkness": 0,
+      "backform": 0,
+      "nativeVisual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 12,
+      "backObjects": {
+        "books": 6,
+        "gate": 9,
+        "hkonstr": 23,
+        "pipe3": 3,
+        "chole3": 4,
+        "zhaluzi": 5,
+        "bigbeam": 22,
+        "pult": 8,
+        "door": 18,
+        "pipe1": 5,
+        "unitaz": 7,
+        "blood2": 7,
+        "paint": 1,
+        "pipe2": 2,
+        "pipes": 10,
+        "light4": 30,
+        "depot": 11,
+        "rak": 6,
+        "plesen": 10,
+        "zavod1": 19,
+        "fuse": 2,
+        "poster": 9,
+        "light3": 16,
+        "pipe4": 26,
+        "battery": 9,
+        "zavod2": 2,
+        "light2": 13,
+        "plantgate": 1,
+        "railing": 2,
+        "electro": 12,
+        "chole4": 3,
+        "storage": 10,
+        "light1": 32,
+        "chole6": 1,
+        "vents": 23,
+        "monitor": 14,
+        "draw": 4,
+        "minkrut": 4,
+        "potek": 20,
+        "rgraff": 6,
+        "chole5": 4,
+        "bwindow": 19,
+        "vent": 31,
+        "pipes2": 2,
+        "fwindow": 20,
+        "clock": 1,
+        "wires1": 13,
+        "vkonstr": 16,
+        "wires2": 2,
+        "blood1": 10,
+        "swindow": 15,
+        "stillage": 11,
+        "bvent": 2,
+        "chole1": 8,
+        "konstr": 34,
+        "biggate": 1
+      },
+      "transpFon": false,
+      "land": "random_plant",
+      "width": 192,
+      "profile": "interior",
+      "prefix": "sample-3",
+      "height": 75,
+      "rvEnabled": true,
+      "fonClass": "fonDarkClouds",
+      "raster": {
+        "skySamples": 0,
+        "cell": 12,
+        "missedSamples": 30,
+        "bounds": [
+          -12,
+          -12,
+          1968,
+          1200
+        ],
+        "openSamples": 30
+      },
+      "onLamps": 45,
+      "room": "loc0_0",
+      "color": ""
+    }
+  ],
+  "error": "",
+  "roomsLoad": 1,
+  "loader": {
+    "requested_LightAndDarknessMod": "run_1792426934596_573441|line 23 @1792426934629",
+    "boot": "run_1792426934596_573441|v2 col=2 requested=6 @1792426934635",
+    "requested_BackgroundAuditProbeMod": "run_1792426934596_573441|line 22 @1792426934625",
+    "session": "run_1792426934596_573441",
+    "requested_WallBlendMod": "run_1792426934596_573441|line 24 @1792426934632",
+    "requested_ModLoaderMod": "run_1792426934596_573441|line 12 @1792426934617",
+    "ok_ModLoaderMod": "run_1792426934596_573441|init @1792426935315",
+    "ok_RealisticVisionMod": "run_1792426934596_573441|init @1792426935288",
+    "ok_LightAndDarknessMod": "run_1792426934596_573441|init @1792426935324",
+    "boot_start": "run_1792426934596_573441|v2 run=run_1792426934596_573441 @1792426934603",
+    "ok_WallBlendMod": "run_1792426934596_573441|init @1792426935271",
+    "requested_RealisticVisionMod": "run_1792426934596_573441|line 15 @1792426934620",
+    "ok_ContinuousSceneMod": "run_1792426934596_573441|init @1792426935307",
+    "ok_BackgroundAuditProbeMod": "run_1792426934596_573441|init @1792426935274",
+    "requested_ContinuousSceneMod": "run_1792426934596_573441|line 21 @1792426934624"
+  },
+  "large": true
+}

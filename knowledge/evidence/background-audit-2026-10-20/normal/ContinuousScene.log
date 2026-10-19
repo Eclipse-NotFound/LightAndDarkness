@@ -1,0 +1,12 @@
+3702 [ContinuousScene] v0.8.1 loaded
+10243 [ContinuousScene] registered 192x75 native land kind=factory
+10246 [ContinuousScene] settings registered continuousscene
+10248 [ContinuousScene] heartbeat land=rbl
+40997 [ContinuousScene] heartbeat land=surf
+78893 [ContinuousScene] heartbeat land=random_mane
+112443 [ContinuousScene] heartbeat land=stable_pi
+145071 [ContinuousScene] heartbeat land=random_plant
+176264 [ContinuousScene] heartbeat land=random_canter
+209014 [ContinuousScene] heartbeat land=random_encl
+240240 [ContinuousScene] heartbeat land=random_mbase
+272094 [ContinuousScene] heartbeat land=begin

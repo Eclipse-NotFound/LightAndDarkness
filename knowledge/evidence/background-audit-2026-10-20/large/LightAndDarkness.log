@@ -1,0 +1,20 @@
+Mon Oct 19 16:22:15 2026 UTC [LightAndDarkness] ATMOSPHERE_CONFIG loaded
+Mon Oct 19 16:22:15 2026 UTC [LightAndDarkness] v0.4.1 loaded
+Mon Oct 19 16:22:24 2026 UTC [LightAndDarkness] BAKE ms=706 preserved=0
+Mon Oct 19 16:22:24 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Mon Oct 19 16:22:24 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=0 pulses=0 renderMs=2
+Mon Oct 19 16:22:41 2026 UTC [LightAndDarkness] BAKE ms=701 preserved=0
+Mon Oct 19 16:22:45 2026 UTC [LightAndDarkness] BAKE ms=638 preserved=0
+Mon Oct 19 16:22:45 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=9 beforeRaster=false state=rbl|loc0_0|0|0|0||false|48|25|25d9f2d9
+Mon Oct 19 16:22:45 2026 UTC [LightAndDarkness] heartbeat lamps=9 steps=56 pulses=0 renderMs=3
+Mon Oct 19 16:22:49 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=46 beforeRaster=true state=random_mane|loc0_0|0|0|0||false|240|125|d173c5e4
+Mon Oct 19 16:22:55 2026 UTC [LightAndDarkness] heartbeat lamps=46 steps=99 pulses=0 renderMs=2
+Mon Oct 19 16:23:06 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=783
+Mon Oct 19 16:23:08 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=938
+Mon Oct 19 16:23:08 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=46 beforeRaster=false state=random_mane|loc0_0|0|0|0||false|240|125|d173c5e4
+Mon Oct 19 16:23:08 2026 UTC [LightAndDarkness] heartbeat lamps=46 steps=99 pulses=0 renderMs=2
+Mon Oct 19 16:23:12 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=91 beforeRaster=true state=random_plant|loc0_0|0|0|0||false|192|75|c8f7eca8
+Mon Oct 19 16:23:29 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=705
+Mon Oct 19 16:23:31 2026 UTC [LightAndDarkness] BAKE_LARGE native-history-replay ms=948
+Mon Oct 19 16:23:31 2026 UTC [LightAndDarkness] ATTACH room=loc0_0 lamps=91 beforeRaster=false state=random_plant|loc0_0|0|0|0||false|192|75|c8f7eca8
+Mon Oct 19 16:23:31 2026 UTC [LightAndDarkness] heartbeat lamps=91 steps=143 pulses=0 renderMs=2

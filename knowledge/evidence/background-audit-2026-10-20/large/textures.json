@@ -1,0 +1,58 @@
+[
+  {
+    "width": 960,
+    "id": "tWindows",
+    "height": 320,
+    "total": 307200,
+    "partial": 45477,
+    "transparent": 39238
+  },
+  {
+    "width": 960,
+    "id": "tWindows2",
+    "height": 320,
+    "total": 307200,
+    "partial": 51767,
+    "transparent": 33106
+  },
+  {
+    "width": 960,
+    "id": "tTower",
+    "height": 320,
+    "total": 307200,
+    "partial": 1284,
+    "transparent": 68422
+  },
+  {
+    "width": 960,
+    "id": "tBackWall",
+    "height": 1000,
+    "total": 960000,
+    "partial": 0,
+    "transparent": 0
+  },
+  {
+    "width": 480,
+    "id": "tStConcrete",
+    "height": 320,
+    "total": 153600,
+    "partial": 0,
+    "transparent": 0
+  },
+  {
+    "width": 320,
+    "id": "tEncl3",
+    "height": 320,
+    "total": 102400,
+    "partial": 0,
+    "transparent": 0
+  },
+  {
+    "width": 160,
+    "id": "tSteklo",
+    "height": 160,
+    "total": 25600,
+    "partial": 3556,
+    "transparent": 16318
+  }
+]

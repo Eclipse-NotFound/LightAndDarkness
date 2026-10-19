@@ -1,0 +1,6654 @@
+{
+  "version": "0.4.1",
+  "applicationID": "remains-lad-background-20261020001621620029",
+  "samples": [
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 9,
+      "windows": 16,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31318",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31319",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31320",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31321",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31322",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance31323",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonWay",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "rbl",
+      "backwall": "tStConcrete",
+      "darkness": 20,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonWay",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance14971",
+        "matrix": [
+          0.860992431640625,
+          0,
+          0,
+          0.860992431640625,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 8,
+      "fixtures": [
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light5"
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "stlight1"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light3"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light4"
+        }
+      ],
+      "transpFon": false,
+      "width": 48,
+      "profile": "safe",
+      "room": "loc0_0",
+      "height": 25,
+      "raster": {
+        "openSamples": 0,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 0
+      },
+      "prefix": "sample-1",
+      "color": null
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 0,
+      "windows": 0,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106075",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106076",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106077",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106078",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106079",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106080",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonDarkClouds",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "surf",
+      "backwall": "sky",
+      "darkness": 0,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonDarkClouds",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance103264",
+        "matrix": [
+          0.74163818359375,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 0,
+      "fixtures": [],
+      "transpFon": false,
+      "width": 48,
+      "profile": "interior",
+      "room": "loc0_1",
+      "height": 25,
+      "raster": {
+        "openSamples": 9690,
+        "cell": 12,
+        "missedSamples": 317,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 10055
+      },
+      "prefix": "sample-2",
+      "color": "blue"
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 1,
+      "windows": 0,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance152410",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance152411",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance152412",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance152413",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance152414",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance152415",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonRuins",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "random_mane",
+      "backwall": "tWindows",
+      "darkness": -20,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonRuins",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance132620",
+        "matrix": [
+          0.860992431640625,
+          0,
+          0,
+          0.860992431640625,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 0,
+      "fixtures": [
+        {
+          "brightness": 0.5,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        }
+      ],
+      "transpFon": true,
+      "width": 48,
+      "profile": "abandoned",
+      "room": "loc0_4",
+      "height": 25,
+      "raster": {
+        "openSamples": 593,
+        "cell": 12,
+        "missedSamples": 593,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 0
+      },
+      "prefix": "sample-3",
+      "color": null
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 0,
+      "windows": 0,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance241816",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance241817",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance241818",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance241819",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance241820",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance241821",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonRuins",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "mtn",
+      "backwall": "sky",
+      "darkness": 0,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonRuins",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance240013",
+        "matrix": [
+          0.860992431640625,
+          0,
+          0,
+          0.860992431640625,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 0,
+      "fixtures": [],
+      "transpFon": false,
+      "width": 48,
+      "profile": "interior",
+      "room": "loc0_8",
+      "height": 25,
+      "raster": {
+        "openSamples": 10227,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 11680
+      },
+      "prefix": "sample-4",
+      "color": null
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 14,
+      "windows": 0,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance311948",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance311949",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance311950",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance311951",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance311952",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance311953",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonDefault",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "stable_pi",
+      "backwall": "tTiles",
+      "darkness": -15,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonDefault",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance298404",
+        "matrix": [
+          5.1417083740234375,
+          0,
+          0,
+          5.1417083740234375,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 13,
+      "fixtures": [
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light2"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light2"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light2"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "light5"
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light5"
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0.9,
+          "on": true,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "stlight4"
+        },
+        {
+          "brightness": 0.8,
+          "mode": "steady",
+          "power": 0.8,
+          "on": true,
+          "type": "stlight4"
+        }
+      ],
+      "transpFon": false,
+      "width": 48,
+      "profile": "safe",
+      "room": "loc3_5",
+      "height": 25,
+      "raster": {
+        "openSamples": 0,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 0
+      },
+      "prefix": "sample-5",
+      "color": "yellow"
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 6,
+      "windows": 6,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance411366",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance411367",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance411368",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance411369",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance411370",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance411371",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonDarkClouds",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "random_plant",
+      "backwall": "",
+      "darkness": 0,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonDarkClouds",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance394704",
+        "matrix": [
+          0.74163818359375,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 4,
+      "fixtures": [
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light4"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light3"
+        }
+      ],
+      "transpFon": false,
+      "width": 48,
+      "profile": "interior",
+      "room": "loc0_0",
+      "height": 25,
+      "raster": {
+        "openSamples": 0,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 0
+      },
+      "prefix": "sample-6",
+      "color": ""
+    },
+    {
+      "zones": 2,
+      "headlamp": true,
+      "lamps": 3,
+      "windows": 0,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance495478",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance495479",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance495480",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance495481",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance495482",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance495483",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonDefault",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "random_sewer",
+      "backwall": "tMossy",
+      "darkness": 0,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonDefault",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance475086",
+        "matrix": [
+          5.1417083740234375,
+          0,
+          0,
+          5.1417083740234375,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 1,
+      "fixtures": [
+        {
+          "brightness": 0.7,
+          "mode": "fast",
+          "power": 0.7,
+          "on": true,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light1"
+        },
+        {
+          "brightness": 0.9,
+          "mode": "slow",
+          "power": 0,
+          "on": false,
+          "type": "light3"
+        }
+      ],
+      "transpFon": false,
+      "width": 48,
+      "profile": "abandoned",
+      "room": "loc0_0",
+      "height": 25,
+      "raster": {
+        "openSamples": 0,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 0
+      },
+      "prefix": "sample-7",
+      "color": "green"
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 0,
+      "windows": 47,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance588648",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance588649",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance588650",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance588651",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance588652",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance588653",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonCanter",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "random_canter",
+      "backwall": "sky",
+      "darkness": 0,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonCanter",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance585175",
+        "matrix": [
+          0.860992431640625,
+          0,
+          0,
+          0.860992431640625,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 3,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 0,
+      "fixtures": [],
+      "transpFon": true,
+      "width": 48,
+      "profile": "abandoned",
+      "room": "loc0_0",
+      "height": 25,
+      "raster": {
+        "openSamples": 8065,
+        "cell": 12,
+        "missedSamples": 517,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 8513
+      },
+      "prefix": "sample-8",
+      "color": "pink"
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 6,
+      "windows": 48,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance704829",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance704830",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance704831",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance704832",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance704833",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance704834",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonEnclave",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "random_encl",
+      "backwall": "tEncl3",
+      "darkness": -30,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonEnclave",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance687301",
+        "matrix": [
+          0.797210693359375,
+          0,
+          0,
+          0.797210693359375,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 4,
+      "fixtures": [
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light7"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light7"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light7"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light7"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light7"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light7"
+        }
+      ],
+      "transpFon": false,
+      "width": 48,
+      "profile": "maintained",
+      "room": "loc0_7",
+      "height": 25,
+      "raster": {
+        "openSamples": 0,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 0
+      },
+      "prefix": "sample-9",
+      "color": "sky"
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 0,
+      "windows": 0,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance774390",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance774391",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance774392",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance774393",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance774394",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance774395",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonCanter",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "minst",
+      "backwall": "sky",
+      "darkness": 0,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonCanter",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance770308",
+        "matrix": [
+          0.860992431640625,
+          0,
+          0,
+          0.860992431640625,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 0,
+      "fixtures": [],
+      "transpFon": false,
+      "width": 48,
+      "profile": "abandoned",
+      "room": "loc0_0",
+      "height": 25,
+      "raster": {
+        "openSamples": 7917,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 9601
+      },
+      "prefix": "sample-10",
+      "color": "pink"
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 17,
+      "windows": 0,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance886695",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance886696",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance886697",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance886698",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance886699",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance886700",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonWay",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "random_mbase",
+      "backwall": "tMbase",
+      "darkness": 0,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonWay",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance873346",
+        "matrix": [
+          0.860992431640625,
+          0,
+          0,
+          0.860992431640625,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 9,
+      "fixtures": [
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light6"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light6"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0.85,
+          "on": true,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light6"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.85,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0,
+          "on": false,
+          "type": "light6"
+        },
+        {
+          "brightness": 0.65,
+          "mode": "steady",
+          "power": 0.65,
+          "on": true,
+          "type": "light6"
+        },
+        {
+          "brightness": 1,
+          "mode": "steady",
+          "power": 1,
+          "on": true,
+          "type": "light6"
+        }
+      ],
+      "transpFon": false,
+      "width": 48,
+      "profile": "maintained",
+      "room": "loc0_0",
+      "height": 25,
+      "raster": {
+        "openSamples": 0,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 0
+      },
+      "prefix": "sample-11",
+      "color": "red"
+    },
+    {
+      "zones": 0,
+      "headlamp": true,
+      "lamps": 0,
+      "windows": 0,
+      "layers": [
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance664",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance665",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessFixtures",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance1047175",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance1047176",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance1047177",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance667",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance1047178",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 0.59765625,
+          "name": "instance666",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "multiply",
+          "type": "flash.display::Bitmap",
+          "visible": true,
+          "alpha": 1,
+          "name": "LightAndDarknessIllumination",
+          "matrix": [
+            8.89984130859375,
+            0,
+            0,
+            8.89984130859375,
+            -9,
+            -12.25
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance668",
+          "matrix": [
+            29.6661376953125,
+            0,
+            0,
+            29.6661376953125,
+            -14.75,
+            14.5
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance106081",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance1047179",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": false,
+          "alpha": 1,
+          "name": "instance669",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "flash.display::Sprite",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance1047180",
+          "matrix": [
+            0.7416534423828125,
+            0,
+            0,
+            0.7416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance682",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            -1.5641309022903442,
+            -37,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance684",
+          "matrix": [
+            14.98139762878418,
+            0,
+            0,
+            1.6141283512115479,
+            -37,
+            800
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance686",
+          "matrix": [
+            0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            1423.25,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "blend": "normal",
+          "type": "visBlack",
+          "visible": true,
+          "alpha": 1,
+          "name": "instance688",
+          "matrix": [
+            -0.49998459219932556,
+            0,
+            0,
+            7.416534423828125,
+            0,
+            59
+          ],
+          "color": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "fonClass": "fonDefault",
+      "rvEnabled": true,
+      "visual": {
+        "blend": "normal",
+        "type": "flash.display::Sprite",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance492",
+        "matrix": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "land": "begin",
+      "backwall": "tLeaking",
+      "darkness": 0,
+      "fonLayer": {
+        "blend": "normal",
+        "type": "fonDefault",
+        "visible": true,
+        "alpha": 1,
+        "name": "instance1037102",
+        "matrix": [
+          5.1417083740234375,
+          0,
+          0,
+          5.1417083740234375,
+          0,
+          0
+        ],
+        "color": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "backform": 0,
+      "ambient": 0.14,
+      "sky": false,
+      "regions": 1,
+      "onLamps": 0,
+      "fixtures": [],
+      "transpFon": false,
+      "width": 48,
+      "profile": "abandoned",
+      "room": "loc0_0",
+      "height": 25,
+      "raster": {
+        "openSamples": 0,
+        "cell": 12,
+        "missedSamples": 0,
+        "bounds": [
+          -12,
+          -96,
+          1968,
+          1212
+        ],
+        "skySamples": 0
+      },
+      "prefix": "sample-12",
+      "color": null
+    }
+  ],
+  "error": "",
+  "roomsLoad": 1,
+  "loader": {
+    "ok_RealisticVisionMod": "run_1792426588532_47453|init @1792426589279",
+    "boot": "run_1792426588532_47453|v2 col=2 requested=6 @1792426588578",
+    "requested_ModLoaderMod": "run_1792426588532_47453|line 12 @1792426588558",
+    "ok_ContinuousSceneMod": "run_1792426588532_47453|init @1792426589298",
+    "session": "run_1792426588532_47453",
+    "requested_WallBlendMod": "run_1792426588532_47453|line 24 @1792426588574",
+    "ok_ModLoaderMod": "run_1792426588532_47453|init @1792426589307",
+    "ok_LightAndDarknessMod": "run_1792426588532_47453|init @1792426589318",
+    "boot_start": "run_1792426588532_47453|v2 run=run_1792426588532_47453 @1792426588538",
+    "requested_LightAndDarknessMod": "run_1792426588532_47453|line 23 @1792426588570",
+    "requested_RealisticVisionMod": "run_1792426588532_47453|line 15 @1792426588561",
+    "requested_BackgroundAuditProbeMod": "run_1792426588532_47453|line 22 @1792426588567",
+    "requested_ContinuousSceneMod": "run_1792426588532_47453|line 21 @1792426588565",
+    "ok_WallBlendMod": "run_1792426588532_47453|init @1792426589261",
+    "ok_BackgroundAuditProbeMod": "run_1792426588532_47453|init @1792426589265"
+  },
+  "large": false
+}
