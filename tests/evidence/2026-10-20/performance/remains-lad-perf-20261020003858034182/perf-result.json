@@ -1,0 +1,54 @@
+{
+  "error": "",
+  "version": "0.5.0",
+  "rows": [
+    {
+      "results": [],
+      "pixelFrames": 96,
+      "land": "rbl",
+      "height": 25,
+      "regions": 1,
+      "width": 48,
+      "scene": 0
+    },
+    {
+      "results": [],
+      "pixelFrames": 96,
+      "land": "random_mane",
+      "height": 125,
+      "regions": 25,
+      "width": 240,
+      "scene": 1
+    }
+  ],
+  "frameRate": 30,
+  "config": {
+    "height": 900,
+    "mode": "pixels",
+    "full": false,
+    "roomOnly": false,
+    "samples": 90,
+    "candidate": "mods/LightAndDarkness/build/out/trails-v050/LightAndDarknessMod.swf",
+    "width": 1440,
+    "variant": "module"
+  },
+  "checks": 385,
+  "loader": {
+    "boot": "run_1792427946234_152992|v2 col=2 requested=6 @1792427946280",
+    "ok_ContinuousSceneMod": "run_1792427946234_152992|init @1792427946998",
+    "session": "run_1792427946234_152992",
+    "ok_LightingPerfProbeMod": "run_1792427946234_152992|init @1792427947011",
+    "requested_ModLoaderMod": "run_1792427946234_152992|line 12 @1792427946261",
+    "ok_WallBlendMod": "run_1792427946234_152992|init @1792427946960",
+    "boot_start": "run_1792427946234_152992|v2 run=run_1792427946234_152992 @1792427946241",
+    "ok_ModLoaderMod": "run_1792427946234_152992|init @1792427947007",
+    "requested_LightAndDarknessMod": "run_1792427946234_152992|line 22 @1792427946272",
+    "ok_LightAndDarknessMod": "run_1792427946234_152992|init @1792427946969",
+    "ok_RealisticVisionMod": "run_1792427946234_152992|init @1792427946983",
+    "requested_LightingPerfProbeMod": "run_1792427946234_152992|line 23 @1792427946274",
+    "requested_RealisticVisionMod": "run_1792427946234_152992|line 15 @1792427946264",
+    "requested_ContinuousSceneMod": "run_1792427946234_152992|line 21 @1792427946269",
+    "requested_WallBlendMod": "run_1792427946234_152992|line 24 @1792427946278"
+  },
+  "ok": true
+}

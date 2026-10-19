@@ -15,6 +15,7 @@ package {
         private var main:*,w:*,r:*,reference:Loader=new Loader(),domain:ApplicationDomain;
         private var cfg:Object,phase:int=0,age:int=0,scene:int=0,started:int,last:int,scriptStart:int;
         private var rows:Array=[],checks:int=0,frameCase:int=0,row:Object,x0:Number,y0:Number;
+        private var wrapped:*,wrappedOriginal:*,simulationMs:int=0,simulationCalls:int=0;
         public static function init(root:*):void {
             if(NativeApplication.nativeApplication.applicationID.indexOf("remains-lad-perf-")!=0)return;
             self=new LightingPerfProbeMod();self.main=root;self.started=getTimer();
@@ -84,11 +85,29 @@ package {
         }
         private function startFrames():void {
             var on:Boolean=frameCase==0 || frameCase==3;
+            if(w.gg.childObjs["LightAndDarknessTick"]===wrapped)w.gg.childObjs["LightAndDarknessTick"]=wrappedOriginal;
             r.setEnabled(cfg.variant=="module"?on:true);r.field.bitmap.visible=on || cfg.variant!="bitmap";
             if(cfg.variant=="fixtures")for each(var lamp:Object in r.lamps)lamp.holder.cacheAsBitmap=!on;
             if(cfg.variant=="proxy")for each(lamp in r.lamps)lamp.proxy.invis=!on;
-            age=0;last=getTimer();
-            row={scene:scene,on:on,frames:[],field:[],logic:[],path:{x:x0,y:y0},empty:0};phase=5;
+            age=0;last=getTimer();simulationMs=0;simulationCalls=0;
+            row={scene:scene,on:on,frames:[],field:[],logic:[],path:{x:x0,y:y0},empty:0,
+                lamps:r.lamps.length,units:w.loc.units.length,variant:cfg.variant,simulation:[],simulationCalls:[],
+                stage:{width:main.stage.stageWidth,height:main.stage.stageHeight},view:view(),cameraScale:w.cam.scaleV};phase=5;
+            instrumentSimulation();
+        }
+        private function instrumentSimulation():void {
+            // A test-only delegating wrapper times the real gameplay hook, without
+            // adding an extra lighting update or patching production methods.
+            if(!r.enabled)return;
+            var original:*=w.gg.childObjs["LightAndDarknessTick"];
+            if(!original || original===wrapped)return;
+            var owner:LightingPerfProbeMod=this;
+            wrappedOriginal=original;
+            wrapped={vis:null,step:function():void {
+                var begin:int=getTimer();original.step();
+                owner.simulationMs+=getTimer()-begin;owner.simulationCalls++;
+            },addVisual:function():void {original.addVisual();},remVisual:function():void {original.remVisual();},err:function():String {return original.err();}};
+            w.gg.childObjs["LightAndDarknessTick"]=wrapped;
         }
         private function tick(e:Event):void {
             try {
@@ -105,11 +124,26 @@ package {
                 } else if(phase==2 && w.gg && w.land && w.land.act.id=="random_mane" && w.allStat==1 && w.t_exit==0 && r.location===w.loc) {age=0;phase=1;check(w.grafon.sceneLarge,"large scene unavailable");}
                 else if(phase==5) {
                     dismiss();w.gg.disabled=false;w.gg.ggControl=true;var now:int=getTimer();
-                    if(age==40){row.stepStart=r.steps;if("renders" in r)row.renderStart=r.renders;}
-                    if(age>=40) {row.frames.push(now-last);row.logic.push(now-scriptStart);row.field.push(r.enabled?r.field.elapsedMs:0);if(w.grafon.sceneLarge && !w.grafon.sceneViewReady())++row.empty;}
+                    if(age==40){
+                        row.stepStart=r.steps;if("renders" in r)row.renderStart=r.renders;
+                        if(cfg.variant=="fixtures" || cfg.variant=="proxy") {
+                            check(r.lamps.length>0,"single-variable probe has no fixtures");
+                            for each(var lamp:Object in r.lamps)check(cfg.variant=="fixtures"?lamp.holder.cacheAsBitmap==!row.on:lamp.proxy.invis==!row.on,"probe treatment not applied");
+                        }
+                    }
+                    if(age>=40) {row.frames.push(now-last);row.logic.push(now-scriptStart);row.field.push(r.enabled?r.field.elapsedMs:0);row.simulation.push(simulationMs);row.simulationCalls.push(simulationCalls);if(w.grafon.sceneLarge && !w.grafon.sceneViewReady())++row.empty;}
+                    simulationMs=0;simulationCalls=0;instrumentSimulation();
                     last=now;var distance:Number=Math.max(0,age-40)*8;
                     w.gg.setLocPos(x0+(age<20?1200:Math.min(1200,distance)),y0);w.gg.dx=8;w.gg.dy=0;
-                    if(++age>=40+cfg.samples) {row.steps=r.steps-row.stepStart;if("renders" in r)row.renders=r.renders-row.renderStart;rows.push(row);save("progress.json",rows);check(!row.on || (r.enabled && r.location===w.loc && row.steps>=cfg.samples-5),"lighting simulation stalled case="+frameCase+" steps="+row.steps+" sost="+w.gg.sost+" pause="+w.onPause+" state="+w.allStat);if(++frameCase<4)startFrames();else nextScene();}
+                    if(++age>=40+cfg.samples) {
+                        row.steps=r.steps-row.stepStart;if("renders" in r)row.renders=r.renders-row.renderStart;
+                        rows.push(row);save("progress.json",rows);
+                        var active:Boolean=cfg.variant!="module" || row.on;
+                        check(!active || (r.enabled && r.location===w.loc && row.steps>=cfg.samples-5),"lighting simulation stalled case="+frameCase+" steps="+row.steps+" sost="+w.gg.sost+" pause="+w.onPause+" state="+w.allStat);
+                        var measured:int=0;for each(var calls:int in row.simulationCalls)measured+=calls;
+                        check(!active || measured>=cfg.samples-5,"simulation timing hook missed updates: "+measured);
+                        if(++frameCase<4)startFrames();else nextScene();
+                    }
                 }
             }catch(error:*){finish(String(error)+" "+error.getStackTrace());}
         }

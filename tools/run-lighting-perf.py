@@ -40,7 +40,8 @@ def responsive_owned(process):
     assert actual.control&1 and not actual.state&1
     return {'before':[before.control,before.state],'applied':[actual.control,actual.state]}
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--mode',choices=['bench','pixels','frames'],default='bench');p.add_argument('--full',action='store_true');p.add_argument('--samples',type=int,default=90);p.add_argument('--variant',choices=['module','bitmap','fixtures','proxy'],default='module');p.add_argument('--room-only',dest='roomOnly',action='store_true');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--candidate',required=True);p.add_argument('--mode',choices=['bench','pixels','frames'],default='bench');p.add_argument('--full',action='store_true');p.add_argument('--samples',type=int,default=90);p.add_argument('--variant',choices=['module','bitmap','fixtures','proxy'],default='module');p.add_argument('--room-only',dest='roomOnly',action='store_true');p.add_argument('--width',type=int,default=1440);p.add_argument('--height',type=int,default=900);args=p.parse_args()
+    if not (640<=args.width<=3840 and 480<=args.height<=2160):p.error('Invalid test window dimensions')
     others=air_pids()
     if others:raise RuntimeError('Other AIR exists; wait for the agreed window: '+str(others))
     appid='remains-lad-perf-'+datetime.now().strftime('%Y%m%d%H%M%S%f')
@@ -74,7 +75,7 @@ def main():
     entries=wanted+['LightingPerfProbeMod']
     (root/'perf.json').write_text(json.dumps(vars(args)),'utf-8')
     desc=root/'application.xml'
-    desc.write_text(f'<?xml version="1.0"?><application xmlns="http://ns.adobe.com/air/application/30.0"><id>{appid}</id><versionNumber>1.0</versionNumber><filename>LightingPerformance</filename><initialWindow><content>pfe.swf</content><visible>false</visible><width>1440</width><height>900</height><renderMode>direct</renderMode></initialWindow><supportedProfiles>extendedDesktop</supportedProfiles></application>','utf-8')
+    desc.write_text(f'<?xml version="1.0"?><application xmlns="http://ns.adobe.com/air/application/30.0"><id>{appid}</id><versionNumber>1.0</versionNumber><filename>LightingPerformance</filename><initialWindow><content>pfe.swf</content><visible>false</visible><width>{args.width}</width><height>{args.height}</height><renderMode>direct</renderMode></initialWindow><supportedProfiles>extendedDesktop</supportedProfiles></application>','utf-8')
     selected=subprocess.run([str(GAME/'mods/ModLoader/RemainsModLauncher.exe'),'--root',str(root),'--only',','.join(entries),'--no-ui','--report',str(out/'selection.json')],capture_output=True)
     if selected.returncode:raise RuntimeError(selected.stdout.decode('utf-8',errors='replace')+selected.stderr.decode('utf-8',errors='replace'))
     frozen={str(f.relative_to(root)):sha(f) for f in root.rglob('*') if f.is_file()}
