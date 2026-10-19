@@ -1,0 +1,212 @@
+[
+  {
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 0,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 0
+    },
+    "id": "term",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32804",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "type": "visterm",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32803",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frames": 1,
+      "frame": 1
+    }
+  },
+  {
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 3,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 3
+    },
+    "id": "term1",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32809",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "type": "visterm1",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32808",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frames": 1,
+      "frame": 1
+    }
+  },
+  {
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 2,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 2
+    },
+    "id": "term2",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32814",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "type": "visterm2",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32813",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frames": 1,
+      "frame": 1
+    }
+  },
+  {
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 0,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 0
+    },
+    "id": "term3",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32819",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "type": "visterm3",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32818",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frames": 1,
+      "frame": 1
+    }
+  },
+  {
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 0,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 0
+    },
+    "id": "termh",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32824",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "type": "vistermh",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32823",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frames": 1,
+      "frame": 1
+    }
+  },
+  {
+    "save": {
+      "mine": 0,
+      "loot": 0,
+      "dif": 3,
+      "sign": 0,
+      "lockLevel": 0,
+      "expl": 0,
+      "open": 0,
+      "lock": 3
+    },
+    "id": "elpanel",
+    "tree": {
+      "y": 600,
+      "children": [
+        {
+          "y": 0,
+          "type": "flash.display::Shape",
+          "visible": true,
+          "alpha": 1,
+          "x": 0,
+          "name": "instance32829",
+          "bounds": "(x=-20, y=-40, w=40, h=40)"
+        }
+      ],
+      "type": "viselpanel",
+      "visible": true,
+      "alpha": 1,
+      "x": 400,
+      "name": "instance32828",
+      "bounds": "(x=-20, y=-40, w=40, h=40)",
+      "frames": 2,
+      "frame": 1
+    }
+  }
+]

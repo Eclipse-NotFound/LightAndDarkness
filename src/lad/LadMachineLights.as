@@ -43,8 +43,8 @@ package lad {
                     if(!indicator || indicator.currentFrame<2 || indicator.currentFrame>5) continue;
                     var frame:int=indicator.currentFrame;
                     color=frame==2?0xffdf55:frame==4?0xff5246:0xffad48;
-                    radius=frame==2?56:frame==4?80:68;
-                    power=frame==2?0.28:frame==4?0.40:0.32;
+                    radius=frame==2?72:frame==4?100:86;
+                    power=frame==2?0.42:frame==4?0.58:0.48;
                     source=indicator;
                 } else if(identity.kind=="spider") {
                     // Native stay frame has no lit bulb. Wake is yellow; walk/jump red.
@@ -52,11 +52,11 @@ package lad {
                     var body:DisplayObjectContainer=osn.getChildAt(0) as DisplayObjectContainer;
                     source=spiderBulb(body);
                     color=osn.currentFrame==2?0xffdc3e:0xff5546;
-                    radius=osn.currentFrame==2?48:60;
-                    power=osn.currentFrame==2?0.32:0.38;
+                    radius=osn.currentFrame==2?62:78;
+                    power=osn.currentFrame==2?0.46:0.54;
                 } else {
                     // Thunderhead mounts have no bulb; only their enabled blue force field emits.
-                    source=osn.getChildByName("pole");color=0x78baff;radius=100;power=0.22;
+                    source=osn.getChildByName("pole");color=0x78baff;radius=120;power=0.32;
                 }
                 if(!source || !visibleIn(source,visual)) continue;
                 var bounds:Rectangle=source.getBounds(source);

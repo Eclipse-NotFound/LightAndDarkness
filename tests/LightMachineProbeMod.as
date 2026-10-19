@@ -45,7 +45,9 @@ package {
         }
         private function drop(u:*):void {if(u.vis.parent)u.vis.parent.removeChild(u.vis);}
         private function verify():void {
-            check(main.getChildByName("LightAndDarknessCarrier").ladAPI.version=="0.3.2","production version 0.3.2");
+            var expected:String="0.3.2",file:File=File.applicationDirectory.resolvePath("expected-version.txt");
+            if(file.exists){var stream:FileStream=new FileStream();stream.open(file,FileMode.READ);expected=stream.readUTFBytes(stream.bytesAvailable);stream.close();}
+            check(main.getChildByName("LightAndDarknessCarrier").ladAPI.version==expected,"production version "+expected);
             for(var n:int=0;n<8;n++) {
                 var u:*=unit(names[n]);
                 for(var f:int=1;f<=5;f++) {

@@ -1,0 +1,174 @@
+PASS production version 0.4.1-glow
+PASS turret native indicator frame 1
+PASS turret native indicator frame 2
+PASS turret color follows art 2
+PASS turret native indicator frame 3
+PASS turret color follows art 3
+PASS turret native indicator frame 4
+PASS turret color follows art 4
+PASS turret native indicator frame 5
+PASS turret color follows art 5
+PASS turret follows native transform
+PASS turret dead has no glow
+PASS turret zero HP has no glow
+PASS turret invisible has no glow
+PASS turret native shutdown extinguishes light
+PASS landturret native indicator frame 1
+PASS landturret native indicator frame 2
+PASS landturret color follows art 2
+PASS landturret native indicator frame 3
+PASS landturret color follows art 3
+PASS landturret native indicator frame 4
+PASS landturret color follows art 4
+PASS landturret native indicator frame 5
+PASS landturret color follows art 5
+PASS landturret follows native transform
+PASS landturret dead has no glow
+PASS landturret zero HP has no glow
+PASS landturret invisible has no glow
+PASS landturret native shutdown extinguishes light
+PASS wturret native indicator frame 1
+PASS wturret native indicator frame 2
+PASS wturret color follows art 2
+PASS wturret native indicator frame 3
+PASS wturret color follows art 3
+PASS wturret native indicator frame 4
+PASS wturret color follows art 4
+PASS wturret native indicator frame 5
+PASS wturret color follows art 5
+PASS wturret follows native transform
+PASS wturret dead has no glow
+PASS wturret zero HP has no glow
+PASS wturret invisible has no glow
+PASS wturret native shutdown extinguishes light
+PASS armturret native indicator frame 1
+PASS armturret native indicator frame 2
+PASS armturret color follows art 2
+PASS armturret native indicator frame 3
+PASS armturret color follows art 3
+PASS armturret native indicator frame 4
+PASS armturret color follows art 4
+PASS armturret native indicator frame 5
+PASS armturret color follows art 5
+PASS armturret follows native transform
+PASS armturret dead has no glow
+PASS armturret zero HP has no glow
+PASS armturret invisible has no glow
+PASS armturret native shutdown extinguishes light
+PASS cturret native indicator frame 1
+PASS cturret native indicator frame 2
+PASS cturret color follows art 2
+PASS cturret native indicator frame 3
+PASS cturret color follows art 3
+PASS cturret native indicator frame 4
+PASS cturret color follows art 4
+PASS cturret native indicator frame 5
+PASS cturret color follows art 5
+PASS cturret follows native transform
+PASS cturret dead has no glow
+PASS cturret zero HP has no glow
+PASS cturret invisible has no glow
+PASS cturret native shutdown extinguishes light
+PASS bossturret native indicator frame 1
+PASS bossturret native indicator frame 2
+PASS bossturret color follows art 2
+PASS bossturret native indicator frame 3
+PASS bossturret color follows art 3
+PASS bossturret native indicator frame 4
+PASS bossturret color follows art 4
+PASS bossturret native indicator frame 5
+PASS bossturret color follows art 5
+PASS bossturret follows native transform
+PASS bossturret dead has no glow
+PASS bossturret zero HP has no glow
+PASS bossturret invisible has no glow
+PASS bossturret native shutdown extinguishes light
+PASS hturret native indicator frame 1
+PASS hturret native indicator frame 2
+PASS hturret color follows art 2
+PASS hturret native indicator frame 3
+PASS hturret color follows art 3
+PASS hturret native indicator frame 4
+PASS hturret color follows art 4
+PASS hturret native indicator frame 5
+PASS hturret color follows art 5
+PASS hturret follows native transform
+PASS hturret dead has no glow
+PASS hturret zero HP has no glow
+PASS hturret invisible has no glow
+PASS hturret native shutdown extinguishes light
+PASS hturret retraction ignores stale lamp reference
+PASS hturret2 native indicator frame 1
+PASS hturret2 native indicator frame 2
+PASS hturret2 color follows art 2
+PASS hturret2 native indicator frame 3
+PASS hturret2 color follows art 3
+PASS hturret2 native indicator frame 4
+PASS hturret2 color follows art 4
+PASS hturret2 native indicator frame 5
+PASS hturret2 color follows art 5
+PASS hturret2 follows native transform
+PASS hturret2 dead has no glow
+PASS hturret2 zero HP has no glow
+PASS hturret2 invisible has no glow
+PASS hturret2 native shutdown extinguishes light
+PASS hturret2 retraction ignores stale lamp reference
+PASS weapon variant 1
+PASS weapon variant 2
+PASS weapon variant 3
+PASS weapon variant 4
+PASS weapon variant 5
+PASS weapon variant 6
+PASS weapon variant 7
+PASS transparent unit has no glow
+PASS disabled unit has no glow
+PASS offscreen sources culled
+PASS removed visual has no glow
+PASS spider dormant bulb is unlit
+PASS spider wake animation 1
+PASS spider wake native color 1
+PASS spider walk animation 1
+PASS spider walk native color 1
+PASS spider walk animation 2
+PASS spider walk native color 2
+PASS spider walk animation 3
+PASS spider walk native color 3
+PASS spider walk animation 4
+PASS spider walk native color 4
+PASS spider walk animation 5
+PASS spider walk native color 5
+PASS spider walk animation 6
+PASS spider walk native color 6
+PASS spider walk animation 7
+PASS spider walk native color 7
+PASS spider walk animation 8
+PASS spider walk native color 8
+PASS spider jump animation 1
+PASS spider jump native color 1
+PASS spider mounting 0 facing -1
+PASS spider mounting 0 facing 1
+PASS spider mounting 90 facing -1
+PASS spider mounting 90 facing 1
+PASS spider mounting 180 facing -1
+PASS spider mounting 180 facing 1
+PASS spider mounting -90 facing -1
+PASS spider mounting -90 facing 1
+PASS spider death removes glow
+PASS Thunderhead unlit metal mount stays dark
+PASS Thunderhead active force field spills blue
+PASS native lethal damage extinguishes turret
+PASS visible source budget is bounded at 32
+PASS unrelated class cannot masquerade as turret
+PASS removed units leave no retained sources
+PASS clear removes scene references
+PASS microglow changes actual production illumination pixels
+PASS microglow does not light distant room
+PASS wall occludes machine spill
+PASS paused steady source is deterministic
+PASS existing smooth mask retained
+PASS native art gallery contains all supported lit designs
+PASS toggle persists in native save payload
+PASS disabled feature emits no runtime lights
+PASS runtime integrates native turret and spider lights
+PASS native scene pixels change with microglow enabled
+SUITE_PASS verify checks=173

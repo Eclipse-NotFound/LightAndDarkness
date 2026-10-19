@@ -1,0 +1,35 @@
+{
+  "machine": {
+    "source": "build\\evidence\\remains-lad-machine-20261020001101006",
+    "files": {
+      "process.json": "da40fd62fb4d3928820cd4b3e765da99e2330e4fc071e45220451e88a234d6f9",
+      "selection.json": "57c51e94ce1c48767d20370a35f907442ecfeb1b4f34009cf893fb1f11cc40cd",
+      "hashes.json": "554ab7ba8b7be8141497de96597227de9a6bdb7e022a15ff835ddb197eb7b0ff",
+      "storage/LightAndDarkness.log": "225ed4e517f475b65da68117f36bcccd5a2408cb67ae8019dc7800f05f2a14a4",
+      "storage/loader.json": "0de83fbfe7dd468d6dc6ba0f94e5070d51556ac30c6ff118e2b3bc7be41554c8",
+      "storage/machine-test.log": "9c58e089e03ca122114459f2d8ce9f27e7d89d72e8b29c9fa5e9d2826ca0aca6",
+      "storage/machines-after.png": "bed5b45b7e9cb944026b9f6e88afa87caa94bdd5b9753f689c21908f95ca18f5",
+      "storage/game-microglow-on.png": "b67609414846b917748bf00a2bdc020e969fcea28967c3b7fa3ccf1577c44ec3"
+    }
+  },
+  "landmark": {
+    "source": "build\\evidence\\remains-lad-landmark-20261020001100734319",
+    "files": {
+      "process.json": "a9c8e035f9eda65b311fd0f33e098757989dbe649f7111aa686985bcb00c8942",
+      "selection.json": "8858a47b1394ccdd882633dc002517d6341dfe0907c43a6edbf7101e869dc560",
+      "hashes.json": "e9869286e59ecb4ea5278181ba38802e7be70286ac7260ca5a3b1adf70c37315",
+      "stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr.txt": "570b653fe51ad26877391b4205cbecf52c616915c75227981353a8a24072614c",
+      "storage/LightAndDarkness.log": "9fcd6c098ab4bd1b0ff83a27c07bfc473173b586f468dc1d0e08b1eff021a91e",
+      "storage/checks.log": "f590d67d9ecf2720bc35914d5bc5ba5ffdb9335315bf1de42d815efac3483a71",
+      "storage/landmark.json": "b5f893ceab1dc210595ab1c29731a64001e5fac2cedb17a97431d7cbcf74d687",
+      "storage/landmark.done": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "storage/terminal-native-tree.json": "e4db3e082a651d6a2ed540e884f3b5c665bf5b31f7f27a6db472ba1a0d09e979",
+      "storage/terminal-native-atlas.png": "c3da87221a304560d79106e484f5e30862d0ec4fbda32c6b82a3d2b40f704bb0",
+      "storage/terminals-unhacked.png": "3d2d1e77c8e1d8566658c2bddc4f1b2287f4f1fe319f3426de0988d7a43cecdc",
+      "storage/terminals-hacked.png": "0276b52be6731de3cbf9f68797d30ab8b26e3c0f2db9045402683c38fb8a33a5",
+      "storage/landmarks-after.png": "cceaeb165bd0c8b23829689256e1e44bbe54673de27cf9bfdf8960d355b2f9a5",
+      "storage/camp-after.png": "36a32efaa473bad67ea420bd1a3b6f19d670e2784bf837ed23fdddf9eb9fa14d"
+    }
+  }
+}

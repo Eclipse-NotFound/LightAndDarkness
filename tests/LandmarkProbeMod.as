@@ -66,7 +66,12 @@ package {
                 if(phase==0 && w && w.allLandsLoaded && w.textLoaded && w.mm){w.mm.mainMenuOff();w.newGame(-1,"LP",{propusk:true});phase=1;}
                 else if(phase==1 && r && w.gg && w.loc && w.loc.active && w.allStat==1 && w.t_exit==0 && r.location===w.loc && ++frames>10) {
                     w.gui.dialText(null);w.gui.guiPause=false;w.gui.dialScript.running=false;w.onPause=true;
-                    atlas();if(mode=="verify")LandmarkChecks.run(w,r,main,check,png);finish();
+                    atlas();TerminalLightChecks.atlas(w,png);
+                    if(mode=="verify") {
+                        LandmarkChecks.run(w,r,main,check,png);
+                        if(File.applicationDirectory.resolvePath("terminal-checks.txt").exists)TerminalLightChecks.run(w,r,check,png);
+                    }
+                    finish();
                 }
             }catch(error:*){finish(String(error)+" "+error.getStackTrace());}
         }

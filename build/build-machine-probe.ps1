@@ -1,7 +1,8 @@
-param([string]$Java='D:/Program Files/Adobe Animate 2024/jre/bin/java.exe',[string]$Tools='D:/Program Files/Steam/steamapps/common/Remains/mods/Sandevistan/build/tools')
+param([string]$Java='D:/Program Files/Adobe Animate 2024/jre/bin/java.exe',[string]$Tools='D:/Program Files/Steam/steamapps/common/Remains/mods/Sandevistan/build/tools',[string]$OutputDirectory='')
 $ErrorActionPreference='Stop'
 $ladRoot=Split-Path $PSScriptRoot -Parent
 $ladOut=Join-Path $PSScriptRoot 'out/machines-v032'
+if($OutputDirectory){$ladOut=[IO.Path]::GetFullPath($OutputDirectory)}
 New-Item -ItemType Directory -Force -Path $ladOut,(Join-Path $PSScriptRoot 'generated') | Out-Null
 $ladSource=[Security.SecurityElement]::Escape((Join-Path $ladRoot 'tests'))
 $ladAir=[Security.SecurityElement]::Escape((Join-Path $Tools 'airsdk/frameworks/libs/air/airglobal.swc'))

@@ -27,6 +27,7 @@ def main():
     parser.add_argument('--mixed',action='store_true')
     parser.add_argument('--expected-version',default='0.4.1')
     parser.add_argument('--seed-storage')
+    parser.add_argument('--terminals',action='store_true')
     args=parser.parse_args()
     stamp=datetime.now().strftime('%Y%m%d%H%M%S%f')
     appid='remains-lad-landmark-'+stamp
@@ -58,6 +59,7 @@ def main():
                 if f.is_file() and f.suffix in ['.swf','.txt','.json','.xml']:shutil.copy2(f,dep/f.name)
             entries.append(name+'Mod')
     (root/'landmark-mode.txt').write_text(args.mode,'utf-8')
+    if args.terminals:(root/'terminal-checks.txt').write_text('1','utf8')
     (root/'test-mode.txt').write_text('cold' if args.mode=='cold' else 'mixed' if args.mixed else 'single','utf-8')
     desc=root/'application.xml'
     desc.write_text(f'''<?xml version="1.0"?><application xmlns="http://ns.adobe.com/air/application/30.0"><id>{appid}</id><versionNumber>1.0</versionNumber><filename>MapLightingSurvey</filename><initialWindow><content>pfe.swf</content><visible>false</visible><width>1440</width><height>900</height><renderMode>direct</renderMode></initialWindow><supportedProfiles>extendedDesktop</supportedProfiles></application>''',encoding='utf8')
@@ -96,7 +98,7 @@ def main():
     assert done=='PASS',done
     result=json.loads((evidence/'storage/landmark.json').read_text(encoding='utf8'))
     assert result['roomsLoad']==1 and result['version']==args.expected_version
-    if args.mode=='verify':assert result['checks']>=124
+    if args.mode=='verify':assert result['checks']>=(217 if args.terminals else 124)
     if args.mode in ['regression','cold']:
         checks=(evidence/'storage/test.log').read_text('utf8')
         assert ' SUITE_PASS' in checks and ' FAIL ' not in checks

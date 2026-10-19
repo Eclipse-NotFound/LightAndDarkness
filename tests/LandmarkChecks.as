@@ -25,7 +25,10 @@ package {
                 cp.vis.osn.gotoAndStop("open");lights=collect([cp]);
                 check(lights.length==3 && find(lights,"-star").color==0xe77aff,"checkpoint "+variant+" open screen uses native violet");
                 cp.vis.fiol.gotoAndStop(25);lights=collect([cp]);
-                check(lights.length==4 && find(lights,"-teleport").power>0.3 && find(lights,"-teleport").power<0.4,"checkpoint "+variant+" beam follows native alpha");
+                var beamPower:Number=find(lights,"-teleport").power;
+                cp.vis.fiol.alpha=0.5;
+                check(lights.length==4 && beamPower>0 && Math.abs(find(collect([cp]),"-teleport").power-beamPower*0.5)<0.0001,"checkpoint "+variant+" beam follows native alpha");
+                cp.vis.fiol.alpha=1;
                 cp.hide=true;check(collect([cp]).length==0,"hidden checkpoint "+variant+" emits nothing");cp.hide=false;
                 cp.vis.fiol.gotoAndStop(1);check(collect([cp]).length==3,"checkpoint "+variant+" stale beam is removed");
             }

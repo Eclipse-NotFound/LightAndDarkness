@@ -3,11 +3,14 @@ param(
     [string]$Tools = '',
     [switch]$Tests,
     [switch]$TestsOnly,
-    [string]$OutputDirectory = ''
+    [string]$OutputDirectory = '',
+    [string]$SourceDirectory = ''
 )
 $ErrorActionPreference = 'Stop'
 $modRoot = Split-Path $PSScriptRoot -Parent
 $gameRoot = Split-Path (Split-Path $modRoot -Parent) -Parent
+if (!$SourceDirectory) { $SourceDirectory = Join-Path $modRoot 'src' }
+$SourceDirectory = [IO.Path]::GetFullPath($SourceDirectory)
 if (!$Tools) { $Tools = Join-Path $gameRoot 'mods\Sandevistan\build\tools' }
 $flexRoot = Join-Path $Tools 'flexsdk'
 $airSwc = Join-Path $Tools 'airsdk\frameworks\libs\air\airglobal.swc'
@@ -16,7 +19,7 @@ foreach ($required in @($Java, $airSwc, (Join-Path $flexRoot 'lib\mxmlc.jar'), (
 }
 $out = Join-Path $PSScriptRoot 'out'
 if ($OutputDirectory) { $out = [IO.Path]::GetFullPath($OutputDirectory) }
-$generated = Join-Path $PSScriptRoot 'generated'
+$generated = Join-Path $out 'config'
 New-Item -ItemType Directory -Force -Path $out, $generated | Out-Null
 function Write-Config([string]$Name, [string[]]$Sources, [string[]]$Libraries) {
     $sourcesXml = ($Sources | ForEach-Object { '<path-element>' + [Security.SecurityElement]::Escape($_) + '</path-element>' }) -join ''
@@ -33,11 +36,15 @@ if (!$TestsOnly) {
 $stubSwc = Join-Path $out 'host-signatures.swc'
 $stubConfig = Write-Config 'stubs' @((Join-Path $PSScriptRoot 'stubs')) @($airSwc)
 Compile 'compc' @("-load-config=$stubConfig", '-include-classes=fe.unit.Unit,fe.weapon.Bullet,fe.loc.Box', "-output=$stubSwc")
-$config = Write-Config 'candidate' @((Join-Path $modRoot 'src')) @($airSwc, $stubSwc)
-Compile 'mxmlc' @("-load-config=$config", '-swf-version=32', '-use-network=false', '-static-link-runtime-shared-libraries=true', '-includes=lad.native.LadLampTarget', "-output=$out\LightAndDarknessMod.swf", "$modRoot\src\LightAndDarknessDoc.as")
+$config = Write-Config 'candidate' @($SourceDirectory) @($airSwc, $stubSwc)
+Compile 'mxmlc' @("-load-config=$config", '-swf-version=32', '-use-network=false', '-static-link-runtime-shared-libraries=true', '-includes=lad.native.LadLampTarget', "-output=$out\LightAndDarknessMod.swf", "$SourceDirectory\LightAndDarknessDoc.as")
 }
 if ($Tests -or $TestsOnly) {
     $testConfig = Write-Config 'tests' @((Join-Path $modRoot 'tests')) @($airSwc)
     Compile 'mxmlc' @("-load-config=$testConfig", '-swf-version=32', '-use-network=false', '-static-link-runtime-shared-libraries=true', "-output=$out\LightAndDarknessTest.swf", "$modRoot\tests\LightAndDarknessTest.as")
 }
-Get-FileHash -LiteralPath (Join-Path $out 'LightAndDarknessMod.swf') -Algorithm SHA256
+$artifact = Join-Path $out 'LightAndDarknessMod.swf'
+$hashStream = [IO.File]::OpenRead($artifact)
+$hasher = [Security.Cryptography.SHA256]::Create()
+try { [pscustomobject]@{Path=$artifact;Hash=([BitConverter]::ToString($hasher.ComputeHash($hashStream))).Replace('-','')} }
+finally { $hashStream.Dispose();$hasher.Dispose() }
