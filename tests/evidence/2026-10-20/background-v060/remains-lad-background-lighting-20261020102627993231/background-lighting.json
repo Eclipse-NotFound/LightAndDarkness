@@ -1,0 +1,533 @@
+{
+  "error": "",
+  "boundary": "Native Tile fixtures and same paused native scene, candidate versus frozen 0.5.1 classes. Software captures, no FPS claim or player storage.",
+  "mode": "smoke",
+  "applicationID": "remains-lad-background-lighting-20261020102627993231",
+  "checks": 66,
+  "assertions": [
+    {
+      "pass": true,
+      "label": "candidate initializes before loading baseline definitions",
+      "detail": "0.6.0"
+    },
+    {
+      "pass": true,
+      "label": "comparison uses expected ContinuousScene 0.8.2 interface",
+      "detail": "0.8.2"
+    },
+    {
+      "pass": true,
+      "label": "CS native mode is explicitly applied and read back before map generation",
+      "detail": false
+    },
+    {
+      "pass": true,
+      "label": "frozen comparison class reports baseline 0.5.1",
+      "detail": "0.5.1"
+    },
+    {
+      "pass": true,
+      "label": "RV setting interface available for isolated lighting comparison",
+      "detail": {
+        "waitMs": 348,
+        "waitFrames": 6
+      }
+    },
+    {
+      "pass": true,
+      "label": "fixtures use the native typed Tile path",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient rbl",
+      "detail": {
+        "actual": 0.58,
+        "expected": 0.58
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient random_sewer",
+      "detail": {
+        "actual": 0.32,
+        "expected": 0.32
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient begin",
+      "detail": {
+        "actual": 0.32,
+        "expected": 0.32
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient random_encl",
+      "detail": {
+        "actual": 0.48,
+        "expected": 0.48
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient test",
+      "detail": {
+        "actual": 0.42,
+        "expected": 0.42
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient random_mane",
+      "detail": {
+        "actual": 0.4,
+        "expected": 0.4
+      }
+    },
+    {
+      "pass": true,
+      "label": "daylight city retains its original ambient instead of a global boost",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "explicit power outage retains its dark floor",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "flight flag alone does not create daylight",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native sky geometry still supplies daylight without flight flag",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "transparent rendered window wall supplies local light",
+      "detail": {
+        "opening": 0.6980392156862745,
+        "covered": 0.3568627450980392
+      }
+    },
+    {
+      "pass": true,
+      "label": "unchanged ordinary raster retains a stable environment signature",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "repeated static render preserves identical field pixels",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "ordinary room replacement bitmap invalidates its backdrop transmission",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "transparent raster without exterior context cannot invent underground sky",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "unrasterized CS chunk is unknown rather than transparent sky",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "CS first resident raster invalidates previously empty backdrop cache",
+      "detail": {
+        "resident": 0.6980392156862745,
+        "empty": 0.3568627450980392
+      }
+    },
+    {
+      "pass": true,
+      "label": "CS replacement raster refreshes aperture transmission",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "room slices retain independent indoor and outdoor air fields",
+      "detail": {
+        "indoor": 0.4,
+        "base": 0.4,
+        "outdoor": 0.6980392156862745
+      }
+    },
+    {
+      "pass": true,
+      "label": "opaque wall receives sky on its exposed face",
+      "detail": {
+        "base": 0.4,
+        "surface": 0.6941176470588235
+      }
+    },
+    {
+      "pass": true,
+      "label": "surface reception does not transmit through a thin wall",
+      "detail": {
+        "base": 0.4,
+        "behind": 0.4
+      }
+    },
+    {
+      "pass": true,
+      "label": "opening native Tile door invalidates cached sky occlusion",
+      "detail": {
+        "open": 0.5019607843137255,
+        "closed": 0.4
+      }
+    },
+    {
+      "pass": true,
+      "label": "closing door restores the original air darkness",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "new background masonry blocks geometric daylight",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "background destruction invalidates daylight cache",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native zForm 3 fixture retains actual partial-floor geometry and opacity",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native fractured floor receives sky at its actual visible top",
+      "detail": {
+        "base": 0.4,
+        "surface": 0.6549019607843137
+      }
+    },
+    {
+      "pass": true,
+      "label": "fractured floor reception follows its physical top rather than the tile top",
+      "detail": {
+        "surface": 0.6549019607843137,
+        "airAbove": 0.6313725490196078
+      }
+    },
+    {
+      "pass": true,
+      "label": "opaque floor below a partial native tile still prevents through-light",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native zForm edit refreshes same-bitmap surface light with sceneCache=true",
+      "detail": {
+        "opacity": 0,
+        "after": 0.6862745098039216,
+        "before": 0.6313725490196078
+      }
+    },
+    {
+      "pass": true,
+      "label": "restoring native zForm restores the surface field with sceneCache=true",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native zForm edit refreshes same-bitmap surface light with sceneCache=false",
+      "detail": {
+        "opacity": 0,
+        "after": 0.6862745098039216,
+        "before": 0.6313725490196078
+      }
+    },
+    {
+      "pass": true,
+      "label": "restoring native zForm restores the surface field with sceneCache=false",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native aperture mask is collected: enil",
+      "detail": {
+        "sources": 4
+      }
+    },
+    {
+      "pass": true,
+      "label": "native aperture contributes illumination: enil",
+      "detail": {
+        "value": 0.5843137254901961,
+        "base": 0.44
+      }
+    },
+    {
+      "pass": true,
+      "label": "hiding a native aperture invalidates its cached environment light",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "restoring native aperture alpha restores environmental light",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "closed underground rejects decorative aperture: enil",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native aperture mask is collected: hole1",
+      "detail": {
+        "sources": 4
+      }
+    },
+    {
+      "pass": true,
+      "label": "native aperture contributes illumination: hole1",
+      "detail": {
+        "value": 0.6980392156862745,
+        "base": 0.44
+      }
+    },
+    {
+      "pass": true,
+      "label": "closed underground rejects decorative aperture: hole1",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native aperture mask is collected: chole1",
+      "detail": {
+        "sources": 4
+      }
+    },
+    {
+      "pass": true,
+      "label": "native aperture contributes illumination: chole1",
+      "detail": {
+        "value": 0.6980392156862745,
+        "base": 0.44
+      }
+    },
+    {
+      "pass": true,
+      "label": "closed underground rejects decorative aperture: chole1",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native aperture mask is collected: fwindow",
+      "detail": {
+        "sources": 4
+      }
+    },
+    {
+      "pass": true,
+      "label": "native aperture contributes illumination: fwindow",
+      "detail": {
+        "value": 0.9215686274509803,
+        "base": 0.44
+      }
+    },
+    {
+      "pass": true,
+      "label": "closed underground rejects decorative aperture: fwindow",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "src fonWay admits its original swindow as an exterior source",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native src swindow illuminates the shared field",
+      "detail": 0.8509803921568627
+    },
+    {
+      "pass": true,
+      "label": "internal observation glass does not become an outdoor source",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "environment multiplier preserves selective ambient scaling",
+      "detail": {
+        "scaled": 0.5215686274509804,
+        "normal": 0.4196078431372549
+      }
+    },
+    {
+      "pass": true,
+      "label": "restoring multiplier restores exact base field",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "switching off a dynamic lamp leaves no retained illumination",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline and candidate lighting classes remain separate rbl",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline inherits the same native Tile identity rbl",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "ordinary scene uses native room rendering rbl",
+      "detail": {
+        "viewReady": true,
+        "spaceX": 48,
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceY": 25,
+        "stateUsesCurrentLocation": false,
+        "sceneLarge": false
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 rbl actual",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused native scene retains its environment signature across eight frames rbl",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused candidate scene preserves camera and field pixels across eight frames rbl",
+      "detail": {
+        "signatureStable": true,
+        "settleFrames": 8,
+        "pixelsStable": true,
+        "cameraStable": true,
+        "observedFrames": 8
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 rbl isolated",
+      "detail": null
+    }
+  ],
+  "roomsLoad": 1,
+  "loader": {
+    "requested_ContinuousSceneMod": "run_1792463199778_728061|line 21 @1792463199832",
+    "ok_RealisticVisionMod": "run_1792463199778_728061|init @1792463200764",
+    "requested_LightAndDarknessMod": "run_1792463199778_728061|line 23 @1792463199853",
+    "requested_RealisticVisionMod": "run_1792463199778_728061|line 15 @1792463199827",
+    "requested_BackgroundLightingTestMod": "run_1792463199778_728061|line 22 @1792463199846",
+    "requested_ModLoaderMod": "run_1792463199778_728061|line 12 @1792463199822",
+    "boot": "run_1792463199778_728061|v2 col=2 requested=6 @1792463199865",
+    "requested_WallBlendMod": "run_1792463199778_728061|line 24 @1792463199861",
+    "boot_start": "run_1792463199778_728061|v2 run=run_1792463199778_728061 @1792463199793",
+    "ok_WallBlendMod": "run_1792463199778_728061|init @1792463200751",
+    "ok_LightAndDarknessMod": "run_1792463199778_728061|init @1792463200704",
+    "ok_ContinuousSceneMod": "run_1792463199778_728061|init @1792463200782",
+    "ok_BackgroundLightingTestMod": "run_1792463199778_728061|init @1792463200713",
+    "ok_ModLoaderMod": "run_1792463199778_728061|init @1792463200739",
+    "session": "run_1792463199778_728061"
+  },
+  "version": "0.6.0",
+  "samples": [
+    {
+      "environment": 0.58,
+      "isolated": {
+        "candidate": {
+          "solidPoints": 233,
+          "solidMedian": 0.5764705882352941,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967
+        },
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "baseline": {
+          "solidPoints": 233,
+          "solidMedian": 0.5764705882352941,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967
+        }
+      },
+      "backform": 0,
+      "land": "rbl",
+      "transpFon": false,
+      "rvEnabled": true,
+      "fon": "fonWay",
+      "swindow": {
+        "nativeObjects": 2,
+        "visibleMasks": 2,
+        "environmentSources": 4
+      },
+      "stability": {
+        "signatureStable": true,
+        "settleFrames": 8,
+        "pixelsStable": true,
+        "cameraStable": true,
+        "observedFrames": 8
+      },
+      "regions": 1,
+      "scene": {
+        "viewReady": true,
+        "spaceX": 48,
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceY": 25,
+        "stateUsesCurrentLocation": false,
+        "sceneLarge": false
+      },
+      "mode": "smoke",
+      "room": "loc0_0",
+      "headlamp": false,
+      "roomKey": "rbl|loc0_0|0|0|0||false|48|25|25d9f2d9",
+      "worldPaused": true,
+      "actual": {
+        "candidate": {
+          "solidPoints": 233,
+          "solidMedian": 0.5764705882352941,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967
+        },
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "baseline": {
+          "solidPoints": 233,
+          "solidMedian": 0.5764705882352941,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967
+        }
+      },
+      "prefix": "sample-1",
+      "backwall": "tStConcrete"
+    }
+  ],
+  "baselineVersion": "0.5.1"
+}

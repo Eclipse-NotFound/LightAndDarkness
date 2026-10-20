@@ -30,7 +30,7 @@ def main():
         assert source.is_relative_to((MOD / 'build/evidence').resolve())
         target = dest / source.name
         target.mkdir(exist_ok=True)
-        for name in ['process.json', 'hashes.json', 'selection.json', 'sources.json', 'competition.json', 'guards.json', 'initial-guard.json', 'run-plan.json', 'compiler-stdout.txt', 'compiler-stderr.txt', 'stdout.txt', 'stderr.txt']:
+        for name in ['process.json', 'hashes.json', 'selection.json', 'sources.json', 'competition.json', 'guards.json', 'initial-guard.json', 'run-plan.json', 'pixel-summary.json', 'compiler-stdout.txt', 'compiler-stderr.txt', 'stdout.txt', 'stderr.txt']:
             if (source / name).is_file():
                 shutil.copy2(source / name, target / name)
         store = source / 'storage'

@@ -63,7 +63,7 @@ package lad {
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.5.1",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.6.0",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.addEventListener(Event.ADDED,objectAdded,true);
@@ -72,7 +72,7 @@ package lad {
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.5.1 loaded");
+            LadLog.write("v0.6.0 loaded");
         }
         private function objectAdded(event:Event):void {
             if(!enabled || !atmosphere.settings.projectiles || !location || !world || world.loc!==location) return;

@@ -1,0 +1,242 @@
+{
+  "version": "0.6.0",
+  "baseline": "0.5.1",
+  "mode": "verify",
+  "boundary": "Same paused scene/camera; sample every 4 pixels, exclude HUD margins and baseline encoded luma below 12. Encoded Rec.709 RGB proxy only. No gamma correction, physical lux, perceptual percentage or FPS claim.",
+  "rows": [
+    {
+      "land": "rbl",
+      "prefix": "sample-1",
+      "regions": 1,
+      "samples": 53947,
+      "totalEncodedLumaRatio": 1.0,
+      "medianPixelRatio": 1.0,
+      "lowerByMoreThanTwo": 0,
+      "medianChannelShareDelta": 0.0,
+      "field": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 233,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967,
+          "solidMedian": 0.5764705882352941
+        },
+        "baseline": {
+          "solidPoints": 233,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967,
+          "solidMedian": 0.5764705882352941
+        }
+      },
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "land": "surf",
+      "prefix": "sample-2",
+      "regions": 1,
+      "samples": 28894,
+      "totalEncodedLumaRatio": 1.0150043736976313,
+      "medianPixelRatio": 1.0,
+      "lowerByMoreThanTwo": 1105,
+      "medianChannelShareDelta": 0.0,
+      "field": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 225,
+          "airMedian": 0.6980392156862745,
+          "airPoints": 975,
+          "solidMedian": 0.3764705882352941
+        },
+        "baseline": {
+          "solidPoints": 225,
+          "airMedian": 0.6980392156862745,
+          "airPoints": 975,
+          "solidMedian": 0.3764705882352941
+        }
+      },
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "land": "random_mane",
+      "prefix": "sample-3",
+      "regions": 1,
+      "samples": 52282,
+      "totalEncodedLumaRatio": 1.1534851599787812,
+      "medianPixelRatio": 1.0,
+      "lowerByMoreThanTwo": 0,
+      "medianChannelShareDelta": 0.0,
+      "field": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 262,
+          "airMedian": 0.4745098039215686,
+          "airPoints": 938,
+          "solidMedian": 0.3568627450980392
+        },
+        "baseline": {
+          "solidPoints": 262,
+          "airMedian": 0.3568627450980392,
+          "airPoints": 938,
+          "solidMedian": 0.3568627450980392
+        }
+      },
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "land": "random_sewer",
+      "prefix": "sample-4",
+      "regions": 1,
+      "samples": 34608,
+      "totalEncodedLumaRatio": 1.122766847167121,
+      "medianPixelRatio": 1.1395288268930996,
+      "lowerByMoreThanTwo": 0,
+      "medianChannelShareDelta": 0.003975102254135693,
+      "field": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 467,
+          "airMedian": 0.3176470588235294,
+          "airPoints": 733,
+          "solidMedian": 0.3176470588235294
+        },
+        "baseline": {
+          "solidPoints": 467,
+          "airMedian": 0.2784313725490196,
+          "airPoints": 733,
+          "solidMedian": 0.2784313725490196
+        }
+      },
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "land": "random_encl",
+      "prefix": "sample-5",
+      "regions": 1,
+      "samples": 56283,
+      "totalEncodedLumaRatio": 1.02788760740831,
+      "medianPixelRatio": 1.0261160954820858,
+      "lowerByMoreThanTwo": 0,
+      "medianChannelShareDelta": 0.001894123360854788,
+      "field": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 242,
+          "airMedian": 0.8196078431372549,
+          "airPoints": 958,
+          "solidMedian": 0.47843137254901963
+        },
+        "baseline": {
+          "solidPoints": 242,
+          "airMedian": 0.807843137254902,
+          "airPoints": 958,
+          "solidMedian": 0.4392156862745098
+        }
+      },
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "land": "src",
+      "prefix": "sample-6",
+      "regions": 1,
+      "samples": 55059,
+      "totalEncodedLumaRatio": 1.0202083848566523,
+      "medianPixelRatio": 1.0,
+      "lowerByMoreThanTwo": 0,
+      "medianChannelShareDelta": 0.0,
+      "field": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 540,
+          "airMedian": 0.6235294117647059,
+          "airPoints": 660,
+          "solidMedian": 0.5764705882352941
+        },
+        "baseline": {
+          "solidPoints": 540,
+          "airMedian": 0.6196078431372549,
+          "airPoints": 660,
+          "solidMedian": 0.5764705882352941
+        }
+      },
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    }
+  ]
+}

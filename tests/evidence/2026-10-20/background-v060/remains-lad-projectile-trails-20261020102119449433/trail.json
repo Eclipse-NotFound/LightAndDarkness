@@ -1,0 +1,36 @@
+{
+  "version": "0.6.0",
+  "mode": "verify",
+  "checks": 43,
+  "error": "",
+  "roomsLoad": 1,
+  "loader": {
+    "requested_ContinuousSceneMod": "run_1792462891010_638351|line 21 @1792462891113",
+    "requested_ModLoaderMod": "run_1792462891010_638351|line 12 @1792462891092",
+    "ok_WallBlendMod": "run_1792462891010_638351|init @1792462891818",
+    "ok_ContinuousSceneMod": "run_1792462891010_638351|init @1792462891875",
+    "ok_RealisticVisionMod": "run_1792462891010_638351|init @1792462891860",
+    "ok_ModLoaderMod": "run_1792462891010_638351|init @1792462891810",
+    "requested_WallBlendMod": "run_1792462891010_638351|line 24 @1792462891129",
+    "boot_start": "run_1792462891010_638351|v2 run=run_1792462891010_638351 @1792462891037",
+    "ok_LightAndDarknessMod": "run_1792462891010_638351|init @1792462891792",
+    "requested_RealisticVisionMod": "run_1792462891010_638351|line 15 @1792462891108",
+    "requested_TrailProbeMod": "run_1792462891010_638351|line 23 @1792462891123",
+    "requested_LightAndDarknessMod": "run_1792462891010_638351|line 22 @1792462891117",
+    "session": "run_1792462891010_638351",
+    "boot": "run_1792462891010_638351|v2 col=2 requested=6 @1792462891138",
+    "ok_TrailProbeMod": "run_1792462891010_638351|init @1792462891740"
+  },
+  "samples": [
+    {
+      "stress": {
+        "rays": 404,
+        "tracked": 192,
+        "painted": 194,
+        "visits": 952,
+        "pulses": 96,
+        "lights": 24
+      }
+    }
+  ]
+}

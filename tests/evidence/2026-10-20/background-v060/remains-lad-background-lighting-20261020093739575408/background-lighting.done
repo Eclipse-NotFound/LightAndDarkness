@@ -1,0 +1,3 @@
+FAIL Error: ASSERT RV setting interface available for isolated lighting comparison Error: ASSERT RV setting interface available for isolated lighting comparison
+	at BackgroundLightingTestMod/check()
+	at BackgroundLightingTestMod/step()

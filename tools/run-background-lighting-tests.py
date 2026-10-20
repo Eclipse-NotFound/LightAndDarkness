@@ -1,7 +1,8 @@
 """Frozen candidate and 0.5.1 comparison, private AIR storage and owned desktop.
 
 --prepare-only writes a build plan/configuration and does not start Java or AIR.
-Every executing run rejects concurrent AIR/JVM work and low commit headroom.
+Functional/pixel runs reject concurrent AIR and low commit headroom.
+Offline JVM work is recorded but allowed by the shared test-registry rules.
 """
 import argparse
 import ctypes
@@ -75,10 +76,12 @@ def memory():
 
 
 def guard(minimum, owned_pid=None):
-    competitors = [p for p in processes() if p["pid"] != owned_pid]
+    observed = [p for p in processes() if p["pid"] != owned_pid]
+    competitors = [p for p in observed if p["name"].lower() == "adl64.exe"]
     mem = memory()
     return {"ok": not competitors and mem["commitBytes"] >= minimum,
-            "competitors": competitors, "memory": mem, "minimumCommitBytes": minimum}
+            "competitors": competitors, "offlineProcesses": [p for p in observed if p not in competitors],
+            "memory": mem, "minimumCommitBytes": minimum}
 
 
 def copy_with_hash(source, target, sources):
@@ -133,7 +136,7 @@ def main():
         return
     first_guard = guard(2 * 1024 ** 3)
     write(evidence / "initial-guard.json", first_guard)
-    assert first_guard["ok"], "No agreed AIR/JVM window or insufficient commit memory: " + str(first_guard)
+    assert first_guard["ok"], "Concurrent AIR or insufficient commit memory: " + str(first_guard)
     compiled = subprocess.run(compile_command, capture_output=True)
     (evidence / "compiler-stdout.txt").write_bytes(compiled.stdout)
     (evidence / "compiler-stderr.txt").write_bytes(compiled.stderr)
@@ -205,7 +208,7 @@ def main():
                     guards.append(state)
                     next_guard = time.monotonic() + 1
                     if not state["ok"]:
-                        aborted = "Concurrent AIR/JVM or low commit headroom"
+                        aborted = "Concurrent AIR or low commit headroom"
                         break
                 if (storage / "background-lighting.done").exists():
                     break
@@ -235,6 +238,13 @@ def main():
     assert len(result["samples"]) == {"verify": 6, "large": 3, "smoke": 1}[args.mode]
     if args.mode == "large":
         assert all(row["regions"] > 1 for row in result["samples"][1:])
+        for row in result["samples"][1:]:
+            scene = row["scene"]
+            assert scene["nativeEnabled"] and scene["sceneLarge"] and scene["stateUsesCurrentLocation"] and scene["viewReady"]
+            assert scene["nativeRegions"] > 1 and (scene["spaceX"] > 48 or scene["spaceY"] > 25)
+        assert not result["samples"][0]["scene"]["sceneLarge"], "Base unexpectedly converted to a large map"
+    else:
+        assert all(not row["scene"]["sceneLarge"] for row in result["samples"])
     for row in result["samples"]:
         stability = row["stability"]
         assert stability["settleFrames"] >= 8 and stability["observedFrames"] >= 8

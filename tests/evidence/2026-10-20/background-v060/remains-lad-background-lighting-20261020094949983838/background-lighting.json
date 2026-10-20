@@ -1,0 +1,1192 @@
+{
+  "roomsLoad": 1,
+  "error": "",
+  "boundary": "Native Tile fixtures and same paused native scene, candidate versus frozen 0.5.1 classes. Software captures, no FPS claim or player storage.",
+  "mode": "verify",
+  "baselineVersion": "0.5.1",
+  "applicationID": "remains-lad-background-lighting-20261020094949983838",
+  "version": "0.6.0",
+  "assertions": [
+    {
+      "pass": true,
+      "label": "candidate initializes before loading baseline definitions",
+      "detail": "0.6.0"
+    },
+    {
+      "pass": true,
+      "label": "comparison uses expected ContinuousScene 0.8.2 interface",
+      "detail": "0.8.2"
+    },
+    {
+      "pass": true,
+      "label": "CS native mode is explicitly applied and read back before map generation",
+      "detail": false
+    },
+    {
+      "pass": true,
+      "label": "frozen comparison class reports baseline 0.5.1",
+      "detail": "0.5.1"
+    },
+    {
+      "pass": true,
+      "label": "RV setting interface available for isolated lighting comparison",
+      "detail": {
+        "waitMs": 469,
+        "waitFrames": 11
+      }
+    },
+    {
+      "pass": true,
+      "label": "fixtures use the native typed Tile path",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient rbl",
+      "detail": {
+        "actual": 0.58,
+        "expected": 0.58
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient random_sewer",
+      "detail": {
+        "actual": 0.32,
+        "expected": 0.32
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient begin",
+      "detail": {
+        "actual": 0.32,
+        "expected": 0.32
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient random_encl",
+      "detail": {
+        "actual": 0.48,
+        "expected": 0.48
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient test",
+      "detail": {
+        "actual": 0.42,
+        "expected": 0.42
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient random_mane",
+      "detail": {
+        "actual": 0.4,
+        "expected": 0.4
+      }
+    },
+    {
+      "pass": true,
+      "label": "daylight city retains its original ambient instead of a global boost",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "explicit power outage retains its dark floor",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "flight flag alone does not create daylight",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native sky geometry still supplies daylight without flight flag",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "transparent rendered window wall supplies local light",
+      "detail": {
+        "opening": 0.6980392156862745,
+        "covered": 0.3568627450980392
+      }
+    },
+    {
+      "pass": true,
+      "label": "unchanged ordinary raster retains a stable environment signature",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "repeated static render preserves identical field pixels",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "ordinary room replacement bitmap invalidates its backdrop transmission",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "transparent raster without exterior context cannot invent underground sky",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "unrasterized CS chunk is unknown rather than transparent sky",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "CS first resident raster invalidates previously empty backdrop cache",
+      "detail": {
+        "resident": 0.6980392156862745,
+        "empty": 0.3568627450980392
+      }
+    },
+    {
+      "pass": true,
+      "label": "CS replacement raster refreshes aperture transmission",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "room slices retain independent indoor and outdoor air fields",
+      "detail": {
+        "base": 0.4,
+        "outdoor": 0.6980392156862745,
+        "indoor": 0.4
+      }
+    },
+    {
+      "pass": true,
+      "label": "opaque wall receives sky on its exposed face",
+      "detail": {
+        "base": 0.4,
+        "surface": 0.6941176470588235
+      }
+    },
+    {
+      "pass": true,
+      "label": "surface reception does not transmit through a thin wall",
+      "detail": {
+        "base": 0.4,
+        "behind": 0.4
+      }
+    },
+    {
+      "pass": true,
+      "label": "opening native Tile door invalidates cached sky occlusion",
+      "detail": {
+        "open": 0.5019607843137255,
+        "closed": 0.4
+      }
+    },
+    {
+      "pass": true,
+      "label": "closing door restores the original air darkness",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "new background masonry blocks geometric daylight",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "background destruction invalidates daylight cache",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native zForm 3 fixture retains actual partial-floor geometry and opacity",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native fractured floor receives sky at its actual visible top",
+      "detail": {
+        "base": 0.4,
+        "surface": 0.6549019607843137
+      }
+    },
+    {
+      "pass": true,
+      "label": "fractured floor reception follows its physical top rather than the tile top",
+      "detail": {
+        "surface": 0.6549019607843137,
+        "airAbove": 0.6313725490196078
+      }
+    },
+    {
+      "pass": true,
+      "label": "opaque floor below a partial native tile still prevents through-light",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native zForm edit refreshes same-bitmap surface light with sceneCache=true",
+      "detail": {
+        "after": 0.6862745098039216,
+        "opacity": 0,
+        "before": 0.6313725490196078
+      }
+    },
+    {
+      "pass": true,
+      "label": "restoring native zForm restores the surface field with sceneCache=true",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native zForm edit refreshes same-bitmap surface light with sceneCache=false",
+      "detail": {
+        "after": 0.6862745098039216,
+        "opacity": 0,
+        "before": 0.6313725490196078
+      }
+    },
+    {
+      "pass": true,
+      "label": "restoring native zForm restores the surface field with sceneCache=false",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native aperture mask is collected: enil",
+      "detail": {
+        "sources": 4
+      }
+    },
+    {
+      "pass": true,
+      "label": "native aperture contributes illumination: enil",
+      "detail": {
+        "value": 0.5843137254901961,
+        "base": 0.44
+      }
+    },
+    {
+      "pass": true,
+      "label": "hiding a native aperture invalidates its cached environment light",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "restoring native aperture alpha restores environmental light",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "closed underground rejects decorative aperture: enil",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native aperture mask is collected: hole1",
+      "detail": {
+        "sources": 4
+      }
+    },
+    {
+      "pass": true,
+      "label": "native aperture contributes illumination: hole1",
+      "detail": {
+        "value": 0.6980392156862745,
+        "base": 0.44
+      }
+    },
+    {
+      "pass": true,
+      "label": "closed underground rejects decorative aperture: hole1",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native aperture mask is collected: chole1",
+      "detail": {
+        "sources": 4
+      }
+    },
+    {
+      "pass": true,
+      "label": "native aperture contributes illumination: chole1",
+      "detail": {
+        "value": 0.6980392156862745,
+        "base": 0.44
+      }
+    },
+    {
+      "pass": true,
+      "label": "closed underground rejects decorative aperture: chole1",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native aperture mask is collected: fwindow",
+      "detail": {
+        "sources": 4
+      }
+    },
+    {
+      "pass": true,
+      "label": "native aperture contributes illumination: fwindow",
+      "detail": {
+        "value": 0.9215686274509803,
+        "base": 0.44
+      }
+    },
+    {
+      "pass": true,
+      "label": "closed underground rejects decorative aperture: fwindow",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "src fonWay admits its original swindow as an exterior source",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native src swindow illuminates the shared field",
+      "detail": 0.8509803921568627
+    },
+    {
+      "pass": true,
+      "label": "internal observation glass does not become an outdoor source",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "environment multiplier preserves selective ambient scaling",
+      "detail": {
+        "scaled": 0.5215686274509804,
+        "normal": 0.4196078431372549
+      }
+    },
+    {
+      "pass": true,
+      "label": "restoring multiplier restores exact base field",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "switching off a dynamic lamp leaves no retained illumination",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline and candidate lighting classes remain separate rbl",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline inherits the same native Tile identity rbl",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "ordinary scene uses native room rendering rbl",
+      "detail": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 rbl actual",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused native scene retains its environment signature across eight frames rbl",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused candidate scene preserves camera and field pixels across eight frames rbl",
+      "detail": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 rbl isolated",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline and candidate lighting classes remain separate surf",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline inherits the same native Tile identity surf",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "ordinary scene uses native room rendering surf",
+      "detail": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 surf actual",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused native scene retains its environment signature across eight frames surf",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused candidate scene preserves camera and field pixels across eight frames surf",
+      "detail": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 surf isolated",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline and candidate lighting classes remain separate random_mane",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline inherits the same native Tile identity random_mane",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "ordinary scene uses native room rendering random_mane",
+      "detail": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 random_mane actual",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused native scene retains its environment signature across eight frames random_mane",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused candidate scene preserves camera and field pixels across eight frames random_mane",
+      "detail": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 random_mane isolated",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline and candidate lighting classes remain separate random_sewer",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline inherits the same native Tile identity random_sewer",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "ordinary scene uses native room rendering random_sewer",
+      "detail": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 random_sewer actual",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused native scene retains its environment signature across eight frames random_sewer",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused candidate scene preserves camera and field pixels across eight frames random_sewer",
+      "detail": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 random_sewer isolated",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline and candidate lighting classes remain separate random_encl",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline inherits the same native Tile identity random_encl",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "ordinary scene uses native room rendering random_encl",
+      "detail": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 random_encl actual",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused native scene retains its environment signature across eight frames random_encl",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused candidate scene preserves camera and field pixels across eight frames random_encl",
+      "detail": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 random_encl isolated",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline and candidate lighting classes remain separate src",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "baseline inherits the same native Tile identity src",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "actual src exterior windows provide environment sources",
+      "detail": {
+        "visibleMasks": 6,
+        "environmentSources": 12,
+        "nativeObjects": 6
+      }
+    },
+    {
+      "pass": true,
+      "label": "ordinary scene uses native room rendering src",
+      "detail": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 src actual",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused native scene retains its environment signature across eight frames src",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "paused candidate scene preserves camera and field pixels across eight frames src",
+      "detail": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      }
+    },
+    {
+      "pass": true,
+      "label": "same paused camera for candidate and 0.5.1 src isolated",
+      "detail": null
+    }
+  ],
+  "checks": 102,
+  "loader": {
+    "ok_ModLoaderMod": "run_1792460998164_127938|init @1792460998891",
+    "requested_BackgroundLightingTestMod": "run_1792460998164_127938|line 22 @1792460998194",
+    "requested_WallBlendMod": "run_1792460998164_127938|line 24 @1792460998200",
+    "requested_RealisticVisionMod": "run_1792460998164_127938|line 15 @1792460998191",
+    "requested_LightAndDarknessMod": "run_1792460998164_127938|line 23 @1792460998197",
+    "requested_ContinuousSceneMod": "run_1792460998164_127938|line 21 @1792460998192",
+    "session": "run_1792460998164_127938",
+    "ok_BackgroundLightingTestMod": "run_1792460998164_127938|init @1792460998852",
+    "ok_WallBlendMod": "run_1792460998164_127938|init @1792460998849",
+    "requested_ModLoaderMod": "run_1792460998164_127938|line 12 @1792460998189",
+    "boot": "run_1792460998164_127938|v2 col=2 requested=6 @1792460998205",
+    "ok_RealisticVisionMod": "run_1792460998164_127938|init @1792460998865",
+    "ok_ContinuousSceneMod": "run_1792460998164_127938|init @1792460998883",
+    "boot_start": "run_1792460998164_127938|v2 run=run_1792460998164_127938 @1792460998169",
+    "ok_LightAndDarknessMod": "run_1792460998164_127938|init @1792460998899"
+  },
+  "samples": [
+    {
+      "environment": 0.58,
+      "backform": 0,
+      "scene": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      },
+      "swindow": {
+        "visibleMasks": 2,
+        "environmentSources": 4,
+        "nativeObjects": 2
+      },
+      "isolated": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 233,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967,
+          "solidMedian": 0.5764705882352941
+        },
+        "baseline": {
+          "solidPoints": 233,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967,
+          "solidMedian": 0.5764705882352941
+        }
+      },
+      "actual": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 233,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967,
+          "solidMedian": 0.5764705882352941
+        },
+        "baseline": {
+          "solidPoints": 233,
+          "airMedian": 0.7647058823529411,
+          "airPoints": 967,
+          "solidMedian": 0.5764705882352941
+        }
+      },
+      "regions": 1,
+      "roomKey": "rbl|loc0_0|0|0|0||false|48|25|25d9f2d9",
+      "fon": "fonWay",
+      "headlamp": false,
+      "transpFon": false,
+      "mode": "verify",
+      "rvEnabled": true,
+      "room": "loc0_0",
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      },
+      "land": "rbl",
+      "worldPaused": true,
+      "prefix": "sample-1",
+      "backwall": "tStConcrete"
+    },
+    {
+      "environment": 0.38,
+      "backform": 0,
+      "scene": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      },
+      "swindow": {
+        "visibleMasks": 0,
+        "environmentSources": 0,
+        "nativeObjects": 0
+      },
+      "isolated": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 225,
+          "airMedian": 0.6980392156862745,
+          "airPoints": 975,
+          "solidMedian": 0.3764705882352941
+        },
+        "baseline": {
+          "solidPoints": 225,
+          "airMedian": 0.6980392156862745,
+          "airPoints": 975,
+          "solidMedian": 0.3764705882352941
+        }
+      },
+      "actual": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 225,
+          "airMedian": 0.6980392156862745,
+          "airPoints": 975,
+          "solidMedian": 0.3764705882352941
+        },
+        "baseline": {
+          "solidPoints": 225,
+          "airMedian": 0.6980392156862745,
+          "airPoints": 975,
+          "solidMedian": 0.3764705882352941
+        }
+      },
+      "regions": 1,
+      "roomKey": "surf|loc0_1|0|1|0||false|48|25|b9529b0a",
+      "fon": "fonDarkClouds",
+      "headlamp": false,
+      "transpFon": false,
+      "mode": "verify",
+      "rvEnabled": true,
+      "room": "loc0_1",
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      },
+      "land": "surf",
+      "worldPaused": true,
+      "prefix": "sample-2",
+      "backwall": "sky"
+    },
+    {
+      "environment": 0.36,
+      "backform": 0,
+      "scene": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      },
+      "swindow": {
+        "visibleMasks": 0,
+        "environmentSources": 0,
+        "nativeObjects": 0
+      },
+      "isolated": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 262,
+          "airMedian": 0.4745098039215686,
+          "airPoints": 938,
+          "solidMedian": 0.3568627450980392
+        },
+        "baseline": {
+          "solidPoints": 262,
+          "airMedian": 0.3568627450980392,
+          "airPoints": 938,
+          "solidMedian": 0.3568627450980392
+        }
+      },
+      "actual": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 262,
+          "airMedian": 0.4745098039215686,
+          "airPoints": 938,
+          "solidMedian": 0.3568627450980392
+        },
+        "baseline": {
+          "solidPoints": 262,
+          "airMedian": 0.3568627450980392,
+          "airPoints": 938,
+          "solidMedian": 0.3568627450980392
+        }
+      },
+      "regions": 1,
+      "roomKey": "random_mane|loc0_4|0|4|0||false|48|25|145d878f",
+      "fon": "fonRuins",
+      "headlamp": false,
+      "transpFon": true,
+      "mode": "verify",
+      "rvEnabled": true,
+      "room": "loc0_4",
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      },
+      "land": "random_mane",
+      "worldPaused": true,
+      "prefix": "sample-3",
+      "backwall": "tWindows"
+    },
+    {
+      "environment": 0.32,
+      "backform": 0,
+      "scene": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      },
+      "swindow": {
+        "visibleMasks": 0,
+        "environmentSources": 0,
+        "nativeObjects": 0
+      },
+      "isolated": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 467,
+          "airMedian": 0.3176470588235294,
+          "airPoints": 733,
+          "solidMedian": 0.3176470588235294
+        },
+        "baseline": {
+          "solidPoints": 467,
+          "airMedian": 0.2784313725490196,
+          "airPoints": 733,
+          "solidMedian": 0.2784313725490196
+        }
+      },
+      "actual": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 467,
+          "airMedian": 0.3176470588235294,
+          "airPoints": 733,
+          "solidMedian": 0.3176470588235294
+        },
+        "baseline": {
+          "solidPoints": 467,
+          "airMedian": 0.2784313725490196,
+          "airPoints": 733,
+          "solidMedian": 0.2784313725490196
+        }
+      },
+      "regions": 1,
+      "roomKey": "random_sewer|loc0_0|0|0|0||false|48|25|251917cc",
+      "fon": null,
+      "headlamp": false,
+      "transpFon": false,
+      "mode": "verify",
+      "rvEnabled": true,
+      "room": "loc0_0",
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      },
+      "land": "random_sewer",
+      "worldPaused": true,
+      "prefix": "sample-4",
+      "backwall": "tMossy"
+    },
+    {
+      "environment": 0.48,
+      "backform": 0,
+      "scene": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      },
+      "swindow": {
+        "visibleMasks": 0,
+        "environmentSources": 0,
+        "nativeObjects": 0
+      },
+      "isolated": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 242,
+          "airMedian": 0.8196078431372549,
+          "airPoints": 958,
+          "solidMedian": 0.47843137254901963
+        },
+        "baseline": {
+          "solidPoints": 242,
+          "airMedian": 0.807843137254902,
+          "airPoints": 958,
+          "solidMedian": 0.4392156862745098
+        }
+      },
+      "actual": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 242,
+          "airMedian": 0.8156862745098039,
+          "airPoints": 958,
+          "solidMedian": 0.47843137254901963
+        },
+        "baseline": {
+          "solidPoints": 242,
+          "airMedian": 0.803921568627451,
+          "airPoints": 958,
+          "solidMedian": 0.4392156862745098
+        }
+      },
+      "regions": 1,
+      "roomKey": "random_encl|loc0_7|0|7|0||true|48|25|dcdd77fe",
+      "fon": "fonEnclave",
+      "headlamp": false,
+      "transpFon": false,
+      "mode": "verify",
+      "rvEnabled": true,
+      "room": "loc0_7",
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      },
+      "land": "random_encl",
+      "worldPaused": true,
+      "prefix": "sample-5",
+      "backwall": "tEncl3"
+    },
+    {
+      "environment": 0.58,
+      "backform": 0,
+      "scene": {
+        "nativeRegions": 0,
+        "nativeEnabled": false,
+        "spaceX": 48,
+        "stateUsesCurrentLocation": false,
+        "spaceY": 25,
+        "viewReady": true,
+        "sceneLarge": false
+      },
+      "swindow": {
+        "visibleMasks": 6,
+        "environmentSources": 12,
+        "nativeObjects": 6
+      },
+      "isolated": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 540,
+          "airMedian": 0.6235294117647059,
+          "airPoints": 660,
+          "solidMedian": 0.5764705882352941
+        },
+        "baseline": {
+          "solidPoints": 540,
+          "airMedian": 0.6196078431372549,
+          "airPoints": 660,
+          "solidMedian": 0.5764705882352941
+        }
+      },
+      "actual": {
+        "camera": [
+          0.7416534423828125,
+          0,
+          0,
+          0.7416534423828125,
+          0,
+          59
+        ],
+        "candidate": {
+          "solidPoints": 540,
+          "airMedian": 0.6235294117647059,
+          "airPoints": 660,
+          "solidMedian": 0.5764705882352941
+        },
+        "baseline": {
+          "solidPoints": 540,
+          "airMedian": 0.6196078431372549,
+          "airPoints": 660,
+          "solidMedian": 0.5764705882352941
+        }
+      },
+      "regions": 1,
+      "roomKey": "src|loc0_0|0|0|0||false|48|25|7132803a",
+      "fon": "fonWay",
+      "headlamp": false,
+      "transpFon": false,
+      "mode": "verify",
+      "rvEnabled": true,
+      "room": "loc0_0",
+      "stability": {
+        "settleFrames": 8,
+        "cameraStable": true,
+        "pixelsStable": true,
+        "observedFrames": 8,
+        "signatureStable": true
+      },
+      "land": "src",
+      "worldPaused": true,
+      "prefix": "sample-6",
+      "backwall": "tRustPlates"
+    }
+  ]
+}

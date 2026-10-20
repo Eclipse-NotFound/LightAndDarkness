@@ -110,8 +110,34 @@ def verify(folder, frozen_data):
     assert hashes['mods/LightAndDarkness/release/LightAndDarknessMod.swf'] == frozen_data['sha256']
     if label.startswith('background:'):
         assert hashes['baseline.swf'] == OLD_SHA
-    runtime = Path(meta['runtime'])
-    assert runtime.resolve().is_relative_to((MOD / 'build/generated').resolve())
+    runtime = Path(meta['runtime']).resolve()
+    assert runtime.is_relative_to((MOD / 'build/generated').resolve())
+    # The probe can finish before its runner detects a changed input. Recheck
+    # every recorded byte here, not only the small protected dependency set.
+    generated = {'application.xml', 'baseline.swf', 'reference.swf', 'trail-mode.txt',
+                 'projectile-mode.txt', 'landmark-mode.txt', 'test-mode.txt',
+                 'terminal-checks.txt', 'probe-config.xml', 'perf.json',
+                 'background-lighting-config.json', 'mods/loader-manifest.txt',
+                 entry + '.swf', 'mods/LightAndDarkness/release/' + entry + '.swf',
+                 'mods/LightAndDarkness/release/LightAndDarknessMod.swf'}
+    for path, digest in hashes.items():
+        copied = (runtime / path).resolve()
+        assert copied.is_relative_to(runtime), ('Runtime input escapes its owned directory', path)
+        assert copied.is_file() and sha(copied) == digest, ('Changed frozen runtime input', path)
+        if path not in generated:
+            original = (GAME / path).resolve()
+            assert original.is_relative_to(GAME.resolve()), ('Game input escapes its directory', path)
+            assert original.is_file() and sha(original) == digest, ('Changed formal test input', path)
+    # New background runs record exact origins, including candidate/probe
+    # sources. Older runners have only relative hashes; the formal comparison
+    # above still covers their textures, Rooms, launcher and dependency files.
+    origins = folder / 'sources.json'
+    if label.startswith('background:'):
+        assert origins.is_file(), 'Background evidence is missing its source manifest'
+    if origins.is_file():
+        for source, digest in read(origins).items():
+            original = Path(source)
+            assert original.is_file() and sha(original) == digest.lower(), ('Changed source input', source)
     for path, digest in frozen_data['protected'].items():
         if path in ['application.xml', 'mods/loader-manifest.txt']:
             continue
@@ -166,9 +192,17 @@ def main():
     shutil.copy2(TARGET, backup); shutil.copy2(out / 'LightAndDarknessMod.swf', staged)
     assert sha(backup) == OLD_SHA and sha(staged) == data['sha256']
     frozen(out); assert sha(TARGET) == OLD_SHA
-    os.replace(staged, TARGET); assert sha(TARGET) == data['sha256']
-    save(RECEIPT, dict(**data, evidence=results, backup=str(backup), installedAt=datetime.now().astimezone().isoformat(), restartSmoke={'status': 'pending'}, rollback='Restore only this backup while installed LAD matches this release; preserve other files and real saves.'))
-    print(json.dumps({'status': 'DEPLOYED', 'sha256': data['sha256'], 'backup': str(backup)}))
+    receipt = dict(**data, evidence=results, backup=str(backup), installedAt=datetime.now().astimezone().isoformat(), restartSmoke={'status': 'pending'}, rollback='Restore only this backup while installed LAD matches this release; preserve other files and real saves.')
+    try:
+        os.replace(staged, TARGET); assert sha(TARGET) == data['sha256']
+        save(RECEIPT, receipt)
+        print(json.dumps({'status': 'DEPLOYED', 'sha256': data['sha256'], 'backup': str(backup)}))
+    except BaseException as error:
+        # A receipt or output failure after atomic replacement is still an
+        # installation failure. Restore with the in-memory backup identity.
+        if sha(TARGET) == data['sha256']:
+            rollback(receipt, str(error))
+        raise
 
 
 if __name__ == '__main__':

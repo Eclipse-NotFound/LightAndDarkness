@@ -1,0 +1,3 @@
+PASS comparison uses expected ContinuousScene 0.8.2 interface "0.8.2"
+PASS CS native mode is explicitly applied and read back before map generation false
+PASS frozen comparison class reports baseline 0.5.1 "0.5.1"

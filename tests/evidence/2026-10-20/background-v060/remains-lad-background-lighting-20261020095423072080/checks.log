@@ -1,0 +1,82 @@
+PASS candidate initializes before loading baseline definitions "0.6.0"
+PASS comparison uses expected ContinuousScene 0.8.2 interface "0.8.2"
+PASS CS native mode is explicitly applied and read back before map generation true
+PASS frozen comparison class reports baseline 0.5.1 "0.5.1"
+PASS RV setting interface available for isolated lighting comparison {"waitFrames":11,"waitMs":419}
+PASS fixtures use the native typed Tile path null
+PASS selected closed-region ambient rbl {"actual":0.58,"expected":0.58}
+PASS selected closed-region ambient random_sewer {"actual":0.32,"expected":0.32}
+PASS selected closed-region ambient begin {"actual":0.32,"expected":0.32}
+PASS selected closed-region ambient random_encl {"actual":0.48,"expected":0.48}
+PASS selected closed-region ambient test {"actual":0.42,"expected":0.42}
+PASS selected closed-region ambient random_mane {"actual":0.4,"expected":0.4}
+PASS daylight city retains its original ambient instead of a global boost null
+PASS explicit power outage retains its dark floor null
+PASS flight flag alone does not create daylight null
+PASS native sky geometry still supplies daylight without flight flag null
+PASS transparent rendered window wall supplies local light {"opening":0.6980392156862745,"covered":0.3568627450980392}
+PASS unchanged ordinary raster retains a stable environment signature null
+PASS repeated static render preserves identical field pixels null
+PASS ordinary room replacement bitmap invalidates its backdrop transmission null
+PASS transparent raster without exterior context cannot invent underground sky null
+PASS unrasterized CS chunk is unknown rather than transparent sky null
+PASS CS first resident raster invalidates previously empty backdrop cache {"empty":0.3568627450980392,"resident":0.6980392156862745}
+PASS CS replacement raster refreshes aperture transmission null
+PASS room slices retain independent indoor and outdoor air fields {"base":0.4,"indoor":0.4,"outdoor":0.6980392156862745}
+PASS opaque wall receives sky on its exposed face {"base":0.4,"surface":0.6941176470588235}
+PASS surface reception does not transmit through a thin wall {"behind":0.4,"base":0.4}
+PASS opening native Tile door invalidates cached sky occlusion {"open":0.5019607843137255,"closed":0.4}
+PASS closing door restores the original air darkness null
+PASS new background masonry blocks geometric daylight null
+PASS background destruction invalidates daylight cache null
+PASS native zForm 3 fixture retains actual partial-floor geometry and opacity null
+PASS native fractured floor receives sky at its actual visible top {"base":0.4,"surface":0.6549019607843137}
+PASS fractured floor reception follows its physical top rather than the tile top {"surface":0.6549019607843137,"airAbove":0.6313725490196078}
+PASS opaque floor below a partial native tile still prevents through-light null
+PASS native zForm edit refreshes same-bitmap surface light with sceneCache=true {"after":0.6862745098039216,"opacity":0,"before":0.6313725490196078}
+PASS restoring native zForm restores the surface field with sceneCache=true null
+PASS native zForm edit refreshes same-bitmap surface light with sceneCache=false {"after":0.6862745098039216,"opacity":0,"before":0.6313725490196078}
+PASS restoring native zForm restores the surface field with sceneCache=false null
+PASS native aperture mask is collected: enil {"sources":4}
+PASS native aperture contributes illumination: enil {"value":0.5843137254901961,"base":0.44}
+PASS hiding a native aperture invalidates its cached environment light null
+PASS restoring native aperture alpha restores environmental light null
+PASS closed underground rejects decorative aperture: enil null
+PASS native aperture mask is collected: hole1 {"sources":4}
+PASS native aperture contributes illumination: hole1 {"value":0.6980392156862745,"base":0.44}
+PASS closed underground rejects decorative aperture: hole1 null
+PASS native aperture mask is collected: chole1 {"sources":4}
+PASS native aperture contributes illumination: chole1 {"value":0.6980392156862745,"base":0.44}
+PASS closed underground rejects decorative aperture: chole1 null
+PASS native aperture mask is collected: fwindow {"sources":4}
+PASS native aperture contributes illumination: fwindow {"value":0.9215686274509803,"base":0.44}
+PASS closed underground rejects decorative aperture: fwindow null
+PASS src fonWay admits its original swindow as an exterior source null
+PASS native src swindow illuminates the shared field 0.8509803921568627
+PASS internal observation glass does not become an outdoor source null
+PASS environment multiplier preserves selective ambient scaling {"scaled":0.5215686274509804,"normal":0.4196078431372549}
+PASS restoring multiplier restores exact base field null
+PASS switching off a dynamic lamp leaves no retained illumination null
+PASS baseline and candidate lighting classes remain separate rbl null
+PASS baseline inherits the same native Tile identity rbl null
+PASS ordinary scene uses native room rendering rbl {"stateUsesCurrentLocation":false,"spaceX":48,"viewReady":true,"spaceY":25,"nativeRegions":0,"nativeEnabled":true,"sceneLarge":false}
+PASS same paused camera for candidate and 0.5.1 rbl actual null
+PASS paused native scene retains its environment signature across eight frames rbl null
+PASS paused candidate scene preserves camera and field pixels across eight frames rbl {"cameraStable":true,"settleFrames":8,"signatureStable":true,"observedFrames":8,"pixelsStable":true}
+PASS same paused camera for candidate and 0.5.1 rbl isolated null
+PASS baseline and candidate lighting classes remain separate random_mane null
+PASS baseline inherits the same native Tile identity random_mane null
+PASS actual CS native renderer and resident scene are active random_mane {"stateUsesCurrentLocation":true,"spaceX":240,"viewReady":true,"spaceY":125,"nativeRegions":25,"nativeEnabled":true,"sceneLarge":true}
+PASS actual CS joined scene exposes multiple environment regions random_mane {"height":125,"nativeRegions":25,"width":240,"lighting":25}
+PASS same paused camera for candidate and 0.5.1 random_mane actual null
+PASS paused native scene retains its environment signature across eight frames random_mane null
+PASS paused candidate scene preserves camera and field pixels across eight frames random_mane {"cameraStable":true,"settleFrames":8,"signatureStable":true,"observedFrames":8,"pixelsStable":true}
+PASS same paused camera for candidate and 0.5.1 random_mane isolated null
+PASS baseline and candidate lighting classes remain separate random_plant null
+PASS baseline inherits the same native Tile identity random_plant null
+PASS actual CS native renderer and resident scene are active random_plant {"stateUsesCurrentLocation":true,"spaceX":192,"viewReady":true,"spaceY":75,"nativeRegions":12,"nativeEnabled":true,"sceneLarge":true}
+PASS actual CS joined scene exposes multiple environment regions random_plant {"height":75,"nativeRegions":12,"width":192,"lighting":12}
+PASS same paused camera for candidate and 0.5.1 random_plant actual null
+PASS paused native scene retains its environment signature across eight frames random_plant null
+PASS paused candidate scene preserves camera and field pixels across eight frames random_plant {"cameraStable":true,"settleFrames":8,"signatureStable":true,"observedFrames":8,"pixelsStable":true}
+PASS same paused camera for candidate and 0.5.1 random_plant isolated null

@@ -13,6 +13,8 @@ package {
         public function TrailProbeMod() {}
         private static var self:TrailProbeMod;
         private var main:*,w:*,r:*,mode:String,phase:int=0,age:int=0,started:int,checks:int=0;
+        private var lastBeat:int=0;
+        private var csRequested:Boolean=false,csReady:Boolean=false,csWaitStart:int=-1,csWaitElapsed:int=0;
         private var reference:Loader=new Loader(),domain:ApplicationDomain,rows:Array=[];
         private var view:Rectangle=new Rectangle(0,0,960,720);
         public static function init(root:*):void {
@@ -20,9 +22,20 @@ package {
             self=new TrailProbeMod();self.main=root;self.started=getTimer();
             var f:FileStream=new FileStream();f.open(File.applicationDirectory.resolvePath("trail-mode.txt"),FileMode.READ);self.mode=f.readUTFBytes(f.bytesAvailable);f.close();
             if(self.mode=="legacy" || self.mode=="cold")LightAndDarknessProjectileProbe.init(root);
-            self.reference.contentLoaderInfo.addEventListener(Event.COMPLETE,function(e:Event):void {self.domain=self.reference.contentLoaderInfo.applicationDomain;});
-            self.reference.load(new URLRequest(File.applicationDirectory.resolvePath("baseline.swf").url),new LoaderContext(false,new ApplicationDomain(root.loaderInfo.applicationDomain)));
+            if(self.mode=="perf") {
+                self.reference.contentLoaderInfo.addEventListener(Event.COMPLETE,function(e:Event):void {self.domain=self.reference.contentLoaderInfo.applicationDomain;});
+                self.reference.load(new URLRequest(File.applicationDirectory.resolvePath("baseline.swf").url),new LoaderContext(false,new ApplicationDomain(root.loaderInfo.applicationDomain)));
+            }
+            self.mark("INIT");
             root.stage.addEventListener(Event.ENTER_FRAME,self.step,false,-150);
+        }
+        private function mark(label:String):void {
+            var f:FileStream=new FileStream();f.open(File.applicationStorageDirectory.resolvePath("heartbeat.log"),FileMode.APPEND);
+            f.writeUTFBytes(JSON.stringify({atMs:getTimer(),marker:label,mode:mode,phase:phase,
+                land:w && w.game?w.game.curLandId:null,allStat:w?w.allStat:null,t_exit:w?w.t_exit:null,
+                roomsLoad:w?w.roomsLoad:null,allLandsLoaded:w?w.allLandsLoaded:false,textLoaded:w?w.textLoaded:false,
+                candidateReady:Boolean(r),candidateAttached:r && w?r.location===w.loc:false,referenceLoaded:Boolean(domain),
+                csRequested:csRequested,csReady:csReady,csWaitMs:csWaitStart<0?csWaitElapsed:getTimer()-csWaitStart})+"\n");f.close();
         }
         private function write(name:String,text:String):void {var f:FileStream=new FileStream();f.open(File.applicationStorageDirectory.resolvePath(name),FileMode.WRITE);f.writeUTFBytes(text);f.close();}
         private function png(name:String,b:BitmapData):void {var f:FileStream=new FileStream();f.open(File.applicationStorageDirectory.resolvePath(name+".png"),FileMode.WRITE);f.writeBytes(b.encode(b.rect,new PNGEncoderOptions()));f.close();b.dispose();}
@@ -157,12 +170,20 @@ package {
                 w=getDefinitionByName("fe.World")["w"];
                 if(w && w.verror && w.verror.visible)throw new Error(w.verror.txt.text);
                 var carrier:*=main.getChildByName("LightAndDarknessCarrier");if(carrier)r=carrier.ladAPI.runtime;
+                csRequested=SharedObject.getLocal("ModLoader","/").data.hasOwnProperty("requested_ContinuousSceneMod");
+                var sceneCarrier:*=main.getChildByName("ContinuousSceneCarrier");
+                csReady=Boolean(sceneCarrier && sceneCarrier.sceneAPI && sceneCarrier.sceneAPI.ready);
+                if(getTimer()-lastBeat>=10000){lastBeat=getTimer();mark("HEARTBEAT");}
                 if(getTimer()-started>360000)throw new Error("timeout");
                 if(mode=="legacy" || mode=="cold") {
                     var file:File=File.applicationStorageDirectory.resolvePath("projectile-report.json");if(!file.exists)return;
                     var input:FileStream=new FileStream();input.open(file,FileMode.READ);var result:Object=JSON.parse(input.readUTFBytes(input.bytesAvailable));input.close();if(result.status!="passed")throw new Error(result.error);checks=result.passed;rows.push(result.metrics);finish();return;
                 }
-                if(phase==0 && domain && w && w.allLandsLoaded && w.textLoaded && w.mm){w.mm.mainMenuOff();w.newGame(-1,"LP",{propusk:true});phase=1;}
+                if(phase==0 && (mode!="perf" || domain) && r && w && w.allLandsLoaded && w.textLoaded && w.mm){
+                    if(csRequested && !csReady){if(csWaitStart<0){csWaitStart=getTimer();mark("WAIT_CS_READY");}return;}
+                    if(csWaitStart>=0){csWaitElapsed=getTimer()-csWaitStart;csWaitStart=-1;mark("CS_READY");}
+                    mark("BEFORE_NEW_GAME");w.mm.mainMenuOff();w.newGame(-1,"LP",{propusk:true});phase=1;mark("AFTER_NEW_GAME");
+                }
                 else if(phase==1 && r && w.gg && w.loc && w.loc.active && w.allStat==1 && w.t_exit==0 && r.location===w.loc && ++age>15){
                     w.gui.dialText(null);w.gui.guiPause=false;w.gui.dialScript.running=false;w.onPause=true;r.enabled=false;
                     if(mode=="atlas")atlas();else {nativeWork();if(mode=="verify")atlas();}finish();

@@ -1,0 +1,26 @@
+{
+  "applicationID": "remains-lad-background-lighting-20261020095423072080",
+  "runtime": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\remains-lad-background-lighting-20261020095423072080",
+  "evidence": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-background-lighting-20261020095423072080",
+  "candidate": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\out\\background-v060-r2\\LightAndDarknessMod.swf",
+  "candidateSHA256": "E3233F78D7F9AF8F0AC4F99AA78ABB1F9FA0D4931B272D7D551B62C7C36E796E",
+  "baseline": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\out\\perf-v051-visible\\LightAndDarknessMod.swf",
+  "baselineSHA256": "BAFE52B9145194C2E9D3A08A3331236FEE5F1B6A3E1F016A46D9BC288C04C47A",
+  "expectedVersion": "0.6.0",
+  "mode": "large",
+  "mixed": true,
+  "compileCommand": [
+    "D:/Program Files/Adobe Animate 2024/jre/bin/java.exe",
+    "-Xmx768m",
+    "-jar",
+    "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\Sandevistan\\build\\tools\\flexsdk\\lib\\mxmlc.jar",
+    "+flexlib=D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\Sandevistan\\build\\tools\\flexsdk\\frameworks",
+    "-load-config=D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\remains-lad-background-lighting-20261020095423072080\\probe-config.xml",
+    "-swf-version=32",
+    "-use-network=false",
+    "-static-link-runtime-shared-libraries=true",
+    "-output=D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\generated\\remains-lad-background-lighting-20261020095423072080\\BackgroundLightingTestMod.swf",
+    "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\tests\\BackgroundLightingTestMod.as"
+  ],
+  "probeSourceSHA256": "FACA6179A44B4EF76367B0972B8C196329D80B26860D2C96256308834BE3ED32"
+}

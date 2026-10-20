@@ -1,0 +1,9 @@
+{
+  "ok": true,
+  "competitors": [],
+  "memory": {
+    "physicalBytes": 7456026624,
+    "commitBytes": 13836148736
+  },
+  "minimumCommitBytes": 2147483648
+}

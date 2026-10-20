@@ -11,9 +11,11 @@ package {
     /** Isolated probe: production classes are obtained from the loaded candidate, never linked here. */
     public class BackgroundLightingTestMod extends Sprite {
         private static var self:BackgroundLightingTestMod;
-        private var main:*,w:*,r:*,cfg:Object,rv:Object;
+        private var main:*,w:*,r:*,cfg:Object,rv:Object,cs:Object;
         private var baseline:Loader=new Loader(),oldDomain:ApplicationDomain;
-        private var started:int,phase:int=0,frames:int=0,index:int=0,checks:int=0,lastBeat:int=0;
+        private var baselineStarted:Boolean=false;
+        private var started:int,phase:int=0,frames:int=0,index:int=0,checks:int=0,lastBeat:int=0,waitSince:int=0;
+        private var rvWaitSince:int=0,rvWaitFrames:int=0;
         private var targets:Array=[],samples:Array=[],assertions:Array=[],current:Object;
         private var oldEnv:*,oldField:*,oldAtmos:*,oldHead:Boolean,oldRV:Boolean,oldFog:Boolean;
         private var stableData:BitmapData,stableSignature:String,stableCamera:String,stableSignatureOK:Boolean;
@@ -24,7 +26,6 @@ package {
             self.cfg=JSON.parse(self.read("background-lighting-config.json",false));
             self.targets=self.cfg.mode=="large"?["random_mane","random_plant"]:self.cfg.mode=="smoke"?[]:["surf","random_mane","random_sewer","random_encl","src"];
             self.baseline.contentLoaderInfo.addEventListener(Event.COMPLETE,function(e:Event):void {self.oldDomain=self.baseline.contentLoaderInfo.applicationDomain;});
-            self.baseline.load(new URLRequest(File.applicationDirectory.resolvePath("baseline.swf").url),new LoaderContext(false,new ApplicationDomain(root.loaderInfo.applicationDomain)));
             root.stage.addEventListener(Event.ENTER_FRAME,self.step,false,-170);
         }
         private function read(name:String,storage:Boolean=true):String {
@@ -211,9 +212,9 @@ package {
                 field.render(map,view,[],.14,null,1,env);check(light>base+.3 && Math.abs(field.sample(300,300)-base)<.005,"switching off a dynamic lamp leaves no retained illumination");
             } finally {if(bitmap)bitmap.dispose();for each(var buffer:BitmapData in owned)buffer.dispose();field.clear();env.clear();}
         }
-        private function rvItem():Object {
+        private function settingItem(modId:String,key:String):Object {
             var c:*=main.getChildByName("ModSettingsCarrier");if(!c)return null;
-            for each(var page:Object in c.modAPI.getPages())if(page.modId=="realisticvision")for each(var item:Object in page.items)if(item.key=="enabled")return item;
+            for each(var page:Object in c.modAPI.getPages())if(page.modId==modId)for each(var item:Object in page.items)if(item.key==key)return item;
             return null;
         }
         private function dismiss():void {w.gui.dialText(null);w.gui.guiPause=false;w.gui.dialScript.running=false;}
@@ -221,6 +222,8 @@ package {
             dismiss();w.onPause=true;oldHead=r.store.data.headlamp;r.store.data.headlamp=false;r.render();
             oldRV=rv?Boolean(rv.get()):false;oldFog=w.grafon.visLight.visible;
             var OE:Class=oldDomain.getDefinition("lad.LadEnvironment") as Class,OF:Class=oldDomain.getDefinition("lad.LadLightField") as Class,OA:Class=oldDomain.getDefinition("lad.LadAtmosphere") as Class;
+            check(OE!==r.environment.constructor && OF!==r.field.constructor,"baseline and candidate lighting classes remain separate "+w.game.curLandId);
+            check(oldDomain.getDefinition("fe.loc.Tile")===getDefinitionByName("fe.loc.Tile"),"baseline inherits the same native Tile identity "+w.game.curLandId);
             oldEnv=new OE();oldField=new OF();oldAtmos=new OA();oldAtmos.config=r.atmosphere.config;oldAtmos.settings=r.atmosphere.settings;
             var Store:Class=oldDomain.getDefinition("lad.LadStore") as Class,roomKey:String=String(Store["roomKey"](w.loc));
             oldEnv.bind(w.loc,w.grafon,roomKey);
@@ -234,7 +237,17 @@ package {
             for each(var opening:Object in r.environment.openings)if(String(opening.id).indexOf("window:swindow:")==0)environmentWindows++;
             current.swindow={nativeObjects:nativeWindows,visibleMasks:nativeVisibleWindows,environmentSources:environmentWindows};
             if(current.land=="src" && nativeVisibleWindows>0)check(environmentWindows>0,"actual src exterior windows provide environment sources",current.swindow);
-            if(cfg.mode=="large" && samples.length>1)check(current.regions>1,"actual CS joined scene exposes multiple environment regions "+current.land,current.regions);
+            var sceneCarrier:*=main.getChildByName("ContinuousSceneCarrier"),nativeState:Object=null;
+            if(sceneCarrier && sceneCarrier.nativeAPI)nativeState=sceneCarrier.nativeAPI.state(w.land);
+            current.scene={nativeEnabled:cs?Boolean(cs.get()):false,sceneLarge:Boolean(w.grafon.sceneLarge),spaceX:w.loc.spaceX,spaceY:w.loc.spaceY,
+                nativeRegions:nativeState?nativeState.regions.length:0,stateUsesCurrentLocation:nativeState?nativeState.loc===w.loc:false,
+                viewReady:w.grafon.sceneLarge?w.grafon.sceneViewReady():true};
+            if(cfg.mode=="large" && samples.length>1){
+                check(current.scene.nativeEnabled && current.scene.sceneLarge && current.scene.stateUsesCurrentLocation && current.scene.viewReady,
+                    "actual CS native renderer and resident scene are active "+current.land,current.scene);
+                check(current.regions>1 && nativeState.regions.length>1 && w.loc.spaceX==nativeState.width && w.loc.spaceY==nativeState.height,
+                    "actual CS joined scene exposes multiple environment regions "+current.land,{lighting:current.regions,nativeRegions:current.scene.nativeRegions,width:w.loc.spaceX,height:w.loc.spaceY});
+            } else check(!current.scene.sceneLarge,"ordinary scene uses native room rendering "+current.land,current.scene);
             pair("actual");
             if(rv)rv.set(false);phase=3;frames=0;
         }
@@ -285,7 +298,7 @@ package {
         private function travel():void {
             if(index>=targets.length){finish();return;}dismiss();w.pers.healAll();w.onPause=false;
             if(targets[index]=="random_encl")w.game.triggers["encounter_post"]=1;
-            w.game.beginMission(targets[index]);phase=2;frames=0;
+            w.game.beginMission(targets[index]);phase=2;frames=0;waitSince=getTimer();
         }
         private function step(e:Event):void {
             try {
@@ -293,7 +306,25 @@ package {
                 if(getTimer()-lastBeat>10000){lastBeat=getTimer();write("heartbeat.log",lastBeat+" phase="+phase+"\n",true);}
                 if(w && w.verror && w.verror.visible)throw new Error(w.verror.txt.text);
                 if(getTimer()-started>540000)throw new Error("timeout phase="+phase+" target="+targets[index]);
+                if(!baselineStarted){
+                    // The launcher loads this probe before LightAndDarkness alphabetically.
+                    // Do not let the reference define same-name classes before the candidate finishes loading.
+                    var candidate:*=main.getChildByName("LightAndDarknessCarrier");
+                    if(!candidate || !candidate.ladAPI || !candidate.ladAPI.runtime)return;
+                    check(candidate.ladAPI.version==cfg.expectedVersion,"candidate initializes before loading baseline definitions",candidate.ladAPI.version);
+                    baselineStarted=true;
+                    baseline.load(new URLRequest(File.applicationDirectory.resolvePath("baseline.swf").url),new LoaderContext(false,new ApplicationDomain(main.loaderInfo.applicationDomain)));
+                }
+                if(phase==2 && getTimer()-waitSince>150000)throw new Error("native travel or raster timeout target="+targets[index]);
                 if(phase==0 && oldDomain && w && w.allLandsLoaded && w.textLoaded && w.mm){
+                    if(cfg.mixed){
+                        if(waitSince==0)waitSince=getTimer();
+                        if(getTimer()-waitSince>45000)throw new Error("CS startup or settings interface did not become ready");
+                        var sceneCarrier:*=main.getChildByName("ContinuousSceneCarrier");cs=settingItem("continuousscene","nativeEnabled");
+                        if(!sceneCarrier || !sceneCarrier.sceneAPI.ready || !cs)return;
+                        check(sceneCarrier.sceneAPI.version=="0.8.2","comparison uses expected ContinuousScene 0.8.2 interface",sceneCarrier.sceneAPI.version);
+                        cs.set(cfg.mode=="large");check(cs.get()===(cfg.mode=="large"),"CS native mode is explicitly applied and read back before map generation",cs.get());
+                    }
                     var B:Class=oldDomain.getDefinition("LightAndDarknessMod") as Class;check(B["VERSION"]==cfg.baselineVersion,"frozen comparison class reports baseline 0.5.1",B["VERSION"]);
                     w.mm.mainMenuOff();w.newGame(-1,"LP",{propusk:true});phase=1;
                 } else if(phase>0 && w.gg && w.loc && w.loc.active && w.allStat==1 && w.t_exit==0){
@@ -303,8 +334,19 @@ package {
                     if(phase==3){stableFrame();return;}
                     if(phase==4){if(++frames>=8){if(samples.length>1)index++;travel();}return;}
                     if(phase==2 && (w.game.curLandId!=targets[index] || w.land.act.id!=targets[index]))return;
+                    if(phase==2 && cfg.mode=="large" && (!w.grafon.sceneLarge || !w.grafon.sceneViewReady())){frames=0;return;}
                     if(++frames<12)return;
-                    if(samples.length==0){dismiss();w.onPause=true;exercise();rv=rvItem();if(cfg.mixed)check(rv!=null,"RV setting interface available for isolated lighting comparison");}
+                    if(samples.length==0){
+                        rv=settingItem("realisticvision","enabled");
+                        if(cfg.mixed && !rv){
+                            if(rvWaitSince==0){rvWaitSince=getTimer();write("heartbeat.log","Waiting for RV settings registration before fixture pause\n",true);}
+                            rvWaitFrames++;
+                            if(getTimer()-rvWaitSince>45000)check(false,"RV setting interface available for isolated lighting comparison",{waitMs:getTimer()-rvWaitSince,waitFrames:rvWaitFrames});
+                            return;
+                        }
+                        if(cfg.mixed)check(rv!=null,"RV setting interface available for isolated lighting comparison",{waitMs:rvWaitSince?getTimer()-rvWaitSince:0,waitFrames:rvWaitFrames});
+                        dismiss();w.onPause=true;exercise();
+                    }
                     beginSample();
                 }
             }catch(error:*){finish(String(error)+" "+error.getStackTrace());}

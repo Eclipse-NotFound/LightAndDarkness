@@ -2,7 +2,7 @@
 
 为 Remains 增加能影响战斗的明暗区域、可装备灯具，以及场景灯的破坏和维修。用户于 2026-10-15 确认：**战术光暗与生存探索并重，兼顾氛围**。
 
-当前 **0.5.1 已于2026-10-20部署**。新增稳定光缓存，减少地形扫描开销，并消除画面外弹丸引起的无效补绘；保留原生弹形拖尾、机器/地标与终端微光、灯具损坏维修、环境与存档能力。正式文件固定为 `release/LightAndDarknessMod.swf`，保存进度并重启游戏生效。完整组合大图仍高于关灯时的帧耗时，尚未完全达到接近原版的目标。[本版验证、性能边界和回退](tests/performance-2026-10-20.md)。
+当前 **0.6.0 已于2026-10-20部署**。马哈顿窗墙、圆窗和室外破洞接入背景补光，附近地面/墙面接收光线；封闭地区基础亮度小幅提高，保留原图和现有灯具参数。正式文件固定为 `release/LightAndDarknessMod.swf`，保存进度并重启游戏生效。[验证与回退](tests/background-lighting-2026-10-20.md) · [前后画面对照](tests/evidence/2026-10-20/background-v060/gallery.html)。
 
 ## 当前可用功能
 
@@ -30,7 +30,9 @@
 
 ## 构建与验证
 
-0.5.1冻结为`build/out/perf-v051-visible/LightAndDarknessMod.swf`，BAFE52B9，21自身类，无原生存根或测试类。新版宿主81C1/CS CD65/WB1411组合下579项门禁与正式文件43项回读通过，共622项。宽屏完整14模组大图开灯帧中位95–102ms、关灯84–86ms；普通图开43–46.5ms、关33ms。当前源码、依赖与正式字节指纹见`state/performance-deployment-2026-10-20.json`。后续发布须重新冻结并验收，不直接重跑固定旧版的部署脚本。
+0.6.0冻结`build/out/background-v060-r2`，E3233F78，40,881字节、22自身类。556项门禁及正式回读66项通过，共622项；普通6场景、马哈顿25区和工厂12区实际对照。后续测试通过`tools/registered-lighting-test.py`登记共享game占用；部署使用`release`入口包住验证、备份、替换与正式复验。当前正式指纹及回退见`state/background-deployment-2026-10-20.json`。本轮无新的FPS认证。
+
+0.5.1冻结为`build/out/perf-v051-visible/LightAndDarknessMod.swf`，BAFE52B9，21自身类，无原生存根或测试类。新版宿主81C1/CS CD65/WB1411组合下579项门禁与正式文件43项回读通过，共622项。宽屏完整14模组大图开灯帧中位95–102ms、关灯84–86ms；普通图开43–46.5ms、关33ms。当版源码、依赖与正式字节指纹见`state/performance-deployment-2026-10-20.json`。后续发布须重新冻结并验收，不直接重跑固定旧版的部署脚本。
 
 0.5.0冻结为`build/out/trails-v050/LightAndDarknessMod.swf`，4291B825，最终1057项功能/像素/保存检查及正式回读35项通过。`tools/run-trail-tests.py --candidate <SWF> --mixed --mode verify/perf/legacy/cold`；cold仅用本轮私有存储。两轮独占对照中普通弹、密集普通弹与激光减负，密集等离子均值未改善且有尖峰；不把函数耗时称为整体FPS提升。[原生70种素材与形状调查](design/projectile-shapes-v0.5.md)。以下保留历史版本复现方法，不代表可直接用旧部署脚本覆盖当前正式文件。
 
@@ -51,6 +53,8 @@
 0.3.0最终组合已通过 **131项弹丸专项、81项灯具/大场景、21项公共改键、11项跨进程读档及13项平滑边缘检查**；安装后从正式路径再次通过131项。含68种原版弹丸外观枚举、真实武器发射/命中、墙遮光、爆炸、暂停和容量压力，见[本版验证](tests/projectile-verification-2026-10-15.md)。未将68种外观覆盖等同于213款武器逐款实射。
 
 ## 阅读入口
+
+- [0.6.0背景补光设计](design/background-lighting-v0.6.md)与[实际验证](tests/background-lighting-2026-10-20.md)：地区基础值、原图透光、表面受光、同场景前后图及发布回执。
 
 - [0.5.1性能验证](tests/performance-2026-10-20.md)：同输入计算对照、完整组合帧耗时、像素一致性、安装回读与剩余差距。
 - [弹丸形状、拖尾与绘制预算](design/projectile-shapes-v0.5.md)：70种原图、形状/配色分组、弯道、遮挡与性能设计。

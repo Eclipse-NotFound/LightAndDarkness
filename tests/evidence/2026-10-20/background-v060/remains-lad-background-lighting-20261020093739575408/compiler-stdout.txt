@@ -1,0 +1,2 @@
+正在加载配置文件“D:\Program Files\Steam\steamapps\common\Remains\mods\LightAndDarkness\build\generated\remains-lad-background-lighting-20261020093739575408\probe-config.xml”
+D:\Program Files\Steam\steamapps\common\Remains\mods\LightAndDarkness\build\generated\remains-lad-background-lighting-20261020093739575408\BackgroundLightingTestMod.swf（11427 字节）

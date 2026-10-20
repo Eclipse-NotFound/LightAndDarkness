@@ -1,0 +1,39 @@
+{
+  "aborted": "Concurrent AIR/JVM or low commit headroom",
+  "observations": [
+    {
+      "ok": true,
+      "competitors": [],
+      "memory": {
+        "physicalBytes": 7283396608,
+        "commitBytes": 13757558784
+      },
+      "minimumCommitBytes": 2147483648
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "memory": {
+        "physicalBytes": 7269548032,
+        "commitBytes": 13731221504
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792460773414
+    },
+    {
+      "ok": false,
+      "competitors": [
+        {
+          "pid": 86684,
+          "name": "java.exe"
+        }
+      ],
+      "memory": {
+        "physicalBytes": 7071739904,
+        "commitBytes": 13113364480
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792460774454
+    }
+  ]
+}

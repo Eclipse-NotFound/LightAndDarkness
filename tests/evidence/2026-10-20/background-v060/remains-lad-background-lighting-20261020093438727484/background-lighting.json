@@ -1,0 +1,45 @@
+{
+  "version": "0.5.1",
+  "loader": {
+    "boot_start": "run_1792460086722_397305|v2 run=run_1792460086722_397305 @1792460086730",
+    "requested_LightAndDarknessMod": "run_1792460086722_397305|line 23 @1792460086761",
+    "requested_ContinuousSceneMod": "run_1792460086722_397305|line 21 @1792460086755",
+    "requested_BackgroundLightingTestMod": "run_1792460086722_397305|line 22 @1792460086758",
+    "requested_ModLoaderMod": "run_1792460086722_397305|line 12 @1792460086750",
+    "boot": "run_1792460086722_397305|v2 col=2 requested=6 @1792460086766",
+    "ok_ContinuousSceneMod": "run_1792460086722_397305|init @1792460087420",
+    "ok_ModLoaderMod": "run_1792460086722_397305|init @1792460087429",
+    "requested_WallBlendMod": "run_1792460086722_397305|line 24 @1792460086763",
+    "ok_LightAndDarknessMod": "run_1792460086722_397305|init @1792460087439",
+    "session": "run_1792460086722_397305",
+    "ok_RealisticVisionMod": "run_1792460086722_397305|init @1792460087402",
+    "ok_WallBlendMod": "run_1792460086722_397305|init @1792460087385",
+    "requested_RealisticVisionMod": "run_1792460086722_397305|line 15 @1792460086752",
+    "ok_BackgroundLightingTestMod": "run_1792460086722_397305|init @1792460087388"
+  },
+  "mode": "verify",
+  "applicationID": "remains-lad-background-lighting-20261020093438727484",
+  "checks": 3,
+  "error": "Error: unexpected candidate version 0.5.1 Error: unexpected candidate version 0.5.1\n\tat BackgroundLightingTestMod/step()",
+  "roomsLoad": 1,
+  "assertions": [
+    {
+      "pass": true,
+      "label": "comparison uses expected ContinuousScene 0.8.2 interface",
+      "detail": "0.8.2"
+    },
+    {
+      "pass": true,
+      "label": "CS native mode is explicitly applied and read back before map generation",
+      "detail": false
+    },
+    {
+      "pass": true,
+      "label": "frozen comparison class reports baseline 0.5.1",
+      "detail": "0.5.1"
+    }
+  ],
+  "samples": [],
+  "boundary": "Native Tile fixtures and same paused native scene, candidate versus frozen 0.5.1 classes. Software captures, no FPS claim or player storage.",
+  "baselineVersion": "0.5.1"
+}
