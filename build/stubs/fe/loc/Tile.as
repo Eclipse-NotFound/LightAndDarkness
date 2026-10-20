@@ -5,5 +5,9 @@ package fe.loc {
         public var back:String;
         public var fRear:Boolean;
         public var front:String;
+        public var phis:int;
+        public var zForm:int;
+        public var diagon:int;
+        public var phY1:Number;
     }
 }

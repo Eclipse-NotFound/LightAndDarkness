@@ -1,5 +1,7 @@
 # LightAndDarkness 当前记忆
 
+> 2026-10-20 背景光实施中：源码候选0.6.0已补窗墙/圆窗/室外破洞、实体表面受光与封闭区域基础值+0.04；正式仍是下述0.5.1。当前只通过静态复审，**未编译、未实测、未部署**，等待RC明确交还AIR/JVM独占窗口。来源任务01a154dc-b4c2-7f42-837a-ce7541e37297；不要把旧0.4.1调查或0.5.1门禁当作0.6.0验收。设计design/background-lighting-v0.6.md；新驱动tools/run-background-lighting-tests.py，发布门禁tools/release-background.py。三个子代理仅负责源码、测试与只读复审，不启动测试进程。
+
 ## 1. 模组定位
 为Remains 1.02增加战术光暗、墙门遮光、随身灯、场景灯损坏/维修、故障氛围、环境光、弹丸拖尾及机器/关键设施散光。入口LightAndDarknessMod.init(main:*)，正式路径release/LightAndDarknessMod.swf。当前0.5.1减少稳定灯和地形扫描开销，消除画面外弹丸导致的无效补绘。
 

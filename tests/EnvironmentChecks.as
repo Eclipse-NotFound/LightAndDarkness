@@ -41,7 +41,7 @@ package {
             check(windowLit>0.6,"window aperture illuminates the shared gameplay field",log);
             for(y=0;y<25;y++)map.space[10][y].opac=1;
             field.render(map,view,env.lights(view),0.14,null,1,env);
-            check(field.sample(500,300)<0.38,"window light cannot cross an opaque wall",log);
+            check(Math.abs(field.sample(500,300)-env.profile(500,300).ambient)<0.01,"window light cannot cross an opaque wall",log);
             map.backobjs[0].id="stwindow";env.bind(map,null,"window");check(env.openings.length==0,"sealed observation windows are not daylight sources",log);
             map.backobjs[0].id="fwindow";map.land.act.id="random_sewer";env.bind(map,null,"window");
             check(env.openings.length==0,"underground decoration does not invent outdoor daylight",log);

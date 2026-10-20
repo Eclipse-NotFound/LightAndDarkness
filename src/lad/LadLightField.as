@@ -100,6 +100,9 @@ package lad {
                     var back:String=String(tile.back)+":"+(tile.fRear?String(tile.front):"");
                     if(!materialHashes.hasOwnProperty(back)) materialHashes[back]=LadAtmosphere.seed(back);
                     hash^=uint(materialHashes[back]);hash+=(hash<<1)+(hash<<4)+(hash<<7)+(hash<<8)+(hash<<24);
+                    // Half-height and sloped surfaces can change without changing opacity.
+                    hash^=uint(tile.phis*31+tile.zForm*131+tile.diagon*521+tile.phY1*8191);
+                    hash+=(hash<<1)+(hash<<4)+(hash<<7)+(hash<<8)+(hash<<24);
                 }
             }
             var region:String=[left,top,right,bottom].join(":");
@@ -180,9 +183,12 @@ package lad {
                 for(var y:int=top;y<=bottom;++y) {
                     var tile:Tile=tiles[y],old:LadTileState=column[y];
                     var opacity:Number=tile.opac,back:String=tile.back,rear:Boolean=tile.fRear,front:String=rear?tile.front:"";
-                    if(!old) column[y]=new LadTileState(opacity,back,rear,front);
-                    else if(old.opacity!=opacity || old.back!=back || old.rear!=rear || old.front!=front) {
+                    var physical:int=tile.phis,shape:int=tile.zForm,diagonal:int=tile.diagon,topEdge:Number=tile.phY1;
+                    if(!old) column[y]=new LadTileState(opacity,back,rear,front,physical,shape,diagonal,topEdge);
+                    else if(old.opacity!=opacity || old.back!=back || old.rear!=rear || old.front!=front
+                        || old.physical!=physical || old.shape!=shape || old.diagonal!=diagonal || old.top!=topEdge) {
                         changed=true;old.opacity=opacity;old.back=back;old.rear=rear;old.front=front;
+                        old.physical=physical;old.shape=shape;old.diagonal=diagonal;old.top=topEdge;
                     }
                 }
             }

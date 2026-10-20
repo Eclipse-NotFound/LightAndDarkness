@@ -165,7 +165,7 @@ package lad {
             if(atmosphere.settings.projectiles) projectiles.bind(world,loc);
             if(!store.writable) throw new Error("saved light state requires migration");
             var roomKey:String=LadStore.roomKey(loc);
-            environment.bind(loc,world.grafon,roomKey);environmentKey=environment.signature();
+            environment.bind(loc,world.grafon,roomKey);environmentKey=environment.contextSignature();
             lamps=LadLampCatalog.discover(loc,world.grafon,store.room(roomKey),atmosphere,roomKey,environment);
             darkZones=atmosphere.zones(loc,roomKey,environment);
             targetClass=ApplicationDomain.currentDomain.getDefinition("lad.native.LadLampTarget") as Class;
@@ -259,7 +259,8 @@ package lad {
         }
         public function render():void {
             if(!location || !world) return;
-            var nextEnvironment:String=environment.signature();
+            // Raster residency affects background light, not the authored dark-zone layout.
+            var nextEnvironment:String=environment.contextSignature();
             if(nextEnvironment!=environmentKey) {environmentKey=nextEnvironment;darkZones=atmosphere.zones(location,LadStore.roomKey(location),environment);}
             syncLamps();
             var view:Rectangle=viewport();
