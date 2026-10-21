@@ -1,0 +1,125 @@
+PASS candidate initializes before loading baseline definitions "0.7.0"
+PASS comparison uses installed ContinuousScene interface "0.9.0"
+PASS CS native mode is explicitly applied and read back before map generation false
+PASS frozen comparison class reports baseline 0.6.0 "0.6.0"
+PASS RV setting interface available for isolated lighting comparison {"waitMs":314,"waitFrames":10}
+PASS fixtures use the native typed Tile path null
+PASS selected closed-region ambient rbl {"actual":0.82,"expected":0.82}
+PASS selected closed-region ambient random_sewer {"actual":0.48,"expected":0.48}
+PASS selected closed-region ambient begin {"actual":0.48,"expected":0.48}
+PASS selected closed-region ambient random_encl {"actual":0.72,"expected":0.72}
+PASS selected closed-region ambient test {"actual":0.68,"expected":0.68}
+PASS selected closed-region ambient random_mane {"actual":0.62,"expected":0.62}
+PASS daylight city keeps sheltered ruins at the regional floor null
+PASS explicit power outage retains its dark floor null
+PASS flight flag alone does not create daylight null
+PASS native sky geometry still supplies daylight without flight flag null
+PASS transparent rendered window wall supplies local light {"covered":0.6196078431372549,"opening":1}
+PASS unchanged ordinary raster retains a stable environment signature null
+PASS repeated static render preserves identical field pixels null
+PASS ordinary room replacement bitmap invalidates its backdrop transmission null
+PASS transparent raster without exterior context cannot invent underground sky null
+PASS unrasterized CS chunk is unknown rather than transparent sky null
+PASS CS first resident raster invalidates previously empty backdrop cache {"resident":1,"empty":0.6196078431372549}
+PASS CS replacement raster refreshes aperture transmission null
+PASS room slices retain independent indoor and outdoor air fields {"base":0.62,"outdoor":1,"indoor":0.6196078431372549}
+PASS opaque wall receives sky on its exposed face {"base":0.62,"surface":0.996078431372549}
+PASS surface reception does not transmit through a thin wall {"base":0.62,"behind":0.6196078431372549}
+PASS opening native Tile door invalidates cached sky occlusion {"open":0.6666666666666666,"closed":0.6196078431372549}
+PASS closing door restores the original air darkness null
+PASS new background masonry blocks geometric daylight null
+PASS background destruction invalidates daylight cache null
+PASS native zForm 3 fixture retains actual partial-floor geometry and opacity null
+PASS native fractured floor receives sky at its actual visible top {"base":0.62,"surface":0.9450980392156862}
+PASS fractured floor reception follows its physical top rather than the tile top {"airAbove":0.8862745098039215,"surface":0.9450980392156862}
+PASS opaque floor below a partial native tile still prevents through-light null
+PASS native zForm edit refreshes same-bitmap surface light with sceneCache=true {"opacity":0,"after":0.984313725490196,"before":0.8862745098039215}
+PASS restoring native zForm restores the surface field with sceneCache=true null
+PASS native zForm edit refreshes same-bitmap surface light with sceneCache=false {"opacity":0,"after":0.984313725490196,"before":0.8862745098039215}
+PASS restoring native zForm restores the surface field with sceneCache=false null
+PASS native aperture mask is collected: enil {"sources":4}
+PASS native aperture contributes illumination: enil {"value":0.8745098039215686,"base":0.72}
+PASS hiding a native aperture invalidates its cached environment light null
+PASS restoring native aperture alpha restores environmental light null
+PASS closed underground rejects decorative aperture: enil null
+PASS native aperture mask is collected: hole1 {"sources":4}
+PASS native aperture contributes illumination: hole1 {"value":1,"base":0.72}
+PASS closed underground rejects decorative aperture: hole1 null
+PASS native aperture mask is collected: chole1 {"sources":4}
+PASS native aperture contributes illumination: chole1 {"value":1,"base":0.72}
+PASS closed underground rejects decorative aperture: chole1 null
+PASS native aperture mask is collected: fwindow {"sources":4}
+PASS native aperture contributes illumination: fwindow {"value":0.9568627450980393,"base":0.72}
+PASS closed underground rejects decorative aperture: fwindow null
+PASS src fonWay admits its original swindow as an exterior source null
+PASS native src swindow illuminates the shared field 0.9137254901960784
+PASS internal observation glass does not become an outdoor source null
+PASS environment multiplier preserves selective ambient scaling {"scaled":0.8470588235294118,"normal":0.6784313725490196}
+PASS restoring multiplier restores exact base field null
+PASS switching off a dynamic lamp leaves no retained illumination null
+PASS new AIR process restores all seeded brightness preferences before first room {"actual":{"multiplier":1.15,"regions":{"outage":0.24,"maintained":0.72,"safe":0.73,"interior":0.4,"abandoned":0.62,"underground":0.48,"outdoor":0.91},"version":1,"lampRange":1.3},"expected":{"multiplier":1.15,"regions":{"outage":0.24,"maintained":0.72,"safe":0.73,"interior":0.4,"abandoned":0.62,"underground":0.48,"outdoor":0.91},"version":1,"lampRange":1.3}}
+PASS regional slider registered: outdoor null
+PASS regional slider updates and persists: outdoor null
+PASS regional slider leaves every other category unchanged: outdoor null
+PASS regional upper clamp: outdoor null
+PASS regional lower clamp: outdoor null
+PASS regional invalid input uses default: outdoor null
+PASS regional slider registered: safe null
+PASS regional slider updates and persists: safe null
+PASS regional slider leaves every other category unchanged: safe null
+PASS regional upper clamp: safe null
+PASS regional lower clamp: safe null
+PASS regional invalid input uses default: safe null
+PASS regional slider registered: maintained null
+PASS regional slider updates and persists: maintained null
+PASS regional slider leaves every other category unchanged: maintained null
+PASS regional upper clamp: maintained null
+PASS regional lower clamp: maintained null
+PASS regional invalid input uses default: maintained null
+PASS regional slider registered: interior null
+PASS regional slider updates and persists: interior null
+PASS regional slider leaves every other category unchanged: interior null
+PASS regional upper clamp: interior null
+PASS regional lower clamp: interior null
+PASS regional invalid input uses default: interior null
+PASS regional slider registered: abandoned null
+PASS regional slider updates and persists: abandoned null
+PASS regional slider leaves every other category unchanged: abandoned null
+PASS regional upper clamp: abandoned null
+PASS regional lower clamp: abandoned null
+PASS regional invalid input uses default: abandoned null
+PASS regional slider registered: underground null
+PASS regional slider updates and persists: underground null
+PASS regional slider leaves every other category unchanged: underground null
+PASS regional upper clamp: underground null
+PASS regional lower clamp: underground null
+PASS regional invalid input uses default: underground null
+PASS regional slider registered: outage null
+PASS regional slider updates and persists: outage null
+PASS regional slider leaves every other category unchanged: outage null
+PASS regional upper clamp: outage null
+PASS regional lower clamp: outage null
+PASS regional invalid input uses default: outage null
+PASS unobstructed outdoor field is neutral white, preserving native brightness null
+PASS full daylight MULTIPLY preserves native RGB exactly null
+PASS outdoor slider invalidates cached sky field immediately null
+PASS interior floor changes immediately through the real UI callback null
+PASS lamps add more light to dark rooms and cannot bleach beyond native RGB null
+PASS dark or broken lamp returns to the regional floor null
+PASS wider fixture range reaches previously unlit nearby ground null
+PASS unchanged wider fixture reuses its shadow raster over sixteen frames null
+PASS fixture range slider registered null
+PASS range, total multiplier and regional values share persistent preferences null
+PASS loading a world save cannot overwrite visual preferences null
+PASS visual comparisons use the new defaults null
+PASS regional native settings page opens null
+PASS all seven regional sliders are visible on the native settings page null
+PASS native slider scroll event changes the regional brightness null
+PASS baseline and candidate lighting classes remain separate rbl null
+PASS baseline inherits the same native Tile identity rbl null
+PASS ordinary scene uses native room rendering rbl {"spaceY":25,"viewReady":true,"spaceX":48,"nativeRegions":0,"stateUsesCurrentLocation":false,"nativeEnabled":false,"sceneLarge":false}
+PASS same paused camera for candidate and 0.6.0 rbl actual null
+PASS native scene settles within 180 frames rbl {"resident":0,"frame":8}
+PASS paused native scene retains its environment signature across eight frames rbl null
+PASS paused candidate scene preserves camera and field pixels across eight frames rbl {"observedFrames":8,"settleFrames":8,"pixelsStable":true,"signatureStable":true,"cameraStable":true}
+PASS same paused camera for candidate and 0.6.0 rbl isolated null

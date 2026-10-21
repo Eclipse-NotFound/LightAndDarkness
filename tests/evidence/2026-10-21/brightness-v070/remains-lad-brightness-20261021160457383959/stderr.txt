@@ -1,0 +1,56 @@
+ModLoader[boot_start] v2 run=run_1792569906161_146552
+ModLoader[requested_ModLoaderMod] line 12
+ModLoader[requested_RealisticVisionMod] line 15
+ModLoader[requested_ContinuousSceneMod] line 21
+ModLoader[requested_BrightnessTestMod] line 22
+ModLoader[requested_LightAndDarknessMod] line 23
+ModLoader[requested_WallBlendMod] line 24
+ModLoader[boot] v2 col=2 requested=6
+ModLoader[ok_WallBlendMod] init
+ModLoader[ok_BrightnessTestMod] init
+[RVision] init ok enabled=true
+ModLoader[ok_RealisticVisionMod] init
+ModLoader[ok_ContinuousSceneMod] init
+ModLoader[ok_ModLoaderMod] init
+ModLoader[ok_LightAndDarknessMod] init
+575 Интерфейс
+1161 Game init
+918 Персонаж
+0 Местность
+827 Создание местности
+472 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+1026 Создание местности
+false
+254 Вход в местность
+[RVision] room loc0_1 48x25 lDist2=10000 mode=current
+[RVision] room loc0_1 48x25 lDist2=10000 mode=current
+[RVision] room loc0_1 48x25 lDist2=10000 mode=current
+RConnectRndSeed  random_mane 1305853700
+3267 Создание местности
+false
+415 Вход в местность
+[RVision] room loc0_4 48x25 lDist2=2000 mode=current
+[RVision] room loc0_4 48x25 lDist2=2000 mode=current
+[RVision] room loc0_4 48x25 lDist2=2000 mode=current
+RConnectRndSeed  random_sewer 1182698190
+3167 Создание местности
+false
+464 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+[RVision] room loc0_0 48x25 lDist2=1000 mode=current
+RConnectRndSeed  random_encl 1359170824
+3555 Создание местности
+false
+300 Вход в местность
+[RVision] room loc0_7 48x25 lDist2=1000 mode=current
+[RVision] room loc0_7 48x25 lDist2=1000 mode=current
+[RVision] room loc0_7 48x25 lDist2=1000 mode=current
+205 Создание местности
+314 Вход в местность
+[RVision] room loc0_0 48x25 lDist2=10000 mode=current
+[RVision] room loc0_0 48x25 lDist2=10000 mode=current
+[RVision] room loc0_0 48x25 lDist2=10000 mode=current

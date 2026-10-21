@@ -1,0 +1,26 @@
+[
+  {
+    "label": "brightness:verify",
+    "path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906"
+  },
+  {
+    "label": "brightness:large",
+    "path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768"
+  },
+  {
+    "label": "brightness:cold",
+    "path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074"
+  },
+  {
+    "label": "landmark:regression",
+    "path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083"
+  },
+  {
+    "label": "landmark:cold",
+    "path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565"
+  },
+  {
+    "label": "trail:verify",
+    "path": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834"
+  }
+]

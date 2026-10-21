@@ -1,0 +1,2 @@
+正在加载配置文件“D:\Program Files\Steam\steamapps\common\Remains\mods\LightAndDarkness\build\generated\remains-lad-brightness-20261021160457383959\probe-config.xml”
+D:\Program Files\Steam\steamapps\common\Remains\mods\LightAndDarkness\build\generated\remains-lad-brightness-20261021160457383959\BrightnessTestMod.swf（14389 字节）

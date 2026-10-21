@@ -14,6 +14,9 @@ GAME = MOD.parents[1]
 THREAD_ID = '01a154dc-b4c2-7f42-837a-ce7541e37297'
 ACTIVE = 'LIGHT_AND_DARKNESS_TEST_REGISTRATION'
 RUNNERS = {
+    'brightness': 'run-brightness-tests.py',
+    'brightness-suite': 'run-brightness-suite.py',
+    'brightness-release': 'install-brightness-and-smoke.py',
     'background': 'run-background-lighting-tests.py',
     'landmark': 'run-landmark-tests.py',
     'trail': 'run-trail-tests.py',
@@ -25,7 +28,7 @@ RUNNERS = {
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--wait', type=float, default=300)
-    parser.add_argument('--owner', default='LightAndDarkness / 背景补光 / ' + THREAD_ID)
+    parser.add_argument('--owner', default='LightAndDarkness / 地区亮度')
     parser.add_argument('--purpose')
     parser.add_argument('runner', choices=sorted(set(RUNNERS) | set(RUNNERS.values())))
     parser.add_argument('arguments', nargs=argparse.REMAINDER)
@@ -40,10 +43,10 @@ def main():
     from test_registry import Registration
     import air_test_process
 
-    purpose = args.purpose or ('背景光发布验证 / ' + target.name + ' ' + ' '.join(forwarded))
+    purpose = args.purpose or ('照明验证 / ' + target.name + ' ' + ' '.join(forwarded))
     with Registration(owner=args.owner, purpose=purpose, resource='game',
                       run_dir=MOD / 'build/evidence',
-                      evidence=MOD / 'tests/background-lighting-2026-10-20.md',
+                      evidence=MOD / 'tests/brightness-2026-10-21.md',
                       wait=args.wait) as record:
         print('Test registration: ' + record.id, flush=True)
         original = air_test_process.HiddenProcess

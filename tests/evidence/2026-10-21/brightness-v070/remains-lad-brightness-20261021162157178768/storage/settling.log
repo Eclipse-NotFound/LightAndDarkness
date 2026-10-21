@@ -1,0 +1,4 @@
+24177 rbl frame=8 resident=0 evictions=0
+39769 random_mane frame=8 resident=31 evictions=0
+52697 random_plant frame=8 resident=25 evictions=32
+52962 random_plant frame=16 resident=26 evictions=32

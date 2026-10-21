@@ -1,0 +1,4 @@
+FAIL Error: ASSERT paused native scene retains its environment signature across eight frames random_mane Error: ASSERT paused native scene retains its environment signature across eight frames random_mane
+	at BrightnessTestMod/check()
+	at BrightnessTestMod/stableFrame()
+	at BrightnessTestMod/step()

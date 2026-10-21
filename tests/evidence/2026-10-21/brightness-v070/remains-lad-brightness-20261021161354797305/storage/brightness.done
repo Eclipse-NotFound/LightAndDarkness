@@ -1,0 +1,5 @@
+FAIL Error: ASSERT new AIR process restores all seeded brightness preferences before first room Error: ASSERT new AIR process restores all seeded brightness preferences before first room
+	at BrightnessTestMod/check()
+	at BrightnessChecks$/run()
+	at BrightnessTestMod/preferences()
+	at BrightnessTestMod/step()

@@ -1,0 +1,2356 @@
+{
+  "files": [
+    {
+      "path": "remains-lad-brightness-20261021144811382858/initial-guard.json",
+      "sha256": "d5abd42919f06c42a9471c9110790a7776f02e67adc318bbbe9b2e2d0877545b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021144811382858\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021144811382858/offline-compile.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021144811382858\\offline-compile.stderr"
+    },
+    {
+      "path": "remains-lad-brightness-20261021144811382858/offline-compile.stdout",
+      "sha256": "e97a86c4df8941ce1c72796c0fb88e925ead3d7220d3790f889f83f1db619490",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021144811382858\\offline-compile.stdout"
+    },
+    {
+      "path": "remains-lad-brightness-20261021144811382858/run-plan.json",
+      "sha256": "50261af0788d5d45fa4916c830c7fe3e41fe3ad96e0a2e14cbde456a35e6abe5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021144811382858\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/compiler-stdout.txt",
+      "sha256": "dc551d2ddb857dd9bbe1fa7112a316ce445a43e4e679dbbb7e02c8bdb155a3c5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/guards.json",
+      "sha256": "f298c87b44017f3ab48a4de914b6f47f71b341bcf8b601a20ccd858dff11cbaf",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/hashes.json",
+      "sha256": "37f8c3ca41b5ffcd23eb0ff500b702ddeafd20b1f49eed1d820e9c5a1492719d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/initial-guard.json",
+      "sha256": "78f1e53e5013c7e9ef3b8c7233cd04746d162746cf5cf22ec1a1c94a7873166f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/process.json",
+      "sha256": "a2778ab1bbfb451a9fec70ad32f287fe7e6ed59552c0541bd268252ad6a33930",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/run-plan.json",
+      "sha256": "ddad7873a1184ed07839c15c880bca4b99ce3cbfb0a85cffba8aa8e9fb6e2bea",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/selection.json",
+      "sha256": "4d7f7a1f61cbbc04e680cc38eece6f44fa6c7e09ac4327e9358786dd14dfb1f6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/sources.json",
+      "sha256": "d9b4f186e9d01e06c4bb79d3eecaaf3778890559eb0cc65618f4a5d13527ab99",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/stderr.txt",
+      "sha256": "a82748dbdc3ed83f839a99503cb7822625c831a34ebf84b29fd66033deb65a87",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/brightness.done",
+      "sha256": "60309519dfa5008bf30487667eebc0bb88704c9f60f9da62730d1b1abc962c74",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/brightness.json",
+      "sha256": "0c173c43d1e8590670cfca4506e3dc73d00cec8cb03f4fcd293ab6042bb81366",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/checks.log",
+      "sha256": "8a1c2391fd47f191637feb12ada13a21e4f6bce88dbe113d2a91f2164a391520",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/ContinuousScene.log",
+      "sha256": "188edf0474b377e095fa46c4ac02f430f1fd7b59c4cc5ee5c5c45c547a04d7e4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/ContinuousScene.preferences.json",
+      "sha256": "23ac40a4201847f4a3a1790cc94c40717cfd77d4b9d0718fd4f12d1fd993042a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/heartbeat.log",
+      "sha256": "2d4fde721c347e96f2e302de6ff05cdda9f1402daedca6e8a1fb0f868575c9f6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/LightAndDarkness.log",
+      "sha256": "933d355df1bf4a0f7b6c166820130b828e66f59f4feab8cf2c6fc13a11452723",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/ModSettings.log",
+      "sha256": "639907e1656c227ffd54e6f25f49a27e57535c1dacdaeee3d3da5b75e81eceb5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/RVision.log",
+      "sha256": "96717de98a59cee3b7adf53d2ce7870751ae27bd30ba9c5f1cfbc4aeb36ae743",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021145041567526/storage/WallBlend.log",
+      "sha256": "3c630513143ee3f5c8c1282d30660373df0700c5d19314fa1678cc53d1f287f1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021145041567526\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/compiler-stdout.txt",
+      "sha256": "7f9d2d310f4649508013e3331d6fef367da1944961db8c627cf56b4fd191b7e1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/guards.json",
+      "sha256": "c27d714a3d7f913d7a4d4686f6c22bbe399e4b347d1da9885029dcfa20847f77",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/hashes.json",
+      "sha256": "becb6e2c0e6fb3994177aa1f601f8dfa74270196558d705302972d78458753ec",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/initial-guard.json",
+      "sha256": "48fc8365545c96db71daa960b29a8de1899cfaf953492cf7c1074f5a3fb0f624",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/process.json",
+      "sha256": "f7d2236421c1ef809f3d2b26cf949c7687a51757e035c81f62550116ff15da8c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/run-plan.json",
+      "sha256": "a17fb7bca949f465ec7f0e59bc8572eb9ec42d840e2ed6bec75374d7177757b0",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/selection.json",
+      "sha256": "ce9568a427465acdd2ebad96086752a2109044c6b03042f6b47514fa4226d30c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/sources.json",
+      "sha256": "c58d687d4901cba18f3514cf9ac3e41add295d641d87fe68b793f8b5c2cd395b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/stderr.txt",
+      "sha256": "278aab10b71483f49f41fb082788b8a974cbf3c03496ed66ef42d20c158d9c38",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/brightness.done",
+      "sha256": "c3012ea05d537f37132bbc43255a505bda5f7df040af0b288588e9605dcb228e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/brightness.json",
+      "sha256": "2486b0be65c9dcd1081424d3a6d5be02f1909c97465607c947b099d8b21ad183",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/checks.log",
+      "sha256": "90156abaf9faa4804baa40affc70eb7324a1446698bbfdb3c3a100a59a1e8bfc",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/cold-preferences.json",
+      "sha256": "de3037101c92643b4dc1103a5ab87c572173010d9a6766331a82d26ac40f511d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/ContinuousScene.log",
+      "sha256": "634228cd28675ae7d226c0fd8e63e0644a36d7ae6cb716b75359b9709758b261",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/ContinuousScene.preferences.json",
+      "sha256": "23ac40a4201847f4a3a1790cc94c40717cfd77d4b9d0718fd4f12d1fd993042a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/heartbeat.log",
+      "sha256": "94243ae04d1f61f574628ae4e3e629ebe0e26712eec66b8e657860989eb026c2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/LightAndDarkness.lighting.json",
+      "sha256": "1479b37230f056dffbd54e9227fc6e53f9605c7235f910c5e0d679b4c9046f18",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/LightAndDarkness.log",
+      "sha256": "0755a1aac3675eb1eadafe82c39eb32fc20f7c2ce9700b13d34f2d1e965c6360",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/ModSettings.log",
+      "sha256": "639907e1656c227ffd54e6f25f49a27e57535c1dacdaeee3d3da5b75e81eceb5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/RVision.log",
+      "sha256": "96717de98a59cee3b7adf53d2ce7870751ae27bd30ba9c5f1cfbc4aeb36ae743",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021150101017411/storage/WallBlend.log",
+      "sha256": "e1ba7433cb7437b1f483ef8d75e4ed7863e1f5bd90bd58b2ea351660c731d516",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021150101017411\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/compiler-stdout.txt",
+      "sha256": "7d30b49ccbbf24d40c8c54a85c13fc324dbd8229ae76034c1947efca23a2c219",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/guards.json",
+      "sha256": "31b3567225f8f4f1b2e50d4154414293bafd8dd7a28d27aef416f9a2e06c6648",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/hashes.json",
+      "sha256": "5490cf5b62d4f9e8c1656e0a57517c7d125eeb1071104bdbfa26eca43bd2fea4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/initial-guard.json",
+      "sha256": "7fe16c3a4abb5b46e3981d36a26b98e337a81b2fa5d5f9d83ec191304b4d2f7c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/process.json",
+      "sha256": "bc8e8f9c7e31e2cd5f8d50424f6307eb556cb7624f0d7fb47ff3663a2b3f7aa3",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/run-plan.json",
+      "sha256": "938d8db689ae95261691e99e98c28d3c1dbc2a072c7e1219c538d578753e8825",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/selection.json",
+      "sha256": "29ac443590bbd48ab1991f288f6029c9eaddf1eab63748970da76480996e3f78",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/sources.json",
+      "sha256": "a48411179e4f6ab8df88655760c895dd4abe373e075be16f107c958157aa645c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/stderr.txt",
+      "sha256": "44701f5f53e5ed329855176d6cfdc841fa9e996ce5af992245b477dbad49800e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/brightness.done",
+      "sha256": "ca199fe784c3740c6a47671dc588f6fe9658f4087e6478a4e10e351b04cc8f21",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/brightness.json",
+      "sha256": "6eebe8e950ee3d88bdb6b7385ba299c0a79ad252f2fad463f7bec58cd6e5d113",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/checks.log",
+      "sha256": "21e05e14d35327a1e737d04c28b4d6acfcc5ae7b34ba1315bbcd061722996168",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/cold-preferences.json",
+      "sha256": "e6cd04b8e243eac46cca5867e8eb9834351d50b47553c63f85d95286fb88757a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/ContinuousScene.log",
+      "sha256": "321b6bf24e4422692a940f11c2690c8b785b499b47fa6d804963da0032e333dd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/ContinuousScene.preferences.json",
+      "sha256": "23ac40a4201847f4a3a1790cc94c40717cfd77d4b9d0718fd4f12d1fd993042a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/heartbeat.log",
+      "sha256": "4030681c498be17bb9487f92008270ec961136ba502ec9986ac110c1b8f5db35",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/LightAndDarkness.lighting.json",
+      "sha256": "7b45b87fc518c3557b37a67f85006b7629794ed49d27622ad513003342ac84e4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/LightAndDarkness.log",
+      "sha256": "3ad029f9ac71f8f9f585df76beae93c6c6061b1d5a90192525dbb6b53ac797f0",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/ModSettings.log",
+      "sha256": "8f9140b498e6c6e822af4f92dfc738350b7cad2a0477b0ec5fe0ec0c874a2459",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/RVision.log",
+      "sha256": "4edc14392ce3593d669d3aa76ecfcd486694e5a93c838b30c1cc9a50547b9874",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021155800286743/storage/WallBlend.log",
+      "sha256": "69adb633a58d9dbc47dbb2b748f2dfe06aa91e8de74c024a4f267278b992504f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021155800286743\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/compiler-stdout.txt",
+      "sha256": "dc76c1ab54965bc9fdc4787f2bfc55042ffe433c33ee76e6270645b6b04a2e99",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/guards.json",
+      "sha256": "4ed611f1bf21ede7f84bf011c6b657d0ff08692a1e57ec2307b99054f7b23d33",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/hashes.json",
+      "sha256": "36d91e1cd656d7f0ea084a3252c70812e3d469708442f795920415acf078f4c5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/initial-guard.json",
+      "sha256": "67c2ca9b59715e23ac14e2362f5537248b955afff9db3d0ea77483ce47efaf0e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/process.json",
+      "sha256": "951945df3d1a5ec543507e44567aaa756ab1ecc0f7fe9fde78349e7da5636c7d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/run-plan.json",
+      "sha256": "d5acd016dcf97b45bf7382738a78b7eb0c53b1699de98ba80672dd600d0aeb44",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/selection.json",
+      "sha256": "da6f0fcbbd642971096e8da7608a67f03731d9bf5c5616b79c88bd26ae8cc950",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/sources.json",
+      "sha256": "9651c751367a654cc267f7eccf5e2949d9fc36798ebc3cceaa83de45427437f8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/stderr.txt",
+      "sha256": "3273fdcc3889a7ce2c214597e549ee3257c2b7b930dd6c14bee204f42db5a798",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/brightness.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/brightness.json",
+      "sha256": "4f26fb8ba989de7e01c5dc3fa1a8194ff26ac8d8d3cf7370b09e6ab3d04a3d8f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/checks.log",
+      "sha256": "396bb6eac263e802e94398e7e5e526fb1889184e2fb8b89893af733870792776",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/cold-preferences.json",
+      "sha256": "e6cd04b8e243eac46cca5867e8eb9834351d50b47553c63f85d95286fb88757a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/ContinuousScene.log",
+      "sha256": "69b01a633dfcb7104ff73e4388e0a3c2536e9dab75a59541ed16e8b530665d20",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/ContinuousScene.preferences.json",
+      "sha256": "23ac40a4201847f4a3a1790cc94c40717cfd77d4b9d0718fd4f12d1fd993042a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/heartbeat.log",
+      "sha256": "344453159c8bd7ea96084746cab89936e194d558d6be7055667501fca3124b99",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/LightAndDarkness.lighting.json",
+      "sha256": "7b45b87fc518c3557b37a67f85006b7629794ed49d27622ad513003342ac84e4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/LightAndDarkness.log",
+      "sha256": "f00f02cbacee04b2a82050698bf1ba86308abdb20646981c6245451cbfb927d6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/ModSettings.log",
+      "sha256": "5b08b814779105a49c168b8229eaceabafe97f14221d072735e531bad4cd069c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/progress.json",
+      "sha256": "dd199f6e80bfa38e9ce078fd29140fd19c46d763db6f0166365b2e849ac76d9c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\progress.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/RealisticVision_config.txt",
+      "sha256": "6bd42f9f14600e74310f44a044b6921e886a788bcd8df3724b275d43dff080eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\RealisticVision_config.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/RVision.log",
+      "sha256": "29d43b493e5ecc848baf8d6b778c56936d7f4b67d38262a9c8dc19ccea0b19fa",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/sample-3-baseline060-isolated.png",
+      "sha256": "5e53239c8461b09085a6a18a7b4612d07ef015df281d11b712c759ce55481b2a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\sample-3-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/sample-3-candidate-isolated.png",
+      "sha256": "2981ddbfcd08e28be063d3c179f7b6bda51062aacb513c1016988f90f9040bd6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\sample-3-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/sample-3-native-isolated.png",
+      "sha256": "54c8888627970a276079b90bc29e3244dfbd62895836d0308a2d445e7297880e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\sample-3-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160457383959/storage/WallBlend.log",
+      "sha256": "6fdc82f3792b18769c47fc657bc540aacb92a90f0a5c71f8a5bc09b88e753260",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160457383959\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/compiler-stdout.txt",
+      "sha256": "bff32fd6f07baa9d81625a16d15b5a3b020aded837a94f0a434274752837d40a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/guards.json",
+      "sha256": "0cdbe58401daa687cab67840edf5b84f0a5bf05402c692137f34d5a014c10062",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/hashes.json",
+      "sha256": "c2c5a2ceb3350dd27a17025bd136e1b1fc1d5a1bc93c9802d15ad3e63439bdd7",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/initial-guard.json",
+      "sha256": "a3f8ae61486e16d4cda6f7a0c2ddc65ab7793a3f5ab50598f7834b23dc02fcad",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/process.json",
+      "sha256": "32c8cfb27a6b4367f3420f1d038e47a196fb053594bf80e9a3aeb4d67ad60d32",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/run-plan.json",
+      "sha256": "0c698fe9d8881f84673299929ed71395b5cbb8e264b5c5fa96c91129cfbb770f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/selection.json",
+      "sha256": "4b0d6289981c93773b377a7dcf04d80b43a1d541cd391d72b0a98bfceee07a0d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/sources.json",
+      "sha256": "95bbffd7049c22588313563090f8e6159447fbeedee23d9cf0bc0291582891ee",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/stderr.txt",
+      "sha256": "861a9215a130a0793d93750c9893d500c2433666b801fdf48da21d67d07f5f5f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/brightness.done",
+      "sha256": "379dd3c50d6961f0e6af06053e7d97ade89aecb3ec3aaaee436bb0ef6e6f8a01",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/brightness.json",
+      "sha256": "39eadb04f946fa5b977c49cbb6e3e8cd907c7cb700f23ac9157d87547c729d43",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/checks.log",
+      "sha256": "930859928cc8a7a333f1860014e6516c353cf125eb26c0dd9afa9e883a396659",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/cold-preferences.json",
+      "sha256": "92f5add48645023f8f05c216d42837d6076dd3a858c01ff46ff30f4f6973e444",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/ContinuousScene.log",
+      "sha256": "237d502ceaf97318514d8499e65671d5ed6636707038332b8c6058b42927110f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/ContinuousScene.preferences.json",
+      "sha256": "cc989162b2b44eddbed5c3e2e8437d8537c1e4541b9e5ed24bc4f2c5ba05c89c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/heartbeat.log",
+      "sha256": "ef74bfea21e74a713469347c5ed720e42445ea028e567cbc125df21e5662a76c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/LightAndDarkness.lighting.json",
+      "sha256": "8cd8027e35fef7e78ebfd2ae13cc47e83961228bbee2f465038af0fab08fa2b5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/LightAndDarkness.log",
+      "sha256": "59a0fe8efdefd24b8423e3e471bdf7cd66ea627da2e080e700716ea3babd7ea2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/ModSettings.log",
+      "sha256": "36ea3f429c9aa5355d9e379557e3b6c0f93a3f958d8b587006c0fe70c35c2668",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/progress.json",
+      "sha256": "92704623f2440c523fd5ce7a3d9766348e5ffe527a35de472a73f3f5de354e03",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\progress.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/RealisticVision_config.txt",
+      "sha256": "f3c7dfe712a836188d712f70b7d30fd83b8bb70435de28757196b3f926bf23f8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\RealisticVision_config.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/RVision.log",
+      "sha256": "4edc14392ce3593d669d3aa76ecfcd486694e5a93c838b30c1cc9a50547b9874",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021160647828060/storage/WallBlend.log",
+      "sha256": "4754e7d13cda512591112c7378f4ff97eb877932924282d7292c8907d72241b2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021160647828060\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/compiler-stdout.txt",
+      "sha256": "8027aa0088bd83f72d2095b654ba939ceb2b66dad47dedc2bb1f68c5dcafb278",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/guards.json",
+      "sha256": "258ffbfb63e8eb85407e68995caefbe10ec89db910c68b0f121b98afa4618999",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/hashes.json",
+      "sha256": "7b5acb90c91c820bbfd97115321e4d32039ab86fb8b45427350245b6529643ec",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/initial-guard.json",
+      "sha256": "794c7b730675059c8cb2c7f5ce270eb7316d790fbe6b291fb96b2a488af3b7ee",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/process.json",
+      "sha256": "d8aeba3d1797e596b62a60a976ff5e1ab56be9041e4c22e11be4145757c5c8cb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/run-plan.json",
+      "sha256": "6744ed6fef5c75b08bd479219e93511eef2cfbe4eca803ff33cb986f742d884c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/selection.json",
+      "sha256": "f3f7667d6157a6528f804fe8e68497ee4908c0b9ca2e041cfae27fc68d4c352d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/sources.json",
+      "sha256": "20d94d96bafaa49eafec663b3777c838c9c7596eaef76a8e7dd67d8c8acae88f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/stderr.txt",
+      "sha256": "680a66bedf270399e9333846be3b83c908899e683e9998d2e2e4debadba19855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/brightness.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/brightness.json",
+      "sha256": "2dcded4eb97a44854bbbf0e3a40178a739f73c0ebc7a954b14f8bb8dc58013e7",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/checks.log",
+      "sha256": "2e24d63849c85d70b9716ea13a65a369e5541d3435011bda1023b9f18ca7a155",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/cold-preferences.json",
+      "sha256": "5c324ecf93b006f7714816482da8c2112a0022f994d5ccfb6b8bba580319cff4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/ContinuousScene.log",
+      "sha256": "e78410f3e7c06901c6c16285fa735cd822612b5ed382c149fb4e08403fa779aa",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/ContinuousScene.preferences.json",
+      "sha256": "23ac40a4201847f4a3a1790cc94c40717cfd77d4b9d0718fd4f12d1fd993042a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/heartbeat.log",
+      "sha256": "6aa72d374242026048bdedd7f6121a9757d1e8f75142c0b1afd1f9ac0b7782c3",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/LightAndDarkness.lighting.json",
+      "sha256": "fbcf1fe491e38692704a3126e3d35aee3d419fe4ea1278f615b16ab6fb78195b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/LightAndDarkness.log",
+      "sha256": "e9ad6facca1015791f5ac773b6a5210bcc702f6b6f9c7ca6142383f97c8b437e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/ModSettings.log",
+      "sha256": "5b08b814779105a49c168b8229eaceabafe97f14221d072735e531bad4cd069c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/progress.json",
+      "sha256": "a5b9bc8bced3a886c7325eb6cce5f86c31e47ce2adb42cf917bf67fe50d3d04f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\progress.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/RealisticVision_config.txt",
+      "sha256": "6bd42f9f14600e74310f44a044b6921e886a788bcd8df3724b275d43dff080eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\RealisticVision_config.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/RVision.log",
+      "sha256": "46383efd88f65d08e0ca7d31a93e8352172e925778267e3d7c0b265485f639fd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/settling.log",
+      "sha256": "e438deb5b41267c540533a2a184326d20fb2ffdd78a26c7faa30a54b330a5a54",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\settling.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161059479764/storage/WallBlend.log",
+      "sha256": "675cb6350af1ccce848e8088c28936115d40b9bd7f9c8ce6c628c8befcdda628",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161059479764\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/compiler-stdout.txt",
+      "sha256": "3a5af6912e228fe6c897e8d1b227c940ccc7b693bce7c1e5dcb9cdaefce43e8a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/guards.json",
+      "sha256": "0194f4e88209e3593abb97564cafa885c590929f3a34bca53c3688e295beba34",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/hashes.json",
+      "sha256": "989c15d5e2a2d74c7e463b995d53a227762c3fc9eb83ca2262944e7a8c2534c7",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/initial-guard.json",
+      "sha256": "07bbc4f9c5b41d77c315f17a6e341ddf2a95e2533f4017095a441d0f5c36515e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/process.json",
+      "sha256": "51fa816984408e4d13e05af1dc63413f185ad96a8e768462b725fd44534458a0",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/run-plan.json",
+      "sha256": "03f731b6c2293c0c2619366e9384556fcb247313526a4d8b5c2671c0ab75e2fb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/selection.json",
+      "sha256": "c1aa2152ad6a05fe107e0d7a00f5b73303118140c147fc50628e1e14e1d6076e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/sources.json",
+      "sha256": "c844bdc66aa970bed573b96608565512fcd6ce3c2f001c2225322dc96469138d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/stderr.txt",
+      "sha256": "da0e0897f2ac7ec6f251e0008e056a3003d153ddd39197be87c0eb823a70ef95",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/brightness.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/brightness.json",
+      "sha256": "9346b84051a343b1199dc03d6cb73f20f37eeee51076c50913023cc8ec298eb2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/checks.log",
+      "sha256": "c431031e0adb409f7113e53f95f05b8c5926c12746d6251c164c2fcce9e89b28",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/cold-preferences.json",
+      "sha256": "c7a45b05da58ebea019518d3b1a9f5f57956497ee494e76d015d21e6fd6359bd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/ContinuousScene.log",
+      "sha256": "3162c19c32f13cf7ffeada87a60b25cc6154e944ec4c32a73e556dd93f1ed739",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/ContinuousScene.preferences.json",
+      "sha256": "cc989162b2b44eddbed5c3e2e8437d8537c1e4541b9e5ed24bc4f2c5ba05c89c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/heartbeat.log",
+      "sha256": "030d95dcae2c0f9b527a1ee6a844be686c2ba25aad62730106acc40e1b377c1a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/LightAndDarkness.lighting.json",
+      "sha256": "79bca5ffd244c8e6009ac1ce229884f27c67265f5e47b39eb77abe3eb3d5da7a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/LightAndDarkness.log",
+      "sha256": "11edf3348096eba84b667dc28a87bde0aaa23799cfd133422cb3ef94642c9745",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/ModSettings.log",
+      "sha256": "36ea3f429c9aa5355d9e379557e3b6c0f93a3f958d8b587006c0fe70c35c2668",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/progress.json",
+      "sha256": "bdaf1f5a31b341c77af050960b08e5395944aed85fc4dfd67d88e1b88bc61780",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\progress.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/RealisticVision_config.txt",
+      "sha256": "6bd42f9f14600e74310f44a044b6921e886a788bcd8df3724b275d43dff080eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\RealisticVision_config.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/RVision.log",
+      "sha256": "14406dca20b94dde0b0431045e62e9d8342cef5ebc31ef73551d53814731f0a6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/settling.log",
+      "sha256": "8ad85ff7dbf6fdf82ae9ebd1d61f485e18e73ad3a2deae9a56b5f5d84225bfea",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\settling.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161246560223/storage/WallBlend.log",
+      "sha256": "2080f11207566b42cb4191c394bb49b9a7b3443fd4928648814abfbbe7707f02",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161246560223\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/compiler-stdout.txt",
+      "sha256": "bf2ec296dfafa3a046018c0b281f00c576f4f566ea36bc1dda7c423e1a0d8b44",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/guards.json",
+      "sha256": "4484f4bdb9a40a61922d3333e73ef5ad855467849264f3bf442f89822eb3043f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/hashes.json",
+      "sha256": "81f38ec286f5dc9d42b9a4bab2ee3a8db44939d57e330e4cd16f33024559dba8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/initial-guard.json",
+      "sha256": "f52b05161356ee79cbbb0f1f11db051ad2ca73758d41d68e70acf37b9ff0ca2b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/process.json",
+      "sha256": "5f483709d2b2d822df3f0fd23f3d54ba63bc756773998f434f2259f4def329ec",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/run-plan.json",
+      "sha256": "9c462b2ffec9f3881d94cf93af69f070b681eaee1300ed440c2df97e5578e4b2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/selection.json",
+      "sha256": "146f34099b97d95f792dbea2c6e962d22524718e136a5c138fe7e586be95ddcb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/sources.json",
+      "sha256": "13228f98ca4c71fd1d699e00e7f28cdf6f8fad1f88736340ebb367b89b72dc74",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/stderr.txt",
+      "sha256": "84755183f40a5e058d8b6ea51dc86c402e25ec3f20f7abac3651c84f0f190278",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/brightness.done",
+      "sha256": "86eb1e1e66b8ac34d1c97607ff0299736f88f453ade5b2739546e6140272e35d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/brightness.json",
+      "sha256": "864e9475f69180ff90031e68edfa9e5370e774298662615ceb72fbcaed797424",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/checks.log",
+      "sha256": "51736060c65bf99f6ef9e897b442ec6f9a83548968daa1da5ad08313771fb3e9",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/ContinuousScene.log",
+      "sha256": "0cd8048540b725af3dc2a3d6a814f520b8fd8ee8607efa4408c4bd7be9792c0c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/ContinuousScene.preferences.json",
+      "sha256": "23ac40a4201847f4a3a1790cc94c40717cfd77d4b9d0718fd4f12d1fd993042a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/heartbeat.log",
+      "sha256": "e56a75b2218ff0860d7f074f6cffd47f36f6c2146ce280c49a57ba24d7d61c34",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/LightAndDarkness.lighting.json",
+      "sha256": "5c324ecf93b006f7714816482da8c2112a0022f994d5ccfb6b8bba580319cff4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/LightAndDarkness.log",
+      "sha256": "bda8dcea9f8870acce7f00806ee8e5370ae0a205282a2ce85ec3be303f7c64b2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/ModSettings.log",
+      "sha256": "639907e1656c227ffd54e6f25f49a27e57535c1dacdaeee3d3da5b75e81eceb5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/RVision.log",
+      "sha256": "14406dca20b94dde0b0431045e62e9d8342cef5ebc31ef73551d53814731f0a6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/seed-preferences.json",
+      "sha256": "5c324ecf93b006f7714816482da8c2112a0022f994d5ccfb6b8bba580319cff4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\seed-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021161354797305/storage/WallBlend.log",
+      "sha256": "1a13e95a6c9f2814431a22e31476c9c2def86ae94ccb8a1f5cbd1f61f0f0736c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021161354797305\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/compiler-stdout.txt",
+      "sha256": "bc780f763871e637edda39171a07241a2f056994db12ce7468aeb8d66127f129",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/guards.json",
+      "sha256": "8a50c7a80a1fa7d1186547b6201782174fb2f94c57d482e848f2558afd78c1b7",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/hashes.json",
+      "sha256": "4e634ac6d5332598dea46f0d32e14e15105e552706ff4a547015c944fc55bbe0",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/initial-guard.json",
+      "sha256": "b107b9984520d88d6a12cbf53f3938fe29a03bfe04d89a159fa706a6cdecff58",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/process.json",
+      "sha256": "d77b74d115c7442d77b874d1e2ad99b9122ccc3e8ab044535d3e6850b743bc70",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/run-plan.json",
+      "sha256": "449ae0620a56f584c2f4c53c877a94c9f7be29ba9d4cd90c67fe3a5022ce8446",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/selection.json",
+      "sha256": "7d3e6cd4bb3d2acee07960b42c0cfa7b63764fbf9667b393cd0bd6b21da2f8c2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/sources.json",
+      "sha256": "350371842a5ecaf842f49a7a1d7865f69aa016a528905b2b54d2573147a2a622",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/stderr.txt",
+      "sha256": "21a6f95dae7605b806ddad000b14bda44e0cf8da1cfee715fc2d279f73ef97a7",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/brightness.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/brightness.json",
+      "sha256": "3ba0ee5c8c524f59cd34227663d86ffc4f40b204f82c15dec4d292f2ba74dd5b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/checks.log",
+      "sha256": "7b25fb763dd521c5f2b65650e8f08230d183209ee1f197542b1ea8f8298339f6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/cold-preferences.json",
+      "sha256": "c7a45b05da58ebea019518d3b1a9f5f57956497ee494e76d015d21e6fd6359bd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/ContinuousScene.log",
+      "sha256": "d67a0f97e4520d0b6cf3ea29b3a3cb271ea45f330bafd29213e653c7df8d548a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/ContinuousScene.preferences.json",
+      "sha256": "23ac40a4201847f4a3a1790cc94c40717cfd77d4b9d0718fd4f12d1fd993042a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/fixture-surface-field.png",
+      "sha256": "7a4985adf746276723dcfd759b11ea793fd815963014f8c14716b563493abf8f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\fixture-surface-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/heartbeat.log",
+      "sha256": "c703850296ca55e4614225a5b213baaffbbc3b0d77e1c06c8b0b608028ff0f06",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/LightAndDarkness.lighting.json",
+      "sha256": "79bca5ffd244c8e6009ac1ce229884f27c67265f5e47b39eb77abe3eb3d5da7a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/LightAndDarkness.log",
+      "sha256": "0fceccbcc04342588dea51fe79b8308c005ba98760898475a1019a330e6f7e60",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/ModSettings.log",
+      "sha256": "5b08b814779105a49c168b8229eaceabafe97f14221d072735e531bad4cd069c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/progress.json",
+      "sha256": "3f2d85f1aab8833b6f08bb276e53f11365514e2bd2555a39824a30b0752f39eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\progress.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/RealisticVision_config.txt",
+      "sha256": "6bd42f9f14600e74310f44a044b6921e886a788bcd8df3724b275d43dff080eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\RealisticVision_config.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/regional-settings.png",
+      "sha256": "3cefe4fafb41715fb4b8ad3319fa87d07e2303c540cf983538e74fb5536d0b00",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\regional-settings.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/RVision.log",
+      "sha256": "46383efd88f65d08e0ca7d31a93e8352172e925778267e3d7c0b265485f639fd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-1-ambient125.png",
+      "sha256": "3ed38982a890b761ab592b960c3a67cdae64b55fa6cdb3e61b83c01c3a39ccbc",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-1-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-1-baseline060-actual.png",
+      "sha256": "2c55656076994605d798a3e697febb7b97519b222aee777b9e55883eb4ee8b4f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-1-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-1-baseline060-field.png",
+      "sha256": "f0d4e185693410fae4fe0a024ca01115e73f949baa2cff9e099ab96bd9c60e6f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-1-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-1-baseline060-isolated.png",
+      "sha256": "124b92bff20a1e31b2766b190c775fad3bc9acd66082ddab8dda8cc5ae1a0020",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-1-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-1-candidate-actual.png",
+      "sha256": "bf212b78e5c7b3303d7e68ba66aac43d961b80759dff92d76894a1dad5c70752",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-1-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-1-candidate-field.png",
+      "sha256": "49142322c942a347277141c4d138b7d45be83543603b9945e169ceeb9ea30e1c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-1-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-1-candidate-isolated.png",
+      "sha256": "aad5b9e309dff9978d24017fabd1fdf8d5c43ad2d0db72149c7141cbed60a753",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-1-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-1-native-actual.png",
+      "sha256": "134223422f305d888eda06829e0ed35b7449ae24669686d0fc45f26b668a84e2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-1-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-1-native-isolated.png",
+      "sha256": "3ed38982a890b761ab592b960c3a67cdae64b55fa6cdb3e61b83c01c3a39ccbc",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-1-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-2-ambient125.png",
+      "sha256": "6e6c34e550e67289b541b5b8a933d1421f065c49d3b9e905e3d86e676ee8a3ce",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-2-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-2-baseline060-actual.png",
+      "sha256": "cf9786f087140bf5659b07191c59e87efb6f8d6458cf9bdc2ea769ded283b67b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-2-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-2-baseline060-field.png",
+      "sha256": "cf5920b01877f2bd31d1a4156cb3a1ec49d04e6d5f81ec06895ede38720ab356",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-2-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-2-baseline060-isolated.png",
+      "sha256": "b240bae3defbb866963fbe17bf7c00e398402616e0f268b2ab21d0c022f269eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-2-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-2-candidate-actual.png",
+      "sha256": "215bdfb1fc5348f68143bd03d4c7d483b8980dda2997dd0f6efb9c0a59f56531",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-2-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-2-candidate-field.png",
+      "sha256": "56091c0703e93bda428e0e8f3326e11098d27c49d0b41788243c2d732f90aa11",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-2-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-2-candidate-isolated.png",
+      "sha256": "a586cbefc6fe30804b2c4fba36e1d1621aa718b824f1b495d045bdff956d1aab",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-2-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-2-native-actual.png",
+      "sha256": "413c5ee41a9228a862c5819608b5d86a6905263327c06ff6fada4680b097c177",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-2-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-2-native-isolated.png",
+      "sha256": "46714b5c8276485df4690876a4cd0ed82c677412eb9483f999c83746255e15a7",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-2-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-3-ambient125.png",
+      "sha256": "93c5a11624e808c802d1579710b0f6c315289d3f08fbe4e5d84b49c496516043",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-3-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-3-baseline060-actual.png",
+      "sha256": "3cbc52d0c1853883a5f27b1a7ca9ff8e139d4d549742278ebfdedbf1b4425d78",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-3-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-3-baseline060-field.png",
+      "sha256": "5fb17224d79092a79b33bcf39b8f36b8fee1f2895410174cf85b18919fca34a6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-3-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-3-baseline060-isolated.png",
+      "sha256": "856f127ec7af8b8aacb68d68a523abdbf554e854884749a8a2f3c3924f93addd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-3-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-3-candidate-actual.png",
+      "sha256": "15ffac5248f4f8c28de75405715f53aba9be82ab53ba33c29d9ddc3fb5d9b95a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-3-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-3-candidate-field.png",
+      "sha256": "4b27654ff3d8c812253cb6354a684a86adefe4ab83a62aebb75d26618fec3398",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-3-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-3-candidate-isolated.png",
+      "sha256": "b6007ddcf6ddc5f4c47cb2dd03d4b76b7f592e4538e369951075711c094f1779",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-3-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-3-native-actual.png",
+      "sha256": "8c866a52ca957cb2a1a42bc528f9da32a79f1288cd263c6d30c8b79f55eec49f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-3-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-3-native-isolated.png",
+      "sha256": "bc95bac3bd94e2f3bd4f6427f0714bf43c1e3a5b34ea6126ad72f7fa248d256b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-3-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-4-ambient125.png",
+      "sha256": "640ba3bfa525a3088f8bb98c33dce46dfb6c437a7ac8a0a6da3138ff6a04feda",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-4-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-4-baseline060-actual.png",
+      "sha256": "3794fc582ac3af2948739e4f62f5556ac87560b9f322e37bd0cda3598f6d8ef7",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-4-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-4-baseline060-field.png",
+      "sha256": "4e9646bd5f0d06a90f31bc0d66161513e5b27338eb06981c4c89d3aafb217f09",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-4-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-4-baseline060-isolated.png",
+      "sha256": "ccac321fd222d09c58cc027a29f090d760f83098aafae2295e7972474cf45305",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-4-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-4-candidate-actual.png",
+      "sha256": "edc0e5ebb7c744d625ddce82d20aa74a3c1a925ecaf43cca0e8f303f4e0952f3",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-4-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-4-candidate-field.png",
+      "sha256": "de058696183314d0b40d8aae25e9138e65c831e4e028b23e190b49ea5fb662f2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-4-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-4-candidate-isolated.png",
+      "sha256": "011f01a681e99afb529ce2a0b1a21b3de0484c55b726dfa7deff6873b94949e1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-4-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-4-native-actual.png",
+      "sha256": "ebfe317ce717620ff528eda6c3807f9a6f180a40fabf85a2e377e744d0abdda9",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-4-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-4-native-isolated.png",
+      "sha256": "50f9d54f600cd6ba44b668a612ecee8faafa49b0aca0874f0b197335042f682b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-4-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-5-ambient125.png",
+      "sha256": "e591c6e25fb63b6ed4358ea22f928634104da2676bf8c6be43e31d1cdc86b61d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-5-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-5-baseline060-actual.png",
+      "sha256": "94d3e0c3ed17de812856ef44397fed8e60b70fd6a554cee8a72e324ef21f0484",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-5-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-5-baseline060-field.png",
+      "sha256": "16c34b12042e1d1691a861b43ef81640033dfaec30c3169b5ef1f9f0b4c8680d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-5-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-5-baseline060-isolated.png",
+      "sha256": "ae6f398f0f2cb2b65f210eba35bb02a5ea0080f3ea58cd755a7a8903cd5a3b16",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-5-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-5-candidate-actual.png",
+      "sha256": "2655082c9781ecc3330c50a833b1be29168577d1f69a167861c208d3bcf00978",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-5-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-5-candidate-field.png",
+      "sha256": "c835900aac19eabc168e9b97fe0edd49c0f1aa9e6d5f793d7dcf705ef14ceb34",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-5-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-5-candidate-isolated.png",
+      "sha256": "71e1c64a2e0b8957bdeb057fd28faac2534ebbb1704fae1d76c24eea91065e8e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-5-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-5-native-actual.png",
+      "sha256": "09c2019b552213b230fb3054304c25a6e0ec9cead4c357da1d7892466786cfd3",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-5-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-5-native-isolated.png",
+      "sha256": "359a6b87543f0c1ed597470b22d7be28cb02a4ca131d27c726d3c0eb251a6d5a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-5-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-6-ambient125.png",
+      "sha256": "723f5a7f24106970f47f691a3d6d3b4fcaa25ad3ad9fe7eaa2e80a7598dcf14a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-6-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-6-baseline060-actual.png",
+      "sha256": "157df9aca5fb1b5c121a98d0b97cbc2cdd33c42a18d1c52da90a8428ae41a425",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-6-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-6-baseline060-field.png",
+      "sha256": "7d219c4e2f00bc0e5ff76a1e4b733a894dd1ae6c931fc6247aa542d8a8fda78c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-6-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-6-baseline060-isolated.png",
+      "sha256": "46488ea672ce7027422a77b6f7291906a2c0f642c694a7b4d6313642c2cfa8f5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-6-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-6-candidate-actual.png",
+      "sha256": "01286de931f8491335dc5a1d8362b911f84522e8361cdfaa48044f9e4edb5298",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-6-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-6-candidate-field.png",
+      "sha256": "7229c4a8b30e475b37f8fd3c54bea6e5ee8a5a43284359df5a14ec70dbffde71",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-6-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-6-candidate-isolated.png",
+      "sha256": "32262dcce58e22a4bba2b95f7dd8298c4db5d4d5973c3954db74e9a4d08552a6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-6-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-6-native-actual.png",
+      "sha256": "f585aa0a61abb70e87353c5258c2d2fe7e05c064522755e1285d5b371bfc32ac",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-6-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/sample-6-native-isolated.png",
+      "sha256": "723f5a7f24106970f47f691a3d6d3b4fcaa25ad3ad9fe7eaa2e80a7598dcf14a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\sample-6-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/settling.log",
+      "sha256": "2229bd855f2d16d165acc07cef002211e5cb3df961dfe96d44ad0cc1f88e0c1d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\settling.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162001217906/storage/WallBlend.log",
+      "sha256": "bbd49fdfab9d28393286b13b3ce97beb2ce52644c0e11cabc38158ad08bc76c0",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162001217906\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/compiler-stdout.txt",
+      "sha256": "d673b356f39b0516239cc59b65c4e2b8fb184d8a0d4113bc5d79369eef5fe90b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/guards.json",
+      "sha256": "e60d3f9bad9e18a978706e9303e99e8e8944861ee9c609606e51380d7fd99add",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/hashes.json",
+      "sha256": "ab735ef2649ddba6963405213a5dc9235c3ee354c02c65b5b08eb09aed52b446",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/initial-guard.json",
+      "sha256": "7d2ad579d076ebf0283a3ab873192e527717c0ea27f1e0fb47950d2fdb934dc1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/process.json",
+      "sha256": "f4c4dd99244fbcfc3e15d83d51e46a497d39dfa14ef60f1076fdf9cae5c81dff",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/run-plan.json",
+      "sha256": "de7292cb8b807133994683be931d749f39d49bde63548ec0943cbc87089fa437",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/selection.json",
+      "sha256": "b3220ec0ce9f70b226bbda9cc5dcf31982f391e936828d1de83cc691bc2e2847",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/sources.json",
+      "sha256": "36a66b45518680b71da2003d1272b7ba56010036ff990562e696eab39c8f1c8a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/stderr.txt",
+      "sha256": "b1bb1b0ffd91733ca2ffd87e7f70ef0317b72d09595cfe16562a3b6cac94d6d1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/brightness.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/brightness.json",
+      "sha256": "ddb6f7973b2341da0f6c67e8f004904add5853f5099e486d5eaf86a5657ba192",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/checks.log",
+      "sha256": "f84ed26382425b56aaf5ee8eaa41bf9149f9b7fad7024b562b0d3043f7c8eef4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/cold-preferences.json",
+      "sha256": "5c324ecf93b006f7714816482da8c2112a0022f994d5ccfb6b8bba580319cff4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/ContinuousScene.log",
+      "sha256": "66febbda3f0d4aa085204d1e997ea8b85cf5d7fd753781c8f52fe861c549fd95",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/ContinuousScene.preferences.json",
+      "sha256": "cc989162b2b44eddbed5c3e2e8437d8537c1e4541b9e5ed24bc4f2c5ba05c89c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/fixture-surface-field.png",
+      "sha256": "7a4985adf746276723dcfd759b11ea793fd815963014f8c14716b563493abf8f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\fixture-surface-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/heartbeat.log",
+      "sha256": "7639430b915b8aba6c2c2019a57e0f2d24dd0d1ee6621ab2dad1e9a5daa060a1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/LightAndDarkness.lighting.json",
+      "sha256": "fbcf1fe491e38692704a3126e3d35aee3d419fe4ea1278f615b16ab6fb78195b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/LightAndDarkness.log",
+      "sha256": "3d0e5338f43358d83c723d1bb6a298a81a37c382983b1d43422130f2a73358a0",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/ModSettings.log",
+      "sha256": "36ea3f429c9aa5355d9e379557e3b6c0f93a3f958d8b587006c0fe70c35c2668",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/progress.json",
+      "sha256": "8825f0c1bccf341e9a9ecbbbc5638f7ba63987e2b04f2fbc349b3da27788525f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\progress.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/RealisticVision_config.txt",
+      "sha256": "6bd42f9f14600e74310f44a044b6921e886a788bcd8df3724b275d43dff080eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\RealisticVision_config.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/regional-settings.png",
+      "sha256": "fad3aafdd9065bebfb2d4f312cea7f695822b1d918fbc50b70264b2ad083e3ea",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\regional-settings.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/RVision.log",
+      "sha256": "14406dca20b94dde0b0431045e62e9d8342cef5ebc31ef73551d53814731f0a6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-1-ambient125.png",
+      "sha256": "0bc3db49d8cdc24512c294733f3fc1304380656c2d58d8877ab7717f88bcd511",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-1-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-1-baseline060-actual.png",
+      "sha256": "3b1d65c20c29d5c4202f45963b3f390e92acd250d88ac0a17efca105c1c40a47",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-1-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-1-baseline060-field.png",
+      "sha256": "f0d4e185693410fae4fe0a024ca01115e73f949baa2cff9e099ab96bd9c60e6f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-1-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-1-baseline060-isolated.png",
+      "sha256": "f9180f3c70524545b86c78e6d79f349e754160329d7b8f33a7a14e36eae63681",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-1-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-1-candidate-actual.png",
+      "sha256": "49e6bfd9a7421b23fce13dc78bef5274c8bc545c8a41d7c4e82b556ec87cdcc5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-1-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-1-candidate-field.png",
+      "sha256": "49142322c942a347277141c4d138b7d45be83543603b9945e169ceeb9ea30e1c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-1-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-1-candidate-isolated.png",
+      "sha256": "55f53cde63bf89962ec32087b08825c5397ef137d888313172a1fff1b3bbc338",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-1-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-1-native-actual.png",
+      "sha256": "91267182763901ee6ce49ef73c925dd99be137ea33a23900538fb571da40de45",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-1-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-1-native-isolated.png",
+      "sha256": "0bc3db49d8cdc24512c294733f3fc1304380656c2d58d8877ab7717f88bcd511",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-1-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-2-ambient125.png",
+      "sha256": "d1a8ddcd33bd91a7917fd059f0d7524a3aa8699438fdcbc7c6ad04a394cb328d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-2-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-2-baseline060-actual.png",
+      "sha256": "25c4d668f1bfe74809d739c9f80660d3b58d6f2fec8f071f1b4a7f5fcb36be14",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-2-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-2-baseline060-field.png",
+      "sha256": "c15e0025c67bd785660a4bc88481558645047a99cdb05bf3a55fab2500aad77d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-2-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-2-baseline060-isolated.png",
+      "sha256": "775d45fa0a6afec1727240014b6bb88a2cfca347142b70ccc09f4aacc1e4eda7",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-2-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-2-candidate-actual.png",
+      "sha256": "4ebba1b6850ca9a3d812eed66ee449fc402226aa534c61abc22c0f954254e3cd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-2-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-2-candidate-field.png",
+      "sha256": "965c5c5656e78831a230221c0882017b8f43854f7f1ff9ce880dde94c7e81a7e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-2-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-2-candidate-isolated.png",
+      "sha256": "348e354ba17b090aeeee778793bf3c0c7d388d675d49b155b94d495bc216ad70",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-2-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-2-native-actual.png",
+      "sha256": "dc93e83bcfa42b896c7f01c69e11e39a9cd11abbb1a73cd1bdd67a77663d9a77",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-2-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-2-native-isolated.png",
+      "sha256": "50d51431fc8c062ed91372729a120d67ed9ca1cc3c4ad9cd035510bb88cb1936",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-2-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-3-ambient125.png",
+      "sha256": "f02feaa4af32bae7de65d12a6dd2f6595ca7a4a7134f6d571c9cf368ef256611",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-3-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-3-baseline060-actual.png",
+      "sha256": "8cf09cbec9212a32096459cce47e4314b5e8e5df7a7189ff8b4fca859ee48d7a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-3-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-3-baseline060-field.png",
+      "sha256": "1896d58246043b606b3ae8d12e82b56c1da10d784c5aaf3ca15bdd824d76c830",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-3-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-3-baseline060-isolated.png",
+      "sha256": "4980e34898ec895c9b1e1550633f518f5d4386a8af584b0163456da524d58da1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-3-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-3-candidate-actual.png",
+      "sha256": "d501d7304b6644d67aa7f007216b39d511377063dbfd78db801d25332778adf4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-3-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-3-candidate-field.png",
+      "sha256": "e1b02d1b599c0176505392f7d31d063b7c3372a69d99acf58aa30cb0f44258f5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-3-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-3-candidate-isolated.png",
+      "sha256": "a01abe4e31c076a9346c8f043d6b37f2d1c72e4d416f49d446eecc2759757f38",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-3-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-3-native-actual.png",
+      "sha256": "9f9d2f6528965ea365295e0299e01b1a3c97e279775ce75b96abaf1561c08d29",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-3-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/sample-3-native-isolated.png",
+      "sha256": "88765a915de8d3d6f2772fabe007792455ff5e4b319667ba220ba9b6aab30119",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\sample-3-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/settling.log",
+      "sha256": "455399d6a42a675fd23a4669bc8af0ecb44e57160b6d54f7efe2b3aeb1b3b9f2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\settling.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162157178768/storage/WallBlend.log",
+      "sha256": "a67342642ecfc6405a62d0f0151053c2f41935f9aedd57c3947ca8aecf7f7229",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162157178768\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/compiler-stdout.txt",
+      "sha256": "fcfa0d18c3bd4d497a957c79de55608ea04f0832a8db24715ab6bce8a744c91f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/guards.json",
+      "sha256": "911b3ca0981499e9eba9a5ead0150acc7c4fcd9809636c48e6556124eb26fe65",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/hashes.json",
+      "sha256": "d173921a736861308fbc26f485ec266e277f7095906bb6e425d83734bf893d40",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/initial-guard.json",
+      "sha256": "15c2fc657d2a026cbbb76fb380bba131828e832c187247ceda7e44568ef0302f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/process.json",
+      "sha256": "b382fda54bb35eb308f96c040f33730ee6687f97210785c1083e5e6bf7b90fba",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/run-plan.json",
+      "sha256": "5cf7a14d3db78938befb848bcdaafafdf8e38de554952c03bf92a9567e81b896",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/selection.json",
+      "sha256": "16ada75d031431de470cb043380d1eacf92f9a540491bf3a0fc5c3ade23c3809",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/sources.json",
+      "sha256": "f1ee3b9bf92371cf60b3f3203927326ff322895a57a33ca2937b10860fbbca82",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/stderr.txt",
+      "sha256": "f2925a57a852996f1b67ce0f27c1b6be0a40b75f9f9138daa6984e5451cad3eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/brightness.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/brightness.json",
+      "sha256": "491ca9b3a52ed2394c5bf37bd7750abb5ccd057c0fd023fc1684c63e7d114aca",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/checks.log",
+      "sha256": "f935cf641bcbaf785016c658590c8aec9a5f2ad215cd408d59f304b9d2575563",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/cold-preferences.json",
+      "sha256": "c7a45b05da58ebea019518d3b1a9f5f57956497ee494e76d015d21e6fd6359bd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/ContinuousScene.log",
+      "sha256": "1bfad33886046b2b58ec004c20f3165089ac1fb12b1cb1bdaa23514fe0175dcd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/ContinuousScene.preferences.json",
+      "sha256": "23ac40a4201847f4a3a1790cc94c40717cfd77d4b9d0718fd4f12d1fd993042a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/fixture-surface-field.png",
+      "sha256": "7a4985adf746276723dcfd759b11ea793fd815963014f8c14716b563493abf8f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\fixture-surface-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/heartbeat.log",
+      "sha256": "526b89437f29db311dc956dc91d6e292e4383e859fdb931b9c5354eddf8b3080",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/LightAndDarkness.lighting.json",
+      "sha256": "79bca5ffd244c8e6009ac1ce229884f27c67265f5e47b39eb77abe3eb3d5da7a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/LightAndDarkness.log",
+      "sha256": "d75fcef8f89781a82c2b715a3636369cd19d3659197ae03839cf022d49576669",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/ModSettings.log",
+      "sha256": "36ea3f429c9aa5355d9e379557e3b6c0f93a3f958d8b587006c0fe70c35c2668",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/progress.json",
+      "sha256": "aa28c2b63cb767b0e13f75c22420c1ed11b087dbdd66143c3a27f9ec49a360d1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\progress.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/RealisticVision_config.txt",
+      "sha256": "6bd42f9f14600e74310f44a044b6921e886a788bcd8df3724b275d43dff080eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\RealisticVision_config.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/regional-settings.png",
+      "sha256": "9d223b63efaec1aa7bf497d1f52d98c0c75aa7c82531527e3edf4489be4523bc",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\regional-settings.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/RVision.log",
+      "sha256": "14406dca20b94dde0b0431045e62e9d8342cef5ebc31ef73551d53814731f0a6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/sample-1-ambient125.png",
+      "sha256": "42a5c0ddcda75762617d2ffc0be3d9d1971efdf6b83229de493a27fa045453ae",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\sample-1-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/sample-1-baseline060-actual.png",
+      "sha256": "2b07bfb3052987491562b910bb85c7a5123cb2ab732bbffb5712374b09710e94",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\sample-1-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/sample-1-baseline060-field.png",
+      "sha256": "6d842a3bd23c72917f5848a37d80316467e14b104bdf66a43b2fcdcedff7d0c4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\sample-1-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/sample-1-baseline060-isolated.png",
+      "sha256": "4c019964bfae4eaaeeaa1b9bcfc3bfb7e9b6fa5574a8d08cfb215092b0c23123",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\sample-1-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/sample-1-candidate-actual.png",
+      "sha256": "c0311a427d806e767a3b56b221f58729429ee4ccd8703c67d98b8434c6e5feeb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\sample-1-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/sample-1-candidate-field.png",
+      "sha256": "de974a43289a78733b3e2a5b5fa6c92d94aacb983cf787881b3742ef7c183727",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\sample-1-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/sample-1-candidate-isolated.png",
+      "sha256": "57d9ffe1fe388091303a892fcf62492612f34992c1659b124836ec3bae0e7abb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\sample-1-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/sample-1-native-actual.png",
+      "sha256": "da86f9b9a13f07d6ccac58b26dc7a1037938acce673b622b545db58225713da8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\sample-1-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/sample-1-native-isolated.png",
+      "sha256": "42a5c0ddcda75762617d2ffc0be3d9d1971efdf6b83229de493a27fa045453ae",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\sample-1-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/seed-preferences.json",
+      "sha256": "c7a45b05da58ebea019518d3b1a9f5f57956497ee494e76d015d21e6fd6359bd",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\seed-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/settling.log",
+      "sha256": "1138719951eb6d495622e9b7273c0ff6a89ff15a6e21c9c7db3ec8953413500a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\settling.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162305280074/storage/WallBlend.log",
+      "sha256": "cb5b083f2547cd565e624186bd788c604f66ea5bae764546daa3dd521ac82ced",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162305280074\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/compiler-stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\compiler-stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/compiler-stdout.txt",
+      "sha256": "d4f7e19663c6c17ef4eb4bae863d2dc979ae313f06dc45680ad20c4f579e1f71",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\compiler-stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/guards.json",
+      "sha256": "39d92eb16ed83422e1d14aefe317eb8251899e1a9d511dec5e8de4ae99ba995c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\guards.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/hashes.json",
+      "sha256": "58959eaa3ae6b836546a61230a071efc136b34a3c52723129a70e663a551facf",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\hashes.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/initial-guard.json",
+      "sha256": "8373dd2da36535551b062c9bb347814d390a787d255774e5825a6631196834d3",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\initial-guard.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/process.json",
+      "sha256": "e560f69169bedf176e296a9d069dd6501475cbb0ab03ce09161b8abbfa1bed39",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\process.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/run-plan.json",
+      "sha256": "a99021b63383975582e70dbdf417e988698477cd74d538f51d775a455b83d3b0",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\run-plan.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/selection.json",
+      "sha256": "aa827fffe1d367d7ec5669a99ef77c5c47bdfe6a040c95d4fdf35d3e5fb64bae",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\selection.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/sources.json",
+      "sha256": "8b4e3ef082ef816944cab0f7efa8a8511fb69e4c704656cc3ddc8df4bad006c2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\sources.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/stderr.txt",
+      "sha256": "c8d7385cc6c77fb7bb5eaf2550be069f5acb508971d7f32e5ad2a3695b0be512",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/brightness.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\brightness.done"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/brightness.json",
+      "sha256": "09923e8deed742d5b033553178c4d2fd206f25fda3c41820f3cc859e669ade8c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\brightness.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/checks.log",
+      "sha256": "5ddbba54e537097d5d2f8246a663736c61c1cff08b0fa3da566534cf480a18b1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/cold-preferences.json",
+      "sha256": "20d51a3056f437991374c17134ebad173837cbf6e0177900e7be8c208743ce73",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\cold-preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/ContinuousScene.log",
+      "sha256": "c6ce0f77e1f6ba2348cfd3f92c2c2c12bf1c1b55fde0a6042a73342e857f6427",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/ContinuousScene.preferences.json",
+      "sha256": "23ac40a4201847f4a3a1790cc94c40717cfd77d4b9d0718fd4f12d1fd993042a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\ContinuousScene.preferences.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/fixture-surface-field.png",
+      "sha256": "7a4985adf746276723dcfd759b11ea793fd815963014f8c14716b563493abf8f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\fixture-surface-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/heartbeat.log",
+      "sha256": "9163790eae81325ce0b7da061b25cb8ff9ca334edc364c9853c6c82bc48700a5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/LightAndDarkness.lighting.json",
+      "sha256": "aafe7e4ac2f042696259a42ce2cca13b761eae10d816fcfe6ea2da12abbb1bea",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\LightAndDarkness.lighting.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/LightAndDarkness.log",
+      "sha256": "6ae88aa424deddc263cdc6637a0be105c761f6aba247c57ae7615d0160193f20",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/ModSettings.log",
+      "sha256": "36ea3f429c9aa5355d9e379557e3b6c0f93a3f958d8b587006c0fe70c35c2668",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/progress.json",
+      "sha256": "3d33c799086240e488d85941311926d776f4755fa3cfc5448d53f3b65503bd60",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\progress.json"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/RealisticVision_config.txt",
+      "sha256": "6bd42f9f14600e74310f44a044b6921e886a788bcd8df3724b275d43dff080eb",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\RealisticVision_config.txt"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/regional-settings.png",
+      "sha256": "17bf8469cd1231326f089d3f6654cf81cd984fda931ffc254524506171bf9aac",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\regional-settings.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/RVision.log",
+      "sha256": "14406dca20b94dde0b0431045e62e9d8342cef5ebc31ef73551d53814731f0a6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/sample-1-ambient125.png",
+      "sha256": "93978bb34282450235206e5eab07c6a678e214a1b06efa02c6cd75f7ce991510",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\sample-1-ambient125.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/sample-1-baseline060-actual.png",
+      "sha256": "18ef34cd043563baf4cf50e9e0b8cd749cd72fbb8787101e123b8ddd1f53707c",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\sample-1-baseline060-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/sample-1-baseline060-field.png",
+      "sha256": "d0c9469fdd0cad6e9d739c49a0a2cc90831d1614b47ad798bda4ce4d2c7e1f37",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\sample-1-baseline060-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/sample-1-baseline060-isolated.png",
+      "sha256": "dbaf698562439f4f6cf405155bd721ddcdec6fd21fd8321aedf7133f0abad90a",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\sample-1-baseline060-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/sample-1-candidate-actual.png",
+      "sha256": "2574d3644924a225c0e9c7cf2178e0b486a2f4bc820ba6a7a974c01a64a3626e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\sample-1-candidate-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/sample-1-candidate-field.png",
+      "sha256": "23724965fcc69a41a4e744b5d0865356db041078cb7d2fdc60f5be02777872a9",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\sample-1-candidate-field.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/sample-1-candidate-isolated.png",
+      "sha256": "a71bd729e9e51b8e743c9091d4888ed175ca34a72c44d2eff78ebe887e0e4e52",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\sample-1-candidate-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/sample-1-native-actual.png",
+      "sha256": "9e46d532dfaa00db01c749e1a974d7746d47e97c98e2d44a3a5238a595928eca",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\sample-1-native-actual.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/sample-1-native-isolated.png",
+      "sha256": "93978bb34282450235206e5eab07c6a678e214a1b06efa02c6cd75f7ce991510",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\sample-1-native-isolated.png"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/settling.log",
+      "sha256": "a3c3e3b331a0f54a44859913eabdb22340e773f473ca40c7b1a467095723d5d6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\settling.log"
+    },
+    {
+      "path": "remains-lad-brightness-20261021162845781119/storage/WallBlend.log",
+      "sha256": "032e091f57d74d059bb9c26c20d9e463538f730d62fd480529ac3cb18b8053c0",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-brightness-20261021162845781119\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/hashes.json",
+      "sha256": "f6614d3f2ff368bd3f1ba7214e17d60847e916d42916da38e86a67f463d38b45",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\hashes.json"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/process.json",
+      "sha256": "d707fbf7b3f9da0b9a3de94e8ae640d91032950162267263b16d6fffbd6b3d9e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\process.json"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/selection.json",
+      "sha256": "f585e43ef2e506b57ba914e708fdbe397b72c2fa214ad14f0fd3d63b37cdb615",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\selection.json"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/stderr.txt",
+      "sha256": "54b43bcb93907bde6141bc054baaa033cdc0a826181ce668a2779d6c20ed2127",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/atmosphere-bright.png",
+      "sha256": "803e06a0533332354c035d0fe2ba6921d4dad036ef82d4a9baef47b120f34b08",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\atmosphere-bright.png"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/atmosphere-dim.png",
+      "sha256": "6cac155dcdcc15728fd5a66864a90cabe149007d9c5ef3c1066cd0d937b16259",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\atmosphere-dim.png"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/broken.png",
+      "sha256": "e7f68424a5673eaa785959d7149f2ffc61772bd1114f4a22a15a22ba9f6a4030",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\broken.png"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/ContinuousScene.log",
+      "sha256": "80f5a669b8a6951f923d09d64d4ed8faf5ece0d3b4fcd7e8490e69926c4beabe",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/fixture-frames.png",
+      "sha256": "a4419a530479bd56419ba72555db4c6a547dcef756f5d103ced8fe8577a93460",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\fixture-frames.png"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/landmark.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\landmark.done"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/landmark.json",
+      "sha256": "8e394e2b64909b89155fe1eda0dd06ac295bf2d47c60a88ae93fe2d5fed68f8e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\landmark.json"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/large-mixed.png",
+      "sha256": "08ec752ed2f20db94a113305797fc21988b3b507724d290e1d0b951b05bf93ff",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\large-mixed.png"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/LightAndDarkness.log",
+      "sha256": "48bbd2e9269a413c29305530e0eaa4ea21b123c724d091e7f7c28b9d97b4efa1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/lit.png",
+      "sha256": "1c114469196f479292018873463463fba25383287bde80a615054116ab7ec596",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\lit.png"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/ModSettings.log",
+      "sha256": "639907e1656c227ffd54e6f25f49a27e57535c1dacdaeee3d3da5b75e81eceb5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/repaired.png",
+      "sha256": "d9bec850349726ebe9d208e25e886cf1e519102ba521ad89182487af89cdee7f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\repaired.png"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/RVision.log",
+      "sha256": "f88873d64847d1d4430e236856c731c02f28ac3329193f57f5a6cb284cf9e84f",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/test.log",
+      "sha256": "3301806dbcaea59e729e601b76b8e86d49d2a56ca186bd69f48e42a806d56e5d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\test.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162344964083/storage/WallBlend.log",
+      "sha256": "b4d86ed9f8b6214b6a3da970a9b73c5f653f6eebf895052d42887a1da60d3f9b",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162344964083\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/hashes.json",
+      "sha256": "57962a3c68f2cd8577ed167da91cc0083a9ed54ee11cb7d5ecce58cc28792a81",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\hashes.json"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/process.json",
+      "sha256": "a54a10c812bc255d87eda1aed76cea0e88550a382e4694441d34465eb0b56969",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\process.json"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/selection.json",
+      "sha256": "daac27ea2b31c29cbe32ed6a7fcbdce33dad8e023674eab89b7edb7446889631",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\selection.json"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/stderr.txt",
+      "sha256": "1bcba8adaabbef3169caa3dbb76ed23351858c8d4958ee6da34a0f1feadcf4a9",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/storage/ContinuousScene.log",
+      "sha256": "9e55c78e997ca32bc23b4c935258ffc04ba2fbfd1d00a928ff4ed52a30a2ae29",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/storage/landmark.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\storage\\landmark.done"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/storage/landmark.json",
+      "sha256": "23d83fc97ffec0a09be406158c8427b165e434bf2f2f8304b241e3413c4f1c14",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\storage\\landmark.json"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/storage/LightAndDarkness.log",
+      "sha256": "cf857b6037248dbcf61494cebaae7866f61350d66b3525e46e5c2f3b93c9e573",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/storage/ModSettings.log",
+      "sha256": "639907e1656c227ffd54e6f25f49a27e57535c1dacdaeee3d3da5b75e81eceb5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/storage/RVision.log",
+      "sha256": "72f0d7af18655efb5641d59c7deed01cebd9e4d1459e84dafc22d2cd3c4ed7e2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/storage/test.log",
+      "sha256": "88247e3ed3caad4161bc16919166fc41c18e99af37ee794582575a43f003c1ff",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\storage\\test.log"
+    },
+    {
+      "path": "remains-lad-landmark-20261021162456468565/storage/WallBlend.log",
+      "sha256": "3309f69095927fe94e0546d26c6f172b37286324ecdf5ab02115828f31ed7c28",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-landmark-20261021162456468565\\storage\\WallBlend.log"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/competition.json",
+      "sha256": "78ef183be811cd38ab96d3eed8da3d8d9a331ac09b672adfc6ea6f9e782e0c0d",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\competition.json"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/hashes.json",
+      "sha256": "e016c8051cfe1d28e2b012377f44737a95540c81d54b0bdf0359e7a102deec20",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\hashes.json"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/process.json",
+      "sha256": "f14653928e908bc721fdc14103a14bf9c4193345bbd8f4d47ba25ac4ea0e448e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\process.json"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/selection.json",
+      "sha256": "df6a8d4268d28df2846e22d4e060f340e29e3a094c4b09bd07a046c17cdc1a63",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\selection.json"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/stderr.txt",
+      "sha256": "3cbbcbdf0fa4e03798d54f98d9d6b0ed136355b1cf421fbf056b5a130dacec54",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\stderr.txt"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\stdout.txt"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/checks.log",
+      "sha256": "9ee396db1de8f53e5f0a3951e2070c090bcd65bedf2722e7c6e4eb8160d420a1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\checks.log"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/ContinuousScene.log",
+      "sha256": "db795d4ac5a008a30d699998fab8e822f4346f644a8a037e68b27794220dfdb2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\ContinuousScene.log"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/heartbeat.log",
+      "sha256": "12a4307b258a88ed286e449bd028f816096ad580622061727cb64d538db617b1",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\heartbeat.log"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/LightAndDarkness.log",
+      "sha256": "b949c6bdc9c74dc7872bb77f7be7022cf9c0faa277d6c90ba9efb3eb9288ded4",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\LightAndDarkness.log"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/ModSettings.log",
+      "sha256": "639907e1656c227ffd54e6f25f49a27e57535c1dacdaeee3d3da5b75e81eceb5",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\ModSettings.log"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/native-projectiles-0.png",
+      "sha256": "5ce213bc8e99a69c59aed81be32799fefd5e6e4e6a21cf8c6c06df0bd719cb8e",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\native-projectiles-0.png"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/native-projectiles-1.png",
+      "sha256": "56b9b6d2b5162b561c434a16c9adb8282f516eb861d2ecba821142ae44bd5eb0",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\native-projectiles-1.png"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/native-projectiles-2.png",
+      "sha256": "12a90372c0f5323045dcf2e8e85e4947cbab666fc56dbc0c73f800ad42c80d48",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\native-projectiles-2.png"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/native-projectiles-3.png",
+      "sha256": "1e68aa7929c9a743f6986ef9ad4d8ffe7e46a6ea789ef2a1256699a46b455286",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\native-projectiles-3.png"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/native-shapes.json",
+      "sha256": "2731c1993cb8173e8bccff15f6f452721e6dbba0689fe54b671aabf661e28c01",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\native-shapes.json"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/ribbon-beam.png",
+      "sha256": "4bf0636aa7147787400f66fe5b5c5c4bcb78c1466103ba6c9105391dab87b9fc",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\ribbon-beam.png"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/ribbon-horizontal.png",
+      "sha256": "c9d57440c09a2817da48f279c41de6e2e1d8822b77c361f9d9b0044a0c16b537",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\ribbon-horizontal.png"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/RVision.log",
+      "sha256": "72f0d7af18655efb5641d59c7deed01cebd9e4d1459e84dafc22d2cd3c4ed7e2",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\RVision.log"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/trail.done",
+      "sha256": "2f9acb02faa121bb2a3621951f57b4c690655337edee2e5ac350be2b3be88ea8",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\trail.done"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/trail.json",
+      "sha256": "dd01109ed6e018bbe80ff37c230310945b82dbab7d318012a51450f186423b47",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\trail.json"
+    },
+    {
+      "path": "remains-lad-projectile-trails-20261021162525790834/storage/WallBlend.log",
+      "sha256": "c618209ae261832592b61e028985088935b2379312816f2d811e7e44b00bb474",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\evidence\\remains-lad-projectile-trails-20261021162525790834\\storage\\WallBlend.log"
+    },
+    {
+      "path": "freeze.json",
+      "sha256": "b80813ab50d0caf6b10f7ea3e6b528d1f8589e070b19159fc1c4e50c0a85e1fe",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\out\\brightness-v070-host3\\freeze.json"
+    },
+    {
+      "path": "suite.json",
+      "sha256": "65fa7f9d397225957dac1af8c2f98e8f1ae0595dded01e89122426a8bfcfd4c9",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\out\\brightness-v070-host3\\suite.json"
+    },
+    {
+      "path": "suite-bookkeeping.json",
+      "sha256": "f712e1d0401fb6949b2118e904d3b3690085fa77a96afddc4ad8272743becab6",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\out\\brightness-v070-host3\\suite-bookkeeping.json"
+    },
+    {
+      "path": "brightness-deployment-2026-10-21.json",
+      "sha256": "93b969faa5c468806d7fcf802f603e55c9e39eca4f475a4b02a06aba87b35654",
+      "source": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\state\\brightness-deployment-2026-10-21.json"
+    }
+  ],
+  "runs": 16,
+  "note": "Final six groups and installed smoke include all captures. Other attempts retain text evidence; the first successful Manehattan RGB comparison keeps its three source captures. Full working data remains in build/evidence."
+}

@@ -27,6 +27,7 @@ package lad {
         public var machines:LadMachineLights=new LadMachineLights();
         public var landmarks:LadLandmarkLights=new LadLandmarkLights();
         public var environment:LadEnvironment=new LadEnvironment();
+        public var lighting:LadLightingPreferences=new LadLightingPreferences();
         public var darkZones:Array=[];
         public var atmosphereTime:Number=0;
         public var lastExposure:Number=1;
@@ -63,7 +64,8 @@ package lad {
         public function LadRuntime(value:*) {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
-            main.addChild(new LadCarrier({version:"0.6.0",runtime:this}));
+            lighting.load();ambient=0.14*lighting.multiplier;environment.brightness=lighting;
+            main.addChild(new LadCarrier({version:"0.7.0",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.addEventListener(Event.ADDED,objectAdded,true);
@@ -72,7 +74,7 @@ package lad {
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.6.0 loaded");
+            LadLog.write("v0.7.0 loaded");
         }
         private function objectAdded(event:Event):void {
             if(!enabled || !atmosphere.settings.projectiles || !location || !world || world.loc!==location) return;
@@ -238,7 +240,7 @@ package lad {
         public function lights(view:Rectangle=null):Array {
             var result:Array=location?environment.lights(view || field.bounds):[];
             for each(var lamp:Object in lamps) if(lamp.state.hp>0 && lamp.state.on && lamp.powered)
-                result.push({id:lamp.key,x:lamp.x,y:lamp.y,radius:lamp.radius,color:lamp.color,power:lamp.power,angle:0,cone:Math.PI*2,
+                result.push({id:lamp.key,x:lamp.x,y:lamp.y,radius:lamp.radius*lighting.lampRange,color:lamp.color,power:lamp.power,angle:0,cone:Math.PI*2,
                     staticScene:!atmosphere.settings.flicker || lamp.state.atmosphere.mode=="steady"});
             if(player && store.data.headlamp) {
                 var x:Number=player.X+player.storona*12,y:Number=player.Y-player.scY*0.72;
@@ -395,6 +397,12 @@ package lad {
             render();
         }
         private function message(value:String):void {notice=value;noticeUntil=getTimer()+2400;}
+        private function regionSetting(key:String,label:String):Object {
+            var self:LadRuntime=this;
+            return {key:"base_"+key,kind:"slider",label:label+"基础亮度 %",min:10,max:100,step:1,
+                get:function():* {return Math.round(self.lighting.getLevel(key)*100);},
+                set:function(v:*):void {self.lighting.setLevel(key,Number(v)/100);self.render();}};
+        }
         private function registerSettings():void {
             var carrier:*=main.getChildByName("ModSettingsCarrier");
             keys.attach(carrier && "modAPI" in carrier?carrier.modAPI:null);
@@ -403,10 +411,11 @@ package lad {
             carrier.modAPI.registerPage("light-and-darkness","光与暗",[
                 {key:"enabled",kind:"check",label:"启用动态照明",get:function():* {return self.enabled;},set:function(v:*):void {self.setEnabled(Boolean(v));}},
                 {key:"headlamp",kind:"check",label:"随身灯",get:function():* {return self.store.data?self.store.data.headlamp:true;},set:function(v:*):void {if(self.store.data){self.store.data.headlamp=Boolean(v);self.store.flush();}}},
-                {key:"ambient",kind:"slider",label:"环境亮度倍率",min:0.5,max:1.5,step:0.05,get:function():* {return self.ambient/0.14;},set:function(v:*):void {self.ambient=0.14*Number(v);}},
+                {key:"ambient",kind:"slider",label:"环境亮度总倍率",min:0.5,max:1.5,step:0.05,get:function():* {return self.ambient/0.14;},set:function(v:*):void {self.lighting.multiplier=LadAtmosphere.clamp(v,0.5,1.5,1);self.ambient=0.14*self.lighting.multiplier;self.render();}},
                 {key:"detection",kind:"check",label:"明暗影响普通视觉发现",get:function():* {return self.detection;},set:function(v:*):void {self.detection=Boolean(v);}},
                 {key:"flicker",kind:"check",label:"故障灯闪烁",get:function():* {return self.atmosphere.settings.flicker;},set:function(v:*):void {self.setAtmospherePreference("flicker",Boolean(v));}},
                 {key:"lampBrightness",kind:"slider",label:"场景灯亮度倍率",min:0.25,max:1.5,step:0.05,get:function():* {return self.atmosphere.settings.brightness;},set:function(v:*):void {self.setAtmospherePreference("brightness",v);}},
+                {key:"lampRange",kind:"slider",label:"场景灯照明范围倍率",min:0.5,max:1.5,step:0.05,get:function():* {return self.lighting.lampRange;},set:function(v:*):void {self.lighting.lampRange=LadAtmosphere.clamp(v,0.5,1.5,1.10);self.render();}},
                 {key:"flickerSpeed",kind:"slider",label:"故障闪烁速度倍率",min:0.25,max:2,step:0.25,get:function():* {return self.atmosphere.settings.speed;},set:function(v:*):void {self.setAtmospherePreference("speed",v);}},
                 {key:"darkZones",kind:"check",label:"局部黑暗区",get:function():* {return self.atmosphere.settings.darkZones;},set:function(v:*):void {self.setAtmospherePreference("darkZones",Boolean(v));}},
                 {key:"darkness",kind:"slider",label:"黑暗区浓度",min:0,max:1,step:0.1,get:function():* {return self.atmosphere.settings.darkness;},set:function(v:*):void {self.setAtmospherePreference("darkness",v);}},
@@ -414,7 +423,11 @@ package lad {
                 {key:"machines",kind:"check",label:"炮塔与蜘蛛地雷微光",get:function():* {return self.atmosphere.settings.machines;},set:function(v:*):void {self.setAtmospherePreference("machines",Boolean(v));}},
                 {key:"landmarks",kind:"check",label:"存档点、出口、试炼入口与终端照明",get:function():* {return self.atmosphere.settings.landmarks;},set:function(v:*):void {self.setAtmospherePreference("landmarks",Boolean(v));}},
                 {key:"projectileBrightness",kind:"slider",label:"弹丸照明亮度倍率",min:0.25,max:1.5,step:0.05,get:function():* {return self.atmosphere.settings.projectileBrightness;},set:function(v:*):void {self.setAtmospherePreference("projectileBrightness",v);}}
-            ],null,"附近灯具可开关；受损或故障时按住操作键维修，消耗废金属 ×2。改键见快捷键页。");
+            ],function():void {self.lighting.save();},"附近灯具可开关；受损或故障时按住操作键维修，消耗废金属 ×2。改键见快捷键页。");
+            var regionItems:Array=[];
+            for(var i:int=0;i<LadLightingPreferences.KEYS.length;i++)regionItems.push(regionSetting(LadLightingPreferences.KEYS[i],LadLightingPreferences.LABELS[i]));
+            carrier.modAPI.registerPage("light-and-darkness-regions","光与暗 · 地区亮度",regionItems,function():void {self.lighting.save();},
+                "100% 保留原图亮度；室外天光默认100%，窗洞向室内渐弱。即时生效，关闭设置时跨存档保存；总倍率在光与暗页。灯光填补暗处，黑暗区仍可局部压暗。");
             settings=carrier.modAPI;
         }
     }

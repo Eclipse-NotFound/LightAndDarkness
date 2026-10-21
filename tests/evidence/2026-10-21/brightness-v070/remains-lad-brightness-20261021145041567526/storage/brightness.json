@@ -1,0 +1,210 @@
+{
+  "boundary": "Native Tile fixtures and same paused native scene, candidate versus frozen 0.6.0 classes. Software captures, no FPS claim or player storage.",
+  "checks": 27,
+  "assertions": [
+    {
+      "pass": true,
+      "label": "candidate initializes before loading baseline definitions",
+      "detail": "0.7.0"
+    },
+    {
+      "pass": true,
+      "label": "comparison uses installed ContinuousScene interface",
+      "detail": "0.9.0"
+    },
+    {
+      "pass": true,
+      "label": "CS native mode is explicitly applied and read back before map generation",
+      "detail": false
+    },
+    {
+      "pass": true,
+      "label": "frozen comparison class reports baseline 0.6.0",
+      "detail": "0.6.0"
+    },
+    {
+      "pass": true,
+      "label": "RV setting interface available for isolated lighting comparison",
+      "detail": {
+        "waitFrames": 11,
+        "waitMs": 410
+      }
+    },
+    {
+      "pass": true,
+      "label": "fixtures use the native typed Tile path",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient rbl",
+      "detail": {
+        "actual": 0.82,
+        "expected": 0.82
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient random_sewer",
+      "detail": {
+        "actual": 0.48,
+        "expected": 0.48
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient begin",
+      "detail": {
+        "actual": 0.48,
+        "expected": 0.48
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient random_encl",
+      "detail": {
+        "actual": 0.72,
+        "expected": 0.72
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient test",
+      "detail": {
+        "actual": 0.68,
+        "expected": 0.68
+      }
+    },
+    {
+      "pass": true,
+      "label": "selected closed-region ambient random_mane",
+      "detail": {
+        "actual": 0.62,
+        "expected": 0.62
+      }
+    },
+    {
+      "pass": true,
+      "label": "daylight city keeps sheltered ruins at the regional floor",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "explicit power outage retains its dark floor",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "flight flag alone does not create daylight",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "native sky geometry still supplies daylight without flight flag",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "transparent rendered window wall supplies local light",
+      "detail": {
+        "opening": 1,
+        "covered": 0.6196078431372549
+      }
+    },
+    {
+      "pass": true,
+      "label": "unchanged ordinary raster retains a stable environment signature",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "repeated static render preserves identical field pixels",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "ordinary room replacement bitmap invalidates its backdrop transmission",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "transparent raster without exterior context cannot invent underground sky",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "unrasterized CS chunk is unknown rather than transparent sky",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "CS first resident raster invalidates previously empty backdrop cache",
+      "detail": {
+        "resident": 1,
+        "empty": 0.6196078431372549
+      }
+    },
+    {
+      "pass": true,
+      "label": "CS replacement raster refreshes aperture transmission",
+      "detail": null
+    },
+    {
+      "pass": true,
+      "label": "room slices retain independent indoor and outdoor air fields",
+      "detail": {
+        "base": 0.62,
+        "outdoor": 1,
+        "indoor": 0.6196078431372549
+      }
+    },
+    {
+      "pass": true,
+      "label": "opaque wall receives sky on its exposed face",
+      "detail": {
+        "base": 0.62,
+        "surface": 0.996078431372549
+      }
+    },
+    {
+      "pass": true,
+      "label": "surface reception does not transmit through a thin wall",
+      "detail": {
+        "base": 0.62,
+        "behind": 0.6196078431372549
+      }
+    },
+    {
+      "pass": false,
+      "label": "opening native Tile door invalidates cached sky occlusion",
+      "detail": {
+        "open": 0.6666666666666666,
+        "closed": 0.6196078431372549
+      }
+    }
+  ],
+  "mode": "verify",
+  "applicationID": "remains-lad-brightness-20261021145041567526",
+  "version": "0.7.0",
+  "error": "Error: ASSERT opening native Tile door invalidates cached sky occlusion Error: ASSERT opening native Tile door invalidates cached sky occlusion\n\tat BrightnessTestMod/check()\n\tat BrightnessTestMod/exercise()\n\tat BrightnessTestMod/step()",
+  "roomsLoad": 1,
+  "loader": {
+    "session": "run_1792565449751_979101",
+    "ok_ModLoaderMod": "run_1792565449751_979101|init @1792565450472",
+    "boot": "run_1792565449751_979101|v2 col=2 requested=6 @1792565449801",
+    "requested_BrightnessTestMod": "run_1792565449751_979101|line 22 @1792565449792",
+    "ok_ContinuousSceneMod": "run_1792565449751_979101|init @1792565450357",
+    "requested_ContinuousSceneMod": "run_1792565449751_979101|line 21 @1792565449788",
+    "boot_start": "run_1792565449751_979101|v2 run=run_1792565449751_979101 @1792565449758",
+    "ok_BrightnessTestMod": "run_1792565449751_979101|init @1792565450488",
+    "ok_LightAndDarknessMod": "run_1792565449751_979101|init @1792565450464",
+    "requested_LightAndDarknessMod": "run_1792565449751_979101|line 23 @1792565449796",
+    "ok_WallBlendMod": "run_1792565449751_979101|init @1792565450503",
+    "requested_ModLoaderMod": "run_1792565449751_979101|line 12 @1792565449783",
+    "ok_RealisticVisionMod": "run_1792565449751_979101|init @1792565450496",
+    "requested_WallBlendMod": "run_1792565449751_979101|line 24 @1792565449799",
+    "requested_RealisticVisionMod": "run_1792565449751_979101|line 15 @1792565449785"
+  },
+  "baselineVersion": "0.6.0",
+  "samples": []
+}

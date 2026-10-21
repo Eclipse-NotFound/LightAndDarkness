@@ -1,0 +1,8 @@
+FAIL TypeError: Error #1009 TypeError: Error #1009
+	at MethodInfo-34()
+	at MethodInfo-34()
+	at MethodInfo-34()
+	at MethodInfo-34()
+	at MethodInfo-34()
+	at BrightnessChecks$/ui()
+	at BrightnessTestMod/step()

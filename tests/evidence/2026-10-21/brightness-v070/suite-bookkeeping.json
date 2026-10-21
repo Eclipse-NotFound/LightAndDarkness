@@ -1,0 +1,43 @@
+{
+  "status": "FUNCTIONAL_GATES_PASS",
+  "checks": 588,
+  "note": "All six drivers returned PASS. Running suite code had old trail-directory glob and failed only while collecting the last evidence path; exact existing trail evidence verified independently by release gate. Registry group remains failed; no results were fabricated or repeated.",
+  "results": [
+    {
+      "label": "brightness:verify",
+      "checks": 165,
+      "evidence": "build/evidence/remains-lad-brightness-20261021162001217906",
+      "session": "run_1792570809443_668771"
+    },
+    {
+      "label": "brightness:large",
+      "checks": 143,
+      "evidence": "build/evidence/remains-lad-brightness-20261021162157178768",
+      "session": "run_1792570925832_398044"
+    },
+    {
+      "label": "brightness:cold",
+      "checks": 125,
+      "evidence": "build/evidence/remains-lad-brightness-20261021162305280074",
+      "session": "run_1792570994961_905704"
+    },
+    {
+      "label": "landmark:regression",
+      "checks": 101,
+      "evidence": "build/evidence/remains-lad-landmark-20261021162344964083",
+      "session": "run_1792571032663_943305"
+    },
+    {
+      "label": "landmark:cold",
+      "checks": 11,
+      "evidence": "build/evidence/remains-lad-landmark-20261021162456468565",
+      "session": "run_1792571104367_595801"
+    },
+    {
+      "label": "trail:verify",
+      "checks": 43,
+      "evidence": "build/evidence/remains-lad-projectile-trails-20261021162525790834",
+      "session": "run_1792571133711_146529"
+    }
+  ]
+}

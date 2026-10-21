@@ -1,33 +1,36 @@
 # LightAndDarkness 当前记忆
 
 ## 1. 模组定位
-为Remains 1.02增加战术光暗、墙门遮光、随身灯、场景灯损坏/维修、故障氛围、环境光、弹丸拖尾及机器/关键设施散光。入口LightAndDarknessMod.init(main:*)，正式路径release/LightAndDarknessMod.swf。当前0.6.0修复背景补光并小幅调整封闭地区基础亮度，保留0.5.1缓存与可见弹丸优化。
+Remains 1.02战术光暗：墙门遮光、随身灯、场景灯损坏/维修与保存、氛围暗区、机器/地标光、原生弹形拖尾。入口LightAndDarknessMod.init(main:*)，运行路径release/LightAndDarknessMod.swf。0.7.0恢复无遮挡室外背景原图亮度，新增七类地区基础亮度和灯范围滑块。
 
 ## 2. 用户偏好与边界
-中文，战术光暗与生存探索并重，兼顾氛围。用户本轮指定调整背景光和地区基础亮度，谨慎改变原视觉风格；持续授权验证后本机部署及相关会话协调。其他模组最小只读，工具用Sandevistan/build/tools；不动真实pfe存储或用户进程、不用Ghost。
-2026-10-20用户新增测试登记规则：先读ModLoader/docs/TEST-REGISTRY.md并刷新共享表，专用驱动经Registration申请game占用，自行等待/写回，不再逐次人工交窗。入口tools/registered-lighting-test.py覆盖background/landmark/trail/perf/release。唯一AIR身份、私有桌面/存储、只停自有实例。功能/暂停像素测试允许离线JVM并行，仍记录并发AIR与2GiB启动/512MiB运行可提交余量；真正性能测量单独控制负载。不能以空表认定旧进程不存在。
+中文，战术光暗与生存探索并重，兼顾氛围。本轮用户明确场景仍暗，要求室外先恢复原版亮度、地区滑块及灯具配合。持续授权本机验证后部署与必要跨会话协调；其他模组最小只读，不动真实pfe存储或用户进程，不用Ghost。
+游戏测试先读ModLoader/docs/TEST-REGISTRY.md、刷新共享表并用Registration占用；不逐次人工问其他会话。唯一AIR身份/私有桌面/存储，只停止自有实例。功能测试可与离线JVM并行，仍保守检查其他AIR及2GiB启动/512MiB运行提交余量；性能测量另隔离。空表不等于无其他AIR。
 
 ## 3. 当前正式状态
-**0.6.0于2026-10-20 10:26:27部署，10:27:26正式回读66项通过。** SHA256 E3233F78D7F9AF8F0AC4F99AA78ABB1F9FA0D4931B272D7D551B62C7C36E796E，40,881字节、22自身类，无fe存根/测试类。冻结build/out/background-v060-r2，验收后未重编译。
-六组门禁556（背景普通102/大图82、地标217、灯具101、冷档11、曳光43）＋安装66＝622。回执state/background-deployment-2026-10-20.json，restartSmoke.status=PASS。归档tests/evidence/2026-10-20/background-v060/含13轮217文件，成功/失败日志均保留，gallery.html为原始前后图。
-宿主81C1BFB552AA8EFBB20CCF15CB404AB5D879F58515B466FF788A079F5F0EC015；CS0.8.2/CD65CEC6C763EF18B345BCC1208BAAA4911E02BDB1F557FE316EBBABFF9BD856；WB0.5.9-scene/14112DA06214BCA51C6875D2527E73246DCB4C985CAADDA719EB4F77F1C0920D；RV76314B81/MLBD71B6F3。本轮只替换LAD；宿主、依赖、配置、清单和真实存档未改。
-旧0.5.1/BAFE备份build/backups/background-20261020-102627-818378/LightAndDarknessMod.v0.5.1.swf。仅在正式仍E323时按发布工具回滚本文件并重启，不回滚宿主/其他模组。
+**0.7.0于2026-10-21 16:28:45部署，16:29:24正式回读PASS。**
+SHA256 8ADBA6914DF5AADA4DF12A646B6C22DF4B95B9630A55DD05CA7F713621C7E3EF，42,209字节/23自身类，无fe存根或测试类。最终冻结build/out/brightness-v070-host3；与r2、host2候选字节完全相同，后两次只针对其他会话更新的宿主/RV重新冻结依赖。
+六组588（普通165、大图143、偏好冷启125、灯具101、灯具冷档11、曳光43）＋正式回读124＝712。回执state/brightness-deployment-2026-10-21.json，安装登记a56f5e46a45240aeba143ae6fea21def已通过。
+宿主7D423BD7B7DD7D2B997E692BD1E22EF520879CD42387C14653C116C15385BCD4；CS7F1F2961C6E299D949423591F3C65C610C2EAEFA7FC72E8A583A402770D6B51F；RVF2B8A973D9D2A374C9BD8F5DA9D29040266954C8F139B8C85BFA0AAAA749A561；MLBD71B6F3/WB14112DA0，完整指纹见回执。只更新LAD，其他模组和真实存档未改。
+旧0.6.0/E3233F78备份build/backups/brightness-20261021-162845-623837/LightAndDarknessMod.v0.6.0.swf。仅在正式仍8ADBA时经发布工具恢复本文件并重启，不回滚宿主/其他模组。
 
-## 4. 实现与验收结论
-新增LadBackdrop借用原生前/后景位图alpha，兼容CS原生分块，不复制整张地图。室外语境下的窗墙、圆窗、破洞成为环境补光来源；地下装饰洞不会凭空产生天光。原生实体表面按半高/斜面几何受光，完整墙门仍阻断传播。几何快照检测phis/zForm/diagon/phY1，保持缓存可正确失效。
-仅封闭非安全/非停电地区基础值+0.04：维护设施.44→.48，一般室内.38→.42，废墟.36→.40，地下.28→.32；安全.58、停电.18、已有日光地区不统一抬高。现有灯功率/颜色/闪烁、原图、弹形、保存格式不变。
-6普通场景和马哈顿25/工厂12区大图实际对照；候选和冻结0.5.1类在同暂停场景/机位/灯源/视野状态下比较。确认类分离和共享原生Tile，8帧场/相机稳定；是环境/光场对照，不是独立完整版本双开。马哈顿窗洞更清楚、地下轻微提升，营地不变，无新增严重泛白/光漏。
-曾发现r1 Runtime版本标识遗漏、首图RV每30帧注册而探针读取过早、旧JVM守卫过严，均记录后修正重跑。曳光旧驱动一轮启动超时无done；补CS就绪等待/心跳、非perf不加载未使用基线后43通过，未单独确证其根因。源码及测试由主代理与子代理协作，发布只由主代理执行。
+## 4. 实现与验证结论
+“模组 → 光与暗 · 地区亮度”：室外100%、安全82%、维护72%、一般室内68%、废墟62%、地下48%、停电24%，每项10–100/步进1。原“光与暗”页总倍率默认1、灯亮度保留已有值，新增范围0.5–1.5/默认1.10。
+LadLightingPreferences在AIR应用存储LightAndDarkness.lighting.json保存地区值/总倍率/范围；关闭任一照明设置页保存，拖动只预览，跨槽使用。灯具耐久/开关/维修等世界状态仍随槽，不重置旧档。
+天空上限.70→1.0，传播每格.065→.11以保留七格缓存边界。地区值进入环境缓存键，灯半径已有阴影缓存键；SCREEN叠光在高底光上增量更小、最终不超过原图RGB。原生窗洞/表面受光、12px光场、稳定灯缓存和拖尾预算保留。
+同暂停场景0.6环境类/0.7/隐藏LAD光场三方对照：6普通图、马哈顿25区和工厂12区；另验原生7滑块事件、设置全新进程恢复、墙门/破坏/灯维修保存/曳光。查看原始截图无新增严重泛白/穿墙。首次马哈顿室外破口18,200像素与原图RGB完全相同，旧环境约69%；仅该ROI证明精确一致，不扩大为所有墙面/全地图。
+失败记录均保留：旧门测试阈值改新预期；探针先开Pip再调路由、匿名显示对象空名防护；大图暂停初期签名变，改连续8帧稳定后取样；JSON字符串顺序比较改逐值。候选生产字节均未变。
+最后六驱动均PASS，但外层旧目录匹配式收集曳光路径失败，b295登记保留未通过；发布门独立复核最后43项、全部输入与session后补清单，见suite-bookkeeping.json。安装组独立通过，不把记账失败伪造为绿灯。
 
-## 5. 已知边界与未完成目标
-12像素平滑场在极薄表面仍有羽化；半高地形沿用原生opac=0透光语义。贴花revision不单独触发背景重采样，小弹孔轮廓等下一次环境刷新同步；未击穿实体仍挡光。未认证DLC、联机、全部639模板逐一游玩、前台GPU或FPS。
-0.5.1完整14模组宽屏历史帧中位：普通开43–46.5ms/关33ms，大图开95–102ms/关84–86ms；不是0.6.0的新性能认证。“接近原版”整体性能目标未完全达成，密集等离子尖峰保留。当前仅保留其优化，不声称背景补光提高FPS。
-随身灯仍为内置验证玩法，无独立装备/电池/掉落；地火/持续附身燃烧未实现。氛围/弹丸/机器/地标开关、单灯耐久维修随槽保存，环境倍率/感知开关仍为本次启动偏好。RealisticVision遮罩沿自身规则，补光不揭开不可见区域。
+## 5. 已知边界
+地区百分比是乘法场参数而非物理照度。100%恢复无遮挡背景，原图本身夜色、室内遮挡、局部暗区与RealisticVision黑幕仍可能较暗。12px羽化、半高opac=0透光、小弹孔等后续环境刷新仍沿0.6边界。未认证DLC、联机、全部639模板或前台GPU/FPS。
+本轮仅证明范围缓存不反复构造和功能预算，不声称提高整套14模组FPS。0.5.1历史帧耗时不是0.7性能证明。独立灯具装备/电池/掉落、地火持续燃烧仍未实现。氛围/弹丸/机器/地标和灯具状态随槽；感知开关仍本次启动偏好，地区/范围/总倍率现已跨启动保存。
 
 ## 6. 接续点
-本轮实现、测试、部署与正式复验已完成，不再开AIR/JVM；共享登记d89977f8f08e46c5b5bc009e7c56eaff已PASS。已告知整合与CS会话新正式SHA，后续测试需按新LAD冻结依赖。真实游戏保存退出并重启后生效。
-后续调整用当前0.6.0源码；不要运行写死旧版的部署脚本。tools/release-background.py校验源码/素材/运行副本/正式依赖，install-background-and-smoke.py将安装与复验包在同一次登记，任何失败按实际目标SHA回滚。无定时任务。
+本轮实现、部署及正式复验完成，不再启动测试。现有游戏须玩家保存退出重启。新工作从0.7源码继续，不运行写死旧版本的background发布脚本。
+tools/release-brightness.py可验证冻结源/资产/依赖、备份部署及SHA保护回滚；install-brightness-and-smoke.py包装安装与正式回读；registered-lighting-test.py统一登记。run-brightness-suite.py目录匹配式已修正。测试不能用JSON输出顺序断言对象等价，也不能以固定8帧假定CS加载稳定。
+原始工作证据build/evidence；正式归档tests/evidence/2026-10-21/brightness-v070含16轮470文件，最终测试全截图、其他尝试文本及首次ROI三图。无后台自动化或遗留测试实例。
 
 ## 7. 深入入口
-tests/background-lighting-2026-10-20.md；design/background-lighting-v0.6.md；state/background-deployment-2026-10-20.json；tests/evidence/2026-10-20/background-v060/gallery.html；tools/run-background-lighting-tests.py及registered-lighting-test.py。
-原调查design/background-lighting-investigation-2026-10-20.md；历史性能tests/performance-2026-10-20.md，历史拖尾tests/trails-verification-2026-10-20.md；环境规则design/environment-v0.4.md。journal与decisions/changelog.md保留历程。
+tests/brightness-2026-10-21.md；design/brightness-v0.7.md；state/brightness-deployment-2026-10-21.json；tests/evidence/2026-10-21/brightness-v070/gallery.html。
+历史：tests/background-lighting-2026-10-20.md、design/background-lighting-v0.6.md、design/background-lighting-investigation-2026-10-20.md、tests/performance-2026-10-20.md、design/projectile-shapes-v0.5.md、decisions/changelog.md与state/journal.md。

@@ -1,0 +1,7 @@
+3733 [ContinuousScene] v0.9.0 loaded
+9045 [ContinuousScene] registered 192x75 native land kind=
+9049 [ContinuousScene] settings registered continuousscene
+9051 [ContinuousScene] heartbeat land=menu
+39055 [ContinuousScene] heartbeat land=surf
+69076 [ContinuousScene] heartbeat land=random_sewer
+99088 [ContinuousScene] heartbeat land=random_encl

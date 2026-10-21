@@ -1,0 +1,28 @@
+PASS candidate initializes before loading baseline definitions "0.7.0"
+PASS comparison uses installed ContinuousScene interface "0.9.0"
+PASS CS native mode is explicitly applied and read back before map generation false
+PASS frozen comparison class reports baseline 0.6.0 "0.6.0"
+PASS RV setting interface available for isolated lighting comparison {"waitFrames":11,"waitMs":410}
+PASS fixtures use the native typed Tile path null
+PASS selected closed-region ambient rbl {"actual":0.82,"expected":0.82}
+PASS selected closed-region ambient random_sewer {"actual":0.48,"expected":0.48}
+PASS selected closed-region ambient begin {"actual":0.48,"expected":0.48}
+PASS selected closed-region ambient random_encl {"actual":0.72,"expected":0.72}
+PASS selected closed-region ambient test {"actual":0.68,"expected":0.68}
+PASS selected closed-region ambient random_mane {"actual":0.62,"expected":0.62}
+PASS daylight city keeps sheltered ruins at the regional floor null
+PASS explicit power outage retains its dark floor null
+PASS flight flag alone does not create daylight null
+PASS native sky geometry still supplies daylight without flight flag null
+PASS transparent rendered window wall supplies local light {"opening":1,"covered":0.6196078431372549}
+PASS unchanged ordinary raster retains a stable environment signature null
+PASS repeated static render preserves identical field pixels null
+PASS ordinary room replacement bitmap invalidates its backdrop transmission null
+PASS transparent raster without exterior context cannot invent underground sky null
+PASS unrasterized CS chunk is unknown rather than transparent sky null
+PASS CS first resident raster invalidates previously empty backdrop cache {"resident":1,"empty":0.6196078431372549}
+PASS CS replacement raster refreshes aperture transmission null
+PASS room slices retain independent indoor and outdoor air fields {"base":0.62,"outdoor":1,"indoor":0.6196078431372549}
+PASS opaque wall receives sky on its exposed face {"base":0.62,"surface":0.996078431372549}
+PASS surface reception does not transmit through a thin wall {"base":0.62,"behind":0.6196078431372549}
+FAIL opening native Tile door invalidates cached sky occlusion {"open":0.6666666666666666,"closed":0.6196078431372549}

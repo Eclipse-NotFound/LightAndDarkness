@@ -1,0 +1,488 @@
+[
+  {
+    "environment": 0.82,
+    "stability": {
+      "pixelsStable": true,
+      "observedFrames": 8,
+      "signatureStable": true,
+      "cameraStable": true,
+      "settleFrames": 8
+    },
+    "backform": 0,
+    "roomKey": "rbl|loc0_0|0|0|0||false|48|25|25d9f2d9",
+    "actual": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.5764705882352941,
+        "airPoints": 967,
+        "airMedian": 0.7843137254901961,
+        "solidPoints": 233
+      },
+      "candidate": {
+        "solidMedian": 0.8196078431372549,
+        "airPoints": 967,
+        "airMedian": 0.9058823529411765,
+        "solidPoints": 233
+      }
+    },
+    "headlamp": false,
+    "transpFon": false,
+    "isolated": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.5764705882352941,
+        "airPoints": 967,
+        "airMedian": 0.7843137254901961,
+        "solidPoints": 233
+      },
+      "candidate": {
+        "solidMedian": 0.8196078431372549,
+        "airPoints": 967,
+        "airMedian": 0.9058823529411765,
+        "solidPoints": 233
+      }
+    },
+    "fon": "fonWay",
+    "scene": {
+      "spaceY": 25,
+      "viewReady": true,
+      "spaceX": 48,
+      "nativeRegions": 0,
+      "stateUsesCurrentLocation": false,
+      "nativeEnabled": false,
+      "sceneLarge": false
+    },
+    "regions": 1,
+    "mode": "verify",
+    "rvEnabled": true,
+    "room": "loc0_0",
+    "land": "rbl",
+    "worldPaused": true,
+    "swindow": {
+      "nativeObjects": 2,
+      "visibleMasks": 2,
+      "environmentSources": 4
+    },
+    "prefix": "sample-1",
+    "backwall": "tStConcrete"
+  },
+  {
+    "environment": 0.68,
+    "stability": {
+      "pixelsStable": true,
+      "observedFrames": 8,
+      "signatureStable": true,
+      "cameraStable": true,
+      "settleFrames": 8
+    },
+    "backform": 0,
+    "roomKey": "surf|loc0_1|0|1|0||false|48|25|b9529b0a",
+    "actual": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.3764705882352941,
+        "airPoints": 975,
+        "airMedian": 0.6980392156862745,
+        "solidPoints": 225
+      },
+      "candidate": {
+        "solidMedian": 0.6784313725490196,
+        "airPoints": 975,
+        "airMedian": 1,
+        "solidPoints": 225
+      }
+    },
+    "headlamp": false,
+    "transpFon": false,
+    "isolated": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.3764705882352941,
+        "airPoints": 975,
+        "airMedian": 0.6980392156862745,
+        "solidPoints": 225
+      },
+      "candidate": {
+        "solidMedian": 0.6784313725490196,
+        "airPoints": 975,
+        "airMedian": 1,
+        "solidPoints": 225
+      }
+    },
+    "fon": "fonDarkClouds",
+    "scene": {
+      "spaceY": 25,
+      "viewReady": true,
+      "spaceX": 48,
+      "nativeRegions": 0,
+      "stateUsesCurrentLocation": false,
+      "nativeEnabled": false,
+      "sceneLarge": false
+    },
+    "regions": 1,
+    "mode": "verify",
+    "rvEnabled": true,
+    "room": "loc0_1",
+    "land": "surf",
+    "worldPaused": true,
+    "swindow": {
+      "nativeObjects": 0,
+      "visibleMasks": 0,
+      "environmentSources": 0
+    },
+    "prefix": "sample-2",
+    "backwall": "sky"
+  },
+  {
+    "environment": 0.62,
+    "stability": {
+      "pixelsStable": true,
+      "observedFrames": 8,
+      "signatureStable": true,
+      "cameraStable": true,
+      "settleFrames": 8
+    },
+    "backform": 0,
+    "roomKey": "random_mane|loc0_4|0|4|0||false|48|25|7d46ba10",
+    "actual": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.3568627450980392,
+        "airPoints": 988,
+        "airMedian": 0.42745098039215684,
+        "solidPoints": 212
+      },
+      "candidate": {
+        "solidMedian": 0.6196078431372549,
+        "airPoints": 988,
+        "airMedian": 0.6470588235294118,
+        "solidPoints": 212
+      }
+    },
+    "headlamp": false,
+    "transpFon": true,
+    "isolated": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.3568627450980392,
+        "airPoints": 988,
+        "airMedian": 0.42745098039215684,
+        "solidPoints": 212
+      },
+      "candidate": {
+        "solidMedian": 0.6196078431372549,
+        "airPoints": 988,
+        "airMedian": 0.6470588235294118,
+        "solidPoints": 212
+      }
+    },
+    "fon": "fonRuins",
+    "scene": {
+      "spaceY": 25,
+      "viewReady": true,
+      "spaceX": 48,
+      "nativeRegions": 0,
+      "stateUsesCurrentLocation": false,
+      "nativeEnabled": false,
+      "sceneLarge": false
+    },
+    "regions": 1,
+    "mode": "verify",
+    "rvEnabled": true,
+    "room": "loc0_4",
+    "land": "random_mane",
+    "worldPaused": true,
+    "swindow": {
+      "nativeObjects": 0,
+      "visibleMasks": 0,
+      "environmentSources": 0
+    },
+    "prefix": "sample-3",
+    "backwall": "tWindows"
+  },
+  {
+    "environment": 0.48,
+    "stability": {
+      "pixelsStable": true,
+      "observedFrames": 8,
+      "signatureStable": true,
+      "cameraStable": true,
+      "settleFrames": 8
+    },
+    "backform": 0,
+    "roomKey": "random_sewer|loc0_0|0|0|0||false|48|25|251917cc",
+    "actual": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.3176470588235294,
+        "airPoints": 733,
+        "airMedian": 0.3176470588235294,
+        "solidPoints": 467
+      },
+      "candidate": {
+        "solidMedian": 0.47843137254901963,
+        "airPoints": 733,
+        "airMedian": 0.47843137254901963,
+        "solidPoints": 467
+      }
+    },
+    "headlamp": false,
+    "transpFon": false,
+    "isolated": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.3176470588235294,
+        "airPoints": 733,
+        "airMedian": 0.3176470588235294,
+        "solidPoints": 467
+      },
+      "candidate": {
+        "solidMedian": 0.47843137254901963,
+        "airPoints": 733,
+        "airMedian": 0.47843137254901963,
+        "solidPoints": 467
+      }
+    },
+    "fon": null,
+    "scene": {
+      "spaceY": 25,
+      "viewReady": true,
+      "spaceX": 48,
+      "nativeRegions": 0,
+      "stateUsesCurrentLocation": false,
+      "nativeEnabled": false,
+      "sceneLarge": false
+    },
+    "regions": 1,
+    "mode": "verify",
+    "rvEnabled": true,
+    "room": "loc0_0",
+    "land": "random_sewer",
+    "worldPaused": true,
+    "swindow": {
+      "nativeObjects": 0,
+      "visibleMasks": 0,
+      "environmentSources": 0
+    },
+    "prefix": "sample-4",
+    "backwall": "tMossy"
+  },
+  {
+    "environment": 0.72,
+    "stability": {
+      "pixelsStable": true,
+      "observedFrames": 8,
+      "signatureStable": true,
+      "cameraStable": true,
+      "settleFrames": 8
+    },
+    "backform": 0,
+    "roomKey": "random_encl|loc0_7|0|7|0||false|48|25|fc2ea5e6",
+    "actual": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.47843137254901963,
+        "airPoints": 748,
+        "airMedian": 0.47843137254901963,
+        "solidPoints": 452
+      },
+      "candidate": {
+        "solidMedian": 0.7176470588235294,
+        "airPoints": 748,
+        "airMedian": 0.7176470588235294,
+        "solidPoints": 452
+      }
+    },
+    "headlamp": false,
+    "transpFon": false,
+    "isolated": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.47843137254901963,
+        "airPoints": 748,
+        "airMedian": 0.47843137254901963,
+        "solidPoints": 452
+      },
+      "candidate": {
+        "solidMedian": 0.7176470588235294,
+        "airPoints": 748,
+        "airMedian": 0.7176470588235294,
+        "solidPoints": 452
+      }
+    },
+    "fon": "fonEnclave",
+    "scene": {
+      "spaceY": 25,
+      "viewReady": true,
+      "spaceX": 48,
+      "nativeRegions": 0,
+      "stateUsesCurrentLocation": false,
+      "nativeEnabled": false,
+      "sceneLarge": false
+    },
+    "regions": 1,
+    "mode": "verify",
+    "rvEnabled": true,
+    "room": "loc0_7",
+    "land": "random_encl",
+    "worldPaused": true,
+    "swindow": {
+      "nativeObjects": 0,
+      "visibleMasks": 0,
+      "environmentSources": 0
+    },
+    "prefix": "sample-5",
+    "backwall": "tEncl3"
+  },
+  {
+    "environment": 0.82,
+    "stability": {
+      "pixelsStable": true,
+      "observedFrames": 8,
+      "signatureStable": true,
+      "cameraStable": true,
+      "settleFrames": 8
+    },
+    "backform": 0,
+    "roomKey": "src|loc0_0|0|0|0||false|48|25|7132803a",
+    "actual": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.5764705882352941,
+        "airPoints": 660,
+        "airMedian": 0.6588235294117647,
+        "solidPoints": 540
+      },
+      "candidate": {
+        "solidMedian": 0.8196078431372549,
+        "airPoints": 660,
+        "airMedian": 0.8549019607843137,
+        "solidPoints": 540
+      }
+    },
+    "headlamp": false,
+    "transpFon": false,
+    "isolated": {
+      "camera": [
+        0.7416534423828125,
+        0,
+        0,
+        0.7416534423828125,
+        0,
+        59
+      ],
+      "baseline": {
+        "solidMedian": 0.5764705882352941,
+        "airPoints": 660,
+        "airMedian": 0.6588235294117647,
+        "solidPoints": 540
+      },
+      "candidate": {
+        "solidMedian": 0.8196078431372549,
+        "airPoints": 660,
+        "airMedian": 0.8549019607843137,
+        "solidPoints": 540
+      }
+    },
+    "fon": "fonWay",
+    "scene": {
+      "spaceY": 25,
+      "viewReady": true,
+      "spaceX": 48,
+      "nativeRegions": 0,
+      "stateUsesCurrentLocation": false,
+      "nativeEnabled": false,
+      "sceneLarge": false
+    },
+    "regions": 1,
+    "mode": "verify",
+    "rvEnabled": true,
+    "room": "loc0_0",
+    "land": "src",
+    "worldPaused": true,
+    "swindow": {
+      "nativeObjects": 6,
+      "visibleMasks": 6,
+      "environmentSources": 12
+    },
+    "prefix": "sample-6",
+    "backwall": "tRustPlates"
+  }
+]

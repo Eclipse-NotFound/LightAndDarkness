@@ -8,6 +8,7 @@ package lad {
         public var regions:Array=[];
         public var openings:Array=[];
         public var protectedPoints:Array=[];
+        public var brightness:LadLightingPreferences=new LadLightingPreferences();
         private var loc:*;
         private var identity:String;
         private var land:String;
@@ -64,14 +65,10 @@ package lad {
             var daylight:Boolean=Number(read(s,"backform",0))>0 || String(read(s,"backwall",""))=="sky"
                 || (Boolean(read(s,"transpFon",false)) && outsideContext(s));
             var underground:Boolean=/begin|sewer|covert|grave|pis/.test(land);
-            var base:Number=safe?0.58:outage?0.18:maintained?0.44:abandoned?(underground?0.28:0.36):0.38;
-            // Outdoor regions gain real background light; only closed interiors get a small fallback lift.
-            if(!safe && !outage && !daylight) {
-                if(maintained)base=0.48;
-                else if(/begin|sewer|grave|pis/.test(land))base=0.32;
-                else if(!/covert/.test(land))base=abandoned?0.40:0.42;
-            }
+            var brightnessKey:String=safe?"safe":outage?"outage":underground?"underground":kind;
+            var base:Number=brightness.getLevel(brightnessKey);
             region.profile={kind:kind,ambient:base,safe:safe,abandoned:abandoned || outage,
+                brightnessKey:brightnessKey,
                 faults:safe?0:outage?35:abandoned?24:maintained?6:12,
                 daylight:daylight,region:region};
             return region.profile;
@@ -103,7 +100,7 @@ package lad {
         /** Room policy, separate from raster residency so scene scrolling never regenerates all dark pockets. */
         public function contextSignature():String {
             if(loc)backgroundName=String(read(loc.land.act,"fon",""));
-            var parts:Array=[land,read(loc,"lightOn",0),read(loc,"base",false),backgroundName];
+            var parts:Array=[land,read(loc,"lightOn",0),read(loc,"base",false),backgroundName,brightness.signature()];
             for each(var r:Object in regions) parts.push(r.bounds,read(r.style,"backwall",""),read(r.style,"backform",0),read(r.style,"transpFon",false),read(r.style,"color",""),read(r.style,"darkness",0),read(r.style,"homeStable",false));
             var key:String=parts.join(":");
             if(key!=lastSignature) {for each(r in regions) r.profile=null;if(fallback)fallback.profile=null;lastSignature=key;}
@@ -128,6 +125,7 @@ package lad {
             var faceTop:Vector.<Number>=new Vector.<Number>(n,true),faceBottom:Vector.<Number>=new Vector.<Number>(n,true);
             var blocked:Vector.<Boolean>=new Vector.<Boolean>(n,true),solid:Vector.<Boolean>=new Vector.<Boolean>(n,true);
             var topEdge:Vector.<Number>=new Vector.<Number>(n,true),queue:Array=[],i:int,x:int,y:int;
+            var daylight:Number=brightness.getLevel("outdoor");
             backdrop.prepare(new Rectangle(left*40,top*40,width*40,height*40));
             for(y=0;y<height;y++) for(x=0;x<width;x++) {
                 i=y*width+x;var p:Object=profile((left+x)*40+20,(top+y)*40+20);
@@ -136,11 +134,15 @@ package lad {
                 topEdge[i]=Math.max(0,Math.min(40,Number(read(tile,"phY1",(top+y)*40))-(top+y)*40));
                 var transmission:Number=skyTransmission(left+x,top+y);
                 source[i]=transmission;
-                if(transmission>0.001) {sky[i]=base[i]+(0.70-base[i])*transmission;queue.push(i);}
+                if(transmission>0.001) {
+                    base[i]=Math.min(base[i],daylight);
+                    sky[i]=base[i]+(daylight-base[i])*transmission;queue.push(i);
+                }
             }
             var cursor:int=0;
             while(cursor<queue.length) {
-                i=int(queue[cursor++]);var v:Number=sky[i]-0.065;
+                // Keep the flood inside the existing seven-tile cache support even at full daylight.
+                i=int(queue[cursor++]);var v:Number=sky[i]-0.11;
                 if(v<=0.28) continue;
                 x=i%width;y=int(i/width);
                 var neighbors:Array=[];if(x>0)neighbors.push(i-1);if(x+1<width)neighbors.push(i+1);if(y>0)neighbors.push(i-width);if(y+1<height)neighbors.push(i+width);
@@ -167,7 +169,7 @@ package lad {
                         // A narrow hole contributes proportionally to diffuse transport, but the
                         // visible sky inside that hole retains its own pixel-level transmission.
                         var directAlpha:Number=backdrop.transmission(wx,wy);
-                        if(!isNaN(directAlpha))v=Math.max(v,base[i]+(0.70-base[i])*directAlpha);
+                        if(!isNaN(directAlpha))v=Math.max(v,base[i]+(daylight-base[i])*directAlpha);
                     }
                     if(solid[i]) {
                         var dx:Number=wx-(left+tx)*40,dy:Number=wy-(top+ty)*40;

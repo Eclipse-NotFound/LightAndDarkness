@@ -1,0 +1,118 @@
+{
+  "version": "0.7.0",
+  "sha256": "8adba6914df5aada4df12a646b6c22df4b95b9630a55dd05ca7f713621c7e3ef",
+  "previousSha256": "e3233f78d7f9af8f0ac4f99aa78abb1f9fa0d4931b272d7d551b62c7c36e796e",
+  "source": {
+    "LightAndDarknessDoc.as": "7b96febf163398810b3ff1eac45f1a1ab21b59ff838449109654942b73f9c3ff",
+    "LightAndDarknessMod.as": "d0866cefefae5bc2f80927452faf2242279bc90eb0a22122d25ce705dba1b24a",
+    "lad/LadAtmosphere.as": "05d8ec3d24ab11830464662304d9f96e3108c3a2b310c1ee6d3f2d352c28b4bb",
+    "lad/LadBackdrop.as": "4a2f4bd56de10f33205cf15f6f48a01d26b77a17d77d5fcc178cc0e557720c48",
+    "lad/LadCarrier.as": "6eea873fe6564568c3a1a93c75707f02622dbab2aee0a20296a6f677d63ae02e",
+    "lad/LadEnvironment.as": "0fe92f93731326459e234302472876fe317d9cde9dacc36f374b2dbf5bfae956",
+    "lad/LadHud.as": "a85a3498d5f1b1dc741e99f0f129d6337ac443723f9e28c18ad787ca7d835471",
+    "lad/LadKeys.as": "c186918bfd0871d30989ab517c7eaf47d0c02e603666ad1656eb18be4cb0411d",
+    "lad/LadLampCatalog.as": "873661d249c7cf6b19d59a6fb6d1c11542de51c69839e4f965a58f074f34f9c6",
+    "lad/LadLandmarkLights.as": "a33ab324eeaadb3f4eee63850a6f97060fd623b9e407b3f5bf4e1f640581bb7f",
+    "lad/LadLightField.as": "6e9e73b7346dd98b4a8f8dddc4e35f987484d4a94d2ed40e2a7fb7ee0c992430",
+    "lad/LadLightingPreferences.as": "62ca369ffaa1cd8f99574108f8fef5ccbc016ad441b42240f032a3bba0fc2636",
+    "lad/LadLog.as": "d82cf52491f058f6ea2f3e4d2e7a465d5efff95958f6483b24b1e7f66166c136",
+    "lad/LadMachineLights.as": "9e964a8aafc301fc0c2494d6bc1518587c22c14660e6abf1bdcfcb07c3c50886",
+    "lad/LadPlayerTick.as": "333fa37745fd5e130e8d7dd45c9d417d784dae67d163e846684b242b0e17f613",
+    "lad/LadProjectileProfiles.as": "051d7cb741f0b5e218b44bce741d8de84f999acef52d20f7a1683cb78332bbb5",
+    "lad/LadProjectiles.as": "e8d0bdb6aad83dab371b633088f0e892506cbdaa08fd9c023f13c7783de37321",
+    "lad/LadRuntime.as": "c139a63c2da131898b9d68d2a681e8d3560eee9c11104ff83af7b6670be1de2c",
+    "lad/LadSceneBake.as": "ad0109de08e1ee11b7b2a47c03704df3700a4c4e0aa0fffb4c7ae02e88b90db9",
+    "lad/LadStore.as": "b934f459151090c23725739ebc82ebd029e613ffadebd7656d53e97d8f53765e",
+    "lad/LadTileState.as": "e1271c61bd64f6126c9f97be0a5a25d4c18a419dd6d490884ba7a218693235fc",
+    "lad/LadTrailRaster.as": "16e1389f5e221f973fe11d691aed564b07cea67629ca8317906122f904f6d3d6",
+    "lad/native/LadLampTarget.as": "53f9962778a64f2ac200b7be3085cc3de727ab9dfea9b19948647b0a647ebca9"
+  },
+  "protected": {
+    "application.xml": "70dd3b085e5f6c66c03693cf68ce5e93a4e4136dd745d40d1a5b2a49863ba236",
+    "pfe.swf": "7d423bd7b7dd7d2b997e692bd1e22ef520879cd42387c14653c116c15385bcd4",
+    "mods/loader-manifest.txt": "33de189e1209fdd397e811a52e9ac67ff0dedaeeae5cfeff4b7d15d4536eb133",
+    "mods/LightAndDarkness/atmosphere.json": "2f6b4141510ccab293a6040296909ee46971cb9f116586d2e18042d37ac765aa",
+    "mods/ModLoader/release/ModLoaderMod.swf": "bd71b6f31774b97841d4c158451da0353b53bc46ac72f8e2a7fe2c3f3f4908b1",
+    "mods/ContinuousScene/release/ContinuousSceneMod.swf": "7f1f2961c6e299d949423591f3c65c610c2eaefa7fc72e8a583a402770d6b51f",
+    "mods/ContinuousScene/release/scene.xml": "1cea74e218a55894d432e12cdfc544952d37cfff5ff55b256b1b970573eb7a9e",
+    "mods/RealisticVision/release/config.txt": "5136ee1923a77f5f10eab1b3994b64cbd67b09d687a7e829fb1e81d2e79a3c7f",
+    "mods/RealisticVision/release/RealisticVisionMod.swf": "f2b8a973d9d2a374c9bd8f5da9d29040266954c8f139b8c85bfa0aaaa749a561",
+    "mods/WallBlend/release/config.json": "16bb3a56a74195de6d4589cebde88e80c378956c776ffcde1c848f0ed7d48a89",
+    "mods/WallBlend/release/WallBlendMod.swf": "14112da06214bca51c6875d2527e73246dcb4c985caadda719eb4f77f1c0920d"
+  },
+  "classes": [
+    "scripts/LightAndDarknessDoc.as",
+    "scripts/LightAndDarknessMod.as",
+    "scripts/lad/LadAtmosphere.as",
+    "scripts/lad/LadBackdrop.as",
+    "scripts/lad/LadCarrier.as",
+    "scripts/lad/LadEnvironment.as",
+    "scripts/lad/LadHud.as",
+    "scripts/lad/LadKeys.as",
+    "scripts/lad/LadLampCatalog.as",
+    "scripts/lad/LadLandmarkLights.as",
+    "scripts/lad/LadLightField.as",
+    "scripts/lad/LadLightingPreferences.as",
+    "scripts/lad/LadLog.as",
+    "scripts/lad/LadMachineLights.as",
+    "scripts/lad/LadPlayerTick.as",
+    "scripts/lad/LadProjectileProfiles.as",
+    "scripts/lad/LadProjectiles.as",
+    "scripts/lad/LadRuntime.as",
+    "scripts/lad/LadSceneBake.as",
+    "scripts/lad/LadStore.as",
+    "scripts/lad/LadTileState.as",
+    "scripts/lad/LadTrailRaster.as",
+    "scripts/lad/native/LadLampTarget.as"
+  ],
+  "createdAt": "2026-10-21T16:16:32.274391+08:00",
+  "evidence": [
+    {
+      "label": "brightness:verify",
+      "checks": 165,
+      "evidence": "build/evidence/remains-lad-brightness-20261021162001217906",
+      "session": "run_1792570809443_668771"
+    },
+    {
+      "label": "brightness:large",
+      "checks": 143,
+      "evidence": "build/evidence/remains-lad-brightness-20261021162157178768",
+      "session": "run_1792570925832_398044"
+    },
+    {
+      "label": "brightness:cold",
+      "checks": 125,
+      "evidence": "build/evidence/remains-lad-brightness-20261021162305280074",
+      "session": "run_1792570994961_905704"
+    },
+    {
+      "label": "landmark:regression",
+      "checks": 101,
+      "evidence": "build/evidence/remains-lad-landmark-20261021162344964083",
+      "session": "run_1792571032663_943305"
+    },
+    {
+      "label": "landmark:cold",
+      "checks": 11,
+      "evidence": "build/evidence/remains-lad-landmark-20261021162456468565",
+      "session": "run_1792571104367_595801"
+    },
+    {
+      "label": "trail:verify",
+      "checks": 43,
+      "evidence": "build/evidence/remains-lad-projectile-trails-20261021162525790834",
+      "session": "run_1792571133711_146529"
+    }
+  ],
+  "backup": "D:\\Program Files\\Steam\\steamapps\\common\\Remains\\mods\\LightAndDarkness\\build\\backups\\brightness-20261021-162845-623837\\LightAndDarknessMod.v0.6.0.swf",
+  "installedAt": "2026-10-21T16:28:45.699808+08:00",
+  "restartSmoke": {
+    "status": "PASS",
+    "label": "brightness:smoke",
+    "checks": 124,
+    "evidence": "build/evidence/remains-lad-brightness-20261021162845781119",
+    "session": "run_1792571334471_937025",
+    "finishedAt": "2026-10-21T16:29:24.317961+08:00"
+  },
+  "rollback": "Restore only this backup while installed LAD matches this release; preserve other files and real saves."
+}

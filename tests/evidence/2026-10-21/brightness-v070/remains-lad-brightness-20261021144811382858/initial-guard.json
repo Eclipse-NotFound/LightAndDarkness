@@ -1,0 +1,15 @@
+{
+  "ok": false,
+  "competitors": [
+    {
+      "pid": 63436,
+      "name": "adl64.exe"
+    }
+  ],
+  "offlineProcesses": [],
+  "memory": {
+    "physicalBytes": 9170264064,
+    "commitBytes": 6575681536
+  },
+  "minimumCommitBytes": 2147483648
+}

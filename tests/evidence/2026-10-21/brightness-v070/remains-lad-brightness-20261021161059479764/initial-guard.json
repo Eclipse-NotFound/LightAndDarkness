@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "competitors": [],
+  "offlineProcesses": [],
+  "memory": {
+    "physicalBytes": 7347277824,
+    "commitBytes": 6048272384
+  },
+  "minimumCommitBytes": 2147483648
+}

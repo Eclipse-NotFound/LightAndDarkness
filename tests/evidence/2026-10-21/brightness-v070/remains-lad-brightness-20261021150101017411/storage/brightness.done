@@ -1,0 +1,3 @@
+FAIL Error: ASSERT regional native settings page opens Error: ASSERT regional native settings page opens
+	at BrightnessTestMod/check()
+	at BrightnessTestMod/step()

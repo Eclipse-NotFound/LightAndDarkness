@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "competitors": [],
+  "offlineProcesses": [
+    {
+      "pid": 109156,
+      "name": "java.exe"
+    }
+  ],
+  "memory": {
+    "physicalBytes": 7394086912,
+    "commitBytes": 5071302656
+  },
+  "minimumCommitBytes": 2147483648
+}

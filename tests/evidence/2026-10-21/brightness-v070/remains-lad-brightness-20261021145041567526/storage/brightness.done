@@ -1,0 +1,4 @@
+FAIL Error: ASSERT opening native Tile door invalidates cached sky occlusion Error: ASSERT opening native Tile door invalidates cached sky occlusion
+	at BrightnessTestMod/check()
+	at BrightnessTestMod/exercise()
+	at BrightnessTestMod/step()

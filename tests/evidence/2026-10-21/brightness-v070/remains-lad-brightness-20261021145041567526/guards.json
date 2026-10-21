@@ -1,0 +1,180 @@
+{
+  "aborted": "",
+  "observations": [
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9945088000,
+        "commitBytes": 7737360384
+      },
+      "minimumCommitBytes": 2147483648
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9915609088,
+        "commitBytes": 7715602432
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565446353
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9973108736,
+        "commitBytes": 7768080384
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565447388
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9938096128,
+        "commitBytes": 7736578048
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565448427
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9914576896,
+        "commitBytes": 7676948480
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565449464
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9685078016,
+        "commitBytes": 7454494720
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565450496
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9717407744,
+        "commitBytes": 7495942144
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565451530
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9712615424,
+        "commitBytes": 7493943296
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565452567
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9723445248,
+        "commitBytes": 7485059072
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565453606
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9734393856,
+        "commitBytes": 7489511424
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565454642
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9655320576,
+        "commitBytes": 7405260800
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565455682
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9623130112,
+        "commitBytes": 7384350720
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565456713
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9575051264,
+        "commitBytes": 7310295040
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565457748
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9583747072,
+        "commitBytes": 7323435008
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565458787
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9429020672,
+        "commitBytes": 7153205248
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565459824
+    },
+    {
+      "ok": true,
+      "competitors": [],
+      "offlineProcesses": [],
+      "memory": {
+        "physicalBytes": 9108123648,
+        "commitBytes": 6819299328
+      },
+      "minimumCommitBytes": 536870912,
+      "atMs": 1792565460861
+    }
+  ]
+}
