@@ -1,6 +1,6 @@
 # LightAndDarkness 当前记忆
 
-> 2026-10-25 归档入口已建立：旧资料查 [archive-index.md](archive-index.md)，登记与移动见游戏根 archive/README.md；本轮仅建路径和候选登记，未移动正式文件。
+> 2026-10-25 历史资料已核验转存：B01，共12,746文件、原始显示12.16 GiB。查找与恢复从 [archive-index.md](archive-index.md) 进入；[本次结果](../../../archive/migrations/2026-10-25-01/report.md)。当前正式包、源码、作品及保留证据未纳入。
 
 ## 1. 模组定位
 Remains 1.02战术光暗：墙门遮光、随身灯、场景灯损坏/维修与保存、氛围暗区、机器/地标光、原生弹形拖尾。入口LightAndDarknessMod.init(main:*)，运行路径release/LightAndDarknessMod.swf。0.7.0恢复无遮挡室外背景原图亮度，新增七类地区基础亮度和灯范围滑块。
