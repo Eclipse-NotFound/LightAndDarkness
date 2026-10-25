@@ -27,6 +27,7 @@ LadLightingPreferences在AIR应用存储LightAndDarkness.lighting.json保存地�
 本轮仅证明范围缓存不反复构造和功能预算，不声称提高整套14模组FPS。0.5.1历史帧耗时不是0.7性能证明。独立灯具装备/电池/掉落、地火持续燃烧仍未实现。氛围/弹丸/机器/地标和灯具状态随槽；感知开关仍本次启动偏好，地区/范围/总倍率现已跨启动保存。
 
 ## 6. 接续点
+2026-10-25协调核对：RConnect根会话01a086bb-378c-7f60-b8e1-50d90ffa0996通知其负责普通新房首次灯具绘制优化，候选在RConnect独立目录实现/编译/验证。本侧只读确认HEAD 9664278无未提交改动，正式8ADBA691、Runtime C139A63C2DA131898B9D68D2A681E8D3560EEE9C11104FF83AF7B6670BE1DE2C与提案一致，已回报无冲突。本侧不另开测试或修改live源码/release；后续按该根提供的最终差异、验证和部署回执同步正式状态，不能把提案当已通过。提案入口mods/RConnect/experimental/goal-ordinary-lamp-first-raster-proposal/README.md。
 本轮实现、部署及正式复验完成，不再启动测试。现有游戏须玩家保存退出重启。新工作从0.7源码继续，不运行写死旧版本的background发布脚本。
 tools/release-brightness.py可验证冻结源/资产/依赖、备份部署及SHA保护回滚；install-brightness-and-smoke.py包装安装与正式回读；registered-lighting-test.py统一登记。run-brightness-suite.py目录匹配式已修正。测试不能用JSON输出顺序断言对象等价，也不能以固定8帧假定CS加载稳定。
 原始工作证据build/evidence；正式归档tests/evidence/2026-10-21/brightness-v070含16轮470文件，最终测试全截图、其他尝试文本及首次ROI三图。无后台自动化或遗留测试实例。
