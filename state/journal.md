@@ -1,3 +1,19 @@
+## 2026-11-02 性能优化0.7.1实施与部署
+- 做了什么：按 [performance-optimization-plan](../design/performance-optimization-plan.md) 落地模块4（渲染时序解耦：simulationStep置脏、onFrame单次收口）、模块1（makeLight持久化光栅，缓存条目原地重建）、模块2（paint批量setVector＋瓦片级天光备忘＋frontAlpha守卫）；模块3地标候选缓存经探针反证（lights()须反映每次调用的acts/objs内容）后完整撤回，模块5对象池评估后收缩未做。
+- 关键决定/发现：lateRenders语义改为"无步进帧的补绘"，保持探针renders==steps+lateRenders不变量；照度采样滞后一步（≤33ms）。地标套件两处0.6时代旧阈值（flight标志、门洞溢流采样点）经正式0.7.0对照运行证明既有失败，更新tests/EnvironmentChecks.as后通过。
+- 验证与部署：0.7.1字节BE12A338（42,817B/23类）全量587门禁＋安装回读124＝711项；候选vs正式0.7.0同输入逐像素一致387项；同输入计时大图pan≈-43%/aim-22%/idle-14%，普通房间持平。07:02:37部署smoke通过（登记954cee39），回执state/perf-deployment-2026-11-02.json，8ADBA备份build/backups/perf071-20261102-070237-094675。首次部署因并行会话改loader-manifest触发依赖保护回滚，refreeze r2重装成功。
+- 遗留/下一步：宽屏整帧FPS ABBA待安静窗口补测；RConnect普通房首次灯具绘制优化仍由其根会话负责。
+
+## 2026-11-02 制定性能表现较差与卡顿问题深度优化方案
+
+- 做了什么：全面排查了 LAD 当前性能瓶颈（随身手电旋转卡顿、大图滚动周期性 GC 顿卡、多机械单位同屏掉帧），编写了可执行的深度重构方案文件 `design/performance-optimization-plan.md`。
+- 关键决定/发现：
+  1. 随身手电每帧瞄准时 angle 改变导致 cache miss，反复执行 `new Sprite()` × 3、`new BitmapData()` 及 `result.draw(root)` 矢量光栅化与 90 条射线 DDA，这是手电瞄准掉帧和 GC 峰值的罪魁祸首；
+  2. `LadEnvironment.paint` 在宽屏大图下执行 25,000 次纯 AS3 循环 `setPixel` 与逐像素 `backdrop` 取图，单次环境底光耗时达 8~12ms；
+  3. `LadMachineLights` 与 `LadLandmarkLights` 每帧高频反射 `getQualifiedClassName`、遍历场景树与重算 `getBounds()`，浪费 1.5~2.5ms；
+  4. 制定了五大优化模块：随身光预烘焙模板+角度量子化、环境光批量 `setVector`、地标进房静态快照化、时序单帧收口防抖、全管线零分配对象池。
+- 遗留/下一步：按方案分阶段实施代码重构，优先落地 Phase 1（时序防抖与零分配池化）与 Phase 2（手电光晕模板化），并在宽屏大图下通过同输入 ABBA 性能门禁验证。
+
 ## 2026-10-28 分盘精简历史副本
 
 - 完成 20261028-3a985339、20261028-02ffb73b：1162 文件，原文件 1.831 GiB，转至 F、G 盘。目标逐文件核验通过后才移出原件；同级日志、截图及当前正式验证材料保留。

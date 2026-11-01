@@ -65,7 +65,7 @@ package lad {
             main=value;lampLayer.name="LightAndDarknessFixtures";lampLayer.mouseEnabled=false;lampLayer.mouseChildren=false;
             atmosphere.load();
             lighting.load();ambient=0.14*lighting.multiplier;environment.brightness=lighting;
-            main.addChild(new LadCarrier({version:"0.7.0",runtime:this}));
+            main.addChild(new LadCarrier({version:"0.7.1",runtime:this}));
             main.addChild(hud);hud.visible=false;
             main.stage.addEventListener(Event.ENTER_FRAME,onFrame,false,-80);
             main.addEventListener(Event.ADDED,objectAdded,true);
@@ -74,7 +74,7 @@ package lad {
             main.stage.addEventListener(KeyboardEvent.KEY_DOWN,keyDown,true,900);
             main.stage.addEventListener(KeyboardEvent.KEY_UP,keyUp,true,900);
             main.stage.addEventListener(Event.DEACTIVATE,deactivate);
-            LadLog.write("v0.7.0 loaded");
+            LadLog.write("v0.7.1 loaded");
         }
         private function objectAdded(event:Event):void {
             if(!enabled || !atmosphere.settings.projectiles || !location || !world || world.loc!==location) return;
@@ -143,11 +143,13 @@ package lad {
                     transientChanged=!field.bounds.containsRect(currentView) ||
                         LadProjectiles.signature(projectiles.lights(currentView,atmosphere.settings.projectileBrightness))!=lastProjectileSignature;
                 }
-                // Paused menus do not step gameplay; render only if it has not just been simulated.
-                // A slow native frame must not trigger a second illumination pass
-                // merely because its earlier simulation took longer than 60 ms.
-                if(transientChanged || (!simulatedSinceFrame && getTimer()-lastRender>60)) {
-                    if(simulatedSinceFrame)lateRenders++;
+                // The single illumination pass of this ENTER_FRAME happens here, after
+                // the native step; simulationStep only marks the frame dirty. Frames
+                // with a step render in-pass; any render on a step-less frame (paused
+                // refresh, a visible projectile change while no step ran) is an extra
+                // pass and stays countable in lateRenders so renders stay explained.
+                if(transientChanged || simulatedSinceFrame || getTimer()-lastRender>60) {
+                    if(!simulatedSinceFrame)lateRenders++;
                     render();
                 }
                 simulatedSinceFrame=false;
@@ -282,7 +284,11 @@ package lad {
             if(!enabled || value!==world.gg || world.loc!==location || !location || world.onPause) return;
             steps++;atmosphereTime+=1/30;
             if(atmosphere.settings.projectiles) {projectiles.bind(world,location);projectiles.advance();}
-            render();
+            // Raster work is deferred to the frame listener (its priority -80 runs
+            // after the native step): at most one illumination pass per ENTER_FRAME
+            // even when a catch-up frame performs extra work between two passes.
+            // Exposure sampling keeps the previous pass for one step; visibility is
+            // still rewritten here, before enemies look at the player this step.
             simulatedSinceFrame=true;
             lastBaseVisibility=Number(value.visibility);
             lastExposure=field.sample(value.X,value.Y-value.scY/2);

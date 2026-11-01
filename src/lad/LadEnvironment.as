@@ -21,11 +21,21 @@ package lad {
         private var apertureRecords:Array=[];
         private var openingKey:String="";
         private var openingContext:String="";
+        // Repaint scratch and per-tile sky sampling memo. Repaints reuse one typed
+        // pixel vector flushed with a single setVector instead of ~25k setPixel
+        // calls; unchanged tiles reuse their nine-sample transmission result.
+        private var pixels:Vector.<uint>=new Vector.<uint>(0,true);
+        private var skyMemo:Object={};
+        private var skyMemoCount:int=0;
+        private var contextVersion:uint=0;
+        private var backdropRevision:uint=0;
+        private static const SKY_MEMO_LIMIT:int=32768;
         private static const WINDOWS:Object={fwindow:true,bwindow:true,swindow:true,cwindow:true,awindow:true,enclwindow:true};
         private static const OUTSIDE_FONS:Object={fonRuins:true,fonDarkClouds:true,fonCanter:true,fonWay:true,fonEnclave:true,fonClear:true,fonFire:true,fonFinalb:true};
         public function clear():void {
             loc=null;regions=[];openings=[];protectedPoints=[];fallback=null;lastSignature="";
             backdrop.clear();backgroundName="";apertureSeeds={};legacyApertures={};apertureRecords=[];openingKey="";openingContext="";
+            skyMemo={};skyMemoCount=0;contextVersion++;
         }
         public function bind(location:*,grafon:*,key:String):void {
             clear();loc=location;identity=key;land=String(loc.land.act.id);
@@ -97,13 +107,40 @@ package lad {
             // or an authored aperture has a fallback; missing transparent chunks never become sources.
             return backdrop.allowsGeometryFallback?(direct?1:aperture):0;
         }
+        /** Memoized skyTransmission for the repaint tile pass: the cheap gating runs
+         *  per call while the expensive nine-sample raster lookup is reused whenever
+         *  every fingerprinted input is unchanged. Pure function of its inputs, so a
+         *  hit is bit-identical to recomputing skyTransmission for the same tile. */
+        private function skyTransmissionCached(tx:int,ty:int):Number {
+            if(!loc || tx<0 || ty<0 || tx>=loc.spaceX || ty>=loc.spaceY) return 0;
+            var tile:*=loc.space[tx][ty];
+            if(Number(tile.opac)>=0.99 || String(read(tile,"back",""))!="" || (Boolean(read(tile,"fRear",false)) && String(read(tile,"front",""))!="")) return 0;
+            var x:Number=tx*40+20,y:Number=ty*40+20,r:Object=regionAt(x,y),s:*=r.style;
+            var direct:Boolean=geometricSky(r,x,y),key:String=tx+":"+ty;
+            var aperture:Number=Number(apertureSeeds[key]);if(isNaN(aperture))aperture=0;
+            var transparent:Boolean=Boolean(read(s,"transpFon",false)) && outsideContext(s);
+            var legacy:Number=Number(legacyApertures[key]);if(isNaN(legacy))legacy=0;
+            if(!direct && (!transparent && aperture<=0 || legacy>0))return 0;
+            var memoKey:String=key+":"+(direct?1:0)+":"+(transparent?1:0)+":"+aperture+":"+legacy+":"+backdropRevision+":"+contextVersion;
+            var cached:Number=Number(skyMemo[memoKey]);
+            if(!isNaN(cached))return cached;
+            var total:Number=0,available:int=0;
+            for(var ox:int=6;ox<=34;ox+=14)for(var oy:int=6;oy<=34;oy+=14) {
+                var value:Number=backdrop.transmission(tx*40+ox,ty*40+oy);
+                if(!isNaN(value)){total+=value;available++;}
+            }
+            var result:Number=available?total/available:(backdrop.allowsGeometryFallback?(direct?1:aperture):0);
+            if(skyMemoCount>=SKY_MEMO_LIMIT){skyMemo={};skyMemoCount=0;}
+            skyMemo[memoKey]=result;skyMemoCount++;
+            return result;
+        }
         /** Room policy, separate from raster residency so scene scrolling never regenerates all dark pockets. */
         public function contextSignature():String {
             if(loc)backgroundName=String(read(loc.land.act,"fon",""));
             var parts:Array=[land,read(loc,"lightOn",0),read(loc,"base",false),backgroundName,brightness.signature()];
             for each(var r:Object in regions) parts.push(r.bounds,read(r.style,"backwall",""),read(r.style,"backform",0),read(r.style,"transpFon",false),read(r.style,"color",""),read(r.style,"darkness",0),read(r.style,"homeStable",false));
             var key:String=parts.join(":");
-            if(key!=lastSignature) {for each(r in regions) r.profile=null;if(fallback)fallback.profile=null;lastSignature=key;}
+            if(key!=lastSignature) {for each(r in regions) r.profile=null;if(fallback)fallback.profile=null;lastSignature=key;contextVersion++;}
             return key;
         }
         private function refreshOpenings():String {
@@ -127,12 +164,13 @@ package lad {
             var topEdge:Vector.<Number>=new Vector.<Number>(n,true),queue:Array=[],i:int,x:int,y:int;
             var daylight:Number=brightness.getLevel("outdoor");
             backdrop.prepare(new Rectangle(left*40,top*40,width*40,height*40));
+            backdropRevision=backdrop.signature();
             for(y=0;y<height;y++) for(x=0;x<width;x++) {
                 i=y*width+x;var p:Object=profile((left+x)*40+20,(top+y)*40+20);
                 var tile:*=loc.space[left+x][top+y];
                 base[i]=p.ambient;blocked[i]=Number(tile.opac)>=0.99;solid[i]=Number(read(tile,"phis",0))>0 || blocked[i];
                 topEdge[i]=Math.max(0,Math.min(40,Number(read(tile,"phY1",(top+y)*40))-(top+y)*40));
-                var transmission:Number=skyTransmission(left+x,top+y);
+                var transmission:Number=skyTransmissionCached(left+x,top+y);
                 source[i]=transmission;
                 if(transmission>0.001) {
                     base[i]=Math.min(base[i],daylight);
@@ -157,6 +195,8 @@ package lad {
                 if(y+1<height && !blocked[i+width])faceBottom[i]=sky[i+width];
             }
             var output:BitmapData=new BitmapData(Math.round(bounds.width/cell),Math.round(bounds.height/cell),false,0);
+            var size:int=output.width*output.height;
+            if(pixels.length!=size)pixels=new Vector.<uint>(size,true);
             output.lock();
             for(x=0;x<output.width;x++) for(y=0;y<output.height;y++) {
                 var wx:Number=bounds.x+(x+0.5)*cell,wy:Number=bounds.y+(y+0.5)*cell;
@@ -178,14 +218,23 @@ package lad {
                             surfaceTop=Math.max(0,Math.min(40,Number(tile.getMaxY(wx))-(top+ty)*40));
                         var received:Number=Math.max(surface(base[i],faceLeft[i],dx),surface(base[i],faceRight[i],40-dx),
                             surface(base[i],faceTop[i],dy-surfaceTop),surface(base[i],faceBottom[i],40-dy));
-                        var alpha:Number=backdrop.frontAlpha(wx,wy);
-                        if(dy>=surfaceTop)v=Math.max(v,isNaN(alpha)?received:base[i]+(received-base[i])*alpha);
+                        if(dy>=surfaceTop) {
+                            // When no face is brighter than the tile base, both the raw and the
+                            // alpha-blended value stay at or below v; skip the backdrop sample.
+                            if(received<=base[i]) v=Math.max(v,received);
+                            else {
+                                var alpha:Number=backdrop.frontAlpha(wx,wy);
+                                v=Math.max(v,isNaN(alpha)?received:base[i]+(received-base[i])*alpha);
+                            }
+                        }
                     }
                 }
                 else v=profile(wx,wy).ambient;
                 var shade:int=Math.max(0,Math.min(255,int(v*multiplier*255)));
-                output.setPixel(x,y,(shade<<16)|(shade<<8)|shade);
+                pixels[y*output.width+x]=(shade<<16)|(shade<<8)|shade;
             }
+            // One bulk upload replaces ~25k interpreted setPixel calls per repaint.
+            output.setVector(output.rect,pixels);
             output.unlock();return output;
         }
         private static function surface(base:Number,light:Number,distance:Number):Number {
@@ -201,6 +250,9 @@ package lad {
         }
         private function collectWindows():void {
             openings=[];apertureSeeds={};legacyApertures={};apertureRecords=[];
+            // Aperture values are part of each memo fingerprint, but clear stale
+            // entries anyway so a window rebind cannot grow the memo unbounded.
+            skyMemo={};skyMemoCount=0;
             for each(var bo:* in loc.backobjs) {
                 // stwindow is an internal observation window. No unconditional daylight from it.
                 var id:String=String(bo.id),legacy:Boolean=Boolean(WINDOWS[id]);

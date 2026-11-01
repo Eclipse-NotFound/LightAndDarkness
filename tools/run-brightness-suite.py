@@ -26,10 +26,12 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--out', type=Path, required=True)
     p.add_argument('--normal', type=Path, help='Reuse a successful normal run of exactly these bytes')
+    p.add_argument('--expected-version', default='0.7.1',
+                   help='Candidate VERSION the probes must report (suite records it verbatim)')
     args = p.parse_args()
     assert os.environ.get('LIGHT_AND_DARKNESS_TEST_REGISTRATION'), 'Use registered-lighting-test.py brightness-suite'
     candidate = args.out.resolve() / 'LightAndDarknessMod.swf'
-    common = ['--candidate', candidate, '--mixed', '--expected-version', '0.7.0']
+    common = ['--candidate', candidate, '--mixed', '--expected-version', args.expected_version]
     results = []
 
     def record(label, directory):

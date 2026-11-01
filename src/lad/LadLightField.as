@@ -39,14 +39,25 @@ package lad {
         private var usingSceneCache:Boolean=false;
         private var terrainCells:Array=[];
         private var backgroundBounds:Rectangle=new Rectangle();
+        // Persistent vector-raster scratch shared by every light rebuild: a moved or
+        // rotating light reuses these display objects and its own cached raster
+        // buffer instead of allocating three Sprites plus a BitmapData per rebuild.
+        private var rasterRoot:Sprite=new Sprite();
+        private var rasterGlow:Sprite=new Sprite();
+        private var rasterMask:Sprite=new Sprite();
+        private var rasterMatrix:Matrix=new Matrix();
+        private var rasterRadius:Number=-1;
         public function LadLightField() {
             bitmap.name = "LightAndDarknessIllumination";
             bitmap.blendMode = BlendMode.MULTIPLY;
             bitmap.scaleX = bitmap.scaleY = cell;
+            rasterRoot.addChild(rasterGlow);
+            rasterRoot.addChild(rasterMask);
+            rasterGlow.mask = rasterMask;
         }
         public function clear():void {
             trailRaster.clear();
-            for each(var item:Object in cache) item.data.dispose();
+            for each(var item:Object in cache) if(item.data)item.data.dispose();
             cache = {}; terrainHash = 0; terrainRegion = ""; loc = null;
             if(data) data.dispose(); data=null; bitmap.bitmapData=null;
             if(background) background.dispose();background=null;backgroundKey="";
@@ -107,7 +118,7 @@ package lad {
             }
             var region:String=[left,top,right,bottom].join(":");
             if(hash!=terrainHash || region!=terrainRegion) {
-                for each(var old:Object in cache) old.data.dispose(); cache={};
+                for each(var old:Object in cache) if(old.data)old.data.dispose(); cache={};
                 terrainHash=hash;terrainRegion=region;
             }
             }
@@ -123,12 +134,12 @@ package lad {
                 if(light.trail) continue;
                 drawLight(data,bounds,light,alive);
             }
-            for(var key:String in cache) if(!alive[key]) {cache[key].data.dispose();delete cache[key];}
+            for(var key:String in cache) if(!alive[key]) {if(cache[key].data)cache[key].data.dispose();delete cache[key];}
             trailRaster.render(data,bounds,cell,loc,lights);
             data.unlock();elapsedMs=getTimer()-started;
         }
         private function clearGeometry():void {
-            for each(var old:Object in cache) old.data.dispose();cache={};
+            for each(var old:Object in cache) if(old.data)old.data.dispose();cache={};
             sceneBackgroundKey="";
         }
         private function stableBackground(lights:Array,count:int,alive:Object):BitmapData {
@@ -143,11 +154,14 @@ package lad {
             }
             var key:String=parts.join(":");
             if(sceneBackground && key==sceneBackgroundKey)return sceneBackground;
-            if(sceneBackground)sceneBackground.dispose();
             // AIR's clipped SCREEN sampling differs when a draw target is padded.
             // Keep the exact viewport target and transform of the uncached path.
             // Only cache after the view settles, avoiding allocations while scrolling.
-            sceneBackground=new BitmapData(data.width,data.height,false,0);sceneBackground.lock();
+            if(sceneBackground==null || sceneBackground.width!=data.width || sceneBackground.height!=data.height) {
+                if(sceneBackground)sceneBackground.dispose();
+                sceneBackground=new BitmapData(data.width,data.height,false,0);
+            }
+            sceneBackground.lock();
             sceneBackground.copyPixels(background,new Rectangle((bounds.x-backgroundBounds.x)/cell,(bounds.y-backgroundBounds.y)/cell,data.width,data.height),new Point());
             for each(light in selected)drawLight(sceneBackground,bounds,light,alive);
             sceneBackground.unlock();sceneBackgroundKey=key;++sceneLightBuilds;
@@ -163,9 +177,12 @@ package lad {
             if(light.power<=0)return;
             var signature:String=[int(light.x/4),int(light.y/4),light.radius,int(light.angle*90/Math.PI),light.cone].join(":");
             var entry:Object=cache[identity];
-            if(entry==null || entry.key!=signature) {
-                if(entry)entry.data.dispose();
-                entry={key:signature,data:makeLight(light)};cache[identity]=entry;rebuilds++;
+            if(entry==null) {entry={key:"",data:null};cache[identity]=entry;}
+            // Rebuild in place: the entry keeps its raster buffer so a headlamp sweep
+            // or a moving machine glow no longer produces per-frame BitmapData garbage.
+            if(entry.key!=signature) {
+                entry.key=signature;
+                makeLight(light,entry);rebuilds++;
             }
             var color:uint=uint(light.color);
             var transform:ColorTransform=new ColorTransform(((color>>16)&255)/255*light.power,
@@ -223,30 +240,41 @@ package lad {
             if(original) original.dispose();
             backgroundKey=signature;
         }
-        private function makeLight(light:Object):BitmapData {
+        private function makeLight(light:Object,entry:Object):void {
             var radius:Number=Number(light.radius);
             var side:int=Math.ceil(radius*2/cell)+1;
-            var root:Sprite=new Sprite(),glow:Sprite=new Sprite(),mask:Sprite=new Sprite();
-            var matrix:Matrix=new Matrix(); matrix.createGradientBox(radius*2/cell,radius*2/cell);
-            glow.graphics.beginGradientFill(GradientType.RADIAL,[0xFFFFFF,0xFFFFFF,0],[1,1,1],[0,45,255],matrix);
-            glow.graphics.drawRect(0,0,side,side);glow.graphics.endFill();
-            mask.graphics.beginFill(0xFFFFFF);
+            if(entry.data==null || entry.data.width!=side || entry.data.height!=side) {
+                if(entry.data)entry.data.dispose();
+                entry.data=new BitmapData(side,side,false,0);
+            }
+            if(rasterRadius!=radius) {
+                rasterGlow.graphics.clear();
+                rasterMatrix.createGradientBox(radius*2/cell,radius*2/cell);
+                rasterGlow.graphics.beginGradientFill(GradientType.RADIAL,[0xFFFFFF,0xFFFFFF,0],[1,1,1],[0,45,255],rasterMatrix);
+                rasterGlow.graphics.drawRect(0,0,side,side);
+                rasterGlow.graphics.endFill();
+                rasterRadius=radius;
+            }
+            rasterMask.graphics.clear();
+            rasterMask.graphics.beginFill(0xFFFFFF);
             var cone:Number=Number(light.cone),center:Number=Number(light.angle);
             var full:Boolean=cone>=Math.PI*2-0.01;
             var start:Number=full?0:center-cone/2;
             var count:int=light.transient?64:Math.max(24,Math.ceil(cone/(Math.PI/90)));
-            if(!full) mask.graphics.moveTo(radius/cell,radius/cell);
+            if(!full) rasterMask.graphics.moveTo(radius/cell,radius/cell);
             for(var i:int=0;i<=count;i++) {
                 var angle:Number=start+cone*i/count;
                 var distance:Number=traceRay(light.x,light.y,Math.cos(angle),Math.sin(angle),radius);
                 var px:Number=(radius+Math.cos(angle)*distance)/cell;
                 var py:Number=(radius+Math.sin(angle)*distance)/cell;
-                if(i==0 && full) mask.graphics.moveTo(px,py);else mask.graphics.lineTo(px,py);
+                if(i==0 && full) rasterMask.graphics.moveTo(px,py);else rasterMask.graphics.lineTo(px,py);
             }
-            if(!full) mask.graphics.lineTo(radius/cell,radius/cell);
-            mask.graphics.endFill();root.addChild(glow);root.addChild(mask);glow.mask=mask;
-            var result:BitmapData=new BitmapData(side,side,false,0);
-            result.draw(root);return result;
+            if(!full) rasterMask.graphics.lineTo(radius/cell,radius/cell);
+            rasterMask.graphics.endFill();
+            entry.data.lock();
+            entry.data.fillRect(entry.data.rect,0);
+            entry.data.draw(rasterRoot);
+            entry.data.unlock();
         }
         public function traceRay(sx:Number,sy:Number,dx:Number,dy:Number,radius:Number):Number {
             var cx:int=Math.floor(sx/40),cy:int=Math.floor(sy/40);

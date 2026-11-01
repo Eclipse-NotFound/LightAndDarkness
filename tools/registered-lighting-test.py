@@ -22,6 +22,7 @@ RUNNERS = {
     'trail': 'run-trail-tests.py',
     'perf': 'run-lighting-perf.py',
     'release': 'install-background-and-smoke.py',
+    'perf-release': 'install-perf-071.py',
 }
 
 
