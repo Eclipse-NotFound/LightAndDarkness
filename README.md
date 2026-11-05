@@ -1,5 +1,9 @@
 # LightAndDarkness
 
+## 下载
+
+[下载 LightAndDarkness_v0.7.1.zip](https://github.com/Eclipse-NotFound/LightAndDarkness/releases/download/v0.7.1/LightAndDarkness_v0.7.1.zip)（点这个具名文件，不要下载 Source code；安装包也见 [Release 页](https://github.com/Eclipse-NotFound/LightAndDarkness/releases/tag/v0.7.1)）。需要 Windows / Remains 1.02 与 [ModLoader](https://github.com/Eclipse-NotFound/ModLoader)。解压后把 `mods` 合并到游戏目录 → 运行扫描器 → 完全退出并重启。
+
 为 Remains 增加能影响战斗的明暗区域、可装备灯具，以及场景灯的破坏和维修。用户于 2026-10-15 确认：**战术光暗与生存探索并重，兼顾氛围**。
 
 当前 **0.7.1 已于2026-11-02部署**。性能重构：光照合成每帧至多一次、移动/旋转光的阴影光栅原地复用、环境底光批量上传并按瓦片缓存天光采样；同输入逐像素与0.7.0完全一致，大图平移/瞄准光场耗时显著下降。正式文件固定为 `release/LightAndDarknessMod.swf`，保存进度并重启游戏生效。[优化方案与实施记录](design/performance-optimization-plan.md)。
