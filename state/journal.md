@@ -1,3 +1,11 @@
+## 2026-11-05 GitHub 开源同步
+
+- 仓库公开：https://github.com/Eclipse-NotFound/LightAndDarkness（默认分支 `master`，MIT 许可证）
+- 发布：tag `v0.7.1`，Release 资产 `LightAndDarkness_v0.7.1.zip`（正式版）
+- 同步内容：本地提交（源码/设计/知识/状态）+ MIT `LICENSE` + README 下载链接与版本号更新
+- 验证边界：未运行游戏、未改 `release/` 下已部署 SWF；资产回读改用 GitHub 服务端 asset digest 校验（下载域名被网络策略拒绝）
+- 残留：本条目写入时 tag 可能早于后续文档提交；各模组记忆由负责人在后续会话继续维护
+
 ## 2026-11-02 性能优化0.7.1实施与部署
 - 做了什么：按 [performance-optimization-plan](../design/performance-optimization-plan.md) 落地模块4（渲染时序解耦：simulationStep置脏、onFrame单次收口）、模块1（makeLight持久化光栅，缓存条目原地重建）、模块2（paint批量setVector＋瓦片级天光备忘＋frontAlpha守卫）；模块3地标候选缓存经探针反证（lights()须反映每次调用的acts/objs内容）后完整撤回，模块5对象池评估后收缩未做。
 - 关键决定/发现：lateRenders语义改为"无步进帧的补绘"，保持探针renders==steps+lateRenders不变量；照度采样滞后一步（≤33ms）。地标套件两处0.6时代旧阈值（flight标志、门洞溢流采样点）经正式0.7.0对照运行证明既有失败，更新tests/EnvironmentChecks.as后通过。

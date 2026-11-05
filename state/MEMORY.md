@@ -1,5 +1,7 @@
 # LightAndDarkness 当前记忆
 
+> **2026-11-05 GitHub 公开**：本仓库已开源到 https://github.com/Eclipse-NotFound/LightAndDarkness（默认分支 `master`，MIT 许可证），发布 tag `v0.7.1` 与 Release 资产 `LightAndDarkness_v0.7.1.zip`（正式版）。由同步会话执行；未运行游戏、未改 `release/` 下已部署产物。
+
 > 2026-10-28 分盘精简：本模组 1162 个历史副本文件（1.831 GiB）经逐文件核验后转入 F、G 盘；源码、release、共享工具及当前验证材料保留。查位置与恢复方法见 [archive-index.md](archive-index.md) 和[本轮记录](../../../archive/migrations/2026-10-28-01/report.md)。旧测试副本需复现时先按归档原路径恢复。
 
 > 2026-10-25 历史资料已核验转存：B01，共12,746文件、原始显示12.16 GiB。查找与恢复从 [archive-index.md](archive-index.md) 进入；[本次结果](../../../archive/migrations/2026-10-25-01/report.md)。当前正式包、源码、作品及保留证据未纳入。
